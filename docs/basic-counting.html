@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-09-04T13:51:35-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Combi Basic Counting</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+
+
+\def\Z{\mathbb Z}
+\def\R{\mathbb R}
+\def\Q{\mathbb Q}
+\def\N{{\mathbb N}}
+\def\C{\mathbb C}
+
+\def\ba{{\mathbf{a}}}
+\def\bb{\mathbf{b}}
+\def\bh{{\mathbf{h}}}
+\def\bu{{\mathbf{u}}}
+\def\bv{{\mathbf{v}}}
+\def\bw{{\mathbf{w}}}   
+\def\bx{{\mathbf{x}}}
+\def\by{\mathbf{y}}    
+\def\bone{{\mathbf{1}}}
+\def\bzero{\mathbf{0}}
+
+\def\var{{\mbox{var}}}
+\def\P{{\mathbb{P}}}
+\def\E{{\mathbb{E}}}
+
+
+\def\cA{{\overline{A}}}
+
+\def\kin{k^{\mathrm{in}}}
+\def\kout{k^{\mathrm{out}}}
+
+\newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+\newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+\tikzset{-&gt;-/.style={decoration={
+ markings,
+ mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="combi.html"><span class="title">Enumerative Combinatorics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="part-counting.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="part-counting.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-counting.html" data-scroll="part-counting"><span class="codenumber">I</span> <span class="title">Counting</span></a></li>
+<li class="link active"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="basic-counting"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">1</span> <span class="title">Basic Counting</span>
+</h2>
+<section class="introduction" id="introduction-1"><p id="p-1"></p></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">1.1</span> <span class="title">Counting Methods</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-1"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Lunchtime Combinations.</span>
+</h6>
+<p id="p-2">Here is the lunch menu for Damico and Sons. <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/damico.png" style="width: 100%; height: auto;" alt=""></div></p>
+<ol class="lower-alpha">
+<li id="li-1"><p id="p-3">How many ways can you order a single item for lunch? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like">
+<p id="p-4">There are 2 soups, 7 salad options, 5 signature salad options, and 6 sandwich options. Therefore, there are a total of</p>
+<div class="displaymath">
+\begin{equation*}
+2 + 7 + 5 + 6 = 20
+\end{equation*}
+</div>
+<p data-braille="continuation">possible lunches. Looking closely, we see that it is possible to "upgrade" our sandwich to come with a Side Caeser or Mixed Green Salad. Taking that into account, there are 18 sandwich options (instead of 6), so there are a total of 32 lunches.</p>
+</div></div></p></li>
+<li id="li-2"><p id="p-5">The menu says that you can "choose two to create your favorite combination." How many ways can this be done, according to the rules that they describe? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-6">There are three distinct kinds of combo lunches: soup and salad, soup and sandwich, salad and sandwich. Note that you cannot get a Salad Sampler as part of this deal, so there are a total of 11 salad options. Also, a sandwich update is no longer possible. Therefore, there are a total of</p>
+<div class="displaymath">
+\begin{equation*}
+2 \times 11 + 2 \times 6 + 11 \times 6 = 22 + 12 + 66 = 100.
+\end{equation*}
+</div>
+<p data-braille="continuation">possible lunches.</p>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Minnesota License Plates.</span>
+</h6>
+<ol id="p-7" class="lower-alpha">
+<li id="li-3"><p id="p-8">How many possible license plates are there? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><div class="displaymath" id="p-9">
+\begin{equation*}
+10^3 \cdot 26^3
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-4"><p id="p-10">Decorum dictates that some three-letter combinations be outlawed. For each outlawed three-letter combination, how many possible license plates are removed from circulation? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath" id="p-11">
+\begin{equation*}
+10^3
+\end{equation*}
+</div></div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Arithmetic Problems.</span>
+</h6>
+<p id="p-12">How many arithmetic problems of the following form are possible. You must use each of the digits 1 through 9, in numerical order from left to right. You can use any combination of \(+\) and \(\times\) symbols, as long as the expression makes sense. For example, \(1234+56789\) and \(12 \times 3 + 4 \times 5678 \times 9\) and \(123456789\) are valid, but \(123 \times \times 4567 + 89\) is not. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like"><p id="p-13">There are eight spaces between the digits. For each space we have three choices: nothing, \(+\) or \(\times\text{.}\) Therefore, the total number of arithmetic problems is \(3^8\text{.}\)</p></div></div></p></article><article class="exercise exercise-like" id="exercise-4"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Subsets of Numbers.</span>
+</h6>
+<ol id="p-14" class="lower-alpha">
+<li id="li-5"><p id="p-15">How many numbers from \(1000\) to \(9999\) are odd? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like"><div class="displaymath" id="p-16">
+\begin{equation*}
+\underbrace{5}_{\mbox{choose 4th digit}} \times
+\underbrace{9}_{\mbox{choose 1st digit}} \times
+\underbrace{10}_{\mbox{choose 2nd digit}} \times
+\underbrace{10}_{\mbox{choose 3rd digit}}
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-6"><p id="p-17">How many odd numbers from \(1000\) to \(9999\) have distinct digits? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like">
+<div class="displaymath" id="p-18">
+\begin{equation*}
+\underbrace{5}_{\mbox{choose 4th digit}} \times
+\underbrace{8}_{\mbox{choose 1st digit}} \times
+\underbrace{8}_{\mbox{choose 2nd digit}} \times
+\underbrace{7}_{\mbox{choose 3rd digit}}
+\end{equation*}
+</div>
+<p data-braille="continuation">Note: it is important to choose the digits in this order to get the right answer. For example, if we choose the 3rd digit before choosing the 1st digit, then we must consider 2 cases, depending on whether we chose 0 for the 3rd digit. You will still get the right answer, but you must deal with more cases.</p>
+</div></div></p></li>
+<li id="li-7"><p id="p-19">How many numbers from \(0\) to \(1000\) contain exactly one 3? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like">
+<p id="p-20">We consider all possible 3 digit numbers, where we can have a 0 in the first digit (so we write \(003\) instead of \(3\)). There are three cases, depending on the location of the 3. In each case, we have 9 choices for each of the other two digits, so the answer is</p>
+<div class="displaymath">
+\begin{equation*}
+(9 \times 9) + (9 \times 9) + (9 \times 9) = 243
+\end{equation*}
+</div>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-5"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Sitting at a Circular Table.</span>
+</h6>
+<ol id="p-21" class="lower-alpha">
+<li id="li-8"><p id="p-22">In how many ways can \(k\) men and \(k\) women be seated around a circular table? Before anyone sits down, all chairs are identical. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-9"><div class="solution solution-like">
+<div class="displaymath" id="p-23">
+\begin{equation*}
+\frac{(2k)!}{2k} = (2k-1)!
+\end{equation*}
+</div>
+<p data-braille="continuation">We place people into seats, starting at the top of the table and continuing clockwise. There are \((2k)!\) ways to do this. However, by the symmetry of the table, we can shift everyone over by one seat (or two seats, or three seats...) and get the same configuration. Therefore we must divide by \(2k\text{,}\) which is the number of possible rotations.</p>
+</div></div></p></li>
+<li id="li-9"><p id="p-24">In how many ways can this be done if  the men and women must sit in alternate seats? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like">
+<div class="displaymath" id="p-25">
+\begin{equation*}
+\frac{k! k!}{k}  = k! (k-1)!
+\end{equation*}
+</div>
+<p data-braille="continuation">Here is one proof of this result.</p>
+<ul class="disc">
+<li id="li-10"><p id="p-26">Start off with a line containing \(2k\) spots.</p></li>
+<li id="li-11"><p id="p-27">Case 1: people line up MFMF...MF. Number of ways:\(k! k!\)</p></li>
+<li id="li-12"><p id="p-28">Case 2: people line up FMFM...FM. Number of ways: \(k! k!\)</p></li>
+<li id="li-13"><p id="p-29">Total number of ways to line up: \(2 ( k! k!)\)</p></li>
+<li id="li-14"><p id="p-30">Turn the line into a circle. Each circular arrangement is created 2k times.</p></li>
+<li id="li-15"><p id="p-31">Final answer is \(\frac{2 (k! k!)}{2k} = \frac{k! k! }{ k}  = k! (k-1)!\)</p></li>
+</ul>
+<p data-braille="continuation">Here is another way to argue this that is quicker, but more subtle:</p>
+<ul class="disc">
+<li id="li-16"><p id="p-32">Pick any chair (it doesn't matter). Starting at that chair, place all the men in every other chair, going clockwise. Number of ways: \(k!\)</p></li>
+<li id="li-17"><p id="p-33">Now place the women going clockwise, starting at the empty chair to the right of the first man. Number of ways: \(k!\)</p></li>
+<li id="li-18"><p id="p-34">Accounting for the circular symmetry, each configuration is created \(k\) times.</p></li>
+<li id="li-19"><p id="p-35">Final answer is  \(\frac{k! k!}{ k} = k! (k-1)!\text{.}\)</p></li>
+</ul>
+</div></div></p></li>
+<li id="li-20"><p id="p-36">In how many ways can this be done if there are two women (and maybe more) sitting next to one another? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like">
+<p id="p-37">We just subtract our answer in part (b) from our answer in part (a) to get</p>
+<div class="displaymath">
+\begin{equation*}
+(2k-1)! - k! (k-1)!
+\end{equation*}
+</div>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-6"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Couples Sitting in a Row.</span>
+</h6>
+<p id="p-38">Four sisters and their spouses have been invited to a reception where these 8 people will be seating in a row of 8 chairs. Each married couple must be seated together.</p>
+<ol class="lower-alpha">
+<li id="li-21"><p id="p-39">How many ways can this be done? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like">
+<div class="displaymath" id="p-40">
+\begin{equation*}
+4! \times 2^4
+\end{equation*}
+</div>
+<p data-braille="continuation">There are \(4!\) ways to arrange the couples, and then 2 ways to seat each couple next to one another</p>
+</div></div></p></li>
+<li id="li-22"><p id="p-41">How many ways can this be done if no sister sits next to any other sister? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like">
+<div class="displaymath" id="p-42">
+\begin{equation*}
+4! \times 5
+\end{equation*}
+</div>
+<p data-braille="continuation">There are \(4!\) ways to arrange the couples. Let us start seating the couples from left to right, in chairs labeled by [8]. As soon as one sister sits in an even chair, this forces the remaining sisters to sit in an even chair. There is 1 way for the sisters to all sit in odd chairs. Otherwise, there are 4 ways to choose the first even chair taken by a sister. So there are a total of \(4! \times 5\) possible arrangements.</p>
+</div></div></p></li>
+<li id="li-23"><p id="p-43">How many ways can this be done if every sister must sit next to one of her sisters? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like">
+<p id="p-44">We give two solutions.</p>
+<div class="displaymath">
+\begin{equation*}
+4! = 24
+\end{equation*}
+</div>
+<p data-braille="continuation">Again, there are \(4!\) ways to arrange the couples. There is one way to seat the first couple, since the sister cannot be on the end. This also forces the arrangement of the second couple. Likewise, the 3rd and 4th couples only have one possible arrangement. Here is another way to argue it. The configuration must be of the form \(PSSPPSSP\) where \(P=\) partner and \(S=\) sister. Our answer is</p>
+<div class="displaymath">
+\begin{equation*}
+{4 \choose 2} \cdot 2 \cdot 2.
+\end{equation*}
+</div>
+<p data-braille="continuation">First, we choose the two sisters that will appear in spots 2 and 3. There are two ways to arrange them. The remaining two sisters must sit in spots 6 and 7. Again, there are two ways to arrange them. The placement of the partners is then forced by the seat of their spouses.</p>
+</div></div></p></li>
+<li id="li-24"><p id="p-45">How many ways can this be done if at least one pair of sisters sits next to one another? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like">
+<div class="displaymath" id="p-46">
+\begin{equation*}
+4! (2^4 - 5)
+\end{equation*}
+</div>
+<p data-braille="continuation">We subtract part (b) from part (a) to get the answer.</p>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-7"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Drawing Rectangles and Triangles.</span>
+</h6>
+<p id="p-47">A \(4 \times 7\) checkerboard is shown below at the left. <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-basic-counting1.svg" role="img" style="width: 100%; height: auto;" alt=""></div></p>
+<ol class="lower-alpha">
+<li id="li-25"><p id="p-48">How many different rectangles are hiding in it? Six examples of rectangles you need to find are shown in the second two boards. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like">
+<p id="p-49">The answer is</p>
+<div class="displaymath">
+\begin{equation*}
+{8 \choose 2} {5 \choose 2}.
+\end{equation*}
+</div>
+<p data-braille="continuation">We choose two \(x\)-coordinates \(x_1 &lt; x_2\) and two \(y\)-coordinates \(y_1 &lt; y_2\text{.}\) Once we have these, the lower left corner is \((x_1, y_1)\) and the upper right corner is \((x_2, y_2)\text{.}\) Note that there are 8 choices for \(x\)-coordinate (not 7), and 5 choices for \(y\)-coordinate (not 4). If we evaluate this expression, we find that there are \(280\) rectangles in this grid.</p>
+</div></div></p></li>
+<li id="li-26"><p id="p-50">How many different  triangles with one horizontal side adjacent to two acute angles are hiding in it? Six examples of triangles you need to find are shown in the last two boards. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
+<p id="p-51">This problem is like part (a), but harder.</p>
+<ul class="disc">
+<li id="li-27"><p id="p-52">Choose 3 \(x\)-coordinates \(x_1 &lt; x_2 &lt; x_3\text{.}\) There are \({8 \choose 3}\) ways to do this.</p></li>
+<li id="li-28"><p id="p-53">Choose 2 \(y\)-coordinates \(y_1 &lt; y_2\text{.}\) There are \({5 \choose 3}\) ways to do this.</p></li>
+<li id="li-29"><p id="p-54">Decide whether the horizontal size will be the upper or lower one. There are 2 ways to do this.</p></li>
+</ul>
+<p data-braille="continuation">The result is either the triangle</p>
+<div class="displaymath">
+\begin{equation*}
+(x_1,y_1), (x_3,y_1), (x_2, y_2)
+\end{equation*}
+</div>
+<p data-braille="continuation">or the triangle</p>
+<div class="displaymath">
+\begin{equation*}
+(x_1,y_2), (x_3,y_2), (x_2, y_1).
+\end{equation*}
+</div>
+<p data-braille="continuation">The total number of ways to complete this recipe is</p>
+<div class="displaymath">
+\begin{equation*}
+{8 \choose 3} {5 \choose 3} \cdot 2.
+\end{equation*}
+</div>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-8"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">A Combinatorial Identity.</span>
+</h6>
+<ol id="p-55" class="lower-alpha">
+<li id="li-30"><p id="p-56">Find a closed formula for the sum \(\displaystyle{\sum_{k=0}^n {n \choose k} 2^k}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like">
+<p id="p-57">By the binomial theorem,</p>
+<div class="displaymath">
+\begin{equation*}
+3^n = (2 + 1)^n = \sum_{k=0}^n {n \choose k} 2^k.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-31"><p id="p-58">Devise a situation that is counted by this sum. Then give a "combinatorial proof" by explaining why both the closed formula and the one given above count all configurations. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like"><p id="p-59">Here is one story that works. Suppose there are \(n\) kids who want ice cream. There are three flavors to choose from: vanilla, chocolate and strawberry. How many possible outcomes are there? Each kid has 3 choices, so there are \(3^n\) possible outcomes. We can count this outcome in two phases. First, determine the number \(k\) of kids ordering vanilla or chocolate. (The remaining \(n-k\) get strawberry.) Next, determine which of these \(k\) kids wants vanilla and which one wants chocolate. For each \(k\text{,}\) we can choose the choco-vanilla kids in \({n \choose k}\) ways, and then determine their status in \(2^k\) ways. We must sum over \(0 \leq k \leq n\) to get all possible outcomes.</p></div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-9"><h6 class="heading">
+<span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title">Non-Attacking Rooks.</span>
+</h6>
+<ol id="p-60" class="lower-alpha">
+<li id="li-32"><p id="p-61">How many ways are there to place 8 rooks on an \(8 \times 8\) chessboard so that no two may attack one another? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-20"><div class="solution solution-like"><p id="p-62">There can only be one rook in each row and one rook in each column. Each valid configuration corresponds to a bijection between the rows and columns. There are \(8!\) possibilities.</p></div></div></p></li>
+<li id="li-33"><p id="p-63">How many ways are there to place 5 black rooks  and 3 white rooks on an \(8 \times 8\) chessboard so that no two may attack one another? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like"><p id="p-64">Place the rooks in 2 phases. Phase 1: place 8 "gray" rooks. Phase 2: decide which of the 8 rooks are black. The entire process can occur in \(8! \times {8 \choose 5}\) ways.</p></div></div></p></li>
+<li id="li-34"><p id="p-65">How many ways are there to place 5 rooks on an \(8 \times 8\) chessboard so that no two may attack one another? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-22"><div class="solution solution-like">
+<ul id="p-66" class="disc">
+<li id="li-35"><p id="p-67">Phase 1: Choose 5 rows (in \({8 \choose 5}\) ways)</p></li>
+<li id="li-36"><p id="p-68">Phase 2: Choose 5 columns (in \({8 \choose 5}\) ways)</p></li>
+<li id="li-37"><p id="p-69">Phase 3: List the chosen rows in increasing orders. Assign each of the columns to one of these rows  (in \(5!\) ways)</p></li>
+</ul>
+<p data-braille="continuation">Place your 5 rooks in the resulting (row,column) pairs. So the number of configurations is</p>
+<div class="displaymath">
+\begin{equation*}
+{8 \choose 5} \times {8 \choose 5} \times 5!
+\end{equation*}
+</div>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-10"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title">Diagonals in a Polygon.</span>
+</h6>
+<ol id="p-70" class="lower-alpha">
+<li id="li-38"><p id="p-71">How many diagonals are there? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-23" id="solution-23"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-23"><div class="solution solution-like">
+<div class="displaymath" id="p-72">
+\begin{equation*}
+\frac{n (n-3)}{2}
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-39"><p id="p-73">Choose the first vertex in \(n\) different ways</p></li>
+<li id="li-40"><p id="p-74">Choose the second vertex  in \(n-3\) different ways (we can't pick the first vertex again and we can't pick either of its neighbors).</p></li>
+<li id="li-41"><p id="p-75">We've picked each diagonal twice.</p></li>
+</ul>
+</div></div></p></li>
+<li id="li-42"><p id="p-76">How many intersections do the diagonals determine? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-24" id="solution-24"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-24"><div class="solution solution-like">
+<div class="displaymath" id="p-77">
+\begin{equation*}
+{n \choose 4}
+\end{equation*}
+</div>
+<p data-braille="continuation">If we choose 4 vertices, there is exactly one way to pair them up to get crossing diagonals. If our vertices in clockwise order are \(v_1, v_2, v_3, v_4\) then we must pair \(v_1\) with \(v_3\) and \(v_2\) with \(v_4\text{.}\) So there is a bijection between intersections of diagonals and 4-sets of vertices.</p>
+</div></div></p></li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>
