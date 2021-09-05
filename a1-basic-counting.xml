@@ -14,25 +14,26 @@
 
 
 		<exercise>
-			<title>Lunchtime Combinations</title>
-			<idx><h>Lunchtime Combinations</h></idx>
+			<title>Elvis at the Diner</title>
+			<idx><h>Elvis at the Diner</h></idx>
 			<statement>
 				<p>
-Here is the lunch menu for Damico and Sons.
+Elvis is going to have lunch at this favorite diner. Here is the menu.
 
-			<image width="80%" xml:id="fig-img-basic-counting0" source="images/damico.png" />
+			<image width="80%" xml:id="fig-img-basic-counting0" source="https://www.laurajonesdesign.com/uploads/5/5/7/3/55733941/published/lv-menu-mock-up.jpg" />
 
 			<ol>
 				<li>
 					<p>
- How many ways can you order a single item for lunch?
+ For lunch, Elvis wants something to eat and something to drink. How many different options does he have? (Ignore the hot tog toppings for now.)
 
 
 					</p>
 				</li>
 				<li>
 					<p>
- The menu says that you can "choose two to create your favorite combination." How many ways can this be done, according to the rules that they describe?
+ If Elvis orders a hot dog, he has the option to add extra toppings.
+So how many ways are there to order footlong hot dog?
 
 
 					</p>
