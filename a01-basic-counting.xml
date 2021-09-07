@@ -54,6 +54,7 @@ So how many ways are there to order footlong hot dog?
 			<idx><h>Minnesota License Plates</h></idx>
 			<statement>
 				<p>
+A Minnesota license plate consists of three numbers followed by three letters.
 
 			<ol>
 				<li>
@@ -399,6 +400,8 @@ A <m>4 \times 7</m> checkerboard is shown below at the left.
 			<idx><h>Diagonals in a Polygon</h></idx>
 			<statement>
 				<p>
+
+Consider a convex <m>n</m>-gon such that no pair of diagonals intersect at the same point.
 			<ol>
 				<li>
 					<p>
