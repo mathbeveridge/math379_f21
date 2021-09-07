@@ -57,8 +57,9 @@ pull the name of the problem from the first line  of  the \item
 
     <part xml:id="part-counting">
         <title>Counting</title>
-            <xi:include href="./a1-basic-counting.xml" />                 
-                
+            <xi:include href="./a01-basic-counting.xml" />                 
+            <xi:include href="./a02-pigeonhole.xml" /> 
+            <xi:include href="./a03-functions1.xml" />                         
 
     </part>
 

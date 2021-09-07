@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="functions2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Functions Part II</title>
+	<introduction>
+		<p>
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+		<exercise>
+			<statement>
+				<p>
+ Let <m>X,Y,Z</m> be finite sets, perhaps of different cardinalities. Let <m>f:X \rightarrow Y</m> and <m>g:Y \rightarrow Z</m>.
+
+			</p><p>
+
+Decide whether each of the following statements is <em> true</em> or <em> false</em>.
+		<ul>
+			<li>
+			<p>
+ If the statement is <em> true</em>, provide a proof. (Pro tip: It might be easier to prove the contrapositive.)
+			</p>
+			</li>
+			<li>
+			<p>
+ If the statement is <em> false</em>, provide a counterexample.
+			</p>
+			</li>
+		</ul>
+
+Here are the statements:
+
+			<ol>
+
+				<li>
+					<p>
+ If <m>g \circ f</m> is injective then <m>f</m> is injective.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If <m>g \circ f</m> is injective then <m>g</m> is injective.
+
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If <m>g \circ f</m> is surjective then <m>f</m> is surjective.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If <m>g \circ f</m> is surjective then <m>g</m> is surjective.
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+</chapter>

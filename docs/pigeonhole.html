@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Combi Front Matter</title>
+<title>Combi Pigeonhole Principle</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -105,30 +105,52 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="combi.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="combi.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-counting.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="basic-counting.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="functions.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="combi.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="combi.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-counting.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="basic-counting.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="functions.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
-<li class="link frontmatter active"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
 <li class="link part"><a href="part-counting.html" data-scroll="part-counting"><span class="codenumber">I</span> <span class="title">Counting</span></a></li>
 <li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
-<li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link active"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
 <li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="frontmatter" id="frontmatter"><h2 class="heading">
-<span class="title">Enumerative Combinatorics:</span> <span class="subtitle">Activities and Exercises</span>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="pigeonhole"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span>
 </h2>
-<div class="author">
-<div class="author-name">Andrew Beveridge</div>
-<div class="author-info">Department of Mathematics, Statistics  and Computer Science<br>Macalester College<br><a href="mailto:abeverid@macalester.edu">abeverid@macalester.edu</a>
-</div>
-</div>
-<div class="date">September 7, 2021</div></section></div></main>
+<section class="introduction" id="introduction-2"><p id="p-35"></p></section><section class="exercises" id="exercises-2"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-11"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Student Birthdays.</span>
+</h6>
+<p id="p-36">There 28 students enrolled in a combinatorics course. What is the largest number of these students that you can guarantee are  born in the same month?</p></article><article class="exercise exercise-like" id="exercise-12"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Fewest Chairs at a Table.</span>
+</h6>
+<p id="p-37">A conference room contains 8 tables and 99 chairs. What is the smallest possible number of chairs at a table having the most chairs?</p></article><article class="exercise exercise-like" id="exercise-13"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">A Small Triangle.</span>
+</h6>
+<p id="p-38">Suppose that we have 19 points \((x,y)\) in the unit square \([0,1] \times [0,1]\text{.}\) In other words, \(0 \leq x \leq 1\) and \(0 \leq y \leq 1\text{.}\) Prove that there are three points that create a triangle \(T\) with area at most \(1/18\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-14"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">A Large Domain.</span>
+</h6>
+<p id="p-39">Consider a function \(f: A \rightarrow B\) where \(|A| &gt; |B|\text{.}\) What conclusion can you draw by applying the pigeonhole principle? Be as specific as possible.</p></article><article class="exercise exercise-like" id="exercise-15"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Sums of Subsets.</span>
+</h6>
+<ol id="p-40" class="lower-alpha">
+<li id="li-24"><p id="p-41">Suppose that six distinct integers are chosen from \([10] = \{ 1, 2, 3, \ldots, 10 \}\text{.}\) Must there be two whose sum is 11? Explain.</p></li>
+<li id="li-25"><p id="p-42">Suppose that five distinct integers are chosen from \([9] = \{ 1, 2, 3, \ldots, 9  \}\text{.}\) Must there be two whose sum is 10? Explain.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-16"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Integer-Valued Midpoint.</span>
+</h6>
+<p id="p-43">Suppose that we have  5 points \((x,y)\) in \(\R^2\) with integer coordinates. This means that both the \(x\)-coordinate and the \(y\)-coordinate are integers. Prove that the midpoint of the segment joining some pair of points also has integer coordinates. (Hint: this is a pigeonhole problem. The five "pigeons" are the points. What are the four "pigeonholes?" )</p></article><article class="exercise exercise-like" id="exercise-17"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">More Sums of Subsets.</span>
+</h6>
+<p id="p-44">Let \(A\) be a set of six positive integers, each of which is less than 13. Show that there must be two distinct subsets \(B,C \subset A\) whose elements, when added up, give the same sum. For example, if \(A = \{ 1, 3, 4, 5, 10, 12 \}\) then the subsets \(B= \{ 1, 4, 10 \}\) and \(C=\{ 3, 12 \}\) do the trick: summing each of their elements gives 15. (Hint: what is the maximum possible sum of a subset of \(A\text{?}\) What is the minimum? Use these numbers to get an upper bound on the number of pigeonholes.)</p></article></section></section></div></main>
 </div>
 </body>
 </html>

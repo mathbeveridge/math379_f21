@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Functions</title>
+	<introduction>
+		<p>
+
+
+
+
+
+
+
+
+
+Let <m>X,Y</m> be finite sets, perhaps of different sizes. Let <m>f:X \rightarrow Y</m>. We have the following definitions
+
+			</p><p>
+
+<em>Injective (One-To-One)</em>
+
+
+		<ul>
+			<li>
+			<p>
+ The function <m>f: X \rightarrow Y</m> is <em>injective</em> if whenever <m>f(x_1) = f(x_2)</m>, then <m>x_1 = x_2</m>.
+			</p>
+			</li>
+		</ul>
+
+
+
+An equivalent formulation is the contrapositive of this statement:
+
+		<ul>
+			<li>
+			<p>
+ The function <m>f: X \rightarrow Y</m> is <em>injective (one-to-one)</em> if for all <m>x_1 \neq x_2</m>, we have <m>f(x_1) \neq f(x_2)</m>.
+			</p>
+			</li>
+		</ul>
+
+
+
+<em>Surjective (Onto)</em>
+
+
+
+		<ul>
+			<li>
+			<p>
+  The function <m>f: X \rightarrow Y</m> is <em>surjective (onto)</em> if for every <m>y \in Y</m>, there exists some <m>x \in X</m> such that <m>f(x)=y</m>.
+			</p>
+			</li>
+		</ul>
+
+
+
+<em>Bijective</em>
+
+		<ul>
+			<li>
+			<p>
+ The function <m>f: X \rightarrow Y</m> is <em>bijective</em> if it is both injective and surjective.
+			</p>
+			</li>
+		</ul>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Not Injective and Not Surjective</title>
+			<idx><h>Not Injective and Not Surjective</h></idx>
+			<statement>
+				<p>
+By negating the statements above, write down definitions for "not injective" and "not surjective."
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Example Functions</title>
+			<idx><h>Example Functions</h></idx>
+			<statement>
+				<p>
+
+In each of the following problems, give an example of a function <m>f: [n] \rightarrow [m]</m> of the specified type. <em>You get to pick the values for <m>n</m> and <m>m</m>.</em> Describe your function by using a picture.
+
+			</p><p>
+
+
+Then decide if there is a required relationship between <m>n</m> and <m>m</m>, the sizes of the domain and the codomain. Your options are:
+<me>
+\begin{array}{cccc}
+n &gt; m, &amp; n = m, &amp;  n &lt; m, &amp; \mbox{none}.
+\end{array}
+</me>
+
+
+
+			<ol>
+
+				<li>
+					<p>
+ <m>f: [n] \rightarrow [m]</m> is injective (one-to-one) but NOT surjective (onto)
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>f: [n] \rightarrow [m]</m> is injective (one-to-one) and surjective (onto)
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>f: [n] \rightarrow [m]</m> is NOT injective (one-to-one) but is surjective (onto)
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>f: [n] \rightarrow [m]</m> is NOT injective (one-to-one) and NOT surjective (onto)
+
+
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Let <m>X,Y,Z</m> be finite sets, perhaps of different cardinalities. Let <m>f:X \rightarrow Y</m> and <m>g:Y \rightarrow Z</m>.
+
+			</p><p>
+
+Decide whether each of the following statements is <em> true</em> or <em> false</em>.
+		<ul>
+			<li>
+			<p>
+ If the statement is <em> true</em>, provide a proof. (Pro tip: It might be easier to prove the contrapositive.)
+			</p>
+			</li>
+			<li>
+			<p>
+ If the statement is <em> false</em>, provide a counterexample.
+			</p>
+			</li>
+		</ul>
+
+Here are the statements:
+
+			<ol>
+
+				<li>
+					<p>
+ If <m>g \circ f</m> is injective then <m>f</m> is injective.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If <m>g \circ f</m> is injective then <m>g</m> is injective.
+
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If <m>g \circ f</m> is surjective then <m>f</m> is surjective.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If <m>g \circ f</m> is surjective then <m>g</m> is surjective.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+</chapter>
