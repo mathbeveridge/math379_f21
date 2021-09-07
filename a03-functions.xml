@@ -149,9 +149,11 @@ n &gt; m, &amp; n = m, &amp;  n &lt; m, &amp; \mbox{none}.
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Prove or Disprove</title>
+			<idx><h>Prove or Disprove</h></idx>
 			<statement>
 				<p>
- Let <m>X,Y,Z</m> be finite sets, perhaps of different cardinalities. Let <m>f:X \rightarrow Y</m> and <m>g:Y \rightarrow Z</m>.
+Let <m>X,Y,Z</m> be finite sets, perhaps of different cardinalities. Let <m>f:X \rightarrow Y</m> and <m>g:Y \rightarrow Z</m>.
 
 			</p><p>
 
