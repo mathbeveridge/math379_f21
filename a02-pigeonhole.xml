@@ -16,6 +16,32 @@
 
 
 		<exercise>
+			<title>Sums of Subsets</title>
+			<idx><h>Sums of Subsets</h></idx>
+			<statement>
+				<p>
+			<ol>
+				<li>
+					<p>
+ Suppose that six distinct integers are chosen from <m>[10] = \{ 1, 2, 3, \ldots, 10 \}</m>. Must there be two whose sum is 11? Explain.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Suppose that five distinct integers are chosen from <m>[9] = \{ 1, 2, 3, \ldots, 9  \}</m>. Must there be two whose sum is 10? Explain.
+
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
 			<title>Student Birthdays</title>
 			<idx><h>Student Birthdays</h></idx>
 			<statement>
@@ -67,31 +93,7 @@ Consider a function <m>f: A \rightarrow B</m> where <m>|A| &gt; |B|</m>. What co
 
 
 
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<title>Sums of Subsets</title>
-			<idx><h>Sums of Subsets</h></idx>
-			<statement>
-				<p>
-			<ol>
-				<li>
-					<p>
- Suppose that six distinct integers are chosen from <m>[10] = \{ 1, 2, 3, \ldots, 10 \}</m>. Must there be two whose sum is 11? Explain.
 
-
-					</p>
-				</li>
-				<li>
-					<p>
- Suppose that five distinct integers are chosen from <m>[9] = \{ 1, 2, 3, \ldots, 9  \}</m>. Must there be two whose sum is 10? Explain.
-
-
-
-					</p>
-				</li>
-			</ol>
 
 
 
