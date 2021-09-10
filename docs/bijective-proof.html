@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Combi Bijective Proof</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+
+
+\def\Z{\mathbb Z}
+\def\R{\mathbb R}
+\def\Q{\mathbb Q}
+\def\N{{\mathbb N}}
+\def\C{\mathbb C}
+
+\def\ba{{\mathbf{a}}}
+\def\bb{\mathbf{b}}
+\def\bh{{\mathbf{h}}}
+\def\bu{{\mathbf{u}}}
+\def\bv{{\mathbf{v}}}
+\def\bw{{\mathbf{w}}}   
+\def\bx{{\mathbf{x}}}
+\def\by{\mathbf{y}}    
+\def\bone{{\mathbf{1}}}
+\def\bzero{\mathbf{0}}
+
+\def\var{{\mbox{var}}}
+\def\P{{\mathbb{P}}}
+\def\E{{\mathbb{E}}}
+
+\def\cP{\mathcal P}
+\def\cE{\mathcal E}
+\def\cO{\mathcal O}
+
+
+\def\cA{{\overline{A}}}
+
+\def\kin{k^{\mathrm{in}}}
+\def\kout{k^{\mathrm{out}}}
+
+\newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+\newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+\tikzset{-&gt;-/.style={decoration={
+ markings,
+ mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="combi.html"><span class="title">Enumerative Combinatorics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="counting-exercise.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="counting-exercise.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-counting.html" data-scroll="part-counting"><span class="codenumber">I</span> <span class="title">Counting</span></a></li>
+<li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
+<li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link active"><a href="bijective-proof.html" data-scroll="bijective-proof"><span class="codenumber">4</span> <span class="title">Bijective Proof</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">5</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
+<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">6</span> <span class="title">Generating Function Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="bijective-proof"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">4</span> <span class="title">Bijective Proof</span>
+</h2>
+<section class="introduction" id="introduction-4"><p id="p-120">Each  problem below defines two finite sets, \(X\) and \(Y\text{.}\)  Create a bijective proof to show that \(|X|=|Y|\text{.}\) You must define a bijection \(f : X \rightarrow Y\) between the two sets, and then either (1) show \(f\) is both injective and surjective, or (2) define a function \(g: Y \rightarrow X\) and show that \(f\) and \(g\) are inverse functions.</p></section><section class="exercises" id="exercises-4"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-21"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Binary Words and Subsets.</span>
+</h6>
+<p id="p-121">For a given positive integer \(n\)</p>
+<ul class="disc">
+<li id="li-59"><p id="p-122">Let \(X = \{ 0 , 1 \}^n\) be the collection of binary sequences of length \(n\text{.}\)</p></li>
+<li id="li-60"><p id="p-123">Let \(Y = {\mathcal{P}}([n])\) be the power set of \([n]\text{,}\) which is the set of all subsets of \([n]\text{.}\)</p></li>
+</ul></article><article class="exercise exercise-like" id="exercise-22"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">\(k\)-sets and \((n-k)\)-sets.</span>
+</h6>
+<p id="p-124">For given positive integers \(0 \leq k \leq n\text{,}\)</p>
+<ul class="disc">
+<li id="li-61"><p id="p-125">Let \(X\) be the collection of \(k\)-subsets of \([n]\text{,}\) and</p></li>
+<li id="li-62"><p id="p-126">Let \(Y\) be the collection of \((n-k)\)-subsets.</p></li>
+</ul>
+<p class="continuation">(The \(k\)-subsets of \([n]\) are all the subsets of size \(k\)).</p></article><article class="exercise exercise-like" id="exercise-23"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Lattice Paths and Subsets.</span>
+</h6>
+<p id="p-127">Let \(r,s\) be nonnegative integers.</p>
+<ul class="disc">
+<li id="li-63"><p id="p-128">Let \(X\) be the set of lattice paths from \((0,0)\) to \((r,s)\text{.}\) These paths start at \((0,0)\) and join integer points via steps of unit length, moving rightward or upward.</p></li>
+<li id="li-64"><p id="p-129">Let \(Y\) be the set of all \(r\)-subsets of \([r+s]\text{.}\)</p></li>
+</ul></article><article class="exercise exercise-like" id="exercise-24"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Even Subsets and Odd Subsets.</span>
+</h6>
+<p id="p-130">For any positive integer \(n\text{,}\) we can partition the power set \(\cP([n])\) into two sets: the set \(\cE_n\) of even-sized subsets and the set \(\cO_n\) of odd-sized subsets.</p>
+<p id="p-131">In this problem, you will show that \(| \cE_n | = | \cO_n | \) via a bijective proof.  Since \(| \cP([n]) = 2^n\text{,}\)  this means that \(| \cE_n | = | \cO_n | = 2^{n-1}\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-65">
+<p id="p-132">We start with a proof that only works when \(n=2k+1\) is odd.</p>
+<ol class="lower-roman">
+<li id="li-66"><p id="p-133">List all the subsets of \([3]\text{.}\)</p></li>
+<li id="li-67"><p id="p-134">Pair each set with its complement. What do you notice?</p></li>
+<li id="li-68"><p id="p-135">Now give a bijective proof that  when \(n\) is odd,  \(| \cE_n | = | \cO_n | \text{.}\)</p></li>
+</ol>
+</li>
+<li id="li-69">
+<p id="p-136">Now we consider the case where \(n\) is even.</p>
+<ol class="lower-roman">
+<li id="li-70"><p id="p-137">List all the subsets of \([4]\text{.}\)</p></li>
+<li id="li-71"><p id="p-138">Pair each set with its complement.  Why doesn't this lead to a proof of the result?</p></li>
+</ol>
+</li>
+<li id="li-72">
+<p id="p-139">We now give a bijective proof that works for both even and odd \(n\text{.}\) Consider the following mapping \(f : \cE_n \rightarrow \cO_n\text{.}\) For \(S \in \cP([n])\text{,}\) we define</p>
+<div class="displaymath">
+\begin{equation*}
+f(S) = \left\{
+\begin{array}{cl}
+S \backslash \{ 1 \} &amp; \mbox{if } 1 \in S, \\
+S \cup \{ 1 \} &amp; \mbox{if } 1 \notin S.
+\end{array}
+\right.
+\end{equation*}
+</div>
+<ol class="lower-roman">
+<li id="li-73"><p id="p-140">Explain why \(f: \cE_n \rightarrow \cO_n\) is well defined, meaning that an even set is always mapped to an odd set.</p></li>
+<li id="li-74"><p id="p-141">Now prove that \(f\) is a bijection.</p></li>
+</ol>
+</li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>

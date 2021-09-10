@@ -81,6 +81,10 @@
 \def\P{{\mathbb{P}}}
 \def\E{{\mathbb{E}}}
 
+\def\cP{\mathcal P}
+\def\cE{\mathcal E}
+\def\cO{\mathcal O}
+
 
 \def\cA{{\overline{A}}}
 
@@ -105,10 +109,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-genfun.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="bijective-proof.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-genfun.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-genfun.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="bijective-proof.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-genfun.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -118,43 +122,44 @@
 <li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
 <li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
 <li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
-<li class="link active"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">4</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link"><a href="bijective-proof.html" data-scroll="bijective-proof"><span class="codenumber">4</span> <span class="title">Bijective Proof</span></a></li>
+<li class="link active"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">5</span> <span class="title">Counting Exercises</span></a></li>
 <li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
-<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">5</span> <span class="title">Exercises</span></a></li>
+<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">6</span> <span class="title">Generating Function Exercises</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="counting-exercise"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">4</span> <span class="title">Counting Exercises</span>
+<span class="type">Chapter</span> <span class="codenumber">5</span> <span class="title">Counting Exercises</span>
 </h2>
-<section class="introduction" id="introduction-4"><p id="p-120"></p></section><section class="exercises" id="exercises-4"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-5"><p id="p-142"></p></section><section class="exercises" id="exercises-5"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-21"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-121">Consider an integer lattice \(L\) of points given by</p>
+<article class="exercise exercise-like" id="exercise-25"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-143">Consider an integer lattice \(L\) of points given by</p>
 <div class="displaymath">
 \begin{equation*}
 L = \{ (x,y) : 1 \leq x \leq 4 \mbox{ and }  1 \leq y \leq 82 \}.
 \end{equation*}
 </div>
 <p class="continuation">Show that no matter how we color the points using three colors (red, blue, yellow), there is a "monochromatic rectangle" whose corner points all get the same color.</p>
-<p id="p-122">(Hint: you have to use the Pigeonhole Principle twice. First, look at a single row. What can you conclude about the colors? Next, look at the set \(S\) of all rows in \(L\) (with their colorings). What can you conclude about the set \(S\text{?}\))</p></article><article class="exercise exercise-like" id="exercise-22"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-123">Show that if 51 integers are chosen from \([100] = \{1,2, \ldots, 100 \}\) then there must be two of them with the property that one is divisible by the other.</p>
-<p id="p-124">(Hint: Write each \(a \in [100]\) as \(a=2^k b\) where \(k \geq 0\) and \(b\) is an odd number. You are now ready to use the Pigeonhole Principle.)</p></article><article class="exercise exercise-like" id="exercise-23"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-125">Suppose that f: \(A \rightarrow B\)  and \(g: B \rightarrow C\) are functions.</p>
+<p id="p-144">(Hint: you have to use the Pigeonhole Principle twice. First, look at a single row. What can you conclude about the colors? Next, look at the set \(S\) of all rows in \(L\) (with their colorings). What can you conclude about the set \(S\text{?}\))</p></article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-145">Show that if 51 integers are chosen from \([100] = \{1,2, \ldots, 100 \}\) then there must be two of them with the property that one is divisible by the other.</p>
+<p id="p-146">(Hint: Write each \(a \in [100]\) as \(a=2^k b\) where \(k \geq 0\) and \(b\) is an odd number. You are now ready to use the Pigeonhole Principle.)</p></article><article class="exercise exercise-like" id="exercise-27"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-147">Suppose that f: \(A \rightarrow B\)  and \(g: B \rightarrow C\) are functions.</p>
 <ol class="lower-alpha">
-<li id="li-59"><p id="p-126">If \(g \circ f\)  is injective and \(f\) is surjective, then show that \(g\) is injective.</p></li>
-<li id="li-60"><p id="p-127">If \(g \circ f\) is surjective and \(g\) is injective, then show that \(f\) is surjective.</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-24"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-128">Let \(k \leq n\) be positive integers. Find a bijection \(f : A \rightarrow B\) between the following sets.</p>
+<li id="li-75"><p id="p-148">If \(g \circ f\)  is injective and \(f\) is surjective, then show that \(g\) is injective.</p></li>
+<li id="li-76"><p id="p-149">If \(g \circ f\) is surjective and \(g\) is injective, then show that \(f\) is surjective.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-150">Let \(k \leq n\) be positive integers. Find a bijection \(f : A \rightarrow B\) between the following sets.</p>
 <ul class="disc">
-<li id="li-61"><p id="p-129">\(A =\) all words of length n using the alphabet \(\{0,1,2,...,k\}\)</p></li>
-<li id="li-62"><p id="p-130">\(B =\) all lists \((S_1, S_2, \cdots , S_k)\) where each \(S_i\) is a subset of \([n]\) and \(S_1 \subset S_2 \subset \cdots  \subset S_k\text{.}\) And remember: \(X \subset Y\) means that  \(X \subseteq Y\text{.}\)</p></li>
+<li id="li-77"><p id="p-151">\(A =\) all words of length n using the alphabet \(\{0,1,2,...,k\}\)</p></li>
+<li id="li-78"><p id="p-152">\(B =\) all lists \((S_1, S_2, \cdots , S_k)\) where each \(S_i\) is a subset of \([n]\) and \(S_1 \subset S_2 \subset \cdots  \subset S_k\text{.}\) And remember: \(X \subset Y\) means that  \(X \subseteq Y\text{.}\)</p></li>
 </ul>
-<p class="continuation">Justify why your function is a bijection.</p></article><article class="exercise exercise-like" id="exercise-25"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-131">We have defined the size \(|A|\) of a set to be the number of elements in \(A\text{.}\) In fact, what we are saying is that \(|A| = m\) if any only if there is a bijection \(f: A \rightarrow [m]\text{.}\) Let \(A\) and \(B\) be disjoint sets (so that \(|A \cap B| = \emptyset\)). Suppose that \(|A|=m\) and \(|B| = n\text{,}\) and that \(f: A \rightarrow [m]\) is a bijection and that \(g: B \rightarrow [n]\) is a bijection.</p>
+<p class="continuation">Justify why your function is a bijection.</p></article><article class="exercise exercise-like" id="exercise-29"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-153">We have defined the size \(|A|\) of a set to be the number of elements in \(A\text{.}\) In fact, what we are saying is that \(|A| = m\) if any only if there is a bijection \(f: A \rightarrow [m]\text{.}\) Let \(A\) and \(B\) be disjoint sets (so that \(|A \cap B| = \emptyset\)). Suppose that \(|A|=m\) and \(|B| = n\text{,}\) and that \(f: A \rightarrow [m]\) is a bijection and that \(g: B \rightarrow [n]\) is a bijection.</p>
 <ol class="lower-alpha">
-<li id="li-63">
-<p id="p-132">Give a <em class="emphasis">bijective proof</em> of the addition rule</p>
+<li id="li-79">
+<p id="p-154">Give a <em class="emphasis">bijective proof</em> of the addition rule</p>
 <div class="displaymath">
 \begin{equation*}
 |A \cup B| = |A| + |B|.
@@ -162,8 +167,8 @@ L = \{ (x,y) : 1 \leq x \leq 4 \mbox{ and }  1 \leq y \leq 82 \}.
 </div>
 <p class="continuation">In other words, find a bijective function \(h : A \cup B \rightarrow [m+n]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
 </li>
-<li id="li-64">
-<p id="p-133">Give a <em class="emphasis">bijective proof</em> of the product rule</p>
+<li id="li-80">
+<p id="p-155">Give a <em class="emphasis">bijective proof</em> of the product rule</p>
 <div class="displaymath">
 \begin{equation*}
 |A \times B| = |A| \cdot |B|.
@@ -171,8 +176,8 @@ L = \{ (x,y) : 1 \leq x \leq 4 \mbox{ and }  1 \leq y \leq 82 \}.
 </div>
 <p class="continuation">In other words, find a bijective function \(h : A \times B \rightarrow [mn]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-134">Let \(R(n,k)\) be the number of ways to partition the set \([n]\) into \(k\) parts so that each part contains only even numbers or only odd numbers. For example, we have \(R(1,1)=1\text{,}\) \(R(2,1)=0\) and \(R(2,2)=1\text{.}\) For \(n \geq 3\) and \(k \geq 2\text{,}\) find a formula for \(R(n,k)\) in terms of Stirling numbers of the second kind.</p></article></section></section></div></main>
+</ol></article><article class="exercise exercise-like" id="exercise-30"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-156">Let \(R(n,k)\) be the number of ways to partition the set \([n]\) into \(k\) parts so that each part contains only even numbers or only odd numbers. For example, we have \(R(1,1)=1\text{,}\) \(R(2,1)=0\) and \(R(2,2)=1\text{.}\) For \(n \geq 3\) and \(k \geq 2\text{,}\) find a formula for \(R(n,k)\) in terms of Stirling numbers of the second kind.</p></article></section></section></div></main>
 </div>
 </body>
 </html>

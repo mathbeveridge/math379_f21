@@ -60,6 +60,7 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./a01-basic-counting.xml" />                 
             <xi:include href="./a02-pigeonhole.xml" /> 
             <xi:include href="./a03-functions.xml" />  
+            <xi:include href="./a04-bijective-proof.xml" />  
             <xi:include href="./ex01-counting.xml" />                       
 
     </part>

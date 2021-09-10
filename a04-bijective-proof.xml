@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="bijective-proof" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Bijective Proof</title>
+	<introduction>
+		<p>
+
+
+
+
+
+
+
+
+Each  problem below defines two finite sets, <m>X</m> and <m>Y</m>.  Create a bijective proof to show that <m>|X|=|Y|</m>. You must
+define a bijection <m>f : X \rightarrow Y</m> between the two sets, and then either (1) show <m>f</m> is both injective and surjective, or (2) define a function <m>g: Y \rightarrow X</m> and show that <m>f</m> and <m>g</m> are inverse functions.
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Binary Words and Subsets</title>
+			<idx><h>Binary Words and Subsets</h></idx>
+			<statement>
+				<p>
+For a given positive integer <m>n</m>
+		<ul>
+			<li>
+			<p>
+  Let <m>X = \{ 0 , 1 \}^n</m> be the collection of binary sequences of length <m>n</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Let <m>Y = {\mathcal{P}}([n])</m> be the power set of <m>[n]</m>, which is the set of all subsets of <m>[n]</m>.
+			</p>
+			</li>
+		</ul>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title><m>k</m>-sets and <m>(n-k)</m>-sets</title>
+			<idx><h><m>k</m>-sets and <m>(n-k)</m>-sets</h></idx>
+			<statement>
+				<p>
+For given positive integers <m>0 \leq k \leq n</m>,
+		<ul>
+			<li>
+			<p>
+  Let <m>X</m> be the collection of <m>k</m>-subsets of <m>[n]</m>, and
+			</p>
+			</li>
+			<li>
+			<p>
+ Let <m>Y</m> be the collection of <m>(n-k)</m>-subsets.
+			</p>
+			</li>
+		</ul>
+(The <m>k</m>-subsets of <m>[n]</m> are all the subsets of size <m>k</m>).
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Lattice Paths and Subsets</title>
+			<idx><h>Lattice Paths and Subsets</h></idx>
+			<statement>
+				<p>
+Let <m>r,s</m> be nonnegative integers.
+		<ul>
+			<li>
+			<p>
+ Let <m>X</m> be the set of lattice paths from <m>(0,0)</m> to <m>(r,s)</m>. These paths start at <m>(0,0)</m> and join integer points via steps of unit length, moving rightward or upward.
+			</p>
+			</li>
+			<li>
+			<p>
+ Let <m>Y</m> be the set of all <m>r</m>-subsets of <m>[r+s]</m>.
+			</p>
+			</li>
+		</ul>
+
+
+			<image width="50%" xml:id="fig-img-bijective-proof0">
+				<latex-image>
+\begin{tikzpicture}[scale=.5]
+
+\foreach \x in {0,1,2,3,4,5,6}
+{
+\draw (\x,0) -- (\x, 4);
+}
+\foreach \y in {0,1,2,3,4}
+{
+\draw (0,\y) -- (6,\y);
+}
+
+\draw[ultra thick] (0,0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (4,2) -- (4,3) -- (5,3) -- (5,4) -- (6,4);
+
+\node[left] at (0,0) {<m>(0,0)</m>};
+\node[right] at (6,4) {<m>(6,4)</m>};
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Even Subsets and Odd Subsets</title>
+			<idx><h>Even Subsets and Odd Subsets</h></idx>
+			<statement>
+				<p>
+For any positive integer <m>n</m>, we can partition the power set <m>\cP([n])</m> into two sets: the set <m>\cE_n</m> of even-sized subsets and the set <m>\cO_n</m> of odd-sized subsets.
+
+			</p><p>
+
+In this problem, you will show that <m>| \cE_n | = | \cO_n | </m> via a bijective proof.  Since <m>| \cP([n]) = 2^n</m>,  this means that <m>| \cE_n | = | \cO_n | = 2^{n-1}</m>.
+
+			<ol>
+				<li>
+					<p>
+ We start with a proof that only works when <m>n=2k+1</m> is odd.
+
+			<ol>
+				<li>
+					<p>
+ List all the subsets of <m>[3]</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Pair each set with its complement. What do you notice?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Now give a bijective proof that  when <m>n</m> is odd,  <m>| \cE_n | = | \cO_n | </m>.
+
+
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Now we consider the case where <m>n</m> is even.
+
+			<ol>
+				<li>
+					<p>
+ List all the subsets of <m>[4]</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Pair each set with its complement.  Why doesn't this lead to a proof of the result?
+
+
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ We now give a bijective proof that works for both even and odd <m>n</m>. Consider the following mapping <m>f : \cE_n \rightarrow \cO_n</m>. For <m>S \in \cP([n])</m>, we define
+<me>
+f(S) = \left\{
+\begin{array}{cl}
+S \backslash \{ 1 \} &amp; \mbox{if } 1 \in S, \\
+S \cup \{ 1 \} &amp; \mbox{if } 1 \notin S.
+\end{array}
+\right.
+</me>
+			<ol>
+				<li>
+					<p>
+ Explain why <m>f: \cE_n \rightarrow \cO_n</m> is well defined, meaning that an even set is always mapped to an odd set.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Now prove that <m>f</m> is a bijection.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+					</p>
+				</li>
+			</ol>
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+
+</chapter>
