@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="counting-exercise" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Counting Exercises</title>
+	<introduction>
+		<p>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Exercises</title>
+		<exercise>
+			<statement>
+				<p>
+ Consider an integer lattice <m>L</m> of points given by
+<me>
+L = \{ (x,y) : 1 \leq x \leq 4 \mbox{ and }  1 \leq y \leq 82 \}.
+</me>
+Show that no matter how we color the points using three colors (red, blue, yellow), there is a "monochromatic rectangle" whose corner points all get the same color.
+
+			</p><p>
+
+(Hint: you have to use the Pigeonhole Principle twice. First, look at a single row. What can you conclude about the colors? Next, look at the set <m>S</m> of all rows in <m>L</m> (with their colorings). What can you conclude about the set <m>S</m>?)
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Show that if 51 integers are chosen from <m>[100] = \{1,2, \ldots, 100 \}</m> then there must be two of them with the property that one is divisible by the other.
+
+			</p><p>
+
+(Hint: Write each <m>a \in [100]</m> as <m>a=2^k b</m> where <m>k \geq 0</m> and <m>b</m> is an odd number. You are now ready to use the Pigeonhole Principle.)
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Suppose that f: <m>A \rightarrow B</m>  and <m>g: B \rightarrow C</m> are functions.
+
+			<ol>
+				<li>
+					<p>
+ If <m>g \circ f</m>  is injective and <m>f</m> is surjective, then show that <m>g</m> is injective.
+					</p>
+				</li>
+				<li>
+					<p>
+ If <m>g \circ f</m> is surjective and <m>g</m> is injective, then show that <m>f</m> is surjective.
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+  Let <m>k \leq n</m> be positive integers. Find a bijection <m>f : A \rightarrow B</m> between the following sets.
+		<ul>
+			<li>
+			<p>
+ <m>A =</m> all words of length n using the alphabet <m>\{0,1,2,...,k\}</m>
+
+			</p>
+			</li>
+			<li>
+			<p>
+ <m>B =</m> all lists <m>(S_1, S_2, \cdots , S_k)</m> where each <m>S_i</m> is a subset of <m>[n]</m> and
+<m>S_1 \subset S_2 \subset \cdots  \subset S_k</m>. And remember: <m>X \subset Y</m> means that  <m>X \subseteq Y</m>.
+			</p>
+			</li>
+		</ul>
+Justify why your function is a bijection.
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ We have defined the size <m>|A|</m> of a set to be the number of elements in <m>A</m>. In fact, what we are saying is that <m>|A| = m</m> if any only if there is a bijection <m>f: A \rightarrow [m]</m>.
+
+Let <m>A</m> and <m>B</m> be disjoint sets (so that <m>|A \cap B| = \emptyset</m>). Suppose that <m>|A|=m</m> and <m>|B| = n</m>, and that <m>f: A \rightarrow [m]</m> is a bijection and that <m>g: B \rightarrow [n]</m> is a bijection.
+
+			<ol>
+				<li>
+					<p>
+ Give a <em>bijective proof</em> of the addition rule
+<me>
+|A \cup B| = |A| + |B|.
+</me>
+In other words, find a bijective function <m>h : A \cup B \rightarrow [m+n]</m>. You can simply construct the function. You do not need to prove it is a bijection.
+					</p>
+				</li>
+				<li>
+					<p>
+ Give a <em>bijective proof</em> of the product rule
+<me>
+|A \times B| = |A| \cdot |B|.
+</me>
+In other words, find a bijective function <m>h : A \times B \rightarrow [mn]</m>. You can simply construct the function. You do not need to prove it is a bijection.
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Let <m>R(n,k)</m> be the number of ways to partition the set <m>[n]</m> into <m>k</m> parts so that each part contains only even numbers or only odd numbers. For example, we have <m>R(1,1)=1</m>, <m>R(2,1)=0</m> and <m>R(2,2)=1</m>. For <m>n \geq 3</m> and <m>k \geq 2</m>, find a formula for <m>R(n,k)</m> in terms of Stirling numbers of the second kind.
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>

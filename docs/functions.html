@@ -105,10 +105,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="pigeonhole.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="pigeonhole.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="counting-exercise.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="pigeonhole.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="pigeonhole.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="counting-exercise.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -118,30 +118,33 @@
 <li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
 <li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
 <li class="link active"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">4</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">5</span> <span class="title">Exercises</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="functions"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">3</span> <span class="title">Functions</span>
 </h2>
-<section class="introduction" id="introduction-3"><p id="p-91">Let \(X,Y\) be finite sets, perhaps of different sizes. Let \(f:X \rightarrow Y\text{.}\) We have the following definitions</p>
-<p id="p-92"><em class="emphasis">Injective (One-To-One)</em></p>
-<ul class="disc"><li id="li-45"><p id="p-93">The function \(f: X \rightarrow Y\) is <em class="emphasis">injective</em> if whenever \(f(x_1) = f(x_2)\text{,}\) then \(x_1 = x_2\text{.}\)</p></li></ul>
+<section class="introduction" id="introduction-3"><p id="p-99">Let \(X,Y\) be finite sets, perhaps of different sizes. Let \(f:X \rightarrow Y\text{.}\) We have the following definitions</p>
+<p id="p-100"><em class="emphasis">Injective (One-To-One)</em></p>
+<ul class="disc"><li id="li-45"><p id="p-101">The function \(f: X \rightarrow Y\) is <em class="emphasis">injective</em> if whenever \(f(x_1) = f(x_2)\text{,}\) then \(x_1 = x_2\text{.}\)</p></li></ul>
 <p class="continuation">An equivalent formulation is the contrapositive of this statement:</p>
-<ul class="disc"><li id="li-46"><p id="p-94">The function \(f: X \rightarrow Y\) is <em class="emphasis">injective (one-to-one)</em> if for all \(x_1 \neq x_2\text{,}\) we have \(f(x_1) \neq f(x_2)\text{.}\)</p></li></ul>
+<ul class="disc"><li id="li-46"><p id="p-102">The function \(f: X \rightarrow Y\) is <em class="emphasis">injective (one-to-one)</em> if for all \(x_1 \neq x_2\text{,}\) we have \(f(x_1) \neq f(x_2)\text{.}\)</p></li></ul>
 <p class="continuation"><em class="emphasis">Surjective (Onto)</em></p>
-<ul class="disc"><li id="li-47"><p id="p-95">The function \(f: X \rightarrow Y\) is <em class="emphasis">surjective (onto)</em> if for every \(y \in Y\text{,}\) there exists some \(x \in X\) such that \(f(x)=y\text{.}\)</p></li></ul>
+<ul class="disc"><li id="li-47"><p id="p-103">The function \(f: X \rightarrow Y\) is <em class="emphasis">surjective (onto)</em> if for every \(y \in Y\text{,}\) there exists some \(x \in X\) such that \(f(x)=y\text{.}\)</p></li></ul>
 <p class="continuation"><em class="emphasis">Bijective</em></p>
-<ul class="disc"><li id="li-48"><p id="p-96">The function \(f: X \rightarrow Y\) is <em class="emphasis">bijective</em> if it is both injective and surjective.</p></li></ul></section><section class="exercises" id="exercises-3"><h3 class="heading hide-type">
+<ul class="disc"><li id="li-48"><p id="p-104">The function \(f: X \rightarrow Y\) is <em class="emphasis">bijective</em> if it is both injective and surjective.</p></li></ul></section><section class="exercises" id="exercises-3"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-18"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Not Injective and Not Surjective.</span>
 </h6>
-<p id="p-97">By negating the statements above, write down definitions for "not injective" and "not surjective."</p></article><article class="exercise exercise-like" id="exercise-19"><h6 class="heading">
+<p id="p-105">By negating the statements above, write down definitions for "not injective" and "not surjective."</p></article><article class="exercise exercise-like" id="exercise-19"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Example Functions.</span>
 </h6>
-<p id="p-98">In each of the following problems, give an example of a function \(f: [n] \rightarrow [m]\) of the specified type. <em class="emphasis">You get to pick the values for \(n\) and \(m\text{.}\)</em> Describe your function by using a picture.</p>
-<p id="p-99">Then decide if there is a required relationship between \(n\) and \(m\text{,}\) the sizes of the domain and the codomain. Your options are:</p>
+<p id="p-106">In each of the following problems, give an example of a function \(f: [n] \rightarrow [m]\) of the specified type. <em class="emphasis">You get to pick the values for \(n\) and \(m\text{.}\)</em> Describe your function by using a picture.</p>
+<p id="p-107">Then decide if there is a required relationship between \(n\) and \(m\text{,}\) the sizes of the domain and the codomain. Your options are:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{cccc}
@@ -150,25 +153,25 @@ n &gt; m, &amp; n = m, &amp;  n &lt; m, &amp; \mbox{none}.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-49"><p id="p-100">\(f: [n] \rightarrow [m]\) is injective (one-to-one) but NOT surjective (onto)</p></li>
-<li id="li-50"><p id="p-101">\(f: [n] \rightarrow [m]\) is injective (one-to-one) and surjective (onto)</p></li>
-<li id="li-51"><p id="p-102">\(f: [n] \rightarrow [m]\) is NOT injective (one-to-one) but is surjective (onto)</p></li>
-<li id="li-52"><p id="p-103">\(f: [n] \rightarrow [m]\) is NOT injective (one-to-one) and NOT surjective (onto)</p></li>
+<li id="li-49"><p id="p-108">\(f: [n] \rightarrow [m]\) is injective (one-to-one) but NOT surjective (onto)</p></li>
+<li id="li-50"><p id="p-109">\(f: [n] \rightarrow [m]\) is injective (one-to-one) and surjective (onto)</p></li>
+<li id="li-51"><p id="p-110">\(f: [n] \rightarrow [m]\) is NOT injective (one-to-one) but is surjective (onto)</p></li>
+<li id="li-52"><p id="p-111">\(f: [n] \rightarrow [m]\) is NOT injective (one-to-one) and NOT surjective (onto)</p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-20"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Prove or Disprove.</span>
 </h6>
-<p id="p-104">Let \(X,Y,Z\) be finite sets, perhaps of different cardinalities. Let \(f:X \rightarrow Y\) and \(g:Y \rightarrow Z\text{.}\)</p>
-<p id="p-105">Decide whether each of the following statements is <em class="emphasis">true</em> or <em class="emphasis">false</em>.</p>
+<p id="p-112">Let \(X,Y,Z\) be finite sets, perhaps of different cardinalities. Let \(f:X \rightarrow Y\) and \(g:Y \rightarrow Z\text{.}\)</p>
+<p id="p-113">Decide whether each of the following statements is <em class="emphasis">true</em> or <em class="emphasis">false</em>.</p>
 <ul class="disc">
-<li id="li-53"><p id="p-106">If the statement is <em class="emphasis">true</em>, provide a proof. (Pro tip: It might be easier to prove the contrapositive.)</p></li>
-<li id="li-54"><p id="p-107">If the statement is <em class="emphasis">false</em>, provide a counterexample.</p></li>
+<li id="li-53"><p id="p-114">If the statement is <em class="emphasis">true</em>, provide a proof. (Pro tip: It might be easier to prove the contrapositive.)</p></li>
+<li id="li-54"><p id="p-115">If the statement is <em class="emphasis">false</em>, provide a counterexample.</p></li>
 </ul>
 <p class="continuation">Here are the statements:</p>
 <ol class="lower-alpha">
-<li id="li-55"><p id="p-108">If \(g \circ f\) is injective then \(f\) is injective.</p></li>
-<li id="li-56"><p id="p-109">If \(g \circ f\) is injective then \(g\) is injective.</p></li>
-<li id="li-57"><p id="p-110">If \(g \circ f\) is surjective then \(f\) is surjective.</p></li>
-<li id="li-58"><p id="p-111">If \(g \circ f\) is surjective then \(g\) is surjective.</p></li>
+<li id="li-55"><p id="p-116">If \(g \circ f\) is injective then \(f\) is injective.</p></li>
+<li id="li-56"><p id="p-117">If \(g \circ f\) is injective then \(g\) is injective.</p></li>
+<li id="li-57"><p id="p-118">If \(g \circ f\) is surjective then \(f\) is surjective.</p></li>
+<li id="li-58"><p id="p-119">If \(g \circ f\) is surjective then \(g\) is surjective.</p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
