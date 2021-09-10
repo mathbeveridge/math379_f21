@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<chapter xml:id="counting-exercise" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="genfun-exercise" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Exercises</title>
 	<introduction>
 		<p>
@@ -115,7 +115,7 @@ Table[myseq[k], {k,0,5}]
 				<li>
 					<p>
  American Football is played on a rectangular field between two teams. The field is 100 yards long, with a ten yard end zone at each end, each of which has a set of goalposts. The game is played with a single ball in the shape of a prolate spheroid.
-			<image width="60%" xml:id="fig-img-counting-exercise0" source="images/football.jpg" />
+			<image width="60%" xml:id="fig-img-genfun-exercise0" source="images/football.jpg" />
 The offensive team tries to advance the ball down the field. While on offense (in possession of the ball), a team can score in four ways
 		<ul>
 			<li>
@@ -159,7 +159,7 @@ Use the product principle for generating functions to find a concise formula for
 				<li>
 					<p>
  Quidditch is played on an oval pitch, five hundred feet long. At each end, there are three hooped goal posts of different heights, surrounded by a scoring area. The game is played with four bewitched flying spherical balls: two Bludgers, one Quaffle and one Snitch.
-			<image width="70%" xml:id="fig-img-counting-exercise1" source="images/quidditch.jpg" />
+			<image width="70%" xml:id="fig-img-genfun-exercise1" source="images/quidditch.jpg" />
 Two teams of wizards on flying broomsticks zip around the pitch trying to score points. This can be done in two ways.
 		<ul>
 			<li>
@@ -251,7 +251,7 @@ Here is an example of a coin pyramid with 10 coins in the first row:
 
 
 
-			<image width="50%" xml:id="fig-img-counting-exercise2">
+			<image width="50%" xml:id="fig-img-genfun-exercise2">
 				<latex-image>
 \begin{tikzpicture}[scale=.35]
 \foreach \i in {1,2,3,4,5,6,7,8,9,10}
