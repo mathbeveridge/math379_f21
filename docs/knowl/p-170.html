@@ -12,13 +12,21 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Before:</em> Calculate the first few \(a_n\) using the recurrence. Mathematica is a great tool for this! For example, the following code will print out the first terms of the sequence \(a_0 = 3\text{,}\) \(a_1 = 5\text{,}\) \(a_n = 2a_{n-1} + a_{n-2} + 4\text{.}\)</p>
-<pre class="code-display tex2jax_ignore">
-myseq[0] = 3
-myseq[1] = 5
-myseq[n_] := 2 myseq[n-1] + myseq[n-2] + 4
-Table[myseq[k], {k,0,5}]
-</pre>
-<span class="incontext"><a href="genfun-exercise.html#p-170">in-context</a></span>
+<p>We now give a bijective proof that works for both even and odd \(n\text{.}\) Consider the following mapping \(f : \cE_n \rightarrow \cO_n\text{.}\) For \(S \in \cP([n])\text{,}\) we define</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+f(S) = \left\{
+\begin{array}{cl}
+S \backslash \{ 1 \} &amp; \mbox{if } 1 \in S, \\
+S \cup \{ 1 \} &amp; \mbox{if } 1 \notin S.
+\end{array}
+\right.
+\end{equation*}
+</div>
+<ol class="lower-roman">
+<li><p>Explain why \(f: \cE_n \rightarrow \cO_n\) is well defined, meaning that an even set is always mapped to an odd set. <a class="solution-knowl original" data-knowl="./knowl/solution-50-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>Now prove that \(f\) is a bijection. <a class="solution-knowl original" data-knowl="./knowl/solution-51-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+</ol>
+<span class="incontext"><a href="exercises-4.html#p-170">in-context</a></span>
 </body>
 </html>

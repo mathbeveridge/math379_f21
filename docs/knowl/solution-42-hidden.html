@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>Define the mapping \(f: X \rightarrow Y\) as follows. For a bit string \(x_1 x_2 \cdots x_n\) where each \(x_i \in \{ 0,1 \}\text{,}\) we define</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+f(x_1 x_2 \cdots x_n) = \{ k \mid x_k = 1 \}.
+\end{equation*}
+</div>
+<p class="continuation">This is a function that selects element \(k\) if and only if \(x_k=1\text{.}\)</p>
+<ul class="disc">
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Well defined.</em> The output of function \(f\) is a subset of \([n]\text{.}\)</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Injective.</em> Let \(x = x_1 x_2 \cdots x_n\) and \(w = w_1 w_2 \cdots w_n\)  be distinct binary words. This means that there is some \(k\) such that \(x_k \neq w_k\text{.}\) Without loss of generality, we can assume that \(x_k=0\) and \(w_k=1\text{.}\) Let \(A = f(x)\) and \(B = f(w)\text{.}\) Then \(k \notin A\) while \(k \in B\text{.}\) So \(A \neq B\text{.}\)</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Surjective.</em> Given a subset \(S \subset [ n]\text{,}\) define the word \(x=x_1 x_2 \cdots x_n\) where \(x_k = 1\) if and only if \(k \in S\text{.}\) Then \(f(x)=S\text{.}\)</p></li>
+</ul>
+<p class="continuation">Instead of proving injective and surjective, we can show that \(f\) is invertible by defining its inverse function. Here is what that would look like. Define \(g: Y \rightarrow X\) as</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+g(S) = x_1 x_2 \cdots x_n  \mbox{where}  x_k = \left\{ \begin{array}{cc} 1 &amp; \mbox{if } k \in S, \\  0 &amp; \mbox{if } k \notin S. \\    \end{array} \right.
+\end{equation*}
+</div>
+<p class="continuation">We have \(g \circ f(x) = x\) for every binary word \(x\text{,}\) and \(f \circ g(S) = S\) for every subset \(S\text{.}\)</p>
+</div></body>
+</html>
