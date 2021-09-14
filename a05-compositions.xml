@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="compositions" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Multisets and Compositions</title>
+	<introduction>
+		<p>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Compositions of <m>n</m></title>
+			<idx><h>Compositions of <m>n</m></h></idx>
+			<statement>
+				<p>
+Let <m>n</m> be a positive integer. A <em>composition</em> of <m>n</m> into <m>k</m> parts is an ordered sequence of <em> positive</em> numbers <m>a_1, a_2, \ldots , a_k</m> such that
+<me>
+\sum_{i=1}^{k} a_i = n.
+</me>
+
+
+
+			<ol>
+
+				<li>
+					<p>
+ There are 3 distinct compositions of 4 into 3 parts. List them all.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Which "balls in boxes" problem is equivalent to the composition of <m>n</m> into <m>k</m> parts? Explain.
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the formula for the number of compositions of <m>n</m> into <m>k</m> parts?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the formula for the number of compositions of <m>n</m> into any number of parts? Find a simple closed formula for this number.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Weak Compositions of <m>n</m></title>
+			<idx><h>Weak Compositions of <m>n</m></h></idx>
+			<statement>
+				<p>
+Let <m>n</m> be a positive integer. A <em>weak composition</em> of <m>n</m> into <m>k</m> parts is an ordered sequence of <em> non-negative</em> numbers <m>a_1, a_2, \ldots , a_k</m> such that
+<me>
+\sum_{i=1}^{k} a_i = n.
+</me>
+
+
+
+
+			<ol>
+
+				<li>
+					<p>
+ There are 15 distinct weak compositions of 4 into 3 parts. List them all.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Which "balls in boxes" problem is equivalent to the weak composition of <m>n</m> into <m>k</m> parts? Explain.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the formula for the number of weak compositions of <m>n</m> into <m>k</m> parts?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Explain why  the number of weak compositions of <m>n</m> into any number of parts is infinite.
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+</chapter>
