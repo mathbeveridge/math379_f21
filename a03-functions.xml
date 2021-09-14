@@ -344,16 +344,16 @@ Let <m>X,Y,Z</m> be finite sets, perhaps of different cardinalities. Let <m>f:X 
 
 			</p><p>
 
-Decide whether each of the following statements is <em> true</em> or <em> false</em>.
+Decide whether each of the following statements is <em> True</em> or <em> False</em>.
 		<ul>
 			<li>
 			<p>
- If the statement is <em> true</em>, provide a proof. (Pro tip: It might be easier to prove the contrapositive.)
+ If the statement is <em> True</em>, provide a proof. (Pro tip: It might be easier to prove the contrapositive.)
 			</p>
 			</li>
 			<li>
 			<p>
- If the statement is <em> false</em>, provide a counterexample.
+ If the statement is <em> False</em>, provide a counterexample.
 			</p>
 			</li>
 		</ul>
@@ -368,7 +368,7 @@ Here are the statements:
 
 <solution>
 <p>
-<em> true</em>. We prove the contrapositive: if <m>f</m> is not injective then <m>g \circ f</m> is not injective.
+<em> True</em>. We prove the contrapositive: if <m>f</m> is not injective then <m>g \circ f</m> is not injective.
 		<ul>
 			<li>
 			<p>
@@ -395,7 +395,7 @@ In other words, <m>g \circ f</m> is not injective.
 
 <solution>
 <p>
-<em> false</em>: here is a counterexample
+<em> False</em>: here is a counterexample
 
 
 
@@ -454,7 +454,7 @@ In other words, <m>g \circ f</m> is not injective.
 
 <solution>
 <p>
-<em> false</em>: the same counterexample as in the previous problem
+<em> False</em>: the same counterexample as in the previous problem
 </p>
 </solution>
 
@@ -466,7 +466,7 @@ In other words, <m>g \circ f</m> is not injective.
 
 <solution>
 <p>
-<em> true</em>. We prove the contrapositive: if <m>g</m> is not surjective then <m>g \circ f</m> is not surjective.
+<em> True</em>. We prove the contrapositive: if <m>g</m> is not surjective then <m>g \circ f</m> is not surjective.
 		<ul>
 			<li>
 			<p>

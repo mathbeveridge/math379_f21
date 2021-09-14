@@ -130,7 +130,7 @@ element <m>k \in T</m> such that <m>k \notin S</m>. The names of the sets don't 
 		</ul>
 
 
-Alternatively, we can prove that <m>f</m> is invertible.In fact, the function <m>f</m> is its own inverse function!
+Alternatively, we can prove that <m>f</m> is invertible. In fact, the function <m>f</m> is its own inverse function!
 <me>
 f \circ f(S) = f(\overline{S}) =S.
 </me>
@@ -193,7 +193,9 @@ Here is a lattice path from <m>(0,0)</m> to <m>(6,4)</m>.
 <p>
 
 Let <m>L</m> be a lattice path from <m>(0,0)</m> to <m>(r,s)</m>. Define
-<m></m>f(L) = \{ k \mid  \mbox{the }  k\mbox{th step is a rightward step} \}.<m></m>
+<me>
+f(L) = \{ k \mid  \mbox{the }  k\mbox{th step is a rightward step} \}.
+</me>
 There are <m>r</m> such steps, <m>f(L)</m> is an <m>r</m>-set chosen from <m>[r+s]</m>.
 The inverse of <m>f</m> is the function  <m>g: Y \rightarrow X</m> which takes an <m>r</m>-set  <m>S</m> to the lattice path <m>L</m> whose
 rightward steps occur at the indices contained in <m>S</m>. I leave the details to you.

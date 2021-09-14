@@ -184,7 +184,7 @@ f(S) = \overline{S}
 <li id="li-73"><p id="p-148">The function is one-to-one. Suppose that \(S \neq T\text{.}\) This means that either (1)  there is an element \(k \in S\) such that \(k \notin T\text{,}\) or there is an element \(k \in T\) such that \(k \notin S\text{.}\) The names of the sets don't matter, so we'll assume the first case holds. It is clear that \(k \notin \overline{S} = f(S)\) and \(k \in \overline{T} = f(T)\text{.}\) Therefore \(f(S) \neq f(T)\text{.}\)</p></li>
 <li id="li-74"><p id="p-149">The function is onto. Consider any \((n-k)\)-set \(T\text{.}\) Then the set \(\overline{T}\) is a \(k\)-set, and \(f(\overline{T}) = T\text{.}\)</p></li>
 </ul>
-<p class="continuation">Alternatively, we can prove that \(f\) is invertible.In fact, the function \(f\) is its own inverse function!</p>
+<p class="continuation">Alternatively, we can prove that \(f\) is invertible. In fact, the function \(f\) is its own inverse function!</p>
 <div class="displaymath">
 \begin{equation*}
 f \circ f(S) = f(\overline{S}) =S.
@@ -200,7 +200,15 @@ f \circ f(S) = f(\overline{S}) =S.
 <li id="li-76"><p id="p-152">Let \(Y\) be the set of all \(r\)-subsets of \([r+s]\text{.}\)</p></li>
 </ul>
 <p class="continuation">Here is a lattice path from \((0,0)\) to \((6,4)\text{.}\) <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-bijective-proof0.svg" role="img" class="contained"></div></p>
-<p id="p-153"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like"><p id="p-154">Let \(L\) be a lattice path from \((0,0)\) to \((r,s)\text{.}\) Define \(\)f(L) = \{ k \mid  \mbox{the }  k\mbox{th step is a rightward step} \}.\(\) There are \(r\) such steps, \(f(L)\) is an \(r\)-set chosen from \([r+s]\text{.}\) The inverse of \(f\) is the function  \(g: Y \rightarrow X\) which takes an \(r\)-set  \(S\) to the lattice path \(L\) whose rightward steps occur at the indices contained in \(S\text{.}\) I leave the details to you.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-24"><h6 class="heading">
+<p id="p-153"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like">
+<p id="p-154">Let \(L\) be a lattice path from \((0,0)\) to \((r,s)\text{.}\) Define</p>
+<div class="displaymath">
+\begin{equation*}
+f(L) = \{ k \mid  \mbox{the }  k\mbox{th step is a rightward step} \}.
+\end{equation*}
+</div>
+<p class="continuation">There are \(r\) such steps, \(f(L)\) is an \(r\)-set chosen from \([r+s]\text{.}\) The inverse of \(f\) is the function  \(g: Y \rightarrow X\) which takes an \(r\)-set  \(S\) to the lattice path \(L\) whose rightward steps occur at the indices contained in \(S\text{.}\) I leave the details to you.</p>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-24"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Even Subsets and Odd Subsets.</span>
 </h6>
 <p id="p-155">For any positive integer \(n\text{,}\) we can partition the power set \(\cP([n])\) into two sets: the set \(\cE_n\) of even-sized subsets and the set \(\cO_n\) of odd-sized subsets.</p>
