@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<chapter xml:id="comb-proof" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Combinatorial Proof</title>
+	<introduction>
+		<p>
+
+
+
+
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+
+
+		<exercise>
+			<title>Creating a <m>k</m>-list</title>
+			<idx><h>Creating a <m>k</m>-list</h></idx>
+			<statement>
+				<p>
+Prove the following identity where we "treat element <m>n</m> as special." Think about this as writing a recipe, and then counting the number of ways that you can complete the recipe.
+<me>
+(n)_k = (n-1)_k + k \cdot (n-1)_{k-1}.
+</me>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Another Chairperson Identity</title>
+			<idx><h>Another Chairperson Identity</h></idx>
+			<statement>
+				<p>
+Prove the following chairperson identity.
+<me>
+n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
+</me>
+
+			<ol>
+				<li>
+					<p>
+ Explain how each side of the equation corresponds to a recipe for creating a chaired committee.
+
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Starting with the binomial theorem
+<me>
+(x+y)^n = \sum_{k=0}^{n} {n \choose k} x^k y^{n-k},
+</me>
+give another proof of this chairperson identity. (Hint: first, take the partial derivative of both sides with respect to <m>x</m>.)
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Combinatorial Proofs</title>
+			<idx><h>Combinatorial Proofs</h></idx>
+			<statement>
+				<p>
+Give a combinatorial proof for each of the following identities. Each one involves splitting the original set into two or more subsets, and then performing the task at hand.
+
+
+			<ol>
+
+				<li>
+					<p>
+ .
+<me>
+{3n \choose 3} = 3 {n \choose 3} + 6n {n \choose 2} + n^3.
+</me>
+
+
+			</p><p>
+
+					</p>
+				</li>
+				<li>
+					<p>
+  .
+<me>
+\sum_{k=0}^n \left( {n \choose k} \right)^2 = { 2n \choose n}.
+</me>
+
+Hint: you will need the identity <m>{r \choose s} = {r \choose r-s.}</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ .
+<me>
+{n + m \choose r} =
+\sum_{i=0}^r  {n \choose i} {m \choose r-i}.
+</me>
+
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+
+</chapter>

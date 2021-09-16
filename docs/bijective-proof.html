@@ -109,10 +109,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="compositions.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="comb-proof.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="compositions.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="comb-proof.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -123,10 +123,11 @@
 <li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
 <li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
 <li class="link active"><a href="bijective-proof.html" data-scroll="bijective-proof"><span class="codenumber">4</span> <span class="title">Bijective Proof</span></a></li>
-<li class="link"><a href="compositions.html" data-scroll="compositions"><span class="codenumber">5</span> <span class="title">Compositions of Integers</span></a></li>
-<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">6</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link"><a href="comb-proof.html" data-scroll="comb-proof"><span class="codenumber">5</span> <span class="title">Combinatorial Proof</span></a></li>
+<li class="link"><a href="compositions.html" data-scroll="compositions"><span class="codenumber">6</span> <span class="title">Compositions of Integers</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">7</span> <span class="title">Counting Exercises</span></a></li>
 <li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
-<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">7</span> <span class="title">Generating Function Exercises</span></a></li>
+<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">8</span> <span class="title">Generating Function Exercises</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="bijective-proof"><h2 class="heading">
@@ -275,7 +276,7 @@ S \cup \{ 1 \} &amp; \mbox{if } 1 \notin S.
 </div>
 <ol class="lower-roman">
 <li id="li-85"><p id="p-171">Explain why \(f: \cE_n \rightarrow \cO_n\) is well defined, meaning that an even set is always mapped to an odd set. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-50" id="solution-50"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-50"><div class="solution solution-like"><p id="p-172">We start with an even set. We either add one element or remove one element. The resulting set is odd. So this function really does map an element of \(\cE_n\) to an element of \(\cO_n\text{.}\)</p></div></div></p></li>
-<li id="li-86"><p id="p-173">Now prove that \(f\) is a bijection. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-51" id="solution-51"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-51"><div class="solution solution-like"><p id="p-174">The inverse function \(g: \cO_n \rightarrow \cE_n\) is defined in the same way: we either add or remove the element 1. It is straight-forward to see that \(g \circ f = I_{\cE_n}\) and that \(f \circ g = I_{\O_n}\text{.}\)</p></div></div></p></li>
+<li id="li-86"><p id="p-173">Now prove that \(f\) is a bijection. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-51" id="solution-51"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-51"><div class="solution solution-like"><p id="p-174">The inverse function \(g: \cO_n \rightarrow \cE_n\) is defined in the same way: we either add or remove the element 1. It is straight-forward to see that \(g \circ f = I_{\cE_n}\) and that \(f \circ g = I_{\cO_n}\text{.}\)</p></div></div></p></li>
 </ol>
 </li>
 </ol></article></section></section></div></main>

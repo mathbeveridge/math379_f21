@@ -353,7 +353,7 @@ We start with an even set. We either add one element or remove one element. The 
 <solution>
 <p>
 
-The inverse function <m>g: \cO_n \rightarrow \cE_n</m> is defined in the same way: we either add or remove the element 1. It is straight-forward to see that <m>g \circ f = I_{\cE_n}</m> and that <m>f \circ g = I_{\O_n}</m>.
+The inverse function <m>g: \cO_n \rightarrow \cE_n</m> is defined in the same way: we either add or remove the element 1. It is straight-forward to see that <m>g \circ f = I_{\cE_n}</m> and that <m>f \circ g = I_{\cO_n}</m>.
 </p>
 </solution>
 					</p>

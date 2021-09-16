@@ -86,7 +86,7 @@ By negating the statements above, write down definitions for "not injective" and
 		<ul>
 			<li>
 			<p>
- <em>Not Injective</em>
+ <em>Not Injective:</em>
 
 The function <m>f: X \rightarrow Y</m> is <em>not injective</em> if there exist <m>x_1 \neq x_2</m>  in <m>X</m> such that <m>f(x_1) = f(x_2)</m>.
 
@@ -94,7 +94,7 @@ The function <m>f: X \rightarrow Y</m> is <em>not injective</em> if there exist 
 			</li>
 			<li>
 			<p>
- <em>Not Surjective</em>
+ <em>Not Surjective:</em>
 
 The function <m>f: X \rightarrow Y</m> is <em>not surjective</em> if there exists <m>y \in Y</m> such that for all <m>x \in X</m>, we have <m>f(x) \neq y</m>.
 
