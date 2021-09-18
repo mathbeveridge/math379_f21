@@ -12,7 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>A team of \(n \geq 1\) zombies consists of one Zombie King and \(n-1\) regular zombies. You cannot have a zombie team of size 0. Let \(z_n\) be the number of ways to create a zombie team from \(n\) people (so \(z_0=0\)). Let \(Z(x)\) be the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> for creating a zombie team. What is the formula for \(Z(x)\text{?}\)</p>
-<span class="incontext"><a href="exercises-8.html#p-247">in-context</a></span>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Before:</em> Calculate the first few \(a_n\) using the recurrence. Mathematica is a great tool for this! For example, the following code will print out the first terms of the sequence \(a_0 = 3\text{,}\) \(a_1 = 5\text{,}\) \(a_n = 2a_{n-1} + a_{n-2} + 4\text{.}\)</p>
+<pre class="code-display tex2jax_ignore">
+myseq[0] = 3
+myseq[1] = 5
+myseq[n_] := 2 myseq[n-1] + myseq[n-2] + 4
+Table[myseq[k], {k,0,5}]
+</pre>
+<span class="incontext"><a href="genfun-exercise.html#p-247">in-context</a></span>
 </body>
 </html>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="int-partition" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Integer Partitions</title>
+	<introduction>
+		<p>
+
+A partition of integer <m>n</m> is a multiset of positive integers whose sum is <m>n</m>.
+<me>
+\begin{array}{rcl}
+p(n,k) &amp; = &amp; \mbox{# partitions of } n \mbox{ into } k \mbox{ parts} \\
+\\
+p_k(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into at most } k \mbox{ parts} \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^k p(n,i)}\\
+\\
+p(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into any number of parts}  \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^n p(n,i)}
+\end{array}
+</me>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Integer Partitions With At Most <m>k</m> Parts</title>
+			<idx><h>Integer Partitions With At Most <m>k</m> Parts</h></idx>
+			<statement>
+				<p>
+In this problem, you will investigate the equivalence
+<me>
+p_k(n) =
+p(n+k,k)
+</me>
+
+			<ol>
+				<li>
+					<p>
+ Interpret each side of this equality.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Verify this result for <m>n=5</m> and <m>k=3</m>. In other words, find all partitions of both types. You will find that there are equal numbers of these partitions.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add <m>k</m> more boxes to get a partition from the RHS. How can you do this in an invertible way?
+(We will develop a rigorous proof of your bijection as a class.)
+
+
+			</p><p>
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Integer Partitions Into Distinct Parts</title>
+			<idx><h>Integer Partitions Into Distinct Parts</h></idx>
+			<statement>
+				<p>
+Let <m>\mbox{dist}(n,k)</m> be the number of integer partitions of <m>n</m> with first part <m>k</m> and all parts distinct. The initial conditions for this function are
+
+<me>
+\begin{array}{cccccc}
+\mbox{dist}(0,0)=1, &amp; \mbox{dist}(n,0)=0 \mbox{ for } n &gt; 0, &amp; \mbox{dist}(1,1)=1.
+\end{array}
+</me>
+It is also clear that <m>\mbox{dist}(n,k)=0</m> when <m>k&gt;n</m>.
+
+			<ol>
+
+				<li>
+					<p>
+ Here are the values of <m>\mbox{dist}(9,k)</m> for <m>1 \leq k \leq 9</m>:
+<me>
+\begin{array}{c|cccccccccccc}
+k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 \\
+\hline
+\mbox{dist}(9,k) &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 1 &amp; 2 &amp; 2 &amp; 1 &amp; 1 &amp; 1
+\end{array}
+</me>
+Find each of these eight integer partitions of 9 into distinct parts.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Find a recurrence relation for <m>\mbox{dist}(n,k)</m>. Justify your formula.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Integer Partitions into Odd Parts</title>
+			<idx><h>Integer Partitions into Odd Parts</h></idx>
+			<statement>
+				<p>
+In this problem you will prove a very cool result:
+<me>
+\begin{array}{ccc}
+\begin{array}{c}
+\mbox{# integer partitions of } <m>n</m> \\ \mbox{into distinct parts}
+\end{array}
+&amp;=&amp;
+\begin{array}{c}
+\mbox{# integer partitions of }  <m>n</m> \\
+\mbox{into odd parts}
+\end{array}
+\end{array}
+</me>
+
+
+			<ol>
+
+				<li>
+					<p>
+ In the previous problem, you found the eight integer partitions of 9 into distinct parts. Now find the eight integer partitions of 9 into odd parts.
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Given an integer partition of <m>n</m> into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by
+
+<me>
+35  = 7+5+5+3+3+3+3+3+1+1+1.
+</me>
+
+			<ol>
+				<li>
+					<p>
+ For each odd number <m>2k+1</m>, let <m>a_{2k+1}</m> be the number of times that <m>2k+1</m> appears in the partition. In other words, the type of the partition of <m>n</m> is <m>(a_1, 0, a_3, 0, a_5 , 0,  \ldots )</m> and we have
+<me>
+n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
+</me>
+
+			</p><p>
+
+<em>Perform this step for our integer partition of 35.</em>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Write each <m>a_{2k+1}</m> as the sum of distinct powers of two. For example, <m>5 = (4 + 1)</m> and <m>42 = (32 + 8 + 2)</m>. There is a unique way to do this (This is equivalent to writing <m>a_{2k+1}</m> using binary notation.)
+
+			</p><p>
+
+<em>Perform this step for our integer partition of 35.</em>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Now multiply each odd number <m>2k+1</m> by this "sum of distinct powers of 2 expansion of <m>a_{2k+1}</m>." For example, if we started with <m>a_{7}=11</m> then we would get
+<me>
+a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
+</me>
+We have now represented <m>n</m> as the sum of distinct positive integers!
+
+			</p><p>
+<em>Perform this step for our integer partition of 35.</em>
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Explain why each of the terms obtained by the process in part (b) are all distinct.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use the mapping from part (b) to match the partitions of 9 into odd parts from part (b) to their corresponding partition of 9 into distinct parts from 2(a).
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Describe the reverse mapping that takes a partition of <m>n</m> with distinct parts and maps it to a partition of <m>n</m> with odd parts. Explain how you know the resulting partition must have odd parts.
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+
+
+</chapter>

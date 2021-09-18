@@ -12,28 +12,22 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions With At Most \(k\) Parts.</span>
 </h6>
-<p>We have defined the size \(|A|\) of a set to be the number of elements in \(A\text{.}\) In fact, what we are saying is that \(|A| = m\) if any only if there is a bijection \(f: A \rightarrow [m]\text{.}\) Let \(A\) and \(B\) be disjoint sets (so that \(|A \cap B| = \emptyset\)). Suppose that \(|A|=m\) and \(|B| = n\text{,}\) and that \(f: A \rightarrow [m]\) is a bijection and that \(g: B \rightarrow [n]\) is a bijection.</p>
+<p>In this problem, you will investigate the equivalence</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+p_k(n) =
+p(n+k,k)
+\end{equation*}
+</div>
 <ol class="lower-alpha">
+<li><p>Interpret each side of this equality.</p></li>
+<li><p>Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions.</p></li>
 <li>
-<p>Give a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bijective proof</em> of the addition rule</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-|A \cup B| = |A| + |B|.
-\end{equation*}
-</div>
-<p class="continuation">In other words, find a bijective function \(h : A \cup B \rightarrow [m+n]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
+<p>Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
+<p></p>
 </li>
-<li>
-<p>Give a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bijective proof</em> of the product rule</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-|A \times B| = |A| \cdot |B|.
-\end{equation*}
-</div>
-<p class="continuation">In other words, find a bijective function \(h : A \times B \rightarrow [mn]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
-</li>
-</ol></article><span class="incontext"><a href="exercises-7.html#exercise-34">in-context</a></span>
+</ol></article><span class="incontext"><a href="exercises-8.html#exercise-34">in-context</a></span>
 </body>
 </html>

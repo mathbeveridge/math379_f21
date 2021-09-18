@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Combi Integer Partitions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+
+
+\def\Z{\mathbb Z}
+\def\R{\mathbb R}
+\def\Q{\mathbb Q}
+\def\N{{\mathbb N}}
+\def\C{\mathbb C}
+
+\def\ba{{\mathbf{a}}}
+\def\bb{\mathbf{b}}
+\def\bh{{\mathbf{h}}}
+\def\bu{{\mathbf{u}}}
+\def\bv{{\mathbf{v}}}
+\def\bw{{\mathbf{w}}}   
+\def\bx{{\mathbf{x}}}
+\def\by{\mathbf{y}}    
+\def\bone{{\mathbf{1}}}
+\def\bzero{\mathbf{0}}
+
+\def\var{{\mbox{var}}}
+\def\P{{\mathbb{P}}}
+\def\E{{\mathbb{E}}}
+
+\def\cP{\mathcal P}
+\def\cE{\mathcal E}
+\def\cO{\mathcal O}
+
+
+\def\cA{{\overline{A}}}
+
+\def\kin{k^{\mathrm{in}}}
+\def\kout{k^{\mathrm{out}}}
+
+\newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+\newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+\tikzset{-&gt;-/.style={decoration={
+ markings,
+ mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="combi.html"><span class="title">Enumerative Combinatorics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="set-partition.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="counting-exercise.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="set-partition.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-counting.html" title="Up">Up</a><a class="next-button button toolbar-item" href="counting-exercise.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-counting.html" data-scroll="part-counting"><span class="codenumber">I</span> <span class="title">Counting</span></a></li>
+<li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
+<li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="bijective-proof.html" data-scroll="bijective-proof"><span class="codenumber">4</span> <span class="title">Bijective Proof</span></a></li>
+<li class="link"><a href="comb-proof.html" data-scroll="comb-proof"><span class="codenumber">5</span> <span class="title">Combinatorial Proof</span></a></li>
+<li class="link"><a href="compositions.html" data-scroll="compositions"><span class="codenumber">6</span> <span class="title">Compositions of Integers</span></a></li>
+<li class="link"><a href="set-partition.html" data-scroll="set-partition"><span class="codenumber">7</span> <span class="title">Stirling Numbers</span></a></li>
+<li class="link active"><a href="int-partition.html" data-scroll="int-partition"><span class="codenumber">8</span> <span class="title">Integer Partitions</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">9</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
+<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">10</span> <span class="title">Generating Function Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="int-partition"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">8</span> <span class="title">Integer Partitions</span>
+</h2>
+<section class="introduction" id="introduction-8"><p id="p-210">A partition of integer \(n\) is a multiset of positive integers whose sum is \(n\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+p(n,k) &amp; = &amp; \mbox{# partitions of } n \mbox{ into } k \mbox{ parts} \\
+\\
+p_k(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into at most } k \mbox{ parts} \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^k p(n,i)}\\
+\\
+p(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into any number of parts}  \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^n p(n,i)}
+\end{array}
+\end{equation*}
+</div></section><section class="exercises" id="exercises-8"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-34"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions With At Most \(k\) Parts.</span>
+</h6>
+<p id="p-211">In this problem, you will investigate the equivalence</p>
+<div class="displaymath">
+\begin{equation*}
+p_k(n) =
+p(n+k,k)
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-109"><p id="p-212">Interpret each side of this equality.</p></li>
+<li id="li-110"><p id="p-213">Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions.</p></li>
+<li id="li-111">
+<p id="p-214">Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
+<p id="p-215"></p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-35"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions Into Distinct Parts.</span>
+</h6>
+<p id="p-216">Let \(\mbox{dist}(n,k)\) be the number of integer partitions of \(n\) with first part \(k\) and all parts distinct. The initial conditions for this function are</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{cccccc}
+\mbox{dist}(0,0)=1, &amp; \mbox{dist}(n,0)=0 \mbox{ for } n &gt; 0, &amp; \mbox{dist}(1,1)=1.
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">It is also clear that \(\mbox{dist}(n,k)=0\) when \(k&gt;n\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-112">
+<p id="p-217">Here are the values of \(\mbox{dist}(9,k)\) for \(1 \leq k \leq 9\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{c|cccccccccccc}
+k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 \\
+\hline
+\mbox{dist}(9,k) &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 1 &amp; 2 &amp; 2 &amp; 1 &amp; 1 &amp; 1
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">Find each of these eight integer partitions of 9 into distinct parts.</p>
+</li>
+<li id="li-113"><p id="p-218">Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-36"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions into Odd Parts.</span>
+</h6>
+<p id="p-219">In this problem you will prove a very cool result:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{ccc}
+\begin{array}{c}
+\mbox{# integer partitions of }  \\ \mbox{into distinct parts}
+\end{array}
+&amp;=&amp;
+\begin{array}{c}
+\mbox{# integer partitions of }   \\
+\mbox{into odd parts}
+\end{array}
+\end{array}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-114"><p id="p-220">In the previous problem, you found the eight integer partitions of 9 into distinct parts. Now find the eight integer partitions of 9 into odd parts.</p></li>
+<li id="li-115">
+<p id="p-221">Given an integer partition of \(n\) into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by</p>
+<div class="displaymath">
+\begin{equation*}
+35  = 7+5+5+3+3+3+3+3+1+1+1.
+\end{equation*}
+</div>
+<ol class="lower-roman">
+<li id="li-116">
+<p id="p-222">For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
+<div class="displaymath">
+\begin{equation*}
+n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
+\end{equation*}
+</div>
+<p id="p-223"><em class="emphasis">Perform this step for our integer partition of 35.</em></p>
+</li>
+<li id="li-117">
+<p id="p-224">Write each \(a_{2k+1}\) as the sum of distinct powers of two. For example, \(5 = (4 + 1)\) and \(42 = (32 + 8 + 2)\text{.}\) There is a unique way to do this (This is equivalent to writing \(a_{2k+1}\) using binary notation.)</p>
+<p id="p-225"><em class="emphasis">Perform this step for our integer partition of 35.</em></p>
+</li>
+<li id="li-118">
+<p id="p-226">Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\text{.}\)" For example, if we started with \(a_{7}=11\) then we would get</p>
+<div class="displaymath">
+\begin{equation*}
+a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
+\end{equation*}
+</div>
+<p class="continuation">We have now represented \(n\) as the sum of distinct positive integers!</p>
+<p id="p-227"><em class="emphasis">Perform this step for our integer partition of 35.</em></p>
+</li>
+</ol>
+</li>
+<li id="li-119"><p id="p-228">Explain why each of the terms obtained by the process in part (b) are all distinct.</p></li>
+<li id="li-120"><p id="p-229">Use the mapping from part (b) to match the partitions of 9 into odd parts from part (b) to their corresponding partition of 9 into distinct parts from 2(a).</p></li>
+<li id="li-121"><p id="p-230">Describe the reverse mapping that takes a partition of \(n\) with distinct parts and maps it to a partition of \(n\) with odd parts. Explain how you know the resulting partition must have odd parts.</p></li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>

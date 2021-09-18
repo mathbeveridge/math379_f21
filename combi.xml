@@ -3,8 +3,8 @@
 <!--********************************************************************
 Copyright 2020 Andrew Beveridge
 
-xsltproc -xinclude ../../xsl/pretext-html.xsl netsci.xml 
-python3 ../../pretext/pretext -vv -c latex-image -f svg -d images netsci.xml
+xsltproc -xinclude /Users/abeverid/mathbook/xsl/pretext-html.xsl ../combi.xml
+python3 /Users/abeverid/mathbook/pretext/pretext -vv -c latex-image -f svg -d images  ../combi.xml
 
 write a  python script to handle:
 enumerate
@@ -63,6 +63,8 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./a04-bijective-proof.xml" /> 
             <xi:include href="./a05-comb-proof.xml" />  
             <xi:include href="./a06-compositions.xml" />  
+            <xi:include href="./a07-set-partition.xml" /> 
+            <xi:include href="./a08-integer-partition.xml" /> 
             <xi:include href="./ex01-counting.xml" />                       
 
     </part>

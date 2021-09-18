@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="set-partition" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Stirling Numbers</title>
+	<introduction>
+		<p>
+
+The Stirling number of second kind <m>S(n,k)</m> is the number of partitions of the set <m>[n]</m> into exactly <m>k</m> parts.
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+		<exercise>
+			<title>Balls and Boxes</title>
+			<idx><h>Balls and Boxes</h></idx>
+			<statement>
+				<p>
+What balls-in-boxes problem is equivalent to partitions of <m>[n]</m> into <m>k</m> parts? There are four decisions to make about the balls and boxes.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Another Stirling Recurrence</title>
+			<idx><h>Another Stirling Recurrence</h></idx>
+			<statement>
+				<p>
+Stirling numbers of the second kind satisfy the following identity
+\[
+S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1).
+\]
+			<ol>
+				<li>
+					<p>
+ Use the Stirling triangle we made in class to verify the identity is true for <m>n=4</m> and <m>k=3</m>. Note that <m>S(n,0)=0</m> and <m>S(n,k)=0</m> when <m>k&gt;n</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Give a combinatorial proof of the  identity. That is, explain why the LHS and the RHS count the exact same thing.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Sets of Functions</title>
+			<idx><h>Sets of Functions</h></idx>
+			<statement>
+				<p>
+Consider the set <m>{\cal F}</m> of all  functions <m>f : [n] \rightarrow [k]</m>. For each subset of <m>{\cal F}</m> below, determine (i) which balls-in-boxes problem is equivalent to the subset (ii) any restrictions on <m>n</m> and <m>k</m>, and (iii) the formula for the size of the set (if we know it).
+
+			<ol>
+
+				<li>
+					<p>
+ The set of all functions <m>f: [n] \rightarrow [k]</m>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ The set of injections <m>f: [n] \rightarrow [k]</m>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ The set of surjections <m>f: [n] \rightarrow [k]</m>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ The set of bijections <m>f: [n] \rightarrow [k]</m>
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Writing <m>x^n</m> as a combination of <m>(x)_k</m>'s.</title>
+			<idx><h>Writing <m>x^n</m> as a combination of <m>(x)_k</m>'s.</h></idx>
+			<statement>
+				<p>
+In this problem, you will prove the following cool formula for <m>n \geq 0</m>:
+<me>
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+</me>
+
+			<ol>
+				<li>
+					<p>
+  Recall that the set <m>\R[x]</m> of (finite) polynomials in <m>x</m> form a vector space over <m>\R</m>.
+Our typical basis for <m>\R[x]</m> is:  <m>1, x, x^2, \ldots, x^k, \ldots</m>.
+Explain why (but don't prove rigorously)  another basis for <m>\R[x]</m> is: \qquad <m>1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots</m>
+
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Give a combinatorial proof that
+<me>
+m^n = \sum_{k=0}^n S(n,k) (m)_k.
+</me>
+In particular, both sides count the number of ways to assign <m>n</m> students to <m>m</m> classrooms where some classrooms can be empty. Explain.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Fixing <m>n</m>, now consider the polynomial equation
+<me>
+x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
+</me>
+Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so <m>\displaystyle{x^n = \sum_{k=0}^n S(n,k) (x)_k.}</m>
+
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>

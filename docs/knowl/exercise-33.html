@@ -12,13 +12,34 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Writing \(x^n\) as a combination of \((x)_k\)'s..</span>
 </h6>
-<p>Let \(k \leq n\) be positive integers. Find a bijection \(f : A \rightarrow B\) between the following sets.</p>
-<ul class="disc">
-<li><p>\(A =\) all words of length n using the alphabet \(\{0,1,2,...,k\}\)</p></li>
-<li><p>\(B =\) all lists \((S_1, S_2, \cdots , S_k)\) where each \(S_i\) is a subset of \([n]\) and \(S_1 \subset S_2 \subset \cdots  \subset S_k\text{.}\) And remember: \(X \subset Y\) means that  \(X \subseteq Y\text{.}\)</p></li>
-</ul>
-<p class="continuation">Justify why your function is a bijection.</p></article><span class="incontext"><a href="exercises-7.html#exercise-33">in-context</a></span>
+<p>In this problem, you will prove the following cool formula for \(n \geq 0\text{:}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li><p>Recall that the set \(\R[x]\) of (finite) polynomials in \(x\) form a vector space over \(\R\text{.}\) Our typical basis for \(\R[x]\) is:  \(1, x, x^2, \ldots, x^k, \ldots\text{.}\) Explain why (but don't prove rigorously)  another basis for \(\R[x]\) is: \qquad \(1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots\)</p></li>
+<li>
+<p>Give a combinatorial proof that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+m^n = \sum_{k=0}^n S(n,k) (m)_k.
+\end{equation*}
+</div>
+<p class="continuation">In particular, both sides count the number of ways to assign \(n\) students to \(m\) classrooms where some classrooms can be empty. Explain.</p>
+</li>
+<li>
+<p>Fixing \(n\text{,}\) now consider the polynomial equation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
+\end{equation*}
+</div>
+<p class="continuation">Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so \(\displaystyle{x^n = \sum_{k=0}^n S(n,k) (x)_k.}\)</p>
+</li>
+</ol></article><span class="incontext"><a href="exercises-7.html#exercise-33">in-context</a></span>
 </body>
 </html>
