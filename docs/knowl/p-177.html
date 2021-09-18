@@ -12,24 +12,16 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Prove the following chairperson identity.</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
-\end{equation*}
-</div>
-<ol class="lower-alpha">
-<li><p>Explain how each side of the equation corresponds to a recipe for creating a chaired committee.</p></li>
+<ul class="disc">
+<li><p>LHS: create a \(k\)-list from \([n]\)</p></li>
 <li>
-<p>Starting with the binomial theorem</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-(x+y)^n = \sum_{k=0}^{n} {n \choose k} x^k y^{n-k},
-\end{equation*}
-</div>
-<p class="continuation">give another proof of this chairperson identity. (Hint: first, take the partial derivative of both sides with respect to \(x\text{.}\))</p>
+<p>RHS: either</p>
+<ul class="circle">
+<li><p>create a \(k\)-list from \([n-1]\)</p></li>
+<li><p>choose where to place \(n\) and then create a \(k-1\) list from \([n-1]\) using the remaining spots.</p></li>
+</ul>
 </li>
-</ol>
+</ul>
 <span class="incontext"><a href="exercises-5.html#p-177">in-context</a></span>
 </body>
 </html>

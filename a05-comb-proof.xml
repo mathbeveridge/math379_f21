@@ -32,6 +32,35 @@ Prove the following identity where we "treat element <m>n</m> as special." Think
 </me>
 
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ LHS: create a <m>k</m>-list from <m>[n]</m>
+
+			</p>
+			</li>
+			<li>
+			<p>
+ RHS: either
+		<ul>
+			<li>
+			<p>
+ create a <m>k</m>-list from <m>[n-1]</m>
+			</p>
+			</li>
+			<li>
+			<p>
+ choose where to place <m>n</m> and then create a <m>k-1</m> list from <m>[n-1]</m> using the remaining spots.
+			</p>
+			</li>
+		</ul>
+			</p>
+			</li>
+		</ul>
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -51,6 +80,48 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 					<p>
  Explain how each side of the equation corresponds to a recipe for creating a chaired committee.
 
+<solution>
+<p>
+LHS
+		<ul>
+			<li>
+			<p>
+ Pick the chair (<m>n</m> ways).
+			</p>
+			</li>
+			<li>
+			<p>
+ For the remaining <m>n-1</m>, decide whether each person is on the committee.
+			</p>
+			</li>
+		</ul>
+
+RHS
+		<ul>
+			<li>
+			<p>
+ Choose the size <m>k</m> of the committee
+			</p>
+			</li>
+			<li>
+			<p>
+ Pick the committee: <m>{n \choose k}</m> ways.
+			</p>
+			</li>
+			<li>
+			<p>
+ Pick the chair from the committee members: <m>k</m> ways
+			</p>
+			</li>
+			<li>
+			<p>
+ Sum over <m>1 \leq k \leq n</m> to handle all committee sizes.
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
 
 
 
@@ -66,6 +137,22 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 give another proof of this chairperson identity. (Hint: first, take the partial derivative of both sides with respect to <m>x</m>.)
 
 
+<solution>
+<p>
+<me>
+\frac{\partial}{\partial x} (x+y)^n = n(x+y)^{n-1}
+</me>
+and
+<me>
+\frac{\partial}{\partial x} \left( \sum_{k=0}^{n} {n \choose k} x^k y^{n-k} \right)=
+\sum_{k=1}^{n}  k {n \choose k} x^{k-1} y^{n-k}
+</me>
+Now plug in <m>x=y=1</m> to get
+<me>
+n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -93,6 +180,32 @@ Give a combinatorial proof for each of the following identities. Each one involv
 {3n \choose 3} = 3 {n \choose 3} + 6n {n \choose 2} + n^3.
 </me>
 
+<solution>
+<p>
+
+LHS: choose a 3-set from <m>[3n]</m>
+
+RHS: split <m>[3n]</m> into <m>\{1, \ldots, n \}</m> and <m>\{ n+1 ,\ldots, 2n\}</m> and <m>\{ 2n+1, \ldots, 3n \}</m> and do one of the following
+		<ul>
+			<li>
+			<p>
+ Pick a subset (3 ways) and take 3 elements from that set
+			</p>
+			</li>
+			<li>
+			<p>
+ Pick a subset (3 ways) and pick one element from that set. Now pick a second set (2 ways) and pick two elements from that set.
+			</p>
+			</li>
+			<li>
+			<p>
+ Choose one element from each set.
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
 
 			</p><p>
 
@@ -107,6 +220,21 @@ Give a combinatorial proof for each of the following identities. Each one involv
 
 Hint: you will need the identity <m>{r \choose s} = {r \choose r-s.}</m>.
 
+<solution>
+<p>
+
+We can rewrite this as
+<me>
+\sum_{k=0}^n {n \choose k} {n \choose n-k}  = { 2n \choose n}.
+</me>
+We have the following interpretation.
+
+RHS: pick an <m>n</m>-set from <m>[2n]</m>.
+
+LHS: Choose <m>1 \leq k \leq n</m>. Then pick <m>k</m> elements from <m>\{1 , \ldots, n\}</m> and pick <m>n-k</m> elements from <m>\{n+1, \ldots, 2n \}</m>.
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -119,10 +247,70 @@ Hint: you will need the identity <m>{r \choose s} = {r \choose r-s.}</m>.
 </me>
 
 
+<solution>
+<p>
+This is a lot like the previous problem.
+
+LHS: pick an <m>r</m>-set from <m>[n+m]</m>.
+
+RHS:
+		<ul>
+			<li>
+			<p>
+ Split the set into <m>\{1, \ldots, n\}</m> and <m>\{n+1, \ldots, m \}</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Choose <m>i</m> where <m>0 \leq i \leq r</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Pick an <m>i</m>-set from <m>\{1, \ldots, n\}</m>  and pick an <m>(n-i)</m>-set from <m>\{n+1, \ldots, m \}</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Sum over all possible values for <m>i</m>.
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
 
 					</p>
 				</li>
 			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Subsets of <m>n</m> Without Successive Elements</title>
+			<idx><h>Subsets of <m>n</m> Without Successive Elements</h></idx>
+			<statement>
+				<p>
+We define the following sets:
+		<ul>
+			<li>
+			<p>
+ <m>{\mathcal{A}_n}</m>: subsets of <m>[n]</m> that do not contain successive elements
+			</p>
+			</li>
+			<li>
+			<p>
+ <m>{\mathcal{B}_n}</m> ordered sums of 1's and 2's that add to <m>n</m>.
+			</p>
+			</li>
+		</ul>
+Show that <m>{\mathcal{A}_n}</m> is in bijection with <m>{\mathcal{B}_{n+1}}</m>.
+
+
+
 
 				</p>
 			</statement>
