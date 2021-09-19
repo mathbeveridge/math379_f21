@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <chapter xml:id="set-partition" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Stirling Numbers</title>
+	<title>Set Partitions</title>
 	<introduction>
 		<p>
 
@@ -97,8 +97,8 @@ Consider the set <m>{\cal F}</m> of all  functions <m>f : [n] \rightarrow [k]</m
 			</statement>
 		</exercise>
 		<exercise>
-			<title>Writing <m>x^n</m> as a combination of <m>(x)_k</m>'s.</title>
-			<idx><h>Writing <m>x^n</m> as a combination of <m>(x)_k</m>'s.</h></idx>
+			<title>Writing <m>x^n</m> as a combination of <m>(x)_k</m>'s</title>
+			<idx><h>Writing <m>x^n</m> as a combination of <m>(x)_k</m>'s</h></idx>
 			<statement>
 				<p>
 In this problem, you will prove the following cool formula for <m>n \geq 0</m>:

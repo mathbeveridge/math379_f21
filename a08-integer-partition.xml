@@ -170,7 +170,7 @@ n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
 				</li>
 				<li>
 					<p>
- Write each <m>a_{2k+1}</m> as the sum of distinct powers of two. For example, <m>5 = (4 + 1)</m> and <m>42 = (32 + 8 + 2)</m>. There is a unique way to do this (This is equivalent to writing <m>a_{2k+1}</m> using binary notation.)
+ Write each <m>a_{2k+1}</m> as the sum of distinct powers of two. For example, <m>5 = (4 + 1)</m> and <m>42 = (32 + 8 + 2)</m>. There is a unique way to do this, and it  is equivalent to writing <m>a_{2k+1}</m> using binary notation.
 
 			</p><p>
 
@@ -181,7 +181,7 @@ n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
 				</li>
 				<li>
 					<p>
- Now multiply each odd number <m>2k+1</m> by this "sum of distinct powers of 2 expansion of <m>a_{2k+1}</m>." For example, if we started with <m>a_{7}=11</m> then we would get
+ Now multiply each odd number <m>2k+1</m> by this "sum of distinct powers of 2 expansion of <m>a_{2k+1}</m>" from the previous step. For example, if we started with <m>a_{7}=11</m> then we would get
 <me>
 a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
 </me>
