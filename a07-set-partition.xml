@@ -142,7 +142,10 @@ In particular, both sides count the number of ways to assign <m>n</m> students t
 <me>
 x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
 </me>
-Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so <m>\displaystyle{x^n = \sum_{k=0}^n S(n,k) (x)_k.}</m>
+Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so
+<me>
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+</me>
 
 
 
