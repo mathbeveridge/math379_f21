@@ -110,8 +110,14 @@ x^n = \sum_{k=0}^n S(n,k) (x)_k.
 				<li>
 					<p>
   Recall that the set <m>\R[x]</m> of (finite) polynomials in <m>x</m> form a vector space over <m>\R</m>.
-Our typical basis for <m>\R[x]</m> is:  <m>1, x, x^2, \ldots, x^k, \ldots</m>.
-Explain why (but don't prove rigorously)  another basis for <m>\R[x]</m> is: \qquad <m>1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots</m>
+Our typical basis for <m>\R[x]</m> is:
+<me>
+1, x, x^2, \ldots, x^k, \ldots.
+</me>
+Explain why (but don't prove rigorously)  another basis for <m>\R[x]</m> is:
+<me>
+1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots.
+</me>
 
 
 
