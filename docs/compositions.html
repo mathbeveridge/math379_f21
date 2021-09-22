@@ -148,24 +148,63 @@
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-111"><p id="p-213">There are 3 distinct compositions of 4 into 3 parts. List them all.</p></li>
-<li id="li-112"><p id="p-214">Which "balls in boxes" problem is equivalent to the composition of \(n\) into \(k\) parts? Explain.</p></li>
-<li id="li-113"><p id="p-215">What is the formula for the number of compositions of \(n\) into \(k\) parts?</p></li>
-<li id="li-114"><p id="p-216">What is the formula for the number of compositions of \(n\) into any number of parts? Find a simple closed formula for this number.</p></li>
+<li id="li-111"><p id="p-213">There are 3 distinct compositions of 4 into 3 parts. List them all. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like"><div class="displaymath" id="p-214">
+\begin{equation*}
+\begin{array}{ccccc}
+2+1+1 &amp;&amp; 1+2+1 &amp;&amp; 1+1+2
+\end{array}
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-112"><p id="p-215">Which "balls in boxes" problem is equivalent to the composition of \(n\) into \(k\) parts? Explain. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-59" id="solution-59"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-59"><div class="solution solution-like">
+<p id="p-216">This is the same as  placing \(n\) identical balls into \(k\) distinct boxes such that</p>
+<ul class="disc">
+<li id="li-113"><p id="p-217">Repetition is allowed (boxes can receive more than one ball)</p></li>
+<li id="li-114"><p id="p-218">Every box must get at least one ball</p></li>
+</ul>
+<p class="continuation">The \(k\) boxes correspond to the \(k\) terms. The boxes are distinct because the order of the terms matters. We set \(a_i\) to be the  number of balls in  box \(i\text{.}\) Every \(a_i\) must be positive, so we require that every box gets at least one ball.</p>
+</div></div></p></li>
+<li id="li-115"><p id="p-219">What is the formula for the number of compositions of \(n\) into \(k\) parts? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-60" id="solution-60"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-60"><div class="solution solution-like"><div class="displaymath" id="p-220">
+\begin{equation*}
+{n-1 \choose k-1}
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-116"><p id="p-221">What is the formula for the number of compositions of \(n\) into any number of parts? Find a simple closed formula for this number. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-61" id="solution-61"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-61"><div class="solution solution-like"><div class="displaymath" id="p-222">
+\begin{equation*}
+\sum_{k=1}^{n} {n-1 \choose k-1} = \sum_{i=0}^{n-1} { n-1 \choose i} = 2^{n-1}
+\end{equation*}
+</div></div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-30"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Weak Compositions of \(n\).</span>
 </h6>
-<p id="p-217">Let \(n\) be a positive integer. A <em class="emphasis">weak composition</em> of \(n\) into \(k\) parts is an ordered sequence of <em class="emphasis">non-negative</em> numbers \(a_1, a_2, \ldots , a_k\) such that</p>
+<p id="p-223">Let \(n\) be a positive integer. A <em class="emphasis">weak composition</em> of \(n\) into \(k\) parts is an ordered sequence of <em class="emphasis">non-negative</em> numbers \(a_1, a_2, \ldots , a_k\) such that</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{i=1}^{k} a_i = n.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-115"><p id="p-218">There are 15 distinct weak compositions of 4 into 3 parts. List them all.</p></li>
-<li id="li-116"><p id="p-219">Which "balls in boxes" problem is equivalent to the weak composition of \(n\) into \(k\) parts? Explain.</p></li>
-<li id="li-117"><p id="p-220">What is the formula for the number of weak compositions of \(n\) into \(k\) parts?</p></li>
-<li id="li-118"><p id="p-221">Explain why  the number of weak compositions of \(n\) into any number of parts is infinite.</p></li>
+<li id="li-117"><p id="p-224">There are 15 distinct weak compositions of 4 into 3 parts. List them all. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-62" id="solution-62"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-62"><div class="solution solution-like"><div class="displaymath" id="p-225">
+\begin{equation*}
+\begin{array}{ccccccccc}
+3 + 1 + 0 &amp;&amp; 2 + 1 + 1 &amp;&amp; 1 + 2 + 1 &amp;&amp; 0 + 4 + 0 &amp;&amp; 0 + 1 + 3 \\
+3 + 0 + 1 &amp;&amp; 2 + 0 + 2 &amp;&amp; 1+ 1 + 2 &amp;&amp; 0 + 3 + 1 &amp;&amp; 0 + 0 + 4.
+\end{array}
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-118"><p id="p-226">Which "balls in boxes" problem is equivalent to the weak composition of \(n\) into \(k\) parts? Explain. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-63" id="solution-63"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-63"><div class="solution solution-like">
+<p id="p-227">This is the same as  placing \(n\) identical balls into \(k\) distinct boxes such that</p>
+<ul class="disc">
+<li id="li-119"><p id="p-228">Repetition is allowed (boxes can receive more than one ball)</p></li>
+<li id="li-120"><p id="p-229">Boxes may be empty</p></li>
+</ul>
+<p class="continuation">The reasoning is the same as for compositions. This time, boxes can be empty because we now allow \(a_i=0\text{.}\)</p>
+</div></div></p></li>
+<li id="li-121"><p id="p-230">What is the formula for the number of weak compositions of \(n\) into \(k\) parts? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-64" id="solution-64"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-64"><div class="solution solution-like"><div class="displaymath" id="p-231">
+\begin{equation*}
+{n+k-1 \choose k-1}
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-122"><p id="p-232">Explain why  the number of weak compositions of \(n\) into any number of parts is infinite. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-65" id="solution-65"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-65"><div class="solution solution-like"><p id="p-233">We do not specify the number of parts, which means that we can include an arbitrary number of zeros in the sum. This means that there are an infinite number of weak compositions of any integer \(n\text{.}\)</p></div></div></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

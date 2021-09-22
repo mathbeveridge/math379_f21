@@ -135,40 +135,40 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="set-partition"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">7</span> <span class="title">Set Partitions</span>
 </h2>
-<section class="introduction" id="introduction-7"><p id="p-222">The Stirling number of second kind \(S(n,k)\) is the number of partitions of the set \([n]\) into exactly \(k\) parts.</p></section><section class="exercises" id="exercises-7"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-7"><p id="p-234">The Stirling number of second kind \(S(n,k)\) is the number of partitions of the set \([n]\) into exactly \(k\) parts.</p></section><section class="exercises" id="exercises-7"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-31"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Balls and Boxes.</span>
 </h6>
-<p id="p-223">What balls-in-boxes problem is equivalent to partitions of \([n]\) into \(k\) parts? There are four decisions to make about the balls and boxes.</p></article><article class="exercise exercise-like" id="exercise-32"><h6 class="heading">
+<p id="p-235">What balls-in-boxes problem is equivalent to partitions of \([n]\) into \(k\) parts? There are four decisions to make about the balls and boxes.</p></article><article class="exercise exercise-like" id="exercise-32"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Another Stirling Recurrence.</span>
 </h6>
-<p id="p-224">Stirling numbers of the second kind satisfy the following identity \[ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1). \]</p>
+<p id="p-236">Stirling numbers of the second kind satisfy the following identity \[ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1). \]</p>
 <ol class="lower-alpha">
-<li id="li-119"><p id="p-225">Use the Stirling triangle we made in class to verify the identity is true for \(n=4\) and \(k=3\text{.}\) Note that \(S(n,0)=0\) and \(S(n,k)=0\) when \(k&gt;n\text{.}\)</p></li>
-<li id="li-120"><p id="p-226">Give a combinatorial proof of the  identity. That is, explain why the LHS and the RHS count the exact same thing.</p></li>
+<li id="li-123"><p id="p-237">Use the Stirling triangle we made in class to verify the identity is true for \(n=4\) and \(k=3\text{.}\) Note that \(S(n,0)=0\) and \(S(n,k)=0\) when \(k&gt;n\text{.}\)</p></li>
+<li id="li-124"><p id="p-238">Give a combinatorial proof of the  identity. That is, explain why the LHS and the RHS count the exact same thing.</p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-33"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Sets of Functions.</span>
 </h6>
-<p id="p-227">Consider the set \({\cal F}\) of all  functions \(f : [n] \rightarrow [k]\text{.}\) For each subset of \({\cal F}\) below, determine (i) which balls-in-boxes problem is equivalent to the subset (ii) any restrictions on \(n\) and \(k\text{,}\) and (iii) the formula for the size of the set (if we know it).</p>
+<p id="p-239">Consider the set \({\cal F}\) of all  functions \(f : [n] \rightarrow [k]\text{.}\) For each subset of \({\cal F}\) below, determine (i) which balls-in-boxes problem is equivalent to the subset (ii) any restrictions on \(n\) and \(k\text{,}\) and (iii) the formula for the size of the set (if we know it).</p>
 <ol class="lower-alpha">
-<li id="li-121"><p id="p-228">The set of all functions \(f: [n] \rightarrow [k]\)</p></li>
-<li id="li-122"><p id="p-229">The set of injections \(f: [n] \rightarrow [k]\)</p></li>
-<li id="li-123"><p id="p-230">The set of surjections \(f: [n] \rightarrow [k]\)</p></li>
-<li id="li-124"><p id="p-231">The set of bijections \(f: [n] \rightarrow [k]\)</p></li>
+<li id="li-125"><p id="p-240">The set of all functions \(f: [n] \rightarrow [k]\)</p></li>
+<li id="li-126"><p id="p-241">The set of injections \(f: [n] \rightarrow [k]\)</p></li>
+<li id="li-127"><p id="p-242">The set of surjections \(f: [n] \rightarrow [k]\)</p></li>
+<li id="li-128"><p id="p-243">The set of bijections \(f: [n] \rightarrow [k]\)</p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-34"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Writing \(x^n\) as a combination of \((x)_k\)'s.</span>
 </h6>
-<p id="p-232">In this problem, you will prove the following cool formula for \(n \geq 0\text{:}\)</p>
+<p id="p-244">In this problem, you will prove the following cool formula for \(n \geq 0\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 x^n = \sum_{k=0}^n S(n,k) (x)_k.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-125">
-<p id="p-233">Recall that the set \(\R[x]\) of (finite) polynomials in \(x\) form a vector space over \(\R\text{.}\) Our typical basis for \(\R[x]\) is:</p>
+<li id="li-129">
+<p id="p-245">Recall that the set \(\R[x]\) of (finite) polynomials in \(x\) form a vector space over \(\R\text{.}\) Our typical basis for \(\R[x]\) is:</p>
 <div class="displaymath">
 \begin{equation*}
 1, x, x^2, \ldots, x^k, \ldots.
@@ -181,8 +181,8 @@ x^n = \sum_{k=0}^n S(n,k) (x)_k.
 \end{equation*}
 </div>
 </li>
-<li id="li-126">
-<p id="p-234">Give a combinatorial proof that</p>
+<li id="li-130">
+<p id="p-246">Give a combinatorial proof that</p>
 <div class="displaymath">
 \begin{equation*}
 m^n = \sum_{k=0}^n S(n,k) (m)_k.
@@ -190,8 +190,8 @@ m^n = \sum_{k=0}^n S(n,k) (m)_k.
 </div>
 <p class="continuation">In particular, both sides count the number of ways to assign \(n\) students to \(m\) classrooms where some classrooms can be empty. Explain.</p>
 </li>
-<li id="li-127">
-<p id="p-235">Fixing \(n\text{,}\) now consider the polynomial equation</p>
+<li id="li-131">
+<p id="p-247">Fixing \(n\text{,}\) now consider the polynomial equation</p>
 <div class="displaymath">
 \begin{equation*}
 x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
