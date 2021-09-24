@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<chapter xml:id="inclusion-exclusion" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Inclusion/Exclusion</title>
+	<introduction>
+		<p>
+
+Here are the Inclusion-Exclusion formulas for two sets
+<me>
+| A \cup B |  = |A| + |B| - |A \cap B|
+</me>
+and three sets
+<me>
+| A \cup B \cup C |  = |A| + |B|  + |C| - |A \cap B| - |A \cap C| - |A \cap C| +  |A \cap B  \cap C|.
+</me>
+
+			</p><p>
+
+The general formula for the union (events <m>A_i</m> are <em>good</em>) is
+<me>
+| A_1 \cup A_2 \cup \cdots \cup A_n| = \sum_{j=1}^n (-1)^{j+1} \sum_{ \{i_1, i_2, \ldots i_j \}} | A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_j} |
+</me>
+where <m>\{ i_1, i_2, \ldots , i_j \} \in { [n] \choose j}</m>.
+We also write this as
+<me>
+| A_1 \cup A_2 \cup \cdots \cup A_n | = \sum_{ \emptyset \neq S \subset [n]} (-1)^{|S|+1}  | A_{S} |
+</me>
+where <m>A_S = \cap_{i \in S} A_i</m> for <m>S \neq \emptyset</m>.
+
+			</p><p>
+
+The general formula for the complement of the union (events <m>A_i</m> are <em>bad</em>) is
+<me>
+| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c | = \sum_{S \subset [n]} (-1)^{|S|}  | A_{S} |
+</me>
+where
+<me>
+A_S = \left\{
+\begin{array}{cl}
+A &amp; \mbox{for } S = \emptyset, \\
+\displaystyle{\cap_{i \in S} A_i} &amp; \mbox{for } S \neq \emptyset. \\
+\end{array}
+\right.
+</me>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Some Bridge Hands</title>
+			<idx><h>Some Bridge Hands</h></idx>
+			<statement>
+				<p>
+A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spades) with 13 cards each (2 through 10, Jack, Queen, King, Ace). A <em>bridge hand</em> consists of 13 cards.
+
+
+			<ol>
+				<li>
+					<p>
+ How many bridge hands have no ace and no hearts?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many bridge hands have at least one ace and at least one heart?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many bridge hands have at least one Jack, one King, one Queen and one Ace?
+
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Tangerines for Children</title>
+			<idx><h>Tangerines for Children</h></idx>
+			<statement>
+				<p>
+
+			<ol>
+				<li>
+					<p>
+ How many ways can you distribute 20 identical tangerines to 10 distinct children so that each child receives at most 5 tangerines?
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many ways can part (a) be completed if each child must receive at least one tangerine?
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>A Formula for Derangements</title>
+			<idx><h>A Formula for Derangements</h></idx>
+			<statement>
+				<p>
+Recall that a <em>derangement</em> of <m>[n]</m> is a permutation <m>\phi: [n] \rightarrow [n]</m> such that <m>\phi(i) \neq i</m> for all <m>i \in [n]</m>. In this problem, we develop an inclusion/exclusion formula for the number of derangements of <m>[n]</m>.
+
+
+Let <m>A</m> be the set of all permutations of <m>[n]</m>. We will define a set of "bad" events <m>A_1, A_2 , \ldots , A_n</m>, so that the set of derangements is
+<me>
+\left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c = A \backslash  \left( A_1 \cup A_2 \cup \cdots \cup A_n \right).
+</me>
+
+
+			<ol>
+				<li>
+					<p>
+ Define the "bad" event <m>A_i</m> in a very natural way. Here "bad" should be taken in the context that we <em>want</em> a derangement, but event <m>A_i</m> is preventing this for element <m>i</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Calculate the following quantities:
+\begin{eqnarray*}
+|A_i| &amp;=&amp;  \\
+|A_i \cap A_j| &amp;=&amp; \\
+|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}| &amp;=&amp;
+\end{eqnarray*}
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Determine the number of subsets of the following forms:
+
+			</p><p>
+
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i \cap A_j</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}</m>
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+
+
+			</p><p>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use the inclusion/exclusion formula to find number  of derangements of <m>[n]</m>. Calculate:
+<me>
+\left| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c \right| =
+\sum_{k=0}^n  \,\,\, \sum_{i_1, i_2, \ldots , i_k} (-1)^k |A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}|
+</me>
+where the sum is over all <m>\{i_1, i_2, \ldots , i_k \} \in \displaystyle{[n] \choose k }</m>.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>A Formula for Surjections</title>
+			<idx><h>A Formula for Surjections</h></idx>
+			<statement>
+				<p>
+Now we determine the number of <em>surjections</em> <m>f: [n] \rightarrow [k]</m> when <m>n \geq k</m>. We will then use that formula to get a formula for <m>S(n,k)</m>.
+
+			</p><p>
+Let <m>A</m> be the set of all functions from <m>[n]</m> to <m>[k]</m>, where <m>k \leq n</m>.
+
+			<ol>
+				<li>
+					<p>
+ Define the "bad" event <m>A_i</m> in a very natural way. Here "bad" should be taken in the context that we <em>want</em> a surjection, but event <m>A_i</m> is preventing this  for element <m>i</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Calculate the following quantities:
+\begin{eqnarray*}
+|A_i| &amp;=&amp;  \\
+|A_i \cap A_j| &amp;=&amp; \\
+|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}| &amp;=&amp;
+\end{eqnarray*}
+
+
+			</p><p>
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Determine the number of subsets of the following forms:
+
+			</p><p>
+
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i \cap A_j</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}</m>
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+
+
+
+
+			</p><p>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use the inclusion/exclusion formula to find number  of surjections from <m>[n]</m> to <m>[k]</m>.
+<me>
+\left| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c \right| =
+\sum_{S \subseteq [n]}  (-1)^{|S|} |A_S|.
+</me>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If you divide your answer to (d) by <m>k!</m> then you get a formula for <m>S(n,k)</m>. Explain why.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>

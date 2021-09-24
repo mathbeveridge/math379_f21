@@ -65,6 +65,7 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./a06-compositions.xml" />  
             <xi:include href="./a07-set-partition.xml" /> 
             <xi:include href="./a08-integer-partition.xml" /> 
+            <xi:include href="./a09-inclusion-exclusion.xml" />             
             <xi:include href="./ex01-counting.xml" />                       
 
     </part>
