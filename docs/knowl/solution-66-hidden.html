@@ -10,10 +10,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><ul class="disc">
-<li><p>distinct balls</p></li>
-<li><p>identical boxes</p></li>
-<li><p>repetition allowed</p></li>
-<li><p>no box can be empty</p></li>
-</ul></div></body>
+<body><div class="solution solution-like">
+<p>Pick any nonempty and proper subset \(\emptyset \subsetneq S \subsetneq [n]\text{.}\) The set \(S\) and its complement \(\overline{S}\) form a partition of \([n]\) into two (nonempty) blocks. There are \(2^n -2\) ways to choose \(S\text{.}\)</p>
+<p>However, this process creates each set partition twice because choosing \(S\) leads to the same set partition as choosing its complement \(\overline{S}\text{.}\) So we must divide by 2 to obtain our final answer. We have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+S(n,2) = \frac{2^n-2}{2} = 2^{n-1} -1.
+\end{equation*}
+</div>
+</div></body>
 </html>

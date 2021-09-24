@@ -12,7 +12,28 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>repetition allowed</p>
+<p>The values \(S(6,0)=0\) (impossible) and \(S(6,1)=1\) and \(S(6,6)=1\) are clear from the definition. We use the recurrence to find the remaining values</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+S(6,0) &amp;=&amp; 0 \\
+S(6,1) &amp;=&amp; 1 \\
+S(6,2) &amp;=&amp; S(5,1) + 2 \cdot S(5,2) =  1 + 2 \cdot 15 = 31\\
+S(6,3) &amp;=&amp; S(5,2) + 3 \cdot S(5,3) =  15 + 3 \cdot 25 = 90\\
+S(6,4) &amp;=&amp; S(5,3) + 4 \cdot S(5,4) =  25 + 4 \cdot 10 = 65 \\
+S(6,5) &amp;=&amp; S(5,4) + 5 \cdot S(5,5) =  10 + 5 \cdot 1 = 15\\
+S(6,6) &amp;=&amp; 1 \\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">So the next row is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{ccccccc}
+0 &amp; 1 &amp; 31 &amp; 90 &amp; 65 &amp; 15 &amp; 1
+\end{array}
+\end{equation*}
+</div>
 <span class="incontext"><a href="exercises-7.html#p-239">in-context</a></span>
 </body>
 </html>

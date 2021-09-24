@@ -12,19 +12,14 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Fixing \(n\text{,}\) now consider the polynomial equation</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
-\end{equation*}
-</div>
-<p class="continuation">Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-x^n = \sum_{k=0}^n S(n,k) (x)_k.
-\end{equation*}
-</div>
-<p class="continuation"><a class="solution-knowl original" data-knowl="./knowl/solution-75-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<p>RHS:</p>
+<ul class="disc"><li><p>Each of the \(n\) students has her choice of \(m\) classrooms. So the total number of ways is \(m^n\text{.}\)</p></li></ul>
+<p class="continuation">LHS:</p>
+<ul class="disc">
+<li><p>First, pick the number \(k\) of classrooms that will be used</p></li>
+<li><p>Next, split the students into \(k\) nonempty groups. This can be done in \(S(n,k)\) ways.</p></li>
+<li><p>Now, assign each group to a different classroom. This can be done in \((m)_k\) ways.</p></li>
+</ul>
 <span class="incontext"><a href="exercises-7.html#p-284">in-context</a></span>
 </body>
 </html>

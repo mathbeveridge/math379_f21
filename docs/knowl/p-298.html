@@ -12,36 +12,30 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Given an integer partition of \(n\) into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by</p>
+<p>Let \(\mbox{dist}(n,k)\) be the number of integer partitions of \(n\) with first part \(k\) and all parts distinct. The initial conditions for this function are</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-35  = 7+5+5+3+3+3+3+3+1+1+1.
+\begin{array}{cccccc}
+\mbox{dist}(0,0)=1, &amp; \mbox{dist}(n,0)=0 \mbox{ for } n &gt; 0, &amp; \mbox{dist}(1,1)=1.
+\end{array}
 \end{equation*}
 </div>
-<ol class="lower-roman">
+<p class="continuation">It is also clear that \(\mbox{dist}(n,k)=0\) when \(k&gt;n\text{.}\)</p>
+<ol class="lower-alpha">
 <li>
-<p>For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
+<p>Here are the values of \(\mbox{dist}(9,k)\) for \(1 \leq k \leq 9\text{:}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
+\begin{array}{c|cccccccccccc}
+k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 \\
+\hline
+\mbox{dist}(9,k) &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 1 &amp; 2 &amp; 2 &amp; 1 &amp; 1 &amp; 1
+\end{array}
 \end{equation*}
 </div>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Perform this step for our integer partition of 35.</em></p>
+<p class="continuation">Find each of these eight integer partitions of 9 into distinct parts.</p>
 </li>
-<li>
-<p>Write each \(a_{2k+1}\) as the sum of distinct powers of two. For example, \(5 = (4 + 1)\) and \(42 = (32 + 8 + 2)\text{.}\) There is a unique way to do this, and it  is equivalent to writing \(a_{2k+1}\) using binary notation.</p>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Perform this step for our integer partition of 35.</em></p>
-</li>
-<li>
-<p>Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
-\end{equation*}
-</div>
-<p class="continuation">We have now represented \(n\) as the sum of distinct positive integers!</p>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Perform this step for our integer partition of 35.</em></p>
-</li>
+<li><p>Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula.</p></li>
 </ol>
 <span class="incontext"><a href="exercises-8.html#p-298">in-context</a></span>
 </body>
