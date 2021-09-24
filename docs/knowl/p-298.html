@@ -12,16 +12,37 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>American Football is played on a rectangular field between two teams. The field is 100 yards long, with a ten yard end zone at each end, each of which has a set of goalposts. The game is played with a single ball in the shape of a prolate spheroid. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/football.jpg" class="contained"></div> The offensive team tries to advance the ball down the field. While on offense (in possession of the ball), a team can score in four ways</p>
-<ul class="disc">
-<li><p>kicking a field goal (3 points) by kicking the ball through the goalposts in the opposing team's end zone;</p></li>
-<li><p>scoring a touchdown (6 points) by advancing the ball across the length of the field and into the opposing team's end zone;</p></li>
-<li><p>scoring a touchdown plus extra point (7 points) by following up this touchdown by kicking the ball through the goalposts; and</p></li>
-<li><p>scoring a touchdown plus two-point conversion (8 points) by following up this touchdown with another successful offensive scoring play.</p></li>
-</ul>
-<p class="continuation">While on defense (not in possession of the ball), a team can score in one way:</p>
-<ul class="disc"><li><p>scoring a safety (2 points) by tackling the ball carrier (on the opposing team) in his own endzone.</p></li></ul>
-<p class="continuation">The game is played for sixty minutes. Use the product principle for generating functions to find a concise formula for \(F(x)\text{,}\) the generating function for the number of ways to to score \(n\) points in a football game.</p>
-<span class="incontext"><a href="exercises-10.html#p-298">in-context</a></span>
+<p>Given an integer partition of \(n\) into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+35  = 7+5+5+3+3+3+3+3+1+1+1.
+\end{equation*}
+</div>
+<ol class="lower-roman">
+<li>
+<p>For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
+\end{equation*}
+</div>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Perform this step for our integer partition of 35.</em></p>
+</li>
+<li>
+<p>Write each \(a_{2k+1}\) as the sum of distinct powers of two. For example, \(5 = (4 + 1)\) and \(42 = (32 + 8 + 2)\text{.}\) There is a unique way to do this, and it  is equivalent to writing \(a_{2k+1}\) using binary notation.</p>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Perform this step for our integer partition of 35.</em></p>
+</li>
+<li>
+<p>Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
+\end{equation*}
+</div>
+<p class="continuation">We have now represented \(n\) as the sum of distinct positive integers!</p>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Perform this step for our integer partition of 35.</em></p>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-8.html#p-298">in-context</a></span>
 </body>
 </html>

@@ -7,6 +7,21 @@
 
 The Stirling number of second kind <m>S(n,k)</m> is the number of partitions of the set <m>[n]</m> into exactly <m>k</m> parts.
 
+Here are the first rows of the Stirling triangle:
+
+<me>
+\begin{array}{lccccccccccc}
+n&amp;S(n,k)\\
+\hline
+\\
+0 &amp; &amp; &amp;&amp;&amp;&amp; 1  \\
+1 &amp; &amp;&amp;&amp;&amp; 0 &amp;&amp; 1 \\
+2 &amp; &amp;&amp;&amp; 0 &amp;&amp; 1 &amp;&amp; 1   \\
+3 &amp; &amp;&amp; 0 &amp;&amp; 1 &amp;&amp; 3 &amp;&amp; 1  \\
+4 &amp;&amp; 0 &amp;&amp; 1 &amp;&amp; 7 &amp;&amp; 6 &amp;&amp; 1 \\
+\end{array}
+</me>
+
 	</p>
 	</introduction>
 	<exercises>
@@ -18,6 +33,32 @@ The Stirling number of second kind <m>S(n,k)</m> is the number of partitions of 
 				<p>
 What balls-in-boxes problem is equivalent to partitions of <m>[n]</m> into <m>k</m> parts? There are four decisions to make about the balls and boxes.
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ distinct balls
+			</p>
+			</li>
+			<li>
+			<p>
+ identical boxes
+			</p>
+			</li>
+			<li>
+			<p>
+ repetition allowed
+			</p>
+			</li>
+			<li>
+			<p>
+ no box can be empty
+			</p>
+			</li>
+		</ul>
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -36,6 +77,14 @@ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1).
 					<p>
  Use the Stirling triangle we made in class to verify the identity is true for <m>n=4</m> and <m>k=3</m>. Note that <m>S(n,0)=0</m> and <m>S(n,k)=0</m> when <m>k&gt;n</m>.
 
+<solution>
+<p>
+\begin{eqnarray*}
+S(5,3) &amp;=&amp; {4 \choose 0} S(4,2) +  {4 \choose 1} S(3,2) +  {4 \choose 2} S(2,2) +  {4 \choose 3} S(1,2) +  {4 \choose 4} S(0,2) \\
+&amp;=&amp; 1 \cdot 7 + 4 \cdot 3 + 6 \cdot 1 + 4 \cdot 0 + 1 \cdot 0 \, = \, 25.
+\end{eqnarray*}
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -43,6 +92,38 @@ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1).
 					<p>
  Give a combinatorial proof of the  identity. That is, explain why the LHS and the RHS count the exact same thing.
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ LHS: The number of ways to partition <m>[n+1]</m> into <m>k</m> parts.
+			</p>
+			</li>
+			<li>
+			<p>
+ RHS: Counts the same set, grouping the partitions according to the number of elements of <m>[n]</m> that occur  in the set with element <m>n+1</m>.
+
+
+Fix <m>i</m>. We count the number of partitions of <m>[n+1]</m> where the element <m>n+1</m> is in a set with <m>i</m> elements. We choose our set in two phases.
+		<ul>
+			<li>
+			<p>
+ Phase 1: Choose the <m>i</m> elements to appear in the set with element <m>n+1</m>. This can be done in <m>{n \choose i}</m> ways.
+			</p>
+			</li>
+			<li>
+			<p>
+ Phase 2: Partition the remaining <m>n-i</m> elements into <m>k-1</m> sets. This can be done in <m>S(n-i,k-1)</m>
+			</p>
+			</li>
+		</ul>
+Now we sum over all possible values of <m>i</m>, namely <m>0 \leq i \leq n</m>.
+			</p>
+			</li>
+		</ul>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -65,6 +146,34 @@ Consider the set <m>{\cal F}</m> of all  functions <m>f : [n] \rightarrow [k]</m
 					<p>
  The set of all functions <m>f: [n] \rightarrow [k]</m>
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ distinct balls
+			</p>
+			</li>
+			<li>
+			<p>
+ distinct boxes
+			</p>
+			</li>
+			<li>
+			<p>
+ repetition allowed
+			</p>
+			</li>
+			<li>
+			<p>
+ boxes can be empty
+			</p>
+			</li>
+		</ul>
+
+Number of ways: <m>k^n</m>, with no restrictions on <m>n</m> and <m>k</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -72,6 +181,34 @@ Consider the set <m>{\cal F}</m> of all  functions <m>f : [n] \rightarrow [k]</m
 					<p>
  The set of injections <m>f: [n] \rightarrow [k]</m>
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ distinct balls
+			</p>
+			</li>
+			<li>
+			<p>
+ distinct boxes
+			</p>
+			</li>
+			<li>
+			<p>
+ repetition not allowed
+			</p>
+			</li>
+			<li>
+			<p>
+ boxes can be empty
+			</p>
+			</li>
+		</ul>
+
+Number of ways: <m>(k)_n</m> and we must have <m>k \geq n</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -79,6 +216,34 @@ Consider the set <m>{\cal F}</m> of all  functions <m>f : [n] \rightarrow [k]</m
 					<p>
  The set of surjections <m>f: [n] \rightarrow [k]</m>
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ distinct balls
+			</p>
+			</li>
+			<li>
+			<p>
+ distinct boxes
+			</p>
+			</li>
+			<li>
+			<p>
+ repetition allowed
+			</p>
+			</li>
+			<li>
+			<p>
+ boxes cannot be empty
+			</p>
+			</li>
+		</ul>
+
+Number of ways: <m>k! \cdot S(n,k)</m> (see if you can explain why!) and we must have <m>k \leq n</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -86,6 +251,34 @@ Consider the set <m>{\cal F}</m> of all  functions <m>f : [n] \rightarrow [k]</m
 					<p>
  The set of bijections <m>f: [n] \rightarrow [k]</m>
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ distinct balls
+			</p>
+			</li>
+			<li>
+			<p>
+ distinct boxes
+			</p>
+			</li>
+			<li>
+			<p>
+ repetition not allowed
+			</p>
+			</li>
+			<li>
+			<p>
+ boxes cannot be empty
+			</p>
+			</li>
+		</ul>
+
+Number of ways: <m>k!</m> and we must have <m>k = n</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -119,6 +312,17 @@ Explain why (but don't prove rigorously)  another basis for <m>\R[x]</m> is:
 1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots.
 </me>
 
+<solution>
+<p>
+The set of falling factorial polynomials are:
+<me>
+\begin{array}{ccccc}
+1, &amp; (x)_1 = x, &amp;(x)_2 = x(x-1)= x^2 - x, &amp; (x)_3 = x(x-1)(x-2) = x^3 -3x^2 + 2x, &amp; \ldots
+\end{array}
+</me>
+For each <m>k \geq 0</m>, we have one polynomial of degree <m>k</m>. So this will end up being a basis of <m>\R[x]</m>.
+</p>
+</solution>
 
 
 
@@ -133,6 +337,37 @@ m^n = \sum_{k=0}^n S(n,k) (m)_k.
 </me>
 In particular, both sides count the number of ways to assign <m>n</m> students to <m>m</m> classrooms where some classrooms can be empty. Explain.
 
+<solution>
+<p>
+RHS:
+		<ul>
+			<li>
+			<p>
+ Each of the <m>n</m> students has her choice of <m>m</m> classrooms. So the total number of ways is <m>m^n</m>.
+			</p>
+			</li>
+		</ul>
+
+LHS:
+		<ul>
+			<li>
+			<p>
+ First, pick the number <m>k</m> of classrooms that will be used
+			</p>
+			</li>
+			<li>
+			<p>
+ Next, split the students into <m>k</m> nonempty groups. This can be done in <m>S(n,k)</m> ways.
+			</p>
+			</li>
+			<li>
+			<p>
+ Now, assign each group to a different classroom. This can be done in <m>(m)_k</m> ways.
+			</p>
+			</li>
+		</ul>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -148,6 +383,20 @@ x^n = \sum_{k=0}^n S(n,k) (x)_k.
 </me>
 
 
+<solution>
+<p>
+Let <m>p(x) =  \displaystyle{x^n -  \sum_{k=0}^n S(n,k) (x)_k}.</m> Part (b) says that <m>p(x)= 0</m> for <m>x=1,2,3, \ldots, m, \ldots</m>. In other words, this polynomial has an infinite number roots. The only such polynomial is the zero polynomial. Therefore,
+<me>
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+</me>
+
+			</p><p>
+
+Our conclusion is:  when the polynomial <m>x^n</m> is expressed in terms of the falling factorial basis
+<m>1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots</m>, then the coefficient for basis element <m>(x)_k</m> is <m>S(n,k)</m>.
+
+</p>
+</solution>
 
 
 
