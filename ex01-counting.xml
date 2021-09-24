@@ -130,6 +130,37 @@ In other words, find a bijective function <m>h : A \times B \rightarrow [mn]</m>
 				</p>
 			</statement>
 		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Let <m>\mbox{q}(n,k)</m> denote the number of partitions of integer <m>n</m> into <m>k</m> distinct parts. The initial values are
+<me>
+\begin{array}{ccc}
+q(0,0)=1, &amp; q(n,0)=0, \mbox{ for } n&gt;0, &amp;  \mbox{and  } q(1,1) = 1.
+\end{array}
+</me>
+
+			<ol>
+				<li>
+					<p>
+  Explain why <m>q(n,k) &gt;0</m> if and only if <m>n \geq {k+1 \choose 2}</m>.
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Prove that if <m>n \geq 2</m> and <m>q(n,k) &gt;0</m>  then
+<me>
+q(n,k) = q(n-k,k) + q(n-k, k-1).
+</me>
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
 	</exercises>
 
 

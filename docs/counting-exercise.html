@@ -182,7 +182,26 @@ L = \{ (x,y) : 1 \leq x \leq 4 \mbox{ and }  1 \leq y \leq 82 \}.
 <p class="continuation">In other words, find a bijective function \(h : A \times B \rightarrow [mn]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-47"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-351">Let \(R(n,k)\) be the number of ways to partition the set \([n]\) into \(k\) parts so that each part contains only even numbers or only odd numbers. For example, we have \(R(1,1)=1\text{,}\) \(R(2,1)=0\) and \(R(2,2)=1\text{.}\) For \(n \geq 3\) and \(k \geq 2\text{,}\) find a formula for \(R(n,k)\) in terms of Stirling numbers of the second kind.</p></article></section></section></div></main>
+<p id="p-351">Let \(R(n,k)\) be the number of ways to partition the set \([n]\) into \(k\) parts so that each part contains only even numbers or only odd numbers. For example, we have \(R(1,1)=1\text{,}\) \(R(2,1)=0\) and \(R(2,2)=1\text{.}\) For \(n \geq 3\) and \(k \geq 2\text{,}\) find a formula for \(R(n,k)\) in terms of Stirling numbers of the second kind.</p></article><article class="exercise exercise-like" id="exercise-48"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-352">Let \(\mbox{q}(n,k)\) denote the number of partitions of integer \(n\) into \(k\) distinct parts. The initial values are</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{ccc}
+q(0,0)=1, &amp; q(n,0)=0, \mbox{ for } n&gt;0, &amp;  \mbox{and  } q(1,1) = 1.
+\end{array}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-193"><p id="p-353">Explain why \(q(n,k) &gt;0\) if and only if \(n \geq {k+1 \choose 2}\text{.}\)</p></li>
+<li id="li-194">
+<p id="p-354">Prove that if \(n \geq 2\) and \(q(n,k) &gt;0\)  then</p>
+<div class="displaymath">
+\begin{equation*}
+q(n,k) = q(n-k,k) + q(n-k, k-1).
+\end{equation*}
+</div>
+</li>
+</ol></article></section></section></div></main>
 </div>
 </body>
 </html>
