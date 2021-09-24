@@ -151,11 +151,13 @@ Let <m>A</m> be the set of all permutations of <m>[n]</m>. We will define a set 
 				<li>
 					<p>
  Calculate the following quantities:
-\begin{eqnarray*}
+<me>
+\begin{array}{rcl}
 |A_i| &amp;=&amp;  \\
 |A_i \cap A_j| &amp;=&amp; \\
 |A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}| &amp;=&amp;
-\end{eqnarray*}
+\end{array}
+</me>
 
 
 
