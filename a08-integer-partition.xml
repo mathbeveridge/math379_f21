@@ -5,7 +5,7 @@
 	<introduction>
 		<p>
 
-A partition of integer <m>n</m> is a multiset of positive integers whose sum is <m>n</m>.
+A partition of integer <m>n</m> is a multiset of positive integers whose sum is <m>n</m>. Here are three symbols we use for counting integer partitions:
 <me>
 \begin{array}{rcl}
 p(n,k) &amp; = &amp; \mbox{# partitions of } n \mbox{ into } k \mbox{ parts} \\
@@ -215,7 +215,12 @@ We have now represented <m>n</m> as the sum of distinct positive integers!
 				</li>
 				<li>
 					<p>
- Describe the reverse mapping that takes a partition of <m>n</m> with distinct parts and maps it to a partition of <m>n</m> with odd parts. Explain how you know the resulting partition must have odd parts.
+ Describe the reverse mapping that takes a partition of <m>n</m> with distinct parts and maps it to a partition of <m>n</m> with odd parts. Explain how you know the resulting partition must have odd parts. Then use your mapping  the integer partition
+<me>
+6 + 12 + 15 + 16 + 20.
+</me>
+to an integer partition with odd parts.
+
 
 
 					</p>

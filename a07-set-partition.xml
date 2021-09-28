@@ -65,7 +65,7 @@ Use the Stirling Recurrence
 <me>
 S(n,k) = S(n-1, k-1) + S(n-1,k)
 </me>
-and the row for <m>n=5</m> to find the <m>n=6</m> row of the Stirling triangle.
+to find the <m>n=6</m> row of the Stirling triangle.
 
 
 <solution>
@@ -377,10 +377,11 @@ Our typical basis for <m>\R[x]</m> is:
 <me>
 1, x, x^2, \ldots, x^k, \ldots.
 </me>
-Explain why (but don't prove rigorously)  another basis for <m>\R[x]</m> is:
+Explain why another basis for <m>\R[x]</m> is:
 <me>
 1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots.
 </me>
+Just give an intuitive explanation (not a rigorous proof).
 
 <solution>
 <p>
