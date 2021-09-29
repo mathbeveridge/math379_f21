@@ -163,16 +163,23 @@ p(n+k,k)
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-160"><p id="p-294">Interpret each side of this equality.</p></li>
-<li id="li-161"><p id="p-295">Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions.</p></li>
-<li id="li-162">
-<p id="p-296">Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
-<p id="p-297"></p>
+<li id="li-160"><p id="p-294">Interpret each side of this equality. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-78" id="solution-78"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-78"><div class="solution solution-like"><ul id="p-295" class="disc">
+<li id="li-161"><p id="p-296">LHS = Number of partitions of \(n\) into at most \(k\) parts</p></li>
+<li id="li-162"><p id="p-297">RHS = Number of partitions of \(n+k\) into exactly \(k\) parts.</p></li>
+</ul></div></div></p></li>
+<li id="li-163"><p id="p-298">Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-79" id="solution-79"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-79"><div class="solution solution-like">
+<p id="p-299">The partitions of \(5\) into at most 3 parts are:</p>
+<p id="p-300"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-int-partition0.svg" role="img" class="contained"></div> The partitions of \(8\) into exactly 3 parts are:</p>
+<p id="p-301"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-int-partition1.svg" role="img" class="contained"></div></p>
+</div></div></p></li>
+<li id="li-164">
+<p id="p-302">Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
+<p id="p-303"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-80" id="solution-80"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-80"><div class="solution solution-like"><p id="p-304">Let \(A\) be the set of partitions of \(n\) into at most \(k\) parts. Let \(B\) be the set of partitions of \(n+k\) into exactly \(k\) parts. We define a bijection \(f: A \rightarrow B\text{.}\) The partitions are listed in part (b) to reflect the bijection. Given the Ferrers diagram of a partition \(\sigma \in A\) we add a column of length \(k\) to the left of the diagram. The result is a partition \(f(\sigma)\)  of \(n+k\) into exactly \(k\) parts. This process is reversible: we just remove this leftmost column of length \(k\) to recover the original partition of \(n\) into at most \(k\) parts. It remains to show that this function is surjective. But this is easy: Given a partition \(\tau \in B\text{,}\) removing the leftmost column gives a partition \(\sigma \in A\text{.}\)  Obviously, \(f(\sigma) = \tau\text{.}\) Since \(f\) is surjective and reversible, it must be a bijection.</p></div></div></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-38"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions Into Distinct Parts.</span>
 </h6>
-<p id="p-298">Let \(\mbox{dist}(n,k)\) be the number of integer partitions of \(n\) with first part \(k\) and all parts distinct. The initial conditions for this function are</p>
+<p id="p-305">Let \(\mbox{dist}(n,k)\) be the number of integer partitions of \(n\) with first part \(k\) and all parts distinct. The initial conditions for this function are</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{cccccc}
@@ -182,8 +189,8 @@ p(n+k,k)
 </div>
 <p class="continuation">It is also clear that \(\mbox{dist}(n,k)=0\) when \(k&gt;n\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-163">
-<p id="p-299">Here are the values of \(\mbox{dist}(9,k)\) for \(1 \leq k \leq 9\text{:}\)</p>
+<li id="li-165">
+<p id="p-306">Here are the values of \(\mbox{dist}(9,k)\) for \(1 \leq k \leq 9\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{c|cccccccccccc}
@@ -193,13 +200,21 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 \end{array}
 \end{equation*}
 </div>
-<p class="continuation">Find each of these eight integer partitions of 9 into distinct parts.</p>
+<p class="continuation">Find each of these eight integer partitions of 9 into distinct parts. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-81" id="solution-81"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-81"><div class="solution solution-like"><p id="p-307">Here are the partitions of 9 into distinct parts. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-int-partition2.svg" role="img" class="contained"></div></p></div></div></p>
 </li>
-<li id="li-164"><p id="p-300">Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula.</p></li>
+<li id="li-166"><p id="p-308">Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-82" id="solution-82"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-82"><div class="solution solution-like">
+<p id="p-309">The recurrence relation is</p>
+<div class="displaymath">
+\begin{equation*}
+\mbox{dist}(n,k) = \sum_{i=0}^{k-1} \mbox{dist}(n-k,i).
+\end{equation*}
+</div>
+<p class="continuation">Removing the first row of our partition results in a partition of \(n-k\) into at most \(k-1\) parts, and all parts distinct. The sum on the RHS counts the number of such partitions.</p>
+</div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-39"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions into Odd Parts.</span>
 </h6>
-<p id="p-301">In this problem you will prove a very cool result:</p>
+<p id="p-310">In this problem you will prove a very cool result:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{ccc}
@@ -215,50 +230,134 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-165"><p id="p-302">In the previous problem, you found the eight integer partitions of 9 into distinct parts. Now find the eight integer partitions of 9 into odd parts.</p></li>
-<li id="li-166">
-<p id="p-303">Given an integer partition of \(n\) into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by</p>
+<li id="li-167"><p id="p-311">In the previous problem, you found the eight integer partitions of 9 into distinct parts. Now find the eight integer partitions of 9 into odd parts. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-83" id="solution-83"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-83"><div class="solution solution-like">
+<p id="p-312">We will write these as sums because the Ferrers diagrams take up a lot of space.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{l}
+9 \\
+7+1+1 \\
+5+3+1 \\
+5+1+1+1+1 \\
+3+3+3 \\
+3+3+1+1+1 \\
+3+1+1+1+1+1+1 \\
+1+1+1+1+1+1+1+1+1
+\end{array}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-168">
+<p id="p-313">Given an integer partition of \(n\) into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by</p>
 <div class="displaymath">
 \begin{equation*}
 35  = 7+5+5+3+3+3+3+3+1+1+1.
 \end{equation*}
 </div>
 <ol class="lower-roman">
-<li id="li-167">
-<p id="p-304">For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
+<li id="li-169">
+<p id="p-314">For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
 <div class="displaymath">
 \begin{equation*}
 n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
 \end{equation*}
 </div>
-<p id="p-305"><em class="emphasis">Perform this step for our integer partition of 35.</em></p>
+<p id="p-315"><em class="emphasis">Perform this step for our integer partition of 35.</em> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-84" id="solution-84"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-84"><div class="solution solution-like">
+<p id="p-316">For the given partition of 35, we have</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{cccc}
+a_7 = 1&amp; a_5 = 2 &amp; a_3 = 5 &amp; a_1 = 3.
+\end{array}
+\end{equation*}
+</div>
+</div></div></p>
 </li>
-<li id="li-168">
-<p id="p-306">Write each \(a_{2k+1}\) as the sum of distinct powers of two. For example, \(5 = (4 + 1)\) and \(42 = (32 + 8 + 2)\text{.}\) There is a unique way to do this, and it  is equivalent to writing \(a_{2k+1}\) using binary notation.</p>
-<p id="p-307"><em class="emphasis">Perform this step for our integer partition of 35.</em></p>
+<li id="li-170">
+<p id="p-317">Write each \(a_{2k+1}\) as the sum of distinct powers of two. For example, \(5 = (4 + 1)\) and \(42 = (32 + 8 + 2)\text{.}\) There is a unique way to do this, and it  is equivalent to writing \(a_{2k+1}\) using binary notation.</p>
+<p id="p-318"><em class="emphasis">Perform this step for our integer partition of 35.</em> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-85" id="solution-85"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-85"><div class="solution solution-like">
+<p id="p-319">For the given partition of 35, we have</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{cccc}
+a_7 = 1&amp; a_5 = 2 &amp; a_3 = 4+1 &amp; a_1 = 2+1.
+\end{array}
+\end{equation*}
+</div>
+</div></div></p>
 </li>
-<li id="li-169">
-<p id="p-308">Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
+<li id="li-171">
+<p id="p-320">Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
 <div class="displaymath">
 \begin{equation*}
 a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
 \end{equation*}
 </div>
 <p class="continuation">We have now represented \(n\) as the sum of distinct positive integers!</p>
-<p id="p-309"><em class="emphasis">Perform this step for our integer partition of 35.</em></p>
+<p id="p-321"><em class="emphasis">Perform this step for our integer partition of 35.</em> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-86" id="solution-86"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-86"><div class="solution solution-like">
+<p id="p-322">For the given partition of 35, we have</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+35  &amp;=&amp; 7+5+5+3+3+3+3+3+1+1+1 \\
+&amp;=&amp;
+1  \cdot 7 + 2 \cdot 5 + (4+1) \cdot 3 + (2+1) \cdot 1 \\
+&amp;=&amp;
+7 + 10 + (12 + 3) + (2 + 1) \\
+&amp;=&amp; 12 + 10 + 7 + 3  + 2 +1
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">and these parts are all distinct!</p>
+</div></div></p>
 </li>
 </ol>
 </li>
-<li id="li-170"><p id="p-310">Explain why each of the terms obtained by the process in part (b) are all distinct.</p></li>
-<li id="li-171"><p id="p-311">Use the mapping from part (b) to match the partitions of 9 into odd parts from part (b) to their corresponding partition of 9 into distinct parts from 2(a).</p></li>
-<li id="li-172">
-<p id="p-312">Describe the reverse mapping that takes a partition of \(n\) with distinct parts and maps it to a partition of \(n\) with odd parts. Explain how you know the resulting partition must have odd parts. Then use your mapping  the integer partition</p>
+<li id="li-172"><p id="p-323">Explain why each of the terms obtained by the process in part (b) are all distinct. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-87" id="solution-87"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-87"><div class="solution solution-like"><p id="p-324">Every positive integer \(m\) can be written uniquely as \(m = 2^i q\) where \(q\) is an odd number and \(i \geq 0\text{.}\) Every number that appears in the final expansion is of this form.</p></div></div></p></li>
+<li id="li-173"><p id="p-325">Use the mapping from part (b) to match the partitions of 9 into odd parts from part (b) to their corresponding partition of 9 into distinct parts from 2(a). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like">
+<p id="p-326">Remember that we expand the coefficients \(a_{2k+1}\) but not the odd numbers \(2k+1\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+9 &amp; \longleftrightarrow &amp; 9\\
+7+1+1 &amp; \longleftrightarrow &amp; 7 + 2\\
+5+3+1 &amp; \longleftrightarrow &amp; 5 + 3 + 1\\
+5+1+1+1+1  &amp; \longleftrightarrow &amp; 5 + 4\\
+3+3+3  &amp; \longleftrightarrow &amp; 6 + 3\\
+3+3+1+1+1  &amp; \longleftrightarrow &amp; 6 + 2 + 1\\
+3+1+1+1+1+1+1  &amp; \longleftrightarrow &amp; 4 + 3 + 2\\
+1+1+1+1+1+1+1+1+1  &amp; \longleftrightarrow &amp; 8 + 1
+\end{array}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-174">
+<p id="p-327">Describe the reverse mapping that takes a partition of \(n\) with distinct parts and maps it to a partition of \(n\) with odd parts. Explain how you know the resulting partition must have odd parts. Then use your mapping  the integer partition</p>
 <div class="displaymath">
 \begin{equation*}
 6 + 12 + 15 + 16 + 20.
 \end{equation*}
 </div>
-<p class="continuation">to an integer partition with odd parts.</p>
+<p class="continuation">to an integer partition with odd parts. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like">
+<p id="p-328">Start with a partition  \(n = b_1 + b_2 + \cdots + b_k\) into distinct parts.</p>
+<ol class="lower-roman">
+<li id="li-175"><p id="p-329">Factor part \(b_j = 2^{i_j} q_j\) where \(i \geq 0\) and \(q_j\) is odd.</p></li>
+<li id="li-176"><p id="p-330">For each odd number \(q\) that appears, let \(a_q\) be the sum of all the distinct powers of two that are multiplied by \(q\text{.}\)</p></li>
+<li id="li-177"><p id="p-331">Our new integer partition has \(a_q\) parts of size \(q\text{.}\)</p></li>
+</ol>
+<p class="continuation">The resulting partition only has odd parts because each \(q\) is an odd number.</p>
+<p id="p-332">Applying this to \(6 + 12 + 15 + 16 + 20\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{cl}
+&amp;1 +  6 + 12 + 15 + 16 + 20 \\
+= &amp;1 \cdot 1 +  2 \cdot 3 + 2^2 \cdot 3 + 1 \cdot 15 + 2^4 \cdot 1  +   2^2 \cdot 5 \\
+=&amp; (1+16) \cdot 1 + (2 + 4) \cdot 3 + 4 \cdot 5 + 15 \\
+=&amp; \underbrace{1 + \cdots + 1}_{17} + \underbrace{3+\cdots+3}_{6} + \underbrace{5+\cdots+5}_{4}  + 15
+\end{array}
+\end{equation*}
+</div>
+</div></div></p>
 </li>
 </ol></article></section></section></div></main>
 </div>

@@ -12,19 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The general formula for the union (events \(A_i\) are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">good</em>) is</p>
+<p>For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-| A_1 \cup A_2 \cup \cdots \cup A_n| = \sum_{j=1}^n (-1)^{j+1} \sum_{ \{i_1, i_2, \ldots i_j \}} | A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_j} |
+n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
 \end{equation*}
 </div>
-<p class="continuation">where \(\{ i_1, i_2, \ldots , i_j \} \in { [n] \choose j}\text{.}\) We also write this as</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-| A_1 \cup A_2 \cup \cdots \cup A_n | = \sum_{ \emptyset \neq S \subset [n]} (-1)^{|S|+1}  | A_{S} |
-\end{equation*}
-</div>
-<p class="continuation">where \(A_S = \cap_{i \in S} A_i\) for \(S \neq \emptyset\text{.}\)</p>
-<span class="incontext"><a href="inclusion-exclusion.html#p-314">in-context</a></span>
+<span class="incontext"><a href="exercises-8.html#p-314">in-context</a></span>
 </body>
 </html>

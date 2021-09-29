@@ -41,6 +41,22 @@ p(n+k,k)
 					<p>
  Interpret each side of this equality.
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ LHS = Number of partitions of <m>n</m> into at most <m>k</m> parts
+			</p>
+			</li>
+			<li>
+			<p>
+ RHS = Number of partitions of <m>n+k</m> into exactly <m>k</m> parts.
+			</p>
+			</li>
+		</ul>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -48,6 +64,205 @@ p(n+k,k)
 					<p>
  Verify this result for <m>n=5</m> and <m>k=3</m>. In other words, find all partitions of both types. You will find that there are equal numbers of these partitions.
 
+<solution>
+<p>
+The partitions of <m>5</m> into at most 3 parts are:
+
+			</p><p>
+
+
+			<image width="50%" xml:id="fig-img-int-partition0">
+				<latex-image>
+\begin{tikzpicture}[scale=.4]
+
+\begin{scope}[shift={(-1,0)}]
+
+\draw[color=white] (-1,0) -- (-1,-2);
+
+\foreach \i in {0,1,2,3,4}
+{
+\drawbox{\i}{0};
+}
+
+\end{scope}
+
+\begin{scope}[shift={(6,0)}]
+
+\draw[color=white] (-1,0) -- (-1,-2);
+
+\foreach \i in {0,1,2,3}
+{
+\drawbox{\i}{0}
+}
+
+\drawbox{0}{-1}
+
+\end{scope}
+
+\begin{scope}[shift={(12,0)}]
+
+\draw[color=white] (-1,0) -- (-1,-2);
+
+\foreach \i in {0,1,2}
+{
+\drawbox{\i}{0};
+}
+
+\foreach \i in {0,1}
+{
+\drawbox{\i}{-1}
+}
+
+\end{scope}
+
+\begin{scope}[shift={(18,0)}]
+
+\draw[color=white] (-1,0) -- (-1,-2);
+
+\foreach \i in {0,1,2}
+{
+\drawbox{\i}{0};
+}
+
+\drawbox{0}{-1}
+
+\drawbox{0}{-2}
+
+\end{scope}
+
+\begin{scope}[shift={(24,0)}]
+
+\draw[color=white] (-1,0) -- (-1,-2);
+
+\foreach \i in {0,1}
+{
+\drawbox{\i}{0};
+}
+
+\foreach \i in {0,1}
+{
+\drawbox{\i}{-1};
+}
+
+\drawbox{0}{-2}
+
+\end{scope}
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+
+The partitions of <m>8</m> into exactly 3 parts are:
+
+			</p><p>
+
+			<image width="50%" xml:id="fig-img-int-partition1">
+				<latex-image>
+\begin{tikzpicture}[scale=.4]
+
+
+
+\begin{scope}[shift={(-3,0)}]
+
+\foreach \i in {0,-1,-2}
+{
+\drawbox{-1}{\i};
+}
+
+\foreach \i in {0,1,2,3,4}
+{
+\drawbox{\i}{0};
+}
+
+\end{scope}
+
+\begin{scope}[shift={(5,0)}]
+
+\foreach \i in {0,-1,-2}
+{
+\drawbox{-1}{\i};
+}
+
+\foreach \i in {0,1,2,3}
+{
+\drawbox{\i}{0}
+}
+
+\drawbox{0}{-1}
+
+\end{scope}
+
+\begin{scope}[shift={(12,0)}]
+
+\foreach \i in {0,-1,-2}
+{
+\drawbox{-1}{\i};
+}
+
+\foreach \i in {0,1,2}
+{
+\drawbox{\i}{0};
+}
+
+\foreach \i in {0,1}
+{
+\drawbox{\i}{-1}
+}
+
+\end{scope}
+
+\begin{scope}[shift={(18,0)}]
+
+\foreach \i in {0,-1,-2}
+{
+\drawbox{-1}{\i};
+}
+
+\foreach \i in {0,1,2}
+{
+\drawbox{\i}{0};
+}
+
+\drawbox{0}{-1}
+
+\drawbox{0}{-2}
+
+\end{scope}
+
+\begin{scope}[shift={(24,0)}]]
+
+\foreach \i in {0,-1,-2}
+{
+\drawbox{-1}{\i};
+}
+
+\foreach \i in {0,1}
+{
+\drawbox{\i}{0};
+}
+
+\foreach \i in {0,1}
+{
+\drawbox{\i}{-1};
+}
+
+\drawbox{0}{-2}
+
+\end{scope}
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -60,6 +275,16 @@ p(n+k,k)
 			</p><p>
 
 
+<solution>
+<p>
+Let <m>A</m> be the set of partitions of <m>n</m> into at most <m>k</m> parts. Let <m>B</m> be the set of partitions of <m>n+k</m> into exactly <m>k</m> parts. We define a bijection <m>f: A \rightarrow B</m>. The partitions are listed in part (b) to reflect the bijection.
+
+Given the Ferrers diagram of a partition <m>\sigma \in A</m> we add a column of length <m>k</m> to the left of the diagram. The result is a partition <m>f(\sigma)</m>  of <m>n+k</m> into exactly <m>k</m> parts.
+This process is reversible: we just remove this leftmost column of length <m>k</m> to recover the original partition of <m>n</m> into at most <m>k</m> parts.
+
+It remains to show that this function is surjective. But this is easy: Given a partition <m>\tau \in B</m>, removing the leftmost column gives a partition <m>\sigma \in A</m>.  Obviously, <m>f(\sigma) = \tau</m>. Since <m>f</m> is surjective and reversible, it must be a bijection.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -98,6 +323,123 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 </me>
 Find each of these eight integer partitions of 9 into distinct parts.
 
+<solution>
+<p>
+Here are the partitions of 9 into distinct parts.
+
+
+			<image width="50%" xml:id="fig-img-int-partition2">
+				<latex-image>
+\begin{tikzpicture}[scale=.4]
+
+
+\begin{scope}[shift={(0,21)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+
+\drawbox{1}{-1}
+\drawbox{2}{-1}
+\drawbox{3}{-1}
+\drawbox{1}{-2}
+\drawbox{2}{-2}
+\end{scope}
+
+\begin{scope}[shift={(0,16)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+\drawbox{5}{0}
+
+\drawbox{1}{-1}
+\drawbox{2}{-1}
+\drawbox{3}{-1}
+\drawbox{4}{-1}
+\end{scope}
+
+\begin{scope}[shift={(11,16)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+\drawbox{5}{0}
+
+\drawbox{1}{-1}
+\drawbox{2}{-1}
+\drawbox{3}{-1}
+\drawbox{1}{-2}
+\end{scope}
+
+\begin{scope}[shift={(0,11)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+\drawbox{5}{0}
+\drawbox{6}{0}
+
+\drawbox{1}{-1}
+\drawbox{2}{-1}
+\drawbox{3}{-1}
+\end{scope}
+
+\begin{scope}[shift={(11,11)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+\drawbox{5}{0}
+\drawbox{6}{0}
+
+\drawbox{1}{-1}
+\drawbox{2}{-1}
+\drawbox{1}{-2}
+\end{scope}
+
+\begin{scope}[shift={(0,7)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+\drawbox{5}{0}
+\drawbox{6}{0}
+\drawbox{7}{0}
+\drawbox{1}{-1}
+\drawbox{2}{-1}
+\end{scope}
+
+\begin{scope}[shift={(0,3)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+\drawbox{5}{0}
+\drawbox{6}{0}
+\drawbox{7}{0}
+\drawbox{8}{0}
+\drawbox{1}{-1}
+\end{scope}
+
+\begin{scope}[shift={(0,-1)}]
+\drawbox{1}{0}
+\drawbox{2}{0}
+\drawbox{3}{0}
+\drawbox{4}{0}
+\drawbox{5}{0}
+\drawbox{6}{0}
+\drawbox{7}{0}
+\drawbox{8}{0}
+\drawbox{9}{0}
+\end{scope}
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -105,6 +447,16 @@ Find each of these eight integer partitions of 9 into distinct parts.
 					<p>
  Find a recurrence relation for <m>\mbox{dist}(n,k)</m>. Justify your formula.
 
+<solution>
+<p>
+The recurrence relation is
+<me>
+\mbox{dist}(n,k) = \sum_{i=0}^{k-1} \mbox{dist}(n-k,i).
+</me>
+
+Removing the first row of our partition results in a partition of <m>n-k</m> into at most <m>k-1</m> parts, and all parts distinct. The sum on the RHS counts the number of such partitions.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -141,6 +493,23 @@ In this problem you will prove a very cool result:
  In the previous problem, you found the eight integer partitions of 9 into distinct parts. Now find the eight integer partitions of 9 into odd parts.
 
 
+<solution>
+<p>
+We will write these as sums because the Ferrers diagrams take up a lot of space.
+<me>
+\begin{array}{l}
+9 \\
+7+1+1 \\
+5+3+1 \\
+5+1+1+1+1 \\
+3+3+3 \\
+3+3+1+1+1 \\
+3+1+1+1+1+1+1 \\
+1+1+1+1+1+1+1+1+1
+\end{array}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -165,6 +534,16 @@ n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
 
 <em>Perform this step for our integer partition of 35.</em>
 
+<solution>
+<p>
+For the given partition of 35, we have
+<me>
+\begin{array}{cccc}
+a_7 = 1&amp; a_5 = 2 &amp; a_3 = 5 &amp; a_1 = 3.
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -176,6 +555,16 @@ n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
 
 <em>Perform this step for our integer partition of 35.</em>
 
+<solution>
+<p>
+For the given partition of 35, we have
+<me>
+\begin{array}{cccc}
+a_7 = 1&amp; a_5 = 2 &amp; a_3 = 4+1 &amp; a_1 = 2+1.
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -190,6 +579,23 @@ We have now represented <m>n</m> as the sum of distinct positive integers!
 			</p><p>
 <em>Perform this step for our integer partition of 35.</em>
 
+<solution>
+<p>
+For the given partition of 35, we have
+<me>
+\begin{array}{rcl}
+35  &amp;=&amp; 7+5+5+3+3+3+3+3+1+1+1 \\
+&amp;=&amp;
+1  \cdot 7 + 2 \cdot 5 + (4+1) \cdot 3 + (2+1) \cdot 1 \\
+&amp;=&amp;
+7 + 10 + (12 + 3) + (2 + 1) \\
+&amp;=&amp; 12 + 10 + 7 + 3  + 2 +1
+\end{array}
+</me>
+and these parts are all distinct!
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -203,6 +609,13 @@ We have now represented <m>n</m> as the sum of distinct positive integers!
 					<p>
  Explain why each of the terms obtained by the process in part (b) are all distinct.
 
+<solution>
+<p>
+
+Every positive integer <m>m</m> can be written uniquely as <m>m = 2^i q</m> where <m>q</m> is an odd number and <m>i \geq 0</m>. Every number that appears in the final expansion is of this form.
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -210,6 +623,25 @@ We have now represented <m>n</m> as the sum of distinct positive integers!
 					<p>
  Use the mapping from part (b) to match the partitions of 9 into odd parts from part (b) to their corresponding partition of 9 into distinct parts from 2(a).
 
+<solution>
+<p>
+Remember that we expand the coefficients <m>a_{2k+1}</m> but not the odd numbers <m>2k+1</m>.
+
+<me>
+\begin{array}{rcl}
+9 &amp; \longleftrightarrow &amp; 9\\
+7+1+1 &amp; \longleftrightarrow &amp; 7 + 2\\
+5+3+1 &amp; \longleftrightarrow &amp; 5 + 3 + 1\\
+5+1+1+1+1  &amp; \longleftrightarrow &amp; 5 + 4\\
+3+3+3  &amp; \longleftrightarrow &amp; 6 + 3\\
+3+3+1+1+1  &amp; \longleftrightarrow &amp; 6 + 2 + 1\\
+3+1+1+1+1+1+1  &amp; \longleftrightarrow &amp; 4 + 3 + 2\\
+1+1+1+1+1+1+1+1+1  &amp; \longleftrightarrow &amp; 8 + 1
+\end{array}
+</me>
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -222,6 +654,42 @@ We have now represented <m>n</m> as the sum of distinct positive integers!
 to an integer partition with odd parts.
 
 
+<solution>
+<p>
+Start with a partition  <m>n = b_1 + b_2 + \cdots + b_k</m> into distinct parts.
+			<ol>
+				<li>
+					<p>
+ Factor part <m>b_j = 2^{i_j} q_j</m> where <m>i \geq 0</m> and <m>q_j</m> is odd.
+					</p>
+				</li>
+				<li>
+					<p>
+ For each odd number <m>q</m> that appears, let <m>a_q</m> be the sum of all the distinct powers of two that are multiplied by <m>q</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Our new integer partition has <m>a_q</m> parts of size <m>q</m>.
+					</p>
+				</li>
+			</ol>
+
+The resulting partition only has odd parts because each <m>q</m> is an odd number.
+
+			</p><p>
+Applying this to <m>6 + 12 + 15 + 16 + 20</m> gives
+<me>
+\begin{array}{cl}
+&amp;1 +  6 + 12 + 15 + 16 + 20 \\
+= &amp;1 \cdot 1 +  2 \cdot 3 + 2^2 \cdot 3 + 1 \cdot 15 + 2^4 \cdot 1  +   2^2 \cdot 5 \\
+=&amp; (1+16) \cdot 1 + (2 + 4) \cdot 3 + 4 \cdot 5 + 15 \\
+=&amp; \underbrace{1 + \cdots + 1}_{17} + \underbrace{3+\cdots+3}_{6} + \underbrace{5+\cdots+5}_{4}  + 15
+\end{array}
+</me>
+
+</p>
+</solution>
 
 					</p>
 				</li>

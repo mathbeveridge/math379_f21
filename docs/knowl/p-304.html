@@ -12,12 +12,7 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
-\end{equation*}
-</div>
+<p>Let \(A\) be the set of partitions of \(n\) into at most \(k\) parts. Let \(B\) be the set of partitions of \(n+k\) into exactly \(k\) parts. We define a bijection \(f: A \rightarrow B\text{.}\) The partitions are listed in part (b) to reflect the bijection. Given the Ferrers diagram of a partition \(\sigma \in A\) we add a column of length \(k\) to the left of the diagram. The result is a partition \(f(\sigma)\)  of \(n+k\) into exactly \(k\) parts. This process is reversible: we just remove this leftmost column of length \(k\) to recover the original partition of \(n\) into at most \(k\) parts. It remains to show that this function is surjective. But this is easy: Given a partition \(\tau \in B\text{,}\) removing the leftmost column gives a partition \(\sigma \in A\text{.}\)  Obviously, \(f(\sigma) = \tau\text{.}\) Since \(f\) is surjective and reversible, it must be a bijection.</p>
 <span class="incontext"><a href="exercises-8.html#p-304">in-context</a></span>
 </body>
 </html>
