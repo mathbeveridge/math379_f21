@@ -328,115 +328,19 @@ Find each of these eight integer partitions of 9 into distinct parts.
 Here are the partitions of 9 into distinct parts.
 
 
-			<image width="50%" xml:id="fig-img-int-partition2">
-				<latex-image>
-\begin{tikzpicture}[scale=.4]
+<me>
+\begin{array}{l}
+9 \\
+8 + 1 \\
+7 + 2 \\
+6 + 3 \\
+6 + 3 + 1 \\
+5 + 4 \\
+5 + 3 + 1 \\
+4  + 3 + 2
+\end{array}
+</me>
 
-
-\begin{scope}[shift={(0,21)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-
-\drawbox{1}{-1}
-\drawbox{2}{-1}
-\drawbox{3}{-1}
-\drawbox{1}{-2}
-\drawbox{2}{-2}
-\end{scope}
-
-\begin{scope}[shift={(0,16)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-\drawbox{5}{0}
-
-\drawbox{1}{-1}
-\drawbox{2}{-1}
-\drawbox{3}{-1}
-\drawbox{4}{-1}
-\end{scope}
-
-\begin{scope}[shift={(11,16)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-\drawbox{5}{0}
-
-\drawbox{1}{-1}
-\drawbox{2}{-1}
-\drawbox{3}{-1}
-\drawbox{1}{-2}
-\end{scope}
-
-\begin{scope}[shift={(0,11)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-\drawbox{5}{0}
-\drawbox{6}{0}
-
-\drawbox{1}{-1}
-\drawbox{2}{-1}
-\drawbox{3}{-1}
-\end{scope}
-
-\begin{scope}[shift={(11,11)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-\drawbox{5}{0}
-\drawbox{6}{0}
-
-\drawbox{1}{-1}
-\drawbox{2}{-1}
-\drawbox{1}{-2}
-\end{scope}
-
-\begin{scope}[shift={(0,7)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-\drawbox{5}{0}
-\drawbox{6}{0}
-\drawbox{7}{0}
-\drawbox{1}{-1}
-\drawbox{2}{-1}
-\end{scope}
-
-\begin{scope}[shift={(0,3)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-\drawbox{5}{0}
-\drawbox{6}{0}
-\drawbox{7}{0}
-\drawbox{8}{0}
-\drawbox{1}{-1}
-\end{scope}
-
-\begin{scope}[shift={(0,-1)}]
-\drawbox{1}{0}
-\drawbox{2}{0}
-\drawbox{3}{0}
-\drawbox{4}{0}
-\drawbox{5}{0}
-\drawbox{6}{0}
-\drawbox{7}{0}
-\drawbox{8}{0}
-\drawbox{9}{0}
-\end{scope}
-
-\end{tikzpicture}
-				</latex-image>
-			</image>
 
 </p>
 </solution>
