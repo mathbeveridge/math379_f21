@@ -12,22 +12,54 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions With At Most \(k\) Parts.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Writing \(x^n\) as a combination of \((x)_k\)'s.</span>
 </h6>
-<p>In this problem, you will investigate the equivalence</p>
+<p>In this problem, you will prove the following cool formula for \(n \geq 0\text{:}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-p_k(n) =
-p(n+k,k)
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li><p>Interpret each side of this equality. <a class="solution-knowl original" data-knowl="./knowl/solution-78-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-<li><p>Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions. <a class="solution-knowl original" data-knowl="./knowl/solution-79-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
 <li>
-<p>Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
-<p><a class="solution-knowl original" data-knowl="./knowl/solution-80-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<p>Recall that the set \(\R[x]\) of (finite) polynomials in \(x\) form a vector space over \(\R\text{.}\) Our typical basis for \(\R[x]\) is:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+1, x, x^2, \ldots, x^k, \ldots.
+\end{equation*}
+</div>
+<p class="continuation">Explain why another basis for \(\R[x]\) is:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots.
+\end{equation*}
+</div>
+<p class="continuation">Just give an intuitive explanation (not a rigorous proof). <a class="solution-knowl original" data-knowl="./knowl/solution-76-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
 </li>
-</ol></article><span class="incontext"><a href="exercises-8.html#exercise-37">in-context</a></span>
+<li>
+<p>Give a combinatorial proof that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+m^n = \sum_{k=0}^n S(n,k) (m)_k.
+\end{equation*}
+</div>
+<p class="continuation">In particular, both sides count the number of ways to assign \(n\) students to \(m\) classrooms where some classrooms can be empty. Explain. <a class="solution-knowl original" data-knowl="./knowl/solution-77-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+</li>
+<li>
+<p>Fixing \(n\text{,}\) now consider the polynomial equation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
+\end{equation*}
+</div>
+<p class="continuation">Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+\end{equation*}
+</div>
+<p class="continuation"><a class="solution-knowl original" data-knowl="./knowl/solution-78-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+</li>
+</ol></article><span class="incontext"><a href="exercises-7.html#exercise-37">in-context</a></span>
 </body>
 </html>

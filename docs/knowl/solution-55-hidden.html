@@ -11,11 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>LHS: choose a 3-set from \([3n]\) RHS: split \([3n]\) into \(\{1, \ldots, n \}\) and \(\{ n+1 ,\ldots, 2n\}\) and \(\{ 2n+1, \ldots, 3n \}\) and do one of the following</p>
+<p>The RHS is the number of ways to pick a \(2\)-set from \([n+1]\text{.}\) For the LHS, we follow a 2-step process to pick a \(2\)-set \(S\)</p>
 <ul class="disc">
-<li><p>Pick a subset (3 ways) and take 3 elements from that set</p></li>
-<li><p>Pick a subset (3 ways) and pick one element from that set. Now pick a second set (2 ways) and pick two elements from that set.</p></li>
-<li><p>Choose one element from each set.</p></li>
+<li><p>First, pick the element \(k\) that will be the larger element in \(S\text{.}\) We have \(2 \leq k \leq n+1\text{.}\)</p></li>
+<li><p>Now pick the smaller element for the set \(S\text{.}\) There are \(k-1\) choices (where \(k\) is the number that we chose in Step 1).</p></li>
 </ul>
+<p class="continuation">The number of ways to complete this 2-step process is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\sum_{k=2}^{n+1} (k-1) = 1+2+\cdots+n.
+\end{equation*}
+</div>
 </div></body>
 </html>

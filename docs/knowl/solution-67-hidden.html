@@ -11,26 +11,11 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>The values \(S(6,0)=0\) (impossible) and \(S(6,1)=1\) and \(S(6,6)=1\) are clear from the definition. We use the recurrence to find the remaining values</p>
+<p>Pick any nonempty and proper subset \(\emptyset \subsetneq S \subsetneq [n]\text{.}\) The set \(S\) and its complement \(\overline{S}\) form a partition of \([n]\) into two (nonempty) blocks. There are \(2^n -2\) ways to choose \(S\text{.}\)</p>
+<p>However, this process creates each set partition twice because choosing \(S\) leads to the same set partition as choosing its complement \(\overline{S}\text{.}\) So we must divide by 2 to obtain our final answer. We have</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-S(6,0) &amp;=&amp; 0 \\
-S(6,1) &amp;=&amp; 1 \\
-S(6,2) &amp;=&amp; S(5,1) + 2 \cdot S(5,2) =  1 + 2 \cdot 15 = 31\\
-S(6,3) &amp;=&amp; S(5,2) + 3 \cdot S(5,3) =  15 + 3 \cdot 25 = 90\\
-S(6,4) &amp;=&amp; S(5,3) + 4 \cdot S(5,4) =  25 + 4 \cdot 10 = 65 \\
-S(6,5) &amp;=&amp; S(5,4) + 5 \cdot S(5,5) =  10 + 5 \cdot 1 = 15\\
-S(6,6) &amp;=&amp; 1 \\
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">So the next row is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{ccccccc}
-0 &amp; 1 &amp; 31 &amp; 90 &amp; 65 &amp; 15 &amp; 1
-\end{array}
+S(n,2) = \frac{2^n-2}{2} = 2^{n-1} -1.
 \end{equation*}
 </div>
 </div></body>

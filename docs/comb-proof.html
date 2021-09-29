@@ -210,36 +210,63 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 </div></div></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-27"><h6 class="heading">
-<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Combinatorial Proofs.</span>
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Picking a 2-Set.</span>
 </h6>
-<p id="p-193">Give a combinatorial proof for each of the following identities. Each one involves splitting the original set into two or more subsets, and then performing the task at hand.</p>
+<p id="p-193">Most introductory discrete mathematics books ask students to use induction to prove that</p>
+<div class="displaymath">
+\begin{equation*}
+1 + 2 + \cdots + n = \frac{n(n+1)}{2}.
+\end{equation*}
+</div>
+<p class="continuation">In this course, we recognize the right hand side is actually \({n+1 \choose 2}\text{.}\) In other words, we have</p>
+<div class="displaymath">
+\begin{equation*}
+1 + 2 + \cdots + n = {n+1 \choose 2}.
+\end{equation*}
+</div>
+<p class="continuation">Give a <em class="emphasis">combinatorial proof</em> of this identity about choosing a \(2\)-set from \([n+1]\text{.}\) Remember that an addition sign corresponds to "or." Hint: pick the <em class="emphasis">largest</em> element of the \(2\)-set first. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like">
+<p id="p-194">The RHS is the number of ways to pick a \(2\)-set from \([n+1]\text{.}\) For the LHS, we follow a 2-step process to pick a \(2\)-set \(S\)</p>
+<ul class="disc">
+<li id="li-99"><p id="p-195">First, pick the element \(k\) that will be the larger element in \(S\text{.}\) We have \(2 \leq k \leq n+1\text{.}\)</p></li>
+<li id="li-100"><p id="p-196">Now pick the smaller element for the set \(S\text{.}\) There are \(k-1\) choices (where \(k\) is the number that we chose in Step 1).</p></li>
+</ul>
+<p class="continuation">The number of ways to complete this 2-step process is</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{k=2}^{n+1} (k-1) = 1+2+\cdots+n.
+\end{equation*}
+</div>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Combinatorial Proofs.</span>
+</h6>
+<p id="p-197">Give a combinatorial proof for each of the following identities. Each one involves splitting the original set into two or more subsets, and then performing the task at hand.</p>
 <ol class="lower-alpha">
-<li id="li-99">
-<p id="p-194">.</p>
+<li id="li-101">
+<p id="p-198">.</p>
 <div class="displaymath">
 \begin{equation*}
 {3n \choose 3} = 3 {n \choose 3} + 6n {n \choose 2} + n^3.
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like">
-<p id="p-195">LHS: choose a 3-set from \([3n]\) RHS: split \([3n]\) into \(\{1, \ldots, n \}\) and \(\{ n+1 ,\ldots, 2n\}\) and \(\{ 2n+1, \ldots, 3n \}\) and do one of the following</p>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like">
+<p id="p-199">LHS: choose a 3-set from \([3n]\) RHS: split \([3n]\) into \(\{1, \ldots, n \}\) and \(\{ n+1 ,\ldots, 2n\}\) and \(\{ 2n+1, \ldots, 3n \}\) and do one of the following</p>
 <ul class="disc">
-<li id="li-100"><p id="p-196">Pick a subset (3 ways) and take 3 elements from that set</p></li>
-<li id="li-101"><p id="p-197">Pick a subset (3 ways) and pick one element from that set. Now pick a second set (2 ways) and pick two elements from that set.</p></li>
-<li id="li-102"><p id="p-198">Choose one element from each set.</p></li>
+<li id="li-102"><p id="p-200">Pick a subset (3 ways) and take 3 elements from that set</p></li>
+<li id="li-103"><p id="p-201">Pick a subset (3 ways) and pick one element from that set. Now pick a second set (2 ways) and pick two elements from that set.</p></li>
+<li id="li-104"><p id="p-202">Choose one element from each set.</p></li>
 </ul>
 </div></div></p>
-<p id="p-199"></p>
+<p id="p-203"></p>
 </li>
-<li id="li-103">
-<p id="p-200">.</p>
+<li id="li-105">
+<p id="p-204">.</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{k=0}^n \left( {n \choose k} \right)^2 = { 2n \choose n}.
 \end{equation*}
 </div>
-<p class="continuation">Hint: you will need the identity \({r \choose s} = {r \choose r-s.}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like">
-<p id="p-201">We can rewrite this as</p>
+<p class="continuation">Hint: you will need the identity \({r \choose s} = {r \choose r-s.}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-57" id="solution-57"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-57"><div class="solution solution-like">
+<p id="p-205">We can rewrite this as</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{k=0}^n {n \choose k} {n \choose n-k}  = { 2n \choose n}.
@@ -248,31 +275,31 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 <p class="continuation">We have the following interpretation. RHS: pick an \(n\)-set from \([2n]\text{.}\) LHS: Choose \(1 \leq k \leq n\text{.}\) Then pick \(k\) elements from \(\{1 , \ldots, n\}\) and pick \(n-k\) elements from \(\{n+1, \ldots, 2n \}\text{.}\)</p>
 </div></div></p>
 </li>
-<li id="li-104">
-<p id="p-202">.</p>
+<li id="li-106">
+<p id="p-206">.</p>
 <div class="displaymath">
 \begin{equation*}
 {n + m \choose r} =
 \sum_{i=0}^r  {n \choose i} {m \choose r-i}.
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-57" id="solution-57"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-57"><div class="solution solution-like">
-<p id="p-203">This is a lot like the previous problem. LHS: pick an \(r\)-set from \([n+m]\text{.}\) RHS:</p>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like">
+<p id="p-207">This is a lot like the previous problem. LHS: pick an \(r\)-set from \([n+m]\text{.}\) RHS:</p>
 <ul class="disc">
-<li id="li-105"><p id="p-204">Split the set into \(\{1, \ldots, n\}\) and \(\{n+1, \ldots, m \}\text{.}\)</p></li>
-<li id="li-106"><p id="p-205">Choose \(i\) where \(0 \leq i \leq r\text{.}\)</p></li>
-<li id="li-107"><p id="p-206">Pick an \(i\)-set from \(\{1, \ldots, n\}\)  and pick an \((n-i)\)-set from \(\{n+1, \ldots, m \}\text{.}\)</p></li>
-<li id="li-108"><p id="p-207">Sum over all possible values for \(i\text{.}\)</p></li>
+<li id="li-107"><p id="p-208">Split the set into \(\{1, \ldots, n\}\) and \(\{n+1, \ldots, m \}\text{.}\)</p></li>
+<li id="li-108"><p id="p-209">Choose \(i\) where \(0 \leq i \leq r\text{.}\)</p></li>
+<li id="li-109"><p id="p-210">Pick an \(i\)-set from \(\{1, \ldots, n\}\)  and pick an \((n-i)\)-set from \(\{n+1, \ldots, m \}\text{.}\)</p></li>
+<li id="li-110"><p id="p-211">Sum over all possible values for \(i\text{.}\)</p></li>
 </ul>
 </div></div></p>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
-<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Subsets of \(n\) Without Successive Elements.</span>
+</ol></article><article class="exercise exercise-like" id="exercise-29"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Subsets of \(n\) Without Successive Elements.</span>
 </h6>
-<p id="p-208">We define the following sets:</p>
+<p id="p-212">We define the following sets:</p>
 <ul class="disc">
-<li id="li-109"><p id="p-209">\({\mathcal{A}_n}\text{:}\) subsets of \([n]\) that do not contain successive elements</p></li>
-<li id="li-110"><p id="p-210">\({\mathcal{B}_n}\) ordered sums of 1's and 2's that add to \(n\text{.}\)</p></li>
+<li id="li-111"><p id="p-213">\({\mathcal{A}_n}\text{:}\) subsets of \([n]\) that do not contain successive elements</p></li>
+<li id="li-112"><p id="p-214">\({\mathcal{B}_n}\) ordered sums of 1's and 2's that add to \(n\text{.}\)</p></li>
 </ul>
 <p class="continuation">Show that \({\mathcal{A}_n}\) is in bijection with \({\mathcal{B}_{n+1}}\text{.}\)</p></article></section></section></div></main>
 </div>

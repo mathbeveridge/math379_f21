@@ -10,13 +10,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like">
-<ul class="disc">
-<li><p>distinct balls</p></li>
-<li><p>distinct boxes</p></li>
-<li><p>repetition allowed</p></li>
-<li><p>boxes can be empty</p></li>
+<body><div class="solution solution-like"><ul class="disc">
+<li><p>LHS: The number of ways to partition \([n+1]\) into \(k\) parts.</p></li>
+<li>
+<p>RHS: Counts the same set, grouping the partitions according to the number of elements of \([n]\) that occur  in the set with element \(n+1\text{.}\) Fix \(i\text{.}\) We count the number of partitions of \([n+1]\) where the element \(n+1\) is in a set with \(i\) elements. We choose our set in two phases.</p>
+<ul class="circle">
+<li><p>Phase 1: Choose the \(i\) elements to appear in the set with element \(n+1\text{.}\) This can be done in \({n \choose i}\) ways.</p></li>
+<li><p>Phase 2: Partition the remaining \(n-i\) elements into \(k-1\) sets. This can be done in \(S(n-i,k-1)\)</p></li>
 </ul>
-<p class="continuation">Number of ways: \(k^n\text{,}\) with no restrictions on \(n\) and \(k\text{.}\)</p>
-</div></body>
+<p class="continuation">Now we sum over all possible values of \(i\text{,}\) namely \(0 \leq i \leq n\text{.}\)</p>
+</li>
+</ul></div></body>
 </html>

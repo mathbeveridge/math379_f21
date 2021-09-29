@@ -12,13 +12,22 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Use the Stirling Recurrence</p>
+<p>The Stirling number of second kind \(S(n,k)\) is the number of partitions of the set \([n]\) into exactly \(k\) blocks. (A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">block</em> is a nonempty set.) Here are the first rows of the Stirling triangle:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-S(n,k) = S(n-1, k-1) + S(n-1,k)
+\begin{array}{lcccccccccccc}
+n&amp;S(n,k)\\
+\hline
+\\
+0 &amp;&amp; &amp; &amp;&amp;&amp;&amp; 1  \\
+1 &amp;&amp; &amp;&amp;&amp;&amp; 0 &amp;&amp; 1 \\
+2 &amp;&amp; &amp;&amp;&amp; 0 &amp;&amp; 1 &amp;&amp; 1   \\
+3 &amp;&amp; &amp;&amp; 0 &amp;&amp; 1 &amp;&amp; 3 &amp;&amp; 1  \\
+4 &amp;&amp;&amp; 0 &amp;&amp; 1 &amp;&amp; 7 &amp;&amp; 6 &amp;&amp; 1 \\
+5 &amp;&amp; 0 &amp;&amp; 1 &amp;&amp; 15 &amp;&amp; 25 &amp;&amp; 10 &amp;&amp; 1\\
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">to find the \(n=6\) row of the Stirling triangle. <a class="solution-knowl original" data-knowl="./knowl/solution-67-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
-<span class="incontext"><a href="exercises-7.html#p-238">in-context</a></span>
+<span class="incontext"><a href="set-partition.html#p-238">in-context</a></span>
 </body>
 </html>

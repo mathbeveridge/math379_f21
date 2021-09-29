@@ -164,6 +164,49 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Picking a 2-Set</title>
+			<idx><h>Picking a 2-Set</h></idx>
+			<statement>
+				<p>
+Most introductory discrete mathematics books ask students to use induction to prove that
+<me>
+1 + 2 + \cdots + n = \frac{n(n+1)}{2}.
+</me>
+In this course, we recognize the right hand side is actually <m>{n+1 \choose 2}</m>. In other words, we have
+<me>
+1 + 2 + \cdots + n = {n+1 \choose 2}.
+</me>
+Give a <em>combinatorial proof</em> of this identity about choosing a <m>2</m>-set from <m>[n+1]</m>. Remember that an addition sign corresponds to "or." Hint: pick the <em>largest</em> element of the <m>2</m>-set first.
+
+
+<solution>
+<p>
+The RHS is the number of ways to pick a <m>2</m>-set from <m>[n+1]</m>. For the LHS, we follow a 2-step process to pick a <m>2</m>-set <m>S</m>
+		<ul>
+			<li>
+			<p>
+ First, pick the element <m>k</m> that will be the larger element in <m>S</m>. We have <m>2 \leq k \leq n+1</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Now pick the smaller element for the set <m>S</m>. There are <m>k-1</m> choices (where <m>k</m> is the number that we chose in Step 1).
+			</p>
+			</li>
+		</ul>
+The number of ways to complete this 2-step process is
+<me>
+\sum_{k=2}^{n+1} (k-1) = 1+2+\cdots+n.
+</me>
+
+
+</p>
+</solution>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
 			<title>Combinatorial Proofs</title>
 			<idx><h>Combinatorial Proofs</h></idx>
 			<statement>
