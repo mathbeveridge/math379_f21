@@ -149,10 +149,12 @@ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1).
 
 <solution>
 <p>
-\begin{eqnarray*}
+<me>
+\begin{array}{rcl}
 S(5,3) &amp;=&amp; {4 \choose 0} S(4,2) +  {4 \choose 1} S(3,2) +  {4 \choose 2} S(2,2) +  {4 \choose 3} S(1,2) +  {4 \choose 4} S(0,2) \\
 &amp;=&amp; 1 \cdot 7 + 4 \cdot 3 + 6 \cdot 1 + 4 \cdot 0 + 1 \cdot 0 \, = \, 25.
-\end{eqnarray*}
+\end{array}
+</me>
 </p>
 </solution>
 

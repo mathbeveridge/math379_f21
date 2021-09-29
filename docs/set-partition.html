@@ -210,7 +210,14 @@ S(6,6) &amp;=&amp; 1 \\
 </h6>
 <p id="p-246">Stirling numbers of the second kind satisfy the following identity \[ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1). \]</p>
 <ol class="lower-alpha">
-<li id="li-127"><p id="p-247">Use the Stirling triangle we made in class to verify the identity is true for \(n=4\) and \(k=3\text{.}\) Note that \(S(n,0)=0\) and \(S(n,k)=0\) when \(k&gt;n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-69" id="solution-69"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-69"><div class="solution solution-like"><p id="p-248">\​begin{eqnarray*} S(5,3) &amp;=&amp; {4 \choose 0} S(4,2) +  {4 \choose 1} S(3,2) +  {4 \choose 2} S(2,2) +  {4 \choose 3} S(1,2) +  {4 \choose 4} S(0,2) \\ &amp;=&amp; 1 \cdot 7 + 4 \cdot 3 + 6 \cdot 1 + 4 \cdot 0 + 1 \cdot 0 \, = \, 25. \end{eqnarray*}</p></div></div></p></li>
+<li id="li-127"><p id="p-247">Use the Stirling triangle we made in class to verify the identity is true for \(n=4\) and \(k=3\text{.}\) Note that \(S(n,0)=0\) and \(S(n,k)=0\) when \(k&gt;n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-69" id="solution-69"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-69"><div class="solution solution-like"><div class="displaymath" id="p-248">
+\begin{equation*}
+\begin{array}{rcl}
+S(5,3) &amp;=&amp; {4 \choose 0} S(4,2) +  {4 \choose 1} S(3,2) +  {4 \choose 2} S(2,2) +  {4 \choose 3} S(1,2) +  {4 \choose 4} S(0,2) \\
+&amp;=&amp; 1 \cdot 7 + 4 \cdot 3 + 6 \cdot 1 + 4 \cdot 0 + 1 \cdot 0 \, = \, 25.
+\end{array}
+\end{equation*}
+</div></div></div></p></li>
 <li id="li-128"><p id="p-249">Give a combinatorial proof of the  identity. That is, explain why the LHS and the RHS count the exact same thing. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-70" id="solution-70"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-70"><div class="solution solution-like"><ul id="p-250" class="disc">
 <li id="li-129"><p id="p-251">LHS: The number of ways to partition \([n+1]\) into \(k\) parts.</p></li>
 <li id="li-130">
