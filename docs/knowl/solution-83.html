@@ -22,6 +22,8 @@
 \end{equation*}
 </div>
 <p class="continuation">Removing the first row of our partition results in a partition of \(n-k\) into at most \(k-1\) parts, and all parts distinct. The sum on the RHS counts the number of such partitions.</p>
+<p>It is worth noting that the "there are 0 ways to do the impossible" mantra is really helpful here. In particular, \(\mbox{dist}(n-k,0)=0\) when  \(n-k&gt;0\) and \(\mbox{dist}(n-k,i)=0\) when \(i &gt; n-k\text{.}\) So we can simply take the limits of our summation to be \(0 \leq i \leq k-1\text{.}\)</p>
+<p>Finally, note that we do need to start at \(i=0\) to handle the case where \(k=n\text{.}\) We have \(\mbox{dist}(n,n) = \mbox{dist}(0,0) = 1\text{.}\) The last formula is an example of "there is one way to do nothing."</p>
 </div>
 <span class="incontext"><a href="exercises-8.html#solution-83">in-context</a></span>
 </body>

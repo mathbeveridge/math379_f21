@@ -12,21 +12,16 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The general formula for the complement of the union (events \(A_i\) are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bad</em>) is</p>
+<p>Here are the Inclusion-Exclusion formulas for two sets</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c | = \sum_{S \subset [n]} (-1)^{|S|}  | A_{S} |
+| A \cup B |  = |A| + |B| - |A \cap B|
 \end{equation*}
 </div>
-<p class="continuation">where</p>
+<p class="continuation">and three sets</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-A_S = \left\{
-\begin{array}{cl}
-A &amp; \mbox{for } S = \emptyset, \\
-\displaystyle{\cap_{i \in S} A_i} &amp; \mbox{for } S \neq \emptyset. \\
-\end{array}
-\right.
+| A \cup B \cup C |  = |A| + |B|  + |C| - |A \cap B| - |A \cap C| - |A \cap C| +  |A \cap B  \cap C|.
 \end{equation*}
 </div>
 <span class="incontext"><a href="inclusion-exclusion.html#p-339">in-context</a></span>

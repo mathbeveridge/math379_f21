@@ -22,7 +22,7 @@
 A triangulation of a convex <m>n+2</m>-gon consists of <m>n-1</m> diagonals so that (a) the diagonals do not intersect, and (b) the interior is partitioned into <m>n</m> triangles.
 
 			</p><p>
-Here are the triangulations for <m>n=0</m>, <m>n=1</m> and <m>n-2</m>, which correspond to <m>2</m>-gons, <m>3</m>-gons and <m>4</m>-gons, respectively.
+Here are the triangulations for <m>n=0</m>, <m>n=1</m> and <m>n=2</m>, which correspond to <m>2</m>-gons, <m>3</m>-gons and <m>4</m>-gons, respectively.
 
 			<image width="80%" xml:id="fig-img-catalan0">
 				<latex-image>

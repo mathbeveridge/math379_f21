@@ -12,7 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For each odd number \(q\) that appears, let \(a_q\) be the sum of all the distinct powers of two that are multiplied by \(q\text{.}\)</p>
+<p>Start with a partition  \(n = b_1 + b_2 + \cdots + b_k\) into distinct parts.</p>
+<ol class="lower-roman">
+<li><p>Factor part \(b_j = 2^{i_j} q_j\) where \(i \geq 0\) and \(q_j\) is odd.</p></li>
+<li><p>For each odd number \(q\) that appears, let \(a_q\) be the sum of all the distinct powers of two that are multiplied by \(q\text{.}\)</p></li>
+<li><p>Our new integer partition has \(a_q\) parts of size \(q\text{.}\)</p></li>
+</ol>
+<p class="continuation">The resulting partition only has odd parts because each \(q\) is an odd number.</p>
 <span class="incontext"><a href="exercises-8.html#p-334">in-context</a></span>
 </body>
 </html>

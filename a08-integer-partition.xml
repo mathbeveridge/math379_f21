@@ -359,6 +359,13 @@ The recurrence relation is
 </me>
 
 Removing the first row of our partition results in a partition of <m>n-k</m> into at most <m>k-1</m> parts, and all parts distinct. The sum on the RHS counts the number of such partitions.
+
+			</p><p>
+It is worth noting that the "there are 0 ways to do the impossible" mantra is really helpful here. In particular, <m>\mbox{dist}(n-k,0)=0</m> when  <m>n-k&gt;0</m> and <m>\mbox{dist}(n-k,i)=0</m> when <m>i &gt; n-k</m>. So we can simply take the limits of our summation to be <m>0 \leq i \leq k-1</m>.
+
+			</p><p>
+
+Finally, note that we do need to start at <m>i=0</m> to handle the case where <m>k=n</m>. We have <m>\mbox{dist}(n,n) = \mbox{dist}(0,0) = 1</m>. The last formula is an example of "there is one way to do nothing."
 </p>
 </solution>
 
