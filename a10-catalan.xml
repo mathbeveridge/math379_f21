@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<chapter xml:id="catalan" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Catalan Numbers</title>
+	<introduction>
+		<p>
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Triangulating a convex <m>(n+2)</m>-gon</title>
+			<idx><h>Triangulating a convex <m>(n+2)</m>-gon</h></idx>
+			<statement>
+				<p>
+A triangulation of a convex <m>n+2</m>-gon consists of <m>n-1</m> diagonals so that (a) the diagonals do not intersect, and (b) the interior is partitioned into <m>n</m> triangles.
+
+			</p><p>
+Here are the triangulations for <m>n=0</m>, <m>n=1</m> and <m>n-2</m>, which correspond to <m>2</m>-gons, <m>3</m>-gons and <m>4</m>-gons, respectively.
+
+			<image width="80%" xml:id="fig-img-catalan0">
+				<latex-image>
+\begin{tikzpicture}[scale=.75] %mathbook width=80%
+
+
+\begin{scope}[shift={(-5,.5)}]
+\path (-1,0) coordinate (P1);
+\path (1,0) coordinate (P2);
+\path (0,.5) coordinate (P3);
+\path (0,-.5) coordinate (P3);
+\draw[thick] (P1) -- (P2);
+
+\end{scope}
+
+\begin{scope}[shift={(0,0)}, scale=.6]
+\path (1,0) coordinate (P0);
+\path (-1,0) coordinate (P1);
+\path (0,1.73) coordinate (P2);
+\draw[thick] (P0) -- (P1) -- (P2) -- cycle;
+
+\end{scope}
+
+\begin{scope}[shift={(5,0)}, scale=1]
+
+\path (.5,0) coordinate (P0);
+\path (.5,1) coordinate (P1);
+\path (1.5,1) coordinate (P2);
+\path (1.5,0) coordinate (P3);
+\draw[thick] (P0) -- (P1) -- (P2) -- (P3) -- cycle;
+
+
+\path (-.5,0) coordinate (Q0);
+\path (-.5,1) coordinate (Q1);
+\path (-1.5,1) coordinate (Q2);
+\path (-1.5,0) coordinate (Q3);
+\draw[thick] (P0) -- (P1) -- (P2) -- (P3) -- cycle;
+\draw[thick] (P0) -- (P2);
+\draw[thick] (Q0) -- (Q1) -- (Q2) -- (Q3) -- cycle;
+\draw[thick] (Q0) -- (Q2);
+
+
+\end{scope}
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+			<ol>
+
+				<li>
+					<p>
+ List the 5 ways to triangulate a 5-gon. This corresponds to Catalan number <m>C_3=5</m>.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ In this problem, you will list the ways to triangulate a 6-gon. This corresponds to Catalan number <m>C_4=14</m>.
+
+			<ol>
+				<li>
+					<p>
+ For now,  draw your  6-gons with the corners labeled <m>0,1,2,3,4,5</m>.  The edge <m>(0,5)</m> must be in some triangle. List the <em>FOUR</em>  ways that you can complete the triangle that contains the edge <m>(0,5)</m>.
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ For each of your answers in part (a), list all the ways to complete the triangulation of the 6-gon.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Explain how part (b) relates to the Catalan recurrence <m>C_4 = C_0C_3 + C_1 C_2 + C_2 C_1 + C_3 C_0.</m> In particular, treat the triangle containing the edge <m>(0,5)</m> as special.
+
+
+					</p>
+				</li>
+			</ol>
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Some Catalan Families</title>
+			<idx><h>Some Catalan Families</h></idx>
+			<statement>
+				<p>
+Here are a few different Catalan families.  We illustrate the elements for <m>n=3</m>, hoping that these examples will make any undefined terminology clear.
+
+			</p><p>
+
+For each family, you should
+		<ul>
+			<li>
+			<p>
+ List all of the examples for <m>n=0,1,2,3,4</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Show that this problem is counted by the Catalan numbers. You can either:
+		<ul>
+			<li>
+			<p>
+ Describe a bijection (reversible mapping) to a known Catalan problem
+			</p>
+			</li>
+			<li>
+			<p>
+ Explain how this problem satisfies the Catalan recurrence
+\[
+C_n = C_0 C_{n-1} + C_1 C_{n-2} + \cdots + C_{n-1} C_0.
+\]
+			</p>
+			</li>
+		</ul>
+			</p>
+			</li>
+		</ul>
+
+
+
+			<ol>
+
+				<li>
+					<p>
+ <em>A Nondecreasing Sequence.</em> Sequences <m>0 \leq a_1 \leq a_2 \cdots \leq a_n \leq n-1</m> of integers with <m>a_i \leq i-1</m>.
+
+<me>
+\begin{array}{ccccc}
+000 &amp; 001 &amp; 002 &amp; 011 &amp; 012
+\end{array}
+</me>
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <em>Young tableaux of Form <m>(n,n)</m>.</em>
+Make a Young tableau of the form  <m>(n,n)</m>. This consists of two rows of length <m>n</m>. The numbers <m>1,2,\ldots 2n</m> are placed in these rows so that
+		<ul>
+			<li>
+			<p>
+ the numbers are increasing in each row
+			</p>
+			</li>
+			<li>
+			<p>
+ the numbers are increasing in each column
+			</p>
+			</li>
+		</ul>
+
+
+<me>
+\begin{array}{ccccc}
+
+
+\begin{array}{c}
+
+135  \\
+246
+\end{array}
+&amp;
+
+
+
+\begin{array}{c}
+134  \\
+256
+\end{array}
+&amp;
+
+
+
+\begin{array}{c}
+125  \\
+346
+\end{array}
+&amp;
+
+
+
+\begin{array}{c}
+124  \\
+356
+\end{array}
+&amp;
+
+
+
+\begin{array}{c}
+123 \\
+456
+\end{array}
+
+
+\end{array}
+</me>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <em>Stacking Coins in the Plane.</em>
+
+Stack coins in the plane, where the bottom row consists of <m>n</m> consecutive coins.
+
+
+			<image width="80%" xml:id="fig-img-catalan1">
+				<latex-image>
+\begin{tikzpicture}[scale = .4] %mathbook width=80%
+\begin{scope}
+\path(-1,0) -- (3,0);
+\draw (0,0) circle (0.5cm);
+\draw (1,0) circle (0.5cm);
+\draw (2,0) circle (0.5cm);
+\end{scope}
+
+\begin{scope}[shift={(5,0)}]
+\path(-1,0) -- (3,0);
+\draw (0,0) circle (0.5cm);
+\draw (1,0) circle (0.5cm);
+\draw (2,0) circle (0.5cm);
+\draw (1.5,0.866025) circle (0.5cm);
+\end{scope}
+
+\begin{scope}[shift={(10,0)}]
+\path(-1,0) -- (3,0);
+\draw (0,0) circle (0.5cm);
+\draw (1,0) circle (0.5cm);
+\draw (2,0) circle (0.5cm);
+\draw (0.5,0.866025) circle (0.5cm);
+\end{scope}
+
+\begin{scope}[shift={(15,0)}]
+\path(-1,0) -- (3,0);
+\draw (0,0) circle (0.5cm);
+\draw (1,0) circle (0.5cm);
+\draw (2,0) circle (0.5cm);
+\draw (0.5,0.866025) circle (0.5cm);
+\draw (1.5,0.866025) circle (0.5cm);
+\end{scope}
+
+\begin{scope}[shift={(20,0)}]
+\path(-1,0) -- (3,0);
+\draw (0,0) circle (0.5cm);
+\draw (1,0) circle (0.5cm);
+\draw (2,0) circle (0.5cm);
+\draw (0.5,0.866025) circle (0.5cm);
+\draw (1.5,0.866025) circle (0.5cm);
+\draw (1.0,1.73205) circle (0.5cm);
+\end{scope}
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <em>Plane Binary Trees with <m>2n</m> Edges.</em>
+
+Make plane binary trees with <m>2n</m> edges. A plane binary tree has a root vertex. When <m>n&gt;0</m>, the root vertex is incident with 2 edges. All other vertices are incident with either 3 edges or 1 edge.
+
+
+			<image width="80%" xml:id="fig-img-catalan2">
+				<latex-image>
+\begin{tikzpicture}[scale=.75] %mathbook width=80%
+
+\begin{scope}
+\fill (1.5,3) circle (2pt);
+\draw (1.5,3)--(0.75,2.25);
+\fill (0.75,2.25) circle (2pt);
+\draw (1.5,3)--(2.25,2.25);
+\fill (2.25,2.25) circle (2pt);
+\draw (2.25,2.25)--(1.875,1.5);
+\fill (1.875,1.5) circle (2pt);
+\draw (2.25,2.25)--(2.625,1.5);
+\fill (2.625,1.5) circle (2pt);
+\draw (2.625,1.5)--(2.4375,0.75);
+\fill (2.4375,0.75) circle (2pt);
+\draw (2.625,1.5)--(2.8125,0.75);
+\fill (2.8125,0.75) circle (2pt);
+\end{scope}
+
+\begin{scope}[shift={(4,0)}]
+\fill (1.5,3) circle (2pt);
+\draw (1.5,3)--(0.75,2.25);
+\fill (0.75,2.25) circle (2pt);
+\draw (1.5,3)--(2.25,2.25);
+\fill (2.25,2.25) circle (2pt);
+\draw (2.25,2.25)--(1.875,1.5);
+\fill (1.875,1.5) circle (2pt);
+\draw (2.25,2.25)--(2.625,1.5);
+\fill (2.625,1.5) circle (2pt);
+\draw (1.875,1.5)--(1.6875,0.75);
+\fill (1.6875,0.75) circle (2pt);
+\draw (1.875,1.5)--(2.0625,0.75);
+\fill (2.0625,0.75) circle (2pt);
+\end{scope}
+
+\begin{scope}[shift={(8,0)}]
+\fill (1.5,3) circle (2pt);
+\draw (1.5,3)--(0.75,2.25);
+\fill (0.75,2.25) circle (2pt);
+\draw (1.5,3)--(2.25,2.25);
+\fill (2.25,2.25) circle (2pt);
+\draw (0.75,2.25)--(0.375,1.5);
+\fill (0.375,1.5) circle (2pt);
+\draw (0.75,2.25)--(1.125,1.5);
+\fill (1.125,1.5) circle (2pt);
+\draw (2.25,2.25)--(1.875,1.5);
+\fill (1.875,1.5) circle (2pt);
+\draw (2.25,2.25)--(2.625,1.5);
+\fill (2.625,1.5) circle (2pt);
+\draw[color=white] (1.125, 1.5) -- (1.3125, .75);
+\end{scope}
+
+\begin{scope}[shift={(12,0)}]
+\fill (1.5,3) circle (2pt);
+\draw (1.5,3)--(0.75,2.25);
+\fill (0.75,2.25) circle (2pt);
+\draw (1.5,3)--(2.25,2.25);
+\fill (2.25,2.25) circle (2pt);
+\draw (0.75,2.25)--(0.375,1.5);
+\fill (0.375,1.5) circle (2pt);
+\draw (0.75,2.25)--(1.125,1.5);
+\fill (1.125,1.5) circle (2pt);
+\draw (1.125,1.5)--(0.9375,0.75);
+\fill (0.9375,0.75) circle (2pt);
+\draw (1.125,1.5)--(1.3125,0.75);
+\fill (1.3125,0.75) circle (2pt);
+\end{scope}
+
+\begin{scope}[shift={(16,0)}]
+\fill (1.5,3) circle (2pt);
+\draw (1.5,3)--(0.75,2.25);
+\fill (0.75,2.25) circle (2pt);
+\draw (1.5,3)--(2.25,2.25);
+\fill (2.25,2.25) circle (2pt);
+\draw (0.75,2.25)--(0.375,1.5);
+\fill (0.375,1.5) circle (2pt);
+\draw (0.75,2.25)--(1.125,1.5);
+\fill (1.125,1.5) circle (2pt);
+\draw (0.375,1.5)--(0.1875,0.75);
+\fill (0.1875,0.75) circle (2pt);
+\draw (0.375,1.5)--(0.5625,0.75);
+\fill (0.5625,0.75) circle (2pt);
+\end{scope}
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <em>Non-Nested Arcs.</em>
+
+Start with <m>2n</m> points arranged in a line. Connect the points with <m>n</m> arcs to that
+		<ul>
+			<li>
+			<p>
+ the arcs line above the line of points
+			</p>
+			</li>
+			<li>
+			<p>
+ No arc is contained entirely below another arc
+			</p>
+			</li>
+		</ul>
+
+
+.
+
+
+
+			<image width="80%" xml:id="fig-img-catalan3">
+				<latex-image>
+\begin{tikzpicture}[scale=.75] %mathbook width=80%
+\begin{scope}
+\filldraw [gray] (0,0) circle (2pt)
+(.5,0) circle (2pt)
+(1,0) circle (2pt)
+(1.5,0) circle (2pt)
+(2.0,0) circle (2pt)
+(2.5,0) circle (2pt);
+\draw[thick] (0,0) .. controls (0.1,.33) and (.4,.33) .. (.5,0)
+(1.0,0) .. controls (1.1, .33) and (1.4,.33) .. (1.5,0)
+(2.0,0) .. controls (2.1,.33) and (2.4,.33) .. (2.5,0);
+\end{scope}
+
+\begin{scope}[shift={(4,0)}]
+\filldraw [gray] (0,0) circle (2pt)
+(.5,0) circle (2pt)
+(1,0) circle (2pt)
+(1.5,0) circle (2pt)
+(2.0,0) circle (2pt)
+(2.5,0) circle (2pt);
+\draw[thick] (0,0) .. controls (0.2,.25) and (.6,.5) .. (1,0)
+(.5,0) .. controls (.7,.25) and (1.3,.5) .. (1.5,0)
+(2.0,0) .. controls (2.1, .33) and (2.4,.33) .. (2.5,0);
+\end{scope}
+
+\begin{scope}[shift={(8,0)}]
+\filldraw [gray] (0,0) circle (2pt)
+(.5,0) circle (2pt)
+(1,0) circle (2pt)
+(1.5,0) circle (2pt)
+(2.0,0) circle (2pt)
+(2.5,0) circle (2pt);
+\draw[thick] (0,0) .. controls (0.1,.33) and (.4,.33) .. (.5,0)
+(1,0) .. controls (1.4,.33) and (1.6,.33) .. (2,0)
+(1.5,0) .. controls (1.9, .33) and (2.1,.33) .. (2.5,0);
+\end{scope}
+
+\begin{scope}[shift={(12,0)}]
+\filldraw [gray] (0,0) circle (2pt)
+(.5,0) circle (2pt)
+(1,0) circle (2pt)
+(1.5,0) circle (2pt)
+(2.0,0) circle (2pt)
+(2.5,0) circle (2pt);
+\draw[thick] (0,0) .. controls (0.5,.25) and (1.0,.5) .. (1.5,0)
+(.5,0) .. controls (1.0,.25) and (1.5,.5) .. (2.0,0)
+(1.0,0) .. controls (1.5, .33) and (2.4,.33) .. (2.5,0);
+\end{scope}
+
+\begin{scope}[shift={(16,0)}]
+\filldraw [gray] (0,0) circle (2pt)
+(.5,0) circle (2pt)
+(1,0) circle (2pt)
+(1.5,0) circle (2pt)
+(2.0,0) circle (2pt)
+(2.5,0) circle (2pt);
+\draw[thick] (0,0) .. controls (0.4,.33) and (.6,.33) .. (1,0)
+(.5,0) .. controls (1.0,.25) and (1.5,.5) .. (2.0,0)
+(1.5,0) .. controls (1.66, .33) and (2.33,.33) .. (2.5,0);
+\end{scope}
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <em>Staircase Partitions.</em>
+
+A staircase of size <m>n</m> consists of <m>n</m> rows of boxes, where the <m>i</m>th row contains <m>n+1-i</m> boxes.
+A staircase partition is a division of a staircase into <m>n</m> rectangles.
+
+
+
+			<image width="80%" xml:id="fig-img-catalan4">
+				<latex-image>
+\begin{tikzpicture}[scale=0.65] %mathbook width=80%
+\begin{scope}
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (0,1) -- (1,1) (0,2) -- (2,2);
+\end{scope}
+
+\begin{scope}[shift={(5,0)}]
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (0,2) -- (2,2) (1,2) -- (1,1);
+\end{scope}
+
+\begin{scope}[shift={(10,0)}]
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (0,1) -- (1,1) (2,3) -- (2,2);
+\end{scope}
+
+\begin{scope}[shift={(15,0)}]
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (1,3) -- (1,1) (1,2) -- (2,2);
+\end{scope}
+
+\begin{scope}[shift={(20,0)}]
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (1,3) -- (1,1) (2,3) -- (2,2);
+\end{scope}
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+
+
+</chapter>
