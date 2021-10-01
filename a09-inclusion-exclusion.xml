@@ -65,6 +65,14 @@ A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spa
 					<p>
  How many bridge hands have no ace and no hearts?
 
+<solution>
+<p>
+We have forbidden 13+3 cards. So our answer is
+<me>
+{ 52 -16 \choose 13} = {36 \choose 13}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -72,6 +80,14 @@ A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spa
 					<p>
  How many bridge hands have at least one ace and at least one heart?
 
+<solution>
+<p>
+We have two bad events: no hearts and no aces.
+<me>
+{52 \choose 13} - { 39 \choose 13} - {48 \choose 13} + {36 \choose 13}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -79,6 +95,14 @@ A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spa
 					<p>
  How many bridge hands have at least one Jack, one King, one Queen and one Ace?
 
+<solution>
+<p>
+We have four symmetric bad events: <m>B_J, B_Q, B_K, B_A</m>. Our answer is
+<me>
+{52 \choose 13} - {4 \choose 1} {48 \choose 13} + {4 \choose 2} {44 \choose 13} - {4 \choose 3} {40 \choose 13} + {4 \choose 4} {36 \choose 13}.
+</me>
+</p>
+</solution>
 
 
 
@@ -103,6 +127,23 @@ A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spa
  How many ways can you distribute 20 identical tangerines to 10 distinct children so that each child receives at most 5 tangerines?
 
 
+<solution>
+<p>
+We have ten bad events <m>A_i</m>, one for each child. The event <m>A_i</m> is "child <m>i</m> gets 6 or more tangerines."
+The sizes of the sets corresponding to these bad events are:
+\begin{eqnarray*}
+|A_i| &amp;=&amp; {14+10-1 \choose 10-1} = {23 \choose 9} \\
+|A_i \cap A_j| &amp;=&amp; {8+10-1 \choose 10-1} =  {17 \choose 9} \\
+|A_i \cap A_j \cap A_k| &amp;=&amp; {2+10-1 \choose 10-1} = {11 \choose 9} \\
+|A_i \cap A_j \cap A_k \cap A_{\ell} | &amp;=&amp; 0,
+\end{eqnarray*}
+and larger intersections are likewise impossibl.e
+Therefore the total number of good ways to distribute the tangerines is
+<me>
+{29 \choose 9} - {10 \choose 1} {23 \choose 9} + {10 \choose 2} {17 \choose 9} - {10 \choose 3}{11 \choose 9}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -110,6 +151,14 @@ A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spa
 					<p>
  How many ways can part (a) be completed if each child must receive at least one tangerine?
 
+<solution>
+<p>
+We start by giving one tangerine to each child, which leaves 10 to distribute as we see fit. By a similar argument (now using 5 tangerines per child as our bad event) gives
+<me>
+{19 \choose 9} - {10 \choose 1} {14 \choose 9} + {10 \choose 2} {9 \choose 9}.
+</me>
+</p>
+</solution>
 
 
 
@@ -145,6 +194,11 @@ Let <m>A</m> be the set of all permutations of <m>[n]</m>. We will define a set 
 					<p>
  Define the "bad" event <m>A_i</m> in a very natural way. Here "bad" should be taken in the context that we <em>want</em> a derangement, but event <m>A_i</m> is preventing this for element <m>i</m>.
 
+<solution>
+<p>
+<m>A_i =</m> element <m>i</m> gets mapped to itself. In other words, <m>f(i)=i</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -159,6 +213,19 @@ Let <m>A</m> be the set of all permutations of <m>[n]</m>. We will define a set 
 \end{array}
 </me>
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+|A_i| &amp;=&amp; (n-1)! \\
+|A_i \cap A_j| &amp;=&amp; (n-2)! \\
+|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}| &amp;=&amp; (n-k)!
+\end{array}
+</me>
+
+Note that these sizes are independent of the actual choices for <m>i,j</m>, etc. All that matters is the {number of subsets in the intersection}.
+</p>
+</solution>
 
 
 					</p>
@@ -201,6 +268,49 @@ Let <m>A</m> be the set of all permutations of <m>[n]</m>. We will define a set 
 </table>
 <p>
 
+<solution>
+<p>
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i</m>
+</cell>
+<cell>
+is <m>n = \displaystyle{{n \choose 1}}</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i \cap A_j</m>
+</cell>
+<cell>
+is <m>\displaystyle{ {n \choose 2}}</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}</m>
+</cell>
+<cell>
+is <m> \displaystyle{{n \choose k}}</m>
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+</p>
+</solution>
 
 
 			</p><p>
@@ -216,6 +326,14 @@ Let <m>A</m> be the set of all permutations of <m>[n]</m>. We will define a set 
 </me>
 where the sum is over all <m>\{i_1, i_2, \ldots , i_k \} \in \displaystyle{[n] \choose k }</m>.
 
+<solution>
+<p>
+<me>
+\sum_{k=0}^n (-1)^k {n \choose k} (n-k)! = \sum_{k=0}^n (-1)^k \frac{n!}{k!} =
+n! \sum_{k=0}^n \frac{(-1)^k }{k!}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -244,6 +362,11 @@ Let <m>A</m> be the set of all functions from <m>[n]</m> to <m>[k]</m>, where <m
 					<p>
  Define the "bad" event <m>A_i</m> in a very natural way. Here "bad" should be taken in the context that we <em>want</em> a surjection, but event <m>A_i</m> is preventing this  for element <m>i</m>.
 
+<solution>
+<p>
+<m>A_i = </m> functions that miss element <m>i \in [k]</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -261,6 +384,18 @@ Let <m>A</m> be the set of all functions from <m>[n]</m> to <m>[k]</m>, where <m
 
 			</p><p>
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+|A_i| &amp;=&amp; (k-1)^n \\
+|A_i \cap A_j| &amp;=&amp;(k-2)^n \\
+|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}| &amp;=&amp; (k-s)^n.
+\end{array}
+</me>
+Note that these sizes are independent of the actual choices for <m>i,j</m>, etc. All that matters is the {number of subsets in the intersection}.
+</p>
+</solution>
 
 
 
@@ -307,6 +442,49 @@ Let <m>A</m> be the set of all functions from <m>[n]</m> to <m>[k]</m>, where <m
 
 
 
+<solution>
+<p>
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i</m>
+</cell>
+<cell>
+is <m>n = \displaystyle{{n \choose 1}}</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_i \cap A_j</m>
+</cell>
+<cell>
+is <m>\displaystyle{{n \choose 2}}</m>
+</cell>
+</row>
+<row>
+<cell>
+# subsets of the form
+</cell>
+<cell>
+<m>A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}</m>
+</cell>
+<cell>
+is <m>\displaystyle{{n \choose s}}</m>
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+</p>
+</solution>
 
 			</p><p>
 
@@ -320,6 +498,13 @@ Let <m>A</m> be the set of all functions from <m>[n]</m> to <m>[k]</m>, where <m
 \sum_{S \subseteq [n]}  (-1)^{|S|} |A_S|.
 </me>
 
+<solution>
+<p>
+<me>
+\sum_{s=0}^k (-1)^s {k \choose s} (k-s)^n
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -327,6 +512,15 @@ Let <m>A</m> be the set of all functions from <m>[n]</m> to <m>[k]</m>, where <m
 					<p>
  If you divide your answer to (d) by <m>k!</m> then you get a formula for <m>S(n,k)</m>. Explain why.
 
+<solution>
+<p>
+<me>
+\frac{1}{k!}  \sum_{s=0}^k (-1)^s {k \choose s} (k-s)^n =
+\sum_{s=0}^k (-1)^s \frac{(k-s)^n}{s!(k-s)!}
+</me>
+The number of surjections <m>f: [n] \rightarrow [k]</m> is <m>k! S(n,k)</m>.
+</p>
+</solution>
 
 					</p>
 				</li>

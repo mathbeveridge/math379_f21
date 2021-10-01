@@ -12,11 +12,10 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Use the inclusion/exclusion formula to find number  of surjections from \([n]\) to \([k]\text{.}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\left| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c \right| =
-\sum_{S \subseteq [n]}  (-1)^{|S|} |A_S|.
+\sum_{k=0}^n (-1)^k {n \choose k} (n-k)! = \sum_{k=0}^n (-1)^k \frac{n!}{k!} =
+n! \sum_{k=0}^n \frac{(-1)^k }{k!}
 \end{equation*}
 </div>
 <span class="incontext"><a href="exercises-9.html#p-366">in-context</a></span>
