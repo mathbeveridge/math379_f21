@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<chapter xml:id="bestiarum" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Bestiarum Generandi</title>
+	<introduction>
+		<p>
+
+
+</p>
+<subsection xml:id="bestiarum0">
+<title>Variations on the Binomial Theorem</title>
+<p>
+
+			</p><p>
+
+For any <m>n \in \mathbb{N}</m>,
+<me>
+\begin{array}{rcccl}
+\displaystyle{
+(1+x)^n
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{n} {n \choose k} x^k
+}&amp;=&amp; \displaystyle{
+1 + {n \choose 1} x + {n \choose 2} x^2 + {n \choose 3} x^3 + \cdots  + {n
+\choose n} x^n
+} \\
+\displaystyle{
+(1+ax)^n
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{n} {n \choose k} a^k x^k
+}&amp;=&amp; \displaystyle{
+1 + {n \choose 1} a x + {n \choose 2} a^2 x^2 + {n \choose 3} a^3 x^3 + \cdots + {n
+\choose n} a^n x^n
+} \\
+\displaystyle{
+(1+x^r)^n
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{n} {n \choose k}  x^{kr}
+}&amp;=&amp; \displaystyle{
+1 + {n \choose 1}  x^r + {n \choose 2}  x^{2r} + {n \choose 3}  x^{3r} + \cdots + {n
+\choose n} x^{nr}
+} \\
+\end{array}
+</me>
+
+</p>
+</subsection>
+<subsection xml:id="bestiarum1">
+<title>Generalized Binomial Theorem</title>
+<p>
+
+
+			</p><p>
+
+For any <m>a \in \R</m>,
+<me>
+\begin{array}{rcccl}
+\displaystyle{
+(1+x^r)^a
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty} {a \choose k}  x^{kr}
+}&amp;=&amp; \displaystyle{
+1 + {a \choose 1}  x^r + {a \choose 2}  x^{2r} + {a \choose 3}  x^{3r} + \cdots
+} \\
+\end{array}
+</me>
+
+</p>
+</subsection>
+<subsection xml:id="bestiarum2">
+<title>Variations on Geometric Series</title>
+<p>
+
+<me>
+\begin{array}{rcccl}
+\displaystyle{
+\frac{1}{1-x}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  x^k
+}&amp;=&amp; \displaystyle{
+1 +  x + x^2 + x^3 + \cdots
+} \\
+\displaystyle{
+\frac{1}{1-a x}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  a^k x^k
+}&amp;=&amp; \displaystyle{
+1 +  a x + a^2 x^2 + a^3 x^3 + \cdots
+} \\
+\displaystyle{
+\frac{1}{1-x^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  x^{kn}
+}&amp;=&amp; \displaystyle{
+1 +  x^n +  x^{2n} +  x^{3n} + \cdots
+} \\
+\displaystyle{
+\frac{1}{(1-x)^2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  (k+1) x^{k}
+}&amp;=&amp; \displaystyle{
+1 +  2x +  3x^{2} +  4x^{3} + \cdots
+} \\
+\displaystyle{
+\frac{1}{(1-x)^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  {n+k-1 \choose k}  x^{k}
+}&amp;=&amp; \displaystyle{
+1 +  {n \choose 1} x +  {n+1 \choose 2}x^{2} +  {n+2 \choose 3}x^{3} + \cdots
+} \\
+\displaystyle{
+\frac{1}{(1-ax)^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  {n+k-1 \choose k} a^k x^{k}
+}&amp;=&amp; \displaystyle{
+1 +  {n \choose 1} a x +  {n+1 \choose 2}a^2 x^{2} +  {n+2 \choose 3} a^3 x^{3} + \cdots
+} \\
+\\
+\displaystyle{
+\log \left(\frac{1}{1-x} \right)
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=1}^{\infty}  \frac{x^{k}}{k}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{2}}{2} + \frac{x^{3}}{3} + \frac{x^{4}}{4} +\cdots
+} \\
+\end{array}
+</me>
+
+</p>
+</subsection>
+<subsection xml:id="bestiarum3">
+<title>Variations on Exponential Series</title>
+<p>
+
+<me>
+\begin{array}{rcccl}
+\displaystyle{
+e^x
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  \frac{x^{k}}{k!}
+}&amp;=&amp; \displaystyle{
+1+x +  \frac{x^{2}}{2} + \frac{x^{3}}{6} + \frac{x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{ax}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}   \frac{a^k x^{k}}{k!}
+}&amp;=&amp; \displaystyle{
+1+ax +  \frac{a^2x^{2}}{2} + \frac{a^3x^{3}}{6} + \frac{a^4x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{x^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  \frac{x^{kn}}{k!}
+}&amp;=&amp; \displaystyle{
+1+x^n +  \frac{x^{2n}}{2} + \frac{x^{3n}}{6} + \frac{x^{4n}}{24} +\cdots
+} \\
+\displaystyle{
+\sinh x = \frac{e^x - e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}   \frac{x^{2k+1}}{(2k+1)!}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{3}}{6} + \frac{x^{5}}{120} + \frac{x^{7}}{5040} +\cdots
+} \\
+\displaystyle{
+\cosh x = \frac{e^x + e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}   \frac{x^{2k}}{(2k)!}
+}&amp;=&amp; \displaystyle{
+1+   \frac{x^{2}}{2} + \frac{x^{4}}{24} + \frac{x^{6}}{720} +\cdots
+} \\
+\end{array}
+</me>
+
+</p>
+</subsection>
+<subsection xml:id="bestiarum4">
+<title>Other Cute Series</title>
+<p>
+
+<me>
+\begin{array}{rcccl}
+\displaystyle{
+\tan^{-1} x
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty} (-1)^k  \frac{x^{2k+1}}{2k+1}
+}&amp;=&amp; \displaystyle{
+x -  \frac{x^{3}}{3} + \frac{x^{5}}{5} - \frac{x^{7}}{7} +\cdots
+} \\
+\\
+\displaystyle{
+\log \left( \sqrt{\frac{1+x}{1-x}} \right)
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}   \frac{x^{2k+1}}{2k+1}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{3}}{3} + \frac{x^{5}}{5} + \frac{x^{7}}{7} +\cdots
+} \\
+\\
+\displaystyle{
+\frac{1}{\sqrt{1-4x}}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty} {2k \choose k}  x^k
+}&amp;=&amp; \displaystyle{
+1 + 2x + 6x^2 + 20x^3 +\cdots
+} \\
+\displaystyle{
+\frac{1}{\sqrt{1-x^2}}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty} {2k \choose k} \frac{ x^{2k}}{2^{2k}}
+}&amp;=&amp; \displaystyle{
+1 + \frac{x^2}{2} + \frac{3 x^4}{8} + \frac{5x^6}{16} +\cdots
+} \\
+\\
+\displaystyle{
+\frac{1-\sqrt{1-4x}}{2x}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty} \frac{1}{2k+1}{2k \choose k}  x^k
+}&amp;=&amp; \displaystyle{
+1 + x + 5x^2 + 14x^3 +\cdots
+} \\
+\end{array}
+</me>
+
+
+
+</p>
+</subsection>
+</introduction>
+</chapter>

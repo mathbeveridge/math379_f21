@@ -12,12 +12,40 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function (EGF)</em> \(G(x)\) for this sequence is</p>
+<p>For any \(n \in \mathbb{N}\text{,}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-G(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!}.
+\begin{array}{rcccl}
+\displaystyle{
+(1+x)^n
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{n} {n \choose k} x^k
+}&amp;=&amp; \displaystyle{
+1 + {n \choose 1} x + {n \choose 2} x^2 + {n \choose 3} x^3 + \cdots  + {n
+\choose n} x^n
+} \\
+\displaystyle{
+(1+ax)^n
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{n} {n \choose k} a^k x^k
+}&amp;=&amp; \displaystyle{
+1 + {n \choose 1} a x + {n \choose 2} a^2 x^2 + {n \choose 3} a^3 x^3 + \cdots + {n
+\choose n} a^n x^n
+} \\
+\displaystyle{
+(1+x^r)^n
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{n} {n \choose k}  x^{kr}
+}&amp;=&amp; \displaystyle{
+1 + {n \choose 1}  x^r + {n \choose 2}  x^{2r} + {n \choose 3}  x^{3r} + \cdots + {n
+\choose n} x^{nr}
+} \\
+\end{array}
 \end{equation*}
 </div>
-<span class="incontext"><a href="genfun.html#p-428">in-context</a></span>
+<span class="incontext"><a href="bestiarum.html#p-428">in-context</a></span>
 </body>
 </html>

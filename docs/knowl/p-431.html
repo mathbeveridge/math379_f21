@@ -12,12 +12,69 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For \(n \geq 0\text{,}\) let \(a_n\) be the number of ways to pay \(n\)  cents using nickels. Write out the first 6 <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">nonzero</em> terms of the generating function</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
+\begin{array}{rcccl}
+\displaystyle{
+\frac{1}{1-x}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  x^k
+}&amp;=&amp; \displaystyle{
+1 +  x + x^2 + x^3 + \cdots
+} \\
+\displaystyle{
+\frac{1}{1-a x}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  a^k x^k
+}&amp;=&amp; \displaystyle{
+1 +  a x + a^2 x^2 + a^3 x^3 + \cdots
+} \\
+\displaystyle{
+\frac{1}{1-x^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  x^{kn}
+}&amp;=&amp; \displaystyle{
+1 +  x^n +  x^{2n} +  x^{3n} + \cdots
+} \\
+\displaystyle{
+\frac{1}{(1-x)^2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  (k+1) x^{k}
+}&amp;=&amp; \displaystyle{
+1 +  2x +  3x^{2} +  4x^{3} + \cdots
+} \\
+\displaystyle{
+\frac{1}{(1-x)^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  {n+k-1 \choose k}  x^{k}
+}&amp;=&amp; \displaystyle{
+1 +  {n \choose 1} x +  {n+1 \choose 2}x^{2} +  {n+2 \choose 3}x^{3} + \cdots
+} \\
+\displaystyle{
+\frac{1}{(1-ax)^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  {n+k-1 \choose k} a^k x^{k}
+}&amp;=&amp; \displaystyle{
+1 +  {n \choose 1} a x +  {n+1 \choose 2}a^2 x^{2} +  {n+2 \choose 3} a^3 x^{3} + \cdots
+} \\
+\\
+\displaystyle{
+\log \left(\frac{1}{1-x} \right)
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=1}^{\infty}  \frac{x^{k}}{k}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{2}}{2} + \frac{x^{3}}{3} + \frac{x^{4}}{4} +\cdots
+} \\
+\end{array}
 \end{equation*}
 </div>
-<span class="incontext"><a href="exercises-12.html#p-431">in-context</a></span>
+<span class="incontext"><a href="bestiarum.html#p-431">in-context</a></span>
 </body>
 </html>

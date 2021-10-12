@@ -12,12 +12,52 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For \(n \geq 0\text{,}\) let \(b_n\) be the number of ways to pay \(n\) cents using dimes. Write out the first 6 <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">nonzero</em> terms of the generating function</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
+\begin{array}{rcccl}
+\displaystyle{
+e^x
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  \frac{x^{k}}{k!}
+}&amp;=&amp; \displaystyle{
+1+x +  \frac{x^{2}}{2} + \frac{x^{3}}{6} + \frac{x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{ax}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}   \frac{a^k x^{k}}{k!}
+}&amp;=&amp; \displaystyle{
+1+ax +  \frac{a^2x^{2}}{2} + \frac{a^3x^{3}}{6} + \frac{a^4x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{x^n}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}  \frac{x^{kn}}{k!}
+}&amp;=&amp; \displaystyle{
+1+x^n +  \frac{x^{2n}}{2} + \frac{x^{3n}}{6} + \frac{x^{4n}}{24} +\cdots
+} \\
+\displaystyle{
+\sinh x = \frac{e^x - e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}   \frac{x^{2k+1}}{(2k+1)!}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{3}}{6} + \frac{x^{5}}{120} + \frac{x^{7}}{5040} +\cdots
+} \\
+\displaystyle{
+\cosh x = \frac{e^x + e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{k=0}^{\infty}   \frac{x^{2k}}{(2k)!}
+}&amp;=&amp; \displaystyle{
+1+   \frac{x^{2}}{2} + \frac{x^{4}}{24} + \frac{x^{6}}{720} +\cdots
+} \\
+\end{array}
 \end{equation*}
 </div>
-<span class="incontext"><a href="exercises-12.html#p-432">in-context</a></span>
+<span class="incontext"><a href="bestiarum.html#p-432">in-context</a></span>
 </body>
 </html>
