@@ -12,12 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Quidditch is played on an oval pitch, five hundred feet long. At each end, there are three hooped goal posts of different heights, surrounded by a scoring area. The game is played with four bewitched flying spherical balls: two Bludgers, one Quaffle and one Snitch. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/quidditch.jpg" class="contained"></div> Two teams of wizards on flying broomsticks zip around the pitch trying to score points. This can be done in two ways.</p>
-<ul class="disc">
-<li><p>Sending the Quaffle through any of the three goal hoops in the appropriate scoring area (10 points); and</p></li>
-<li><p>Capturing the Snitch (150 points).</p></li>
-</ul>
-<p class="continuation">The game ends when the Snitch is caught, or an agreement is reached between the captains of both teams. Use the product principle for generating functions to find a concise formula for \(Q(x)\text{,}\) the generating function for the number of ways to to score \(n\) points in a Quidditch game.</p>
-<span class="incontext"><a href="exercises-12.html#p-446">in-context</a></span>
+<p>Recall that a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">(strong) composition</em> of \(n\) into \(k\) parts is an ordered list of positve integers \((a_1, a_2, \ldots , a_k)\) such that \(\sum_{i=1}^k a_i =n\) and \(a_i \geq 1\) for \(1 \leq i \leq k\text{.}\) In this exercise, we will use generating functions to prove that the number of strong compositions of \(n\) into \(k\) parts is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\displaystyle{{n-1 \choose k-1}} \mbox{ when } n \geq k, \mbox{ and } 0 \mbox{ when } n &lt; k.
+\end{equation*}
+</div>
+<p class="continuation">(Note:  \({n-1 \choose k-1}\) is defined to be \(0\) when \(n &lt; k\) because it is impossible to pick more elements than we have. So technically, we  don't need to point this out again.)</p>
+<ol class="lower-alpha">
+<li><p>There are 10 compositions of 6 into 3 parts. List them.</p></li>
+<li><p>What is the generating function \(G_1(x)\) for the number of compositions of \(n\) into 1 part?</p></li>
+<li><p>Use the product principle (for generating functions) to find the generating function \(G_2(x)\) for the number of  compositions of \(n\) into 2 parts.</p></li>
+<li><p>What is the generating function \(G_k(x)\) for the number of  compositions of \(n\) into \(k\) parts?</p></li>
+<li><p>Starting from the known power series for weak compositions \(F_k(x)\text{,}\) find the power series for compositions \(G_k(x)\text{.}\) Hint: re-index using \(m=n+k\text{.}\)</p></li>
+</ol>
+<span class="incontext"><a href="exercises-13.html#p-446">in-context</a></span>
 </body>
 </html>

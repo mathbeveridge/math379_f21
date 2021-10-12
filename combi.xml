@@ -41,6 +41,7 @@ pull the name of the problem from the first line  of  the \item
     <docinfo>
     <latex-image-preamble>
     \usepackage{tikz}
+    \usepackage{multirow}
     </latex-image-preamble>
     </docinfo>
 
@@ -67,12 +68,15 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./a08-integer-partition.xml" /> 
             <xi:include href="./a09-inclusion-exclusion.xml" />   
             <xi:include href="./a10-catalan.xml" />            
+            <!--xi:include href="./a11-counting-summary.xml" /--> 
             <xi:include href="./ex01-counting.xml" />                       
 
     </part>
 
     <part xml:id="part-genfun">
         <title>Generating Functions</title> 
+            <xi:include href="./b01-genfun.xml" /> 
+            <xi:include href="./b02-genfun-intcomp.xml" />             
             <xi:include href="./ex02-genfun.xml" />                       
 
     </part>

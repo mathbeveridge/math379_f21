@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<chapter xml:id="counting-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Counting Techniques</title>
+	<introduction>
+		<p>
+
+
+
+</p>
+</introduction>
+<section xml:id="counting-summary0">
+<title>The Bev-fold Way</title>
+<p>
+
+How many ways are there to place <m>r</m> balls into <m>s</m> boxes when <m>\ldots</m>
+
+			</p><p>
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+\multicolumn{2}{|c|}{<em>at least one ball per box</em>}
+</cell>
+<cell>
+identical balls
+</cell>
+<cell>
+distinct balls
+</cell>
+<cell>
+provided that
+</cell>
+</row>
+<row>
+<cell>
+\multirow{5}{*}{distinct boxes}
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+without repetition
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>s!</m>
+</cell>
+<cell>
+<m>r=s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+with repetition
+</cell>
+<cell>
+<m>\displaystyle{{r-1 \choose s-1}}</m>
+</cell>
+<cell>
+<m>s! \, S(r,s)</m>
+</cell>
+<cell>
+<m>r \geq s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+			</p><p>
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+\multicolumn{2}{|c|}{<em>at least one ball per box</em>}
+</cell>
+<cell>
+identical balls
+</cell>
+<cell>
+distinct balls
+</cell>
+<cell>
+provided that
+</cell>
+</row>
+<row>
+<cell>
+\multirow{5}{*}{identical boxes}
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+without repetition
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>r=s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+with repetition
+</cell>
+<cell>
+<m>p(r,s)</m>
+</cell>
+<cell>
+<m> S(r,s)</m>
+</cell>
+<cell>
+<m>r \geq s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+
+			</p><p>
+			</p><p>
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+\multicolumn{2}{|c|}{<em>boxes may contain 0 balls</em>}
+</cell>
+<cell>
+identical balls
+</cell>
+<cell>
+distinct balls
+</cell>
+<cell>
+provided that
+</cell>
+</row>
+<row>
+<cell>
+\multirow{7}{*}{distinct boxes}
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+without repetition
+</cell>
+<cell>
+<m>\displaystyle{s \choose r} </m>
+</cell>
+<cell>
+<m>(s)_r</m>
+</cell>
+<cell>
+<m>r \leq s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+with repetition
+</cell>
+<cell>
+<m>\displaystyle{{r + s -1 \choose s-1}}</m>
+</cell>
+<cell>
+<m>s^r</m>
+</cell>
+<cell>
+<m>-</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+			</p><p>
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+\multicolumn{2}{|c|}{<em>boxes may contain 0 balls</em>}
+</cell>
+<cell>
+identical balls
+</cell>
+<cell>
+distinct balls
+</cell>
+<cell>
+provided that
+</cell>
+</row>
+<row>
+<cell>
+\multirow{6}{*}{identical boxes}
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+without repetition
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>r \leq s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+\multirow{2}{*}{with repetition}
+</cell>
+<cell>
+<m>p(r)</m>
+</cell>
+<cell>
+<m> B(r)</m>
+</cell>
+<cell>
+<m>r \leq s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+<m>p_s(r)</m>
+</cell>
+<cell>
+<m> \sum_{i=1}^{s} S(r,i) </m>
+</cell>
+<cell>
+<m>r &gt; s</m>
+</cell>
+</row>
+<row>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+<cell>
+
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+
+</p>
+</section>
+<section xml:id="counting-summary1">
+<title>Binomial Theorem</title>
+<p>
+
+<m>\displaystyle{(x+y)^n = \sum_{k=0}^n { n \choose k } x^k y^{n-k}}</m>
+
+</p>
+</section>
+<section xml:id="counting-summary2">
+<title>Pigeonhole Principle</title>
+<p>
+
+If <m>n+1</m> balls are placed in <m>n</m> boxes then at least one box contains 2 or more balls.
+
+			</p><p>
+
+If <m>n &gt; rm</m> balls are placed in <m>m</m> boxes then at least one box contains <m>r+1</m> or more balls.
+
+
+</p>
+</section>
+<section xml:id="counting-summary3">
+<title>Inclusion/Exclusion</title>
+<p>
+
+For two sets.
+<me>
+|A \cup B| = |A| + |B| - |A \cap B|
+</me>
+
+			</p><p>
+
+For three sets.
+<me>
+|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
+</me>
+
+
+			</p><p>
+
+For <m>n</m> sets. Let <m>A_1, A_2, \ldots , A_n \subseteq A</m>. Then
+<me>
+\left|\cup_{i=1}^{n} A_i \right| = \sum_{j=1}^n (-1)^{j+1} \sum_{\{i_1, \ldots i_j \} \in {[n] \choose j}}
+\left| A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_j} \right|
+</me>
+and
+<me>
+\left| A \backslash  \left( \cup_{i=1}^{n} A_i  \right)\right| =
+\sum_{S \subset [n]} (-1)^{|S|} |A_S|
+\mbox{   where  } A_S = \left\{
+\begin{array}{cc}
+A &amp; \mbox{if } S = \emptyset, \\
+\cap_{i \in S} A_i &amp; \mbox{if } S \neq \emptyset .
+\end{array} \right.
+</me>
+
+
+</p>
+</section>
+<section xml:id="counting-summary4">
+<title>Functions</title>
+<p>
+
+
+A function <m>f: X \rightarrow Y</m> is <em>injective</em> when <m>\forall x_1, x_2 \in X</m>, if <m>x_1 \neq x_2</m> then <m>f(x_1) \neq f(x_2)</m>.
+
+
+			</p><p>
+
+A function <m>f: X \rightarrow Y</m> is <em>surjective</em> when <m>\forall y \in Y</m>, <m>\exists x \in X</m> such that <m>f(x)=y</m>.
+
+			</p><p>
+A function <m>f: X \rightarrow Y</m> is <em>bijective</em> when it is both injective and surjective.
+
+
+
+
+
+
+
+</p>
+</section>
+</chapter>

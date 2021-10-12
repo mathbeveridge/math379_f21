@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like"><div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcll}
+h_n  &amp;=&amp; 5 h_{n-1} - 6h_{n-2} &amp; \mbox{for } n \geq 2 \\
+h_n x^n &amp;=&amp; 5 h_{n-1} x^n - 6h_{n-2} x^n &amp; \mbox{for } n \geq 2 \\
+\displaystyle{\sum_{n=2}^{\infty} h_n x^n} &amp;=&amp; \displaystyle{ \sum_{n=2}^{\infty}  5 h_{n-1} x^n - \sum_{n=2}^{\infty}  6h_{n-2} x^n} &amp; (\mbox{sum starts at } n=2) \\
+\displaystyle{ \sum_{n=2}^{\infty} h_n x^n }&amp;=&amp; \displaystyle{  5 x \sum_{n=2}^{\infty}  5 h_{n-1} x^{n-1} -6x^2 \sum_{n=2}^{\infty}  h_{n-2} x^{n-2} }&amp; (\mbox{powers match coefficient indices})  \\
+\displaystyle{ \sum_{n=2}^{\infty} h_n x^n }&amp;=&amp; \displaystyle{  5 x \sum_{i=1}^{\infty}  5 h_{i} x^{i} -6x^2 \sum_{j=0}^{\infty}  h_{j} x^{j} }&amp; (\mbox{re-index second two summations})  \\
+H(x) - h_0 - h_1x &amp;=&amp; \displaystyle{  5 x ( H(x) - h_0)  -6x^2 H(x)} &amp; (\mbox{replace summations with } H(x))  \\
+H(x) - 5H(x) + 6x^2 H(x) &amp;=&amp; h_0 + h_1x  -5 h_0 x  &amp; (\mbox{collect like terms})  \\
+H(x) (1 - 5x +6x^2)  &amp;=&amp; 1  -3 x  &amp; (h_0=1 \mbox{ and } h_1=2)  \\
+H(x)&amp;=&amp; \displaystyle{\frac{1  -3 x}{1 - 5x +6x^2 }}   &amp; (\mbox{bingo!})  \\
+H(x)&amp;=&amp;\displaystyle{ \frac{1}{ 1 - 2x } }  &amp; (\mbox{simplify})  \\
+\end{array}
+\end{equation*}
+</div></div></body>
+</html>
