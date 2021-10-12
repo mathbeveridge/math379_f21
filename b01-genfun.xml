@@ -2,19 +2,42 @@
 
 
 <chapter xml:id="genfun" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Generating Functions Introduction</title>
+	<title>Generating Function Introduction</title>
 	<introduction>
 		<p>
 
+Let
+<me>
+a_0, a_1, a_2, \ldots , a_n, \ldots
+</me>
+be  an infinite sequence.
 
+			</p><p>
+
+The <em>generating function</em> <m>F(x)</m> for this sequence is
+<me>
+F(x) =  \sum_{n=0}^{\infty} a_n x^n.
+</me>
+We  also refer to <m>F(x)</m> as the <em>ordinary generating function (OGF)</em> for the sequence.
+
+			</p><p>
+
+The <em>exponential generating function (EGF)</em> <m>G(x)</m> for this sequence is
+<me>
+G(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!}.
+</me>
+
+			</p><p>
+
+Both OGFs and EGFs are useful counting tools. It will take us a few days to develop enough results to be able to talk about when to use OGFs and when to use EGFs. For now, our  goal is to get comfortable with these definitions, and to practice solving recurrences.
 
 	</p>
 	</introduction>
 	<exercises>
 		<title>Practice Problems</title>
 		<exercise>
-			<title>Generating Functions for Pocket Change</title>
-			<idx><h>Generating Functions for Pocket Change</h></idx>
+			<title>OGFs for Pocket Change</title>
+			<idx><h>OGFs for Pocket Change</h></idx>
 			<statement>
 				<p>
 
@@ -88,8 +111,8 @@ Verify this gives the right answer for <m>n=35</m> by listing the number of ways
 			</statement>
 		</exercise>
 		<exercise>
-			<title>Solving a recurrence using generating functions</title>
-			<idx><h>Solving a recurrence using generating functions</h></idx>
+			<title>Solving a Recurrence with OGFs</title>
+			<idx><h>Solving a Recurrence with OGFs</h></idx>
 			<statement>
 				<p>
 Solve the recurrence relation
@@ -122,6 +145,150 @@ where <m>h_0=1</m> and <m>h_1=2</m>.
 					</p>
 				</li>
 			</ol>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Solving Another Recurrence</title>
+			<idx><h>Solving Another Recurrence</h></idx>
+			<statement>
+				<p>
+Consider the recurrence relation
+\[
+a_n = 4 a_{n-1} -1 \mbox{ for } n \geq 1
+\]
+where <m>a_0=3</m>
+
+			<ol>
+				<li>
+					<p>
+ Let <m>A(x)</m> be the  OGF for this series. Find a simple closed formula for <m>A(x)</m>.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>a_n</m>.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Yet Another Recurrence Relation</title>
+			<idx><h>Yet Another Recurrence Relation</h></idx>
+			<statement>
+				<p>
+Solve the recurrence relation
+<me>
+b_n = 3 b_{n-1} -2 b_{n-2} \mbox{ for } n \geq 2
+</me>
+where <m>b_0=1</m> and <m>b_1=3</m>.
+			<ol>
+				<li>
+					<p>
+ Let <m>B(x)</m> be the  generating function for this series. Find a simple closed formula for <m>B(x)</m>.
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>b_n</m>.
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Solving a Recurrence with EGFs</title>
+			<idx><h>Solving a Recurrence with EGFs</h></idx>
+			<statement>
+				<p>
+Solve the recurrence relation
+<me>
+c_n = 2 n c_{n-1} +8 n (n-1) c_{n-2} \mbox{ for } n \geq 2
+</me>
+where <m>c_0=1</m> and <m>c_1=4</m>.
+			<ol>
+				<li>
+					<p>
+ Let <m>C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!}</m> be the <em>exponential generating function</em> (EGF) for this series. Find a simple closed formula for <m>C(x)</m>.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>c_n</m>. <em>Remember that <m>C(x)</m> is an EGF</em>, so you will have to multiply the <m>n</m>th term by <m>\frac{n!}{n!}</m> and rearrange to get the right answer.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Solving Another Recurrence with EGFs</title>
+			<idx><h>Solving Another Recurrence with EGFs</h></idx>
+			<statement>
+				<p>
+
+
+Consider the recurrence relation
+<me>
+d_n = n d_{n-1} + 1 \mbox{ for } n \geq 1
+</me>
+where <m>d_0=1</m>.
+			<ol>
+				<li>
+					<p>
+ Let <m>D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}</m> be the <em>exponential generating function</em> (EGF) for this series. Find a simple closed formula for <m>D(x)</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Can you figure out how to use your answer in part (a) to find a simple closed formula for <m>d_n</m>? You will need to think about what happens when you multiply two power series together.
+
+
+					</p>
+				</li>
+			</ol>
+
 
 				</p>
 			</statement>

@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Combi Generating Functions Introduction</title>
+<title>Combi Generating Function Introduction</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -131,23 +131,43 @@
 <li class="link"><a href="catalan.html" data-scroll="catalan"><span class="codenumber">10</span> <span class="title">Catalan Numbers</span></a></li>
 <li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">11</span> <span class="title">Counting Exercises</span></a></li>
 <li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
-<li class="link active"><a href="genfun.html" data-scroll="genfun"><span class="codenumber">12</span> <span class="title">Generating Functions Introduction</span></a></li>
+<li class="link active"><a href="genfun.html" data-scroll="genfun"><span class="codenumber">12</span> <span class="title">Generating Function Introduction</span></a></li>
 <li class="link"><a href="genfun-intcomps.html" data-scroll="genfun-intcomps"><span class="codenumber">13</span> <span class="title">Products of Generating Functions</span></a></li>
 <li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">14</span> <span class="title">Generating Function Exercises</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">12</span> <span class="title">Generating Functions Introduction</span>
+<span class="type">Chapter</span> <span class="codenumber">12</span> <span class="title">Generating Function Introduction</span>
 </h2>
-<section class="introduction" id="introduction-12"><p id="p-426"></p></section><section class="exercises" id="exercises-12"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-12"><p id="p-426">Let</p>
+<div class="displaymath">
+\begin{equation*}
+a_0, a_1, a_2, \ldots , a_n, \ldots
+\end{equation*}
+</div>
+<p class="continuation">be  an infinite sequence.</p>
+<p id="p-427">The <em class="emphasis">generating function</em> \(F(x)\) for this sequence is</p>
+<div class="displaymath">
+\begin{equation*}
+F(x) =  \sum_{n=0}^{\infty} a_n x^n.
+\end{equation*}
+</div>
+<p class="continuation">We  also refer to \(F(x)\) as the <em class="emphasis">ordinary generating function (OGF)</em> for the sequence.</p>
+<p id="p-428">The <em class="emphasis">exponential generating function (EGF)</em> \(G(x)\) for this sequence is</p>
+<div class="displaymath">
+\begin{equation*}
+G(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!}.
+\end{equation*}
+</div>
+<p id="p-429">Both OGFs and EGFs are useful counting tools. It will take us a few days to develop enough results to be able to talk about when to use OGFs and when to use EGFs. For now, our  goal is to get comfortable with these definitions, and to practice solving recurrences.</p></section><section class="exercises" id="exercises-12"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-54"><h6 class="heading">
-<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Generating Functions for Pocket Change.</span>
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">OGFs for Pocket Change.</span>
 </h6>
-<ol id="p-427" class="lower-alpha">
+<ol id="p-430" class="lower-alpha">
 <li id="li-221">
-<p id="p-428">For \(n \geq 0\text{,}\) let \(a_n\) be the number of ways to pay \(n\)  cents using nickels. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
+<p id="p-431">For \(n \geq 0\text{,}\) let \(a_n\) be the number of ways to pay \(n\)  cents using nickels. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
 <div class="displaymath">
 \begin{equation*}
 A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
@@ -155,7 +175,7 @@ A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
 </div>
 </li>
 <li id="li-222">
-<p id="p-429">For \(n \geq 0\text{,}\) let \(b_n\) be the number of ways to pay \(n\) cents using dimes. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
+<p id="p-432">For \(n \geq 0\text{,}\) let \(b_n\) be the number of ways to pay \(n\) cents using dimes. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
@@ -163,17 +183,17 @@ B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
 </div>
 </li>
 <li id="li-223">
-<p id="p-430">For \(n \geq 0\text{,}\) let \(c_n\) be the number of ways to pay \(n\) cents using quarters. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
+<p id="p-433">For \(n \geq 0\text{,}\) let \(c_n\) be the number of ways to pay \(n\) cents using quarters. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
 <div class="displaymath">
 \begin{equation*}
 C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
 \end{equation*}
 </div>
 </li>
-<li id="li-224"><p id="p-431">You should recognize \(A(x), B(x), C(x)\) as variants of a well known Taylor series. What are these functions? What restrictions must we place on \(x\text{?}\)</p></li>
-<li id="li-225"><p id="p-432">Using the product and addition principles, we can show that the  function \(D(x)= A(x)B(x)C(x)\) is the generating function for the number of ways to pay \(n\) cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for \(D(x)\text{.}\) (The same restrictions on \(x\) apply here.)</p></li>
+<li id="li-224"><p id="p-434">You should recognize \(A(x), B(x), C(x)\) as variants of a well known Taylor series. What are these functions? What restrictions must we place on \(x\text{?}\)</p></li>
+<li id="li-225"><p id="p-435">Using the product and addition principles, we can show that the  function \(D(x)= A(x)B(x)C(x)\) is the generating function for the number of ways to pay \(n\) cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for \(D(x)\text{.}\) (The same restrictions on \(x\) apply here.)</p></li>
 <li id="li-226">
-<p id="p-433">The Taylor series for \(D(x)\) starts as</p>
+<p id="p-436">The Taylor series for \(D(x)\) starts as</p>
 <div class="displaymath">
 \begin{equation*}
 D(x) = 1 + x^5 + 2x^{10} + 3 x^{20} + 4x^{25} + 5x^{30} + 6x^{35} + 7 x^{40} + 8x^{45} +
@@ -183,9 +203,9 @@ D(x) = 1 + x^5 + 2x^{10} + 3 x^{20} + 4x^{25} + 5x^{30} + 6x^{35} + 7 x^{40} + 8
 <p class="continuation">Verify this gives the right answer for \(n=35\) by listing the number of ways to pay \(35\) cents using nickels, dimes and/or quarters.</p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-55"><h6 class="heading">
-<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Solving a recurrence using generating functions.</span>
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Solving a Recurrence with OGFs.</span>
 </h6>
-<p id="p-434">Solve the recurrence relation</p>
+<p id="p-437">Solve the recurrence relation</p>
 <div class="displaymath">
 \begin{equation*}
 h_n = 5 h_{n-1} - 6h_{n-2} \mbox{ for } n \geq 2
@@ -193,9 +213,55 @@ h_n = 5 h_{n-1} - 6h_{n-2} \mbox{ for } n \geq 2
 </div>
 <p class="continuation">where \(h_0=1\) and \(h_1=2\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-227"><p id="p-435">Let \(H(x)\) be the generating function for this series. Find a simple closed formula for \(H(x)\text{.}\)</p></li>
-<li id="li-228"><p id="p-436">Use the Taylor series for the function in part (a) to find a simple closed formula for \(h_n\text{.}\)</p></li>
-<li id="li-229"><p id="p-437">Now solve the same recurrence where \(h_0=1\) and \(h_1=-2\text{.}\) You will need to use partial fractions.</p></li>
+<li id="li-227"><p id="p-438">Let \(H(x)\) be the generating function for this series. Find a simple closed formula for \(H(x)\text{.}\)</p></li>
+<li id="li-228"><p id="p-439">Use the Taylor series for the function in part (a) to find a simple closed formula for \(h_n\text{.}\)</p></li>
+<li id="li-229"><p id="p-440">Now solve the same recurrence where \(h_0=1\) and \(h_1=-2\text{.}\) You will need to use partial fractions.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-56"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Solving Another Recurrence.</span>
+</h6>
+<p id="p-441">Consider the recurrence relation \[ a_n = 4 a_{n-1} -1 \mbox{ for } n \geq 1 \] where \(a_0=3\)</p>
+<ol class="lower-alpha">
+<li id="li-230"><p id="p-442">Let \(A(x)\) be the  OGF for this series. Find a simple closed formula for \(A(x)\text{.}\)</p></li>
+<li id="li-231"><p id="p-443">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(a_n\text{.}\)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-57"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Yet Another Recurrence Relation.</span>
+</h6>
+<p id="p-444">Solve the recurrence relation</p>
+<div class="displaymath">
+\begin{equation*}
+b_n = 3 b_{n-1} -2 b_{n-2} \mbox{ for } n \geq 2
+\end{equation*}
+</div>
+<p class="continuation">where \(b_0=1\) and \(b_1=3\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-232"><p id="p-445">Let \(B(x)\) be the  generating function for this series. Find a simple closed formula for \(B(x)\text{.}\)</p></li>
+<li id="li-233"><p id="p-446">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(b_n\text{.}\)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-58"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Solving a Recurrence with EGFs.</span>
+</h6>
+<p id="p-447">Solve the recurrence relation</p>
+<div class="displaymath">
+\begin{equation*}
+c_n = 2 n c_{n-1} +8 n (n-1) c_{n-2} \mbox{ for } n \geq 2
+\end{equation*}
+</div>
+<p class="continuation">where \(c_0=1\) and \(c_1=4\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-234"><p id="p-448">Let \(C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!}\) be the <em class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(C(x)\text{.}\)</p></li>
+<li id="li-235"><p id="p-449">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(c_n\text{.}\) <em class="emphasis">Remember that \(C(x)\) is an EGF</em>, so you will have to multiply the \(n\)th term by \(\frac{n!}{n!}\) and rearrange to get the right answer.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-59"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Solving Another Recurrence with EGFs.</span>
+</h6>
+<p id="p-450">Consider the recurrence relation</p>
+<div class="displaymath">
+\begin{equation*}
+d_n = n d_{n-1} + 1 \mbox{ for } n \geq 1
+\end{equation*}
+</div>
+<p class="continuation">where \(d_0=1\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-236"><p id="p-451">Let \(D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}\) be the <em class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(D(x)\text{.}\)</p></li>
+<li id="li-237"><p id="p-452">Can you figure out how to use your answer in part (a) to find a simple closed formula for \(d_n\text{?}\) You will need to think about what happens when you multiply two power series together.</p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
