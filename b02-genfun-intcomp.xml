@@ -16,6 +16,7 @@
 			<idx><h>Generating Function for Weak Compositions of Integers</h></idx>
 			<statement>
 				<p>
+In this problem, we will use generating functions to prove that
 <me>
 \frac{1}{(1-x)^k} = \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n.
 </me>
