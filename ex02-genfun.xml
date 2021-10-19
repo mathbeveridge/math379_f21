@@ -215,7 +215,7 @@ You <em>do not</em> need to find an explicit formula for <m>f_n</m>.
 				</li>
 				<li>
 					<p>
- Compare <m>A(x)</m> to <m>F(x)</m> from the previous problem. From this find a formula for <m>a_n</m> as a function of Fibonacci numbers <m>f_k</m>. In other words, you will get an expression for <m>a_n</m> that includes term(s) of the form <m>f_k</m>. (Note: the fact that <m>f_0=0</m> will be helpful as you change from functions back to power series.)
+ Compare <m>A(x)</m> to <m>F(x)</m> from the previous Fibonacci problem. From this find a formula for <m>a_n</m> as a function of Fibonacci numbers <m>f_k</m>. In other words, you will get an expression for <m>a_n</m> that includes term(s) of the form <m>f_k</m>. (Note: the fact that <m>f_0=0</m> will be helpful as you change from functions back to power series.)
 					</p>
 				</li>
 			</ol>
@@ -227,7 +227,19 @@ You <em>do not</em> need to find an explicit formula for <m>f_n</m>.
 		<exercise>
 			<statement>
 				<p>
- Find the <em>exponential</em> generating function for <m>a_n</m> if <m>a_0=1</m> and <m>a_n = n a_{n-1} + 3^n</m> for <m>n \geq 1.</m> For fun, you can find an explicit formula for <m>a_n</m>, but your final answer will have one summation sign.
+ Consider the recurrence <m>a_0=1</m> and <m>a_n = n a_{n-1} + 3^n</m> for <m>n \geq 1.</m>
+			<ol>
+				<li>
+					<p>
+ Find the <em>exponential</em> generating function for <m>a_n</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Find an explicit formula for <m>a_n</m>. Your final answer will involve a summation.
+					</p>
+				</li>
+			</ol>
 
 				</p>
 			</statement>

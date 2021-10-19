@@ -15,18 +15,26 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>We need to choose the first part, and then choose the second part. The generating function takes care of all the algebra for us.</p>
+<p>We use partial fractions:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-F_2(x) &amp;=&amp;\underbrace{(1+x+x^2 + x^3 + \cdots)}_{\mbox{choose the first part}} \,\,
-\underbrace{(1+x+x^2 + x^3 + \cdots)}_{\mbox{choose the second part}} \\
-&amp;=&amp; F_1(x) \cdot F_1(x) \,=\, \frac{1}{(1-x)^2}.
-\end{array}
+\frac{1}{(1 - 2x)(1-x)} = \frac{c}{1-2x} + \frac{d}{1-x}
 \end{equation*}
 </div>
-<p class="continuation"><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Important!</em> This is a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">conceptual question</em> rather than a computation question. The function \(F_1(x)\) encodes all the information about choosing one part. We perform a two phase process: choose the first part and then choose the second part. This corresponds to multiplying generating functions. Algebra takes care of performing the right combinations for each problem size.</p>
+<p class="continuation">which gives \(c+d =1\) and \(c+2d=0\text{.}\) Solving, we find that \(c=2\) and \(d=-1\text{.}\) So</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) =   \frac{2}{1-2x} -  \frac{1}{1-x}
+= 2 \sum_{n=0}^{\infty} 2^n x^n - \sum_{n=0}^{\infty} x^n
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-13.html#solution-117">in-context</a></span>
+<p class="continuation">and therefore</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+b_n = 2 \cdot 2^n - 1 = 2^{n+1} -1.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="exercises-12.html#solution-117">in-context</a></span>
 </body>
 </html>

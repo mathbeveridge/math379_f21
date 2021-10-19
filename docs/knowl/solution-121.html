@@ -15,13 +15,31 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>Unlike weak compositions, 0's are not allowed. So</p>
+<p>We have</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-G_1(x) = x+ x^2 + x^3 + x^4 + \cdots = x ( 1 + x + x^2 + x^3 +\cdots ) = \frac{x}{1-x}.
+D(x) = \frac{e^x}{1-x} = \left( \sum_{n=0}^{\infty} \frac{x^n}{n!} \right)  \left( \sum_{n=0}^{\infty} x^n \right).
+\end{equation*}
+</div>
+<p class="continuation">If we multiply out, we find that the  coefficient of \(x^n\) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\sum_{k=0}^n \frac{1}{k!}
+\end{equation*}
+</div>
+<p class="continuation">and therefore</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+D(x) = \sum_{n=0}^{\infty} \left( n! \sum_{k=0}^n \frac{1}{k!} \right) \frac{x^n}{n!}.
+\end{equation*}
+</div>
+<p class="continuation">So our formula is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+d_n = n! \sum_{k=0}^n \frac{1}{k!} = \sum_{k=0}^n (n)_k.
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="exercises-13.html#solution-121">in-context</a></span>
+<span class="incontext"><a href="exercises-12.html#solution-121">in-context</a></span>
 </body>
 </html>
