@@ -12,20 +12,29 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Here is a potpourri of counting problems. In each case,</p>
-<ul class="disc">
-<li><p>Find a concise generating function for answering the question, and</p></li>
-<li><p>identify what coefficient you need.</p></li>
-</ul>
-<p class="continuation"><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">You do not need to actually solve the problem, but feel free to do so using Mathematica, if you like.</em></p>
+<p>In this problem, we will use generating functions to prove that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{(1-x)^k} = \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n.
+\end{equation*}
+</div>
+<p class="continuation">Recall that a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">weak composition</em> of \(n\) into \(k\) parts is an ordered list of nonnegative integers \((a_1, a_2, \ldots , a_k)\) such that \(\sum_{i=1}^k a_i =n\) and \(a_i \geq 0\) for \(1 \leq i \leq k\text{.}\)</p>
 <ol class="lower-alpha">
-<li><p>How many ways are there to distribute 14 forks to 10 people so that each person receives one or two forks?</p></li>
-<li><p>You can buy soda either by the can, or in 6-, 12-, 24- or 30-packs. How many ways are there to buy exactly \(k\) cans of soda?</p></li>
-<li><p>How many ways are there to put a total postage of 75 cents on an envelope, using 3-, 5-, 10- and 12-cent stamps?</p></li>
-<li><p>You go to a Halloween party dressed as  mathematician Paul Erdos. While there, you select 24 pieces of candy from among five different types. How many ways can you do this if you want at least two pieces of candy of each type?</p></li>
-<li><p>How many solutions to \(z_1+z_2+z_3 = 15\) are there, where each \(z_i\) is an integer satisfying \(0 \leq z_i \leq 8\text{?}\)</p></li>
-<li><p>How many ways are there to make change for a dollar using only pennies, nickels, dimes and quarters?</p></li>
+<li><p>There are 5 weak compositions of 4 into 2 parts. List them. <a class="solution-knowl original" data-knowl="./knowl/solution-122-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>Using balls in boxes, find a formula for the number of weak compositions of \(n\) into \(k\) parts. <a class="solution-knowl original" data-knowl="./knowl/solution-123-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>What is the generating function \(F_1(x)\) for the number of weak compositions of \(n\) into 1 part? <a class="solution-knowl original" data-knowl="./knowl/solution-124-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>Use the product principle (for generating functions) to find the generating function \(F_2(x)\) for the number of weak compositions of \(n\) into 2 parts. <a class="solution-knowl original" data-knowl="./knowl/solution-125-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>What is the generating function \(F_k(x)\) for the number of weak compositions of \(n\) into \(k\) parts? <a class="solution-knowl original" data-knowl="./knowl/solution-126-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li>
+<p>Why does this prove that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{(1-x)^k} = \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n
+\end{equation*}
+</div>
+<p class="continuation">holds? <a class="solution-knowl original" data-knowl="./knowl/solution-127-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+</li>
 </ol>
-<span class="incontext"><a href="exercises-14.html#p-479">in-context</a></span>
+<span class="incontext"><a href="exercises-13.html#p-479">in-context</a></span>
 </body>
 </html>

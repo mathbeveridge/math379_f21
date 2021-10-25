@@ -12,7 +12,22 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>There are 10 compositions of 6 into 3 parts. List them.</p>
-<span class="incontext"><a href="exercises-13.html#p-470">in-context</a></span>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+c_n &amp;=&amp; 2 n  c_{n-1} + 8 n (n-1) c_{n-2} \mbox{ for } n \geq 2 \\
+c_n \frac{x^n}{n!} &amp;=&amp; (2 n  c_{n-1} + 8 n (n-1) c_{n-2} )\frac{x^n}{n!}\mbox{ for } n \geq 2 \\
+\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=2}^{\infty} (2 n  c_{n-1} + 8 n (n-1) c_{n-2} )\frac{x^n}{n!} \\
+\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp;2  \sum_{n=2}^{\infty} n  c_{n-1} \frac{x^n}{n!} + 8 \sum_{n=2}^{\infty}  n (n-1) c_{n-2} \frac{x^n}{n!} \\
+\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp;2x  \sum_{n=2}^{\infty}   c_{n-1} \frac{x^{n-1}}{(n-1)!} + 8x^2 \sum_{n=2}^{\infty}  n (n-1) c_{n-2} \frac{x^{n-2}}{(n-2)!} \\
+C(x) - c_0 - c_1 \frac{x}{1!} &amp;=&amp; 2x (C(x) - c_0) - 8x^2 C(x) \\
+C(x) ( 1 -2x - 8x^2) &amp;=&amp; c_0 + c_1 x - 2c_0 x \\
+C(x) ( 1 -4x)(1+2x) &amp;=&amp; 1 + 4 x - 2 x \\
+C(x) &amp;=&amp; \frac{1 + 2 x }{ ( 1 -4x)(1+2x)} \\
+C(x) &amp;=&amp; \frac{1}{ 1 -4x} \\
+\end{array}
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-12.html#p-470">in-context</a></span>
 </body>
 </html>

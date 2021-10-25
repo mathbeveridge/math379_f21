@@ -50,6 +50,13 @@ Both OGFs and EGFs are useful counting tools. It will take us a few days to deve
 A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
 </me>
 
+<solution>
+<p>
+<me>
+1 + x^5 + x^{10} + x^{15} + x^{20} + x^{25} + \cdots
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -60,6 +67,13 @@ A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
 B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
 </me>
 
+<solution>
+<p>
+<me>
+1 + x^{10} + x^{20} + x^{30} + x^{40} + x^{50} + \cdots
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -70,6 +84,13 @@ B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
 C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
 </me>
 
+<solution>
+<p>
+<me>
+1 + x^{25} + x^{50} + x^{75} + x^{100} + x^{125} + \cdots
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -77,6 +98,18 @@ C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
 					<p>
  You should recognize <m>A(x), B(x), C(x)</m> as variants of a well known Taylor series. What are these functions? What restrictions must we place on <m>x</m>?
 
+<solution>
+<p>
+<me>
+\begin{array}{ccc}
+\displaystyle{A(x)= \frac{1}{1-x^5}} &amp;
+\displaystyle{B(x)= \frac{1}{1-x^{10}}} &amp;
+\displaystyle{A(x)= \frac{1}{1-x^{25}}}
+\end{array}
+</me>
+provided that <m>x</m> satisifies: \underline{\phantom{asdfasdfasdf}<m>-1 &lt; x &lt; 1</m>\phantom{asdfasdfasdf}}
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -85,6 +118,14 @@ C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
  Using the product and addition principles, we can show that the  function <m>D(x)= A(x)B(x)C(x)</m>
 is the generating function for the number of ways to pay <m>n</m> cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for <m>D(x)</m>. (The same restrictions on <m>x</m> apply here.)
 
+<solution>
+<p>
+<me>
+D(x) = \frac{1}{1-x^{5}}  \cdot \frac{1}{1-x^{10}}  \cdot \frac{1}{1-x^{25}}
+=  \frac{1}{(1-x^{5})(1-x^{10})(1-x^{25})}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -98,6 +139,17 @@ D(x) = 1 + x^5 + 2x^{10} + 3 x^{20} + 4x^{25} + 5x^{30} + 6x^{35} + 7 x^{40} + 8
 </me>
 Verify this gives the right answer for <m>n=35</m> by listing the number of ways to pay <m>35</m> cents using nickels, dimes and/or quarters.
 
+<solution>
+<p>
+Here are the six ways  to pay <m>35</m> cents using these coins:
+<me>
+\begin{array}{ccc}
+Q + D &amp; Q + 2N &amp; 3D + N \\
+2D + 3N &amp; D+5N &amp; 7N
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -125,6 +177,24 @@ where <m>h_0=1</m> and <m>h_1=2</m>.
 					<p>
  Let <m>H(x)</m> be the generating function for this series. Find a simple closed formula for <m>H(x)</m>.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcll}
+h_n  &amp;=&amp; 5 h_{n-1} - 6h_{n-2} &amp; \mbox{for } n \geq 2 \\
+h_n x^n &amp;=&amp; 5 h_{n-1} x^n - 6h_{n-2} x^n &amp; \mbox{for } n \geq 2 \\
+\displaystyle{\sum_{n=2}^{\infty} h_n x^n} &amp;=&amp; \displaystyle{ \sum_{n=2}^{\infty}  5 h_{n-1} x^n - \sum_{n=2}^{\infty}  6h_{n-2} x^n} &amp; (\mbox{sum starts at } n=2) \\
+\displaystyle{ \sum_{n=2}^{\infty} h_n x^n }&amp;=&amp; \displaystyle{  5 x \sum_{n=2}^{\infty}  5 h_{n-1} x^{n-1} -6x^2 \sum_{n=2}^{\infty}  h_{n-2} x^{n-2} }&amp; (\mbox{powers match coefficient indices})  \\
+\displaystyle{ \sum_{n=2}^{\infty} h_n x^n }&amp;=&amp; \displaystyle{  5 x \sum_{i=1}^{\infty}  5 h_{i} x^{i} -6x^2 \sum_{j=0}^{\infty}  h_{j} x^{j} }&amp; (\mbox{re-index second two summations})  \\
+H(x) - h_0 - h_1x &amp;=&amp; \displaystyle{  5 x ( H(x) - h_0)  -6x^2 H(x)} &amp; (\mbox{replace summations with } H(x))  \\
+H(x) - 5H(x) + 6x^2 H(x) &amp;=&amp; h_0 + h_1x  -5 h_0 x  &amp; (\mbox{collect like terms})  \\
+H(x) (1 - 5x +6x^2)  &amp;=&amp; 1  -3 x  &amp; (h_0=1 \mbox{ and } h_1=2)  \\
+H(x)&amp;=&amp; \displaystyle{\frac{1  -3 x}{1 - 5x +6x^2 }}   &amp; (\mbox{bingo!})  \\
+H(x)&amp;=&amp;\displaystyle{ \frac{1}{ 1 - 2x } }  &amp; (\mbox{simplify})  \\
+\end{array}
+</me>
+</p>
+</solution>
 
 
 
@@ -134,6 +204,14 @@ where <m>h_0=1</m> and <m>h_1=2</m>.
 					<p>
  Use the Taylor series for the function in part (a) to find a simple closed formula for <m>h_n</m>.
 
+<solution>
+<p>
+<me>
+H(x) = \frac{1}{1-2x} = \sum_{n=0}^{\infty} (2x)^n =  \sum_{n=0}^{\infty} 2^n x^n.
+</me>
+Therefore <m>h_n=2^n</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -141,6 +219,25 @@ where <m>h_0=1</m> and <m>h_1=2</m>.
 					<p>
  Now solve the same recurrence where <m>h_0=1</m> and <m>h_1=-2</m>. You will need to use partial fractions.
 
+<solution>
+<p>
+The first 7 lines are the same, so we have
+<me>
+H(x)= \frac{h_0 + (h_1- 5h_0)x}{1 - 5x +6x^2 }
+=  \frac{1 -7x}{ (1-2x)(1-3x)}.
+</me>
+We use partial fractions to solve
+<me>
+\frac{1 -7x}{ (1-2x)(1-3x)} = \frac{a}{ 1-2x} + \frac{b}{ 1-3x},
+</me>
+giving equations <m>a+b = 1</m> and <m>-3a-2b=-7</m>. Solving gives <m>a=5</m> and <m>b=-4</m>, so
+<me>
+H(x) = \frac{5}{ 1-2x} - \frac{4}{ 1-3x}= 5 \sum_{n=0}^{\infty} (2x)^n -4 \sum_{n=0}^{\infty} (3x)^n
+</me>
+and therefore <m>h_n = 5 \cdot 2^n - 4 \cdot 3^n.</m>
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -168,6 +265,23 @@ where <m>a_0=3</m>
 					<p>
  Let <m>A(x)</m> be the  OGF for this series. Find a simple closed formula for <m>A(x)</m>.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+a_n &amp;=&amp; 4 a_{n-1} -1 \mbox{ for } n \geq 1 \\
+a_n x^n &amp;=&amp; (4 a_{n-1} -1)x^n \mbox{ for } n \geq 1 \\
+\sum_{n=1}^{\infty} a_n x^n &amp;=&amp;  \sum_{n=1}^{\infty} 4a_{n-1} x^n - \sum_{n=1}^{\infty} x^n \\
+\sum_{n=1}^{\infty} a_n x^n &amp;=&amp;  4x \sum_{n=1}^{\infty} a_{n-1} x^{n-1} - x \sum_{n=1}^{\infty} x^{n-1} \\
+A(x) - a_0 &amp;=&amp; 4x A(x) - \frac{x}{1-x} \\
+A(x) (1 - 4x) &amp;=&amp; a_0 - \frac{x}{1-x} \\
+A(x) (1 - 4x) &amp;=&amp; 3 - \frac{x}{1-x} \\
+A(x) (1 - 4x) &amp;=&amp;  \frac{3-4x}{1-x} \\
+A(x)  &amp;=&amp;  \frac{3-4x}{(1 - 4x)(1-x)} \\
+\end{array}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -176,6 +290,23 @@ where <m>a_0=3</m>
 					<p>
  Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>a_n</m>.
 
+<solution>
+<p>
+We use partial fractions:
+<me>
+\frac{3-4x}{(1 - 4x)(1-x)} = \frac{b}{1-4x} + \frac{c}{1-x}
+</me>
+which gives <m>b+c =3</m> and <m>-b-4c=-4</m>. Solving, we find that <m>b=8/3</m> and <m>c=1/3</m>. So
+<me>
+A(x) = \frac{8}{3} \cdot \frac{1}{1-4x} + \frac{1}{3} \cdot \frac{1}{1-x}
+= \frac{8}{3} \sum_{n=0}^{\infty} 4^n x^n + \frac{1}{3} \sum_{n=0}^{\infty} x^n
+</me>
+and therefore
+<me>
+a_n = \frac{8}{3} \cdot 4^n + \frac{1}{3}  = \frac{2 \cdot 4^{n+1} + 1}{3}.
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -202,6 +333,22 @@ where <m>b_0=1</m> and <m>b_1=3</m>.
 					<p>
  Let <m>B(x)</m> be the  generating function for this series. Find a simple closed formula for <m>B(x)</m>.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+b_n &amp;=&amp; 3 b_{n-1} -2 b_{n-2} \mbox{ for } n \geq 2 \\
+b_n x^n &amp;=&amp; (3 b_{n-1} -2 b_{n-2})x^n \mbox{ for } n \geq 2 \\
+\sum_{n=2}^{\infty} b_n x^n &amp;=&amp;  \sum_{n=2}^{\infty} 3 b_{n-1}  x^n - \sum_{n=2}^{\infty} 2 b_{n-2} x^n \\
+\sum_{n=2}^{\infty} b_n x^n &amp;=&amp;  3x \sum_{n=2}^{\infty}  b_{n-1}  x^{n-1} - 2x^2 \sum_{n=2}^{\infty} x^{n-2} \\
+B(x) - b_0 - b_1 x &amp;=&amp; 3x ( B(x) - b_0) - 2x^2 B(x) \\
+B(x) ( 1 -3x + 2x^2) &amp;=&amp; b_0 + b_1x - 3b_0 x \\
+B(x) ( 1 -2x)(1-x) &amp;=&amp; 1 + 3x - 3 x \\
+B(x)  &amp;=&amp; \frac{1}{ (1-2x)(1-x)} \\
+\end{array}
+</me>
+</p>
+</solution>
 
 
 
@@ -211,6 +358,23 @@ where <m>b_0=1</m> and <m>b_1=3</m>.
 					<p>
  Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>b_n</m>.
 
+<solution>
+<p>
+We use partial fractions:
+<me>
+\frac{1}{(1 - 2x)(1-x)} = \frac{c}{1-2x} + \frac{d}{1-x}
+</me>
+which gives <m>c+d =1</m> and <m>c+2d=0</m>. Solving, we find that <m>c=2</m> and <m>d=-1</m>. So
+<me>
+B(x) =   \frac{2}{1-2x} -  \frac{1}{1-x}
+= 2 \sum_{n=0}^{\infty} 2^n x^n - \sum_{n=0}^{\infty} x^n
+</me>
+and therefore
+<me>
+b_n = 2 \cdot 2^n - 1 = 2^{n+1} -1.
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -241,6 +405,24 @@ where <m>c_0=1</m> and <m>c_1=4</m>.
 					<p>
  Let <m>C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!}</m> be the <em>exponential generating function</em> (EGF) for this series. Find a simple closed formula for <m>C(x)</m>.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+c_n &amp;=&amp; 2 n  c_{n-1} + 8 n (n-1) c_{n-2} \mbox{ for } n \geq 2 \\
+c_n \frac{x^n}{n!} &amp;=&amp; (2 n  c_{n-1} + 8 n (n-1) c_{n-2} )\frac{x^n}{n!}\mbox{ for } n \geq 2 \\
+\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=2}^{\infty} (2 n  c_{n-1} + 8 n (n-1) c_{n-2} )\frac{x^n}{n!} \\
+\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp;2  \sum_{n=2}^{\infty} n  c_{n-1} \frac{x^n}{n!} + 8 \sum_{n=2}^{\infty}  n (n-1) c_{n-2} \frac{x^n}{n!} \\
+\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp;2x  \sum_{n=2}^{\infty}   c_{n-1} \frac{x^{n-1}}{(n-1)!} + 8x^2 \sum_{n=2}^{\infty}  n (n-1) c_{n-2} \frac{x^{n-2}}{(n-2)!} \\
+C(x) - c_0 - c_1 \frac{x}{1!} &amp;=&amp; 2x (C(x) - c_0) - 8x^2 C(x) \\
+C(x) ( 1 -2x - 8x^2) &amp;=&amp; c_0 + c_1 x - 2c_0 x \\
+C(x) ( 1 -4x)(1+2x) &amp;=&amp; 1 + 4 x - 2 x \\
+C(x) &amp;=&amp; \frac{1 + 2 x }{ ( 1 -4x)(1+2x)} \\
+C(x) &amp;=&amp; \frac{1}{ 1 -4x} \\
+\end{array}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -249,6 +431,14 @@ where <m>c_0=1</m> and <m>c_1=4</m>.
 					<p>
  Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>c_n</m>. <em>Remember that <m>C(x)</m> is an EGF</em>, so you will have to multiply the <m>n</m>th term by <m>\frac{n!}{n!}</m> and rearrange to get the right answer.
 
+<solution>
+<p>
+<me>
+C(x) = \sum_{n=0}^{\infty} 4^n x^n = \sum_{n=0}^{\infty} (4^n n! ) \frac{x^n}{n!}
+</me>
+so <m>c_n = 4^n n!</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -277,6 +467,22 @@ where <m>d_0=1</m>.
 					<p>
  Let <m>D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}</m> be the <em>exponential generating function</em> (EGF) for this series. Find a simple closed formula for <m>D(x)</m>.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+d_n &amp;=&amp; n  d_{n-1} + 1 \mbox{ for } n \geq 1 \\
+d_n \frac{x^n}{n!} &amp;=&amp; ( n  d_{n-1} + 1 )\frac{x^n}{n!}\mbox{ for } n \geq 2 \\
+\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} (n  d_{n-1} + 1 )\frac{x^n}{n!} \\
+\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} n  d_{n-1} \frac{x^n}{n!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
+\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; x \sum_{n=1}^{\infty}   d_{n-1} \frac{x^{n-1}}{(n-1)!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
+D(x) -1 &amp;=&amp; x D(x) + e^x -1 \\
+D(x) (1 - x)  &amp;=&amp;  e^x  \\
+D(x) &amp;=&amp; \frac{e^x}{1-x}
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -284,6 +490,26 @@ where <m>d_0=1</m>.
 					<p>
  Can you figure out how to use your answer in part (a) to find a simple closed formula for <m>d_n</m>? You will need to think about what happens when you multiply two power series together.
 
+<solution>
+<p>
+We have
+<me>
+D(x) = \frac{e^x}{1-x} = \left( \sum_{n=0}^{\infty} \frac{x^n}{n!} \right)  \left( \sum_{n=0}^{\infty} x^n \right).
+</me>
+If we multiply out, we find that the  coefficient of <m>x^n</m> is
+<me>
+\sum_{k=0}^n \frac{1}{k!}
+</me>
+and therefore
+<me>
+D(x) = \sum_{n=0}^{\infty} \left( n! \sum_{k=0}^n \frac{1}{k!} \right) \frac{x^n}{n!}.
+</me>
+So our formula is
+<me>
+d_n = n! \sum_{k=0}^n \frac{1}{k!} = \sum_{k=0}^n (n)_k.
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>

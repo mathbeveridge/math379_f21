@@ -12,7 +12,18 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Compare \(A(x)\) to \(F(x)\) from the previous Fibonacci problem. From this find a formula for \(a_n\) as a function of Fibonacci numbers \(f_k\text{.}\) In other words, you will get an expression for \(a_n\) that includes term(s) of the form \(f_k\text{.}\) (Note: the fact that \(f_0=0\) will be helpful as you change from functions back to power series.)</p>
-<span class="incontext"><a href="exercises-14.html#p-502">in-context</a></span>
+<p>Using the result of Problem 6 on about weak compositions, we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+G_k(x) &amp;=&amp; \frac{x^k}{(1-x)^k} \, = \, x^k  \frac{1}{(1-x)^k} \\
+&amp;=&amp; x^k \displaystyle{\sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n} \\
+&amp;=&amp;\displaystyle{ \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^{n+k}} \\
+&amp;=&amp; \displaystyle{\sum_{m=k}^{\infty} {m-1 \choose k-1} x^{m}}.
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">This says that the number of compositions of \(m\) into \(k\) parts is 0 when \(m &lt; k\) and is \({m-1 \choose k-1}\) when \(m \geq k\text{.}\) This matches our answer from the balls-and-boxes taxonomy.</p>
+<span class="incontext"><a href="exercises-13.html#p-502">in-context</a></span>
 </body>
 </html>

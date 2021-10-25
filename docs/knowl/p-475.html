@@ -12,7 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Pro Tip.</em> When solving recurrences using generating functions, it is nice to know that you have the right answer. So you should get into the habit of checking along the way!</p>
-<span class="incontext"><a href="genfun-exercise.html#p-475">in-context</a></span>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+d_n &amp;=&amp; n  d_{n-1} + 1 \mbox{ for } n \geq 1 \\
+d_n \frac{x^n}{n!} &amp;=&amp; ( n  d_{n-1} + 1 )\frac{x^n}{n!}\mbox{ for } n \geq 2 \\
+\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} (n  d_{n-1} + 1 )\frac{x^n}{n!} \\
+\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} n  d_{n-1} \frac{x^n}{n!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
+\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; x \sum_{n=1}^{\infty}   d_{n-1} \frac{x^{n-1}}{(n-1)!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
+D(x) -1 &amp;=&amp; x D(x) + e^x -1 \\
+D(x) (1 - x)  &amp;=&amp;  e^x  \\
+D(x) &amp;=&amp; \frac{e^x}{1-x}
+\end{array}
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-12.html#p-475">in-context</a></span>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h6>
+<p>Using the result of Problem 6 on about weak compositions, we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+G_k(x) &amp;=&amp; \frac{x^k}{(1-x)^k} \, = \, x^k  \frac{1}{(1-x)^k} \\
+&amp;=&amp; x^k \displaystyle{\sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n} \\
+&amp;=&amp;\displaystyle{ \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^{n+k}} \\
+&amp;=&amp; \displaystyle{\sum_{m=k}^{\infty} {m-1 \choose k-1} x^{m}}.
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">This says that the number of compositions of \(m\) into \(k\) parts is 0 when \(m &lt; k\) and is \({m-1 \choose k-1}\) when \(m \geq k\text{.}\) This matches our answer from the balls-and-boxes taxonomy.</p>
+</div>
+<span class="incontext"><a href="exercises-13.html#solution-132">in-context</a></span>
+</body>
+</html>

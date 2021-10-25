@@ -12,7 +12,25 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>What is the generating function \(F_k(x)\) for the number of weak compositions of \(n\) into \(k\) parts?</p>
-<span class="incontext"><a href="exercises-13.html#p-467">in-context</a></span>
+<p>We use partial fractions:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{(1 - 2x)(1-x)} = \frac{c}{1-2x} + \frac{d}{1-x}
+\end{equation*}
+</div>
+<p class="continuation">which gives \(c+d =1\) and \(c+2d=0\text{.}\) Solving, we find that \(c=2\) and \(d=-1\text{.}\) So</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) =   \frac{2}{1-2x} -  \frac{1}{1-x}
+= 2 \sum_{n=0}^{\infty} 2^n x^n - \sum_{n=0}^{\infty} x^n
+\end{equation*}
+</div>
+<p class="continuation">and therefore</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+b_n = 2 \cdot 2^n - 1 = 2^{n+1} -1.
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-12.html#p-467">in-context</a></span>
 </body>
 </html>
