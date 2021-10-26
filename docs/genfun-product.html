@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Combi Products of  Generating Functions II</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\( \newcommand{\identity}{\mathrm{id}}
+ \newcommand{\notdivide}{{\not{\mid}}}
+ \newcommand{\notsubset}{\not\subset}
+ \newcommand{\lcm}{\operatorname{lcm}}
+ \newcommand{\gf}{\operatorname{GF}}
+ \newcommand{\inn}{\operatorname{Inn}}
+ \newcommand{\aut}{\operatorname{Aut}}
+ \newcommand{\Hom}{\operatorname{Hom}}
+ \newcommand{\cis}{\operatorname{cis}}
+ \newcommand{\chr}{\operatorname{char}}
+ \newcommand{\Null}{\operatorname{Null}}
+
+
+ \def\Z{\mathbb Z}
+ \def\R{\mathbb R}
+ \def\Q{\mathbb Q}
+ \def\N{{\mathbb N}}
+ \def\C{\mathbb C}
+
+ \def\ba{{\mathbf{a}}}
+ \def\bb{\mathbf{b}}
+ \def\bh{{\mathbf{h}}}
+ \def\bu{{\mathbf{u}}}
+ \def\bv{{\mathbf{v}}}
+ \def\bw{{\mathbf{w}}}   
+ \def\bx{{\mathbf{x}}}
+ \def\by{\mathbf{y}}    
+ \def\bone{{\mathbf{1}}}
+ \def\bzero{\mathbf{0}}
+
+ \def\var{{\mbox{var}}}
+ \def\P{{\mathbb{P}}}
+ \def\E{{\mathbb{E}}}
+
+ \def\cA{{\mathcal{A}}}
+ \def\cB{{\mathcal{B}}}
+ \def\cC{{\mathcal{C}}}
+ \def\cP{\mathcal P}
+ \def\cE{\mathcal E}
+ \def\cO{\mathcal O}
+
+
+
+
+ \def\kin{k^{\mathrm{in}}}
+ \def\kout{k^{\mathrm{out}}}
+
+ \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+ \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+ \tikzset{-&gt;-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="combi.html"><span class="title">Enumerative Combinatorics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="genfun-intcomps.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-genfun.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="genfun-exercise.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="genfun-intcomps.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-genfun.html" title="Up">Up</a><a class="next-button button toolbar-item" href="genfun-exercise.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-counting.html" data-scroll="part-counting"><span class="codenumber">I</span> <span class="title">Counting</span></a></li>
+<li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
+<li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="bijective-proof.html" data-scroll="bijective-proof"><span class="codenumber">4</span> <span class="title">Bijective Proof</span></a></li>
+<li class="link"><a href="comb-proof.html" data-scroll="comb-proof"><span class="codenumber">5</span> <span class="title">Combinatorial Proof</span></a></li>
+<li class="link"><a href="compositions.html" data-scroll="compositions"><span class="codenumber">6</span> <span class="title">Compositions of Integers</span></a></li>
+<li class="link"><a href="set-partition.html" data-scroll="set-partition"><span class="codenumber">7</span> <span class="title">Set Partitions</span></a></li>
+<li class="link"><a href="int-partition.html" data-scroll="int-partition"><span class="codenumber">8</span> <span class="title">Integer Partitions</span></a></li>
+<li class="link"><a href="inclusion-exclusion.html" data-scroll="inclusion-exclusion"><span class="codenumber">9</span> <span class="title">Inclusion/Exclusion</span></a></li>
+<li class="link"><a href="catalan.html" data-scroll="catalan"><span class="codenumber">10</span> <span class="title">Catalan Numbers</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">11</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
+<li class="link"><a href="bestiarum.html" data-scroll="bestiarum"><span class="codenumber">12</span> <span class="title">Bestiarum Generandi</span></a></li>
+<li class="link"><a href="genfun.html" data-scroll="genfun"><span class="codenumber">13</span> <span class="title">Generating Function Introduction</span></a></li>
+<li class="link"><a href="genfun-intcomps.html" data-scroll="genfun-intcomps"><span class="codenumber">14</span> <span class="title">Products of Generating Functions</span></a></li>
+<li class="link active"><a href="genfun-product.html" data-scroll="genfun-product"><span class="codenumber">15</span> <span class="title">Products of  Generating Functions II</span></a></li>
+<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">16</span> <span class="title">Generating Function Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun-product"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">15</span> <span class="title">Products of  Generating Functions II</span>
+</h2>
+<section class="introduction" id="introduction-15"><p id="p-503"></p></section><section class="exercises" id="exercises-14"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-62"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Generating Functions  for  Integer Partitions.</span>
+</h6>
+<p id="p-504">We have seen that the generating function for integer partitions is</p>
+<div class="displaymath">
+\begin{equation*}
+P(x) = \prod_{k=1}^{\infty} \frac{1}{1-x^k}.
+\end{equation*}
+</div>
+<p class="continuation">Here the symbol \(\prod\) means "take the product," just like \(\sum\) means "take the sum."</p>
+<ol class="lower-alpha">
+<li id="li-249">
+<p id="p-505">Fixing a particular integer \(n\text{,}\) we realized that we can find all of the integer partitions of \(n\) by using the generating function</p>
+<div class="displaymath">
+\begin{equation*}
+Q_n(x) = \prod_{k=1}^{n} \frac{1}{1-x^k}.
+\end{equation*}
+</div>
+<p class="continuation">More generally, for any integer \(m\text{,}\) what kind of partitions of \(m\) does \(Q_n(x)\) count?</p>
+</li>
+<li id="li-250"><p id="p-506">Let \(d_n\) be the number of integer partitions of \(n\) into distinct parts. Find a concise expression for the generating function \(D(x) = \sum_{n=0}^{\infty} d_n x^n.\)</p></li>
+<li id="li-251"><p id="p-507">What is the generating function partitions of \(n\) into odd parts?</p></li>
+<li id="li-252"><p id="p-508">What is the generating function of partitions of \(n\) into distinct odd parts?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-63"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Product Formula for Exponential Generating Functions.</span>
+</h6>
+<p id="p-509">Suppose that we have tasks \(\cA\) and \(\cB\) where you can complete \(\cA\) on an \(n\)-set in \(a_n\) ways, and you can complete \(\cB\) on an \(n\)-set in \(b_n\) ways.</p>
+<ol class="lower-alpha">
+<li id="li-253">
+<p id="p-510">How many ways are there to:</p>
+<ul class="disc">
+<li id="li-254"><p id="p-511">Choose a \(k\)-set \(S \subset [n]\text{,}\)</p></li>
+<li id="li-255"><p id="p-512">Perform \(\cA\) on \(S\text{,}\) and then</p></li>
+<li id="li-256"><p id="p-513">Perform \(\cB\) on \(\overline{S} = [n] \backslash S\text{.}\)</p></li>
+</ul>
+</li>
+<li id="li-257">
+<p id="p-514">Let \(\cC\) be the following task:</p>
+<ul class="disc">
+<li id="li-258"><p id="p-515">Choose a subset \(S \subset [n]\) (of any size \(k\text{,}\) where \(0 \leq k \leq n\text{,}\)</p></li>
+<li id="li-259"><p id="p-516">Perform \(\cA\) on \(S\text{,}\) and then</p></li>
+<li id="li-260"><p id="p-517">Perform \(\cB\) on \(\overline{S}\text{.}\)</p></li>
+</ul>
+<p class="continuation">How many ways \(c_n\) are there to complete task \(\cC\) on \([n]\text{?}\) <em class="emphasis">Be careful:</em> parts 2 and 3 depend upon the size \(k\) of \(S\text{.}\)</p>
+</li>
+<li id="li-261">
+<p id="p-518">Consider the  functions</p>
+<div class="displaymath">
+\begin{equation*}
+A(x) = \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n   \mbox{and}
+B(x) = \sum_{n=0}^{\infty} \frac{b_n}{n!} x^n.
+\end{equation*}
+</div>
+<p class="continuation">Find the coefficient of \(x^n\) in the product \(A(x)B(x)\text{.}\)</p>
+</li>
+<li id="li-262"><p id="p-519">Let \(C(x)\) be the exponential generating function <em class="emphasis">EGF</em> for the task \(\cC\) in problem 2.  Use your answers from  problems 2 and 3 to prove that \(C(x) = A(x) B(x)\text{,}\) where \(A(x)\) and \(B(x)\) are the <em class="emphasis">EGF</em>s for tasks \(\cA\) and \(\cB\text{.}\)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-64"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Painting Houses.</span>
+</h6>
+<p id="p-520">Suppose that we want to paint \(n\) distinct houses on a block. For simplicity, we use \([n]\) to label the houses. We paint each house with one different color, chosen from: red, orange, yellow, green, blue and purple.</p>
+<ol class="lower-alpha">
+<li id="li-263">
+<p id="p-521">Our first boss says that all houses of the same color must be adjacent, and we must use the colors from left-to-right following the rainbow ordering.  How many ways can we paint the houses</p>
+<ol class="lower-roman">
+<li id="li-264"><p id="p-522">If we do not have to use all of the colors?</p></li>
+<li id="li-265"><p id="p-523">If we must use each color at least once?</p></li>
+</ol>
+</li>
+<li id="li-266">
+<p id="p-524">Our first boss gets fired for his lack of creativity. Our second boss only requires that the "warm" colors red, orange, yellow are separate from the "cool" colors green, blue, purple. He says we should start painting with warm colors, then switch to cool colors after some number of houses (possibly 0).</p>
+<ol class="lower-roman">
+<li id="li-267"><p id="p-525">What is the generating function \(F_1(x)\) for painting \(n\) houses with the warm colors red, orange and yellow?</p></li>
+<li id="li-268"><p id="p-526">What is the generating function \(F_2(x)\) for painting \(n\) houses with the cool colors green, blue and purple?</p></li>
+<li id="li-269"><p id="p-527">What is the generating function \(F(x)=F_1(x)F_2(x)\) for the number of ways to paint the houses to our boss's specifications?</p></li>
+<li id="li-270"><p id="p-528">What is the formula \(f_n\) for the number of ways to paint \(n\) houses to our boss's specifications??</p></li>
+<li id="li-271"><p id="p-529">Give a combinatorial argument for the answer you found in part (iv).</p></li>
+</ol>
+</li>
+<li id="li-272">
+<p id="p-530">Our second boss quits to become a yoga instructor. Our third boss is tries to cut corners. Red and orange paint are cheap. He asks us to paint some <em class="emphasis">subset</em> of houses using the colors red and orange (these houses do NOT have to be consecutive). For the remaining houses, we are supposed to paint exactly one house in  each of the remaining 4 colors, and leave the other houses unpainted.</p>
+<ol class="lower-roman">
+<li id="li-273"><p id="p-531">What is the <em class="emphasis">exponential</em> generating function \(G_1(x)\) for the number of ways to paint \(n\) houses using colors red and orange?</p></li>
+<li id="li-274"><p id="p-532">What is the <em class="emphasis">exponential</em> generating function \(G_2(x)\) for the number of ways of painting 4 out of \(n\) houses, one yellow, one green, one blue, one purple.</p></li>
+<li id="li-275"><p id="p-533">What is the <em class="emphasis">exponential</em> generating function \(G(x)\) for the number of ways to paint the houses to our boss's specifications?</p></li>
+<li id="li-276"><p id="p-534">What is the formula \(g_n\) for the number of ways to paint \(n\) houses to our boss's specifications?</p></li>
+<li id="li-277"><p id="p-535">Give a combinatorial argument for the answer you found in part (iv).</p></li>
+</ol>
+</li>
+<li id="li-278">
+<p id="p-536">Our third boss gets fired for absconding with company money. Our fourth boss tells us to just paint the houses any way we want.</p>
+<ol class="lower-roman">
+<li id="li-279"><p id="p-537">How many ways are there to paint the houses, with no restrictions?</p></li>
+<li id="li-280"><p id="p-538">How many ways are there to paint the houses if we must use each color at least once?</p></li>
+</ol>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-65"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Children Playing in the Park.</span>
+</h6>
+<p id="p-539">A group of (distinct) children are at the park.  One nonempty subset decides to play ring-around-the-rosie, and they form a circle. The remaining children (if there are any who don't play) head to the snack bar and line up to get ice cream.</p>
+<ol class="lower-alpha">
+<li id="li-281">
+<p id="p-540">Let \(a_n\) denote the number of ways for \(n\) children to form a circle in order to play ring-around-the-rosie. We know that \(a_0=0\) because the set of children playing is nonempty. Find the exponential generating function</p>
+<div class="displaymath">
+\begin{equation*}
+A(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!} = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}.
+\end{equation*}
+</div>
+</li>
+<li id="li-282">
+<p id="p-541">Let \(b_n\) denote the number of ways for \(n\) children to line up to get ice cream. Find the exponential generating function</p>
+<div class="displaymath">
+\begin{equation*}
+B(x) = \sum_{n=0}^{\infty} b_n \frac{x^n}{n!}.
+\end{equation*}
+</div>
+</li>
+<li id="li-283">
+<p id="p-542">Let \(c_n\) denote the number of ways that \(n\) children can divide into two groups, one that plays ring-around-the-rosie and another that gets ice cream. We know that</p>
+<div class="displaymath">
+\begin{equation*}
+C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!} = A(x)B(x).
+\end{equation*}
+</div>
+<p class="continuation">Write down the exponential generating function \(C(x)\text{.}\)</p>
+</li>
+<li id="li-284"><p id="p-543">Use parts (a),(b),(c) to find a  formula for \(c_n\text{.}\) (It will contain one summation sign.)</p></li>
+<li id="li-285"><p id="p-544">Give a direct combinatorial explanation for the formula in part (d).</p></li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>

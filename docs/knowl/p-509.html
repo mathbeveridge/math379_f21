@@ -12,7 +12,37 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>identify what coefficient you need.</p>
+<p>Suppose that we have tasks \(\cA\) and \(\cB\) where you can complete \(\cA\) on an \(n\)-set in \(a_n\) ways, and you can complete \(\cB\) on an \(n\)-set in \(b_n\) ways.</p>
+<ol class="lower-alpha">
+<li>
+<p>How many ways are there to:</p>
+<ul class="disc">
+<li><p>Choose a \(k\)-set \(S \subset [n]\text{,}\)</p></li>
+<li><p>Perform \(\cA\) on \(S\text{,}\) and then</p></li>
+<li><p>Perform \(\cB\) on \(\overline{S} = [n] \backslash S\text{.}\)</p></li>
+</ul>
+</li>
+<li>
+<p>Let \(\cC\) be the following task:</p>
+<ul class="disc">
+<li><p>Choose a subset \(S \subset [n]\) (of any size \(k\text{,}\) where \(0 \leq k \leq n\text{,}\)</p></li>
+<li><p>Perform \(\cA\) on \(S\text{,}\) and then</p></li>
+<li><p>Perform \(\cB\) on \(\overline{S}\text{.}\)</p></li>
+</ul>
+<p class="continuation">How many ways \(c_n\) are there to complete task \(\cC\) on \([n]\text{?}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Be careful:</em> parts 2 and 3 depend upon the size \(k\) of \(S\text{.}\)</p>
+</li>
+<li>
+<p>Consider the  functions</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(x) = \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n   \mbox{and}
+B(x) = \sum_{n=0}^{\infty} \frac{b_n}{n!} x^n.
+\end{equation*}
+</div>
+<p class="continuation">Find the coefficient of \(x^n\) in the product \(A(x)B(x)\text{.}\)</p>
+</li>
+<li><p>Let \(C(x)\) be the exponential generating function <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">EGF</em> for the task \(\cC\) in problem 2.  Use your answers from  problems 2 and 3 to prove that \(C(x) = A(x) B(x)\text{,}\) where \(A(x)\) and \(B(x)\) are the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">EGF</em>s for tasks \(\cA\) and \(\cB\text{.}\)</p></li>
+</ol>
 <span class="incontext"><a href="exercises-14.html#p-509">in-context</a></span>
 </body>
 </html>

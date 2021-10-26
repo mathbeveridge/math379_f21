@@ -78,6 +78,7 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./b00-bestiarum.xml" /> 
             <xi:include href="./b01-genfun.xml" /> 
             <xi:include href="./b02-genfun-intcomp.xml" />             
+            <xi:include href="./b03-genfun-product.xml" />    
             <xi:include href="./ex02-genfun.xml" />                       
 
     </part>

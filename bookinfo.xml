@@ -72,12 +72,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     \def\P{{\mathbb{P}}}
     \def\E{{\mathbb{E}}}
 
+    \def\cA{{\mathcal{A}}}
+    \def\cB{{\mathcal{B}}}
+    \def\cC{{\mathcal{C}}}
     \def\cP{\mathcal P}
     \def\cE{\mathcal E}
     \def\cO{\mathcal O}
 
 
-    \def\cA{{\overline{A}}}
+   
 
     \def\kin{k^{\mathrm{in}}}
     \def\kout{k^{\mathrm{out}}}

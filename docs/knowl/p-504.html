@@ -12,13 +12,27 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Before:</em> Calculate the first few \(a_n\) using the recurrence. Mathematica is a great tool for this! For example, the following code will print out the first terms of the sequence \(a_0 = 3\text{,}\) \(a_1 = 5\text{,}\) \(a_n = 2a_{n-1} + a_{n-2} + 4\text{.}\)</p>
-<pre class="code-display tex2jax_ignore">
-myseq[0] = 3
-myseq[1] = 5
-myseq[n_] := 2 myseq[n-1] + myseq[n-2] + 4
-Table[myseq[k], {k,0,5}]
-</pre>
-<span class="incontext"><a href="genfun-exercise.html#p-504">in-context</a></span>
+<p>We have seen that the generating function for integer partitions is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+P(x) = \prod_{k=1}^{\infty} \frac{1}{1-x^k}.
+\end{equation*}
+</div>
+<p class="continuation">Here the symbol \(\prod\) means "take the product," just like \(\sum\) means "take the sum."</p>
+<ol class="lower-alpha">
+<li>
+<p>Fixing a particular integer \(n\text{,}\) we realized that we can find all of the integer partitions of \(n\) by using the generating function</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+Q_n(x) = \prod_{k=1}^{n} \frac{1}{1-x^k}.
+\end{equation*}
+</div>
+<p class="continuation">More generally, for any integer \(m\text{,}\) what kind of partitions of \(m\) does \(Q_n(x)\) count?</p>
+</li>
+<li><p>Let \(d_n\) be the number of integer partitions of \(n\) into distinct parts. Find a concise expression for the generating function \(D(x) = \sum_{n=0}^{\infty} d_n x^n.\)</p></li>
+<li><p>What is the generating function partitions of \(n\) into odd parts?</p></li>
+<li><p>What is the generating function of partitions of \(n\) into distinct odd parts?</p></li>
+</ol>
+<span class="incontext"><a href="exercises-14.html#p-504">in-context</a></span>
 </body>
 </html>

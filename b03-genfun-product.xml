@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="genfun-product" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Products of  Generating Functions II</title>
+	<introduction>
+		<p>
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Generating Functions  for  Integer Partitions</title>
+			<idx><h>Generating Functions  for  Integer Partitions</h></idx>
+			<statement>
+				<p>
+We have seen that the generating function for integer partitions is
+<me>
+P(x) = \prod_{k=1}^{\infty} \frac{1}{1-x^k}.
+</me>
+Here the symbol <m>\prod</m> means "take the product," just like <m>\sum</m> means "take the sum."
+
+
+
+			<ol>
+				<li>
+					<p>
+ Fixing a particular integer <m>n</m>, we realized that we can find all of the integer partitions of <m>n</m> by using the generating function
+<me>
+Q_n(x) = \prod_{k=1}^{n} \frac{1}{1-x^k}.
+</me>
+More generally, for any integer <m>m</m>, what kind of partitions of <m>m</m> does <m>Q_n(x)</m> count?
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>d_n</m> be the number of integer partitions of <m>n</m> into distinct parts. Find a concise expression for the generating function <m>D(x) = \sum_{n=0}^{\infty} d_n x^n.</m>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the generating function partitions of <m>n</m> into odd parts?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the generating function of partitions of <m>n</m> into distinct odd parts?
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Product Formula for Exponential Generating Functions</title>
+			<idx><h>Product Formula for Exponential Generating Functions</h></idx>
+			<statement>
+				<p>
+Suppose that we have tasks <m>\cA</m> and <m>\cB</m> where you can complete <m>\cA</m> on an <m>n</m>-set in <m>a_n</m> ways, and you can complete <m>\cB</m> on an <m>n</m>-set in <m>b_n</m> ways.
+
+			<ol>
+
+				<li>
+					<p>
+ How many ways are there to:
+		<ul>
+			<li>
+			<p>
+ Choose a <m>k</m>-set <m>S \subset [n]</m>,
+			</p>
+			</li>
+			<li>
+			<p>
+ Perform <m>\cA</m> on <m>S</m>, and then
+			</p>
+			</li>
+			<li>
+			<p>
+ Perform <m>\cB</m> on <m>\overline{S} = [n] \backslash S</m>.
+
+			</p>
+			</li>
+		</ul>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>\cC</m> be the following task:
+		<ul>
+			<li>
+			<p>
+ Choose a subset <m>S \subset [n]</m> (of any size <m>k</m>, where <m>0 \leq k \leq n</m>,
+			</p>
+			</li>
+			<li>
+			<p>
+ Perform <m>\cA</m> on <m>S</m>, and then
+			</p>
+			</li>
+			<li>
+			<p>
+ Perform <m>\cB</m> on <m>\overline{S}</m>.
+			</p>
+			</li>
+		</ul>
+How many ways <m>c_n</m> are there to complete task <m>\cC</m> on <m>[n]</m>? <em>Be careful:</em> parts 2 and 3 depend upon the size <m>k</m> of <m>S</m>.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Consider the  functions
+<me>
+A(x) = \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n   \mbox{and}
+B(x) = \sum_{n=0}^{\infty} \frac{b_n}{n!} x^n.
+</me>
+Find the coefficient of <m>x^n</m> in the product <m>A(x)B(x)</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>C(x)</m> be the exponential generating function <em>EGF</em> for the task <m>\cC</m> in problem 2.  Use your answers from  problems 2 and 3 to prove that <m>C(x) = A(x) B(x)</m>, where <m>A(x)</m> and <m>B(x)</m> are the <em>EGF</em>s for tasks <m>\cA</m> and <m>\cB</m>.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Painting Houses</title>
+			<idx><h>Painting Houses</h></idx>
+			<statement>
+				<p>
+Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicity, we use <m>[n]</m> to label the houses. We paint each house with one different color, chosen from: red, orange, yellow, green, blue and purple.
+
+			<ol>
+
+				<li>
+					<p>
+ Our first boss says that all houses of the same color must be adjacent, and we must use the colors from left-to-right following the rainbow ordering.  How many ways can we paint the houses
+
+			<ol>
+				<li>
+					<p>
+ If we do not have to use all of the colors?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If we must use each color at least once?
+
+
+
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Our first boss gets fired for his lack of creativity. Our second boss only requires that the "warm" colors red, orange, yellow are separate from the "cool" colors green, blue, purple. He says we should start painting with warm colors, then switch to cool colors after some number of houses (possibly 0).
+
+			<ol>
+
+				<li>
+					<p>
+ What is the generating function <m>F_1(x)</m> for painting <m>n</m> houses with the warm colors red, orange and yellow?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the generating function <m>F_2(x)</m> for painting <m>n</m> houses with the cool colors green, blue and purple?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the generating function <m>F(x)=F_1(x)F_2(x)</m> for the number of ways to paint the houses to our boss's specifications?
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the formula <m>f_n</m> for the number of ways to paint <m>n</m> houses to our boss's specifications??
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Give a combinatorial argument for the answer you found in part (iv).
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Our second boss quits to become a yoga instructor. Our third boss is tries to cut corners. Red and orange paint are cheap. He asks us to paint some <em>subset</em> of houses using the colors red and orange (these houses do NOT have to be consecutive). For the remaining houses, we are supposed to paint exactly one house in  each of the remaining 4 colors, and leave the other houses unpainted.
+			<ol>
+
+				<li>
+					<p>
+ What is the <em>exponential</em> generating function <m>G_1(x)</m> for the number of ways to paint <m>n</m> houses using colors red and orange?
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the <em>exponential</em> generating function <m>G_2(x)</m> for the number of ways of painting 4 out of <m>n</m> houses, one yellow, one green, one blue, one purple.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the <em>exponential</em> generating function <m>G(x)</m> for the number of ways to paint the houses to our boss's specifications?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the formula <m>g_n</m> for the number of ways to paint <m>n</m> houses to our boss's specifications?
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Give a combinatorial argument for the answer you found in part (iv).
+
+
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Our third boss gets fired for absconding with company money. Our fourth boss tells us to just paint the houses any way we want.
+
+			<ol>
+				<li>
+					<p>
+ How many ways are there to paint the houses, with no restrictions?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many ways are there to paint the houses if we must use each color at least once?
+
+
+					</p>
+				</li>
+			</ol>
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Children Playing in the Park</title>
+			<idx><h>Children Playing in the Park</h></idx>
+			<statement>
+				<p>
+
+A group of (distinct) children are at the park.  One nonempty subset decides to play ring-around-the-rosie, and they form a circle. The remaining children (if there are any who don't play) head to the snack bar and line up to get ice cream.
+
+			<ol>
+				<li>
+					<p>
+ Let <m>a_n</m> denote the number of ways for <m>n</m> children to form a circle in order to play ring-around-the-rosie. We know that <m>a_0=0</m> because the set of children playing is nonempty.
+Find the exponential generating function
+<me>
+A(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!} = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}.
+</me>
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>b_n</m> denote the number of ways for <m>n</m> children to line up to get ice cream.
+Find the exponential generating function
+<me>
+B(x) = \sum_{n=0}^{\infty} b_n \frac{x^n}{n!}.
+</me>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>c_n</m> denote the number of ways that <m>n</m> children can divide into two groups, one that plays ring-around-the-rosie and another that gets ice cream. We know that
+<me>
+C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!} = A(x)B(x).
+</me>
+Write down the exponential generating function <m>C(x)</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use parts (a),(b),(c) to find a  formula for <m>c_n</m>. (It will contain one summation sign.)
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Give a direct combinatorial explanation for the formula in part (d).
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>
