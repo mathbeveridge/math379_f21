@@ -136,7 +136,7 @@
 <li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
 <li class="link"><a href="bestiarum.html" data-scroll="bestiarum"><span class="codenumber">12</span> <span class="title">Bestiarum Generandi</span></a></li>
 <li class="link"><a href="genfun.html" data-scroll="genfun"><span class="codenumber">13</span> <span class="title">Generating Function Introduction</span></a></li>
-<li class="link"><a href="genfun-intcomps.html" data-scroll="genfun-intcomps"><span class="codenumber">14</span> <span class="title">Products of Generating Functions</span></a></li>
+<li class="link"><a href="genfun-intcomps.html" data-scroll="genfun-intcomps"><span class="codenumber">14</span> <span class="title">Generating Functions for Integer Compositions</span></a></li>
 <li class="link"><a href="genfun-product.html" data-scroll="genfun-product"><span class="codenumber">15</span> <span class="title">Products of  Generating Functions II</span></a></li>
 <li class="link active"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">16</span> <span class="title">Generating Function Exercises</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -188,10 +188,10 @@ Table[myseq[k], {k,0,5}]
 <li id="li-300">
 <p id="p-565">Quidditch is played on an oval pitch, five hundred feet long. At each end, there are three hooped goal posts of different heights, surrounded by a scoring area. The game is played with four bewitched flying spherical balls: two Bludgers, one Quaffle and one Snitch. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/quidditch.jpg" class="contained"></div> Two teams of wizards on flying broomsticks zip around the pitch trying to score points. This can be done in two ways.</p>
 <ul class="disc">
-<li id="li-301"><p id="p-566">Sending the Quaffle through any of the three goal hoops in the appropriate scoring area (10 points); and</p></li>
+<li id="li-301"><p id="p-566">Sending the Quaffle through any of the three (distinct) goal hoops in the appropriate scoring area (10 points); and</p></li>
 <li id="li-302"><p id="p-567">Capturing the Snitch (150 points).</p></li>
 </ul>
-<p class="continuation">The game ends when the Snitch is caught, or an agreement is reached between the captains of both teams. Use the product principle for generating functions to find a concise formula for \(Q(x)\text{,}\) the generating function for the number of ways to to score \(n\) points in a Quidditch game.</p>
+<p class="continuation">The game ends when the Snitch is caught, or an agreement is reached between the captains of both teams. Use the product principle for generating functions to find a concise formula for \(Q(x)\text{,}\) the generating function for the number of ways to to score \(n\) points in a Quidditch game. (Note: you must treat the three goal hoops as distinct.)</p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-68"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
 <p id="p-568">Use generating functions to find an explicit formula for \(b_n\) if \(b_0=3\) and \(b_1=7\) and \(b_n = 3 b_{n-1} - 2 b_{n-2}\) for \(n \geq 2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-69"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
@@ -230,6 +230,20 @@ F(x) = \frac{x}{1-x-x^2}.
 <li id="li-314"><p id="p-585">Let \(g_n\) be the number of ways to split \(n\) people into teams of zombies and humans. We are allowed to take any subset of the people to be on the zombie team. Use parts (a) and (b) to find a simple expression for the exponential generating function \(G(x) = \sum_{n=0}^{\infty} g_n \frac{x^n}{n!}\text{.}\)</p></li>
 <li id="li-315"><p id="p-586">Use part (c) to find a simple formula for \(g_n\text{.}\)</p></li>
 <li id="li-316"><p id="p-587">Give a combinatorial explanation for the formula in part (d).</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-588">In this problem, you will create the <em class="emphasis">exponential generating function</em> for the number of surjections onto a set of size \(k\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-317"><p id="p-589">Let \(t_n\) be the number of surjections from \([n]\) to \([1]\text{,}\) where \([1] = \{ 1 \}\) is the set of size 1. Find the formula for the EGF \(T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.\) (And pay close attention to the value of \(t_0\text{.}\)).</p></li>
+<li id="li-318"><p id="p-590">Explain why \(T(x)^2\) is the EGF for the number of surjections from \([n]\) to \([2]\text{.}\)</p></li>
+<li id="li-319"><p id="p-591">Find the formula for the EGF for the number of surjections from \([n]\) to \([k]\text{.}\)</p></li>
+<li id="li-320">
+<p id="p-592">Use your answer from part (c) to prove that the EGF for set partitions into exactly \(k\) parts is</p>
+<div class="displaymath">
+\begin{equation*}
+S_k(x) = \frac{1}{k!} (e^x -1)^k.
+\end{equation*}
+</div>
+</li>
 </ol></article></section></section></div></main>
 </div>
 </body>

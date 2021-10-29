@@ -164,7 +164,7 @@ Two teams of wizards on flying broomsticks zip around the pitch trying to score 
 		<ul>
 			<li>
 			<p>
- Sending the Quaffle through any of the three goal hoops in the appropriate scoring area (10 points); and
+ Sending the Quaffle through any of the three (distinct) goal hoops in the appropriate scoring area (10 points); and
 			</p>
 			</li>
 			<li>
@@ -174,7 +174,7 @@ Two teams of wizards on flying broomsticks zip around the pitch trying to score 
 			</li>
 		</ul>
 The game ends when the Snitch is caught, or an agreement is reached between the captains of both teams.
-Use the product principle for generating functions to find a concise formula for <m>Q(x)</m>, the generating function for the number of ways to to score <m>n</m> points in a Quidditch game.
+Use the product principle for generating functions to find a concise formula for <m>Q(x)</m>, the generating function for the number of ways to to score <m>n</m> points in a Quidditch game. (Note: you must treat the three goal hoops as distinct.)
 					</p>
 				</li>
 			</ol>
@@ -343,6 +343,42 @@ Let <m>a_n</m> be the number of coin pyramids with <m>n</m> coins in the first r
 					<p>
  Give a combinatorial explanation for the formula in part (d).
 
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ In this problem, you will create the <em>exponential generating function</em> for the number of surjections onto a set of size <m>k</m>.
+
+			<ol>
+				<li>
+					<p>
+ Let <m>t_n</m> be the number of surjections from <m>[n]</m> to <m>[1]</m>, where <m>[1] = \{ 1 \}</m> is the set of size 1. Find the formula for the EGF
+<m>T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.</m> (And pay close attention to the value of <m>t_0</m>.).
+					</p>
+				</li>
+				<li>
+					<p>
+ Explain why <m>T(x)^2</m> is the EGF for the number of surjections from <m>[n]</m> to <m>[2]</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Find the formula for the EGF for the number of surjections from <m>[n]</m> to <m>[k]</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Use your answer from part (c) to prove that the EGF for set partitions into exactly <m>k</m> parts is
+<me>
+S_k(x) = \frac{1}{k!} (e^x -1)^k.
+</me>
 					</p>
 				</li>
 			</ol>
