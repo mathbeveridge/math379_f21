@@ -3,7 +3,7 @@
 
 <chapter xml:id="bestiarum" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Bestiarum Generandi</title>
-<introduction>
+	<introduction>
 		<p>
 
 
@@ -14,7 +14,7 @@
 
 			</p><p>
 
-For any <m>n \in \mathbb{N}</m>,
+For any <m>k \in \mathbb{N}</m>,
 <me>
 \begin{array}{rcccl}
 \displaystyle{
@@ -247,5 +247,6 @@ x +  \frac{x^{3}}{3} + \frac{x^{5}}{5} + \frac{x^{7}}{7} +\cdots
 
 </p>
 </subsection>
+
 </introduction>
 </chapter>
