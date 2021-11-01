@@ -284,7 +284,7 @@ Let <m>a_n</m> be the number of coin pyramids with <m>n</m> coins in the first r
 			<ol>
 				<li>
 					<p>
-    The sequence satisfies <m>a_n = \sum_{j=1}^n (n-j) a_j +1</m> for <m>n \geq 1</m>. Give a combinatorial proof of this recurrence. Note that this formula also holds for n=1 (which makes life easier for us)
+    The sequence satisfies <m>a_n =1 + \sum_{j=1}^{n-1} (n-j) a_j</m> for <m>n \geq 1</m>. Give a combinatorial proof of this recurrence. Note that this formula also holds for n=1 (which makes life easier for us)
 
 					</p>
 				</li>

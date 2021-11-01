@@ -6,6 +6,7 @@
 		<p>
 
 
+
 	</p>
 	</introduction>
 	<exercises>
@@ -119,7 +120,7 @@ Suppose that we have tasks <m>\cA</m> and <m>\cB</m> where you can complete <m>\
 			</p>
 			</li>
 		</ul>
-How many ways <m>c_n</m> are there to complete task <m>\cC</m> on <m>[n]</m>? <em>Be careful:</em> parts 2 and 3 depend upon the size <m>k</m> of <m>S</m>.
+How many ways <m>c_n</m> are there to complete task <m>\cC</m> on <m>[n]</m>? <em>Be careful:</em> parts (b) and (c) depend upon the size <m>k</m> of <m>S</m>.
 
 
 
@@ -129,8 +130,10 @@ How many ways <m>c_n</m> are there to complete task <m>\cC</m> on <m>[n]</m>? <e
 					<p>
  Consider the  functions
 <me>
-A(x) = \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n   \mbox{and}
+\begin{array}{ccc}
+A(x) = \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n &amp;  \mbox{and}  &amp;
 B(x) = \sum_{n=0}^{\infty} \frac{b_n}{n!} x^n.
+\end{array}
 </me>
 Find the coefficient of <m>x^n</m> in the product <m>A(x)B(x)</m>.
 
@@ -139,7 +142,7 @@ Find the coefficient of <m>x^n</m> in the product <m>A(x)B(x)</m>.
 				</li>
 				<li>
 					<p>
- Let <m>C(x)</m> be the exponential generating function <em>EGF</em> for the task <m>\cC</m> in problem 2.  Use your answers from  problems 2 and 3 to prove that <m>C(x) = A(x) B(x)</m>, where <m>A(x)</m> and <m>B(x)</m> are the <em>EGF</em>s for tasks <m>\cA</m> and <m>\cB</m>.
+ Let <m>C(x)</m> be the exponential generating function <em>EGF</em> for the task <m>\cC</m> in part (b).  Use your answers from  problems 2 and 3 to prove that <m>C(x) = A(x) B(x)</m>, where <m>A(x)</m> and <m>B(x)</m> are the <em>EGF</em>s for tasks <m>\cA</m> and <m>\cB</m>.
 
 
 					</p>
