@@ -12,21 +12,23 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Jurors.</span>
 </h6>
-<p>Here is a potpourri of counting problems. In each case,</p>
-<ul class="disc">
-<li><p>Find a concise generating function for answering the question, and</p></li>
-<li><p>identify what coefficient you need.</p></li>
-</ul>
-<p class="continuation"><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">You do not need to actually solve the problem, but feel free to do so using Mathematica, if you like.</em></p>
+<p>These two problems use composition of ordinary generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and ordinary generating function \(A(x) = \sum_{n=1}^{\infty} a_n x^n\text{.}\) Let \({\cal B}\) be the task "split the interval \([n]\) into nonempty intervals and perform \({\cal A}\) on each interval." Then the ordinary generating function for \({\cal B}\) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) = \frac{1}{1-A(x)}.
+\end{equation*}
+</div>
 <ol class="lower-alpha">
-<li><p>How many ways are there to distribute 14 forks to 10 people so that each person receives one or two forks?</p></li>
-<li><p>You can buy soda either by the can, or in 6-, 12-, 24- or 30-packs. How many ways are there to buy exactly \(k\) cans of soda?</p></li>
-<li><p>How many ways are there to put a total postage of 75 cents on an envelope, using 3-, 5-, 10- and 12-cent stamps?</p></li>
-<li><p>You go to a Halloween party dressed as  mathematician Paul Erdos. While there, you select 24 pieces of candy from among five different types. How many ways can you do this if you want at least two pieces of candy of each type?</p></li>
-<li><p>How many solutions to \(z_1+z_2+z_3 = 15\) are there, where each \(z_i\) is an integer satisfying \(0 \leq z_i \leq 8\text{?}\)</p></li>
-<li><p>How many ways are there to make change for a dollar using only pennies, nickels, dimes and quarters?</p></li>
+<li>
+<p>Suppose that we have \(n\) prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first \(k_1\) jurors, the next \(k_2\) jurors and so on).</p>
+<ol class="lower-roman">
+<li><p>Find the value of \(b_n\text{.}\)</p></li>
+<li><p>Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.)</p></li>
+</ol>
+</li>
+<li><p>Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles).</p></li>
 </ol></article><span class="incontext"><a href="exercises-15.html#exercise-66">in-context</a></span>
 </body>
 </html>

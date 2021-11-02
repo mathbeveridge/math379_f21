@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="genfun-comp" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Compositions of Generating Functions</title>
+	<introduction>
+		<p>
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+		<exercise>
+			<title>Organizing Jurors</title>
+			<idx><h>Organizing Jurors</h></idx>
+			<statement>
+				<p>
+These two problems use composition of ordinary generating functions. Let <m>{\cal A}</m> be a task with <m>a_0=0</m> and ordinary generating function <m>A(x) = \sum_{n=1}^{\infty} a_n x^n</m>. Let <m>{\cal B}</m> be the task "split the interval <m>[n]</m> into nonempty intervals and perform <m>{\cal A}</m> on each interval." Then the ordinary generating function for <m>{\cal B}</m> is
+<me>
+B(x) = \frac{1}{1-A(x)}.
+</me>
+
+
+			<ol>
+
+				<li>
+					<p>
+ Suppose that we have <m>n</m> prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first <m>k_1</m> jurors, the next <m>k_2</m> jurors and so on).
+			<ol>
+\item
+Use the composition result above to find the ordinary generating function <m>B(x)</m> for this process. (Hint: task <m>{\cal A}</m> is "do nothing.")
+
+
+				<li>
+					<p>
+ Find the value of <m>b_n</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.)
+
+
+
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function <m>B(x)</m> for the total process (splitting the pool and then assigning roles).
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Organizing Employees</title>
+			<idx><h>Organizing Employees</h></idx>
+			<statement>
+				<p>
+These three problems use composition of exponential generating functions. Let <m>{\cal A}</m> be a task with <m>a_0=0</m> and exponential generating function <m>A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}</m>. Let <m>{\cal B}</m> be the task "partition <m>[n]</m> into nonempty subsets and  perform <m>{\cal A}</m> on each subset." Then the exponential generating function for <m>{\cal B}</m> is
+<me>
+B(x) = e^{A(x)}.
+</me>
+
+			<ol>
+				<li>
+					<p>
+ Suppose that we have <m>n</m> employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function <m>B(x)</m>. You should recognize this marvelous generating function.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function <m>B(x)</m> for the entire process (partitioning and then choosing a chair for each committee.)
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Instead of forming a committee, we want to seat each group at a circular table.
+			<ol>
+				<li>
+					<p>
+ Find the exponential generating function <m>B(x)</m> for this process.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use <m>B(x)</m> to find the value of <m>b_n</m>. Be amazed at the simplicity of the answer for this complicated question!
+
+
+					</p>
+				</li>
+			</ol>
+					</p>
+				</li>
+			</ol>
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>
