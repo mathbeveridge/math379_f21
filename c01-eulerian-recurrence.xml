@@ -8,6 +8,14 @@
 		<p>
 
 
+The Eulerian Number
+<me>
+\begin{array}{rcl}
+A(n,k) &amp;=&amp; \mbox{# <m>n</m>-permutations with <m>k</m> ascending runs} \\
+&amp;=&amp; \mbox{# <m>n</m>-permutations with <m>k-1</m> descents} \\
+\end{array}
+</me>
+
 	</p>
 	</introduction>
 	<exercises>
