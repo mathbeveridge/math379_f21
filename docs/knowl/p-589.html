@@ -12,7 +12,15 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Coins in each row form a contiguous block</p>
-<span class="incontext"><a href="exercises-16.html#p-589">in-context</a></span>
+<p>For a group of size \(n\text{,}\) the number of ways to choose a foreman and then choose one of 3 roles for the remaining people is \(n 3^{n-1}\text{.}\) Once again, we must take \(a_0=0\text{,}\) so</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} n 3^n x^n = 3x \sum_{n=1}^{\infty} n 3^{n-1} x^{n-1} =   \frac{3x}{(1-3x)^2} \\
+B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{3x}{(1-3x)^2}} = \frac{(1-3x)^2}{1-9x+9x^2} = 1 + \frac{3x}{1-9x+9x^2}
+\end{array}
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-15.html#p-589">in-context</a></span>
 </body>
 </html>

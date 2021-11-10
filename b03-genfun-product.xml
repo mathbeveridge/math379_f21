@@ -34,6 +34,11 @@ Q_n(x) = \prod_{k=1}^{n} \frac{1}{1-x^k}.
 </me>
 More generally, for any integer <m>m</m>, what kind of partitions of <m>m</m> does <m>Q_n(x)</m> count?
 
+<solution>
+<p>
+The <m>m</m>th coefficient of <m>Q_n(x)</m> counts the number of partitions of <m>m</m> into parts of size at most <m>n</m>.
+</p>
+</solution>
 
 
 
@@ -43,6 +48,13 @@ More generally, for any integer <m>m</m>, what kind of partitions of <m>m</m> do
 					<p>
  Let <m>d_n</m> be the number of integer partitions of <m>n</m> into distinct parts. Find a concise expression for the generating function <m>D(x) = \sum_{n=0}^{\infty} d_n x^n.</m>
 
+<solution>
+<p>
+<me>
+D(x) = \prod_{k=1}^{\infty} (1+x^k)
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -50,6 +62,13 @@ More generally, for any integer <m>m</m>, what kind of partitions of <m>m</m> do
 					<p>
  What is the generating function partitions of <m>n</m> into odd parts?
 
+<solution>
+<p>
+<me>
+A(x) = \prod_{k=1}^{n} \frac{1}{1-x^{2k+1}}.
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -57,6 +76,13 @@ More generally, for any integer <m>m</m>, what kind of partitions of <m>m</m> do
 					<p>
  What is the generating function of partitions of <m>n</m> into distinct odd parts?
 
+<solution>
+<p>
+<me>
+D(x) = \prod_{k=1}^{\infty} (1+x^{2k+1})
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -97,6 +123,13 @@ Suppose that we have tasks <m>\cA</m> and <m>\cB</m> where you can complete <m>\
 			</li>
 		</ul>
 
+<solution>
+<p>
+<me>
+{n \choose k} a_k b_{n-k}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -122,6 +155,13 @@ Suppose that we have tasks <m>\cA</m> and <m>\cB</m> where you can complete <m>\
 		</ul>
 How many ways <m>c_n</m> are there to complete task <m>\cC</m> on <m>[n]</m>? <em>Be careful:</em> parts (b) and (c) depend upon the size <m>k</m> of <m>S</m>.
 
+<solution>
+<p>
+<me>
+\sum_{k=0}^n {n \choose k} a_k b_{n-k}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -137,6 +177,20 @@ B(x) = \sum_{n=0}^{\infty} \frac{b_n}{n!} x^n.
 </me>
 Find the coefficient of <m>x^n</m> in the product <m>A(x)B(x)</m>.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+A(x) B(x) &amp;=&amp;
+\left( \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n \right) \left( \sum_{n=0}^{\infty}  \frac{b_n}{n!} x^n  \right)\\
+&amp;=&amp;
+\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  \frac{a_k}{k!}  \frac{b_{n-k}}{(n-k)!}  \right)   x^n \\
+&amp;=&amp;
+\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  {n \choose k}  a_k b_{n-k}  \right)  \frac{ x^n}{n!} \\
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -144,6 +198,20 @@ Find the coefficient of <m>x^n</m> in the product <m>A(x)B(x)</m>.
 					<p>
  Let <m>C(x)</m> be the exponential generating function <em>EGF</em> for the task <m>\cC</m> in part (b).  Use your answers from  problems 2 and 3 to prove that <m>C(x) = A(x) B(x)</m>, where <m>A(x)</m> and <m>B(x)</m> are the <em>EGF</em>s for tasks <m>\cA</m> and <m>\cB</m>.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+C(x) &amp;=&amp; A(x) B(x) \\
+&amp;=&amp; \left( \sum_{n=0}^{\infty}  a_n \frac{x^n}{n!} \right) \left( \sum_{n=0}^{\infty}  b_n \frac{x^n}{n!}  \right)\\
+&amp;=&amp;
+\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  \frac{a_k}{k!}  \frac{b_{n-k}}{(n-k)!}  \right)   x^n \\
+&amp;=&amp;
+\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  {n \choose k}  a_k b_{n-k}  \right)  \frac{ x^n}{n!} \\
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -178,6 +246,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  If we do not have to use all of the colors?
 
+<solution>
+<p>
+<me>
+{ n +5 \choose 5}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -185,6 +260,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  If we must use each color at least once?
 
+<solution>
+<p>
+<me>
+{ n-1 \choose 5}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -203,6 +285,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  What is the generating function <m>F_1(x)</m> for painting <m>n</m> houses with the warm colors red, orange and yellow?
 
+<solution>
+<p>
+<me>
+F_1(x) = 1+3x+3^2x^2+ \cdots = \sum_{n=0}^{\infty} 3^n x^n = \frac{1}{1-3x}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -210,6 +299,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  What is the generating function <m>F_2(x)</m> for painting <m>n</m> houses with the cool colors green, blue and purple?
 
+<solution>
+<p>
+<me>
+F_2(x) = 1+3x+3^2x^2+ \cdots = \sum_{n=0}^{\infty} 3^n x^n = \frac{1}{1-3x}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -217,6 +313,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  What is the generating function <m>F(x)=F_1(x)F_2(x)</m> for the number of ways to paint the houses to our boss's specifications?
 
+<solution>
+<p>
+<me>
+F_1(x) F_2(x) =  \frac{1}{(1-3x)^2}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -225,6 +328,17 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  What is the formula <m>f_n</m> for the number of ways to paint <m>n</m> houses to our boss's specifications??
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+F(x) \,= \, \sum_{n=0}^{\infty} f_n x^n &amp; = &amp; \frac{1}{(1-3x)^2} \\
+&amp;=&amp; \sum_{n=1}^{\infty}  n (3x)^{n-1} =  \sum_{m=0}^{\infty} (m+1) 3^m x^{m}.
+\end{array}
+</me>
+So <m>f_m =  (m+1)  3^m</m> for <m>m \geq 0</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -232,6 +346,28 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  Give a combinatorial argument for the answer you found in part (iv).
 
+<solution>
+<p>
+		<ul>
+\item
+First, we split the houses into two categories: warm houses and cool houses. We have <m>k</m> warm houses followed by <m>n-k</m> cool houses, where <m>0 \leq k \leq n</m>. So we have <m>n+1</m> choices for <m>k</m>.
+			<li>
+			<p>
+ Next, we paint the warm houses in <m>3^k</m> ways
+			</p>
+			</li>
+			<li>
+			<p>
+ Finally, we paint the cool houses in <m>3^{n-k}</m> ways.
+			</p>
+			</li>
+		</ul>
+The total number of ways is
+<me>
+(n+1) 3^k \cdot 3^{n-k} = (n+1) 3^n.
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -251,6 +387,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  What is the <em>exponential</em> generating function <m>G_1(x)</m> for the number of ways to paint <m>n</m> houses using colors red and orange?
 
+<solution>
+<p>
+<me>
+G_1(x) = \sum_{n=0}^{\infty} 2^n \frac{x^n}{n!} = e^{2x}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -259,6 +402,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  What is the <em>exponential</em> generating function <m>G_2(x)</m> for the number of ways of painting 4 out of <m>n</m> houses, one yellow, one green, one blue, one purple.
 
+<solution>
+<p>
+<me>
+G_2(x) = \sum_{n=4}^{\infty} (n)_4 \frac{x^n}{n!} = \sum_{n=4}^{\infty}  \frac{x^n}{(n-4)!} = x^4 \sum_{n=4}^{\infty}  \frac{x^{n-4}}{(n-4)!} = x^4 \sum_{m=0}^{\infty}  \frac{x^{m}}{m!} = x^4 e^x
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -266,6 +416,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  What is the <em>exponential</em> generating function <m>G(x)</m> for the number of ways to paint the houses to our boss's specifications?
 
+<solution>
+<p>
+<me>
+x^4 e^{3x}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -274,6 +431,26 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
  What is the formula <m>g_n</m> for the number of ways to paint <m>n</m> houses to our boss's specifications?
 
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+G(x) \, =  \,  \sum_{n=0}^{\infty} g_n \frac{ x^n}{n!}
+&amp;=&amp; x^4 e^{3x}
+\, = \,
+x^4 \sum_{n=0}^{\infty} 3^n \frac{ x^n}{n!}
+\, = \,
+\sum_{n=0}^{\infty} 3^n \frac{ x^{n+4}}{n!}
+\, = \,  \sum_{n=0}^{\infty} 3^n \frac{ x^{n+4}}{(n+4)!}   \\
+&amp;=&amp;
+\sum_{m=4}^{\infty} 3^{m-4} \frac{ x^{m}}{(m-4)!}
+\, = \,
+\sum_{m=4}^{\infty} 3^{m-4} (m)_4 \frac{ x^{m}}{m!}.
+\end{array}
+</me>
+So we have <m>g_m = 3^{m-4} (m)_4</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -281,6 +458,26 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  Give a combinatorial argument for the answer you found in part (iv).
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ First, we choose one house to color yellow, one house to color green, one house to color blue, and one house to color purple. This can be done in <m>(n)_4</m> ways.
+			</p>
+			</li>
+			<li>
+			<p>
+ The remaining <m>n-4</m> houses, can each be red, orange, or unpainted. The number of possibilities is <m>3^{n-4}</m>.
+			</p>
+			</li>
+		</ul>
+The total number of ways is
+<me>
+(n)_4 3^{n-4}.
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -297,6 +494,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  How many ways are there to paint the houses, with no restrictions?
 
+<solution>
+<p>
+<me>
+6^n
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -304,6 +508,13 @@ Suppose that we want to paint <m>n</m> distinct houses on a block. For simplicit
 					<p>
  How many ways are there to paint the houses if we must use each color at least once?
 
+<solution>
+<p>
+<me>
+6! S(n,6)
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -334,6 +545,14 @@ A(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!} = \sum_{n=1}^{\infty} a_n \frac{x^
 </me>
 
 
+<solution>
+<p>
+<me>
+A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!} = \sum_{n=1}^{\infty} (n-1)! \cdot  \frac{x^n}{n!}
+= \sum_{1=0}^{\infty} \frac{x^n}{n} = \log \left( \frac{1}{1-x} \right)
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -345,6 +564,14 @@ Find the exponential generating function
 B(x) = \sum_{n=0}^{\infty} b_n \frac{x^n}{n!}.
 </me>
 
+<solution>
+<p>
+<me>
+B(x) = \sum_{n=0}^{\infty} b_n \frac{x^n}{n!} = \sum_{n=0}^{\infty} n! \cdot  \frac{x^n}{n!}
+= \sum_{n=0}^{\infty} x^n = \frac{1}{1-x}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -356,6 +583,13 @@ C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!} = A(x)B(x).
 </me>
 Write down the exponential generating function <m>C(x)</m>.
 
+<solution>
+<p>
+<me>
+C(x) = A(x)B(x) = \frac{1}{1-x} \cdot \log \left( \frac{1}{1-x} \right)
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -363,6 +597,21 @@ Write down the exponential generating function <m>C(x)</m>.
 					<p>
  Use parts (a),(b),(c) to find a  formula for <m>c_n</m>. (It will contain one summation sign.)
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+C(x) &amp;=&amp; A(x)B(x)  \, = \, \left( \sum_{n=1}^{\infty} \frac{x^n}{n}  \right) \left( \sum_{n=0}^{\infty} x^n \right) \\
+&amp;=&amp; \sum_{n=0}^{\infty}  \left( \sum_{k=1}^{n} \frac{1}{k} \right) x^n
+= \sum_{n=0}^{\infty}  \left( n! \sum_{k=1}^{n} \frac{1}{k} \right) \frac{x^n}{n!} \\
+\end{array}
+</me>
+Therefore
+<me>
+c_n = n! \sum_{k=1}^{n} \frac{1}{k}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -370,6 +619,33 @@ Write down the exponential generating function <m>C(x)</m>.
 					<p>
  Give a direct combinatorial explanation for the formula in part (d).
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ Pick a <m>k</m> such that <m>1 \leq k \leq n</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Line up all the children in a row. This can be done in <m>n!</m> ways.
+			</p>
+			</li>
+			<li>
+			<p>
+ The first <m>k</m> children form a circle. We must divide by <m>k</m> for symmetry since there are <m>k</m> different orderings of these children that result in the same circle.
+			</p>
+			</li>
+			<li>
+			<p>
+ The last <m>n-k</m> children head off for ice cream, keeping the same order.
+
+			</p>
+			</li>
+		</ul>
+</p>
+</solution>
 
 					</p>
 				</li>

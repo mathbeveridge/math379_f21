@@ -279,24 +279,57 @@ Here is an example of a coin pyramid with 10 coins in the first row:
 
 
 
-Let <m>a_n</m> be the number of coin pyramids with <m>n</m> coins in the first row. We have <m>a_1=1</m> and <m>a_2=2</m>.
+Let <m>a_n</m> be the number of coin pyramids with <m>n</m> coins in the first row. We define <m>a_0=0</m>, meaning that we forbid the "empty coin pyramid." We have <m>a_1=1</m> and <m>a_2=2</m>. Here they are:
+
+			<image width="50%" xml:id="fig-img-genfun-exercise3">
+				<latex-image>
+\begin{tikzpicture}[scale=.35]
+
+\draw[fill] (0,0)   circle (.45);
+
+\begin{scope}[shift={(4,0)}]
+\draw[fill] (0,0)   circle (.45);
+\draw[fill] (1,0)   circle (.45);
+\end{scope}
+
+\begin{scope}[shift={(7,0)}]
+\draw[fill] (0,0)   circle (.45);
+\draw[fill] (1,0)   circle (.45);
+\draw[fill] (.5,1)   circle (.45);
+\end{scope}
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
 
 			<ol>
+
 				<li>
 					<p>
-    The sequence satisfies <m>a_n =1 + \sum_{j=1}^{n-1} (n-j) a_j</m> for <m>n \geq 1</m>. Give a combinatorial proof of this recurrence. Note that this formula also holds for n=1 (which makes life easier for us)
+   We have <m>a_3=5</m> and <m>a_4=13.</m> List all the coin pyramids for <m>n=3,4.</m>
+
 
 					</p>
 				</li>
 				<li>
 					<p>
-   List all the coin pyramids for <m>n=1,2,3,4.</m> (You can figure out how many there are using the recurrence.)
+  Give a combinatorial proof for the recurrence
+<me>
+a_n =1 + \sum_{j=1}^{n-1} (n-j) a_j  \mbox{for}  n \geq 1.
+</me>
+Note that this formula also holds for <m>n=1</m> (which makes life easier for us in the next part of the question).
+
 
 					</p>
 				</li>
 				<li>
 					<p>
-    Let <m>A(x) = \sum_{n=0}^{\infty} a_n x^n</m>,  the ordinary generating function for coin pyramids. Starting with the recursion above, find a simple closed formula for <m>A(x)</m>.
+    Let <m>A(x) = \sum_{n=0}^{\infty} a_n x^n</m>,  the ordinary generating function for coin pyramids. Starting with the recursion above, find a simple closed formula for <m>A(x)</m>. Hint: you should start by explaining why
+<me>
+\sum_{j=1}^{n-1} (n-j) a_j = \sum_{j=0}^{n} (n-j) a_j
+</me>
+for this particular sequence.
 
 
 					</p>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+G(x) \, =  \,  \sum_{n=0}^{\infty} g_n \frac{ x^n}{n!}
+&amp;=&amp; x^4 e^{3x}
+\, = \,
+x^4 \sum_{n=0}^{\infty} 3^n \frac{ x^n}{n!}
+\, = \,
+\sum_{n=0}^{\infty} 3^n \frac{ x^{n+4}}{n!}
+\, = \,  \sum_{n=0}^{\infty} 3^n \frac{ x^{n+4}}{(n+4)!}   \\
+&amp;=&amp;
+\sum_{m=4}^{\infty} 3^{m-4} \frac{ x^{m}}{(m-4)!}
+\, = \,
+\sum_{m=4}^{\infty} 3^{m-4} (m)_4 \frac{ x^{m}}{m!}.
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">So we have \(g_m = 3^{m-4} (m)_4\text{.}\)</p>
+</div></body>
+</html>
