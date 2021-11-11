@@ -87,7 +87,7 @@ pull the name of the problem from the first line  of  the \item
     <part xml:id="part-perm">
         <title>Permutations</title> 
             <xi:include href="./c01-eulerian-recurrence.xml" /> 
-                      
+            <xi:include href="./c02-descending-tree.xml" />         
 
     </part>
 
