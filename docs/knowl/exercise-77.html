@@ -23,7 +23,13 @@ A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1)
 <p class="continuation">As you might suspect, we will "treat element \(n\) as special." Let  \(\cA(n,k)\)  denote the set of \(n\)-permutations with \(k\) ascending runs (and therefore with \(k-1\) descents). <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Pro Tip #1:</em> only positions \(1 \leq j \leq n-1\) are considered as ascents/descents. Position \(n\) is handled exceptionally. <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Pro Tip #2:</em> Be ready to think about having \(k\) ascending runs, or \(k-1\) descents, whichever is easiest!</p>
 <ol class="lower-alpha">
 <li>
-<p>As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes \(\) A(4,3) = 3 A(3,3) + 2 A(3,2).\(\) We list the 11 different permutations in  \(\cA(4,3)\) and all 6=3! permutations in \(S_3\text{.}\) Draw a line from the 4-permutation to the 3-permutation we obtain by deleting element 4.</p>
+<p>As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(4,3) = 3 A(3,3) + 2 A(3,2).
+\end{equation*}
+</div>
+<p class="continuation">We list the 11 different permutations in  \(\cA(4,3)\) and all \(6=3!\) permutations in \(S_3\text{.}\) Draw a line from the 4-permutation to the 3-permutation we obtain by deleting element 4.</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 \begin{array}{ccccccccccc}
