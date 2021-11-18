@@ -33,15 +33,17 @@ Let <m>c(n)</m> denote the total number of cycles in all <m>n</m>-permutations.
 			<statement>
 				<p>
 			<ol>
-\item
-Prove that <m>\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}</m>.
-
-The LHS is the total number of cycles in all <m>n</m>-permutations.
-
+				<li>
+					<p>
+ Prove that <m>\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}</m>.
 
 
 
 
+
+
+					</p>
+				</li>
 				<li>
 					<p>
  Prove that <m>\displaystyle{A(n) = \frac{c(n)}{n!}}</m>.
@@ -62,12 +64,15 @@ The LHS is the total number of cycles in all <m>n</m>-permutations.
 			<statement>
 				<p>
 			<ol>
-\item
-Use a graph to explain why <m>H(n)</m> is a pretty good approximation for
+				<li>
+					<p>
+ Use a graph to explain why <m>H(n)</m> is a pretty good approximation for
 <m>\int_1^n \frac{1}{x} dx</m>. What function does this integral represent?
 
 
 
+					</p>
+				</li>
 				<li>
 					<p>
  Interpret the meaning of

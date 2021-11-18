@@ -163,13 +163,19 @@ A(n) =  \sum_{i=1}^n \frac{1}{i}.
 <article class="exercise exercise-like" id="exercise-85"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Cycles in a permutation.</span>
 </h6>
-<ol id="p-694" class="lower-alpha"><li id="li-365"><p id="p-695">Prove that \(\displaystyle{A(n) = \frac{c(n)}{n!}}\text{.}\)</p></li></ol></article><article class="exercise exercise-like" id="exercise-86"><h6 class="heading">
+<ol id="p-694" class="lower-alpha">
+<li id="li-365"><p id="p-695">Prove that \(\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}\text{.}\)</p></li>
+<li id="li-366"><p id="p-696">Prove that \(\displaystyle{A(n) = \frac{c(n)}{n!}}\text{.}\)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-86"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">The Harmonic Numbers.</span>
 </h6>
-<ol id="p-696" class="lower-alpha"><li id="li-366"><p id="p-697">Interpret the meaning of \(A(n) =  \sum_{i=1}^n \frac{1}{i}\) using your approximate function.</p></li></ol></article><article class="exercise exercise-like" id="exercise-87"><h6 class="heading">
+<ol id="p-697" class="lower-alpha">
+<li id="li-367"><p id="p-698">Use a graph to explain why \(H(n)\) is a pretty good approximation for \(\int_1^n \frac{1}{x} dx\text{.}\) What function does this integral represent?</p></li>
+<li id="li-368"><p id="p-699">Interpret the meaning of \(A(n) =  \sum_{i=1}^n \frac{1}{i}\) using your approximate function.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-87"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">A recurrence for \(c(n)\).</span>
 </h6>
-<p id="p-698">We will prove the recurrence</p>
+<p id="p-700">We will prove the recurrence</p>
 <div class="displaymath">
 \begin{equation*}
 c(n) = n \cdot c(n-1) + (n-1)!
@@ -177,8 +183,8 @@ c(n) = n \cdot c(n-1) + (n-1)!
 </div>
 <p class="continuation">As usual, we will treat element \(n\) as special. Given an \(n\)-permutation \(f \in S_n\text{,}\) what happens when we remove element \(n\text{?}\) There are two cases</p>
 <ol class="lower-alpha">
-<li id="li-367"><p id="p-699">Suppose that \(n\) was in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is \(c(n-1) + (n-1)!\text{.}\)</p></li>
-<li id="li-368"><p id="p-700">Suppose that \(n\) was <em class="emphasis">not</em> in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is \((n-1) \cdot c(n-1)\text{.}\)</p></li>
+<li id="li-369"><p id="p-701">Suppose that \(n\) was in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is \(c(n-1) + (n-1)!\text{.}\)</p></li>
+<li id="li-370"><p id="p-702">Suppose that \(n\) was <em class="emphasis">not</em> in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is \((n-1) \cdot c(n-1)\text{.}\)</p></li>
 </ol>
 <p class="continuation">Putting together the answers from questions 2 and 3, we find that</p>
 <div class="displaymath">
