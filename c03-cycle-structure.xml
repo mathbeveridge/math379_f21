@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<chapter xml:id="perm-euler-recur" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Cycle Structure of Permutations</title>
+	<introduction>
+		<p>
+
+We quickly review the proof technique of <em>strong induction</em>. The basic framework is:
+
+			</p><p>
+
+<em> Base Case:</em> Typically, you prove the statement is true for <m>n=0</m> or <m>n=1</m>.
+
+			</p><p>
+
+<em> Inductive Step:</em> Assume the statement is true for all <m>k &lt; n</m>.
+
+			</p><p>
+
+<em> Prove True for <m>n</m>:</em> Using the truth of the inductive step (for all <m>k&lt;n</m>), prove that the statement is true for <m>n</m>.
+
+			</p><p>
+
+In (weak) induction, we relate the size <m>n</m> case to the size <m>n-1</m> case. In strong induction, we relate the size <m>n</m> case to the size <m>k</m> case for some <m>k&lt;n</m>. Sometimes this is the more natural way to reduce the problem size.
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Cycle Decomposition of Permutations</title>
+			<idx><h>Cycle Decomposition of Permutations</h></idx>
+			<statement>
+				<p>
+Use strong induction to prove that all <m>n</m>-permutations can be decomposed into a union of disjoint cycles.
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>A Permutation Identity</title>
+			<idx><h>A Permutation Identity</h></idx>
+			<statement>
+				<p>
+Prove the following identity in two different ways:
+\[
+\sum_{k=1}^{n-1} k \cdot k! = n! - 1 \mbox{ for } n \geq 2.
+\]
+
+			<ol>
+				<li>
+					<p>
+ Give a combinatorial proof of this identity.
+
+
+
+			<ol>
+				<li>
+					<p>
+ Consider a non-identity permutation <m>p_1p_2 \cdots p_n</m>. Let <m>0 \leq j \leq n-1</m> be the  largest integer such that
+<m>p_1p_2 \cdots p_j = 12 \cdots (j-1)</m>. That is, the first <m>j-1</m> elements map to themselves, but element <m>j</m> does not map to <m>j</m>. Prove that the number of such <m>n</m>-permutations is  <m>(n-j) \cdot (n-j)!</m>.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ The RHS  counts the number of permutations <em>except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!)
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Prove the identity using (weak) induction.
+
+
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>
