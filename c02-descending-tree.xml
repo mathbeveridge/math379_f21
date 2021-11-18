@@ -18,7 +18,7 @@ A <em>rooted binary plane tree</em> on <m>n</m> vertices starts with a root vert
 
 
 
-			<image width="75%" xml:id="fig-img-perm-descending-tree0">
+			<image width="50%" xml:id="fig-img-perm-descending-tree0">
 				<latex-image>
 \begin{tikzpicture}
 
@@ -106,7 +106,6 @@ A <em>rooted binary plane tree</em> on <m>n</m> vertices starts with a root vert
 \end{scope}
 
 
-\draw (4,-2) -- (4.5,-2);
 
 \end{tikzpicture}
 				</latex-image>

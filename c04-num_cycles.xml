@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<chapter xml:id="perm-descending-tree" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Average Number of Cycles in a Permutation</title>
+	<introduction>
+		<p>
+
+
+
+
+
+Let <m>A(n)</m> be the average number of cycles in an <m>n</m>-permutation. The goal of this activity is to prove that
+<me>
+A(n) =  \sum_{i=1}^n \frac{1}{i}.
+</me>
+Here, <m>\displaystyle{H(n) = \sum_{i=1}^n \frac{1}{i}}</m> is the <m>n</m>th Harmonic number, which is another <em>very</em> important sequence in mathematics.
+
+
+			</p><p>
+
+Let <m>c(n)</m> denote the total number of cycles in all <m>n</m>-permutations.
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+\item
+			<ol>
+				<li>
+					<p>
+ \myname{Average number of cycles in a permutation}
+Prove that <m>\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}</m>.
+
+The LHS is the total number of cycles in all <m>n</m>-permutations.
+
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Prove that <m>\displaystyle{A(n) = \frac{c(n)}{n!}}</m>.
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+		<exercise>
+			<title>The Harmonic Numbers</title>
+			<idx><h>The Harmonic Numbers</h></idx>
+			<statement>
+				<p>
+			<ol>
+\item
+Use a graph to explain why <m>H(n)</m> is a pretty good approximation for
+<m>\int_1^n \frac{1}{x} dx</m>. What function does this integral represent?
+
+
+
+				<li>
+					<p>
+ Interpret the meaning of
+<m>A(n) =  \sum_{i=1}^n \frac{1}{i}</m>
+using your approximate function.
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>A recurrence for <m>c(n)</m></title>
+			<idx><h>A recurrence for <m>c(n)</m></h></idx>
+			<statement>
+				<p>
+
+We will prove the recurrence
+<me>
+c(n) = n \cdot c(n-1) + (n-1)!
+</me>
+As usual, we will treat element <m>n</m> as special. Given an <m>n</m>-permutation <m>f \in S_n</m>, what happens when we remove element <m>n</m>? There are two cases
+
+			<ol>
+				<li>
+					<p>
+ Suppose that <m>n</m> was in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is <m>c(n-1) + (n-1)!</m>.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Suppose that <m>n</m> was <em>not</em> in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is <m>(n-1) \cdot c(n-1)</m>.
+
+
+
+					</p>
+				</li>
+			</ol>
+Putting together the answers from questions 2 and 3, we find that
+<me>
+c(n) =  \Big( c(n-1) + (n-1)!  \Big)+ (n-1) \cdot c(n-1) = n \cdot c(n-1) + (n-1)!
+<m></m> as claimed at the start of the problem.
+
+
+\item[5.]  \myname{The main result}
+Starting with the formula in 1(b) and the recurrence in equation (\ref{recur}), prove that <m>\displaystyle{A(n) = \sum_{i=1}^n \frac{1}{i}}</m>.
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>
