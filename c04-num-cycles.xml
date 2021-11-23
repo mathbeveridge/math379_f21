@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 
-<chapter xml:id="perm-descending-tree" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="perm-num-cycles" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Average Number of Cycles in a Permutation</title>
 	<introduction>
 		<p>
@@ -105,7 +105,7 @@ As usual, we will treat element <m>n</m> as special. Given an <m>n</m>-permutati
 			<ol>
 				<li>
 					<p>
- Suppose that <m>n</m> was in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is <m>c(n-1) + (n-1)!</m>.
+ Suppose that <m>n</m> was in a cycle by itself. Prove that the total number of <em>cycles</em> in such  permutations is <m>c(n-1) + (n-1)!</m>.
 
 
 
@@ -113,7 +113,7 @@ As usual, we will treat element <m>n</m> as special. Given an <m>n</m>-permutati
 				</li>
 				<li>
 					<p>
- Suppose that <m>n</m> was <em>not</em> in a cycle by itself. Prove that the total number of {\bf{cycles}} in such  permutations is <m>(n-1) \cdot c(n-1)</m>.
+ Suppose that <m>n</m> was <em>not</em> in a cycle by itself. Prove that the total number of <em>cycles</em> in such  permutations is <m>(n-1) \cdot c(n-1)</m>.
 
 
 

@@ -90,6 +90,7 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c02-descending-tree.xml" />     
             <xi:include href="./c03-cycle-structure.xml" />       
             <xi:include href="./c04-num-cycles.xml" />  
+            <xi:include href="./c05-transition-lemma.xml" />  
     </part>
 
 

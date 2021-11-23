@@ -15,12 +15,20 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<ul class="disc">
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case: \(n=1\)</em> When \(n\)=1, there is only one permutation structure: \((1)\text{,}\) which is the disjoint union of one cycle.</p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Assume that for \(k&lt;n\text{,}\) every \(k\)-permutation can be decomposed into the union of disjoint cycles.</p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Prove True for \(n\text{:}\)</em> Consider any \(n\)-permutation \(f \in S_n\text{.}\) Suppose that element \(n\) has order \(r\text{.}\) This means that \[ (n, f(n) , f^2(n), \ldots, f^{r-1}(n)) \] is a cycle in the permutation \(n\text{.}\) Considering  remaining \(n-r\) elements, we know that \(f\) must permute these elements among themselves. In other words, restricting \(f\) to these \(k=n-r\) elements gives a \(k\)-permutation. By strong induction, we can represent this mapping as the union of disjoint cycles. Along with the disjoint \(r\)-cycle containing \(n\text{,}\) we now have a decomposition of the original permutation \(f\text{.}\)</p></li>
-</ul>
+<p>Here are the mappings:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{c|cccccc}
+123 &amp; \\
+132 &amp; 1432 &amp; 4132 \\
+213 &amp; 2143 &amp; 4213 \\
+231 &amp; 2431 &amp; 4231 \\
+312 &amp; 3142 &amp; 4312 \\
+321 &amp; 3214 &amp; 3241 &amp; 3421
+\end{array}
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-19.html#solution-168">in-context</a></span>
+</div>
+<span class="incontext"><a href="exercises-17.html#solution-168">in-context</a></span>
 </body>
 </html>

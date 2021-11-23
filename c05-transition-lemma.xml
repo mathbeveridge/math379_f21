@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="perm-transition-lemma" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>The Transition Lemma</title>
+	<introduction>
+		<p>
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>A Surjection <m>f: A \rightarrow A</m></title>
+			<idx><h>A Surjection <m>f: A \rightarrow A</m></h></idx>
+			<statement>
+				<p>
+Suppose that <m>A</m> is a <em>finite</em> set and that we have a surjection <m>g: A \rightarrow A</m>. Prove that <m>g</m> must be a bijection. (The key is that <m>g</m> maps <m>A</m> to itself!).
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Left-to-Right Maxima</title>
+			<idx><h>Left-to-Right Maxima</h></idx>
+			<statement>
+				<p>
+Let <m>q=q_1q_2 \cdots q_n</m> be an <m>n</m>-permutation written in one-line notation. We say that <m>k</m> is a <em>left-to-right maximum</em> if <m>q_k &gt; q_i</m> for <m>1 \leq i &lt; k</m>. Circle all of the left-to-right maxima in the following permutation. How many are there?
+<me>
+q= 436152897
+</me>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>The Transition Lemma</title>
+			<idx><h>The Transition Lemma</h></idx>
+			<statement>
+				<p>
+Here is the <em>Transition Lemma</em>:
+
+
+			</p><p>
+
+Let <m>f: S_n \rightarrow S_n</m> be the mapping that takes a permutation <m>p</m> in canoncical cycle notation and removes all of the parentheses to create a permutation <m>f(p)</m> in one-line notation. Then the mapping <m>f</m> is a bijection.
+
+			</p><p>
+
+Prove the Transition Lemma. By problem 1, you only need to show that <m>f</m> is <em>surjective.</em> Given a permutation <m>q</m> written in one-line notation, you must find a permutation <m>p</m> written in canonical cycle notation such that <m>f(p)=q</m>. How can you use problem 2 to help in this effort?
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Applications of the Transition Lemma</title>
+			<idx><h>Applications of the Transition Lemma</h></idx>
+			<statement>
+				<p>
+The Transition Lemma is particularly amazing because it can turn an <em>interesting but hard</em> counting problem into a <em>easy or straight-forward</em> counting problem. Here are two examples
+
+			<ol>
+
+				<li>
+					<p>
+ How many <m>n</m>-permutations are there with <m>k</m> left-to-right maxima?
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Pick an  <m>n</m>-permutation at random from <m>S_n</m>. What is the probability that the cycle containing element <m>n</m> has length <m>k</m>? What is the probability that the cycle containing element <m>i</m> has length <m>k</m>?
+
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Average Number of Fixed Points of a Permutation</title>
+			<idx><h>Average Number of Fixed Points of a Permutation</h></idx>
+			<statement>
+				<p>
+A fixed point of a permutation <m>f</m> is an element <m>i</m> such that <m>f(i)=i</m>. Use problem 4(b) to prove that the average number of fixed points of a permutation is 1 by finishing the following proof by strong induction.
+
+
+
+		<ul>
+			<li>
+			<p>
+ <em> Base Case:</em> When <m>n=1</m>, there is exactly one permutation: <m>(1)</m>. This permutation has one fixed point.
+
+
+
+			</p>
+			</li>
+			<li>
+			<p>
+ <em> Inductive Hypothesis:</em> Assume that if <m>1&lt;k&lt;n</m>, then the average number of fixed points in a <m>k</m>-permutation is <m>1</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ <em> Consider <m>n</m>:</em> We consider the set <m>S_n</m> of all <m>n</m>-permutations. Partition <m>S_n</m> into sets <m>A_1, A_2, \ldots, A_n</m> where <m>A_i</m> consists of all permutations where element <m>n</m> is in an <m>i</m>-cycle. <em>Now you must count the average number of fixed points in each of the <m>A_i</m> for the following cases:</em>
+
+
+
+		<ul>
+			<li>
+			<p>
+ Case <m>i=1</m>.
+
+
+			</p>
+			</li>
+			<li>
+			<p>
+ Case <m>2 \leq i \leq n-1</m>.
+
+
+			</p>
+			</li>
+			<li>
+			<p>
+ Case <m>i=n</m>.
+
+
+
+			</p>
+			</li>
+			<li>
+			<p>
+ Now find the average number of fixed points.
+
+
+			</p>
+			</li>
+		</ul>
+
+
+
+
+
+			</p>
+			</li>
+		</ul>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+</chapter>

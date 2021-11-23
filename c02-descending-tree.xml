@@ -18,9 +18,9 @@ A <em>rooted binary plane tree</em> on <m>n</m> vertices starts with a root vert
 
 
 
-			<image width="50%" xml:id="fig-img-perm-descending-tree0">
+			<image width="80%" xml:id="fig-img-perm-descending-tree0">
 				<latex-image>
-\begin{tikzpicture}
+\begin{tikzpicture} %mathbook width=80%
 
 \coordinate(X1) at (0,1);
 
@@ -127,6 +127,135 @@ A <em>rooted binary plane tree</em> on <m>n</m> vertices starts with a root vert
 A <em>decreasing binary tree</em> is a rooted binary plane tree where the vertices are labeled by elements of <m>[n]</m> so that every child has a label that is smaller than its parent. Draw all of the decreasing binary trees for <m>n=1,2,3</m>.
 
 
+<solution>
+<p>
+
+			<image width="80%" xml:id="fig-img-perm-descending-tree1">
+				<latex-image>
+\begin{tikzpicture} %mathbook width=80%
+
+
+\begin{scope}
+
+\node at (0,2) {<m>n=1</m>};
+
+
+
+
+
+\coordinate[label=left:<m>1</m>] (X1) at (0,1);
+
+\draw[fill] (X1) circle (2pt);
+
+
+\node at (0,-2) {<m>1</m>};
+
+\end{scope}
+
+\begin{scope}[shift={(3,0)}]
+
+
+\node at (.5,2) {<m>n=2</m>};
+
+
+\coordinate[label=left:<m>2</m>] (Y11) at (0,1);
+\coordinate[label=left:<m>1</m>] (Y12) at (-.5,0);
+
+\draw[fill] (Y11) circle (2pt);
+\draw[fill] (Y12) circle (2pt);
+\draw (Y11) -- (Y12);
+
+\coordinate[label=left:<m>2</m>] (Y21) at (1,1);
+\coordinate[label=left:<m>1</m>] (Y22) at (1.55,0);
+
+\draw[fill] (Y21) circle (2pt);
+\draw[fill] (Y22) circle (2pt);
+\draw (Y21) -- (Y22);
+
+
+\node at (-0.5,-2) {<m>12</m>};
+\node at (1.25,-2) {<m>21</m>};
+
+
+\end{scope}
+
+\begin{scope}[shift={(8,0)}]
+
+\node at (2.5,2) {<m>n=3</m>};
+
+\node at (-1,-2) {<m>123</m>};
+\node at (.5,-2) {<m>213</m>};
+\node at (2,-2) {<m>312</m>};
+\node at (3.5,-2) {<m>321</m>};
+\node at (5,-2) {<m>132</m>};
+\node at (7,-2) {<m>231</m>};
+
+\coordinate[label=left:<m>3</m>] (Y11) at (0,1);
+\coordinate[label=left:<m>2</m>] (Y12) at (-.5,0);
+\coordinate[label=left:<m>1</m>] (Y13) at (-1,-1);
+
+\draw[fill] (Y11) circle (2pt);
+\draw[fill] (Y12) circle (2pt);
+\draw[fill] (Y13) circle (2pt);
+\draw (Y11) -- (Y12) -- (Y13);
+
+\coordinate[label=left:<m>3</m>] (Y21) at (1,1);
+\coordinate[label=left:<m>2</m>] (Y22) at (.5,0);
+\coordinate[label=left:<m>1</m>] (Y23) at (.75,-1);
+
+\draw[fill] (Y21) circle (2pt);
+\draw[fill] (Y22) circle (2pt);
+\draw[fill] (Y23) circle (2pt);
+\draw (Y21) -- (Y22) -- (Y23);
+
+
+\coordinate[label=left:<m>3</m>] (Y31) at (2,1);
+\coordinate[label=left:<m>2</m>] (Y32) at (2.5,0);
+\coordinate[label=left:<m>1</m>] (Y33) at (2.25,-1);
+
+\draw[fill] (Y31) circle (2pt);
+\draw[fill] (Y32) circle (2pt);
+\draw[fill] (Y33) circle (2pt);
+\draw (Y31) -- (Y32) -- (Y33);
+
+\coordinate[label=left:<m>3</m>] (Y41) at (3,1);
+\coordinate[label=left:<m>2</m>] (Y42) at (3.5,0);
+\coordinate[label=left:<m>1</m>] (Y43) at (3.75,-1);
+
+\draw[fill] (Y41) circle (2pt);
+\draw[fill] (Y42) circle (2pt);
+\draw[fill] (Y43) circle (2pt);
+\draw (Y41) -- (Y42) -- (Y43);
+
+\coordinate[label=left:<m>3</m>] (Y51) at (5,1);
+\coordinate[label=left:<m>1</m>] (Y52) at (4.5,0);
+\coordinate[label=left:<m>2</m>] (Y53) at (5.5,0);
+
+\draw[fill] (Y51) circle (2pt);
+\draw[fill] (Y52) circle (2pt);
+\draw[fill] (Y53) circle (2pt);
+\draw (Y52) -- (Y51) -- (Y53);
+
+\coordinate[label=left:<m>3</m>] (Y61) at (7,1);
+\coordinate[label=left:<m>2</m>] (Y62) at (6.5,0);
+\coordinate[label=left:<m>1</m>] (Y63) at (7.5,0);
+
+\draw[fill] (Y61) circle (2pt);
+\draw[fill] (Y62) circle (2pt);
+\draw[fill] (Y63) circle (2pt);
+\draw (Y62) -- (Y61) -- (Y63);
+
+\end{scope}
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -140,9 +269,9 @@ A <em>decreasing binary tree</em> is a rooted binary plane tree where the vertic
 We give a recursive geometric layout of a decreasing binary tree that reveals this bijection. For a vertex <m>j</m>, let its <em>depth</em> <m>d(j)</m> be the distance of vertex <m>j</m> to the root <m>n</m>. Start by placing the root <m>n</m> at point <m>(0,0)</m>. Suppose that the parent <m>j</m> of vertex <m>i</m> has been placed at <m>(x, -d)</m> where <m>d=d(j)</m> is the depth of <m>j</m>. Place vertex <m>i</m> at <m>(x \pm (1/3)^d, -d-1)</m>.
 Here is an example:
 
-			<image width="50%" xml:id="fig-img-perm-descending-tree1">
+			<image width="80%" xml:id="fig-img-perm-descending-tree2">
 				<latex-image>
-\begin{tikzpicture}[scale=2.5]
+\begin{tikzpicture}[scale=2.5] %mathbook width=80%
 
 \path (0,0) coordinate (X8);
 \path (-1,-.33) coordinate (X7);
@@ -182,6 +311,13 @@ The <m>x</m>-coordinates of the vertices induce an ordering of the labels: that 
 					<p>
  What is the permutation corresponding to the above descending binary tree on 8 vertices?
 
+<solution>
+<p>
+<me>
+72618534
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -189,6 +325,11 @@ The <m>x</m>-coordinates of the vertices induce an ordering of the labels: that 
 					<p>
  Go back to your trees in problem 1 and write down the corresponding permutations.
 
+<solution>
+<p>
+See  the solution to problem 1
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -203,6 +344,88 @@ The <m>x</m>-coordinates of the vertices induce an ordering of the labels: that 
 				<p>
  Given a permutation, can you determine the corresponding decreasing binary tree? Try to draw the descending binary trees for the  permutations <m>38412756</m> and <m>53147268</m>.
 
+<solution>
+<p>
+
+
+
+
+			<image width="80%" xml:id="fig-img-perm-descending-tree3">
+				<latex-image>
+\begin{tikzpicture}[scale=2.5] %mathbook width=80%
+
+\node at (0, .5) {38412756};
+
+\path (0,0) coordinate (X8);
+\path (1,-.33) coordinate (X7);
+\path (1.33,-.66) coordinate (X6);
+\path (1.22,-1) coordinate (X5);
+\path (.66,-.66) coordinate (X4);
+\path (-1,-.33) coordinate (X3);
+\path  (.88,-1)  coordinate(X2);
+\path (.75,-1.33) coordinate (X1);
+
+\foreach \i in {1,2,3,4,5,6,7,8}
+{
+\draw[fill] (X\i) circle (1pt);
+}
+
+\foreach \i in {1,3,5,7,8}
+{
+\node[below] at (X\i) {<m>\i</m>};
+}
+
+\node[right] at (X2) {<m>2</m>};
+\node[right] at (X4) {<m>4</m>};
+\node[right] at (X6) {<m>6</m>};
+
+
+
+\draw (X3) -- (X8) -- (X7);
+\draw (X5) -- (X6) -- (X7) -- (X4) -- (X2) -- (X1);
+
+
+\begin{scope}[shift={(4,0)}]
+
+\node at (-.5, .5) {53147268};
+
+\path (0,0) coordinate (X8);
+\path (-1,-.33) coordinate (X7);
+\path (-.66,-.66) coordinate (X6);
+\path (-1.33,-.66) coordinate (X5);
+\path (-1.10,-1) coordinate (X4);
+\path (-1.2,-1.33) coordinate (X3);
+\path  (-.77,-1)  coordinate(X2);
+\path (-1.15,-1.66) coordinate (X1);
+
+\foreach \i in {1,2,3,4,5,6,7,8}
+{
+\draw[fill] (X\i) circle (1pt);
+}
+
+\foreach \i in {1,2,5,7,8}
+{
+\node[below] at (X\i) {<m>\i</m>};
+}
+
+\node[left] at (X3) {<m>3</m>};
+\node[right] at (X4) {<m>4</m>};
+\node[right] at (X6) {<m>6</m>};
+
+
+
+\draw (X8) -- (X7) -- (X6) -- (X2);
+\draw (X7) -- (X5) -- (X4) -- (X3) -- (X1) ;
+
+\end{scope}
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+</p>
+</solution>
 
 
 				</p>
@@ -220,6 +443,11 @@ The <m>x</m>-coordinates of the vertices induce an ordering of the labels: that 
 					<p>
  Let <m>B_R(n,k)</m> be the number of descending binary trees on <m>n</m> vertices in which <m>k-1</m> vertices have a right child. Prove that <m>B_R(n,k) = A(n,k)</m>. You may assume the mapping in problem 2 is a bijection.
 
+<solution>
+<p>
+We use the bijection described in problem 2. We start with a decreasing binary tree. Suppose that vertex <m>k</m> has a right child. We claim that there is a descent immediately after <m>k</m> in the corresponding permutation.  Indeed, the label of a child is always smaller that the label of the parent. So all of the vertices to the right of vertex <m>k</m> have labels that are smaller than <m>k</m>. In other words, there is a descent immediately after element <m>k</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -227,6 +455,14 @@ The <m>x</m>-coordinates of the vertices induce an ordering of the labels: that 
 					<p>
  Let <m>B_L(n,k)</m> be the number of descending binary trees on <m>n</m> vertices in which <m>k-1</m> vertices have a left child. Prove that <m>B_L(n,k) = A(n,k)</m>. You may assume that part (a)  is true.
 
+<solution>
+<p>
+A decreasing binary tree has <m>k-1</m> left children if and only if it has <m>(n-1)-(k-1)=n-k</m> right children. Using this observation, the previous problem and the mirror symmetry of the Eulerian numbers, we get
+<me>
+B_L(n,k) = B_R(n,n-k+1) = A(n,n-k+1) = A(n,k).
+</me>
+</p>
+</solution>
 
 
 					</p>

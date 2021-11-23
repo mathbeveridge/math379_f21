@@ -2,7 +2,7 @@
 
 
 
-<chapter xml:id="perm-euler-recur" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="perm-cycle-structure" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Cycle Structure of Permutations</title>
 	<introduction>
 		<p>
@@ -38,6 +38,43 @@ In (weak) induction, we relate the size <m>n</m> case to the size <m>n-1</m> cas
 				<p>
 Use strong induction to prove that all <m>n</m>-permutations can be decomposed into a union of disjoint cycles.
 
+<solution>
+<p>
+
+		<ul>
+			<li>
+			<p>
+ <em> Base Case: <m>n=1</m></em>
+
+When <m>n</m>=1, there is only one permutation structure: <m>(1)</m>, which is the disjoint union of one cycle.
+
+			</p>
+			</li>
+			<li>
+			<p>
+ <em> Inductive Step:</em>
+
+Assume that for <m>k&lt;n</m>, every <m>k</m>-permutation can be decomposed into the union of disjoint cycles.
+
+			</p>
+			</li>
+			<li>
+			<p>
+ <em> Prove True for <m>n</m>:</em>
+
+Consider any <m>n</m>-permutation <m>f \in S_n</m>. Suppose that element <m>n</m> has order <m>r</m>. This means that
+\[
+(n, f(n) , f^2(n), \ldots, f^{r-1}(n))
+\]
+is a cycle in the permutation <m>n</m>. Considering  remaining <m>n-r</m> elements, we know that <m>f</m> must permute these elements among themselves. In other words, restricting <m>f</m> to these <m>k=n-r</m> elements gives a <m>k</m>-permutation. By strong induction, we can represent this mapping as the union of disjoint cycles. Along with the disjoint <m>r</m>-cycle containing <m>n</m>, we now have a decomposition of the original permutation <m>f</m>.
+			</p>
+			</li>
+		</ul>
+
+
+
+</p>
+</solution>
 
 
 
@@ -68,6 +105,33 @@ Prove the following identity in two different ways:
  Consider a non-identity permutation <m>p_1p_2 \cdots p_n</m>. Let <m>0 \leq j \leq n-1</m> be the  largest integer such that
 <m>p_1p_2 \cdots p_j = 12 \cdots (j-1)</m>. That is, the first <m>j-1</m> elements map to themselves, but element <m>j</m> does not map to <m>j</m>. Prove that the number of such <m>n</m>-permutations is  <m>(n-j) \cdot (n-j)!</m>.
 
+<solution>
+<p>
+
+Fix <m>j</m> where <m>1 \leq j \leq n</m>. Suppose that <m>p_1p_2 \cdots p_{j-1} = 12 \cdots (j-1)</m>, and <m>p_{j} \neq j.</m>
+		<ul>
+			<li>
+			<p>
+ There is one way to assign <m>p_1 p_2 \cdots p_{j-1} = 12 \cdots (j-1)</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ There are <m>n-j</m> choices for <m>p_{j}</m> (since we have <m>p_{j} \neq j</m> and the first <m>j-1</m> elements have already been taken).
+			</p>
+			</li>
+			<li>
+			<p>
+ There are <m>(n-j)!</m> ways to assign the last <m>n-j</m> entries to the remaining <m>n-j</m> elements.
+			</p>
+			</li>
+		</ul>
+By the product principle, the total number of ways to create the permutation is
+<me>
+1 \cdot (n-j) \cdot (n-j)!
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -76,6 +140,18 @@ Prove the following identity in two different ways:
 					<p>
  The RHS  counts the number of permutations <em>except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!)
 
+<solution>
+<p>
+
+If <m>p=p_1 p_2 \cdots p_n</m> is not the identity permutation, then there is some index <m>j</m> such that <m>p_j \neq j</m>. Note that <m>1 \leq j \leq n-1</m> because the value <m>j=n</m> is impossible (if the first <m>n-1</m> elements map to themselves, then so does the last element,
+
+Partitioning the set of non-identity permutations according to the first such index <m>j</m>, we get
+<me>
+\sum_{j=1}^{n-1} (n-j) \cdot (n-j)! =  \sum_{k=1}^{n-1} k \cdot k!
+</me>
+
+</p>
+</solution>
 
 
 					</p>
@@ -93,6 +169,42 @@ Prove the following identity in two different ways:
 
 
 
+<solution>
+<p>
+
+		<ul>
+			<li>
+			<p>
+ <em> Base Case: <m>n=2</m></em>
+
+The LHS is <m>1 \cdot 1! = 1</m> and the RHS is <m>2!-1=1</m>.
+
+			</p>
+			</li>
+			<li>
+			<p>
+ <em> Inductive Step:</em>
+
+Assume that <m></m>\sum_{k=1}^{n-2} k \cdot k! = (n-1)! - 1.<m></m>
+
+			</p>
+			</li>
+			<li>
+			<p>
+ <em> Prove True for <m>n</m>:</em>
+
+\begin{eqnarray*}
+\sum_{k=1}^{n-1} k \cdot k! &amp;=&amp; (n-1) \cdot (n-1)! + \sum_{k=1}^{n-2} k \cdot k! \\
+&amp;=&amp; (n-1) \cdot (n-1)! +  (n-1)! - 1 \mbox{ by the inductive assumption} \\
+&amp;=&amp; n! -1.
+\end{eqnarray*}
+
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
 
 
 					</p>
