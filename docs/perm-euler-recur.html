@@ -164,7 +164,9 @@ A(n,k) &amp;=&amp; \mbox{# } \,  n \mbox{-permutations with } k \mbox{ascending 
 </div></section><section class="exercises" id="exercises-17"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-77"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Number Recurrence.</span>
+</h6>
 <p id="p-651">In this problem you will prove the recurrence</p>
 <div class="displaymath">
 \begin{equation*}
@@ -243,7 +245,9 @@ A(4,3) = 3 A(3,3) + 2 A(3,2).
 <p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) <em class="emphasis">Pro Tip #3:</em> Remember that you are starting with \(p' \in  \cA(n-1,k-1)\text{,}\) so there are \(n-2\) total ascents/descents. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-180" id="solution-180"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-180"><div class="solution solution-like"><p id="p-681">We can insert element \(n\) in \(1 + (n-2) - (k-2) = 1 + n - k = n-k+1\) places.</p></div></div></p>
 </li>
 <li id="li-355"><p id="p-682">Put together your answers from parts (d) and (e) to prove that \(\)A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).\(\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-181" id="solution-181"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-181"><div class="solution solution-like"><p id="p-683">When we remove element \(n\) from \(p \in \cA(n,k)\text{,}\) we either obtain an element of \(\cA(n-1,k)\) or \(\cA(n-1,k-1).\) By part (d), we obtain each \(p' \in \cA(n-1,k)\) exactly \(k\) times. By part (e), we obtain each \(p' \in \cA(n-1,k-1)\) exactly \(n-k+1\) times. This proves the recurrence.</p></div></div></p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+</ol></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Symmetry of Eulerian Numbers.</span>
+</h6>
 <p id="p-684">In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:</p>
 <div class="displaymath">
 \begin{equation*}

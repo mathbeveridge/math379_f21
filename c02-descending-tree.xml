@@ -18,9 +18,9 @@ A <em>rooted binary plane tree</em> on <m>n</m> vertices starts with a root vert
 
 
 
-			<image width="80%" xml:id="fig-img-perm-descending-tree0">
+			<image width="90%" xml:id="fig-img-perm-descending-tree0">
 				<latex-image>
-\begin{tikzpicture} %mathbook width=80%
+\begin{tikzpicture} %mathbook width=90%
 
 \coordinate(X1) at (0,1);
 
@@ -130,9 +130,9 @@ A <em>decreasing binary tree</em> is a rooted binary plane tree where the vertic
 <solution>
 <p>
 
-			<image width="80%" xml:id="fig-img-perm-descending-tree1">
+			<image width="90%" xml:id="fig-img-perm-descending-tree1">
 				<latex-image>
-\begin{tikzpicture} %mathbook width=80%
+\begin{tikzpicture} %mathbook width=90%
 
 
 \begin{scope}
@@ -269,9 +269,9 @@ A <em>decreasing binary tree</em> is a rooted binary plane tree where the vertic
 We give a recursive geometric layout of a decreasing binary tree that reveals this bijection. For a vertex <m>j</m>, let its <em>depth</em> <m>d(j)</m> be the distance of vertex <m>j</m> to the root <m>n</m>. Start by placing the root <m>n</m> at point <m>(0,0)</m>. Suppose that the parent <m>j</m> of vertex <m>i</m> has been placed at <m>(x, -d)</m> where <m>d=d(j)</m> is the depth of <m>j</m>. Place vertex <m>i</m> at <m>(x \pm (1/3)^d, -d-1)</m>.
 Here is an example:
 
-			<image width="80%" xml:id="fig-img-perm-descending-tree2">
+			<image width="50%" xml:id="fig-img-perm-descending-tree2">
 				<latex-image>
-\begin{tikzpicture}[scale=2.5] %mathbook width=80%
+\begin{tikzpicture}[scale=2.5] %mathbook width=50%
 
 \path (0,0) coordinate (X8);
 \path (-1,-.33) coordinate (X7);
@@ -282,14 +282,14 @@ Here is an example:
 \path  (-.77,-1)  coordinate(X2);
 \path (-.55,-1) coordinate (X1);
 
-\foreach \i in {1,2,3,4,5,6,7,8}
+\foreach \j in {1,2,3,4,5,6,7,8}
 {
-\draw[fill] (X\i) circle (1pt);
+\draw[fill] (X\j) circle (1pt);
 }
 
-\foreach \i in {1,2,3,5,7,8}
+\foreach \j in {1,2,3,5,7,8}
 {
-\node[below] at (X\i) {<m>\i</m>};
+\node[below] at (X\j) {<m>\j</m>};
 }
 
 \node[right] at (X4) {<m>4</m>};
@@ -365,14 +365,14 @@ See  the solution to problem 1
 \path  (.88,-1)  coordinate(X2);
 \path (.75,-1.33) coordinate (X1);
 
-\foreach \i in {1,2,3,4,5,6,7,8}
+\foreach \j in {1,2,3,4,5,6,7,8}
 {
-\draw[fill] (X\i) circle (1pt);
+\draw[fill] (X\j) circle (1pt);
 }
 
-\foreach \i in {1,3,5,7,8}
+\foreach \j in {1,3,5,7,8}
 {
-\node[below] at (X\i) {<m>\i</m>};
+\node[below] at (X\j) {<m>\j</m>};
 }
 
 \node[right] at (X2) {<m>2</m>};
@@ -398,14 +398,14 @@ See  the solution to problem 1
 \path  (-.77,-1)  coordinate(X2);
 \path (-1.15,-1.66) coordinate (X1);
 
-\foreach \i in {1,2,3,4,5,6,7,8}
+\foreach \j in {1,2,3,4,5,6,7,8}
 {
-\draw[fill] (X\i) circle (1pt);
+\draw[fill] (X\j) circle (1pt);
 }
 
-\foreach \i in {1,2,5,7,8}
+\foreach \j in {1,2,5,7,8}
 {
-\node[below] at (X\i) {<m>\i</m>};
+\node[below] at (X\j) {<m>\j</m>};
 }
 
 \node[left] at (X3) {<m>3</m>};

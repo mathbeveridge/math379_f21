@@ -29,9 +29,11 @@ A(n,k) &amp;=&amp; \mbox{# } \,  n \mbox{-permutations with } k \mbox{ascending 
 	<exercises>
 		<title>Practice Problems</title>
 		<exercise>
+			<title>Eulerian Number Recurrence</title>
+			<idx><h>Eulerian Number Recurrence</h></idx>
 			<statement>
 				<p>
- In this problem you will prove the recurrence
+In this problem you will prove the recurrence
 <me>
 A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1)
 </me>
@@ -265,9 +267,11 @@ When we remove element <m>n</m> from <m>p \in \cA(n,k)</m>, we either obtain an 
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Symmetry of Eulerian Numbers</title>
+			<idx><h>Symmetry of Eulerian Numbers</h></idx>
 			<statement>
 				<p>
- In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:
+In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:
 <me>
 A(n,k) = A(n, n-k+1).
 </me>
