@@ -127,7 +127,14 @@ c(n) =  \Big( c(n-1) + (n-1)!  \Big)+ (n-1) \cdot c(n-1) = n \cdot c(n-1) + (n-1
 as claimed at the start of the problem.
 
 
-\item[5.]  \myname{The main result}
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>The main result</title>
+			<idx><h>The main result</h></idx>
+			<statement>
+				<p>
 Starting with the formula in problem 1(b) and the recurrence in problem 2, prove that
 <me>
 A(n) = \sum_{i=1}^n \frac{1}{i}.
