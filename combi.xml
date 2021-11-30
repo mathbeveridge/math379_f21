@@ -93,6 +93,11 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c05-transition-lemma.xml" />  
     </part>
 
+    <part xml:id="part-graph">
+        <title>Graphs</title> 
+            <xi:include href="./d01-graph-automorphism.xml" /> 
+  
+    </part>
 
     </book>
 

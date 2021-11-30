@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+
+<chapter xml:id="perm-transition-lemma" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Graph Automorphisms and Graph Labelings</title>
+	<introduction>
+		<p>
+
+
+
+
+
+For each graph <m>G</m>, determine either
+
+			</p><p>
+
+<m>\bullet \,\,\, |\mathrm{Aut}(G)|</m>, the number of the automorphisms of <m>G</m>, or
+
+			</p><p>
+
+<m>\bullet \,\,\, \ell(G)</m>, the number of distinct labelings of <m>G</m>.
+
+			</p><p>
+
+Explain how you found this number. Once you have determined one of these numbers, you can find the other using the formula
+<me>
+|\mathrm{Aut}(G)| \cdot \ell(G) = n!
+</me>
+where <m>n = |V(G)|</m>.
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<statement>
+				<p>
+ The complete graph <m>K_n</m>, which contains <m>n</m> vertices with all possible edges.
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ The cycle <m>C_n</m>, consisting of a circle of <m>n</m> vertices, each connected to its two nearest neighbors.
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ The wheel <m>W_n</m>, consisting of a circle of <m>n-1</m> vertices, each connected to its two nearest neighbors, along with an <m>n</m>th hub vertex, which is connected to all other vertices.
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ The path <m>P_n</m>, which contains <m>n</m> vertices connected in a line
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ The complete bipartite graph <m>K_{m,n}</m>, where <m>m \neq n</m>, consisting of a set <m>U</m> of <m>m</m> vertices and a set <m>W</m> of <m>n</m> vertices, with edges between every pair <m>u \in U</m> and <m>v \in V</m>.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ The star <m>S_n</m>, consisting of a central vertex connected to <m>n-1</m> leaf vertices.
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+</chapter>
