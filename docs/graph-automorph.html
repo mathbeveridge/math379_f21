@@ -156,10 +156,10 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="graph-automorph"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">23</span> <span class="title">Graph Automorphisms and Graph Labelings</span>
 </h2>
-<section class="introduction" id="introduction-23"><p id="p-763">For each graph \(G\text{,}\) determine either</p>
-<p id="p-764">\(\bullet \,\,\, |\mathrm{Aut}(G)|\text{,}\) the number of the automorphisms of \(G\text{,}\) or</p>
-<p id="p-765">\(\bullet \,\,\, \ell(G)\text{,}\) the number of distinct labelings of \(G\text{.}\)</p>
-<p id="p-766">Explain how you found this number. Once you have determined one of these numbers, you can find the other using the formula</p>
+<section class="introduction" id="introduction-23"><p id="p-773">For each graph \(G\text{,}\) determine either</p>
+<p id="p-774">\(\bullet \,\,\, |\mathrm{Aut}(G)|\text{,}\) the number of the automorphisms of \(G\text{,}\) or</p>
+<p id="p-775">\(\bullet \,\,\, \ell(G)\text{,}\) the number of distinct labelings of \(G\text{.}\)</p>
+<p id="p-776">Explain how you found this number. Once you have determined one of these numbers, you can find the other using the formula</p>
 <div class="displaymath">
 \begin{equation*}
 |\mathrm{Aut}(G)| \cdot \ell(G) = n!
@@ -169,12 +169,78 @@
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-94"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-767">The complete graph \(K_n\text{,}\) which contains \(n\) vertices with all possible edges.</p></article><article class="exercise exercise-like" id="exercise-95"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-768">The cycle \(C_n\text{,}\) consisting of a circle of \(n\) vertices, each connected to its two nearest neighbors.</p></article><article class="exercise exercise-like" id="exercise-96"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-769">The wheel \(W_n\text{,}\) consisting of a circle of \(n-1\) vertices, each connected to its two nearest neighbors, along with an \(n\)th hub vertex, which is connected to all other vertices.</p></article><article class="exercise exercise-like" id="exercise-97"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-770">The path \(P_n\text{,}\) which contains \(n\) vertices connected in a line</p></article><article class="exercise exercise-like" id="exercise-98"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-771">The complete bipartite graph \(K_{m,n}\text{,}\) where \(m \neq n\text{,}\) consisting of a set \(U\) of \(m\) vertices and a set \(W\) of \(n\) vertices, with edges between every pair \(u \in U\) and \(v \in V\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-99"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-772">The star \(S_n\text{,}\) consisting of a central vertex connected to \(n-1\) leaf vertices.</p></article></section></section></div></main>
+<p id="p-777">The complete graph \(K_n\text{,}\) which contains \(n\) vertices with all possible edges. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-202" id="solution-202"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-202"><div class="solution solution-like">
+<div class="displaymath" id="p-778">
+\begin{equation*}
+\begin{array}{rcl}
+|\mathrm{Aut}(K_n)| &amp;=&amp; n! \\
+\ell(K_n)&amp;=&amp; 1 \\
+|\mathrm{Aut}(K_n)| \cdot \ell(K_n)&amp;=&amp; n!
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">We explain why \(\ell(K_n)=1\text{.}\) All labelings of \(K_n\) are the same: every vertex is the same as every other vertex.</p>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-95"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-779">The cycle \(C_n\text{,}\) consisting of a circle of \(n\) vertices, each connected to its two nearest neighbors. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-203" id="solution-203"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-203"><div class="solution solution-like">
+<div class="displaymath" id="p-780">
+\begin{equation*}
+\begin{array}{rcl}
+|\mathrm{Aut}(C_n)| &amp;=&amp; 2n \\
+\ell(C_n)&amp;=&amp;\frac{(n-1)!}{2} \\
+|\mathrm{Aut}(C_n)| \cdot \ell(C_n)&amp;=&amp;n!
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">We explain why \(\mathrm{Aut}(C_n)=2n\text{.}\) The cycle has a rotational symmetry of order \(n\text{.}\) We can also reverse the order of these labels (from clockwise to counterclockwise). This doubles the number of equivalent labels, for a total of \(2n\text{.}\)</p>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-96"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-781">The wheel \(W_n\text{,}\) consisting of a circle of \(n-1\) vertices, each connected to its two nearest neighbors, along with an \(n\)th hub vertex, which is connected to all other vertices. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-204" id="solution-204"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-204"><div class="solution solution-like">
+<div class="displaymath" id="p-782">
+\begin{equation*}
+\begin{array}{rcl}
+|\mathrm{Aut}(W_n)| &amp;=&amp;  \displaystyle{2(n-1)} \\
+\ell(W_n)&amp;=&amp;  \frac{n!}{2(n-1)} = n \cdot \frac{(n-2)!}{2} \\
+|\mathrm{Aut}(W_n)| \cdot \ell(W_n)&amp;=&amp; n!
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">We explain why \(\ell(W_n)=n \cdot \frac{(n-2)!}{2}\text{.}\) First, we label the hub vertex, which can be done in \(n\) ways. Next, we label the remaining \(n-1\) vertices along the rim of the wheel using the other \(n-1\) elements. By the previous problem, the number of ways to do that is \(\frac{(n-2)!}{2}\text{.}\) By the product principle, the total number of ways to label is \(n \cdot \frac{(n-2)!}{2}\text{.}\)</p>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-97"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-783">The path \(P_n\text{,}\) which contains \(n\) vertices connected in a line <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-205" id="solution-205"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-205"><div class="solution solution-like">
+<div class="displaymath" id="p-784">
+\begin{equation*}
+\begin{array}{rcl}
+|\mathrm{Aut}(P_n)| &amp;=&amp;  2 \\
+\ell(P_n)&amp;=&amp;  \frac{n!}{2} \\
+|\mathrm{Aut}(P_n)| \cdot \ell(P_n)&amp;=&amp;n!
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">We explain why \(|\mathrm{Aut}(P_n)|=2\text{.}\) There is only one non-trivial symmetry for the path: a mirror symmetry about its center.</p>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-98"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-785">The complete bipartite graph \(K_{m,n}\text{,}\) where \(m \neq n\text{,}\) consisting of a set \(U\) of \(m\) vertices and a set \(W\) of \(n\) vertices, with edges between every pair \(u \in U\) and \(v \in V\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-206" id="solution-206"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-206"><div class="solution solution-like">
+<div class="displaymath" id="p-786">
+\begin{equation*}
+\begin{array}{rcl}
+|\mathrm{Aut}(K_{n,m})| &amp;=&amp;  n! \, m! \\
+\ell(K_{n,m}) &amp;=&amp; { n+m \choose n} = \frac{(n+m)!}{n! \, m!} \\
+|\mathrm{Aut}(K_{n,m})| \cdot \ell(K_{n,m}) &amp;=&amp; (n+m)!
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">We explain why \(|\mathrm{Aut}(K_{n,m})|=n! \, m!\text{.}\) Permuting the labels of \(U\) does not change the actual label of the graph. Likewise, permuting the labels of \(W\) doesn't change the graph labeling. By the product principle, the number of automorphisms is \(n! \, m!\text{.}\)</p>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-99"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-787">The star \(S_n\text{,}\) consisting of a central vertex connected to \(n-1\) leaf vertices. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-207" id="solution-207"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-207"><div class="solution solution-like">
+<div class="displaymath" id="p-788">
+\begin{equation*}
+\begin{array}{rcl}
+|\mathrm{Aut}(S_n)| &amp;=&amp;  (n-1)! \\
+\ell(S_n)&amp;=&amp;n \\
+|\mathrm{Aut}(S_n)| \cdot \ell(S_n) &amp;=&amp; n!
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">We explain why \(\ell(S_n)=n\text{.}\) First, we pick a label for the central node, which can be done in \(n\) ways. The remaining labels do not matter.</p>
+</div></div></p></article></section></section></div></main>
 </div>
 </body>
 </html>

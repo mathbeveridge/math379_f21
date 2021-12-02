@@ -12,22 +12,8 @@
 </head>
 <body>
 <article class="li"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">26.2.a</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">26.1.c</span><span class="period">.</span>
 </h6>
-<p>Rewrite this equation as</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-n c_n = n 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \,  k \, c_k \, 2^{{n-k \choose 2} }.
-\end{equation*}
-</div>
-<p class="continuation">We define a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">singly rooted graph</em> to be a labeled graph with a single special vertex called the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">root</em>. (Note that a singly rooted graph does not have to be connected. In this case, there still is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">only one special root vertex</em>.) Explain why each side counts the number of ways to create a  <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">connected, singly rooted graph</em> on \([n]\text{.}\)</p>
-<p>LHS: Pick a connected graph on \(n\) vertices and then pick a root. The total number of ways to do this is \(c_n \cdot n\text{.}\) RHS: The \(n 2^{n \choose s}\) term picks any simple graph and the specifies the single root vertex for the whole graph (regardless of the number of components. Now we must correct for this by subtracting off the number of such singly rooted graphs with multiple components. Fixing \(k\text{,}\) let's count the number of singly rooted graphs where the root is in a component of size \(k\text{.}\)</p>
-<ul class="disc">
-<li><p>\({n \choose k}\text{:}\) choose the \(k\) vertices</p></li>
-<li><p>\(c_k\text{:}\) choose a connected graph on these \(k\) vertices</p></li>
-<li><p>\(k\text{:}\) choose the root of this component of size k</p></li>
-<li><p>\(2^{{n-k \choose 2}}\text{:}\) choose any graph on the remaining \(n-k\) vertices.</p></li>
-</ul>
-<p class="continuation">If we sum over \(1 \leq k \leq n-1\) and subtract this from \(n 2^{n \choose s}\text{,}\) then we get the number of singly rooted connected graphs.</p></article><span class="incontext"><a href="exercises-25.html#li-413">in-context</a></span>
+<p>A collection of trees is called a forest. A collection of cycles is called a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">road race</em>. Let \(R(x)\) be the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> for the number of (labeled) road races. Find the formula for \(R(x)\) and justify your answer.</p></article><span class="incontext"><a href="exercises-25.html#li-413">in-context</a></span>
 </body>
 </html>

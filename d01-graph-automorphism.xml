@@ -42,6 +42,26 @@ where <m>n = |V(G)|</m>.
  The complete graph <m>K_n</m>, which contains <m>n</m> vertices with all possible edges.
 
 
+<solution>
+<p>
+
+
+<me>
+\begin{array}{rcl}
+|\mathrm{Aut}(K_n)| &amp;=&amp; n! \\
+\ell(K_n)&amp;=&amp; 1 \\
+|\mathrm{Aut}(K_n)| \cdot \ell(K_n)&amp;=&amp; n!
+\end{array}
+</me>
+
+
+
+
+
+We explain why <m>\ell(K_n)=1</m>. All labelings of <m>K_n</m> are the same: every vertex is the same as every other vertex.
+
+</p>
+</solution>
 
 
 				</p>
@@ -54,6 +74,27 @@ where <m>n = |V(G)|</m>.
 
 
 
+<solution>
+<p>
+
+
+<me>
+\begin{array}{rcl}
+|\mathrm{Aut}(C_n)| &amp;=&amp; 2n \\
+\ell(C_n)&amp;=&amp;\frac{(n-1)!}{2} \\
+|\mathrm{Aut}(C_n)| \cdot \ell(C_n)&amp;=&amp;n!
+\end{array}
+</me>
+
+
+
+
+We explain why <m>\mathrm{Aut}(C_n)=2n</m>. The cycle has a rotational symmetry of order <m>n</m>. We can also reverse the order of these labels (from clockwise to counterclockwise). This doubles the number of equivalent labels, for a total of <m>2n</m>.
+
+
+
+</p>
+</solution>
 
 
 
@@ -66,6 +107,29 @@ where <m>n = |V(G)|</m>.
  The wheel <m>W_n</m>, consisting of a circle of <m>n-1</m> vertices, each connected to its two nearest neighbors, along with an <m>n</m>th hub vertex, which is connected to all other vertices.
 
 
+<solution>
+<p>
+
+<me>
+\begin{array}{rcl}
+|\mathrm{Aut}(W_n)| &amp;=&amp;  \displaystyle{2(n-1)} \\
+\ell(W_n)&amp;=&amp;  \frac{n!}{2(n-1)} = n \cdot \frac{(n-2)!}{2} \\
+|\mathrm{Aut}(W_n)| \cdot \ell(W_n)&amp;=&amp; n!
+\end{array}
+</me>
+
+
+
+
+
+We explain why <m>\ell(W_n)=n \cdot \frac{(n-2)!}{2}</m>.
+First, we label the hub vertex, which can be done in <m>n</m> ways. Next, we label the remaining <m>n-1</m> vertices along the rim of the wheel using the other <m>n-1</m> elements. By the previous problem, the
+number of ways to do that is <m>\frac{(n-2)!}{2}</m>.
+By the product principle, the total number of ways to label is <m>n \cdot \frac{(n-2)!}{2}</m>.
+
+
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -76,6 +140,25 @@ where <m>n = |V(G)|</m>.
  The path <m>P_n</m>, which contains <m>n</m> vertices connected in a line
 
 
+<solution>
+<p>
+
+
+<me>
+\begin{array}{rcl}
+|\mathrm{Aut}(P_n)| &amp;=&amp;  2 \\
+\ell(P_n)&amp;=&amp;  \frac{n!}{2} \\
+|\mathrm{Aut}(P_n)| \cdot \ell(P_n)&amp;=&amp;n!
+\end{array}
+</me>
+
+
+
+
+We explain why <m>|\mathrm{Aut}(P_n)|=2</m>. There is only one non-trivial symmetry for the path: a mirror symmetry about its center.
+
+</p>
+</solution>
 
 
 
@@ -87,6 +170,22 @@ where <m>n = |V(G)|</m>.
 				<p>
  The complete bipartite graph <m>K_{m,n}</m>, where <m>m \neq n</m>, consisting of a set <m>U</m> of <m>m</m> vertices and a set <m>W</m> of <m>n</m> vertices, with edges between every pair <m>u \in U</m> and <m>v \in V</m>.
 
+<solution>
+<p>
+
+<me>
+\begin{array}{rcl}
+|\mathrm{Aut}(K_{n,m})| &amp;=&amp;  n! \, m! \\
+\ell(K_{n,m}) &amp;=&amp; { n+m \choose n} = \frac{(n+m)!}{n! \, m!} \\
+|\mathrm{Aut}(K_{n,m})| \cdot \ell(K_{n,m}) &amp;=&amp; (n+m)!
+\end{array}
+</me>
+
+
+We explain why <m>|\mathrm{Aut}(K_{n,m})|=n! \, m!</m>. Permuting the labels of <m>U</m> does not change the actual label of the graph. Likewise, permuting the labels of <m>W</m> doesn't change the graph labeling. By the product principle, the number of automorphisms is <m>n! \, m!</m>.
+
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -96,6 +195,22 @@ where <m>n = |V(G)|</m>.
 				<p>
  The star <m>S_n</m>, consisting of a central vertex connected to <m>n-1</m> leaf vertices.
 
+<solution>
+<p>
+
+<me>
+\begin{array}{rcl}
+|\mathrm{Aut}(S_n)| &amp;=&amp;  (n-1)! \\
+\ell(S_n)&amp;=&amp;n \\
+|\mathrm{Aut}(S_n)| \cdot \ell(S_n) &amp;=&amp; n!
+\end{array}
+</me>
+
+
+We explain why <m>\ell(S_n)=n</m>. First, we pick a label for the central node, which can be done in <m>n</m> ways. The remaining labels do not matter.
+
+</p>
+</solution>
 
 				</p>
 			</statement>
