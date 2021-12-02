@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Combi Counting Trees and Forests</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\( \newcommand{\identity}{\mathrm{id}}
+ \newcommand{\notdivide}{{\not{\mid}}}
+ \newcommand{\notsubset}{\not\subset}
+ \newcommand{\lcm}{\operatorname{lcm}}
+ \newcommand{\gf}{\operatorname{GF}}
+ \newcommand{\inn}{\operatorname{Inn}}
+ \newcommand{\aut}{\operatorname{Aut}}
+ \newcommand{\Hom}{\operatorname{Hom}}
+ \newcommand{\cis}{\operatorname{cis}}
+ \newcommand{\chr}{\operatorname{char}}
+ \newcommand{\Null}{\operatorname{Null}}
+
+
+ \def\Z{\mathbb Z}
+ \def\R{\mathbb R}
+ \def\Q{\mathbb Q}
+ \def\N{{\mathbb N}}
+ \def\C{\mathbb C}
+
+ \def\ba{{\mathbf{a}}}
+ \def\bb{\mathbf{b}}
+ \def\bh{{\mathbf{h}}}
+ \def\bu{{\mathbf{u}}}
+ \def\bv{{\mathbf{v}}}
+ \def\bw{{\mathbf{w}}}   
+ \def\bx{{\mathbf{x}}}
+ \def\by{\mathbf{y}}    
+ \def\bone{{\mathbf{1}}}
+ \def\bzero{\mathbf{0}}
+
+ \def\var{{\mbox{var}}}
+ \def\P{{\mathbb{P}}}
+ \def\E{{\mathbb{E}}}
+
+ \def\cA{{\mathcal{A}}}
+ \def\cB{{\mathcal{B}}}
+ \def\cC{{\mathcal{C}}}
+ \def\cP{\mathcal P}
+ \def\cE{\mathcal E}
+ \def\cO{\mathcal O}
+
+
+
+
+ \def\kin{k^{\mathrm{in}}}
+ \def\kout{k^{\mathrm{out}}}
+
+ \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+ \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+ \tikzset{-&gt;-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="combi.html"><span class="title">Enumerative Combinatorics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="graph-cayley.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-graph.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="graph-genfun.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="graph-cayley.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-graph.html" title="Up">Up</a><a class="next-button button toolbar-item" href="graph-genfun.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-counting.html" data-scroll="part-counting"><span class="codenumber">I</span> <span class="title">Counting</span></a></li>
+<li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
+<li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="bijective-proof.html" data-scroll="bijective-proof"><span class="codenumber">4</span> <span class="title">Bijective Proof</span></a></li>
+<li class="link"><a href="comb-proof.html" data-scroll="comb-proof"><span class="codenumber">5</span> <span class="title">Combinatorial Proof</span></a></li>
+<li class="link"><a href="compositions.html" data-scroll="compositions"><span class="codenumber">6</span> <span class="title">Compositions of Integers</span></a></li>
+<li class="link"><a href="set-partition.html" data-scroll="set-partition"><span class="codenumber">7</span> <span class="title">Set Partitions</span></a></li>
+<li class="link"><a href="int-partition.html" data-scroll="int-partition"><span class="codenumber">8</span> <span class="title">Integer Partitions</span></a></li>
+<li class="link"><a href="inclusion-exclusion.html" data-scroll="inclusion-exclusion"><span class="codenumber">9</span> <span class="title">Inclusion/Exclusion</span></a></li>
+<li class="link"><a href="catalan.html" data-scroll="catalan"><span class="codenumber">10</span> <span class="title">Catalan Numbers</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">11</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
+<li class="link"><a href="bestiarum.html" data-scroll="bestiarum"><span class="codenumber">12</span> <span class="title">Bestiarum Generandi</span></a></li>
+<li class="link"><a href="genfun.html" data-scroll="genfun"><span class="codenumber">13</span> <span class="title">Generating Function Introduction</span></a></li>
+<li class="link"><a href="genfun-intcomps.html" data-scroll="genfun-intcomps"><span class="codenumber">14</span> <span class="title">Generating Functions for Integer Compositions</span></a></li>
+<li class="link"><a href="genfun-product.html" data-scroll="genfun-product"><span class="codenumber">15</span> <span class="title">Products of  Generating Functions II</span></a></li>
+<li class="link"><a href="genfun-comp.html" data-scroll="genfun-comp"><span class="codenumber">16</span> <span class="title">Compositions of Generating Functions</span></a></li>
+<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">17</span> <span class="title">Generating Function Exercises</span></a></li>
+<li class="link part"><a href="part-perm.html" data-scroll="part-perm"><span class="codenumber">III</span> <span class="title">Permutations</span></a></li>
+<li class="link"><a href="perm-euler-recur.html" data-scroll="perm-euler-recur"><span class="codenumber">18</span> <span class="title">Recurrences for Eulerian Numbers</span></a></li>
+<li class="link"><a href="perm-descending-tree.html" data-scroll="perm-descending-tree"><span class="codenumber">19</span> <span class="title">Descending Binary Trees</span></a></li>
+<li class="link"><a href="perm-cycle-structure.html" data-scroll="perm-cycle-structure"><span class="codenumber">20</span> <span class="title">Cycle Structure of Permutations</span></a></li>
+<li class="link"><a href="perm-num-cycles.html" data-scroll="perm-num-cycles"><span class="codenumber">21</span> <span class="title">Average Number of Cycles in a Permutation</span></a></li>
+<li class="link"><a href="perm-transition-lemma.html" data-scroll="perm-transition-lemma"><span class="codenumber">22</span> <span class="title">The Transition Lemma</span></a></li>
+<li class="link part"><a href="part-graph.html" data-scroll="part-graph"><span class="codenumber">IV</span> <span class="title">Graphs</span></a></li>
+<li class="link"><a href="graph-automorph.html" data-scroll="graph-automorph"><span class="codenumber">23</span> <span class="title">Graph Automorphisms and Graph Labelings</span></a></li>
+<li class="link"><a href="graph-cayley.html" data-scroll="graph-cayley"><span class="codenumber">24</span> <span class="title">Cayley's Theorem</span></a></li>
+<li class="link active"><a href="graph-forest.html" data-scroll="graph-forest"><span class="codenumber">25</span> <span class="title">Counting Trees and Forests</span></a></li>
+<li class="link"><a href="graph-genfun.html" data-scroll="graph-genfun"><span class="codenumber">26</span> <span class="title">Graphs and Generating Functions</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="graph-forest"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">25</span> <span class="title">Counting Trees and Forests</span>
+</h2>
+<section class="introduction" id="introduction-25"><p id="p-787"></p></section><section class="exercises" id="exercises-24"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-105"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-788">Let \(T(n,k)\) be the number of labeled forests on \([n]\) with \(k\) components such that the vertices in \([k]\) are all in different tree components.</p>
+<ol class="lower-alpha">
+<li id="li-402"><p id="p-789">Show that \(T(4,2)=8\) by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees.</p></li>
+<li id="li-403">
+<p id="p-790">Prove the recurrence relation</p>
+<div class="displaymath">
+\begin{equation*}
+T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1 \leq k \leq n
+\end{equation*}
+</div>
+<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.)</p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-106"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-791">We obtain the <em class="emphasis">ordered degree sequence</em> of a graph by arranging the degrees in non-increasing order (from largest to smallest). In this problem, you will find the number of possible ordered degree sequences for a tree.</p>
+<ol class="lower-alpha">
+<li id="li-404">
+<p id="p-792">Let  \(d_1 \geq d_2 \geq \cdots \geq d_n\) be an ordered degree sequence of a tree.</p>
+<ol class="lower-roman">
+<li id="li-405"><p id="p-793">Prove that \(\sum_{i=0}^{n-1} d_i = 2n-2\text{.}\)</p></li>
+<li id="li-406"><p id="p-794">Prove that \(d_{n-2} = d_{n-1}= 1\) by contradiction. That is, prove that if one of these numbers is greater than 1, then part (i) does not hold.</p></li>
+</ol>
+</li>
+<li id="li-407"><p id="p-795">We can use induction on \(n \geq 2\) to prove that if (i) and (ii) hold, then there is a tree with the given ordered degree sequence. The statement is true for \(n=2\text{,}\) and we assume it is true for all such sequences of length \(n-1\text{.}\) Consider a sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\) satisfying (i) and (ii). Find the last \(d_i &gt; 1\text{.}\) Remove \(d_n\) from the sequence and replace \(d_i\) with \(d_i-1\text{.}\) Explain why (i) and (ii) hold for the resulting sequence of length \(n-1\text{.}\) Use this fact to create a tree with degree sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\text{.}\)</p></li>
+<li id="li-408">
+<p id="p-796">Given our characterization (i) and (ii) for ordered degree sequences for trees, how many are there?</p>
+<p id="p-797">We give three different formulas, all equivalent.</p>
+</li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Combi Graphs and Generating Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\( \newcommand{\identity}{\mathrm{id}}
+ \newcommand{\notdivide}{{\not{\mid}}}
+ \newcommand{\notsubset}{\not\subset}
+ \newcommand{\lcm}{\operatorname{lcm}}
+ \newcommand{\gf}{\operatorname{GF}}
+ \newcommand{\inn}{\operatorname{Inn}}
+ \newcommand{\aut}{\operatorname{Aut}}
+ \newcommand{\Hom}{\operatorname{Hom}}
+ \newcommand{\cis}{\operatorname{cis}}
+ \newcommand{\chr}{\operatorname{char}}
+ \newcommand{\Null}{\operatorname{Null}}
+
+
+ \def\Z{\mathbb Z}
+ \def\R{\mathbb R}
+ \def\Q{\mathbb Q}
+ \def\N{{\mathbb N}}
+ \def\C{\mathbb C}
+
+ \def\ba{{\mathbf{a}}}
+ \def\bb{\mathbf{b}}
+ \def\bh{{\mathbf{h}}}
+ \def\bu{{\mathbf{u}}}
+ \def\bv{{\mathbf{v}}}
+ \def\bw{{\mathbf{w}}}   
+ \def\bx{{\mathbf{x}}}
+ \def\by{\mathbf{y}}    
+ \def\bone{{\mathbf{1}}}
+ \def\bzero{\mathbf{0}}
+
+ \def\var{{\mbox{var}}}
+ \def\P{{\mathbb{P}}}
+ \def\E{{\mathbb{E}}}
+
+ \def\cA{{\mathcal{A}}}
+ \def\cB{{\mathcal{B}}}
+ \def\cC{{\mathcal{C}}}
+ \def\cP{\mathcal P}
+ \def\cE{\mathcal E}
+ \def\cO{\mathcal O}
+
+
+
+
+ \def\kin{k^{\mathrm{in}}}
+ \def\kout{k^{\mathrm{out}}}
+
+ \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+ \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+ \tikzset{-&gt;-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="combi.html"><span class="title">Enumerative Combinatorics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="graph-forest.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-graph.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="graph-forest.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-graph.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-counting.html" data-scroll="part-counting"><span class="codenumber">I</span> <span class="title">Counting</span></a></li>
+<li class="link"><a href="basic-counting.html" data-scroll="basic-counting"><span class="codenumber">1</span> <span class="title">Basic Counting</span></a></li>
+<li class="link"><a href="pigeonhole.html" data-scroll="pigeonhole"><span class="codenumber">2</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="bijective-proof.html" data-scroll="bijective-proof"><span class="codenumber">4</span> <span class="title">Bijective Proof</span></a></li>
+<li class="link"><a href="comb-proof.html" data-scroll="comb-proof"><span class="codenumber">5</span> <span class="title">Combinatorial Proof</span></a></li>
+<li class="link"><a href="compositions.html" data-scroll="compositions"><span class="codenumber">6</span> <span class="title">Compositions of Integers</span></a></li>
+<li class="link"><a href="set-partition.html" data-scroll="set-partition"><span class="codenumber">7</span> <span class="title">Set Partitions</span></a></li>
+<li class="link"><a href="int-partition.html" data-scroll="int-partition"><span class="codenumber">8</span> <span class="title">Integer Partitions</span></a></li>
+<li class="link"><a href="inclusion-exclusion.html" data-scroll="inclusion-exclusion"><span class="codenumber">9</span> <span class="title">Inclusion/Exclusion</span></a></li>
+<li class="link"><a href="catalan.html" data-scroll="catalan"><span class="codenumber">10</span> <span class="title">Catalan Numbers</span></a></li>
+<li class="link"><a href="counting-exercise.html" data-scroll="counting-exercise"><span class="codenumber">11</span> <span class="title">Counting Exercises</span></a></li>
+<li class="link part"><a href="part-genfun.html" data-scroll="part-genfun"><span class="codenumber">II</span> <span class="title">Generating Functions</span></a></li>
+<li class="link"><a href="bestiarum.html" data-scroll="bestiarum"><span class="codenumber">12</span> <span class="title">Bestiarum Generandi</span></a></li>
+<li class="link"><a href="genfun.html" data-scroll="genfun"><span class="codenumber">13</span> <span class="title">Generating Function Introduction</span></a></li>
+<li class="link"><a href="genfun-intcomps.html" data-scroll="genfun-intcomps"><span class="codenumber">14</span> <span class="title">Generating Functions for Integer Compositions</span></a></li>
+<li class="link"><a href="genfun-product.html" data-scroll="genfun-product"><span class="codenumber">15</span> <span class="title">Products of  Generating Functions II</span></a></li>
+<li class="link"><a href="genfun-comp.html" data-scroll="genfun-comp"><span class="codenumber">16</span> <span class="title">Compositions of Generating Functions</span></a></li>
+<li class="link"><a href="genfun-exercise.html" data-scroll="genfun-exercise"><span class="codenumber">17</span> <span class="title">Generating Function Exercises</span></a></li>
+<li class="link part"><a href="part-perm.html" data-scroll="part-perm"><span class="codenumber">III</span> <span class="title">Permutations</span></a></li>
+<li class="link"><a href="perm-euler-recur.html" data-scroll="perm-euler-recur"><span class="codenumber">18</span> <span class="title">Recurrences for Eulerian Numbers</span></a></li>
+<li class="link"><a href="perm-descending-tree.html" data-scroll="perm-descending-tree"><span class="codenumber">19</span> <span class="title">Descending Binary Trees</span></a></li>
+<li class="link"><a href="perm-cycle-structure.html" data-scroll="perm-cycle-structure"><span class="codenumber">20</span> <span class="title">Cycle Structure of Permutations</span></a></li>
+<li class="link"><a href="perm-num-cycles.html" data-scroll="perm-num-cycles"><span class="codenumber">21</span> <span class="title">Average Number of Cycles in a Permutation</span></a></li>
+<li class="link"><a href="perm-transition-lemma.html" data-scroll="perm-transition-lemma"><span class="codenumber">22</span> <span class="title">The Transition Lemma</span></a></li>
+<li class="link part"><a href="part-graph.html" data-scroll="part-graph"><span class="codenumber">IV</span> <span class="title">Graphs</span></a></li>
+<li class="link"><a href="graph-automorph.html" data-scroll="graph-automorph"><span class="codenumber">23</span> <span class="title">Graph Automorphisms and Graph Labelings</span></a></li>
+<li class="link"><a href="graph-cayley.html" data-scroll="graph-cayley"><span class="codenumber">24</span> <span class="title">Cayley's Theorem</span></a></li>
+<li class="link"><a href="graph-forest.html" data-scroll="graph-forest"><span class="codenumber">25</span> <span class="title">Counting Trees and Forests</span></a></li>
+<li class="link active"><a href="graph-genfun.html" data-scroll="graph-genfun"><span class="codenumber">26</span> <span class="title">Graphs and Generating Functions</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="graph-genfun"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">26</span> <span class="title">Graphs and Generating Functions</span>
+</h2>
+<section class="introduction" id="introduction-26"><p id="p-798"></p></section><section class="exercises" id="exercises-25"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-107"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Cycles and Road Races.</span>
+</h6>
+<p id="p-799">A cycle graph is a closed walk whose only  repetition is the first/last vertex. An alternative definition: a cycle is a connected 2-regular graph.  Let \(\cC_n\) consist of the set of all labeled cycles on \(n\) vertices, and let \(c_n = | \cC_n|\text{.}\) We actually have \(c_1=1=c_2\text{,}\) allowing for graphs with loops and multiple edges: <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-graph-genfun0.svg" role="img" class="contained"></div></p>
+<ol class="lower-alpha">
+<li id="li-409"><p id="p-800">Let \(c_n\) be the number of (labeled) cycle graphs on \(n\) vertices. What is \(c_n\) for \(n \geq 1\) ? (Account for all graph symmetries, and be careful for \(n=1\) and \(n=2\text{.}\))</p></li>
+<li id="li-410">
+<p id="p-801">Let \(C(x)\) be the <em class="emphasis">exponential generating function</em> for the number of cycle graphs  on \(n \geq 1\) vertices. Prove that</p>
+<div class="displaymath">
+\begin{equation*}
+C(x) = \frac{x}{2} + \frac{x^2}{4} + \log \left(  \frac{1}{\sqrt{1-x}} \right).
+\end{equation*}
+</div>
+</li>
+<li id="li-411"><p id="p-802">A collection of trees is called a forest. A collection of cycles is called a <em class="emphasis">road race</em>. Let \(R(x)\) be the <em class="emphasis">exponential generating function</em> for the number of (labeled) road races. Find the formula for \(R(x)\) and justify your answer.</p></li>
+<li id="li-412">
+<p id="p-803">Using Mathematica, we can expand your expression for \(R(x)\) to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+1+x+x^2+\frac{5 x^3}{6}+\frac{17 x^4}{24}+\frac{73 x^5}{120}+\frac{97
+x^6}{180}+\frac{2461 x^7}{5040}+ \cdots
+\end{equation*}
+</div>
+<p class="continuation">Confirm that this is correct by enumerating all road races for \(0 \leq n \leq 4\text{.}\) List each <em class="emphasis">unlabeled</em> road race \(G\) and then give the <em class="emphasis">number of labelings</em> \(\ell(G)\text{,}\) with justification.</p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-108"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Connected Graphs.</span>
+</h6>
+<p id="p-804">Let \(c_n\) denote the number of connected graphs on \([n]\text{.}\) Using the " \(x \, D \, \log\)" method, we have proven that \(c = 0\) and for \(n \geq 1\text{,}\) we have</p>
+<div class="displaymath">
+\begin{equation*}
+c_n = 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \, \frac{k}{n}  \, 2^{{n-k \choose 2} }c_k
+\end{equation*}
+</div>
+<p class="continuation">You will give a <em class="emphasis">combinatorial proof</em> of this identity.</p>
+<ol class="lower-alpha">
+<li id="li-413">
+<p id="p-805">Rewrite this equation as</p>
+<div class="displaymath">
+\begin{equation*}
+n c_n = n 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \,  k \, c_k \, 2^{{n-k \choose 2} }.
+\end{equation*}
+</div>
+<p class="continuation">We define a <em class="emphasis">singly rooted graph</em> to be a labeled graph with a single special vertex called the <em class="emphasis">root</em>. (Note that a singly rooted graph does not have to be connected. In this case, there still is <em class="emphasis">only one special root vertex</em>.) Explain why each side counts the number of ways to create a  <em class="emphasis">connected, singly rooted graph</em> on \([n]\text{.}\)</p>
+<p id="p-806">LHS: Pick a connected graph on \(n\) vertices and then pick a root. The total number of ways to do this is \(c_n \cdot n\text{.}\) RHS: The \(n 2^{n \choose s}\) term picks any simple graph and the specifies the single root vertex for the whole graph (regardless of the number of components. Now we must correct for this by subtracting off the number of such singly rooted graphs with multiple components. Fixing \(k\text{,}\) let's count the number of singly rooted graphs where the root is in a component of size \(k\text{.}\)</p>
+<ul class="disc">
+<li id="li-414"><p id="p-807">\({n \choose k}\text{:}\) choose the \(k\) vertices</p></li>
+<li id="li-415"><p id="p-808">\(c_k\text{:}\) choose a connected graph on these \(k\) vertices</p></li>
+<li id="li-416"><p id="p-809">\(k\text{:}\) choose the root of this component of size k</p></li>
+<li id="li-417"><p id="p-810">\(2^{{n-k \choose 2}}\text{:}\) choose any graph on the remaining \(n-k\) vertices.</p></li>
+</ul>
+<p class="continuation">If we sum over \(1 \leq k \leq n-1\) and subtract this from \(n 2^{n \choose s}\text{,}\) then we get the number of singly rooted connected graphs.</p>
+</li>
+<li id="li-418">
+<p id="p-811">Using this recurrence, we can find the values of the \(c_n\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+(c_0, c_1, c_2, c_3, c_4, c_5, c_6, \cdots)
+=(0,1,1,4,38,78,26704, \ldots ).
+\end{equation*}
+</div>
+<p class="continuation">Confirm that this is correct by enumerating all connected graphs on \([n]\) for \(0 \leq n \leq 4\text{.}\) List each <em class="emphasis">unlabeled</em> graph \(G\) and then give the <em class="emphasis">number of labelings</em> \(\ell(G)\text{,}\) with justification.</p>
+</li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>

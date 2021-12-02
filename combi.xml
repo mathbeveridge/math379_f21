@@ -96,7 +96,10 @@ pull the name of the problem from the first line  of  the \item
     <part xml:id="part-graph">
         <title>Graphs</title> 
             <xi:include href="./d01-graph-automorphism.xml" /> 
-  
+            <xi:include href="./d02-graph-cayley.xml" /> 
+            <xi:include href="./d03-graph-forest.xml" /> 
+            <xi:include href="./d04-graph-genfun.xml" /> 
+      
     </part>
 
     </book>

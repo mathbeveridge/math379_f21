@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Combi Graph Automorphisms and Graph Labelings</title>
+<title>Combi The Transition Lemma</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -112,10 +112,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="part-graph.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-graph.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="perm-num-cycles.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-perm.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-graph.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="part-graph.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-graph.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="perm-num-cycles.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-perm.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-graph.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -145,33 +145,60 @@
 <li class="link"><a href="perm-descending-tree.html" data-scroll="perm-descending-tree"><span class="codenumber">19</span> <span class="title">Descending Binary Trees</span></a></li>
 <li class="link"><a href="perm-cycle-structure.html" data-scroll="perm-cycle-structure"><span class="codenumber">20</span> <span class="title">Cycle Structure of Permutations</span></a></li>
 <li class="link"><a href="perm-num-cycles.html" data-scroll="perm-num-cycles"><span class="codenumber">21</span> <span class="title">Average Number of Cycles in a Permutation</span></a></li>
-<li class="link"><a href="perm-transition-lemma.html" data-scroll="perm-transition-lemma"><span class="codenumber">22</span> <span class="title">The Transition Lemma</span></a></li>
+<li class="link active"><a href="perm-transition-lemma.html" data-scroll="perm-transition-lemma"><span class="codenumber">22</span> <span class="title">The Transition Lemma</span></a></li>
 <li class="link part"><a href="part-graph.html" data-scroll="part-graph"><span class="codenumber">IV</span> <span class="title">Graphs</span></a></li>
-<li class="link active"><a href="perm-transition-lemma.html" data-scroll="perm-transition-lemma"><span class="codenumber">23</span> <span class="title">Graph Automorphisms and Graph Labelings</span></a></li>
+<li class="link"><a href="graph-automorph.html" data-scroll="graph-automorph"><span class="codenumber">23</span> <span class="title">Graph Automorphisms and Graph Labelings</span></a></li>
+<li class="link"><a href="graph-cayley.html" data-scroll="graph-cayley"><span class="codenumber">24</span> <span class="title">Cayley's Theorem</span></a></li>
+<li class="link"><a href="graph-forest.html" data-scroll="graph-forest"><span class="codenumber">25</span> <span class="title">Counting Trees and Forests</span></a></li>
+<li class="link"><a href="graph-genfun.html" data-scroll="graph-genfun"><span class="codenumber">26</span> <span class="title">Graphs and Generating Functions</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="perm-transition-lemma"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">23</span> <span class="title">Graph Automorphisms and Graph Labelings</span>
+<span class="type">Chapter</span> <span class="codenumber">22</span> <span class="title">The Transition Lemma</span>
 </h2>
-<section class="introduction" id="introduction-23"><p id="p-763">For each graph \(G\text{,}\) determine either</p>
-<p id="p-764">\(\bullet \,\,\, |\mathrm{Aut}(G)|\text{,}\) the number of the automorphisms of \(G\text{,}\) or</p>
-<p id="p-765">\(\bullet \,\,\, \ell(G)\text{,}\) the number of distinct labelings of \(G\text{.}\)</p>
-<p id="p-766">Explain how you found this number. Once you have determined one of these numbers, you can find the other using the formula</p>
-<div class="displaymath">
-\begin{equation*}
-|\mathrm{Aut}(G)| \cdot \ell(G) = n!
-\end{equation*}
-</div>
-<p class="continuation">where \(n = |V(G)|\text{.}\)</p></section><section class="exercises" id="exercises-22"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-22"><p id="p-746"></p></section><section class="exercises" id="exercises-21"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-94"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-767">The complete graph \(K_n\text{,}\) which contains \(n\) vertices with all possible edges.</p></article><article class="exercise exercise-like" id="exercise-95"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-768">The cycle \(C_n\text{,}\) consisting of a circle of \(n\) vertices, each connected to its two nearest neighbors.</p></article><article class="exercise exercise-like" id="exercise-96"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-769">The wheel \(W_n\text{,}\) consisting of a circle of \(n-1\) vertices, each connected to its two nearest neighbors, along with an \(n\)th hub vertex, which is connected to all other vertices.</p></article><article class="exercise exercise-like" id="exercise-97"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-770">The path \(P_n\text{,}\) which contains \(n\) vertices connected in a line</p></article><article class="exercise exercise-like" id="exercise-98"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-771">The complete bipartite graph \(K_{m,n}\text{,}\) where \(m \neq n\text{,}\) consisting of a set \(U\) of \(m\) vertices and a set \(W\) of \(n\) vertices, with edges between every pair \(u \in U\) and \(v \in V\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-99"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-772">The star \(S_n\text{,}\) consisting of a central vertex connected to \(n-1\) leaf vertices.</p></article></section></section></div></main>
+<article class="exercise exercise-like" id="exercise-89"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">A Surjection \(f: A \rightarrow A\).</span>
+</h6>
+<p id="p-747">Suppose that \(A\) is a <em class="emphasis">finite</em> set and that we have a surjection \(g: A \rightarrow A\text{.}\) Prove that \(g\) must be a bijection. (The key is that \(g\) maps \(A\) to itself!).</p></article><article class="exercise exercise-like" id="exercise-90"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Left-to-Right Maxima.</span>
+</h6>
+<p id="p-748">Let \(q=q_1q_2 \cdots q_n\) be an \(n\)-permutation written in one-line notation. We say that \(k\) is a <em class="emphasis">left-to-right maximum</em> if \(q_k &gt; q_i\) for \(1 \leq i &lt; k\text{.}\) Circle all of the left-to-right maxima in the following permutation. How many are there?</p>
+<div class="displaymath">
+\begin{equation*}
+q= 436152897
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-91"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">The Transition Lemma.</span>
+</h6>
+<p id="p-749">Here is the <em class="emphasis">Transition Lemma</em>:</p>
+<p id="p-750">Let \(f: S_n \rightarrow S_n\) be the mapping that takes a permutation \(p\) in canoncical cycle notation and removes all of the parentheses to create a permutation \(f(p)\) in one-line notation. Then the mapping \(f\) is a bijection.</p>
+<p id="p-751">Prove the Transition Lemma. By problem 1, you only need to show that \(f\) is <em class="emphasis">surjective.</em> Given a permutation \(q\) written in one-line notation, you must find a permutation \(p\) written in canonical cycle notation such that \(f(p)=q\text{.}\) How can you use problem 2 to help in this effort?</p></article><article class="exercise exercise-like" id="exercise-92"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Applications of the Transition Lemma.</span>
+</h6>
+<p id="p-752">The Transition Lemma is particularly amazing because it can turn an <em class="emphasis">interesting but hard</em> counting problem into a <em class="emphasis">easy or straight-forward</em> counting problem. Here are two examples</p>
+<ol class="lower-alpha">
+<li id="li-388"><p id="p-753">How many \(n\)-permutations are there with \(k\) left-to-right maxima?</p></li>
+<li id="li-389"><p id="p-754">Pick an  \(n\)-permutation at random from \(S_n\text{.}\) What is the probability that the cycle containing element \(n\) has length \(k\text{?}\) What is the probability that the cycle containing element \(i\) has length \(k\text{?}\)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-93"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Average Number of Fixed Points of a Permutation.</span>
+</h6>
+<p id="p-755">A fixed point of a permutation \(f\) is an element \(i\) such that \(f(i)=i\text{.}\) Use problem 4(b) to prove that the average number of fixed points of a permutation is 1 by finishing the following proof by strong induction.</p>
+<ul class="disc">
+<li id="li-390"><p id="p-756"><em class="emphasis">Base Case:</em> When \(n=1\text{,}\) there is exactly one permutation: \((1)\text{.}\) This permutation has one fixed point.</p></li>
+<li id="li-391"><p id="p-757"><em class="emphasis">Inductive Hypothesis:</em> Assume that if \(1&lt;k&lt;n\text{,}\) then the average number of fixed points in a \(k\)-permutation is \(1\text{.}\)</p></li>
+<li id="li-392">
+<p id="p-758"><em class="emphasis">Consider \(n\text{:}\)</em> We consider the set \(S_n\) of all \(n\)-permutations. Partition \(S_n\) into sets \(A_1, A_2, \ldots, A_n\) where \(A_i\) consists of all permutations where element \(n\) is in an \(i\)-cycle. <em class="emphasis">Now you must count the average number of fixed points in each of the \(A_i\) for the following cases:</em></p>
+<ul class="circle">
+<li id="li-393"><p id="p-759">Case \(i=1\text{.}\)</p></li>
+<li id="li-394"><p id="p-760">Case \(2 \leq i \leq n-1\text{.}\)</p></li>
+<li id="li-395"><p id="p-761">Case \(i=n\text{.}\)</p></li>
+<li id="li-396"><p id="p-762">Now find the average number of fixed points.</p></li>
+</ul>
+</li>
+</ul></article></section></section></div></main>
 </div>
 </body>
 </html>

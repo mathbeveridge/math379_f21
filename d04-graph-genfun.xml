@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="graph-genfun" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Graphs and Generating Functions</title>
+	<introduction>
+		<p>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Cycles and Road Races</title>
+			<idx><h>Cycles and Road Races</h></idx>
+			<statement>
+				<p>
+
+A cycle graph is a closed walk whose only  repetition is the first/last vertex. An alternative definition: a cycle is a connected 2-regular graph.  Let <m>\cC_n</m> consist of the set of all labeled cycles on <m>n</m> vertices, and let <m>c_n = | \cC_n|</m>. We actually have <m>c_1=1=c_2</m>, allowing for graphs with loops and multiple edges:
+
+
+			<image width="70%" xml:id="fig-img-graph-genfun0">
+				<latex-image>
+\begin{tikzpicture}[scale=.8] %mathbook width=70%
+
+\begin{scope}
+
+\draw[thick]  (0,0) circle (.25);
+
+\draw[fill]  (-.25,0) circle (2pt);
+
+
+\node at (0,-1) {\small <m>C_1</m>};
+
+\end{scope}
+
+
+\begin{scope}[shift={(2,0)}]
+
+\draw[thick]  (-.5,0) to [bend left=30] (.5,0);
+\draw[thick]  (.5,0) to [bend left=30] (-.5,0);
+
+\draw[fill]  (-.5,0) circle (2pt);
+
+\draw[fill]  (.5,0) circle (2pt);
+
+
+\node at (0,-1) {\small <m>C_2</m>};
+
+\end{scope}
+
+\begin{scope}[shift={(4,0)}]
+
+
+\foreach \x in {0, 120, 240} {
+\draw[fill]  (\x:.5) circle (2pt);
+}
+
+\draw[thick]   (0,0) circle (.5);
+
+\node at (0,-1) {\small <m>C_3</m>};
+
+\end{scope}
+
+\begin{scope}[shift={(6,0)}]
+
+
+\foreach \x in {0, 90, 180, 270} {
+\draw[fill]  (\x:.5) circle (2pt);
+}
+
+\draw[thick]   (0,0) circle (.5);
+
+\node at (0,-1) {\small <m>C_4</m>};
+
+\end{scope}
+
+\begin{scope}[shift={(8,0)}]
+
+
+\foreach \x in {0, 72, 144, 216, 288} {
+\draw[fill]  (\x:.5) circle (2pt);
+}
+
+\draw[thick]   (0,0) circle (.5);
+
+\node at (0,-1) {\small <m>C_5</m>};
+
+\end{scope}
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+			<ol>
+
+
+
+
+
+				<li>
+					<p>
+ Let <m>c_n</m> be the number of (labeled) cycle graphs on <m>n</m> vertices. What is <m>c_n</m> for <m>n \geq 1</m> ? (Account for all graph symmetries, and be careful for <m>n=1</m> and <m>n=2</m>.)
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>C(x)</m> be the <em>exponential generating function</em> for the number of cycle graphs  on <m>n \geq 1</m> vertices. Prove that
+<me>
+C(x) = \frac{x}{2} + \frac{x^2}{4} + \log \left(  \frac{1}{\sqrt{1-x}} \right).
+</me>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ A collection of trees is called a forest. A collection of cycles is called a <em>road race</em>. Let <m>R(x)</m> be the <em>exponential generating function</em> for the number of (labeled) road races. Find the formula for <m>R(x)</m> and justify your answer.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Using Mathematica, we can expand your expression for <m>R(x)</m> to obtain
+<me>
+1+x+x^2+\frac{5 x^3}{6}+\frac{17 x^4}{24}+\frac{73 x^5}{120}+\frac{97
+x^6}{180}+\frac{2461 x^7}{5040}+ \cdots
+</me>
+Confirm that this is correct by enumerating all road races for <m>0 \leq n \leq 4</m>. List each <em>unlabeled</em> road race <m>G</m> and then give the <em>number of labelings</em> <m>\ell(G)</m>, with justification.
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Connected Graphs</title>
+			<idx><h>Connected Graphs</h></idx>
+			<statement>
+				<p>
+Let <m>c_n</m> denote the number of connected graphs on <m>[n]</m>. Using the " <m>x \, D \, \log</m>" method, we have proven that <m>c = 0</m> and for <m>n \geq 1</m>, we have
+<me>
+c_n = 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \, \frac{k}{n}  \, 2^{{n-k \choose 2} }c_k
+</me>
+You will give a <em>combinatorial proof</em> of this identity.
+
+
+			<ol>
+
+				<li>
+					<p>
+ Rewrite this equation as
+<me>
+n c_n = n 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \,  k \, c_k \, 2^{{n-k \choose 2} }.
+</me>
+We define a <em>singly rooted graph</em> to be a labeled graph with a single special vertex called the <em>root</em>. (Note that a singly rooted graph does not have to be connected. In this case, there still is <em>only one special root vertex</em>.)
+Explain why each side counts the number of ways to create a  <em>connected, singly rooted graph</em> on <m>[n]</m>.
+
+
+			</p><p>
+
+LHS: Pick a connected graph on <m>n</m> vertices and then pick a root. The total number of ways to do this is <m>c_n \cdot n</m>.
+
+RHS: The <m>n 2^{n \choose s}</m> term picks any simple graph and the specifies the single root vertex for the whole graph (regardless of the number of components. Now we must correct for this by subtracting off the number of such singly rooted graphs with multiple components.
+
+Fixing <m>k</m>, let's count the number of singly rooted graphs where the root is in a component of size <m>k</m>.
+		<ul>
+			<li>
+			<p>
+ <m>{n \choose k}</m>: choose the <m>k</m> vertices
+			</p>
+			</li>
+			<li>
+			<p>
+ <m>c_k</m>: choose a connected graph on these <m>k</m> vertices
+			</p>
+			</li>
+			<li>
+			<p>
+ <m>k</m>: choose the root of this component of size k
+			</p>
+			</li>
+			<li>
+			<p>
+ <m>2^{{n-k \choose 2}}</m>: choose any graph on the remaining <m>n-k</m> vertices.
+			</p>
+			</li>
+		</ul>
+If we sum over <m>1 \leq k \leq n-1</m> and subtract this from <m>n 2^{n \choose s}</m>, then we get the number of singly rooted connected graphs.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Using this recurrence, we can find the values of the <m>c_n</m>:
+<me>
+(c_0, c_1, c_2, c_3, c_4, c_5, c_6, \cdots)
+=(0,1,1,4,38,78,26704, \ldots ).
+</me>
+Confirm that this is correct by enumerating all connected graphs on <m>[n]</m> for <m>0 \leq n \leq 4</m>. List each <em>unlabeled</em> graph <m>G</m> and then give the <em>number of labelings</em> <m>\ell(G)</m>, with justification.
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>
