@@ -10,16 +10,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like">
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-|\mathrm{Aut}(C_n)| &amp;=&amp; 2n \\
-\ell(C_n)&amp;=&amp;\frac{(n-1)!}{2} \\
-|\mathrm{Aut}(C_n)| \cdot \ell(C_n)&amp;=&amp;n!
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">We explain why \(\mathrm{Aut}(C_n)=2n\text{.}\) The cycle has a rotational symmetry of order \(n\text{.}\) We can also reverse the order of these labels (from clockwise to counterclockwise). This doubles the number of equivalent labels, for a total of \(2n\text{.}\)</p>
-</div></body>
+<body><div class="solution solution-like"><p>By the transition lemma, each left-to-right maximum in one-line notation corresponds to the beginning of a new cycle in canonical cycle notation. Therefore the number of \(n\)-permutations with \(k\) left-to-right maxima is the same as the number of permutations with \(k\) cycles. This  number is \(c(n,k)\text{,}\) the unsigned Stirling numbers of the first kind.</p></div></body>
 </html>

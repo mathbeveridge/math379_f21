@@ -39,6 +39,20 @@ Let <m>c(n)</m> denote the total number of cycles in all <m>n</m>-permutations.
 
 
 
+<solution>
+<p>
+The LHS is the total number of cycles in all <m>n</m>-permutations.
+
+
+Consider the <m>k</m>th term of the RHS:
+\[
+\underbrace{c(n,k)}_{\begin{array}{c}\mbox{# permutations} \\ \mbox{with <m>k</m> cycles} \end{array}} \cdot
+\underbrace{k}_{\begin{array}{c}\mbox{# cycles in such} \\ \mbox{a permutation} \end{array}}
+\]
+We sum over <m>1 \leq k \leq n</m> to get all possibilities.
+
+</p>
+</solution>
 
 
 
@@ -50,6 +64,14 @@ Let <m>c(n)</m> denote the total number of cycles in all <m>n</m>-permutations.
 
 
 
+<solution>
+<p>
+
+Dividing <m>c(n)</m> by the total number of permutations yields <m>A(n)</m>.
+
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -70,6 +92,23 @@ Let <m>c(n)</m> denote the total number of cycles in all <m>n</m>-permutations.
 <m>\int_1^n \frac{1}{x} dx</m>. What function does this integral represent?
 
 
+<solution>
+<p>
+
+			<image width="60%" xml:id="fig-img-perm-num-cycles0" source="images/int-1-over-x.png" />
+
+The integral <m>\int_1^n \frac{1}{x} dx</m> can be approximated by the sum
+<m>1 + \frac{1}{2} + \frac{1}{3} + \cdots \frac{1}{n}</m> as shown in the above graph.
+
+
+			</p><p>
+
+Evaluating this integral gives <m>\int_1^n \frac{1}{x} dx = \log (n) - \log (1) = \log n</m> where <m>\log(x)</m> is the natural logarithm of <m>x</m>.
+
+
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -81,6 +120,13 @@ using your approximate function.
 
 
 
+<solution>
+<p>
+
+The average number of cycles in an <m>n</m>-permutation is approximately <m>\log n</m>.
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -107,6 +153,13 @@ As usual, we will treat element <m>n</m> as special. Given an <m>n</m>-permutati
 					<p>
  Suppose that <m>n</m> was in a cycle by itself. Prove that the total number of <em>cycles</em> in such  permutations is <m>c(n-1) + (n-1)!</m>.
 
+<solution>
+<p>
+
+When <m>n</m> is in a cycle by itself, the permutation naturally corresponds to an <m>(n-1)</m>-permutation. There are <m>c(n-1)</m> cycles in all such permutations. We add <m>(n-1)!</m> to account for final the cycle containing <m>n</m> because there are <m>(n-1)!</m> permutations of <m>[n-1]</m>.
+
+</p>
+</solution>
 
 
 					</p>
@@ -116,6 +169,13 @@ As usual, we will treat element <m>n</m> as special. Given an <m>n</m>-permutati
  Suppose that <m>n</m> was <em>not</em> in a cycle by itself. Prove that the total number of <em>cycles</em> in such  permutations is <m>(n-1) \cdot c(n-1)</m>.
 
 
+<solution>
+<p>
+
+Removing <m>n</m> from the permutation gives an <m>(n-1)</m>-permutation with the same number of cycles. We obtain each <m>(n-1)</m> cycle in <m>n-1</m> ways, since the element <m>n</m> can be placed before any element of the <m>(n-1)</m>-permutation (and within the same cycle as that element).
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -140,6 +200,19 @@ Starting with the formula in problem 1(b) and the recurrence in problem 2, prove
 A(n) = \sum_{i=1}^n \frac{1}{i}.
 </me>
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+c(n) &amp;=&amp; n c(n-1) + (n-1)! \\
+\frac{c(n)}{n!} &amp;=&amp; \frac{n c(n-1)}{n!} + \frac{(n-1)!}{n!} \\
+A(n) &amp;=&amp; A(n-1) + \frac{1}{n} \\
+\end{array}
+</me>
+Now, we know that <m>A(1)=1</m> because there is a unique <m>1</m>-permutation and it has one cycle. From the recurrence it is easy to see that <m>A(2) = 1 + 1/2</m> and <m>A(3) = 1 + 1/2 + 1/3</m>. In general, we have
+<m>A(n) = \sum_{i=1}^n 1/i</m>.
+</p>
+</solution>
 				</p>
 			</statement>
 		</exercise>

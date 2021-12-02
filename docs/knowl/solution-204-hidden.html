@@ -11,15 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
+<p>Using the transition mapping, we get a permutation in one-line notation with element \(n\) in position \(n-k+1\text{.}\) The total number of permutations with \(n\) in that position is \((n-1)!\text{.}\) So the probability that a random permutation has element \(n\) in position \(n-k+1\) is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-|\mathrm{Aut}(W_n)| &amp;=&amp;  \displaystyle{2(n-1)} \\
-\ell(W_n)&amp;=&amp;  \frac{n!}{2(n-1)} = n \cdot \frac{(n-2)!}{2} \\
-|\mathrm{Aut}(W_n)| \cdot \ell(W_n)&amp;=&amp; n!
-\end{array}
+\frac{(n-1)!}{n!} = \frac{1}{n}.
 \end{equation*}
 </div>
-<p class="continuation">We explain why \(\ell(W_n)=n \cdot \frac{(n-2)!}{2}\text{.}\) First, we label the hub vertex, which can be done in \(n\) ways. Next, we label the remaining \(n-1\) vertices along the rim of the wheel using the other \(n-1\) elements. By the previous problem, the number of ways to do that is \(\frac{(n-2)!}{2}\text{.}\) By the product principle, the total number of ways to label is \(n \cdot \frac{(n-2)!}{2}\text{.}\)</p>
+<p class="continuation">By the transition lemma, this is also equal to the probability that element \(n\) is in a \(k\)-cycle.</p>
 </div></body>
 </html>
