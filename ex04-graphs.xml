@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="graph-exercise" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Graph Exercises</title>
+	<introduction>
+		<p>
+
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Exercises</title>
+
+		<exercise>
+			<statement>
+				<p>
+ .
+			<ol>
+				<li>
+					<p>
+ There are 3 different unlabeled trees on 5 vertices. Draw them all.
+					</p>
+				</li>
+				<li>
+					<p>
+ Verify Cayley's Theorem for <m>n=5</m> by counting the number of distinct labelings of each of the 3 trees in part (a). Your numbers should add to <m>5^3=125</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ There are 6 different unlabeled trees on 6 vertices. Draw them all.
+					</p>
+				</li>
+				<li>
+					<p>
+ Verify Cayley's Theorem for <m>n=6</m> by counting the number of distinct labelings of each of the 6 trees in part (c). Your numbers should add to <m>6^4=1296</m>
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ A tree on vertices <m>0,1,2,\ldots, n-1</m> rooted at vertex <m>0</m> is <em>ascending</em> when the label of each child is larger than the label of its parent. For example, there are two ascending trees on 3 vertices:
+
+			<image width="50%" xml:id="fig-img-graph-exercise0">
+				<latex-image>
+\begin{tikzpicture}
+
+\draw[thick] (-.5, -.67) -- (0,0) -- (.5, -.67);
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (-.5,-.67) circle (2pt);
+\draw[fill] (.5,-.67) circle (2pt);
+
+\node[above] at (0,0) {0};
+\node[right] at (.5,-.67) {1};
+\node[left] at (-.5,-.67) {2};
+
+\begin{scope}[shift={(3,0)}]
+
+\draw[thick] (0,0) -- (1, -1.34);
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,-1.34) circle (2pt);
+\draw[fill] (.5,-.67) circle (2pt);
+
+\node[above] at (0,0) {0};
+\node[right] at (.5,-.67) {1};
+\node[right] at (1,-1.34) {2};
+
+\end{scope}
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+Use induction on <m>n</m> to prove that the number of ascending trees is <m>(n-1)!</m>.
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Find a closed formula for the number of trees on <m>n</m> vertices with exactly <m>k</m> leaves.
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Let <m>\mathcal{A}_n</m> be  the set of labeled trees  whose internal (non-leaf) vertices all have degree 3. Prove that <m>n</m> must be even, and then find a simple formula for  <m>|\mathcal{A}_n|= |\mathcal{A}_{2k}|</m>.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Use inclusion-exclusion to find the number of rooted forests on <m>[n]</m> that contain no isolated vertices.
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Let <m>\mathcal{Z}_n</m> be the family of rooted forests such that each rooted component is either (1) an isolated vertex, or (2) a path rooted at one of its endpoints. Prove that
+<me>
+|\mathcal{Z}_n| = \sum_{k=0}^{n-1} {n \choose k} (n-1)_k.
+</me>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Let <m>T(x) = \sum_{n=1}^{\infty} t_n \frac{x^n}{n!}</m> be the exponential generating function for labeled trees on <m>[n]</m>, where <m>t_0=0</m>. Let <m>F(x) = \sum_{n=1}^{\infty} f_n \frac{x^n}{n!}</m> where <m>f_0=1</m> be the exponential generating function for lableled forests on <m>[n]</m>.
+			<ol>
+\item
+Find a functional equation similar to the one for graphs and connected graphs in \S5.5.3 relating these two generating functions.
+\item
+Use the <m>x \, D \, \log</m> method to find a recurrence relation for <m>f_n</m>.
+				<li>
+					<p>
+ Give a combinatorial proof of your recurrence relation in part (b). Use the following interpretation: how many ways are there to make a forest with one distinguished vertex (maybe there is a squirrel living there)?
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>

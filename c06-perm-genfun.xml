@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="perm-genfun" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>\S 4.4  Generating Functions for Permutations</title>
+	<introduction>
+		<p>
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+\item
+
+			<ol>
+				<li>
+					<p>
+ Let <m>d_n</m> denote the number of derangements of <m>[n]</m>. Prove that
+<m> \displaystyle{</m>
+n! = \sum_{k=0}^n {n \choose k} d_k.
+}
+<m></m>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}</m> be the EGF for the number of derangements of <m>[n]</m>.  Use part (a) to find a closed formula for <m>D(x)</m>.
+					</p>
+				</li>
+			</ol>
+
+
+
+\item
+Today, we saw that  the EGF for permutations whose cycle lengths are elements of a set <m>S</m> is
+\begin{equation}
+\label{eqn:S-perm}
+P_S(x) = \exp\left(\sum_{s \in S} \frac{x^s}{s}\right)
+\end{equation}
+
+
+
+
+			<ol>
+
+
+
+				<li>
+					<p>
+  Let <m>\mathcal{P}_{r,n}</m> denote the set of all <m>n</m>-permutations whose cycle lengths are divisible by <m>r</m>. Let <m>p_{r,n} = | \mathcal{P}_{r,n}| </m> and  define the exponential generating function
+<me>
+P_r(x) = \sum_{n=0}^{\infty} p_{r,n} \frac{x^n}{n!}.
+</me>
+Find a closed formula for the EGF <m>P_r(x)</m>. (Hint: start by factoring out <m>\frac{1}{r}</m> from infinite sum in the exponent of <m>P_r(x)</m>.)
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+  Let  <m>Q_{\{2,3\}}(x)</m> be the EGF for permutations whose cycle lengths are divisible by 2 or 3 (or both).  By equation \eqref{eqn:S-perm}, we have
+<me>
+Q_{\{2,3\}} =  \exp \left(1 + \frac{x^2}{2} + \frac{x^3}{3} + \frac{x^4}{4} + \frac{x^6}{6} + \frac{x^8}{8} + \frac{x^9}{9} + \cdots \right)
+</me>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Compare <m>Q_{\{2,3\}}(x)</m> with <m>P_2(x) P_3(x)</m>. What is the difference? Use your observation to find a closed formula for <m>Q_{\{2,3\}}(x)</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Your results from the previous problems suggest an "inclusion-exclusion" formula for generating functions of this kind. Let <m>S</m> and <m>T</m> be sets of integers. Find a closed formula for <m>P_{S \cup T}(x)</m> in terms of <m>P_S(x)</m>, <m>P_T(x)</m>, and <m>P_{S \cap T}(x)</m>.
+
+
+
+\item
+Find a closed formula for the exponential generating function <m>Q_{\{2,3,5\}}(x)</m> for the set of permutations whose cycle lengths are divisible by at least one of 2, 3 or 5.
+
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+</chapter>

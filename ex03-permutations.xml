@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="perm-exercise" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Exercises</title>
+	<introduction>
+		<p>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Exercises</title>
+
+		<exercise>
+			<statement>
+				<p>
+ Recall the following two definitions.
+		<ul>
+			<li>
+			<p>
+ The <em>order</em> of a permutation <m>p</m> is the smallest positive integer <m>k</m> such that <m>p^k</m> is the identity.
+			</p>
+			</li>
+			<li>
+			<p>
+ A permutation <m>p</m> is an <em>involution</em> if <m>p^2</m> is the identity permutation.
+			</p>
+			</li>
+		</ul>
+Note that  the identity permutation is an involution. In fact, the identity is the only involution of order 1. The remaining involutions have order 2.
+
+For any <m>k \geq 1</m>, let <m>g_{n,k}</m> be the the number of <m>n</m>-permutations <m>p</m> that are <em><m>k</m>-volutions</em>, meaning that that <m>p^k</m> is the identity. Let <m>h_{n,k}</m> be the number of <m>n</m>-permutations <m>p</m> of order <m>k</m>. For <m>k &gt;1</m>, we  always have <m>g_{n,k} &gt; h_{n,k}</m>, because the identity is a <m>k</m>-volution of order <m>1 &lt; k</m>.
+
+			</p><p>
+
+Let <m>G_k(x) = \sum_{n=0}^{\infty} g_{n,k} \frac{x^n}{n!}</m> and <m>H_k(x) = \sum_{n=0}^{\infty} h_{n,k} \frac{x^n}{n!}</m> be the exponential generating functions for these sequences.
+We have
+<me>
+G_1(x) = H_1(x) = \exp(x)
+</me>
+since the identity permutation is the only <m>1</m>-volution. Example 4.36 on page 202 shows that
+<me>
+G_2(x) = \exp \left( x + \frac{x^2}{2} \right)
+</me>
+and therefore
+<me>
+H_2(x) = \exp \left( x + \frac{x^2}{2} \right) - \exp\left( x \right)
+</me>
+
+
+			<ol>
+				<li>
+					<p>
+ Find <m>G_3(x)</m> and <m>H_3(x)</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Find <m>G_4(x)</m> and <m>H_4(x)</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>k \geq 1</m> and suppose that <m>p^k</m> is the identity. Explain why the order of <m>p</m>  must divide <m>k</m>. Use this fact to find a formula for <m>G_k(x)</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Find  a formula for <m>H_{6}(x)</m> in terms of  <m>G_{k}(x)</m> where <m>1 \leq k \leq 6</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ Find  a formula for <m>H_{30}(x)</m> in terms of  <m>G_{k}(x)</m> where <m>1 \leq k \leq 30</m>.
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+</chapter>

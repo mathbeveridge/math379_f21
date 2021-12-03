@@ -90,7 +90,9 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c02-descending-tree.xml" />     
             <xi:include href="./c03-cycle-structure.xml" />       
             <xi:include href="./c04-num-cycles.xml" />  
-            <xi:include href="./c05-transition-lemma.xml" />  
+            <xi:include href="./c05-transition-lemma.xml" />
+            <!--xi:include href="./c06-perm-genfun.xml" /-->            
+            <xi:include href="./ex03-permutations.xml" />               
     </part>
 
     <part xml:id="part-graph">
@@ -99,6 +101,7 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./d02-graph-cayley.xml" /> 
             <xi:include href="./d03-graph-forest.xml" /> 
             <xi:include href="./d04-graph-genfun.xml" /> 
+            <xi:include href="./ex04-graphs.xml" /> 
       
     </part>
 
