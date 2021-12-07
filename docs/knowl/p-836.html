@@ -12,18 +12,10 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(T(n,k)\) be the number of labeled forests on \([n]\) with \(k\) components such that the vertices in \([k]\) are all in different tree components.</p>
+<p>Let \(T\) be a tree on \(n\) vertices whose non-leaf vertices all have degree 3.</p>
 <ol class="lower-alpha">
-<li><p>Show that \(T(4,2)=8\) by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees.</p></li>
-<li>
-<p>Prove the recurrence relation</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1 \leq k \leq n
-\end{equation*}
-</div>
-<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.)</p>
-</li>
+<li><p>Prove that \(T\) has \(\frac{1}{2}(n-2)\) vertices of degree 3.</p></li>
+<li><p>Find a formula for the number of such trees.</p></li>
 </ol>
 <span class="incontext"><a href="exercises-25.html#p-836">in-context</a></span>
 </body>

@@ -19,7 +19,34 @@
 
 
 
+		<exercise>
+			<statement>
+				<p>
+ Let <m>T</m> be a tree on <m>n</m> vertices whose non-leaf vertices all have degree 3.
 
+			<ol>
+
+				<li>
+					<p>
+ Prove that <m>T</m> has <m>\frac{1}{2}(n-2)</m> vertices of degree 3.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Find a formula for the number of such trees.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
 		<exercise>
 			<statement>
 				<p>
@@ -93,7 +120,38 @@ where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat verte
 				</li>
 				<li>
 					<p>
- We can use induction on <m>n \geq 2</m> to prove that if (i) and (ii) hold, then there is a tree with the given ordered degree sequence. The statement is true for <m>n=2</m>, and we assume it is true for all such sequences of length <m>n-1</m>. Consider a sequence <m>d_1 \geq d_2 \geq \cdots \geq d_n</m> satisfying (i) and (ii). Find the last <m>d_i &gt; 1</m>. Remove <m>d_n</m> from the sequence and replace <m>d_i</m> with <m>d_i-1</m>. Explain why (i) and (ii) hold for the resulting sequence of length <m>n-1</m>. Use this fact to create a tree with degree sequence <m>d_1 \geq d_2 \geq \cdots \geq d_n</m>.
+ We can use induction on <m>n \geq 2</m> to prove that if (i) and (ii) hold, then there is a tree with the given ordered degree sequence.
+
+		<ul>
+			<li>
+			<p>
+ <em>Base Case.</em> The statement is true for <m>n=2</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ <em>Inductive Hypothesis.</em> Assume it is true for all such sequences of length <m>n-1</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ <em>Inductive Step.</em> Consider a sequence <m>d_1 \geq d_2 \geq \cdots \geq d_n</m> satisfying (i) and (ii). Find the last <m>d_i &gt; 1</m>. Remove <m>d_n</m> from the sequence and replace <m>d_i</m> with <m>d_i-1</m>.
+
+		<ul>
+			<li>
+			<p>
+ Explain why (i) and (ii) hold for the resulting sequence of length <m>n-1</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Use this fact to create a tree with degree sequence <m>d_1 \geq d_2 \geq \cdots \geq d_n</m>.
+			</p>
+			</li>
+		</ul>
+			</p>
+			</li>
+		</ul>
 
 
 					</p>
@@ -103,7 +161,7 @@ where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat verte
  Given our characterization (i) and (ii) for ordered degree sequences for trees, how many are there?
 
 			</p><p>
-We give three different formulas, all equivalent.
+We give three different (but equivalent) formulas.
 
 
 					</p>
