@@ -153,53 +153,24 @@ Confirm that this is correct by enumerating all road races for <m>0 \leq n \leq 
 				<p>
 Let <m>c_n</m> denote the number of connected graphs on <m>[n]</m>. Using the " <m>x \, D \, \log</m>" method, we have proven that <m>c = 0</m> and for <m>n \geq 1</m>, we have
 <me>
-c_n = 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \, \frac{k}{n}  \, 2^{{n-k \choose 2} }c_k
+c_n = \displaystyle{2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \, \frac{k}{n}  \, 2^{{n-k \choose 2} }c_k}
 </me>
-You will give a <em>combinatorial proof</em> of this identity.
+which we can rewrite as
+<me>
+c_n = \displaystyle{ 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n-1 \choose k-1}  \, 2^{{n-k \choose 2} }c_k }.
+</me>
+
+
+
 
 
 			<ol>
 
 				<li>
 					<p>
- Rewrite this equation as
-<me>
-n c_n = n 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \,  k \, c_k \, 2^{{n-k \choose 2} }.
-</me>
-We define a <em>singly rooted graph</em> to be a labeled graph with a single special vertex called the <em>root</em>. (Note that a singly rooted graph does not have to be connected. In this case, there still is <em>only one special root vertex</em>.)
-Explain why each side counts the number of ways to create a  <em>connected, singly rooted graph</em> on <m>[n]</m>.
+ Give a <em>combinatorial proof</em> of this identity by treating vertex <m>n</m> as special.
 
 
-			</p><p>
-
-LHS: Pick a connected graph on <m>n</m> vertices and then pick a root. The total number of ways to do this is <m>c_n \cdot n</m>.
-
-RHS: The <m>n 2^{n \choose s}</m> term picks any simple graph and the specifies the single root vertex for the whole graph (regardless of the number of components. Now we must correct for this by subtracting off the number of such singly rooted graphs with multiple components.
-
-Fixing <m>k</m>, let's count the number of singly rooted graphs where the root is in a component of size <m>k</m>.
-		<ul>
-			<li>
-			<p>
- <m>{n \choose k}</m>: choose the <m>k</m> vertices
-			</p>
-			</li>
-			<li>
-			<p>
- <m>c_k</m>: choose a connected graph on these <m>k</m> vertices
-			</p>
-			</li>
-			<li>
-			<p>
- <m>k</m>: choose the root of this component of size k
-			</p>
-			</li>
-			<li>
-			<p>
- <m>2^{{n-k \choose 2}}</m>: choose any graph on the remaining <m>n-k</m> vertices.
-			</p>
-			</li>
-		</ul>
-If we sum over <m>1 \leq k \leq n-1</m> and subtract this from <m>n 2^{n \choose s}</m>, then we get the number of singly rooted connected graphs.
 
 
 					</p>
