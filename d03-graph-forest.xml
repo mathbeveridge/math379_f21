@@ -31,6 +31,19 @@
  Prove that <m>T</m> has <m>\frac{1}{2}(n-2)</m> vertices of degree 3.
 
 
+<solution>
+<p>
+If we sum the degrees, then we get twice the number of edges. Suppose that there are <m>k</m> vertices of degree 3. Then
+<me>
+\begin{array}{rcl}
+2(n-1) &amp;=&amp; 3 k + (n-k) \\
+n -2 &amp; = &amp; 2k \\
+\frac{n-2}{2} &amp;=&amp; k.
+\end{array}
+</me>
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -38,6 +51,15 @@
 					<p>
  Find a formula for the number of such trees.
 
+<solution>
+<p>
+We have <m>(n-2)/2</m> vertices of degree 3 and <m>(n+2)/2</m> vertices of degree 1. The degree 3 vertices appear in the Prufer code two times. So the total number of trees is
+<me>
+{n \choose (n-2)/2} { n-2 \choose 2, 2, \ldots,2 }
+</me>
+because we must first choose the vertices of degree three, and then create the Prufer code.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -60,6 +82,155 @@
 					<p>
  Show that <m>T(4,2)=8</m> by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees.
 
+<solution>
+<p>
+			<image width="60%" xml:id="fig-img-graph-forest0">
+				<latex-image>
+\begin{tikzpicture} %mathbook width="60%'
+
+\begin{scope}[shift={(2.5,0)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (1,1) -- (0,1);
+\draw (1,0) -- (0,0);
+
+\end{scope}
+
+
+\begin{scope}[shift={(2.5,-3)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (1,1) -- (0,0);
+\draw (1,0) -- (0,1);
+
+\end{scope}
+
+\begin{scope}[shift={(5,0)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (0,1) -- (1,1) -- (0,0);
+
+
+\end{scope}
+
+
+\begin{scope}[shift={(7.5,0)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (0,1) --(0,0) --  (1,1)  ;
+
+\end{scope}
+
+\begin{scope}[shift={(10,0)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (0,0) --  (0,1) -- (1,1)  ;
+
+\end{scope}
+
+
+\begin{scope}[shift={(10,-3)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (1,0) --  (0,0) -- (0,1)  ;
+
+\end{scope}
+
+
+\begin{scope}[shift={(7.5,-3)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (0,0) -- (0,1) -- (1,0)  ;
+
+\end{scope}
+
+
+\begin{scope}[shift={(5,-3)}]
+
+\draw[fill] (0,0) circle (2pt);
+\draw[fill] (1,0) circle (2pt);
+\draw[fill] (1,1) circle (2pt);
+\draw[fill] (0,1) circle (2pt);
+
+\node[above right] at (1,1) {1};
+\node[below right] at (1,0) {2};
+\node[below left] at (0,0) {3};
+\node[above left] at (0,1) {4};
+
+\draw (0,0) --  (1,0) -- (0,1)  ;
+
+\end{scope}
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -72,6 +243,31 @@ T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1
 where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat vertex 1 as special.)
 
 
+<solution>
+<p>
+
+		<ul>
+			<li>
+			<p>
+ Pick the degree <m>i</m> of vertex <m>1</m>, where <m>0 \leq i \leq n-k</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ Pick the neighbors of <m>1</m>. This can be done in <m>{n-k \choose i}</m> ways.
+			</p>
+			</li>
+			<li>
+			<p>
+ Now these <m>i</m> neighbors cannot be in the same tree as <m>2,3, \ldots, k</m>. If we remove vertex 1, now we have <m>k-1+i</m> vertices that must be in separate trees. There are <m>T(n-1, k-1+i)</m> ways to do this.
+			</p>
+			</li>
+		</ul>
+In end, we must sum over all possible values of <m>i</m>.
+
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -101,6 +297,12 @@ where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat verte
 					<p>
   Prove that <m>\sum_{i=0}^{n-1} d_i = 2n-2</m>.
 
+<solution>
+<p>
+The handshaking lemma says that if we sum the degrees then we count every edge twice. So the sum of the degrees of a tree is <m>2(n-1)</m>.
+
+</p>
+</solution>
 
 
 					</p>
@@ -109,6 +311,11 @@ where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat verte
 					<p>
   Prove that <m>d_{n-2} = d_{n-1}= 1</m> by contradiction. That is, prove that if one of these numbers is greater than 1, then part (i) does not hold.
 
+<solution>
+<p>
+If <m>d_{n-2} \geq 2</m> then <m>\sum_{i=0}^{n-1} d_i \geq 2(n-1) + 1 = 2n-1</m>, a contradiction.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -153,6 +360,13 @@ where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat verte
 			</li>
 		</ul>
 
+<solution>
+<p>
+
+After we remove <m>d_n</m> and replace <m>d_i</m> with <m>d_i-1</m>, It is clear that the degrees sum to <m>2(n-2)=2n-4</m>. As argued in part (ii) of (a), this forces the last two degrees to be at most 1. (Otherwise we get the same contradiction we encountered above). So our new sequence of length <m>n-1</m> satisfies properties (i) and (ii). Therefore, there is a tree on <m>n-1</m> vertices that realizes this degree sequence. We obtain a tree on <m>n</m> vertices that realizes the original sequence by adding a leaf to vertex <m>i</m>.
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -163,6 +377,28 @@ where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat verte
 			</p><p>
 We give three different (but equivalent) formulas.
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ <m>p(2n-2,n)</m>. We need to partition the integer <m>2n-2</m> into exactly <m>n</m> parts.
+			</p>
+			</li>
+			<li>
+			<p>
+ Note that the two smallest parts must both be 1, So we could also write this as <m>p(2n-4,n-2)</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ But here is a much cleaner expression: <m>p(n-2)</m>. We partition <m>n-2</m> into any number of parts. Then we add this partition to the all-ones partition of length <m>n</m> to get the partition we desire.
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
 
 					</p>
 				</li>

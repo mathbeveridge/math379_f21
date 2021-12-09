@@ -12,7 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Show that \(T(4,2)=8\) by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees.</p>
+<p>We have \((n-2)/2\) vertices of degree 3 and \((n+2)/2\) vertices of degree 1. The degree 3 vertices appear in the Prufer code two times. So the total number of trees is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{n \choose (n-2)/2} { n-2 \choose 2, 2, \ldots,2 }
+\end{equation*}
+</div>
+<p class="continuation">because we must first choose the vertices of degree three, and then create the Prufer code.</p>
 <span class="incontext"><a href="exercises-25.html#p-840">in-context</a></span>
 </body>
 </html>

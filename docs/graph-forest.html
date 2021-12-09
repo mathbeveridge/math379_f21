@@ -164,48 +164,79 @@
 <article class="exercise exercise-like" id="exercise-106"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
 <p id="p-836">Let \(T\) be a tree on \(n\) vertices whose non-leaf vertices all have degree 3.</p>
 <ol class="lower-alpha">
-<li id="li-411"><p id="p-837">Prove that \(T\) has \(\frac{1}{2}(n-2)\) vertices of degree 3.</p></li>
-<li id="li-412"><p id="p-838">Find a formula for the number of such trees.</p></li>
+<li id="li-411"><p id="p-837">Prove that \(T\) has \(\frac{1}{2}(n-2)\) vertices of degree 3. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-223" id="solution-223"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-223"><div class="solution solution-like">
+<p id="p-838">If we sum the degrees, then we get twice the number of edges. Suppose that there are \(k\) vertices of degree 3. Then</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+2(n-1) &amp;=&amp; 3 k + (n-k) \\
+n -2 &amp; = &amp; 2k \\
+\frac{n-2}{2} &amp;=&amp; k.
+\end{array}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-412"><p id="p-839">Find a formula for the number of such trees. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-224" id="solution-224"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-224"><div class="solution solution-like">
+<p id="p-840">We have \((n-2)/2\) vertices of degree 3 and \((n+2)/2\) vertices of degree 1. The degree 3 vertices appear in the Prufer code two times. So the total number of trees is</p>
+<div class="displaymath">
+\begin{equation*}
+{n \choose (n-2)/2} { n-2 \choose 2, 2, \ldots,2 }
+\end{equation*}
+</div>
+<p class="continuation">because we must first choose the vertices of degree three, and then create the Prufer code.</p>
+</div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-107"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-839">Let \(T(n,k)\) be the number of labeled forests on \([n]\) with \(k\) components such that the vertices in \([k]\) are all in different tree components.</p>
+<p id="p-841">Let \(T(n,k)\) be the number of labeled forests on \([n]\) with \(k\) components such that the vertices in \([k]\) are all in different tree components.</p>
 <ol class="lower-alpha">
-<li id="li-413"><p id="p-840">Show that \(T(4,2)=8\) by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees.</p></li>
+<li id="li-413"><p id="p-842">Show that \(T(4,2)=8\) by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-225" id="solution-225"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-225"><div class="solution solution-like"><p id="p-843"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/fig-img-graph-forest0.svg" role="img" class="contained"></div></p></div></div></p></li>
 <li id="li-414">
-<p id="p-841">Prove the recurrence relation</p>
+<p id="p-844">Prove the recurrence relation</p>
 <div class="displaymath">
 \begin{equation*}
 T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1 \leq k \leq n
 \end{equation*}
 </div>
-<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.)</p>
+<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-226" id="solution-226"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-226"><div class="solution solution-like">
+<ul id="p-845" class="disc">
+<li id="li-415"><p id="p-846">Pick the degree \(i\) of vertex \(1\text{,}\) where \(0 \leq i \leq n-k\text{.}\)</p></li>
+<li id="li-416"><p id="p-847">Pick the neighbors of \(1\text{.}\) This can be done in \({n-k \choose i}\) ways.</p></li>
+<li id="li-417"><p id="p-848">Now these \(i\) neighbors cannot be in the same tree as \(2,3, \ldots, k\text{.}\) If we remove vertex 1, now we have \(k-1+i\) vertices that must be in separate trees. There are \(T(n-1, k-1+i)\) ways to do this.</p></li>
+</ul>
+<p class="continuation">In end, we must sum over all possible values of \(i\text{.}\)</p>
+</div></div></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-108"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-842">We obtain the <em class="emphasis">ordered degree sequence</em> of a graph by arranging the degrees in non-increasing order (from largest to smallest). In this problem, you will find the number of possible ordered degree sequences for a tree.</p>
+<p id="p-849">We obtain the <em class="emphasis">ordered degree sequence</em> of a graph by arranging the degrees in non-increasing order (from largest to smallest). In this problem, you will find the number of possible ordered degree sequences for a tree.</p>
 <ol class="lower-alpha">
-<li id="li-415">
-<p id="p-843">Let  \(d_1 \geq d_2 \geq \cdots \geq d_n\) be an ordered degree sequence of a tree.</p>
+<li id="li-418">
+<p id="p-850">Let  \(d_1 \geq d_2 \geq \cdots \geq d_n\) be an ordered degree sequence of a tree.</p>
 <ol class="lower-roman">
-<li id="li-416"><p id="p-844">Prove that \(\sum_{i=0}^{n-1} d_i = 2n-2\text{.}\)</p></li>
-<li id="li-417"><p id="p-845">Prove that \(d_{n-2} = d_{n-1}= 1\) by contradiction. That is, prove that if one of these numbers is greater than 1, then part (i) does not hold.</p></li>
+<li id="li-419"><p id="p-851">Prove that \(\sum_{i=0}^{n-1} d_i = 2n-2\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-227" id="solution-227"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-227"><div class="solution solution-like"><p id="p-852">The handshaking lemma says that if we sum the degrees then we count every edge twice. So the sum of the degrees of a tree is \(2(n-1)\text{.}\)</p></div></div></p></li>
+<li id="li-420"><p id="p-853">Prove that \(d_{n-2} = d_{n-1}= 1\) by contradiction. That is, prove that if one of these numbers is greater than 1, then part (i) does not hold. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-228" id="solution-228"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-228"><div class="solution solution-like"><p id="p-854">If \(d_{n-2} \geq 2\) then \(\sum_{i=0}^{n-1} d_i \geq 2(n-1) + 1 = 2n-1\text{,}\) a contradiction.</p></div></div></p></li>
 </ol>
 </li>
-<li id="li-418">
-<p id="p-846">We can use induction on \(n \geq 2\) to prove that if (i) and (ii) hold, then there is a tree with the given ordered degree sequence.</p>
-<ul class="disc">
-<li id="li-419"><p id="p-847"><em class="emphasis">Base Case.</em> The statement is true for \(n=2\text{.}\)</p></li>
-<li id="li-420"><p id="p-848"><em class="emphasis">Inductive Hypothesis.</em> Assume it is true for all such sequences of length \(n-1\text{.}\)</p></li>
 <li id="li-421">
-<p id="p-849"><em class="emphasis">Inductive Step.</em> Consider a sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\) satisfying (i) and (ii). Find the last \(d_i &gt; 1\text{.}\) Remove \(d_n\) from the sequence and replace \(d_i\) with \(d_i-1\text{.}\)</p>
-<ul class="circle">
-<li id="li-422"><p id="p-850">Explain why (i) and (ii) hold for the resulting sequence of length \(n-1\text{.}\)</p></li>
-<li id="li-423"><p id="p-851">Use this fact to create a tree with degree sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\text{.}\)</p></li>
-</ul>
-</li>
-</ul>
-</li>
+<p id="p-855">We can use induction on \(n \geq 2\) to prove that if (i) and (ii) hold, then there is a tree with the given ordered degree sequence.</p>
+<ul class="disc">
+<li id="li-422"><p id="p-856"><em class="emphasis">Base Case.</em> The statement is true for \(n=2\text{.}\)</p></li>
+<li id="li-423"><p id="p-857"><em class="emphasis">Inductive Hypothesis.</em> Assume it is true for all such sequences of length \(n-1\text{.}\)</p></li>
 <li id="li-424">
-<p id="p-852">Given our characterization (i) and (ii) for ordered degree sequences for trees, how many are there?</p>
-<p id="p-853">We give three different (but equivalent) formulas.</p>
+<p id="p-858"><em class="emphasis">Inductive Step.</em> Consider a sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\) satisfying (i) and (ii). Find the last \(d_i &gt; 1\text{.}\) Remove \(d_n\) from the sequence and replace \(d_i\) with \(d_i-1\text{.}\)</p>
+<ul class="circle">
+<li id="li-425"><p id="p-859">Explain why (i) and (ii) hold for the resulting sequence of length \(n-1\text{.}\)</p></li>
+<li id="li-426"><p id="p-860">Use this fact to create a tree with degree sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\text{.}\)</p></li>
+</ul>
+</li>
+</ul>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-229" id="solution-229"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-229"><div class="solution solution-like"><p id="p-861">After we remove \(d_n\) and replace \(d_i\) with \(d_i-1\text{,}\) It is clear that the degrees sum to \(2(n-2)=2n-4\text{.}\) As argued in part (ii) of (a), this forces the last two degrees to be at most 1. (Otherwise we get the same contradiction we encountered above). So our new sequence of length \(n-1\) satisfies properties (i) and (ii). Therefore, there is a tree on \(n-1\) vertices that realizes this degree sequence. We obtain a tree on \(n\) vertices that realizes the original sequence by adding a leaf to vertex \(i\text{.}\)</p></div></div></p>
+</li>
+<li id="li-427">
+<p id="p-862">Given our characterization (i) and (ii) for ordered degree sequences for trees, how many are there?</p>
+<p id="p-863">We give three different (but equivalent) formulas. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-230" id="solution-230"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-230"><div class="solution solution-like"><ul id="p-864" class="disc">
+<li id="li-428"><p id="p-865">\(p(2n-2,n)\text{.}\) We need to partition the integer \(2n-2\) into exactly \(n\) parts.</p></li>
+<li id="li-429"><p id="p-866">Note that the two smallest parts must both be 1, So we could also write this as \(p(2n-4,n-2)\text{.}\)</p></li>
+<li id="li-430"><p id="p-867">But here is a much cleaner expression: \(p(n-2)\text{.}\) We partition \(n-2\) into any number of parts. Then we add this partition to the all-ones partition of length \(n\) to get the partition we desire.</p></li>
+</ul></div></div></p>
 </li>
 </ol></article></section></section></div></main>
 </div>

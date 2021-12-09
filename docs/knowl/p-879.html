@@ -12,8 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(T(x) = \sum_{n=1}^{\infty} t_n \frac{x^n}{n!}\) be the exponential generating function for labeled trees on \([n]\text{,}\) where \(t_0=0\text{.}\) Let \(F(x) = \sum_{n=1}^{\infty} f_n \frac{x^n}{n!}\) where \(f_0=1\) be the exponential generating function for lableled forests on \([n]\text{.}\)</p>
-<ol class="lower-alpha"><li><p>Give a combinatorial proof of your recurrence relation in part (b). Use the following interpretation: how many ways are there to make a forest with one distinguished vertex (maybe there is a squirrel living there)?</p></li></ol>
-<span class="incontext"><a href="exercises-27.html#p-879">in-context</a></span>
+<p>LHS: Pick a connected graph on \(n\) vertices. The total number of ways to do this is \(c_n\text{.}\) RHS: The \(2^{n \choose s}\) term picks any simple graph  (regardless of the number of components). Now we must correct for this by subtracting off the number of  graphs with multiple components. Let's treat vertex \(n\) as special. Let \(j\) be the number of vertices in the same component as vertex \(n\text{,}\) The number of ways to create a graph where vertex \(n\) is in a component of size \(k\) is</p>
+<ul class="disc">
+<li><p>\({n-1 \choose k-1}\text{:}\) choose the \(k-1\) vertices to be in the component with vertex \(n\)</p></li>
+<li><p>\(c_k\text{:}\) choose a connected graph on these \(k\) vertices</p></li>
+<li><p>\(2^{{n-k \choose 2}}\text{:}\) choose any graph on the remaining \(n-k\) vertices.</p></li>
+</ul>
+<p class="continuation">If we sum over \(1 \leq k \leq n-1\) and subtract this from \(2^{n \choose s}\text{,}\) then we get the number of  connected graphs.</p>
+<span class="incontext"><a href="exercises-26.html#p-879">in-context</a></span>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<ul class="disc">
+<li><p>Pick the degree \(i\) of vertex \(1\text{,}\) where \(0 \leq i \leq n-k\text{.}\)</p></li>
+<li><p>Pick the neighbors of \(1\text{.}\) This can be done in \({n-k \choose i}\) ways.</p></li>
+<li><p>Now these \(i\) neighbors cannot be in the same tree as \(2,3, \ldots, k\text{.}\) If we remove vertex 1, now we have \(k-1+i\) vertices that must be in separate trees. There are \(T(n-1, k-1+i)\) ways to do this.</p></li>
+</ul>
+<p class="continuation">In end, we must sum over all possible values of \(i\text{.}\)</p>
+</div></body>
+</html>

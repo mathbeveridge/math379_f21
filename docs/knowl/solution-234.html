@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h6>
+<p>LHS: Pick a connected graph on \(n\) vertices. The total number of ways to do this is \(c_n\text{.}\) RHS: The \(2^{n \choose s}\) term picks any simple graph  (regardless of the number of components). Now we must correct for this by subtracting off the number of  graphs with multiple components. Let's treat vertex \(n\) as special. Let \(j\) be the number of vertices in the same component as vertex \(n\text{,}\) The number of ways to create a graph where vertex \(n\) is in a component of size \(k\) is</p>
+<ul class="disc">
+<li><p>\({n-1 \choose k-1}\text{:}\) choose the \(k-1\) vertices to be in the component with vertex \(n\)</p></li>
+<li><p>\(c_k\text{:}\) choose a connected graph on these \(k\) vertices</p></li>
+<li><p>\(2^{{n-k \choose 2}}\text{:}\) choose any graph on the remaining \(n-k\) vertices.</p></li>
+</ul>
+<p class="continuation">If we sum over \(1 \leq k \leq n-1\) and subtract this from \(2^{n \choose s}\text{,}\) then we get the number of  connected graphs.</p>
+</div>
+<span class="incontext"><a href="exercises-26.html#solution-234">in-context</a></span>
+</body>
+</html>
