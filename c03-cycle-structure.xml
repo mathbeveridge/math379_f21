@@ -185,7 +185,7 @@ The LHS is <m>1 \cdot 1! = 1</m> and the RHS is <m>2!-1=1</m>.
 			<p>
  <em> Inductive Step:</em>
 
-Assume that <m></m>\sum_{k=1}^{n-2} k \cdot k! = (n-1)! - 1.<m></m>
+Assume that <m>\sum_{k=1}^{n-2} k \cdot k! = (n-1)! - 1.</m>
 
 			</p>
 			</li>

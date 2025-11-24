@@ -20,7 +20,7 @@ Suppose that <m>A</m> is a <em>finite</em> set and that we have a surjection <m>
 
 <solution>
 <p>
-Let <m>f(A)</m> be the image of this mapping. For any function, we always have <m>|f(A)| \leq |A|</m>. We know that <m>g: A \rightarrow A</m> is a surjection.  This means that <m>|f(A)| = |A|</m> but this can only happen if <m>f</m> is an injection. Therefore <m>f</m> is both surjective and injective, so it is a bijection.
+Let <m>f(A)</m> be the image of this mapping. For any function, we always have <m>|f(A)| \leq |A|</m>. We know that <m>f: A \rightarrow A</m> is a surjection.  This means that <m>|f(A)| = |A|</m> but this can only happen if <m>f</m> is an injection. Therefore <m>f</m> is both surjective and injective, so it is a bijection.
 </p>
 </solution>
 
