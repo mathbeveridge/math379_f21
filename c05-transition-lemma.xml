@@ -16,11 +16,11 @@
 			<idx><h>A Surjection <m>f: A \rightarrow A</m></h></idx>
 			<statement>
 				<p>
-Suppose that <m>A</m> is a <em>finite</em> set and that we have a surjection <m>g: A \rightarrow A</m>. Prove that <m>g</m> must be a bijection. (The key is that <m>g</m> maps <m>A</m> to itself!).
+Suppose that <m>A</m> is a <em>finite</em> set and that we have a surjection <m>f: A \rightarrow A</m>. Prove that <m>f</m> must be a bijection. (The key is that <m>f</m> maps <m>A</m> to itself!).
 
 <solution>
 <p>
-Let <m>f(A)</m> be the image of this mapping. For any function, we always have <m>|f(A)| \leq |f(A)|</m>. We know that <m>g: A \rightarrow A</m> is a surjection.  This means that <m>|f(A)| = |A|</m> but this can only happen if <m>f</m> is an injection. Therefore <m>f</m> is both surjective and injective, so it is a bijection.
+Let <m>f(A)</m> be the image of this mapping. For any function, we always have <m>|f(A)| \leq |A|</m>. We know that <m>g: A \rightarrow A</m> is a surjection.  This means that <m>|f(A)| = |A|</m> but this can only happen if <m>f</m> is an injection. Therefore <m>f</m> is both surjective and injective, so it is a bijection.
 </p>
 </solution>
 

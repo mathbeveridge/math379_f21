@@ -193,11 +193,13 @@ Assume that <m></m>\sum_{k=1}^{n-2} k \cdot k! = (n-1)! - 1.<m></m>
 			<p>
  <em> Prove True for <m>n</m>:</em>
 
-\begin{eqnarray*}
+<me>
+\begin{array}{rcl}
 \sum_{k=1}^{n-1} k \cdot k! &amp;=&amp; (n-1) \cdot (n-1)! + \sum_{k=1}^{n-2} k \cdot k! \\
 &amp;=&amp; (n-1) \cdot (n-1)! +  (n-1)! - 1 \mbox{ by the inductive assumption} \\
 &amp;=&amp; n! -1.
-\end{eqnarray*}
+\end{array}
+</me>
 
 			</p>
 			</li>

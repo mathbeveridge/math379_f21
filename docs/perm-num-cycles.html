@@ -165,14 +165,23 @@ A(n) =  \sum_{i=1}^n \frac{1}{i}.
 \end{equation*}
 </div>
 <p class="continuation">Here, \(\displaystyle{H(n) = \sum_{i=1}^n \frac{1}{i}}\) is the \(n\)th Harmonic number, which is another <em class="emphasis">very</em> important sequence in mathematics.</p>
-<p id="p-735">Let \(c(n)\) denote the total number of cycles in all \(n\)-permutations.</p></section><section class="exercises" id="exercises-20"><h3 class="heading hide-type">
+<p id="p-735">Let \(c(n)\) denote the total number of cycles in all \(n\)-permutations. we</p></section><section class="exercises" id="exercises-20"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-85"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Cycles in a permutation.</span>
 </h6>
 <ol id="p-736" class="lower-alpha">
-<li id="li-382"><p id="p-737">Prove that \(\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-193" id="solution-193"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-193"><div class="solution solution-like"><p id="p-738">The LHS is the total number of cycles in all \(n\)-permutations. Consider the \(k\)th term of the RHS: \[ \underbrace{c(n,k)}_{\​begin{array}{c}\mbox{# permutations} \\ \mbox{with \(k\) cycles} \end{array}} \cdot \underbrace{k}_{\​begin{array}{c}\mbox{# cycles in such} \\ \mbox{a permutation} \end{array}} \] We sum over \(1 \leq k \leq n\) to get all possibilities.</p></div></div></p></li>
+<li id="li-382"><p id="p-737">Prove that \(\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-193" id="solution-193"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-193"><div class="solution solution-like">
+<p id="p-738">The LHS is the total number of cycles in all \(n\)-permutations. Consider the \(k\)th term of the RHS:</p>
+<div class="displaymath">
+\begin{equation*}
+\underbrace{c(n,k)}_{\begin{array}{c}\mbox{# permutations} \\ \mbox{with  cycles} \end{array}} \cdot
+\underbrace{k}_{\begin{array}{c}\mbox{# cycles in such} \\ \mbox{a permutation} \end{array}}
+\end{equation*}
+</div>
+<p class="continuation">We sum over \(1 \leq k \leq n\) to get all possibilities.</p>
+</div></div></p></li>
 <li id="li-383"><p id="p-739">Prove that \(\displaystyle{A(n) = \frac{c(n)}{n!}}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-194" id="solution-194"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-194"><div class="solution solution-like"><p id="p-740">Dividing \(c(n)\) by the total number of permutations yields \(A(n)\text{.}\)</p></div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-86"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">The Harmonic Numbers.</span>

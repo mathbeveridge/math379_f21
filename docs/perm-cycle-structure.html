@@ -207,7 +207,18 @@
 <li id="li-378"><p id="p-729">Prove the identity using (weak) induction. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-192" id="solution-192"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-192"><div class="solution solution-like"><ul id="p-730" class="disc">
 <li id="li-379"><p id="p-731"><em class="emphasis">Base Case: \(n=2\)</em> The LHS is \(1 \cdot 1! = 1\) and the RHS is \(2!-1=1\text{.}\)</p></li>
 <li id="li-380"><p id="p-732"><em class="emphasis">Inductive Step:</em> Assume that \(\)\sum_{k=1}^{n-2} k \cdot k! = (n-1)! - 1.\(\)</p></li>
-<li id="li-381"><p id="p-733"><em class="emphasis">Prove True for \(n\text{:}\)</em> \​begin{eqnarray*} \sum_{k=1}^{n-1} k \cdot k! &amp;=&amp; (n-1) \cdot (n-1)! + \sum_{k=1}^{n-2} k \cdot k! \\ &amp;=&amp; (n-1) \cdot (n-1)! +  (n-1)! - 1 \mbox{ by the inductive assumption} \\ &amp;=&amp; n! -1. \end{eqnarray*}</p></li>
+<li id="li-381">
+<p id="p-733"><em class="emphasis">Prove True for \(n\text{:}\)</em></p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+\sum_{k=1}^{n-1} k \cdot k! &amp;=&amp; (n-1) \cdot (n-1)! + \sum_{k=1}^{n-2} k \cdot k! \\
+&amp;=&amp; (n-1) \cdot (n-1)! +  (n-1)! - 1 \mbox{ by the inductive assumption} \\
+&amp;=&amp; n! -1.
+\end{array}
+\end{equation*}
+</div>
+</li>
 </ul></div></div></p></li>
 </ol></article></section></section></div></main>
 </div>

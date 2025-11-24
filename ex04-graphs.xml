@@ -105,7 +105,7 @@ Use induction on <m>n</m> to prove that the number of ascending trees is <m>(n-1
 		<exercise>
 			<statement>
 				<p>
- Use inclusion-exclusion to find the number of rooted forests on <m>[n]</m> that contain no isolated vertices.
+ Use inclusion-exclusion to find the number of rooted (and labeled) forests on <m>[n]</m> that contain no isolated vertices.
 
 				</p>
 			</statement>
@@ -113,7 +113,7 @@ Use induction on <m>n</m> to prove that the number of ascending trees is <m>(n-1
 		<exercise>
 			<statement>
 				<p>
- Let <m>\mathcal{Z}_n</m> be the family of rooted forests such that each rooted component is either (1) an isolated vertex, or (2) a path rooted at one of its endpoints. Prove that
+ Let <m>\mathcal{Z}_n</m> be the family of rooted (and labeled) forests such that each rooted component is either (1) an isolated vertex, or (2) a path rooted at one of its endpoints. Prove that
 <me>
 |\mathcal{Z}_n| = \sum_{k=0}^{n-1} {n \choose k} (n-1)_k.
 </me>

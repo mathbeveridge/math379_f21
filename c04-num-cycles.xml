@@ -20,7 +20,7 @@ Here, <m>\displaystyle{H(n) = \sum_{i=1}^n \frac{1}{i}}</m> is the <m>n</m>th Ha
 			</p><p>
 
 Let <m>c(n)</m> denote the total number of cycles in all <m>n</m>-permutations.
-
+we
 
 	</p>
 	</introduction>
@@ -45,10 +45,10 @@ The LHS is the total number of cycles in all <m>n</m>-permutations.
 
 
 Consider the <m>k</m>th term of the RHS:
-\[
+<me>
 \underbrace{c(n,k)}_{\begin{array}{c}\mbox{# permutations} \\ \mbox{with <m>k</m> cycles} \end{array}} \cdot
 \underbrace{k}_{\begin{array}{c}\mbox{# cycles in such} \\ \mbox{a permutation} \end{array}}
-\]
+</me>
 We sum over <m>1 \leq k \leq n</m> to get all possibilities.
 
 </p>
