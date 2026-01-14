@@ -20,18 +20,16 @@
 				<p>
 Elvis is going to have lunch at this favorite diner. Here is the menu.
 
-			<image width="80%" xml:id="fig-img-basic-counting0" source="https://www.laurajonesdesign.com/uploads/5/5/7/3/55733941/published/lv-menu-mock-up.jpg" />
+			<image width="100%" xml:id="fig-img-basic-counting0" source="images/diner.png" />
 
 			<ol>
 				<li>
 					<p>
- For lunch, Elvis wants something to eat and something to drink. How many different options does he have? (Ignore the hot tog toppings for now.)
+ For lunch, Elvis wants something from the grill, something to drink, and a slice of pie. How many different options does he have?
 
 <solution>
 <p>
-There are 5 burgers options , 2 hot dog options, and 5 wrap options. So there are a total of <m>5 + 2 + 5 = 12</m> food options.
-
-There are  five kinds of shakes, so there are a total of <m>12 \times 5 = 60</m> ways to order lunch (ignoring the hot dog toppings).
+There are 6 grill options, 3 drink options, and 8 pie options. So there are a total of <m>6 * 3 * 8 = 144</m> ways to order lunch.
 
 
 </p>
@@ -41,12 +39,12 @@ There are  five kinds of shakes, so there are a total of <m>12 \times 5 = 60</m>
 				</li>
 				<li>
 					<p>
- If Elvis orders a hot dog, he has the option to add extra toppings.
-So how many ways are there to order footlong hot dog?
+Elvis can add as many sides as he likes (including choosing none of them). Now how many ways are there for Elvis to order lunch?
 
 <solution>
 <p>
-There are four extra toppings. Elvis can choose any combination of them, or none at all. So the number of ways to order a foot long hot dog is <m>2^4=16</m>.
+There are four sides available. Elvis can choose any combination of them, or none at all, so there are <m>2^4</m> different ways to decide on the side dishes.
+The total number of ways to order lunch is now <m>6 * 3 * 8 * 2^4 = 2304</m>.
 </p>
 </solution>
 
