@@ -43,9 +43,9 @@ Prufer code for the following trees
 \draw[fill] \x circle (2pt);
 }
 
-\draw[thick] (0,0) -- (4,0);
-\draw[thick] (1,1) -- (1,-1);
-\draw[thick] (3,1) -- (3,0);
+\draw[thick] (0,0) -!- (4,0);
+\draw[thick] (1,1) -!- (1,-1);
+\draw[thick] (3,1) -!- (3,0);
 
 \node[left] at (0,0) {5};
 \node[above left] at (1,0) {3};
@@ -63,7 +63,7 @@ Prufer code for the following trees
 				</latex-image>
 			</image>
 
-<solution>
+<!--solution>
 <p>
 
 <m>\begin{array}{cccccccc}</m>
@@ -72,7 +72,7 @@ Prufer code for the following trees
 \end{array}<m></m>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -91,10 +91,10 @@ Prufer code for the following trees
 \draw[fill] \x circle (2pt);
 }
 
-\draw[thick] (0,0) -- (1,1) -- (2,1.5);
-\draw[thick] (0,0) -- (1,-1) -- (2,-1.5);
-\draw[thick] (1,1) -- (2,.5);
-\draw[thick] (1,-1) -- (2,-.5);
+\draw[thick] (0,0) -!- (1,1) -!- (2,1.5);
+\draw[thick] (0,0) -!- (1,-1) -!- (2,-1.5);
+\draw[thick] (1,1) -!- (2,.5);
+\draw[thick] (1,-1) -!- (2,-.5);
 
 \node[left] at (0,0) {0};
 \node[above] at (1,1) {1};
@@ -114,7 +114,7 @@ Prufer code for the following trees
 				</latex-image>
 			</image>
 
-<solution>
+<!--solution>
 <p>
 
 <m>\begin{array}{cccccccc}</m>
@@ -123,7 +123,7 @@ Prufer code for the following trees
 \end{array}<m></m>
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -144,8 +144,8 @@ Prufer code for the following trees
 \draw[fill] \x circle (2pt);
 }
 
-\draw[thick] (2,0) -- (7,0);
-\draw[thick] (0,1) -- (2,0) -- (0,-1);
+\draw[thick] (2,0) -!- (7,0);
+\draw[thick] (0,1) -!- (2,0) -!- (0,-1);
 
 
 \node[below] at (0,-1) {8};
@@ -167,7 +167,7 @@ Prufer code for the following trees
 				</latex-image>
 			</image>
 
-<solution>
+<!--solution>
 <p>
 
 <m>\begin{array}{cccccccccc}</m>
@@ -176,7 +176,7 @@ Prufer code for the following trees
 \end{array}<m></m>
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -193,7 +193,7 @@ Prufer code for the following trees
  What is the Prufer Code for each of the trees in problem 1?
 
 
-<solution>
+<!--solution>
 <p>
 
 			<ol>
@@ -226,7 +226,7 @@ Prufer code for the following trees
 			</ol>
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -245,7 +245,7 @@ Prufer code for the following trees
 					<p>
  <m>\begin{array}{cccccccccc} 2015 \end{array}</m>
 
-<solution>
+<!--solution>
 <p>
 
 			<image width="60%" xml:id="fig-img-graph-cayley3">
@@ -255,7 +255,7 @@ Prufer code for the following trees
 
 
 
-\draw (0,0) -- (5,0);
+\draw (0,0) -!- (5,0);
 
 \foreach \x in {0,1,2,3,4,5}
 {
@@ -278,7 +278,7 @@ Prufer code for the following trees
 
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -287,7 +287,7 @@ Prufer code for the following trees
 					<p>
  <m>\begin{array}{cccccccccc} 32103213230 \end{array}</m>
 
-<solution>
+<!--solution>
 <p>
 
 
@@ -297,11 +297,11 @@ Prufer code for the following trees
 \begin{tikzpicture} %mathbook width=80%
 
 
-\draw (0,0) -- (2,0) -- (4,1);
-\draw (0,.75) -- (1,0) -- (0,-.75);
-\draw (2.2,.9) -- (2,0) -- (1.5,.8);
-\draw (2,-1) -- (2,0) -- (4,-1);
-\draw (3,-.5) -- (3.3,-1.5);
+\draw (0,0) -!- (2,0) -!- (4,1);
+\draw (0,.75) -!- (1,0) -!- (0,-.75);
+\draw (2.2,.9) -!- (2,0) -!- (1.5,.8);
+\draw (2,-1) -!- (2,0) -!- (4,-1);
+\draw (3,-.5) -!- (3.3,-1.5);
 
 \foreach \x in {(0,0), (0,.75), (0, -.75), (1,0), (2,0), (2,-1), (2.2, .9), (1.5,.8), (3,.5), (4,1), (3, -.5), (4, -1), (3.3, -1.5)}
 {
@@ -333,7 +333,7 @@ Prufer code for the following trees
 
 
 </p>
-</solution>
+</solution-->
 
 			</p><p>
 
@@ -350,7 +350,7 @@ Prufer code for the following trees
 				<p>
  Prove that vertex <m>k</m> appears <m>\deg(k)-1</m> times in the Prufer code of a tree.
 
-<solution>
+<!--solution>
 <p>
 
 As we create the Prufer code, we remove edges one at a time. Each vertex appears as a leaf exactly once, except for vertex <m>0</m>. Therefore vertex <m>k &gt;0</m> appears as the parent of a leaf exactly <m>\deg(k)-1</m> times. This is also the number of times that <m>k</m> appears in the second row of the extended Prufer code.
@@ -360,7 +360,7 @@ As we create the Prufer code, we remove edges one at a time. Each vertex appears
 As for vertex 0, it appears <m>\deg(0) -1</m> times because we delete the final zero in the bottom row of the extended Prufer code in order to get the Prufer code.
 
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>
@@ -377,7 +377,7 @@ unlabeled trees on <m>n</m> vertices.
 
 			</p><p>
 
-<solution>
+<!--solution>
 <p>
 
 Given an unlabeled tree, the number of distinct labelings is at most <m>n!</m>. Therefore
@@ -387,7 +387,7 @@ n! \cdot (\mbox{# unlabeled trees}) \geq n^{n-2},
 and the result follows.
 
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>

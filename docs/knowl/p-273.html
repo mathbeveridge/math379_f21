@@ -12,13 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<ul class="disc">
-<li><p>distinct balls</p></li>
-<li><p>distinct boxes</p></li>
-<li><p>repetition allowed</p></li>
-<li><p>boxes cannot be empty</p></li>
-</ul>
-<p class="continuation">Number of ways: \(k! \cdot S(n,k)\) (see if you can explain why!) and we must have \(k \leq n\text{.}\)</p>
-<span class="incontext"><a href="exercises-7.html#p-273">in-context</a></span>
+<p>Fixing a particular integer \(n\text{,}\) we realized that we can find all of the integer partitions of \(n\) by using the generating function</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+Q_n(x) = \prod_{k=1}^{n} \frac{1}{1-x^k}.
+\end{equation*}
+</div>
+<p class="continuation">More generally, for any integer \(m\text{,}\) what kind of partitions of \(m\) does \(Q_n(x)\) count? </p>
+<span class="incontext"><a href="exercises-14.html#p-273">in-context</a></span>
 </body>
 </html>

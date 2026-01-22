@@ -12,25 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>This time, we will create a function \(f: X \rightarrow Y\) and then show that it is well defined, injective and surjective. Consider the function</p>
+<p>Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-f(S) = \overline{S}
+a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
 \end{equation*}
 </div>
-<p class="continuation">that makes a \(k\)-set to its complement.</p>
-<ul class="disc">
-<li><p>This function is well defined, since the complement of a \(k\)-set is an \((n-k)\)-set.</p></li>
-<li><p>The function is one-to-one. Suppose that \(S \neq T\text{.}\) This means that either (1)  there is an element \(k \in S\) such that \(k \notin T\text{,}\) or there is an element \(k \in T\) such that \(k \notin S\text{.}\) The names of the sets don't matter, so we'll assume the first case holds. It is clear that \(k \notin \overline{S} = f(S)\) and \(k \in \overline{T} = f(T)\text{.}\) Therefore \(f(S) \neq f(T)\text{.}\)</p></li>
-<li><p>The function is onto. Consider any \((n-k)\)-set \(T\text{.}\) Then the set \(\overline{T}\) is a \(k\)-set, and \(f(\overline{T}) = T\text{.}\)</p></li>
-</ul>
-<p class="continuation">Alternatively, we can prove that \(f\) is invertible. In fact, the function \(f\) is its own inverse function!</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-f \circ f(S) = f(\overline{S}) =S.
-\end{equation*}
-</div>
-<p class="continuation">This proof is much faster than proving that \(f\) is bijective. But that's because we know a lot about set complements (and \(f\) is its own inverse!). There will be cases where proving injective and surjective is easier to explain than constructing an inverse function.</p>
-<span class="incontext"><a href="exercises-4.html#p-146">in-context</a></span>
+<p class="continuation">We have now represented \(n\) as the sum of distinct positive integers!</p>
+<span class="incontext"><a href="exercises-8.html#p-146">in-context</a></span>
 </body>
 </html>

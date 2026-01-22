@@ -158,48 +158,26 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="graph-genfun"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">27</span> <span class="title">Graphs and Generating Functions</span>
 </h2>
-<section class="introduction" id="introduction-27"><p id="p-868"></p></section><section class="exercises" id="exercises-26"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-27"><p id="p-500"></p></section><section class="exercises" id="exercises-26"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-109"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Cycles and Road Races.</span>
 </h6>
-<p id="p-869">A cycle graph is a closed walk whose only  repetition is the first/last vertex. An alternative definition: a cycle is a connected 2-regular graph.  Let \(\cC_n\) consist of the set of all labeled cycles on \(n\) vertices, and let \(c_n = | \cC_n|\text{.}\) We actually have \(c_1=1=c_2\text{,}\) allowing for graphs with loops and multiple edges: <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-graph-genfun0.svg" role="img" class="contained"></div></p>
+<p id="p-501">A cycle graph is a closed walk whose only  repetition is the first/last vertex. An alternative definition: a cycle is a connected 2-regular graph.  Let \(\cC_n\) consist of the set of all labeled cycles on \(n\) vertices, and let \(c_n = | \cC_n|\text{.}\) We actually have \(c_1=1=c_2\text{,}\) allowing for graphs with loops and multiple edges: <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-graph-genfun0.svg" role="img" class="contained"></div></p>
 <ol class="lower-alpha">
-<li id="li-431"><p id="p-870">Let \(c_n\) be the number of (labeled) cycle graphs on \(n\) vertices. What is \(c_n\) for \(n \geq 1\) ? (Account for all graph symmetries, and be careful for \(n=1\) and \(n=2\text{.}\)) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-231" id="solution-231"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-231"><div class="solution solution-like"><div class="displaymath" id="p-871">
-\begin{equation*}
-c_1 = 1, \qquad c_2 = 1, \qquad \mbox{and} \qquad c_n = \frac{n!}{2n} = \frac{(n-1)!}{2} \mbox{ for } n \geq 3
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-432">
-<p id="p-872">Let \(C(x)\) be the <em class="emphasis">exponential generating function</em> for the number of cycle graphs  on \(n \geq 1\) vertices. Prove that</p>
+<li id="li-310"><p id="p-502">Let \(c_n\) be the number of (labeled) cycle graphs on \(n\) vertices. What is \(c_n\) for \(n \geq 1\) ? (Account for all graph symmetries, and be careful for \(n=1\) and \(n=2\text{.}\)) </p></li>
+<li id="li-311">
+<p id="p-503">Let \(C(x)\) be the <em class="emphasis">exponential generating function</em> for the number of cycle graphs  on \(n \geq 1\) vertices. Prove that</p>
 <div class="displaymath">
 \begin{equation*}
 C(x) = \frac{x}{2} + \frac{x^2}{4} + \log \left(  \frac{1}{\sqrt{1-x}} \right).
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-232" id="solution-232"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-232"><div class="solution solution-like">
-<p id="p-873">We have</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-C(x) &amp;=&amp; x + \frac{x^2}{2!} + \sum_{n=3}^{\infty} \frac{(n-1)!}{2} \frac{x^n}{n!}  \, = \, x + \frac{x^2}{2} + \frac{1}{2} \sum_{n=3}^{\infty}  \frac{x^n}{n}  \\
-&amp;=&amp; \frac{x}{2}  + \frac{x^2}{4 } + \frac{1}{2} \sum_{n=1}^{\infty}  \frac{x^n}{n}\, = \, \frac{x}{2}  + \frac{x^2}{4 } + \frac{1}{2} \log \left( \frac{1}{1-x} \right) \\
-&amp;=&amp;
-\frac{x}{2}  + \frac{x^2}{4 } +  \log \left( \frac{1}{\sqrt{1-x}} \right)
-\end{array}
-\end{equation*}
-</div>
-</div></div></p>
 </li>
-<li id="li-433"><p id="p-874">A collection of trees is called a forest. A collection of cycles is called a <em class="emphasis">road race</em>. Let \(R(x)\) be the <em class="emphasis">exponential generating function</em> for the number of (labeled) road races. Find the formula for \(R(x)\) and justify your answer. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-233" id="solution-233"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-233"><div class="solution solution-like"><div class="displaymath" id="p-875">
-\begin{equation*}
-R(x) =\exp(C(x)) = \exp \left( \frac{x}{2}  + \frac{x^2}{4 } +  \log \left( \frac{1}{\sqrt{1-x}} \right)  \right)
-= \frac{ \exp \left( \frac{x}{2}  + \frac{x^2}{4 } \right) }{\sqrt{1-x}}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-434">
-<p id="p-876">Using Mathematica, we can expand your expression for \(R(x)\) to obtain</p>
+<li id="li-312"><p id="p-504">A collection of trees is called a forest. A collection of cycles is called a <em class="emphasis">road race</em>. Let \(R(x)\) be the <em class="emphasis">exponential generating function</em> for the number of (labeled) road races. Find the formula for \(R(x)\) and justify your answer. </p></li>
+<li id="li-313">
+<p id="p-505">Using Mathematica, we can expand your expression for \(R(x)\) to obtain</p>
 <div class="displaymath">
 \begin{equation*}
 1+x+x^2+\frac{5 x^3}{6}+\frac{17 x^4}{24}+\frac{73 x^5}{120}+\frac{97
@@ -211,7 +189,7 @@ x^6}{180}+\frac{2461 x^7}{5040}+ \cdots
 </ol></article><article class="exercise exercise-like" id="exercise-110"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Connected Graphs.</span>
 </h6>
-<p id="p-877">Let \(c_n\) denote the number of connected graphs on \([n]\text{.}\) Using the " \(x \, D \, \log\)" method, we have proven that \(c = 0\) and for \(n \geq 1\text{,}\) we have</p>
+<p id="p-506">Let \(c_n\) denote the number of connected graphs on \([n]\text{.}\) Using the " \(x \, D \, \log\)" method, we have proven that \(c = 0\) and for \(n \geq 1\text{,}\) we have</p>
 <div class="displaymath">
 \begin{equation*}
 c_n = \displaystyle{2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n \choose k} \, \frac{k}{n}  \, 2^{{n-k \choose 2} }c_k}
@@ -224,17 +202,9 @@ c_n = \displaystyle{ 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n-1 \choose k-1}  \, 
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-435"><p id="p-878">Give a <em class="emphasis">combinatorial proof</em> of this identity by treating vertex \(n\) as special. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-234" id="solution-234"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-234"><div class="solution solution-like">
-<p id="p-879">LHS: Pick a connected graph on \(n\) vertices. The total number of ways to do this is \(c_n\text{.}\) RHS: The \(2^{n \choose s}\) term picks any simple graph  (regardless of the number of components). Now we must correct for this by subtracting off the number of  graphs with multiple components. Let's treat vertex \(n\) as special. Let \(j\) be the number of vertices in the same component as vertex \(n\text{,}\) The number of ways to create a graph where vertex \(n\) is in a component of size \(k\) is</p>
-<ul class="disc">
-<li id="li-436"><p id="p-880">\({n-1 \choose k-1}\text{:}\) choose the \(k-1\) vertices to be in the component with vertex \(n\)</p></li>
-<li id="li-437"><p id="p-881">\(c_k\text{:}\) choose a connected graph on these \(k\) vertices</p></li>
-<li id="li-438"><p id="p-882">\(2^{{n-k \choose 2}}\text{:}\) choose any graph on the remaining \(n-k\) vertices.</p></li>
-</ul>
-<p class="continuation">If we sum over \(1 \leq k \leq n-1\) and subtract this from \(2^{n \choose s}\text{,}\) then we get the number of  connected graphs.</p>
-</div></div></p></li>
-<li id="li-439">
-<p id="p-883">Using this recurrence, we can find the values of the \(c_n\text{:}\)</p>
+<li id="li-314"><p id="p-507">Give a <em class="emphasis">combinatorial proof</em> of this identity by treating vertex \(n\) as special. </p></li>
+<li id="li-315">
+<p id="p-508">Using this recurrence, we can find the values of the \(c_n\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 (c_0, c_1, c_2, c_3, c_4, c_5, c_6, \cdots)

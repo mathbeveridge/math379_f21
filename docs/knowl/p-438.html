@@ -12,47 +12,21 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<ol class="lower-alpha">
+<p>A fixed point of a permutation \(f\) is an element \(i\) such that \(f(i)=i\text{.}\) Use problem 4(b) to prove that the average number of fixed points of a permutation is 1 by finishing the following proof by strong induction.</p>
+<ul class="disc">
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> When \(n=1\text{,}\) there is exactly one permutation: \((1)\text{.}\) This permutation has one fixed point.</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that if \(1&lt;k&lt;n\text{,}\) then the average number of fixed points in a \(k\)-permutation is \(1\text{.}\)</p></li>
 <li>
-<p>For \(n \geq 0\text{,}\) let \(a_n\) be the number of ways to pay \(n\)  cents using nickels. Write out the first 6 <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">nonzero</em> terms of the generating function</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
-\end{equation*}
-</div>
-<p class="continuation"><a class="solution-knowl original" data-knowl="./knowl/solution-105-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Consider \(n\text{:}\)</em> We consider the set \(S_n\) of all \(n\)-permutations. Partition \(S_n\) into sets \(A_1, A_2, \ldots, A_n\) where \(A_i\) consists of all permutations where element \(n\) is in an \(i\)-cycle.</p>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Now you must count the average number of fixed points in each of the \(A_i\) for the following cases:</em></p>
+<ul class="circle">
+<li><p>Case \(i=1\text{.}\) </p></li>
+<li><p>Case \(2 \leq i \leq n-1\text{.}\) </p></li>
+<li><p>Case \(i=n\text{.}\) </p></li>
+</ul>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Now use your results above to find the average number of fixed points.</em> </p>
 </li>
-<li>
-<p>For \(n \geq 0\text{,}\) let \(b_n\) be the number of ways to pay \(n\) cents using dimes. Write out the first 6 <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">nonzero</em> terms of the generating function</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
-\end{equation*}
-</div>
-<p class="continuation"><a class="solution-knowl original" data-knowl="./knowl/solution-106-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
-</li>
-<li>
-<p>For \(n \geq 0\text{,}\) let \(c_n\) be the number of ways to pay \(n\) cents using quarters. Write out the first 6 <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">nonzero</em> terms of the generating function</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
-\end{equation*}
-</div>
-<p class="continuation"><a class="solution-knowl original" data-knowl="./knowl/solution-107-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
-</li>
-<li><p>You should recognize \(A(x), B(x), C(x)\) as variants of a well known Taylor series. What are these functions? What restrictions must we place on \(x\text{?}\) <a class="solution-knowl original" data-knowl="./knowl/solution-108-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-<li><p>Using the product and addition principles, we can show that the  function \(D(x)= A(x)B(x)C(x)\) is the generating function for the number of ways to pay \(n\) cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for \(D(x)\text{.}\) (The same restrictions on \(x\) apply here.) <a class="solution-knowl original" data-knowl="./knowl/solution-109-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-<li>
-<p>The Taylor series for \(D(x)\) starts as</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-D(x) = 1 + x^5 + 2x^{10} + 3 x^{20} + 4x^{25} + 5x^{30} + 6x^{35} + 7 x^{40} + 8x^{45} +
-\cdots
-\end{equation*}
-</div>
-<p class="continuation">Verify this gives the right answer for \(n=35\) by listing the number of ways to pay \(35\) cents using nickels, dimes and/or quarters. <a class="solution-knowl original" data-knowl="./knowl/solution-110-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
-</li>
-</ol>
-<span class="incontext"><a href="exercises-12.html#p-438">in-context</a></span>
+</ul>
+<span class="incontext"><a href="exercises-21.html#p-438">in-context</a></span>
 </body>
 </html>

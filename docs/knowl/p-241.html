@@ -12,12 +12,18 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>However, this process creates each set partition twice because choosing \(S\) leads to the same set partition as choosing its complement \(\overline{S}\text{.}\) So we must divide by 2 to obtain our final answer. We have</p>
+<p>Solve the recurrence relation</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-S(n,2) = \frac{2^n-2}{2} = 2^{n-1} -1.
+h_n = 5 h_{n-1} - 6h_{n-2} \mbox{ for } n \geq 2
 \end{equation*}
 </div>
-<span class="incontext"><a href="exercises-7.html#p-241">in-context</a></span>
+<p class="continuation">where \(h_0=1\) and \(h_1=2\text{.}\)</p>
+<ol class="lower-alpha">
+<li><p>Let \(H(x)\) be the generating function for this series. Find a simple closed formula for \(H(x)\text{.}\) </p></li>
+<li><p>Use the Taylor series for the function in part (a) to find a simple closed formula for \(h_n\text{.}\) </p></li>
+<li><p>Now solve the same recurrence where \(h_0=1\) and \(h_1=-2\text{.}\) You will need to use partial fractions. </p></li>
+</ol>
+<span class="incontext"><a href="exercises-12.html#p-241">in-context</a></span>
 </body>
 </html>

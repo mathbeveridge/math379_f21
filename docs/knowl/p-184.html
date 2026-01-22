@@ -12,18 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>LHS</p>
-<ul class="disc">
-<li><p>Pick the chair (\(n\) ways).</p></li>
-<li><p>For the remaining \(n-1\text{,}\) decide whether each person is on the committee.</p></li>
-</ul>
-<p class="continuation">RHS</p>
-<ul class="disc">
-<li><p>Choose the size \(k\) of the committee</p></li>
-<li><p>Pick the committee: \({n \choose k}\) ways.</p></li>
-<li><p>Pick the chair from the committee members: \(k\) ways</p></li>
-<li><p>Sum over \(1 \leq k \leq n\) to handle all committee sizes.</p></li>
-</ul>
-<span class="incontext"><a href="exercises-5.html#p-184">in-context</a></span>
+<p>In this problem, you will list the ways to triangulate a 6-gon. This corresponds to Catalan number \(C_4=14\text{.}\)</p>
+<ol class="lower-roman">
+<li><p>For now,  draw your  6-gons with the corners labeled \(0,1,2,3,4,5\text{.}\)  The edge \((0,5)\) must be in some triangle. List the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">FOUR</em>  ways that you can complete the triangle that contains the edge \((0,5)\text{.}\)</p></li>
+<li><p>For each of your answers in part (a), list all the ways to complete the triangulation of the 6-gon.</p></li>
+<li><p>Explain how part (b) relates to the Catalan recurrence \(C_4 = C_0C_3 + C_1 C_2 + C_2 C_1 + C_3 C_0.\) In particular, treat the triangle containing the edge \((0,5)\) as special.</p></li>
+</ol>
+<span class="incontext"><a href="exercises-10.html#p-184">in-context</a></span>
 </body>
 </html>

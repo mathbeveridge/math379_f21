@@ -12,27 +12,10 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\frac{k! k!}{k}  = k! (k-1)!
-\end{equation*}
-</div>
-<p class="continuation">Here is one proof of this result.</p>
-<ul class="disc">
-<li><p>Start off with a line containing \(2k\) spots.</p></li>
-<li><p>Case 1: people line up MFMF...MF. Number of ways:\(k! k!\)</p></li>
-<li><p>Case 2: people line up FMFM...FM. Number of ways: \(k! k!\)</p></li>
-<li><p>Total number of ways to line up: \(2 ( k! k!)\)</p></li>
-<li><p>Turn the line into a circle. Each circular arrangement is created 2k times.</p></li>
-<li><p>Final answer is \(\frac{2 (k! k!)}{2k} = \frac{k! k! }{ k}  = k! (k-1)!\)</p></li>
-</ul>
-<p class="continuation">Here is another way to argue this that is quicker, but more subtle:</p>
-<ul class="disc">
-<li><p>Pick any chair (it doesn't matter). Starting at that chair, place all the men in every other chair, going clockwise. Number of ways: \(k!\)</p></li>
-<li><p>Now place the women going clockwise, starting at the empty chair to the right of the first man. Number of ways: \(k!\)</p></li>
-<li><p>Accounting for the circular symmetry, each configuration is created \(k\) times.</p></li>
-<li><p>Final answer is  \(\frac{k! k!}{ k} = k! (k-1)!\text{.}\)</p></li>
-</ul>
+<ol class="lower-alpha">
+<li><p>Find a closed formula for the sum \(\displaystyle{\sum_{k=0}^n {n \choose k} 2^k}\text{.}\) </p></li>
+<li><p>Devise a situation that is counted by this sum. Then give a "combinatorial proof" by explaining why both the closed formula and the one given above count all configurations. </p></li>
+</ol>
 <span class="incontext"><a href="exercises-1.html#p-25">in-context</a></span>
 </body>
 </html>

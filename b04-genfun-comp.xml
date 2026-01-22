@@ -30,7 +30,7 @@ B(x) = \frac{1}{1-A(x)}.
 \item
 Use the composition result above to find the ordinary generating function <m>B(x)</m> for this process. (Hint: task <m>{\cal A}</m> is "do nothing.")
 
-<solution>
+<!--solution>
 <p>
 We must have <m>a_0=0</m> (to use the theorem). For <m>n\geq 1</m>, we have <m>a_n=1</m>, since there is one way to "do nothing." So
 \begin{eqnarray*}
@@ -38,13 +38,13 @@ A(x) &amp;=&amp; \sum_{n=1}^{\infty} x^n = x \sum_{n=1}^{\infty} x^{n-1} = x \su
 B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{1-x}} = \frac{1-x}{1-2x} = 1 + \frac{x}{1-2x}
 \end{eqnarray*}
 </p>
-</solution>
+</solution-->
 
 				<li>
 					<p>
  Find the value of <m>b_n</m>.
 
-<solution>
+<!--solution>
 <p>
 <me>
 B(x) = 1 + \frac{x}{1-2x} = 1 + x \sum_{n=0}^{\infty} (2x)^n = 1 + \sum_{n=0}^{\infty} 2^n x^{n+1} =
@@ -52,7 +52,7 @@ B(x) = 1 + \frac{x}{1-2x} = 1 + x \sum_{n=0}^{\infty} (2x)^n = 1 + \sum_{n=0}^{\
 </me>
 So <m>b_0=1</m> and <m>b_n = 2^{n-1}</m> for <m>n \geq 1</m>.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -60,11 +60,11 @@ So <m>b_0=1</m> and <m>b_n = 2^{n-1}</m> for <m>n \geq 1</m>.
 					<p>
  Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.)
 
-<solution>
+<!--solution>
 <p>
 Place the jurors in a line. We have to decide where to divide them. There are <m>n-1</m> spaces between jurors where we can choose to make a new interval. Each of these choices is made independently. So the product principle gives the number of ways as <m>2^{n-1}</m>.
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -77,7 +77,7 @@ Place the jurors in a line. We have to decide where to divide them. There are <m
 					<p>
  Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function <m>B(x)</m> for the total process (splitting the pool and then assigning roles).
 
-<solution>
+<!--solution>
 <p>
 For a group of size <m>n</m>, the number of ways to choose a foreman and then choose one of 3 roles for the remaining people is <m>n 3^{n-1}</m>. Once again, we must take <m>a_0=0</m>, so
 <me>
@@ -87,7 +87,7 @@ B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{3x}{(1-3x)^2}} = \frac{(1-
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -113,7 +113,7 @@ B(x) = e^{A(x)}.
 					<p>
  Suppose that we have <m>n</m> employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function <m>B(x)</m>. You should recognize this marvelous generating function.
 
-<solution>
+<!--solution>
 <p>
 Once again, we remember that we must have <m>a_0=0</m> to use the theorem. Otherwise, we once again consider the "do nothing" task, which can be done in one way.
 <me>
@@ -124,7 +124,7 @@ B(x) &amp;=&amp; e^{A(x)} = e^{e^x-1}
 </me>
 This is the generating function for the Bell numbers: the total number of ways to partition a set into any number of parts. We derived this formula a few days ago, starting from the Bell recurrence. This way is <em>much</em> easier!
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -133,7 +133,7 @@ This is the generating function for the Bell numbers: the total number of ways t
 					<p>
  Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function <m>B(x)</m> for the entire process (partitioning and then choosing a chair for each committee.)
 
-<solution>
+<!--solution>
 <p>
 Of course, we force <m>a_0=0</m>. Otherwise, <m>a_n = n</m>. So
 <me>
@@ -144,7 +144,7 @@ B(x) &amp;=&amp; e^{A(x)} = e^{xe^x}
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -157,7 +157,7 @@ B(x) &amp;=&amp; e^{A(x)} = e^{xe^x}
 					<p>
  Find the exponential generating function <m>B(x)</m> for this process.
 
-<solution>
+<!--solution>
 <p>
 We force <m>a_0=0</m>, and otherwise, <m>a_n = (n-1)!</m>. So
 <me>
@@ -167,7 +167,7 @@ B(x) &amp;=&amp; e^{A(x)} = \exp \left( \log \left( \frac{1}{1-x} \right) \right
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -175,7 +175,7 @@ B(x) &amp;=&amp; e^{A(x)} = \exp \left( \log \left( \frac{1}{1-x} \right) \right
 					<p>
  Use <m>B(x)</m> to find the value of <m>b_n</m>. Be amazed at the simplicity of the answer for this complicated question!
 
-<solution>
+<!--solution>
 <p>
 Remember that <m>B(x)</m> is an <em>exponential</em> generating function!
 <me>
@@ -183,7 +183,7 @@ B(x)=  \frac{1}{1-x} = \sum_{n=0}^{\infty} x^n = \sum_{n=0}^{\infty} n! \frac{x^
 </me>
 So the number of ways to split into any number of groups and then seat each group at a circular table is <m>b_n=n!</m> This is a <em>ridiculously</em> simple formula for such a complex procedure.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>

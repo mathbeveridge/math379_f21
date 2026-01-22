@@ -38,7 +38,7 @@ In (weak) induction, we relate the size <m>n</m> case to the size <m>n-1</m> cas
 				<p>
 Use strong induction to prove that all <m>n</m>-permutations can be decomposed into a union of disjoint cycles.
 
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -74,7 +74,7 @@ is a cycle in the permutation <m>n</m>. Considering  remaining <m>n-r</m> elemen
 
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -105,7 +105,7 @@ Prove the following identity in two different ways:
  Consider a non-identity permutation <m>p_1p_2 \cdots p_n</m>. Let <m>0 \leq j \leq n-1</m> be the  largest integer such that
 <m>p_1p_2 \cdots p_j = 12 \cdots (j-1)</m>. That is, the first <m>j-1</m> elements map to themselves, but element <m>j</m> does not map to <m>j</m>. Prove that the number of such <m>n</m>-permutations is  <m>(n-j) \cdot (n-j)!</m>.
 
-<solution>
+<!--solution>
 <p>
 
 Fix <m>j</m> where <m>1 \leq j \leq n</m>. Suppose that <m>p_1p_2 \cdots p_{j-1} = 12 \cdots (j-1)</m>, and <m>p_{j} \neq j.</m>
@@ -131,7 +131,7 @@ By the product principle, the total number of ways to create the permutation is
 1 \cdot (n-j) \cdot (n-j)!
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -140,7 +140,7 @@ By the product principle, the total number of ways to create the permutation is
 					<p>
  The RHS  counts the number of permutations <em>except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!)
 
-<solution>
+<!--solution>
 <p>
 
 If <m>p=p_1 p_2 \cdots p_n</m> is not the identity permutation, then there is some index <m>j</m> such that <m>p_j \neq j</m>. Note that <m>1 \leq j \leq n-1</m> because the value <m>j=n</m> is impossible (if the first <m>n-1</m> elements map to themselves, then so does the last element,
@@ -151,7 +151,7 @@ Partitioning the set of non-identity permutations according to the first such in
 </me>
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -169,7 +169,7 @@ Partitioning the set of non-identity permutations according to the first such in
 
 
 
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -206,7 +206,7 @@ Assume that <m>\sum_{k=1}^{n-2} k \cdot k! = (n-1)! - 1.</m>
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>

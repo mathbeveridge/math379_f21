@@ -63,7 +63,7 @@ We list the 11 different permutations in  <m>\cA(4,3)</m> and all <m>6=3!</m> pe
 \end{array}
 </me>
 
-<solution>
+<!--solution>
 <p>
 Here are the mappings:
 <me>
@@ -77,7 +77,7 @@ Here are the mappings:
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -85,7 +85,7 @@ Here are the mappings:
 					<p>
  In part (a), you only mapped to permutations in <m>\cA(3,2)</m> and <m>\cA(3,3)</m>.  Now work backwards. Given a permutation in <m>\cA(3,2)</m>, where can you place element 4 to create a permutation in <m>\cA(4,3)</m>? Now, how about when you start with a permutation in <m>\cA(3,3)</m>? Write down your observations.
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -100,7 +100,7 @@ Here are the mappings:
 			</li>
 		</ul>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -108,7 +108,7 @@ Here are the mappings:
 					<p>
  Now we start our proof for <m>A(n,k)</m>. Given a permutation <m>p \in \cA(n,k)</m>. Let <m>p' \in S_{n-1}</m> be the permutation obtained by removing element <m>n</m>. Explain why either <m>p' \in \cA(n-1, k)</m> or <m>p' \in \cA(n-1,k-1)</m>.
 
-<solution>
+<!--solution>
 <p>
 In removing element <m>n</m>, one of two things happens.
 		<ul>
@@ -124,7 +124,7 @@ In removing element <m>n</m>, one of two things happens.
 			</li>
 		</ul>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -136,55 +136,55 @@ In removing element <m>n</m>, one of two things happens.
 			<p>
  Before <m>p_1</m>?
 
-<solution>
+<!--solution>
 <p>
 No, because this will create a new ascending run.
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 			<li>
 			<p>
  After <m>p_{n-1}</m>?
 
-<solution>
+<!--solution>
 <p>
 Yes: this just continues the current ascent.
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 			<li>
 			<p>
  Directly after a descent of <m>p'</m>?
 
-<solution>
+<!--solution>
 <p>
 Yes, that descent becomes an ascent, and now there is a descent after element <m>n</m>.
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 			<li>
 			<p>
  Directly after an ascent of <m>p'</m>?
 
-<solution>
+<!--solution>
 <p>
 No, this creates a new descent after element <m>n</m> for a total of <m>k</m> descents (instead of the required <m>k-1</m>).
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 		</ul>
 In conclusion, how many different options do you have for inserting element <m>n</m>?
 
-<solution>
+<!--solution>
 <p>
 
 There are <m>1 + (k-1) = k</m> possible places to put element <m>n</m> when starting with <m>p \in \cA(n-1,k)</m>.
 </p>
-</solution>
+</solution-->
 
 
 
@@ -198,54 +198,54 @@ There are <m>1 + (k-1) = k</m> possible places to put element <m>n</m> when star
 			<p>
  Before <m>p_1</m>?
 
-<solution>
+<!--solution>
 <p>
 Yes, this adds a new descent, increasing our total number of descents from <m>k-2</m> to <m>k-1</m>.
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 			<li>
 			<p>
  After <m>p_{n-1}</m>?
 
-<solution>
+<!--solution>
 <p>
 No, this does not add a new descent.
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 			<li>
 			<p>
  Directly after a descent of <m>p'</m>?
 
-<solution>
+<!--solution>
 <p>
 No, this removes a decent and adds a decent for a net gain of zero.
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 			<li>
 			<p>
  Directly after an ascent of <m>p'</m>?
 
-<solution>
+<!--solution>
 <p>
 Yes, this adds a descent so that we now have <m>k-1</m> descents.
 </p>
-</solution>
+</solution-->
 			</p>
 			</li>
 		</ul>
 In conclusion, how many different options do you have for inserting element <m>n</m>? <em>Pro Tip #3:</em> Remember that you are starting with <m>p' \in  \cA(n-1,k-1)</m>, so there are <m>n-2</m> total ascents/descents.
 
-<solution>
+<!--solution>
 <p>
 We can insert element <m>n</m> in <m>1 + (n-2) - (k-2) = 1 + n - k = n-k+1</m> places.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -253,11 +253,11 @@ We can insert element <m>n</m> in <m>1 + (n-2) - (k-2) = 1 + n - k = n-k+1</m> p
 					<p>
  Put together your answers from parts (d) and (e) to prove that <m></m>A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).<m></m>
 
-<solution>
+<!--solution>
 <p>
 When we remove element <m>n</m> from <m>p \in \cA(n,k)</m>, we either obtain an element of <m>\cA(n-1,k)</m> or <m>\cA(n-1,k-1).</m> By part (d), we obtain each <m>p' \in \cA(n-1,k)</m> exactly <m>k</m> times. By part (e), we obtain each <m>p' \in \cA(n-1,k-1)</m> exactly <m>n-k+1</m> times. This proves the recurrence.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -290,7 +290,7 @@ Let <m>p = p_1 p_2 \cdots p_n \in \cA(n,k),</m> so that <m>p</m> has <m>k-1</m> 
 		</ul>
 <em>Pro Tip #4:</em> The reversal mapping <m>p \rightarrow \overline{p}</m> is a <em>very useful tool</em> for investigating the structure of permutations.
 
-<solution>
+<!--solution>
 <p>
 We show that <m>\overline{p} \in \cA(n,n-k+1)</m>.
 
@@ -319,7 +319,7 @@ We show that <m>\overline{p} \in \cA(n,n-k+1)</m>.
 
 Now  it is easy to prove that the mapping involved is reversible, and hence is an invertible function. So it is a bijection between these sets.
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>

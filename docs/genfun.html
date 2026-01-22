@@ -158,114 +158,73 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">13</span> <span class="title">Generating Function Introduction</span>
 </h2>
-<section class="introduction" id="introduction-13"><p id="p-434">Let</p>
+<section class="introduction" id="introduction-13"><p id="p-230">Let</p>
 <div class="displaymath">
 \begin{equation*}
 a_0, a_1, a_2, \ldots , a_n, \ldots
 \end{equation*}
 </div>
 <p class="continuation">be  an infinite sequence.</p>
-<p id="p-435">The <em class="emphasis">generating function</em> \(F(x)\) for this sequence is</p>
+<p id="p-231">The <em class="emphasis">generating function</em> \(F(x)\) for this sequence is</p>
 <div class="displaymath">
 \begin{equation*}
 F(x) =  \sum_{n=0}^{\infty} a_n x^n.
 \end{equation*}
 </div>
 <p class="continuation">We  also refer to \(F(x)\) as the <em class="emphasis">ordinary generating function (OGF)</em> for the sequence.</p>
-<p id="p-436">The <em class="emphasis">exponential generating function (EGF)</em> \(G(x)\) for this sequence is</p>
+<p id="p-232">The <em class="emphasis">exponential generating function (EGF)</em> \(G(x)\) for this sequence is</p>
 <div class="displaymath">
 \begin{equation*}
 G(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!}.
 \end{equation*}
 </div>
-<p id="p-437">Both OGFs and EGFs are useful counting tools. It will take us a few days to develop enough results to be able to talk about when to use OGFs and when to use EGFs. For now, our  goal is to get comfortable with these definitions, and to practice solving recurrences.</p></section><section class="exercises" id="exercises-12"><h3 class="heading hide-type">
+<p id="p-233">Both OGFs and EGFs are useful counting tools. It will take us a few days to develop enough results to be able to talk about when to use OGFs and when to use EGFs. For now, our  goal is to get comfortable with these definitions, and to practice solving recurrences.</p></section><section class="exercises" id="exercises-12"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-54"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">OGFs for Pocket Change.</span>
 </h6>
-<ol id="p-438" class="lower-alpha">
-<li id="li-221">
-<p id="p-439">For \(n \geq 0\text{,}\) let \(a_n\) be the number of ways to pay \(n\)  cents using nickels. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
+<ol id="p-234" class="lower-alpha">
+<li id="li-134">
+<p id="p-235">For \(n \geq 0\text{,}\) let \(a_n\) be the number of ways to pay \(n\)  cents using nickels. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
 <div class="displaymath">
 \begin{equation*}
 A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-105" id="solution-105"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-105"><div class="solution solution-like"><div class="displaymath" id="p-440">
-\begin{equation*}
-1 + x^5 + x^{10} + x^{15} + x^{20} + x^{25} + \cdots
-\end{equation*}
-</div></div></div></p>
 </li>
-<li id="li-222">
-<p id="p-441">For \(n \geq 0\text{,}\) let \(b_n\) be the number of ways to pay \(n\) cents using dimes. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
+<li id="li-135">
+<p id="p-236">For \(n \geq 0\text{,}\) let \(b_n\) be the number of ways to pay \(n\) cents using dimes. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like"><div class="displaymath" id="p-442">
-\begin{equation*}
-1 + x^{10} + x^{20} + x^{30} + x^{40} + x^{50} + \cdots
-\end{equation*}
-</div></div></div></p>
 </li>
-<li id="li-223">
-<p id="p-443">For \(n \geq 0\text{,}\) let \(c_n\) be the number of ways to pay \(n\) cents using quarters. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
+<li id="li-136">
+<p id="p-237">For \(n \geq 0\text{,}\) let \(c_n\) be the number of ways to pay \(n\) cents using quarters. Write out the first 6 <em class="emphasis">nonzero</em> terms of the generating function</p>
 <div class="displaymath">
 \begin{equation*}
 C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like"><div class="displaymath" id="p-444">
-\begin{equation*}
-1 + x^{25} + x^{50} + x^{75} + x^{100} + x^{125} + \cdots
-\end{equation*}
-</div></div></div></p>
 </li>
-<li id="li-224"><p id="p-445">You should recognize \(A(x), B(x), C(x)\) as variants of a well known Taylor series. What are these functions? What restrictions must we place on \(x\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like">
-<div class="displaymath" id="p-446">
-\begin{equation*}
-\begin{array}{ccc}
-\displaystyle{A(x)= \frac{1}{1-x^5}} &amp;
-\displaystyle{B(x)= \frac{1}{1-x^{10}}} &amp;
-\displaystyle{A(x)= \frac{1}{1-x^{25}}}
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">provided that \(x\) satisifies: \underline{\phantom{asdfasdfasdf}\(-1 &lt; x &lt; 1\)\phantom{asdfasdfasdf}}</p>
-</div></div></p></li>
-<li id="li-225"><p id="p-447">Using the product and addition principles, we can show that the  function \(D(x)= A(x)B(x)C(x)\) is the generating function for the number of ways to pay \(n\) cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for \(D(x)\text{.}\) (The same restrictions on \(x\) apply here.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like"><div class="displaymath" id="p-448">
-\begin{equation*}
-D(x) = \frac{1}{1-x^{5}}  \cdot \frac{1}{1-x^{10}}  \cdot \frac{1}{1-x^{25}}
-=  \frac{1}{(1-x^{5})(1-x^{10})(1-x^{25})}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-226">
-<p id="p-449">The Taylor series for \(D(x)\) starts as</p>
+<li id="li-137"><p id="p-238">You should recognize \(A(x), B(x), C(x)\) as variants of a well known Taylor series. What are these functions? What restrictions must we place on \(x\text{?}\) </p></li>
+<li id="li-138"><p id="p-239">Using the product and addition principles, we can show that the  function \(D(x)= A(x)B(x)C(x)\) is the generating function for the number of ways to pay \(n\) cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for \(D(x)\text{.}\) (The same restrictions on \(x\) apply here.) </p></li>
+<li id="li-139">
+<p id="p-240">The Taylor series for \(D(x)\) starts as</p>
 <div class="displaymath">
 \begin{equation*}
 D(x) = 1 + x^5 + 2x^{10} + 3 x^{20} + 4x^{25} + 5x^{30} + 6x^{35} + 7 x^{40} + 8x^{45} +
 \cdots
 \end{equation*}
 </div>
-<p class="continuation">Verify this gives the right answer for \(n=35\) by listing the number of ways to pay \(35\) cents using nickels, dimes and/or quarters. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like">
-<p id="p-450">Here are the six ways  to pay \(35\) cents using these coins:</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{ccc}
-Q + D &amp; Q + 2N &amp; 3D + N \\
-2D + 3N &amp; D+5N &amp; 7N
-\end{array}
-\end{equation*}
-</div>
-</div></div></p>
+<p class="continuation">Verify this gives the right answer for \(n=35\) by listing the number of ways to pay \(35\) cents using nickels, dimes and/or quarters. </p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-55"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Solving a Recurrence with OGFs.</span>
 </h6>
-<p id="p-451">Solve the recurrence relation</p>
+<p id="p-241">Solve the recurrence relation</p>
 <div class="displaymath">
 \begin{equation*}
 h_n = 5 h_{n-1} - 6h_{n-2} \mbox{ for } n \geq 2
@@ -273,97 +232,20 @@ h_n = 5 h_{n-1} - 6h_{n-2} \mbox{ for } n \geq 2
 </div>
 <p class="continuation">where \(h_0=1\) and \(h_1=2\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-227"><p id="p-452">Let \(H(x)\) be the generating function for this series. Find a simple closed formula for \(H(x)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-111" id="solution-111"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-111"><div class="solution solution-like"><div class="displaymath" id="p-453">
-\begin{equation*}
-\begin{array}{rcll}
-h_n  &amp;=&amp; 5 h_{n-1} - 6h_{n-2} &amp; \mbox{for } n \geq 2 \\
-h_n x^n &amp;=&amp; 5 h_{n-1} x^n - 6h_{n-2} x^n &amp; \mbox{for } n \geq 2 \\
-\displaystyle{\sum_{n=2}^{\infty} h_n x^n} &amp;=&amp; \displaystyle{ \sum_{n=2}^{\infty}  5 h_{n-1} x^n - \sum_{n=2}^{\infty}  6h_{n-2} x^n} &amp; (\mbox{sum starts at } n=2) \\
-\displaystyle{ \sum_{n=2}^{\infty} h_n x^n }&amp;=&amp; \displaystyle{  5 x \sum_{n=2}^{\infty}  5 h_{n-1} x^{n-1} -6x^2 \sum_{n=2}^{\infty}  h_{n-2} x^{n-2} }&amp; (\mbox{powers match coefficient indices})  \\
-\displaystyle{ \sum_{n=2}^{\infty} h_n x^n }&amp;=&amp; \displaystyle{  5 x \sum_{i=1}^{\infty}  5 h_{i} x^{i} -6x^2 \sum_{j=0}^{\infty}  h_{j} x^{j} }&amp; (\mbox{re-index second two summations})  \\
-H(x) - h_0 - h_1x &amp;=&amp; \displaystyle{  5 x ( H(x) - h_0)  -6x^2 H(x)} &amp; (\mbox{replace summations with } H(x))  \\
-H(x) - 5H(x) + 6x^2 H(x) &amp;=&amp; h_0 + h_1x  -5 h_0 x  &amp; (\mbox{collect like terms})  \\
-H(x) (1 - 5x +6x^2)  &amp;=&amp; 1  -3 x  &amp; (h_0=1 \mbox{ and } h_1=2)  \\
-H(x)&amp;=&amp; \displaystyle{\frac{1  -3 x}{1 - 5x +6x^2 }}   &amp; (\mbox{bingo!})  \\
-H(x)&amp;=&amp;\displaystyle{ \frac{1}{ 1 - 2x } }  &amp; (\mbox{simplify})  \\
-\end{array}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-228"><p id="p-454">Use the Taylor series for the function in part (a) to find a simple closed formula for \(h_n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-112" id="solution-112"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-112"><div class="solution solution-like">
-<div class="displaymath" id="p-455">
-\begin{equation*}
-H(x) = \frac{1}{1-2x} = \sum_{n=0}^{\infty} (2x)^n =  \sum_{n=0}^{\infty} 2^n x^n.
-\end{equation*}
-</div>
-<p class="continuation">Therefore \(h_n=2^n\text{.}\)</p>
-</div></div></p></li>
-<li id="li-229"><p id="p-456">Now solve the same recurrence where \(h_0=1\) and \(h_1=-2\text{.}\) You will need to use partial fractions. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-113" id="solution-113"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-113"><div class="solution solution-like">
-<p id="p-457">The first 7 lines are the same, so we have</p>
-<div class="displaymath">
-\begin{equation*}
-H(x)= \frac{h_0 + (h_1- 5h_0)x}{1 - 5x +6x^2 }
-=  \frac{1 -7x}{ (1-2x)(1-3x)}.
-\end{equation*}
-</div>
-<p class="continuation">We use partial fractions to solve</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{1 -7x}{ (1-2x)(1-3x)} = \frac{a}{ 1-2x} + \frac{b}{ 1-3x},
-\end{equation*}
-</div>
-<p class="continuation">giving equations \(a+b = 1\) and \(-3a-2b=-7\text{.}\) Solving gives \(a=5\) and \(b=-4\text{,}\) so</p>
-<div class="displaymath">
-\begin{equation*}
-H(x) = \frac{5}{ 1-2x} - \frac{4}{ 1-3x}= 5 \sum_{n=0}^{\infty} (2x)^n -4 \sum_{n=0}^{\infty} (3x)^n
-\end{equation*}
-</div>
-<p class="continuation">and therefore \(h_n = 5 \cdot 2^n - 4 \cdot 3^n.\)</p>
-</div></div></p></li>
+<li id="li-140"><p id="p-242">Let \(H(x)\) be the generating function for this series. Find a simple closed formula for \(H(x)\text{.}\) </p></li>
+<li id="li-141"><p id="p-243">Use the Taylor series for the function in part (a) to find a simple closed formula for \(h_n\text{.}\) </p></li>
+<li id="li-142"><p id="p-244">Now solve the same recurrence where \(h_0=1\) and \(h_1=-2\text{.}\) You will need to use partial fractions. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-56"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Solving Another Recurrence.</span>
 </h6>
-<p id="p-458">Consider the recurrence relation \[ a_n = 4 a_{n-1} -1 \mbox{ for } n \geq 1 \] where \(a_0=3\)</p>
+<p id="p-245">Consider the recurrence relation \[ a_n = 4 a_{n-1} -1 \mbox{ for } n \geq 1 \] where \(a_0=3\)</p>
 <ol class="lower-alpha">
-<li id="li-230"><p id="p-459">Let \(A(x)\) be the  OGF for this series. Find a simple closed formula for \(A(x)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-114" id="solution-114"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-114"><div class="solution solution-like"><div class="displaymath" id="p-460">
-\begin{equation*}
-\begin{array}{rcl}
-a_n &amp;=&amp; 4 a_{n-1} -1 \mbox{ for } n \geq 1 \\
-a_n x^n &amp;=&amp; (4 a_{n-1} -1)x^n \mbox{ for } n \geq 1 \\
-\sum_{n=1}^{\infty} a_n x^n &amp;=&amp;  \sum_{n=1}^{\infty} 4a_{n-1} x^n - \sum_{n=1}^{\infty} x^n \\
-\sum_{n=1}^{\infty} a_n x^n &amp;=&amp;  4x \sum_{n=1}^{\infty} a_{n-1} x^{n-1} - x \sum_{n=1}^{\infty} x^{n-1} \\
-A(x) - a_0 &amp;=&amp; 4x A(x) - \frac{x}{1-x} \\
-A(x) (1 - 4x) &amp;=&amp; a_0 - \frac{x}{1-x} \\
-A(x) (1 - 4x) &amp;=&amp; 3 - \frac{x}{1-x} \\
-A(x) (1 - 4x) &amp;=&amp;  \frac{3-4x}{1-x} \\
-A(x)  &amp;=&amp;  \frac{3-4x}{(1 - 4x)(1-x)} \\
-\end{array}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-231"><p id="p-461">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(a_n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-115" id="solution-115"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-115"><div class="solution solution-like">
-<p id="p-462">We use partial fractions:</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{3-4x}{(1 - 4x)(1-x)} = \frac{b}{1-4x} + \frac{c}{1-x}
-\end{equation*}
-</div>
-<p class="continuation">which gives \(b+c =3\) and \(-b-4c=-4\text{.}\) Solving, we find that \(b=8/3\) and \(c=1/3\text{.}\) So</p>
-<div class="displaymath">
-\begin{equation*}
-A(x) = \frac{8}{3} \cdot \frac{1}{1-4x} + \frac{1}{3} \cdot \frac{1}{1-x}
-= \frac{8}{3} \sum_{n=0}^{\infty} 4^n x^n + \frac{1}{3} \sum_{n=0}^{\infty} x^n
-\end{equation*}
-</div>
-<p class="continuation">and therefore</p>
-<div class="displaymath">
-\begin{equation*}
-a_n = \frac{8}{3} \cdot 4^n + \frac{1}{3}  = \frac{2 \cdot 4^{n+1} + 1}{3}.
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-143"><p id="p-246">Let \(A(x)\) be the  OGF for this series. Find a simple closed formula for \(A(x)\text{.}\) </p></li>
+<li id="li-144"><p id="p-247">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(a_n\text{.}\) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-57"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Yet Another Recurrence Relation.</span>
 </h6>
-<p id="p-463">Solve the recurrence relation</p>
+<p id="p-248">Solve the recurrence relation</p>
 <div class="displaymath">
 \begin{equation*}
 b_n = 3 b_{n-1} -2 b_{n-2} \mbox{ for } n \geq 2
@@ -371,45 +253,12 @@ b_n = 3 b_{n-1} -2 b_{n-2} \mbox{ for } n \geq 2
 </div>
 <p class="continuation">where \(b_0=1\) and \(b_1=3\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-232"><p id="p-464">Let \(B(x)\) be the  generating function for this series. Find a simple closed formula for \(B(x)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-116" id="solution-116"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-116"><div class="solution solution-like"><div class="displaymath" id="p-465">
-\begin{equation*}
-\begin{array}{rcl}
-b_n &amp;=&amp; 3 b_{n-1} -2 b_{n-2} \mbox{ for } n \geq 2 \\
-b_n x^n &amp;=&amp; (3 b_{n-1} -2 b_{n-2})x^n \mbox{ for } n \geq 2 \\
-\sum_{n=2}^{\infty} b_n x^n &amp;=&amp;  \sum_{n=2}^{\infty} 3 b_{n-1}  x^n - \sum_{n=2}^{\infty} 2 b_{n-2} x^n \\
-\sum_{n=2}^{\infty} b_n x^n &amp;=&amp;  3x \sum_{n=2}^{\infty}  b_{n-1}  x^{n-1} - 2x^2 \sum_{n=2}^{\infty} x^{n-2} \\
-B(x) - b_0 - b_1 x &amp;=&amp; 3x ( B(x) - b_0) - 2x^2 B(x) \\
-B(x) ( 1 -3x + 2x^2) &amp;=&amp; b_0 + b_1x - 3b_0 x \\
-B(x) ( 1 -2x)(1-x) &amp;=&amp; 1 + 3x - 3 x \\
-B(x)  &amp;=&amp; \frac{1}{ (1-2x)(1-x)} \\
-\end{array}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-233"><p id="p-466">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(b_n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-117" id="solution-117"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-117"><div class="solution solution-like">
-<p id="p-467">We use partial fractions:</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{1}{(1 - 2x)(1-x)} = \frac{c}{1-2x} + \frac{d}{1-x}
-\end{equation*}
-</div>
-<p class="continuation">which gives \(c+d =1\) and \(c+2d=0\text{.}\) Solving, we find that \(c=2\) and \(d=-1\text{.}\) So</p>
-<div class="displaymath">
-\begin{equation*}
-B(x) =   \frac{2}{1-2x} -  \frac{1}{1-x}
-= 2 \sum_{n=0}^{\infty} 2^n x^n - \sum_{n=0}^{\infty} x^n
-\end{equation*}
-</div>
-<p class="continuation">and therefore</p>
-<div class="displaymath">
-\begin{equation*}
-b_n = 2 \cdot 2^n - 1 = 2^{n+1} -1.
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-145"><p id="p-249">Let \(B(x)\) be the  generating function for this series. Find a simple closed formula for \(B(x)\text{.}\) </p></li>
+<li id="li-146"><p id="p-250">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(b_n\text{.}\) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-58"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Solving a Recurrence with EGFs.</span>
 </h6>
-<p id="p-468">Solve the recurrence relation</p>
+<p id="p-251">Solve the recurrence relation</p>
 <div class="displaymath">
 \begin{equation*}
 c_n = 2 n c_{n-1} +8 n (n-1) c_{n-2} \mbox{ for } n \geq 2
@@ -417,34 +266,12 @@ c_n = 2 n c_{n-1} +8 n (n-1) c_{n-2} \mbox{ for } n \geq 2
 </div>
 <p class="continuation">where \(c_0=1\) and \(c_1=4\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-234"><p id="p-469">Let \(C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!}\) be the <em class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(C(x)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-118" id="solution-118"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-118"><div class="solution solution-like"><div class="displaymath" id="p-470">
-\begin{equation*}
-\begin{array}{rcl}
-c_n &amp;=&amp; 2 n  c_{n-1} + 8 n (n-1) c_{n-2} \mbox{ for } n \geq 2 \\
-c_n \frac{x^n}{n!} &amp;=&amp; (2 n  c_{n-1} + 8 n (n-1) c_{n-2} )\frac{x^n}{n!}\mbox{ for } n \geq 2 \\
-\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=2}^{\infty} (2 n  c_{n-1} + 8 n (n-1) c_{n-2} )\frac{x^n}{n!} \\
-\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp;2  \sum_{n=2}^{\infty} n  c_{n-1} \frac{x^n}{n!} + 8 \sum_{n=2}^{\infty}  n (n-1) c_{n-2} \frac{x^n}{n!} \\
-\sum_{n=2}^{\infty} c_n \frac{x^n}{n!} &amp;=&amp;2x  \sum_{n=2}^{\infty}   c_{n-1} \frac{x^{n-1}}{(n-1)!} + 8x^2 \sum_{n=2}^{\infty}  n (n-1) c_{n-2} \frac{x^{n-2}}{(n-2)!} \\
-C(x) - c_0 - c_1 \frac{x}{1!} &amp;=&amp; 2x (C(x) - c_0) - 8x^2 C(x) \\
-C(x) ( 1 -2x - 8x^2) &amp;=&amp; c_0 + c_1 x - 2c_0 x \\
-C(x) ( 1 -4x)(1+2x) &amp;=&amp; 1 + 4 x - 2 x \\
-C(x) &amp;=&amp; \frac{1 + 2 x }{ ( 1 -4x)(1+2x)} \\
-C(x) &amp;=&amp; \frac{1}{ 1 -4x} \\
-\end{array}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-235"><p id="p-471">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(c_n\text{.}\) <em class="emphasis">Remember that \(C(x)\) is an EGF</em>, so you will have to multiply the \(n\)th term by \(\frac{n!}{n!}\) and rearrange to get the right answer. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-119" id="solution-119"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-119"><div class="solution solution-like">
-<div class="displaymath" id="p-472">
-\begin{equation*}
-C(x) = \sum_{n=0}^{\infty} 4^n x^n = \sum_{n=0}^{\infty} (4^n n! ) \frac{x^n}{n!}
-\end{equation*}
-</div>
-<p class="continuation">so \(c_n = 4^n n!\text{.}\)</p>
-</div></div></p></li>
+<li id="li-147"><p id="p-252">Let \(C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!}\) be the <em class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(C(x)\text{.}\) </p></li>
+<li id="li-148"><p id="p-253">Use the Taylor series for the functions in part (a) to find a simple closed formula for \(c_n\text{.}\) <em class="emphasis">Remember that \(C(x)\) is an EGF</em>, so you will have to multiply the \(n\)th term by \(\frac{n!}{n!}\) and rearrange to get the right answer. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-59"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Solving Another Recurrence with EGFs.</span>
 </h6>
-<p id="p-473">Consider the recurrence relation</p>
+<p id="p-254">Consider the recurrence relation</p>
 <div class="displaymath">
 \begin{equation*}
 d_n = n d_{n-1} + 1 \mbox{ for } n \geq 1
@@ -452,46 +279,8 @@ d_n = n d_{n-1} + 1 \mbox{ for } n \geq 1
 </div>
 <p class="continuation">where \(d_0=1\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-236"><p id="p-474">Let \(D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}\) be the <em class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(D(x)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-120" id="solution-120"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-120"><div class="solution solution-like"><div class="displaymath" id="p-475">
-\begin{equation*}
-\begin{array}{rcl}
-d_n &amp;=&amp; n  d_{n-1} + 1 \mbox{ for } n \geq 1 \\
-d_n \frac{x^n}{n!} &amp;=&amp; ( n  d_{n-1} + 1 )\frac{x^n}{n!}\mbox{ for } n \geq 2 \\
-\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} (n  d_{n-1} + 1 )\frac{x^n}{n!} \\
-\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} n  d_{n-1} \frac{x^n}{n!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
-\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; x \sum_{n=1}^{\infty}   d_{n-1} \frac{x^{n-1}}{(n-1)!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
-D(x) -1 &amp;=&amp; x D(x) + e^x -1 \\
-D(x) (1 - x)  &amp;=&amp;  e^x  \\
-D(x) &amp;=&amp; \frac{e^x}{1-x}
-\end{array}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-237"><p id="p-476">Can you figure out how to use your answer in part (a) to find a simple closed formula for \(d_n\text{?}\) You will need to think about what happens when you multiply two power series together. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-121" id="solution-121"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-121"><div class="solution solution-like">
-<p id="p-477">We have</p>
-<div class="displaymath">
-\begin{equation*}
-D(x) = \frac{e^x}{1-x} = \left( \sum_{n=0}^{\infty} \frac{x^n}{n!} \right)  \left( \sum_{n=0}^{\infty} x^n \right).
-\end{equation*}
-</div>
-<p class="continuation">If we multiply out, we find that the  coefficient of \(x^n\) is</p>
-<div class="displaymath">
-\begin{equation*}
-\sum_{k=0}^n \frac{1}{k!}
-\end{equation*}
-</div>
-<p class="continuation">and therefore</p>
-<div class="displaymath">
-\begin{equation*}
-D(x) = \sum_{n=0}^{\infty} \left( n! \sum_{k=0}^n \frac{1}{k!} \right) \frac{x^n}{n!}.
-\end{equation*}
-</div>
-<p class="continuation">So our formula is</p>
-<div class="displaymath">
-\begin{equation*}
-d_n = n! \sum_{k=0}^n \frac{1}{k!} = \sum_{k=0}^n (n)_k.
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-149"><p id="p-255">Let \(D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}\) be the <em class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(D(x)\text{.}\) </p></li>
+<li id="li-150"><p id="p-256">Can you figure out how to use your answer in part (a) to find a simple closed formula for \(d_n\text{?}\) You will need to think about what happens when you multiply two power series together. </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

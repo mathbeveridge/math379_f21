@@ -12,13 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
-\end{equation*}
-</div>
-<p class="continuation">We have now represented \(n\) as the sum of distinct positive integers!</p>
-<span class="incontext"><a href="exercises-8.html#p-326">in-context</a></span>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Before:</em> Calculate the first few \(a_n\) using the recurrence. Mathematica is a great tool for this! For example, the following code will print out the first terms of the sequence \(a_0 = 3\text{,}\) \(a_1 = 5\text{,}\) \(a_n = 2a_{n-1} + a_{n-2} + 4\text{.}\)</p>
+<pre class="code-display tex2jax_ignore">
+myseq[0] = 3
+myseq[1] = 5
+myseq[n_] := 2 myseq[n-1] + myseq[n-2] + 4
+Table[myseq[k], {k,0,5}]
+</pre>
+<span class="incontext"><a href="genfun-exercise.html#p-326">in-context</a></span>
 </body>
 </html>

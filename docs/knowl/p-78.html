@@ -12,7 +12,41 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>How many intersections do the diagonals determine? <a class="solution-knowl original" data-knowl="./knowl/solution-24-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
-<span class="incontext"><a href="exercises-1.html#p-78">in-context</a></span>
+<p>In this problem, you will show that \(| \cE_n | = | \cO_n | \) via a bijective proof.  Since \(| \cP([n])| = 2^n\text{,}\)  this means that \(| \cE_n | = | \cO_n | = 2^{n-1}\text{.}\)</p>
+<ol class="lower-alpha">
+<li>
+<p>We start with a proof that only works when \(n=2k+1\) is odd.</p>
+<ol class="lower-roman">
+<li><p>List all the subsets of \([3]\text{.}\) </p></li>
+<li><p>Pair each set with its complement. What do you notice? </p></li>
+<li><p>Now give a bijective proof that  when \(n\) is odd,  \(| \cE_n | = | \cO_n | \text{.}\) </p></li>
+</ol>
+</li>
+<li>
+<p>Now we consider the case where \(n\) is even.</p>
+<ol class="lower-roman">
+<li><p>List all the subsets of \([4]\text{.}\) </p></li>
+<li><p>Pair each set with its complement.  Why doesn't this lead to a proof of the result? </p></li>
+</ol>
+</li>
+<li>
+<p>We now give a bijective proof that works for both even and odd \(n\text{.}\) Consider the following mapping \(f : \cE_n \rightarrow \cO_n\text{.}\) For \(S \in \cP([n])\text{,}\) we define</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+f(S) = \left\{
+\begin{array}{cl}
+S \backslash \{ 1 \} &amp; \mbox{if } 1 \in S, \\
+S \cup \{ 1 \} &amp; \mbox{if } 1 \notin S.
+\end{array}
+\right.
+\end{equation*}
+</div>
+<ol class="lower-roman">
+<li><p>Explain why \(f: \cE_n \rightarrow \cO_n\) is well defined, meaning that an even set is always mapped to an odd set. </p></li>
+<li><p>Now prove that \(f\) is a bijection. </p></li>
+</ol>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-4.html#p-78">in-context</a></span>
 </body>
 </html>

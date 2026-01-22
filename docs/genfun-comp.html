@@ -158,102 +158,44 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun-comp"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">16</span> <span class="title">Compositions of Generating Functions</span>
 </h2>
-<section class="introduction" id="introduction-16"><p id="p-580"></p></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-16"><p id="p-313"></p></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-66"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Jurors.</span>
 </h6>
-<p id="p-581">These two problems use composition of ordinary generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and ordinary generating function \(A(x) = \sum_{n=1}^{\infty} a_n x^n\text{.}\) Let \({\cal B}\) be the task "split the interval \([n]\) into nonempty intervals and perform \({\cal A}\) on each interval." Then the ordinary generating function for \({\cal B}\) is</p>
+<p id="p-314">These two problems use composition of ordinary generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and ordinary generating function \(A(x) = \sum_{n=1}^{\infty} a_n x^n\text{.}\) Let \({\cal B}\) be the task "split the interval \([n]\) into nonempty intervals and perform \({\cal A}\) on each interval." Then the ordinary generating function for \({\cal B}\) is</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = \frac{1}{1-A(x)}.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-294">
-<p id="p-582">Suppose that we have \(n\) prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first \(k_1\) jurors, the next \(k_2\) jurors and so on).</p>
+<li id="li-199">
+<p id="p-315">Suppose that we have \(n\) prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first \(k_1\) jurors, the next \(k_2\) jurors and so on).</p>
 <ol class="lower-roman">
-<li id="li-295"><p id="p-584">Find the value of \(b_n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-161" id="solution-161"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-161"><div class="solution solution-like">
-<div class="displaymath" id="p-585">
-\begin{equation*}
-B(x) = 1 + \frac{x}{1-2x} = 1 + x \sum_{n=0}^{\infty} (2x)^n = 1 + \sum_{n=0}^{\infty} 2^n x^{n+1} =
-1 + \sum_{m=1}^{\infty} 2^{m-1} x^{m}.
-\end{equation*}
-</div>
-<p class="continuation">So \(b_0=1\) and \(b_n = 2^{n-1}\) for \(n \geq 1\text{.}\)</p>
-</div></div></p></li>
-<li id="li-296"><p id="p-586">Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-162" id="solution-162"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-162"><div class="solution solution-like"><p id="p-587">Place the jurors in a line. We have to decide where to divide them. There are \(n-1\) spaces between jurors where we can choose to make a new interval. Each of these choices is made independently. So the product principle gives the number of ways as \(2^{n-1}\text{.}\)</p></div></div></p></li>
+<li id="li-200"><p id="p-316">Find the value of \(b_n\text{.}\) </p></li>
+<li id="li-201"><p id="p-317">Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.) </p></li>
 </ol>
 </li>
-<li id="li-297"><p id="p-588">Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-163" id="solution-163"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-163"><div class="solution solution-like">
-<p id="p-589">For a group of size \(n\text{,}\) the number of ways to choose a foreman and then choose one of 3 roles for the remaining people is \(n 3^{n-1}\text{.}\) Once again, we must take \(a_0=0\text{,}\) so</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} n 3^n x^n = 3x \sum_{n=1}^{\infty} n 3^{n-1} x^{n-1} =   \frac{3x}{(1-3x)^2} \\
-B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{3x}{(1-3x)^2}} = \frac{(1-3x)^2}{1-9x+9x^2} = 1 + \frac{3x}{1-9x+9x^2}
-\end{array}
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-202"><p id="p-318">Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-67"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Employees.</span>
 </h6>
-<p id="p-590">These three problems use composition of exponential generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and exponential generating function \(A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}\text{.}\) Let \({\cal B}\) be the task "partition \([n]\) into nonempty subsets and  perform \({\cal A}\) on each subset." Then the exponential generating function for \({\cal B}\) is</p>
+<p id="p-319">These three problems use composition of exponential generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and exponential generating function \(A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}\text{.}\) Let \({\cal B}\) be the task "partition \([n]\) into nonempty subsets and  perform \({\cal A}\) on each subset." Then the exponential generating function for \({\cal B}\) is</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = e^{A(x)}.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-298"><p id="p-591">Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-164" id="solution-164"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-164"><div class="solution solution-like">
-<p id="p-592">Once again, we remember that we must have \(a_0=0\) to use the theorem. Otherwise, we once again consider the "do nothing" task, which can be done in one way.</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} \frac{x^n}{n!} = e^x -1  \\
-B(x) &amp;=&amp; e^{A(x)} = e^{e^x-1}
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">This is the generating function for the Bell numbers: the total number of ways to partition a set into any number of parts. We derived this formula a few days ago, starting from the Bell recurrence. This way is <em class="emphasis">much</em> easier!</p>
-</div></div></p></li>
-<li id="li-299"><p id="p-593">Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function \(B(x)\) for the entire process (partitioning and then choosing a chair for each committee.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-165" id="solution-165"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-165"><div class="solution solution-like">
-<p id="p-594">Of course, we force \(a_0=0\text{.}\) Otherwise, \(a_n = n\text{.}\) So</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} n\frac{x^n}{n!} =  x\sum_{n=1}^{\infty} \frac{x^{n-1}}{(n-1)!}
-= x\sum_{m=0}^{\infty} \frac{x^{m}}{m!}  = x e^x \\
-B(x) &amp;=&amp; e^{A(x)} = e^{xe^x}
-\end{array}
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-300">
-<p id="p-595">Instead of forming a committee, we want to seat each group at a circular table.</p>
+<li id="li-203"><p id="p-320">Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. </p></li>
+<li id="li-204"><p id="p-321">Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function \(B(x)\) for the entire process (partitioning and then choosing a chair for each committee.) </p></li>
+<li id="li-205">
+<p id="p-322">Instead of forming a committee, we want to seat each group at a circular table.</p>
 <ol class="lower-roman">
-<li id="li-301"><p id="p-596">Find the exponential generating function \(B(x)\) for this process. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-166" id="solution-166"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-166"><div class="solution solution-like">
-<p id="p-597">We force \(a_0=0\text{,}\) and otherwise, \(a_n = (n-1)!\text{.}\) So</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} (n-1)!\frac{x^n}{n!} = \sum_{n=1}^{\infty} \frac{x^n}{n} = \log \left( \frac{1}{1-x} \right)   \\
-B(x) &amp;=&amp; e^{A(x)} = \exp \left( \log \left( \frac{1}{1-x} \right) \right) = \frac{1}{1-x}
-\end{array}
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-302"><p id="p-598">Use \(B(x)\) to find the value of \(b_n\text{.}\) Be amazed at the simplicity of the answer for this complicated question! <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-167" id="solution-167"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-167"><div class="solution solution-like">
-<p id="p-599">Remember that \(B(x)\) is an <em class="emphasis">exponential</em> generating function!</p>
-<div class="displaymath">
-\begin{equation*}
-B(x)=  \frac{1}{1-x} = \sum_{n=0}^{\infty} x^n = \sum_{n=0}^{\infty} n! \frac{x^n}{n!}
-\end{equation*}
-</div>
-<p class="continuation">So the number of ways to split into any number of groups and then seat each group at a circular table is \(b_n=n!\) This is a <em class="emphasis">ridiculously</em> simple formula for such a complex procedure.</p>
-</div></div></p></li>
+<li id="li-206"><p id="p-323">Find the exponential generating function \(B(x)\) for this process. </p></li>
+<li id="li-207"><p id="p-324">Use \(B(x)\) to find the value of \(b_n\text{.}\) Be amazed at the simplicity of the answer for this complicated question! </p></li>
 </ol>
 </li>
 </ol></article></section></section></div></main>

@@ -158,13 +158,13 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun-product"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">15</span> <span class="title">Products of  Generating Functions II</span>
 </h2>
-<section class="introduction" id="introduction-15"><p id="p-503"></p></section><section class="exercises" id="exercises-14"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-15"><p id="p-271"></p></section><section class="exercises" id="exercises-14"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-62"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Generating Functions  for  Integer Partitions.</span>
 </h6>
-<p id="p-504">We have seen that the generating function for integer partitions is</p>
+<p id="p-272">We have seen that the generating function for integer partitions is</p>
 <div class="displaymath">
 \begin{equation*}
 P(x) = \prod_{k=1}^{\infty} \frac{1}{1-x^k}.
@@ -172,63 +172,42 @@ P(x) = \prod_{k=1}^{\infty} \frac{1}{1-x^k}.
 </div>
 <p class="continuation">Here the symbol \(\prod\) means "take the product," just like \(\sum\) means "take the sum."</p>
 <ol class="lower-alpha">
-<li id="li-249">
-<p id="p-505">Fixing a particular integer \(n\text{,}\) we realized that we can find all of the integer partitions of \(n\) by using the generating function</p>
+<li id="li-162">
+<p id="p-273">Fixing a particular integer \(n\text{,}\) we realized that we can find all of the integer partitions of \(n\) by using the generating function</p>
 <div class="displaymath">
 \begin{equation*}
 Q_n(x) = \prod_{k=1}^{n} \frac{1}{1-x^k}.
 \end{equation*}
 </div>
-<p class="continuation">More generally, for any integer \(m\text{,}\) what kind of partitions of \(m\) does \(Q_n(x)\) count? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-133" id="solution-133"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-133"><div class="solution solution-like"><p id="p-506">The \(m\)th coefficient of \(Q_n(x)\) counts the number of partitions of \(m\) into parts of size at most \(n\text{.}\)</p></div></div></p>
+<p class="continuation">More generally, for any integer \(m\text{,}\) what kind of partitions of \(m\) does \(Q_n(x)\) count? </p>
 </li>
-<li id="li-250"><p id="p-507">Let \(d_n\) be the number of integer partitions of \(n\) into distinct parts. Find a concise expression for the generating function \(D(x) = \sum_{n=0}^{\infty} d_n x^n.\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-134" id="solution-134"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-134"><div class="solution solution-like"><div class="displaymath" id="p-508">
-\begin{equation*}
-D(x) = \prod_{k=1}^{\infty} (1+x^k)
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-251"><p id="p-509">What is the generating function partitions of \(n\) into odd parts? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-135" id="solution-135"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-135"><div class="solution solution-like"><div class="displaymath" id="p-510">
-\begin{equation*}
-A(x) = \prod_{k=1}^{n} \frac{1}{1-x^{2k+1}}.
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-252"><p id="p-511">What is the generating function of partitions of \(n\) into distinct odd parts? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-136" id="solution-136"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-136"><div class="solution solution-like"><div class="displaymath" id="p-512">
-\begin{equation*}
-D(x) = \prod_{k=1}^{\infty} (1+x^{2k+1})
-\end{equation*}
-</div></div></div></p></li>
+<li id="li-163"><p id="p-274">Let \(d_n\) be the number of integer partitions of \(n\) into distinct parts. Find a concise expression for the generating function \(D(x) = \sum_{n=0}^{\infty} d_n x^n.\) </p></li>
+<li id="li-164"><p id="p-275">What is the generating function partitions of \(n\) into odd parts? </p></li>
+<li id="li-165"><p id="p-276">What is the generating function of partitions of \(n\) into distinct odd parts? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-63"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Product Formula for Exponential Generating Functions.</span>
 </h6>
-<p id="p-513">Suppose that we have tasks \(\cA\) and \(\cB\) where you can complete \(\cA\) on an \(n\)-set in \(a_n\) ways, and you can complete \(\cB\) on an \(n\)-set in \(b_n\) ways.</p>
+<p id="p-277">Suppose that we have tasks \(\cA\) and \(\cB\) where you can complete \(\cA\) on an \(n\)-set in \(a_n\) ways, and you can complete \(\cB\) on an \(n\)-set in \(b_n\) ways.</p>
 <ol class="lower-alpha">
-<li id="li-253">
-<p id="p-514">How many ways are there to:</p>
+<li id="li-166">
+<p id="p-278">How many ways are there to:</p>
 <ul class="disc">
-<li id="li-254"><p id="p-515">Choose a \(k\)-set \(S \subset [n]\text{,}\)</p></li>
-<li id="li-255"><p id="p-516">Perform \(\cA\) on \(S\text{,}\) and then</p></li>
-<li id="li-256"><p id="p-517">Perform \(\cB\) on \(\overline{S} = [n] \backslash S\text{.}\)</p></li>
+<li id="li-167"><p id="p-279">Choose a \(k\)-set \(S \subset [n]\text{,}\)</p></li>
+<li id="li-168"><p id="p-280">Perform \(\cA\) on \(S\text{,}\) and then</p></li>
+<li id="li-169"><p id="p-281">Perform \(\cB\) on \(\overline{S} = [n] \backslash S\text{.}\)</p></li>
 </ul>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-137" id="solution-137"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-137"><div class="solution solution-like"><div class="displaymath" id="p-518">
-\begin{equation*}
-{n \choose k} a_k b_{n-k}
-\end{equation*}
-</div></div></div></p>
 </li>
-<li id="li-257">
-<p id="p-519">Let \(\cC\) be the following task:</p>
+<li id="li-170">
+<p id="p-282">Let \(\cC\) be the following task:</p>
 <ul class="disc">
-<li id="li-258"><p id="p-520">Choose a subset \(S \subset [n]\) (of any size \(k\text{,}\) where \(0 \leq k \leq n\text{,}\)</p></li>
-<li id="li-259"><p id="p-521">Perform \(\cA\) on \(S\text{,}\) and then</p></li>
-<li id="li-260"><p id="p-522">Perform \(\cB\) on \(\overline{S}\text{.}\)</p></li>
+<li id="li-171"><p id="p-283">Choose a subset \(S \subset [n]\) (of any size \(k\text{,}\) where \(0 \leq k \leq n\text{,}\)</p></li>
+<li id="li-172"><p id="p-284">Perform \(\cA\) on \(S\text{,}\) and then</p></li>
+<li id="li-173"><p id="p-285">Perform \(\cB\) on \(\overline{S}\text{.}\)</p></li>
 </ul>
-<p class="continuation">How many ways \(c_n\) are there to complete task \(\cC\) on \([n]\text{?}\) <em class="emphasis">Be careful:</em> parts (b) and (c) depend upon the size \(k\) of \(S\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-138" id="solution-138"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-138"><div class="solution solution-like"><div class="displaymath" id="p-523">
-\begin{equation*}
-\sum_{k=0}^n {n \choose k} a_k b_{n-k}
-\end{equation*}
-</div></div></div></p>
+<p class="continuation">How many ways \(c_n\) are there to complete task \(\cC\) on \([n]\text{?}\) <em class="emphasis">Be careful:</em> parts (b) and (c) depend upon the size \(k\) of \(S\text{.}\) </p>
 </li>
-<li id="li-261">
-<p id="p-524">Consider the  functions</p>
+<li id="li-174">
+<p id="p-286">Consider the  functions</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{ccc}
@@ -237,230 +216,80 @@ B(x) = \sum_{n=0}^{\infty} \frac{b_n}{n!} x^n.
 \end{array}
 \end{equation*}
 </div>
-<p class="continuation">Find the coefficient of \(x^n\) in the product \(A(x)B(x)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-139" id="solution-139"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-139"><div class="solution solution-like"><div class="displaymath" id="p-525">
-\begin{equation*}
-\begin{array}{rcl}
-A(x) B(x) &amp;=&amp;
-\left( \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n \right) \left( \sum_{n=0}^{\infty}  \frac{b_n}{n!} x^n  \right)\\
-&amp;=&amp;
-\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  \frac{a_k}{k!}  \frac{b_{n-k}}{(n-k)!}  \right)   x^n \\
-&amp;=&amp;
-\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  {n \choose k}  a_k b_{n-k}  \right)  \frac{ x^n}{n!} \\
-\end{array}
-\end{equation*}
-</div></div></div></p>
+<p class="continuation">Find the coefficient of \(x^n\) in the product \(A(x)B(x)\text{.}\) </p>
 </li>
-<li id="li-262"><p id="p-526">Let \(C(x)\) be the exponential generating function <em class="emphasis">EGF</em> for the task \(\cC\) in part (b).  Use your answers from  problems 2 and 3 to prove that \(C(x) = A(x) B(x)\text{,}\) where \(A(x)\) and \(B(x)\) are the <em class="emphasis">EGF</em>s for tasks \(\cA\) and \(\cB\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-140" id="solution-140"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-140"><div class="solution solution-like"><div class="displaymath" id="p-527">
-\begin{equation*}
-\begin{array}{rcl}
-C(x) &amp;=&amp; A(x) B(x) \\
-&amp;=&amp; \left( \sum_{n=0}^{\infty}  a_n \frac{x^n}{n!} \right) \left( \sum_{n=0}^{\infty}  b_n \frac{x^n}{n!}  \right)\\
-&amp;=&amp;
-\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  \frac{a_k}{k!}  \frac{b_{n-k}}{(n-k)!}  \right)   x^n \\
-&amp;=&amp;
-\sum_{n=0}^{\infty}  \left( \sum_{k=0}^n  {n \choose k}  a_k b_{n-k}  \right)  \frac{ x^n}{n!} \\
-\end{array}
-\end{equation*}
-</div></div></div></p></li>
+<li id="li-175"><p id="p-287">Let \(C(x)\) be the exponential generating function <em class="emphasis">EGF</em> for the task \(\cC\) in part (b).  Use your answers from  problems 2 and 3 to prove that \(C(x) = A(x) B(x)\text{,}\) where \(A(x)\) and \(B(x)\) are the <em class="emphasis">EGF</em>s for tasks \(\cA\) and \(\cB\text{.}\) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-64"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Painting Houses.</span>
 </h6>
-<p id="p-528">Suppose that we want to paint \(n\) distinct houses on a block. For simplicity, we use \([n]\) to label the houses. We paint each house with one different color, chosen from: red, orange, yellow, green, blue and purple.</p>
+<p id="p-288">Suppose that we want to paint \(n\) distinct houses on a block. For simplicity, we use \([n]\) to label the houses. We paint each house with one different color, chosen from: red, orange, yellow, green, blue and purple.</p>
 <ol class="lower-alpha">
-<li id="li-263">
-<p id="p-529">Our first boss says that all houses of the same color must be adjacent, and we must use the colors from left-to-right following the rainbow ordering.  How many ways can we paint the houses</p>
+<li id="li-176">
+<p id="p-289">Our first boss says that all houses of the same color must be adjacent, and we must use the colors from left-to-right following the rainbow ordering.  How many ways can we paint the houses</p>
 <ol class="lower-roman">
-<li id="li-264"><p id="p-530">If we do not have to use all of the colors? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-141" id="solution-141"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-141"><div class="solution solution-like"><div class="displaymath" id="p-531">
-\begin{equation*}
-{ n +5 \choose 5}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-265"><p id="p-532">If we must use each color at least once? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-142" id="solution-142"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-142"><div class="solution solution-like"><div class="displaymath" id="p-533">
-\begin{equation*}
-{ n-1 \choose 5}
-\end{equation*}
-</div></div></div></p></li>
+<li id="li-177"><p id="p-290">If we do not have to use all of the colors? </p></li>
+<li id="li-178"><p id="p-291">If we must use each color at least once? </p></li>
 </ol>
 </li>
-<li id="li-266">
-<p id="p-534">Our first boss gets fired for his lack of creativity. Our second boss only requires that the "warm" colors red, orange, yellow are separate from the "cool" colors green, blue, purple. He says we should start painting with warm colors, then switch to cool colors after some number of houses (possibly 0).</p>
+<li id="li-179">
+<p id="p-292">Our first boss gets fired for his lack of creativity. Our second boss only requires that the "warm" colors red, orange, yellow are separate from the "cool" colors green, blue, purple. He says we should start painting with warm colors, then switch to cool colors after some number of houses (possibly 0).</p>
 <ol class="lower-roman">
-<li id="li-267"><p id="p-535">What is the generating function \(F_1(x)\) for painting \(n\) houses with the warm colors red, orange and yellow? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-143" id="solution-143"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-143"><div class="solution solution-like"><div class="displaymath" id="p-536">
-\begin{equation*}
-F_1(x) = 1+3x+3^2x^2+ \cdots = \sum_{n=0}^{\infty} 3^n x^n = \frac{1}{1-3x}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-268"><p id="p-537">What is the generating function \(F_2(x)\) for painting \(n\) houses with the cool colors green, blue and purple? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-144" id="solution-144"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-144"><div class="solution solution-like"><div class="displaymath" id="p-538">
-\begin{equation*}
-F_2(x) = 1+3x+3^2x^2+ \cdots = \sum_{n=0}^{\infty} 3^n x^n = \frac{1}{1-3x}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-269"><p id="p-539">What is the generating function \(F(x)=F_1(x)F_2(x)\) for the number of ways to paint the houses to our boss's specifications? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-145" id="solution-145"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-145"><div class="solution solution-like"><div class="displaymath" id="p-540">
-\begin{equation*}
-F_1(x) F_2(x) =  \frac{1}{(1-3x)^2}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-270"><p id="p-541">What is the formula \(f_n\) for the number of ways to paint \(n\) houses to our boss's specifications?? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-146" id="solution-146"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-146"><div class="solution solution-like">
-<div class="displaymath" id="p-542">
-\begin{equation*}
-\begin{array}{rcl}
-F(x) \,= \, \sum_{n=0}^{\infty} f_n x^n &amp; = &amp; \frac{1}{(1-3x)^2} \\
-&amp;=&amp; \sum_{n=1}^{\infty}  n (3x)^{n-1} =  \sum_{m=0}^{\infty} (m+1) 3^m x^{m}.
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">So \(f_m =  (m+1)  3^m\) for \(m \geq 0\text{.}\)</p>
-</div></div></p></li>
-<li id="li-271"><p id="p-543">Give a combinatorial argument for the answer you found in part (iv). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-147" id="solution-147"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-147"><div class="solution solution-like">
-<ul id="p-544" class="disc">
-<li id="li-272"><p id="p-545">Next, we paint the warm houses in \(3^k\) ways</p></li>
-<li id="li-273"><p id="p-546">Finally, we paint the cool houses in \(3^{n-k}\) ways.</p></li>
-</ul>
-<p class="continuation">The total number of ways is</p>
-<div class="displaymath">
-\begin{equation*}
-(n+1) 3^k \cdot 3^{n-k} = (n+1) 3^n.
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-180"><p id="p-293">What is the generating function \(F_1(x)\) for painting \(n\) houses with the warm colors red, orange and yellow? </p></li>
+<li id="li-181"><p id="p-294">What is the generating function \(F_2(x)\) for painting \(n\) houses with the cool colors green, blue and purple? </p></li>
+<li id="li-182"><p id="p-295">What is the generating function \(F(x)=F_1(x)F_2(x)\) for the number of ways to paint the houses to our boss's specifications? </p></li>
+<li id="li-183"><p id="p-296">What is the formula \(f_n\) for the number of ways to paint \(n\) houses to our boss's specifications?? </p></li>
+<li id="li-184"><p id="p-297">Give a combinatorial argument for the answer you found in part (iv). </p></li>
 </ol>
 </li>
-<li id="li-274">
-<p id="p-547">Our second boss quits to become a yoga instructor. Our third boss is tries to cut corners. Red and orange paint are cheap. He asks us to paint some <em class="emphasis">subset</em> of houses using the colors red and orange (these houses do NOT have to be consecutive). For the remaining houses, we are supposed to paint exactly one house in  each of the remaining 4 colors, and leave the other houses unpainted.</p>
+<li id="li-185">
+<p id="p-298">Our second boss quits to become a yoga instructor. Our third boss is tries to cut corners. Red and orange paint are cheap. He asks us to paint some <em class="emphasis">subset</em> of houses using the colors red and orange (these houses do NOT have to be consecutive). For the remaining houses, we are supposed to paint exactly one house in  each of the remaining 4 colors, and leave the other houses unpainted.</p>
 <ol class="lower-roman">
-<li id="li-275"><p id="p-548">What is the <em class="emphasis">exponential</em> generating function \(G_1(x)\) for the number of ways to paint \(n\) houses using colors red and orange? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-148" id="solution-148"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-148"><div class="solution solution-like"><div class="displaymath" id="p-549">
-\begin{equation*}
-G_1(x) = \sum_{n=0}^{\infty} 2^n \frac{x^n}{n!} = e^{2x}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-276"><p id="p-550">What is the <em class="emphasis">exponential</em> generating function \(G_2(x)\) for the number of ways of painting 4 out of \(n\) houses, one yellow, one green, one blue, one purple. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-149" id="solution-149"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-149"><div class="solution solution-like"><div class="displaymath" id="p-551">
-\begin{equation*}
-G_2(x) = \sum_{n=4}^{\infty} (n)_4 \frac{x^n}{n!} = \sum_{n=4}^{\infty}  \frac{x^n}{(n-4)!} = x^4 \sum_{n=4}^{\infty}  \frac{x^{n-4}}{(n-4)!} = x^4 \sum_{m=0}^{\infty}  \frac{x^{m}}{m!} = x^4 e^x
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-277"><p id="p-552">What is the <em class="emphasis">exponential</em> generating function \(G(x)\) for the number of ways to paint the houses to our boss's specifications? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-150" id="solution-150"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-150"><div class="solution solution-like"><div class="displaymath" id="p-553">
-\begin{equation*}
-x^4 e^{3x}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-278"><p id="p-554">What is the formula \(g_n\) for the number of ways to paint \(n\) houses to our boss's specifications? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-151" id="solution-151"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-151"><div class="solution solution-like">
-<div class="displaymath" id="p-555">
-\begin{equation*}
-\begin{array}{rcl}
-G(x) \, =  \,  \sum_{n=0}^{\infty} g_n \frac{ x^n}{n!}
-&amp;=&amp; x^4 e^{3x}
-\, = \,
-x^4 \sum_{n=0}^{\infty} 3^n \frac{ x^n}{n!}
-\, = \,
-\sum_{n=0}^{\infty} 3^n \frac{ x^{n+4}}{n!}
-\, = \,  \sum_{n=0}^{\infty} 3^n \frac{ x^{n+4}}{(n+4)!}   \\
-&amp;=&amp;
-\sum_{m=4}^{\infty} 3^{m-4} \frac{ x^{m}}{(m-4)!}
-\, = \,
-\sum_{m=4}^{\infty} 3^{m-4} (m)_4 \frac{ x^{m}}{m!}.
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">So we have \(g_m = 3^{m-4} (m)_4\text{.}\)</p>
-</div></div></p></li>
-<li id="li-279"><p id="p-556">Give a combinatorial argument for the answer you found in part (iv). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-152" id="solution-152"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-152"><div class="solution solution-like">
-<ul id="p-557" class="disc">
-<li id="li-280"><p id="p-558">First, we choose one house to color yellow, one house to color green, one house to color blue, and one house to color purple. This can be done in \((n)_4\) ways.</p></li>
-<li id="li-281"><p id="p-559">The remaining \(n-4\) houses, can each be red, orange, or unpainted. The number of possibilities is \(3^{n-4}\text{.}\)</p></li>
-</ul>
-<p class="continuation">The total number of ways is</p>
-<div class="displaymath">
-\begin{equation*}
-(n)_4 3^{n-4}.
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-186"><p id="p-299">What is the <em class="emphasis">exponential</em> generating function \(G_1(x)\) for the number of ways to paint \(n\) houses using colors red and orange? </p></li>
+<li id="li-187"><p id="p-300">What is the <em class="emphasis">exponential</em> generating function \(G_2(x)\) for the number of ways of painting 4 out of \(n\) houses, one yellow, one green, one blue, one purple. </p></li>
+<li id="li-188"><p id="p-301">What is the <em class="emphasis">exponential</em> generating function \(G(x)\) for the number of ways to paint the houses to our boss's specifications? </p></li>
+<li id="li-189"><p id="p-302">What is the formula \(g_n\) for the number of ways to paint \(n\) houses to our boss's specifications? </p></li>
+<li id="li-190"><p id="p-303">Give a combinatorial argument for the answer you found in part (iv). </p></li>
 </ol>
 </li>
-<li id="li-282">
-<p id="p-560">Our third boss gets fired for absconding with company money. Our fourth boss tells us to just paint the houses any way we want.</p>
+<li id="li-191">
+<p id="p-304">Our third boss gets fired for absconding with company money. Our fourth boss tells us to just paint the houses any way we want.</p>
 <ol class="lower-roman">
-<li id="li-283"><p id="p-561">How many ways are there to paint the houses, with no restrictions? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-153" id="solution-153"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-153"><div class="solution solution-like"><div class="displaymath" id="p-562">
-\begin{equation*}
-6^n
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-284"><p id="p-563">How many ways are there to paint the houses if we must use each color at least once? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-154" id="solution-154"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-154"><div class="solution solution-like"><div class="displaymath" id="p-564">
-\begin{equation*}
-6! S(n,6)
-\end{equation*}
-</div></div></div></p></li>
+<li id="li-192"><p id="p-305">How many ways are there to paint the houses, with no restrictions? </p></li>
+<li id="li-193"><p id="p-306">How many ways are there to paint the houses if we must use each color at least once? </p></li>
 </ol>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-65"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Children Playing in the Park.</span>
 </h6>
-<p id="p-565">A group of (distinct) children are at the park.  One nonempty subset decides to play ring-around-the-rosie, and they form a circle. The remaining children (if there are any who don't play) head to the snack bar and line up to get ice cream.</p>
+<p id="p-307">A group of (distinct) children are at the park.  One nonempty subset decides to play ring-around-the-rosie, and they form a circle. The remaining children (if there are any who don't play) head to the snack bar and line up to get ice cream.</p>
 <ol class="lower-alpha">
-<li id="li-285">
-<p id="p-566">Let \(a_n\) denote the number of ways for \(n\) children to form a circle in order to play ring-around-the-rosie. We know that \(a_0=0\) because the set of children playing is nonempty. Find the exponential generating function</p>
+<li id="li-194">
+<p id="p-308">Let \(a_n\) denote the number of ways for \(n\) children to form a circle in order to play ring-around-the-rosie. We know that \(a_0=0\) because the set of children playing is nonempty. Find the exponential generating function</p>
 <div class="displaymath">
 \begin{equation*}
 A(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!} = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}.
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-155" id="solution-155"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-155"><div class="solution solution-like"><div class="displaymath" id="p-567">
-\begin{equation*}
-A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!} = \sum_{n=1}^{\infty} (n-1)! \cdot  \frac{x^n}{n!}
-= \sum_{1=0}^{\infty} \frac{x^n}{n} = \log \left( \frac{1}{1-x} \right)
-\end{equation*}
-</div></div></div></p>
 </li>
-<li id="li-286">
-<p id="p-568">Let \(b_n\) denote the number of ways for \(n\) children to line up to get ice cream. Find the exponential generating function</p>
+<li id="li-195">
+<p id="p-309">Let \(b_n\) denote the number of ways for \(n\) children to line up to get ice cream. Find the exponential generating function</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = \sum_{n=0}^{\infty} b_n \frac{x^n}{n!}.
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-156" id="solution-156"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-156"><div class="solution solution-like"><div class="displaymath" id="p-569">
-\begin{equation*}
-B(x) = \sum_{n=0}^{\infty} b_n \frac{x^n}{n!} = \sum_{n=0}^{\infty} n! \cdot  \frac{x^n}{n!}
-= \sum_{n=0}^{\infty} x^n = \frac{1}{1-x}
-\end{equation*}
-</div></div></div></p>
 </li>
-<li id="li-287">
-<p id="p-570">Let \(c_n\) denote the number of ways that \(n\) children can divide into two groups, one that plays ring-around-the-rosie and another that gets ice cream. We know that</p>
+<li id="li-196">
+<p id="p-310">Let \(c_n\) denote the number of ways that \(n\) children can divide into two groups, one that plays ring-around-the-rosie and another that gets ice cream. We know that</p>
 <div class="displaymath">
 \begin{equation*}
 C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!} = A(x)B(x).
 \end{equation*}
 </div>
-<p class="continuation">Write down the exponential generating function \(C(x)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-157" id="solution-157"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-157"><div class="solution solution-like"><div class="displaymath" id="p-571">
-\begin{equation*}
-C(x) = A(x)B(x) = \frac{1}{1-x} \cdot \log \left( \frac{1}{1-x} \right)
-\end{equation*}
-</div></div></div></p>
+<p class="continuation">Write down the exponential generating function \(C(x)\text{.}\) </p>
 </li>
-<li id="li-288"><p id="p-572">Use parts (a),(b),(c) to find a  formula for \(c_n\text{.}\) (It will contain one summation sign.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-158" id="solution-158"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-158"><div class="solution solution-like">
-<div class="displaymath" id="p-573">
-\begin{equation*}
-\begin{array}{rcl}
-C(x) &amp;=&amp; A(x)B(x)  \, = \, \left( \sum_{n=1}^{\infty} \frac{x^n}{n}  \right) \left( \sum_{n=0}^{\infty} x^n \right) \\
-&amp;=&amp; \sum_{n=0}^{\infty}  \left( \sum_{k=1}^{n} \frac{1}{k} \right) x^n
-= \sum_{n=0}^{\infty}  \left( n! \sum_{k=1}^{n} \frac{1}{k} \right) \frac{x^n}{n!} \\
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">Therefore</p>
-<div class="displaymath">
-\begin{equation*}
-c_n = n! \sum_{k=1}^{n} \frac{1}{k}
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-289"><p id="p-574">Give a direct combinatorial explanation for the formula in part (d). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-159" id="solution-159"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-159"><div class="solution solution-like"><ul id="p-575" class="disc">
-<li id="li-290"><p id="p-576">Pick a \(k\) such that \(1 \leq k \leq n\text{.}\)</p></li>
-<li id="li-291"><p id="p-577">Line up all the children in a row. This can be done in \(n!\) ways.</p></li>
-<li id="li-292"><p id="p-578">The first \(k\) children form a circle. We must divide by \(k\) for symmetry since there are \(k\) different orderings of these children that result in the same circle.</p></li>
-<li id="li-293"><p id="p-579">The last \(n-k\) children head off for ice cream, keeping the same order.</p></li>
-</ul></div></div></p></li>
+<li id="li-197"><p id="p-311">Use parts (a),(b),(c) to find a  formula for \(c_n\text{.}\) (It will contain one summation sign.) </p></li>
+<li id="li-198"><p id="p-312">Give a direct combinatorial explanation for the formula in part (d). </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

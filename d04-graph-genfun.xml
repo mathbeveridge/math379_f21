@@ -108,13 +108,13 @@ A cycle graph is a closed walk whose only  repetition is the first/last vertex. 
  Let <m>c_n</m> be the number of (labeled) cycle graphs on <m>n</m> vertices. What is <m>c_n</m> for <m>n \geq 1</m> ? (Account for all graph symmetries, and be careful for <m>n=1</m> and <m>n=2</m>.)
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 c_1 = 1, \qquad c_2 = 1, \qquad \mbox{and} \qquad c_n = \frac{n!}{2n} = \frac{(n-1)!}{2} \mbox{ for } n \geq 3
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -126,7 +126,7 @@ c_1 = 1, \qquad c_2 = 1, \qquad \mbox{and} \qquad c_n = \frac{n!}{2n} = \frac{(n
 C(x) = \frac{x}{2} + \frac{x^2}{4} + \log \left(  \frac{1}{\sqrt{1-x}} \right).
 </me>
 
-<solution>
+<!--solution>
 <p>
 We have
 <me>
@@ -138,7 +138,7 @@ C(x) &amp;=&amp; x + \frac{x^2}{2!} + \sum_{n=3}^{\infty} \frac{(n-1)!}{2} \frac
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -146,14 +146,14 @@ C(x) &amp;=&amp; x + \frac{x^2}{2!} + \sum_{n=3}^{\infty} \frac{(n-1)!}{2} \frac
 					<p>
  A collection of trees is called a forest. A collection of cycles is called a <em>road race</em>. Let <m>R(x)</m> be the <em>exponential generating function</em> for the number of (labeled) road races. Find the formula for <m>R(x)</m> and justify your answer.
 
-<solution>
+<!--solution>
 <p>
 <me>
 R(x) =\exp(C(x)) = \exp \left( \frac{x}{2}  + \frac{x^2}{4 } +  \log \left( \frac{1}{\sqrt{1-x}} \right)  \right)
 = \frac{ \exp \left( \frac{x}{2}  + \frac{x^2}{4 } \right) }{\sqrt{1-x}}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -199,7 +199,7 @@ c_n = \displaystyle{ 2^{{n \choose 2}} - \sum_{k=1}^{n-1} {n-1 \choose k-1}  \, 
  Give a <em>combinatorial proof</em> of this identity by treating vertex <m>n</m> as special.
 
 
-<solution>
+<!--solution>
 <p>
 
 LHS: Pick a connected graph on <m>n</m> vertices. The total number of ways to do this is <m>c_n</m>.
@@ -228,7 +228,7 @@ Let's treat vertex <m>n</m> as special. Let <m>j</m> be the number of vertices i
 If we sum over <m>1 \leq k \leq n-1</m> and subtract this from <m>2^{n \choose s}</m>, then we get the number of  connected graphs.
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>

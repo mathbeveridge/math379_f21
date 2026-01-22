@@ -12,7 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">False</em>: the same counterexample as in the previous problem</p>
-<span class="incontext"><a href="exercises-3.html#p-130">in-context</a></span>
+<p>A partition of integer \(n\) is a multiset of positive integers whose sum is \(n\text{.}\) Here are three symbols we use for counting integer partitions:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+p(n,k) &amp; = &amp; \mbox{# partitions of } n \mbox{ into } k \mbox{ parts} \\
+\\
+p_k(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into at most } k \mbox{ parts} \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^k p(n,i)}\\
+\\
+p(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into any number of parts}  \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^n p(n,i)}
+\end{array}
+\end{equation*}
+</div>
+<span class="incontext"><a href="int-partition.html#p-130">in-context</a></span>
 </body>
 </html>

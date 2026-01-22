@@ -29,7 +29,7 @@ Recall that a <em>weak composition</em> of <m>n</m> into <m>k</m> parts is an or
 					<p>
  There are 5 weak compositions of 4 into 2 parts. List them.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{ccccc}
@@ -37,7 +37,7 @@ Recall that a <em>weak composition</em> of <m>n</m> into <m>k</m> parts is an or
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -45,14 +45,14 @@ Recall that a <em>weak composition</em> of <m>n</m> into <m>k</m> parts is an or
 					<p>
  Using balls in boxes, find a formula for the number of weak compositions of <m>n</m> into <m>k</m> parts.
 
-<solution>
+<!--solution>
 <p>
 We can model this problem using <m>n</m> identical balls, <m>k</m> distinct boxes, repetition allowed, boxes cannot be empty.  Therefore the number  of  ways is
 <me>
 {n+k-1 \choose k-1}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -61,14 +61,14 @@ We can model this problem using <m>n</m> identical balls, <m>k</m> distinct boxe
  What is the generating function <m>F_1(x)</m> for the number of weak compositions of <m>n</m> into 1 part?
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 F_1(x) = 1 + x + x^2 + x^3 + \cdots = \sum_{n=0}^{\infty} x^n = \frac{1}{1-x}.
 </me>
 Basically, there is one way to partition <m>n</m> into one part for every <m>n \geq 0</m>.
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -77,7 +77,7 @@ Basically, there is one way to partition <m>n</m> into one part for every <m>n \
 					<p>
  Use the product principle (for generating functions) to find the generating function <m>F_2(x)</m> for the number of weak compositions of <m>n</m> into 2 parts.
 
-<solution>
+<!--solution>
 <p>
 We need to choose the first part, and then choose the second part. The generating function takes care of all the algebra for us.
 <me>
@@ -90,7 +90,7 @@ F_2(x) &amp;=&amp;\underbrace{(1+x+x^2 + x^3 + \cdots)}_{\mbox{choose the first 
 <em>Important!</em> This is a <em>conceptual question</em> rather than a computation question. The function <m>F_1(x)</m> encodes all the information about choosing one part. We perform a two phase process: choose the first part and then choose the second part. This corresponds to multiplying generating functions. Algebra takes care of performing the right combinations for each problem size.
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -98,13 +98,13 @@ F_2(x) &amp;=&amp;\underbrace{(1+x+x^2 + x^3 + \cdots)}_{\mbox{choose the first 
 					<p>
  What is the generating function <m>F_k(x)</m> for the number of weak compositions of <m>n</m> into <m>k</m> parts?
 
-<solution>
+<!--solution>
 <p>
 <me>
 F_k(x) = \underbrace{F_1(x) \cdot F_1(x) \cdots F_1(x)}_{k \mbox{ times}} = \frac{1}{(1-x)^k}.
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -117,14 +117,14 @@ F_k(x) = \underbrace{F_1(x) \cdot F_1(x) \cdots F_1(x)}_{k \mbox{ times}} = \fra
 </me>
 holds?
 
-<solution>
+<!--solution>
 <p>
 Combining the results for parts (b) and (e), we have
 <me>
 \frac{1}{(1-x)^k} = F_k(x) = \sum_{n=0}^{\infty} f_n x^n = \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -154,7 +154,7 @@ In this exercise, we will use generating functions to prove that the number of s
 					<p>
  There are 10 compositions of 6 into 3 parts. List them.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{ccccc}
@@ -163,7 +163,7 @@ In this exercise, we will use generating functions to prove that the number of s
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -171,14 +171,14 @@ In this exercise, we will use generating functions to prove that the number of s
 					<p>
  What is the generating function <m>G_1(x)</m> for the number of compositions of <m>n</m> into 1 part?
 
-<solution>
+<!--solution>
 <p>
 Unlike weak compositions, 0's are not allowed. So
 <me>
 G_1(x) = x+ x^2 + x^3 + x^4 + \cdots = x ( 1 + x + x^2 + x^3 +\cdots ) = \frac{x}{1-x}.
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -186,7 +186,7 @@ G_1(x) = x+ x^2 + x^3 + x^4 + \cdots = x ( 1 + x + x^2 + x^3 +\cdots ) = \frac{x
 					<p>
  Use the product principle (for generating functions) to find the generating function <m>G_2(x)</m> for the number of  compositions of <m>n</m> into 2 parts.
 
-<solution>
+<!--solution>
 <p>
 The argument is similar to Problem 4 about weak compositions.
 <me>
@@ -197,7 +197,7 @@ G_2(x) &amp;=&amp;\underbrace{(x+x^2 + x^3 + \cdots)}_{\mbox{choose the first pa
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -205,13 +205,13 @@ G_2(x) &amp;=&amp;\underbrace{(x+x^2 + x^3 + \cdots)}_{\mbox{choose the first pa
 					<p>
  What is the generating function <m>G_k(x)</m> for the number of  compositions of <m>n</m> into <m>k</m> parts?
 
-<solution>
+<!--solution>
 <p>
 <me>
 G_k(x) = \underbrace{G_1(x) \cdot G_1(x) \cdots G_1(x)}_{k \mbox{ times}} = \frac{x^k}{(1-x)^k}.
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -220,7 +220,7 @@ G_k(x) = \underbrace{G_1(x) \cdot G_1(x) \cdots G_1(x)}_{k \mbox{ times}} = \fra
 					<p>
  Starting from the known power series for weak compositions <m>F_k(x)</m>, find the power series for compositions <m>G_k(x)</m>. Hint: re-index using <m>m=n+k</m>.
 
-<solution>
+<!--solution>
 <p>
 Using the result of Problem 6 on about weak compositions, we have
 <me>
@@ -233,7 +233,7 @@ G_k(x) &amp;=&amp; \frac{x^k}{(1-x)^k} \, = \, x^k  \frac{1}{(1-x)^k} \\
 </me>
 This says that the number of compositions of <m>m</m> into <m>k</m> parts is 0 when <m>m &lt; k</m> and is <m>{m-1 \choose k-1}</m> when <m>m \geq k</m>. This matches our answer from the balls-and-boxes taxonomy.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>

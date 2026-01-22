@@ -18,11 +18,11 @@
 				<p>
 Suppose that <m>A</m> is a <em>finite</em> set and that we have a surjection <m>f: A \rightarrow A</m>. Prove that <m>f</m> must be a bijection. (The key is that <m>f</m> maps <m>A</m> to itself!).
 
-<solution>
+<!--solution>
 <p>
 Let <m>f(A)</m> be the image of this mapping. For any function, we always have <m>|f(A)| \leq |A|</m>. We know that <m>f: A \rightarrow A</m> is a surjection.  This means that <m>|f(A)| = |A|</m> but this can only happen if <m>f</m> is an injection. Therefore <m>f</m> is both surjective and injective, so it is a bijection.
 </p>
-</solution>
+</solution-->
 
 
 				</p>
@@ -38,14 +38,14 @@ Let <m>q=q_1q_2 \cdots q_n</m> be an <m>n</m>-permutation written in one-line no
 q= 436152897
 </me>
 
-<solution>
+<!--solution>
 <p>
 <me>
 q= \underline{4}3\underline{6}152\underline{8}\underline{9}7
 </me>
 There are four left-to-right maxima in this function: <m>4, 6, 8,9.</m>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -69,14 +69,14 @@ Let <m>f: S_n \rightarrow S_n</m> be the mapping that takes a permutation <m>p</
 Prove the Transition Lemma. By problem 1, you only need to show that <m>f</m> is <em>surjective.</em> Given a permutation <m>q</m> written in one-line notation, you must find a permutation <m>p</m> written in canonical cycle notation such that <m>f(p)=q</m>. How can you use problem 2 to help in this effort?
 
 
-<solution>
+<!--solution>
 <p>
 Our function <m>f: S_n \rightarrow S_n</m> will take a permutation in one-line notation to a permutation in canonical cycle notation. We do this by starting a new cycle every time that we encounter a left-to-right maximum.
 
 If is easy to see that <m>f</m> is surjective. Given a permutation <m>q</m> in canonical cycle notation, just erase the parentheses! This gives you a permutation <m>p</m> in one-line notation such that <m>f(p)=q</m>.
 
 </p>
-</solution>
+</solution-->
 
 
 				</p>
@@ -96,13 +96,13 @@ The Transition Lemma is particularly amazing because it can turn an <em>interest
  How many <m>n</m>-permutations are there with <m>k</m> left-to-right maxima?
 
 
-<solution>
+<!--solution>
 <p>
 
 By the transition lemma, each left-to-right maximum in one-line notation corresponds to the beginning of a new cycle in canonical cycle notation. Therefore the number of <m>n</m>-permutations with <m>k</m> left-to-right maxima is the same as the number of permutations with <m>k</m> cycles. This  number is <m>c(n,k)</m>, the unsigned Stirling numbers of the first kind.
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -111,7 +111,7 @@ By the transition lemma, each left-to-right maximum in one-line notation corresp
  Pick an  <m>n</m>-permutation at random from <m>S_n</m>. What is the probability that the cycle containing element <m>n</m> has length <m>k</m>? What is the probability that the cycle containing element <m>i</m> has length <m>k</m>?
 
 
-<solution>
+<!--solution>
 <p>
 
 Using the transition mapping, we get a permutation in one-line notation with element <m>n</m> in position <m>n-k+1</m>. The total number of permutations with <m>n</m> in that position is <m>(n-1)!</m>. So the probability that a random permutation has element <m>n</m> in position <m>n-k+1</m> is
@@ -121,7 +121,7 @@ Using the transition mapping, we get a permutation in one-line notation with ele
 By the transition lemma, this is also equal to the probability that element <m>n</m> is in a <m>k</m>-cycle.
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -168,11 +168,11 @@ A fixed point of a permutation <m>f</m> is an element <m>i</m> such that <m>f(i)
 			<p>
  Case <m>i=1</m>.
 
-<solution>
+<!--solution>
 <p>
 In this case, <m>n</m> is a fixed point. The remaining elements form an <m>(n-1)</m>-permutation. By induction, the average number of fixed points in the remaining elements is 1. Overall, there are 2 fixed points on average in the set <m>A_1</m>.
 </p>
-</solution>
+</solution-->
 
 			</p>
 			</li>
@@ -180,11 +180,11 @@ In this case, <m>n</m> is a fixed point. The remaining elements form an <m>(n-1)
 			<p>
  Case <m>2 \leq i \leq n-1</m>.
 
-<solution>
+<!--solution>
 <p>
 In this case, there are no fixed points among the <m>i</m> elements in the cycle containing element <m>n</m>. By induction, there is one fixed point on average in the remaining <m>(n-i)</m> elements.
 </p>
-</solution>
+</solution-->
 
 			</p>
 			</li>
@@ -192,11 +192,11 @@ In this case, there are no fixed points among the <m>i</m> elements in the cycle
 			<p>
  Case <m>i=n</m>.
 
-<solution>
+<!--solution>
 <p>
 In this case, all the elements are in one big cycle of length <m>n</m>. Therefore, there are no fixed points.
 </p>
-</solution>
+</solution-->
 
 			</p>
 			</li>
@@ -206,7 +206,7 @@ In this case, all the elements are in one big cycle of length <m>n</m>. Therefor
 
 <em>Now use your results above to find the average number of fixed points.</em>
 
-<solution>
+<!--solution>
 <p>
 By the previous question, we have <m>|A_i|=(n-1)!</m> for <m>1 \leq i \leq n</m>. Therefore, the average number of fixed points among all <m>n</m>-permutations is
 <me>
@@ -216,7 +216,7 @@ By the previous question, we have <m>|A_i|=(n-1)!</m> for <m>1 \leq i \leq n</m>
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 
 

@@ -50,13 +50,13 @@ Both OGFs and EGFs are useful counting tools. It will take us a few days to deve
 A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
 </me>
 
-<solution>
+<!--solution>
 <p>
 <me>
 1 + x^5 + x^{10} + x^{15} + x^{20} + x^{25} + \cdots
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -67,13 +67,13 @@ A(x) = a_0 + a_1 x + a_2 x^2 + a_3x^3 + \cdots
 B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
 </me>
 
-<solution>
+<!--solution>
 <p>
 <me>
 1 + x^{10} + x^{20} + x^{30} + x^{40} + x^{50} + \cdots
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -84,13 +84,13 @@ B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
 C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
 </me>
 
-<solution>
+<!--solution>
 <p>
 <me>
 1 + x^{25} + x^{50} + x^{75} + x^{100} + x^{125} + \cdots
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -98,7 +98,7 @@ C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
 					<p>
  You should recognize <m>A(x), B(x), C(x)</m> as variants of a well known Taylor series. What are these functions? What restrictions must we place on <m>x</m>?
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{ccc}
@@ -109,7 +109,7 @@ C(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3 + \cdots
 </me>
 provided that <m>x</m> satisifies: \underline{\phantom{asdfasdfasdf}<m>-1 &lt; x &lt; 1</m>\phantom{asdfasdfasdf}}
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -118,14 +118,14 @@ provided that <m>x</m> satisifies: \underline{\phantom{asdfasdfasdf}<m>-1 &lt; x
  Using the product and addition principles, we can show that the  function <m>D(x)= A(x)B(x)C(x)</m>
 is the generating function for the number of ways to pay <m>n</m> cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for <m>D(x)</m>. (The same restrictions on <m>x</m> apply here.)
 
-<solution>
+<!--solution>
 <p>
 <me>
 D(x) = \frac{1}{1-x^{5}}  \cdot \frac{1}{1-x^{10}}  \cdot \frac{1}{1-x^{25}}
 =  \frac{1}{(1-x^{5})(1-x^{10})(1-x^{25})}
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -139,7 +139,7 @@ D(x) = 1 + x^5 + 2x^{10} + 3 x^{20} + 4x^{25} + 5x^{30} + 6x^{35} + 7 x^{40} + 8
 </me>
 Verify this gives the right answer for <m>n=35</m> by listing the number of ways to pay <m>35</m> cents using nickels, dimes and/or quarters.
 
-<solution>
+<!--solution>
 <p>
 Here are the six ways  to pay <m>35</m> cents using these coins:
 <me>
@@ -149,7 +149,7 @@ Q + D &amp; Q + 2N &amp; 3D + N \\
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -177,7 +177,7 @@ where <m>h_0=1</m> and <m>h_1=2</m>.
 					<p>
  Let <m>H(x)</m> be the generating function for this series. Find a simple closed formula for <m>H(x)</m>.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{rcll}
@@ -194,7 +194,7 @@ H(x)&amp;=&amp;\displaystyle{ \frac{1}{ 1 - 2x } }  &amp; (\mbox{simplify})  \\
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -204,14 +204,14 @@ H(x)&amp;=&amp;\displaystyle{ \frac{1}{ 1 - 2x } }  &amp; (\mbox{simplify})  \\
 					<p>
  Use the Taylor series for the function in part (a) to find a simple closed formula for <m>h_n</m>.
 
-<solution>
+<!--solution>
 <p>
 <me>
 H(x) = \frac{1}{1-2x} = \sum_{n=0}^{\infty} (2x)^n =  \sum_{n=0}^{\infty} 2^n x^n.
 </me>
 Therefore <m>h_n=2^n</m>.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -219,7 +219,7 @@ Therefore <m>h_n=2^n</m>.
 					<p>
  Now solve the same recurrence where <m>h_0=1</m> and <m>h_1=-2</m>. You will need to use partial fractions.
 
-<solution>
+<!--solution>
 <p>
 The first 7 lines are the same, so we have
 <me>
@@ -237,7 +237,7 @@ H(x) = \frac{5}{ 1-2x} - \frac{4}{ 1-3x}= 5 \sum_{n=0}^{\infty} (2x)^n -4 \sum_{
 and therefore <m>h_n = 5 \cdot 2^n - 4 \cdot 3^n.</m>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -265,7 +265,7 @@ where <m>a_0=3</m>
 					<p>
  Let <m>A(x)</m> be the  OGF for this series. Find a simple closed formula for <m>A(x)</m>.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{rcl}
@@ -281,7 +281,7 @@ A(x)  &amp;=&amp;  \frac{3-4x}{(1 - 4x)(1-x)} \\
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -290,7 +290,7 @@ A(x)  &amp;=&amp;  \frac{3-4x}{(1 - 4x)(1-x)} \\
 					<p>
  Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>a_n</m>.
 
-<solution>
+<!--solution>
 <p>
 We use partial fractions:
 <me>
@@ -306,7 +306,7 @@ and therefore
 a_n = \frac{8}{3} \cdot 4^n + \frac{1}{3}  = \frac{2 \cdot 4^{n+1} + 1}{3}.
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -333,7 +333,7 @@ where <m>b_0=1</m> and <m>b_1=3</m>.
 					<p>
  Let <m>B(x)</m> be the  generating function for this series. Find a simple closed formula for <m>B(x)</m>.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{rcl}
@@ -348,7 +348,7 @@ B(x)  &amp;=&amp; \frac{1}{ (1-2x)(1-x)} \\
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -358,7 +358,7 @@ B(x)  &amp;=&amp; \frac{1}{ (1-2x)(1-x)} \\
 					<p>
  Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>b_n</m>.
 
-<solution>
+<!--solution>
 <p>
 We use partial fractions:
 <me>
@@ -374,7 +374,7 @@ and therefore
 b_n = 2 \cdot 2^n - 1 = 2^{n+1} -1.
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -405,7 +405,7 @@ where <m>c_0=1</m> and <m>c_1=4</m>.
 					<p>
  Let <m>C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!}</m> be the <em>exponential generating function</em> (EGF) for this series. Find a simple closed formula for <m>C(x)</m>.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{rcl}
@@ -422,7 +422,7 @@ C(x) &amp;=&amp; \frac{1}{ 1 -4x} \\
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -431,14 +431,14 @@ C(x) &amp;=&amp; \frac{1}{ 1 -4x} \\
 					<p>
  Use the Taylor series for the functions in part (a) to find a simple closed formula for <m>c_n</m>. <em>Remember that <m>C(x)</m> is an EGF</em>, so you will have to multiply the <m>n</m>th term by <m>\frac{n!}{n!}</m> and rearrange to get the right answer.
 
-<solution>
+<!--solution>
 <p>
 <me>
 C(x) = \sum_{n=0}^{\infty} 4^n x^n = \sum_{n=0}^{\infty} (4^n n! ) \frac{x^n}{n!}
 </me>
 so <m>c_n = 4^n n!</m>.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -467,7 +467,7 @@ where <m>d_0=1</m>.
 					<p>
  Let <m>D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}</m> be the <em>exponential generating function</em> (EGF) for this series. Find a simple closed formula for <m>D(x)</m>.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{rcl}
@@ -482,7 +482,7 @@ D(x) &amp;=&amp; \frac{e^x}{1-x}
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -490,7 +490,7 @@ D(x) &amp;=&amp; \frac{e^x}{1-x}
 					<p>
  Can you figure out how to use your answer in part (a) to find a simple closed formula for <m>d_n</m>? You will need to think about what happens when you multiply two power series together.
 
-<solution>
+<!--solution>
 <p>
 We have
 <me>
@@ -509,7 +509,7 @@ So our formula is
 d_n = n! \sum_{k=0}^n \frac{1}{k!} = \sum_{k=0}^n (n)_k.
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>

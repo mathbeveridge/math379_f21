@@ -27,13 +27,13 @@ Elvis is going to have lunch at this favorite diner. Here is the menu.
 					<p>
  For lunch, Elvis wants something from the grill, something to drink, and a slice of pie. How many different options does he have?
 
-<solution>
+<!--solution>
 <p>
 There are 6 grill options, 3 drink options, and 8 pie options. So there are a total of <m>6 * 3 * 8 = 144</m> ways to order lunch.
 
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -41,12 +41,12 @@ There are 6 grill options, 3 drink options, and 8 pie options. So there are a to
 					<p>
 Elvis can add as many sides as he likes (including choosing none of them). Now how many ways are there for Elvis to order lunch?
 
-<solution>
+<!--solution>
 <p>
 There are four sides available. Elvis can choose any combination of them, or none at all, so there are <m>2^4</m> different ways to decide on the side dishes.
 The total number of ways to order lunch is now <m>6 * 3 * 8 * 2^4 = 2304</m>.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -73,13 +73,13 @@ A Minnesota license plate consists of three numbers followed by three letters.
 					<p>
  How many possible license plates are there?
 
-<solution>
+<!--solution>
 <p>
 <me>
 10^3 \cdot 26^3
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -87,13 +87,13 @@ A Minnesota license plate consists of three numbers followed by three letters.
 					<p>
  Decorum dictates that some three-letter combinations be outlawed. For each outlawed three-letter combination, how many possible license plates are removed from circulation?
 
-<solution>
+<!--solution>
 <p>
 <me>
 10^3
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -111,11 +111,11 @@ A Minnesota license plate consists of three numbers followed by three letters.
 
 How many arithmetic problems of the following form are possible. You must use each of the digits 1 through 9, in numerical order from left to right. You can use any combination of <m>+</m> and <m>\times</m> symbols, as long as the expression makes sense. For example, <m>1234+56789</m> and <m>12 \times 3 + 4 \times 5678 \times 9</m> and <m>123456789</m> are valid, but <m>123 \times \times 4567 + 89</m> is not.
 
-<solution>
+<!--solution>
 <p>
 There are eight spaces between the digits. For each space we have three choices: nothing, <m>+</m> or <m>\times</m>. Therefore, the total number of arithmetic problems is <m>3^8</m>.
 </p>
-</solution>
+</solution-->
 
 
 				</p>
@@ -133,7 +133,7 @@ There are eight spaces between the digits. For each space we have three choices:
 					<p>
  How many numbers from <m>1000</m> to <m>9999</m> are odd?
 
-<solution>
+<!--solution>
 <p>
 <me>
 \underbrace{5}_{\mbox{choose 4th digit}} \times
@@ -142,7 +142,7 @@ There are eight spaces between the digits. For each space we have three choices:
 \underbrace{10}_{\mbox{choose 3rd digit}}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -150,7 +150,7 @@ There are eight spaces between the digits. For each space we have three choices:
 					<p>
  How many odd numbers from <m>1000</m> to <m>9999</m> have distinct digits?
 
-<solution>
+<!--solution>
 <p>
 <me>
 \underbrace{5}_{\mbox{choose 4th digit}} \times
@@ -160,7 +160,7 @@ There are eight spaces between the digits. For each space we have three choices:
 </me>
 Note: it is important to choose the digits in this order to get the right answer. For example, if we choose the 3rd digit before choosing the 1st digit, then we must consider 2 cases, depending on whether we chose 0 for the 3rd digit. You will still get the right answer, but you must deal with more cases.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -168,14 +168,14 @@ Note: it is important to choose the digits in this order to get the right answer
 					<p>
  How many numbers from <m>0</m> to <m>1000</m> contain exactly one 3?
 
-<solution>
+<!--solution>
 <p>
 We consider all possible 3 digit numbers, where we can have a 0 in the first digit (so we write <m>003</m> instead of <m>3</m>). There are three cases, depending on the location of the 3. In each case, we have 9 choices for each of the other two digits, so the answer is
 <me>
 (9 \times 9) + (9 \times 9) + (9 \times 9) = 243
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -196,14 +196,14 @@ We consider all possible 3 digit numbers, where we can have a 0 in the first dig
 					<p>
  In how many ways can <m>k</m> men and <m>k</m> women be seated around a circular table? Before anyone sits down, all chairs are identical.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \frac{(2k)!}{2k} = (2k-1)!
 </me>
 We place people into seats, starting at the top of the table and continuing clockwise. There are <m>(2k)!</m> ways to do this. However, by the symmetry of the table, we can shift everyone over by one seat (or two seats, or three seats...) and get the same configuration. Therefore we must divide by <m>2k</m>, which is the number of possible rotations.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -211,7 +211,7 @@ We place people into seats, starting at the top of the table and continuing cloc
 					<p>
  In how many ways can this be done if  the men and women must sit in alternate seats?
 
-<solution>
+<!--solution>
 <p>
 <me>
 \frac{k! k!}{k}  = k! (k-1)!
@@ -275,7 +275,7 @@ Here is another way to argue this that is quicker, but more subtle:
 			</li>
 		</ul>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -283,14 +283,14 @@ Here is another way to argue this that is quicker, but more subtle:
 					<p>
  In how many ways can this be done if there are two women (and maybe more) sitting next to one another?
 
-<solution>
+<!--solution>
 <p>
 We just subtract our answer in part (b) from our answer in part (a) to get
 <me>
 (2k-1)! - k! (k-1)!
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -310,14 +310,14 @@ Four sisters and their spouses have been invited to a reception where these 8 pe
 					<p>
  How many ways can this be done?
 
-<solution>
+<!--solution>
 <p>
 <me>
 4! \times 2^4
 </me>
 There are <m>4!</m> ways to arrange the couples, and then 2 ways to seat each couple next to one another
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -325,14 +325,14 @@ There are <m>4!</m> ways to arrange the couples, and then 2 ways to seat each co
 					<p>
  How many ways can this be done if no sister sits next to any other sister?
 
-<solution>
+<!--solution>
 <p>
 <me>
 4! \times 5
 </me>
 There are <m>4!</m> ways to arrange the couples. Let us start seating the couples from left to right, in chairs labeled by [8]. As soon as one sister sits in an even chair, this forces the remaining sisters to sit in an even chair. There is 1 way for the sisters to all sit in odd chairs. Otherwise, there are 4 ways to choose the first even chair taken by a sister. So there are a total of <m>4! \times 5</m> possible arrangements.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -340,7 +340,7 @@ There are <m>4!</m> ways to arrange the couples. Let us start seating the couple
 					<p>
  How many ways can this be done if every sister must sit next to one of her sisters?
 
-<solution>
+<!--solution>
 <p>
 We give two solutions.
 <me>
@@ -354,7 +354,7 @@ Here is another way to argue it. The configuration must be of the form <m>PSSPPS
 </me>
 First, we choose the two sisters that will appear in spots 2 and 3. There are two ways to arrange them. The remaining two sisters must sit in spots 6 and 7. Again, there are two ways to arrange them. The placement of the partners is then forced by the seat of their spouses.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -362,14 +362,14 @@ First, we choose the two sisters that will appear in spots 2 and 3. There are tw
 					<p>
  How many ways can this be done if at least one pair of sisters sits next to one another?
 
-<solution>
+<!--solution>
 <p>
 <me>
 4! (2^4 - 5)
 </me>
 We subtract part (b) from part (a) to get the answer.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -431,11 +431,11 @@ A <m>4 \times 7</m> checkerboard is shown below at the left.
 \draw (0,\y) -- (7, \y);
 }
 
-\draw[ultra thick] (0,0) -- (7,0) -- (7,1) -- (0,1) --cycle;
+\draw[ultra thick] (0,0) -!- (7,0) -!- (7,1) -!- (0,1) -!-cycle;
 
-\draw[ultra thick] (1,3) -- (1,2) -- (2,2) -- (2,3) --cycle;
+\draw[ultra thick] (1,3) -!- (1,2) -!- (2,2) -!- (2,3) -!-cycle;
 
-\draw[ultra thick] (3,2) -- (7,2) -- (7,4) -- (3,4) --cycle;
+\draw[ultra thick] (3,2) -!- (7,2) -!- (7,4) -!- (3,4) -!-cycle;
 
 \end{scope}
 
@@ -443,18 +443,18 @@ A <m>4 \times 7</m> checkerboard is shown below at the left.
 
 \foreach \x in {0,1,2,3,4,5,6,7}
 {
-\draw (\x,0) -- (\x,4);
+\draw (\x,0) -!- (\x,4);
 }
 \foreach \y in {0,1,2,3,4}
 {
-\draw (0,\y) -- (7, \y);
+\draw (0,\y) -!- (7, \y);
 }
 
-\draw[ultra thick] (0,1) -- (1,3) -- (2,1)  --cycle;
+\draw[ultra thick] (0,1) -!- (1,3) -!- (2,1)  -!-cycle;
 
-\draw[ultra thick] (3,4) -- (6,4) -- (5,2)  -- cycle;
+\draw[ultra thick] (3,4) -!- (6,4) -!- (5,2)  -!- cycle;
 
-\draw[ultra thick] (2,0) -- (7,0) -- (4,2)  --cycle;
+\draw[ultra thick] (2,0) -!- (7,0) -!- (4,2)  -!-cycle;
 
 
 \end{scope}
@@ -463,18 +463,18 @@ A <m>4 \times 7</m> checkerboard is shown below at the left.
 
 \foreach \x in {0,1,2,3,4,5,6,7}
 {
-\draw (\x,0) -- (\x,4);
+\draw (\x,0) -!- (\x,4);
 }
 \foreach \y in {0,1,2,3,4}
 {
-\draw (0,\y) -- (7, \y);
+\draw (0,\y) -!- (7, \y);
 }
 
-\draw[ultra thick] (0,3) -- (1,2) -- (3,3)  --cycle;
+\draw[ultra thick] (0,3) -!- (1,2) -!- (3,3)  -!-cycle;
 
-\draw[ultra thick] (6,2) -- (7,4) -- (5,4)  -- cycle;
+\draw[ultra thick] (6,2) -!- (7,4) -!- (5,4)  -!- cycle;
 
-\draw[ultra thick] (2,1) -- (4,3) -- (6,1)  --cycle;
+\draw[ultra thick] (2,1) -!- (4,3) -!- (6,1)  -!-cycle;
 
 \end{scope}
 
@@ -490,7 +490,7 @@ A <m>4 \times 7</m> checkerboard is shown below at the left.
 					<p>
  How many different rectangles are hiding in it? Six examples of rectangles you need to find are shown in the second two boards.
 
-<solution>
+<!--solution>
 <p>
 The answer is
 <me>
@@ -501,7 +501,7 @@ We choose two <m>x</m>-coordinates <m>x_1 &lt; x_2</m> and two <m>y</m>-coordina
 
 If we evaluate this expression, we find that there are <m>280</m> rectangles in this grid.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -509,7 +509,7 @@ If we evaluate this expression, we find that there are <m>280</m> rectangles in 
 					<p>
  How many different  triangles with one horizontal side adjacent to two acute angles are hiding in it? Six examples of triangles you need to find are shown in the last two boards.
 
-<solution>
+<!--solution>
 <p>
 This problem is like part (a), but harder.
 		<ul>
@@ -542,7 +542,7 @@ The total number of ways to complete this recipe is
 {8 \choose 3} {5 \choose 3} \cdot 2.
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -562,14 +562,14 @@ The total number of ways to complete this recipe is
 					<p>
  Find a closed formula for the sum <m>\displaystyle{\sum_{k=0}^n {n \choose k} 2^k}</m>.
 
-<solution>
+<!--solution>
 <p>
 By the binomial theorem,
 <me>
 3^n = (2 + 1)^n = \sum_{k=0}^n {n \choose k} 2^k.
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -577,7 +577,7 @@ By the binomial theorem,
 					<p>
  Devise a situation that is counted by this sum. Then give a "combinatorial proof" by explaining why both the closed formula and the one given above count all configurations.
 
-<solution>
+<!--solution>
 <p>
 Here is one story that works.
 Suppose there are <m>n</m> kids who want ice cream. There are three flavors to choose from: vanilla, chocolate and strawberry. How many possible outcomes are there?
@@ -586,7 +586,7 @@ Each kid has 3 choices, so there are <m>3^n</m> possible outcomes.
 
 We can count this outcome in two phases. First, determine the number <m>k</m> of kids ordering vanilla or chocolate. (The remaining <m>n-k</m> get strawberry.) Next, determine which of these <m>k</m> kids wants vanilla and which one wants chocolate. For each <m>k</m>, we can choose the choco-vanilla kids in <m>{n \choose k}</m> ways, and then determine their status in <m>2^k</m> ways. We must sum over <m>0 \leq k \leq n</m> to get all possible outcomes.
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -610,11 +610,11 @@ We can count this outcome in two phases. First, determine the number <m>k</m> of
 					<p>
  How many ways are there to place 8 rooks on an <m>8 \times 8</m> chessboard so that no two may attack one another?
 
-<solution>
+<!--solution>
 <p>
 There can only be one rook in each row and one rook in each column. Each valid configuration corresponds to a bijection between the rows and columns. There are <m>8!</m> possibilities.
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -623,11 +623,11 @@ There can only be one rook in each row and one rook in each column. Each valid c
 					<p>
  How many ways are there to place 5 black rooks  and 3 white rooks on an <m>8 \times 8</m> chessboard so that no two may attack one another?
 
-<solution>
+<!--solution>
 <p>
 Place the rooks in 2 phases. Phase 1: place 8 "gray" rooks. Phase 2: decide which of the 8 rooks are black. The entire process can occur in <m>8! \times {8 \choose 5}</m> ways.
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -636,7 +636,7 @@ Place the rooks in 2 phases. Phase 1: place 8 "gray" rooks. Phase 2: decide whic
 					<p>
  How many ways are there to place 5 rooks on an <m>8 \times 8</m> chessboard so that no two may attack one another?
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -651,7 +651,7 @@ Place the rooks in 2 phases. Phase 1: place 8 "gray" rooks. Phase 2: decide whic
 			</li>
 			<li>
 			<p>
- Phase 3: List the chosen rows in increasing orders. Assign each of the columns to one of these rows  (in <m>5!</m> ways)
+ Phase 3: List the chosen rows in increasing order. Assign each of the columns to one of these rows  (in <m>5!</m> ways)
 			</p>
 			</li>
 		</ul>
@@ -660,7 +660,7 @@ Place your 5 rooks in the resulting (row,column) pairs. So the number of configu
 {8 \choose 5} \times {8 \choose 5} \times 5!
 </me>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -685,7 +685,7 @@ Consider a convex <m>n</m>-gon such that no pair of diagonals intersect at the s
 					<p>
  How many diagonals are there?
 
-<solution>
+<!--solution>
 <p>
 We give two different (but equivalent) solutions.
 
@@ -726,7 +726,7 @@ Pick any two vertices. These form a diagonal, unless we picked one of the <m>n</
 
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -735,7 +735,7 @@ Pick any two vertices. These form a diagonal, unless we picked one of the <m>n</
 					<p>
  How many intersections do the diagonals determine?
 
-<solution>
+<!--solution>
 <p>
 
 <me>
@@ -751,7 +751,7 @@ In other words, there is a bijection between intersections of diagonals and 4-se
 
 
 </p>
-</solution>
+</solution-->
 
 
 

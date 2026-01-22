@@ -158,9 +158,9 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="perm-euler-recur"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">18</span> <span class="title">Recurrences for Eulerian Numbers</span>
 </h2>
-<section class="introduction" id="introduction-18"><p id="p-648">Given a permutation \(p=p_1 p_2 \cdots p_n\text{.}\) For \(1 \leq i \leq n-1\text{,}\) position \(i\) is an <em class="emphasis">ascent</em> when \(p_i &lt; p_{i+1}\text{;}\) otherwise   position \(i\) is a <em class="emphasis">descent</em> because \(p_i &gt; p_{i+1}\text{.}\)</p>
-<p id="p-649">An <em class="emphasis">ascending run</em> is a sequence of ascents. A <em class="emphasis">descending run</em> is a sequence of descents.</p>
-<p id="p-650">The Eulerian Number</p>
+<section class="introduction" id="introduction-18"><p id="p-373">Given a permutation \(p=p_1 p_2 \cdots p_n\text{.}\) For \(1 \leq i \leq n-1\text{,}\) position \(i\) is an <em class="emphasis">ascent</em> when \(p_i &lt; p_{i+1}\text{;}\) otherwise   position \(i\) is a <em class="emphasis">descent</em> because \(p_i &gt; p_{i+1}\text{.}\)</p>
+<p id="p-374">An <em class="emphasis">ascending run</em> is a sequence of ascents. A <em class="emphasis">descending run</em> is a sequence of descents.</p>
+<p id="p-375">The Eulerian Number</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{rcl}
@@ -174,7 +174,7 @@ A(n,k) &amp;=&amp; \mbox{# } \,  n \mbox{-permutations with } k \mbox{ ascending
 <article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Number Recurrence.</span>
 </h6>
-<p id="p-651">In this problem you will prove the recurrence</p>
+<p id="p-376">In this problem you will prove the recurrence</p>
 <div class="displaymath">
 \begin{equation*}
 A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1)
@@ -182,8 +182,8 @@ A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1)
 </div>
 <p class="continuation">As you might suspect, we will "treat element \(n\) as special." Let  \(\cA(n,k)\)  denote the set of \(n\)-permutations with \(k\) ascending runs (and therefore with \(k-1\) descents). <em class="emphasis">Pro Tip #1:</em> only positions \(1 \leq j \leq n-1\) are considered as ascents/descents. Position \(n\) is handled exceptionally. <em class="emphasis">Pro Tip #2:</em> Be ready to think about having \(k\) ascending runs, or \(k-1\) descents, whichever is easiest!</p>
 <ol class="lower-alpha">
-<li id="li-338">
-<p id="p-652">As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes</p>
+<li id="li-243">
+<p id="p-377">As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes</p>
 <div class="displaymath">
 \begin{equation*}
 A(4,3) = 3 A(3,3) + 2 A(3,2).
@@ -204,58 +204,34 @@ A(4,3) = 3 A(3,3) + 2 A(3,2).
 \end{array}
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-168" id="solution-168"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-168"><div class="solution solution-like">
-<p id="p-653">Here are the mappings:</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{c|cccccc}
-123 &amp; \\
-132 &amp; 1432 &amp; 4132 \\
-213 &amp; 2143 &amp; 4213 \\
-231 &amp; 2431 &amp; 4231 \\
-312 &amp; 3142 &amp; 4312 \\
-321 &amp; 3214 &amp; 3241 &amp; 3421
-\end{array}
-\end{equation*}
-</div>
-</div></div></p>
 </li>
-<li id="li-339"><p id="p-654">In part (a), you only mapped to permutations in \(\cA(3,2)\) and \(\cA(3,3)\text{.}\)  Now work backwards. Given a permutation in \(\cA(3,2)\text{,}\) where can you place element 4 to create a permutation in \(\cA(4,3)\text{?}\) Now, how about when you start with a permutation in \(\cA(3,3)\text{?}\) Write down your observations. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-169" id="solution-169"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-169"><div class="solution solution-like"><ul id="p-655" class="disc">
-<li id="li-340"><p id="p-656">For \(p \in \cA(3,2)\text{,}\) you can put a 4 at the beginning, or after the only ascent. Either choice creates a new ascent.</p></li>
-<li id="li-341"><p id="p-657">For \(p \in \cA(3,3)\text{,}\) you can put a 4 at the end, or after a descent. This preserves the total number of descents.</p></li>
-</ul></div></div></p></li>
-<li id="li-342"><p id="p-658">Now we start our proof for \(A(n,k)\text{.}\) Given a permutation \(p \in \cA(n,k)\text{.}\) Let \(p' \in S_{n-1}\) be the permutation obtained by removing element \(n\text{.}\) Explain why either \(p' \in \cA(n-1, k)\) or \(p' \in \cA(n-1,k-1)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-170" id="solution-170"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-170"><div class="solution solution-like">
-<p id="p-659">In removing element \(n\text{,}\) one of two things happens.</p>
+<li id="li-244"><p id="p-378">In part (a), you only mapped to permutations in \(\cA(3,2)\) and \(\cA(3,3)\text{.}\)  Now work backwards. Given a permutation in \(\cA(3,2)\text{,}\) where can you place element 4 to create a permutation in \(\cA(4,3)\text{?}\) Now, how about when you start with a permutation in \(\cA(3,3)\text{?}\) Write down your observations. </p></li>
+<li id="li-245"><p id="p-379">Now we start our proof for \(A(n,k)\text{.}\) Given a permutation \(p \in \cA(n,k)\text{.}\) Let \(p' \in S_{n-1}\) be the permutation obtained by removing element \(n\text{.}\) Explain why either \(p' \in \cA(n-1, k)\) or \(p' \in \cA(n-1,k-1)\text{.}\) </p></li>
+<li id="li-246">
+<p id="p-380">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
 <ul class="disc">
-<li id="li-343"><p id="p-660">If \(n\) was at the end of an ascending run of length at least 2, the number of ascending runs does not change. This includes the case where \(n\) was in the final position</p></li>
-<li id="li-344"><p id="p-661">If \(n\) was in an ascending run by itself, then the number of ascending runs goes down by one. This includes the case where \(n\) is in the first position.</p></li>
+<li id="li-247"><p id="p-381">Before \(p_1\text{?}\) </p></li>
+<li id="li-248"><p id="p-382">After \(p_{n-1}\text{?}\) </p></li>
+<li id="li-249"><p id="p-383">Directly after a descent of \(p'\text{?}\) </p></li>
+<li id="li-250"><p id="p-384">Directly after an ascent of \(p'\text{?}\) </p></li>
 </ul>
-</div></div></p></li>
-<li id="li-345">
-<p id="p-662">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
-<ul class="disc">
-<li id="li-346"><p id="p-663">Before \(p_1\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-171" id="solution-171"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-171"><div class="solution solution-like"><p id="p-664">No, because this will create a new ascending run.</p></div></div></p></li>
-<li id="li-347"><p id="p-665">After \(p_{n-1}\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-172" id="solution-172"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-172"><div class="solution solution-like"><p id="p-666">Yes: this just continues the current ascent.</p></div></div></p></li>
-<li id="li-348"><p id="p-667">Directly after a descent of \(p'\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-173" id="solution-173"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-173"><div class="solution solution-like"><p id="p-668">Yes, that descent becomes an ascent, and now there is a descent after element \(n\text{.}\)</p></div></div></p></li>
-<li id="li-349"><p id="p-669">Directly after an ascent of \(p'\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-174" id="solution-174"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-174"><div class="solution solution-like"><p id="p-670">No, this creates a new descent after element \(n\) for a total of \(k\) descents (instead of the required \(k-1\)).</p></div></div></p></li>
-</ul>
-<p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-175" id="solution-175"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-175"><div class="solution solution-like"><p id="p-671">There are \(1 + (k-1) = k\) possible places to put element \(n\) when starting with \(p \in \cA(n-1,k)\text{.}\)</p></div></div></p>
+<p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) </p>
 </li>
-<li id="li-350">
-<p id="p-672">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k-1)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
+<li id="li-251">
+<p id="p-385">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k-1)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
 <ul class="disc">
-<li id="li-351"><p id="p-673">Before \(p_1\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-176" id="solution-176"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-176"><div class="solution solution-like"><p id="p-674">Yes, this adds a new descent, increasing our total number of descents from \(k-2\) to \(k-1\text{.}\)</p></div></div></p></li>
-<li id="li-352"><p id="p-675">After \(p_{n-1}\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-177" id="solution-177"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-177"><div class="solution solution-like"><p id="p-676">No, this does not add a new descent.</p></div></div></p></li>
-<li id="li-353"><p id="p-677">Directly after a descent of \(p'\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-178" id="solution-178"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-178"><div class="solution solution-like"><p id="p-678">No, this removes a decent and adds a decent for a net gain of zero.</p></div></div></p></li>
-<li id="li-354"><p id="p-679">Directly after an ascent of \(p'\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-179" id="solution-179"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-179"><div class="solution solution-like"><p id="p-680">Yes, this adds a descent so that we now have \(k-1\) descents.</p></div></div></p></li>
+<li id="li-252"><p id="p-386">Before \(p_1\text{?}\) </p></li>
+<li id="li-253"><p id="p-387">After \(p_{n-1}\text{?}\) </p></li>
+<li id="li-254"><p id="p-388">Directly after a descent of \(p'\text{?}\) </p></li>
+<li id="li-255"><p id="p-389">Directly after an ascent of \(p'\text{?}\) </p></li>
 </ul>
-<p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) <em class="emphasis">Pro Tip #3:</em> Remember that you are starting with \(p' \in  \cA(n-1,k-1)\text{,}\) so there are \(n-2\) total ascents/descents. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-180" id="solution-180"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-180"><div class="solution solution-like"><p id="p-681">We can insert element \(n\) in \(1 + (n-2) - (k-2) = 1 + n - k = n-k+1\) places.</p></div></div></p>
+<p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) <em class="emphasis">Pro Tip #3:</em> Remember that you are starting with \(p' \in  \cA(n-1,k-1)\text{,}\) so there are \(n-2\) total ascents/descents. </p>
 </li>
-<li id="li-355"><p id="p-682">Put together your answers from parts (d) and (e) to prove that \(\)A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).\(\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-181" id="solution-181"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-181"><div class="solution solution-like"><p id="p-683">When we remove element \(n\) from \(p \in \cA(n,k)\text{,}\) we either obtain an element of \(\cA(n-1,k)\) or \(\cA(n-1,k-1).\) By part (d), we obtain each \(p' \in \cA(n-1,k)\) exactly \(k\) times. By part (e), we obtain each \(p' \in \cA(n-1,k-1)\) exactly \(n-k+1\) times. This proves the recurrence.</p></div></div></p></li>
+<li id="li-256"><p id="p-390">Put together your answers from parts (d) and (e) to prove that \(\)A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).\(\) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Symmetry of Eulerian Numbers.</span>
 </h6>
-<p id="p-684">In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:</p>
+<p id="p-391">In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:</p>
 <div class="displaymath">
 \begin{equation*}
 A(n,k) = A(n, n-k+1).
@@ -263,19 +239,10 @@ A(n,k) = A(n, n-k+1).
 </div>
 <p class="continuation">Let \(p = p_1 p_2 \cdots p_n \in \cA(n,k),\) so that \(p\) has \(k-1\) descents among \(p_1, p_2, \ldots p_{n-1}\text{.}\) Consider its reverse \(\overline{p} = p_n p_{n-1} \cdots p_1\text{.}\) By <em class="emphasis">tracking descents</em> (not ascending runs), explain why</p>
 <ul class="disc">
-<li id="li-356"><p id="p-685">\(\overline{p} \in \cA(n,n-k+1)\text{,}\) and</p></li>
-<li id="li-357"><p id="p-686">the mapping \(p \rightarrow \overline{p}\) is a bijection from \(\cA(n,k)\) to \(\cA(n,n-k+1)\text{.}\)</p></li>
+<li id="li-257"><p id="p-392">\(\overline{p} \in \cA(n,n-k+1)\text{,}\) and</p></li>
+<li id="li-258"><p id="p-393">the mapping \(p \rightarrow \overline{p}\) is a bijection from \(\cA(n,k)\) to \(\cA(n,n-k+1)\text{.}\)</p></li>
 </ul>
-<p class="continuation"><em class="emphasis">Pro Tip #4:</em> The reversal mapping \(p \rightarrow \overline{p}\) is a <em class="emphasis">very useful tool</em> for investigating the structure of permutations. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-182" id="solution-182"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-182"><div class="solution solution-like">
-<p id="p-687">We show that \(\overline{p} \in \cA(n,n-k+1)\text{.}\)</p>
-<ul class="disc">
-<li id="li-358"><p id="p-688">\(p\) has \(k-1\) descents in positions \(1 \leq j \leq n-1\text{.}\)</p></li>
-<li id="li-359"><p id="p-689">Therefore \(\overline{p}\) has \(k-1\) ascents in positions \(1 \leq j \leq n-1\text{.}\)</p></li>
-<li id="li-360"><p id="p-690">Therefore \(\overline{p}\) has \((n-1)-(k-1) = n-k\) descents in positions \(1 \leq j \leq n-1\text{.}\)</p></li>
-<li id="li-361"><p id="p-691">Therefore \(\overline{p} \in \cA(n,n-k+1).\)</p></li>
-</ul>
-<p class="continuation">Now  it is easy to prove that the mapping involved is reversible, and hence is an invertible function. So it is a bijection between these sets.</p>
-</div></div></p></article></section></section></div></main>
+<p class="continuation"><em class="emphasis">Pro Tip #4:</em> The reversal mapping \(p \rightarrow \overline{p}\) is a <em class="emphasis">very useful tool</em> for investigating the structure of permutations. </p></article></section></section></div></main>
 </div>
 </body>
 </html>

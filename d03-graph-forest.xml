@@ -31,7 +31,7 @@
  Prove that <m>T</m> has <m>\frac{1}{2}(n-2)</m> vertices of degree 3.
 
 
-<solution>
+<!--solution>
 <p>
 If we sum the degrees, then we get twice the number of edges. Suppose that there are <m>k</m> vertices of degree 3. Then
 <me>
@@ -43,7 +43,7 @@ n -2 &amp; = &amp; 2k \\
 </me>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -51,7 +51,7 @@ n -2 &amp; = &amp; 2k \\
 					<p>
  Find a formula for the number of such trees.
 
-<solution>
+<!--solution>
 <p>
 We have <m>(n-2)/2</m> vertices of degree 3 and <m>(n+2)/2</m> vertices of degree 1. The degree 3 vertices appear in the Prufer code two times. So the total number of trees is
 <me>
@@ -59,7 +59,7 @@ We have <m>(n-2)/2</m> vertices of degree 3 and <m>(n+2)/2</m> vertices of degre
 </me>
 because we must first choose the vertices of degree three, and then create the Prufer code.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -82,7 +82,7 @@ because we must first choose the vertices of degree three, and then create the P
 					<p>
  Show that <m>T(4,2)=8</m> by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees.
 
-<solution>
+<!--solution>
 <p>
 			<image width="60%" xml:id="fig-img-graph-forest0">
 				<latex-image>
@@ -100,8 +100,8 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (1,1) -- (0,1);
-\draw (1,0) -- (0,0);
+\draw (1,1) -!- (0,1);
+\draw (1,0) -!- (0,0);
 
 \end{scope}
 
@@ -118,8 +118,8 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (1,1) -- (0,0);
-\draw (1,0) -- (0,1);
+\draw (1,1) -!- (0,0);
+\draw (1,0) -!- (0,1);
 
 \end{scope}
 
@@ -135,7 +135,7 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (0,1) -- (1,1) -- (0,0);
+\draw (0,1) -!- (1,1) -!- (0,0);
 
 
 \end{scope}
@@ -153,7 +153,7 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (0,1) --(0,0) --  (1,1)  ;
+\draw (0,1) -!-(0,0) -!-  (1,1)  ;
 
 \end{scope}
 
@@ -169,7 +169,7 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (0,0) --  (0,1) -- (1,1)  ;
+\draw (0,0) -!-  (0,1) -!- (1,1)  ;
 
 \end{scope}
 
@@ -186,7 +186,7 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (1,0) --  (0,0) -- (0,1)  ;
+\draw (1,0) -!-  (0,0) -!- (0,1)  ;
 
 \end{scope}
 
@@ -203,7 +203,7 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (0,0) -- (0,1) -- (1,0)  ;
+\draw (0,0) -!- (0,1) -!- (1,0)  ;
 
 \end{scope}
 
@@ -220,7 +220,7 @@ because we must first choose the vertices of degree three, and then create the P
 \node[below left] at (0,0) {3};
 \node[above left] at (0,1) {4};
 
-\draw (0,0) --  (1,0) -- (0,1)  ;
+\draw (0,0) -!-  (1,0) -!- (0,1)  ;
 
 \end{scope}
 
@@ -230,7 +230,7 @@ because we must first choose the vertices of degree three, and then create the P
 			</image>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -243,7 +243,7 @@ T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1
 where <m>T(0,0)=1</m> and <m>T(n,0)=0</m> for <m>n\geq 1</m>. (Hint: treat vertex 1 as special.)
 
 
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -267,7 +267,7 @@ In end, we must sum over all possible values of <m>i</m>.
 
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -297,12 +297,12 @@ In end, we must sum over all possible values of <m>i</m>.
 					<p>
   Prove that <m>\sum_{i=0}^{n-1} d_i = 2n-2</m>.
 
-<solution>
+<!--solution>
 <p>
 The handshaking lemma says that if we sum the degrees then we count every edge twice. So the sum of the degrees of a tree is <m>2(n-1)</m>.
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -311,11 +311,11 @@ The handshaking lemma says that if we sum the degrees then we count every edge t
 					<p>
   Prove that <m>d_{n-2} = d_{n-1}= 1</m> by contradiction. That is, prove that if one of these numbers is greater than 1, then part (i) does not hold.
 
-<solution>
+<!--solution>
 <p>
 If <m>d_{n-2} \geq 2</m> then <m>\sum_{i=0}^{n-1} d_i \geq 2(n-1) + 1 = 2n-1</m>, a contradiction.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -360,13 +360,13 @@ If <m>d_{n-2} \geq 2</m> then <m>\sum_{i=0}^{n-1} d_i \geq 2(n-1) + 1 = 2n-1</m>
 			</li>
 		</ul>
 
-<solution>
+<!--solution>
 <p>
 
 After we remove <m>d_n</m> and replace <m>d_i</m> with <m>d_i-1</m>, It is clear that the degrees sum to <m>2(n-2)=2n-4</m>. As argued in part (ii) of (a), this forces the last two degrees to be at most 1. (Otherwise we get the same contradiction we encountered above). So our new sequence of length <m>n-1</m> satisfies properties (i) and (ii). Therefore, there is a tree on <m>n-1</m> vertices that realizes this degree sequence. We obtain a tree on <m>n</m> vertices that realizes the original sequence by adding a leaf to vertex <m>i</m>.
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -377,7 +377,7 @@ After we remove <m>d_n</m> and replace <m>d_i</m> with <m>d_i-1</m>, It is clear
 			</p><p>
 We give three different (but equivalent) formulas.
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -398,7 +398,7 @@ We give three different (but equivalent) formulas.
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
