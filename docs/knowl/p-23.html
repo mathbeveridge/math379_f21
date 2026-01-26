@@ -12,7 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>How many different rectangles are hiding in it? Six examples of rectangles you need to find are shown in the second two boards. </p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{(2k)!}{2k} = (2k-1)!
+\end{equation*}
+</div>
+<p class="continuation">We place people into seats, starting at the top of the table and continuing clockwise. There are \((2k)!\) ways to do this. However, by the symmetry of the table, we can shift everyone over by one seat (or two seats, or three seats...) and get the same configuration. Therefore we must divide by \(2k\text{,}\) which is the number of possible rotations.</p>
 <span class="incontext"><a href="exercises-1.html#p-23">in-context</a></span>
 </body>
 </html>

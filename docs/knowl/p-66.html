@@ -12,7 +12,17 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Each  problem below defines two finite sets, \(X\) and \(Y\text{.}\)  Create a bijective proof to show that \(|X|=|Y|\text{.}\) You must define a bijection \(f : X \rightarrow Y\) between the two sets, and then either (1) show \(f\) is both injective and surjective, or (2) define a function \(g: Y \rightarrow X\) and show that \(f\) and \(g\) are inverse functions.</p>
-<span class="incontext"><a href="bijective-proof.html#p-66">in-context</a></span>
+<ul class="disc">
+<li><p>Phase 1: Choose 5 rows (in \({8 \choose 5}\) ways)</p></li>
+<li><p>Phase 2: Choose 5 columns (in \({8 \choose 5}\) ways)</p></li>
+<li><p>Phase 3: List the chosen rows in increasing order. Assign each of the columns to one of these rows  (in \(5!\) ways)</p></li>
+</ul>
+<p class="continuation">Place your 5 rooks in the resulting (row,column) pairs. So the number of configurations is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{8 \choose 5} \times {8 \choose 5} \times 5!
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-1.html#p-66">in-context</a></span>
 </body>
 </html>

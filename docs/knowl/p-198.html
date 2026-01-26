@@ -12,7 +12,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Stacking Coins in the Plane.</em> Stack coins in the plane, where the bottom row consists of \(n\) consecutive coins. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-catalan1.svg" role="img" class="contained"></div></p>
-<span class="incontext"><a href="exercises-10.html#p-198">in-context</a></span>
+<p>The general formula for the union (events \(A_i\) are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">good</em>) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+| A_1 \cup A_2 \cup \cdots \cup A_n| = \sum_{j=1}^n (-1)^{j+1} \sum_{ \{i_1, i_2, \ldots i_j \}} | A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_j} |
+\end{equation*}
+</div>
+<p class="continuation">where \(\{ i_1, i_2, \ldots , i_j \} \in { [n] \choose j}\text{.}\) We also write this as</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+| A_1 \cup A_2 \cup \cdots \cup A_n | = \sum_{ \emptyset \neq S \subset [n]} (-1)^{|S|+1}  | A_{S} |
+\end{equation*}
+</div>
+<p class="continuation">where \(A_S = \cap_{i \in S} A_i\) for \(S \neq \emptyset\text{.}\)</p>
+<span class="incontext"><a href="inclusion-exclusion.html#p-198">in-context</a></span>
 </body>
 </html>

@@ -12,27 +12,21 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>We have seen that the generating function for integer partitions is</p>
+<p>For any \(a \in \R\text{,}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-P(x) = \prod_{k=1}^{\infty} \frac{1}{1-x^k}.
+\begin{array}{rcccl}
+\displaystyle{
+(1+x^r)^a
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} {a \choose n}  x^{nr}
+}&amp;=&amp; \displaystyle{
+1 + {a \choose 1}  x^r + {a \choose 2}  x^{2r} + {a \choose 3}  x^{3r} + \cdots
+} \\
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">Here the symbol \(\prod\) means "take the product," just like \(\sum\) means "take the sum."</p>
-<ol class="lower-alpha">
-<li>
-<p>Fixing a particular integer \(n\text{,}\) we realized that we can find all of the integer partitions of \(n\) by using the generating function</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-Q_n(x) = \prod_{k=1}^{n} \frac{1}{1-x^k}.
-\end{equation*}
-</div>
-<p class="continuation">More generally, for any integer \(m\text{,}\) what kind of partitions of \(m\) does \(Q_n(x)\) count? </p>
-</li>
-<li><p>Let \(d_n\) be the number of integer partitions of \(n\) into distinct parts. Find a concise expression for the generating function \(D(x) = \sum_{n=0}^{\infty} d_n x^n.\) </p></li>
-<li><p>What is the generating function partitions of \(n\) into odd parts? </p></li>
-<li><p>What is the generating function of partitions of \(n\) into distinct odd parts? </p></li>
-</ol>
-<span class="incontext"><a href="exercises-14.html#p-272">in-context</a></span>
+<span class="incontext"><a href="bestiarum.html#p-272">in-context</a></span>
 </body>
 </html>

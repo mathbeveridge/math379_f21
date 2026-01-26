@@ -12,56 +12,7 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Recall that a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">derangement</em> of \([n]\) is a permutation \(\phi: [n] \rightarrow [n]\) such that \(\phi(i) \neq i\) for all \(i \in [n]\text{.}\) In this problem, we develop an inclusion/exclusion formula for the number of derangements of \([n]\text{.}\) Let \(A\) be the set of all permutations of \([n]\text{.}\) We will define a set of "bad" events \(A_1, A_2 , \ldots , A_n\text{,}\) so that the set of derangements is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c = A \backslash  \left( A_1 \cup A_2 \cup \cdots \cup A_n \right).
-\end{equation*}
-</div>
-<ol class="lower-alpha">
-<li><p>Define the "bad" event \(A_i\) in a very natural way. Here "bad" should be taken in the context that we <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">want</em> a derangement, but event \(A_i\) is preventing this for element \(i\text{.}\) </p></li>
-<li>
-<p>Calculate the following quantities:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-|A_i| &amp;=&amp;  \\
-|A_i \cap A_j| &amp;=&amp; \\
-|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}| &amp;=&amp;
-\end{array}
-\end{equation*}
-</div>
-</li>
-<li>
-<p>Determine the number of subsets of the following forms:</p>
-<p></p>
-<figure class="table table-like"><figcaption xmlns:svg="http://www.w3.org/2000/svg"><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.0.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table xmlns:svg="http://www.w3.org/2000/svg" class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines"># subsets of the form</td>
-<td class="l m b1 r1 l0 t1 lines">\(A_i\)</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"># subsets of the form</td>
-<td class="l m b1 r1 l0 t0 lines">\(A_i \cap A_j\)</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"># subsets of the form</td>
-<td class="l m b1 r1 l0 t0 lines">\(A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}\)</td>
-</tr>
-</table></div></figure><p></p>
-<p></p>
-</li>
-<li>
-<p>Use the inclusion/exclusion formula to find number  of derangements of \([n]\text{.}\) Calculate:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\left| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c \right| =
-\sum_{k=0}^n  \,\,\, \sum_{i_1, i_2, \ldots , i_k} (-1)^k |A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}|
-\end{equation*}
-</div>
-<p class="continuation">where the sum is over all \(\{i_1, i_2, \ldots , i_k \} \in \displaystyle{[n] \choose k }\text{.}\) </p>
-</li>
-</ol>
-<span class="incontext"><a href="exercises-9.html#p-161">in-context</a></span>
+<p>Let \(n\) be a positive integer. Find a general formula for \(S(n,2)\text{,}\) the number of ways to partition the set \([n]\) into two blocks. </p>
+<span class="incontext"><a href="exercises-7.html#p-161">in-context</a></span>
 </body>
 </html>

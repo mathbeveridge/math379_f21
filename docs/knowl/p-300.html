@@ -12,7 +12,17 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>What is the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential</em> generating function \(G_2(x)\) for the number of ways of painting 4 out of \(n\) houses, one yellow, one green, one blue, one purple. </p>
-<span class="incontext"><a href="exercises-14.html#p-300">in-context</a></span>
+<p>Consider the recurrence relation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+d_n = n d_{n-1} + 1 \mbox{ for } n \geq 1
+\end{equation*}
+</div>
+<p class="continuation">where \(d_0=1\text{.}\)</p>
+<ol class="lower-alpha">
+<li><p>Let \(D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}\) be the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(D(x)\text{.}\) </p></li>
+<li><p>Can you figure out how to use your answer in part (a) to find a simple closed formula for \(d_n\text{?}\) You will need to think about what happens when you multiply two power series together. </p></li>
+</ol>
+<span class="incontext"><a href="exercises-12.html#p-300">in-context</a></span>
 </body>
 </html>
