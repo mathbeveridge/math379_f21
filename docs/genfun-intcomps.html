@@ -158,13 +158,13 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun-intcomps"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">14</span> <span class="title">Generating Functions for Integer Compositions</span>
 </h2>
-<section class="introduction" id="introduction-14"><p id="p-303"></p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-14"><p id="p-311"></p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-60"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Generating Function for Weak Compositions of Integers.</span>
 </h6>
-<p id="p-304">In this problem, we will use generating functions to prove that</p>
+<p id="p-312">In this problem, we will use generating functions to prove that</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{1}{(1-x)^k} = \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n.
@@ -172,13 +172,13 @@
 </div>
 <p class="continuation">Recall that a <em class="emphasis">weak composition</em> of \(n\) into \(k\) parts is an ordered list of nonnegative integers \((a_1, a_2, \ldots , a_k)\) such that \(\sum_{i=1}^k a_i =n\) and \(a_i \geq 0\) for \(1 \leq i \leq k\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-170"><p id="p-305">There are 5 weak compositions of 4 into 2 parts. List them. </p></li>
-<li id="li-171"><p id="p-306">Using balls in boxes, find a formula for the number of weak compositions of \(n\) into \(k\) parts. </p></li>
-<li id="li-172"><p id="p-307">What is the generating function \(F_1(x)\) for the number of weak compositions of \(n\) into 1 part? </p></li>
-<li id="li-173"><p id="p-308">Use the product principle (for generating functions) to find the generating function \(F_2(x)\) for the number of weak compositions of \(n\) into 2 parts. </p></li>
-<li id="li-174"><p id="p-309">What is the generating function \(F_k(x)\) for the number of weak compositions of \(n\) into \(k\) parts? </p></li>
+<li id="li-170"><p id="p-313">There are 5 weak compositions of 4 into 2 parts. List them. </p></li>
+<li id="li-171"><p id="p-314">Using balls in boxes, find a formula for the number of weak compositions of \(n\) into \(k\) parts. </p></li>
+<li id="li-172"><p id="p-315">What is the generating function \(F_1(x)\) for the number of weak compositions of \(n\) into 1 part? </p></li>
+<li id="li-173"><p id="p-316">Use the product principle (for generating functions) to find the generating function \(F_2(x)\) for the number of weak compositions of \(n\) into 2 parts. </p></li>
+<li id="li-174"><p id="p-317">What is the generating function \(F_k(x)\) for the number of weak compositions of \(n\) into \(k\) parts? </p></li>
 <li id="li-175">
-<p id="p-310">Why does this prove that</p>
+<p id="p-318">Why does this prove that</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{1}{(1-x)^k} = \sum_{n=0}^{\infty} {n+k-1 \choose k-1} x^n
@@ -189,7 +189,7 @@
 </ol></article><article class="exercise exercise-like" id="exercise-61"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Generating Function for Compositions of Integers.</span>
 </h6>
-<p id="p-311">Recall that a <em class="emphasis">(strong) composition</em> of \(n\) into \(k\) parts is an ordered list of positve integers \((a_1, a_2, \ldots , a_k)\) such that \(\sum_{i=1}^k a_i =n\) and \(a_i \geq 1\) for \(1 \leq i \leq k\text{.}\) In this exercise, we will use generating functions to prove that the number of strong compositions of \(n\) into \(k\) parts is</p>
+<p id="p-319">Recall that a <em class="emphasis">(strong) composition</em> of \(n\) into \(k\) parts is an ordered list of positve integers \((a_1, a_2, \ldots , a_k)\) such that \(\sum_{i=1}^k a_i =n\) and \(a_i \geq 1\) for \(1 \leq i \leq k\text{.}\) In this exercise, we will use generating functions to prove that the number of strong compositions of \(n\) into \(k\) parts is</p>
 <div class="displaymath">
 \begin{equation*}
 \displaystyle{{n-1 \choose k-1}} \mbox{ when } n \geq k, \mbox{ and } 0 \mbox{ when } n &lt; k.
@@ -197,11 +197,11 @@
 </div>
 <p class="continuation">(Note:  \({n-1 \choose k-1}\) is defined to be \(0\) when \(n &lt; k\) because it is impossible to pick more elements than we have. So technically, we  don't need to point this out again.)</p>
 <ol class="lower-alpha">
-<li id="li-176"><p id="p-312">There are 10 compositions of 6 into 3 parts. List them. </p></li>
-<li id="li-177"><p id="p-313">What is the generating function \(G_1(x)\) for the number of compositions of \(n\) into 1 part? </p></li>
-<li id="li-178"><p id="p-314">Use the product principle (for generating functions) to find the generating function \(G_2(x)\) for the number of  compositions of \(n\) into 2 parts. </p></li>
-<li id="li-179"><p id="p-315">What is the generating function \(G_k(x)\) for the number of  compositions of \(n\) into \(k\) parts? </p></li>
-<li id="li-180"><p id="p-316">Starting from the known power series for weak compositions \(F_k(x)\text{,}\) find the power series for compositions \(G_k(x)\text{.}\) Hint: re-index using \(m=n+k\text{.}\) </p></li>
+<li id="li-176"><p id="p-320">There are 10 compositions of 6 into 3 parts. List them. </p></li>
+<li id="li-177"><p id="p-321">What is the generating function \(G_1(x)\) for the number of compositions of \(n\) into 1 part? </p></li>
+<li id="li-178"><p id="p-322">Use the product principle (for generating functions) to find the generating function \(G_2(x)\) for the number of  compositions of \(n\) into 2 parts. </p></li>
+<li id="li-179"><p id="p-323">What is the generating function \(G_k(x)\) for the number of  compositions of \(n\) into \(k\) parts? </p></li>
+<li id="li-180"><p id="p-324">Starting from the known power series for weak compositions \(F_k(x)\text{,}\) find the power series for compositions \(G_k(x)\text{.}\) Hint: re-index using \(m=n+k\text{.}\) </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

@@ -158,7 +158,7 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="int-partition"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">8</span> <span class="title">Integer Partitions</span>
 </h2>
-<section class="introduction" id="introduction-8"><p id="p-176">A partition of integer \(n\) is a multiset of positive integers whose sum is \(n\text{.}\) Here are three symbols we use for counting integer partitions:</p>
+<section class="introduction" id="introduction-8"><p id="p-184">A partition of integer \(n\) is a multiset of positive integers whose sum is \(n\text{.}\) Here are three symbols we use for counting integer partitions:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{rcl}
@@ -177,7 +177,7 @@ p(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into any number of parts}  
 <article class="exercise exercise-like" id="exercise-38"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions With At Most \(k\) Parts.</span>
 </h6>
-<p id="p-177">In this problem, you will investigate the equivalence</p>
+<p id="p-185">In this problem, you will investigate the equivalence</p>
 <div class="displaymath">
 \begin{equation*}
 p_k(n) =
@@ -185,16 +185,16 @@ p(n+k,k)
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-99"><p id="p-178">Interpret each side of this equality. </p></li>
-<li id="li-100"><p id="p-179">Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions. </p></li>
+<li id="li-99"><p id="p-186">Interpret each side of this equality. </p></li>
+<li id="li-100"><p id="p-187">Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions. </p></li>
 <li id="li-101">
-<p id="p-180">Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
-<p id="p-181"></p>
+<p id="p-188">Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
+<p id="p-189"></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-39"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions Into Distinct Parts.</span>
 </h6>
-<p id="p-182">Let \(\mbox{dist}(n,k)\) be the number of integer partitions of \(n\) with first part \(k\) and all parts distinct. The initial conditions for this function are</p>
+<p id="p-190">Let \(\mbox{dist}(n,k)\) be the number of integer partitions of \(n\) with first part \(k\) and all parts distinct. The initial conditions for this function are</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{cccccc}
@@ -205,7 +205,7 @@ p(n+k,k)
 <p class="continuation">It is also clear that \(\mbox{dist}(n,k)=0\) when \(k&gt;n\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-102">
-<p id="p-183">Here are the values of \(\mbox{dist}(9,k)\) for \(1 \leq k \leq 9\text{:}\)</p>
+<p id="p-191">Here are the values of \(\mbox{dist}(9,k)\) for \(1 \leq k \leq 9\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{c|cccccccccccc}
@@ -217,11 +217,11 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 </div>
 <p class="continuation">Find each of these eight integer partitions of 9 into distinct parts. </p>
 </li>
-<li id="li-103"><p id="p-184">Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula. </p></li>
+<li id="li-103"><p id="p-192">Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-40"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions into Odd Parts.</span>
 </h6>
-<p id="p-185">In this problem you will prove a very cool result:</p>
+<p id="p-193">In this problem you will prove a very cool result:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{ccc}
@@ -237,9 +237,9 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-104"><p id="p-186">In the previous problem, you found the eight integer partitions of 9 into distinct parts. Now find the eight integer partitions of 9 into odd parts. </p></li>
+<li id="li-104"><p id="p-194">In the previous problem, you found the eight integer partitions of 9 into distinct parts. Now find the eight integer partitions of 9 into odd parts. </p></li>
 <li id="li-105">
-<p id="p-187">Given an integer partition of \(n\) into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by</p>
+<p id="p-195">Given an integer partition of \(n\) into odd parts, here is the mapping that creates an integer partition with distinct parts. For each step, perform the described operation for the integer partition  given by</p>
 <div class="displaymath">
 \begin{equation*}
 35  = 7+5+5+3+3+3+3+3+1+1+1.
@@ -247,34 +247,34 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 </div>
 <ol class="lower-roman">
 <li id="li-106">
-<p id="p-188">For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
+<p id="p-196">For each odd number \(2k+1\text{,}\) let \(a_{2k+1}\) be the number of times that \(2k+1\) appears in the partition. In other words, the type of the partition of \(n\) is \((a_1, 0, a_3, 0, a_5 , 0,  \ldots )\) and we have</p>
 <div class="displaymath">
 \begin{equation*}
 n = a_1 \cdot 1 + a_3 \cdot 3 + a_5 \cdot 5 + \cdots.
 \end{equation*}
 </div>
-<p id="p-189"><em class="emphasis">Perform this step for our integer partition of 35.</em> </p>
+<p id="p-197"><em class="emphasis">Perform this step for our integer partition of 35.</em> </p>
 </li>
 <li id="li-107">
-<p id="p-190">Write each \(a_{2k+1}\) as the sum of distinct powers of two. For example, \(5 = (4 + 1)\) and \(42 = (32 + 8 + 2)\text{.}\) There is a unique way to do this, and it  is equivalent to writing \(a_{2k+1}\) using binary notation.</p>
-<p id="p-191"><em class="emphasis">Perform this step for our integer partition of 35.</em> </p>
+<p id="p-198">Write each \(a_{2k+1}\) as the sum of distinct powers of two. For example, \(5 = (4 + 1)\) and \(42 = (32 + 8 + 2)\text{.}\) There is a unique way to do this, and it  is equivalent to writing \(a_{2k+1}\) using binary notation.</p>
+<p id="p-199"><em class="emphasis">Perform this step for our integer partition of 35.</em> </p>
 </li>
 <li id="li-108">
-<p id="p-192">Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
+<p id="p-200">Now multiply each odd number \(2k+1\) by this "sum of distinct powers of 2 expansion of \(a_{2k+1}\)" from the previous step. For example, if we started with \(a_{7}=11\) then we would get</p>
 <div class="displaymath">
 \begin{equation*}
 a_7 \cdot 7 = 11 \cdot 7 = (8 + 2 + 1) \cdot 7 = 56 + 14 +7.
 \end{equation*}
 </div>
 <p class="continuation">We have now represented \(n\) as the sum of distinct positive integers!</p>
-<p id="p-193"><em class="emphasis">Perform this step for our integer partition of 35.</em> </p>
+<p id="p-201"><em class="emphasis">Perform this step for our integer partition of 35.</em> </p>
 </li>
 </ol>
 </li>
-<li id="li-109"><p id="p-194">Explain why each of the terms obtained by the process in part (b) are all distinct. </p></li>
-<li id="li-110"><p id="p-195">Use the mapping from part (b) to match the partitions of 9 into odd parts from part (b) to their corresponding partition of 9 into distinct parts from 2(a). </p></li>
+<li id="li-109"><p id="p-202">Explain why each of the terms obtained by the process in part (b) are all distinct. </p></li>
+<li id="li-110"><p id="p-203">Use the mapping from part (b) to match the partitions of 9 into odd parts from part (b) to their corresponding partition of 9 into distinct parts from 2(a). </p></li>
 <li id="li-111">
-<p id="p-196">Describe the reverse mapping that takes a partition of \(n\) with distinct parts and maps it to a partition of \(n\) with odd parts. Explain how you know the resulting partition must have odd parts. Then use your mapping  the integer partition</p>
+<p id="p-204">Describe the reverse mapping that takes a partition of \(n\) with distinct parts and maps it to a partition of \(n\) with odd parts. Explain how you know the resulting partition must have odd parts. Then use your mapping  the integer partition</p>
 <div class="displaymath">
 \begin{equation*}
 6 + 12 + 15 + 16 + 20.

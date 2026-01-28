@@ -12,11 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step.</em> Consider a sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\) satisfying (i) and (ii). Find the last \(d_i &gt; 1\text{.}\) Remove \(d_n\) from the sequence and replace \(d_i\) with \(d_i-1\text{.}\)</p>
-<ul class="circle">
-<li><p>Explain why (i) and (ii) hold for the resulting sequence of length \(n-1\text{.}\)</p></li>
-<li><p>Use this fact to create a tree with degree sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\text{.}\)</p></li>
-</ul>
+<p>Prove the recurrence relation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1 \leq k \leq n
+\end{equation*}
+</div>
+<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.) </p>
 <span class="incontext"><a href="exercises-25.html#p-541">in-context</a></span>
 </body>
 </html>
