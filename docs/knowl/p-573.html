@@ -12,12 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(\mathcal{Z}_n\) be the family of rooted (and labeled) forests such that each rooted component is either (1) an isolated vertex, or (2) a path rooted at one of its endpoints. Prove that</p>
+<p>Prove the recurrence relation</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-|\mathcal{Z}_n| = \sum_{k=0}^{n-1} {n \choose k} (n-1)_k.
+T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1 \leq k \leq n
 \end{equation*}
 </div>
-<span class="incontext"><a href="exercises-27.html#p-573">in-context</a></span>
+<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.) </p>
+<span class="incontext"><a href="exercises-25.html#p-573">in-context</a></span>
 </body>
 </html>

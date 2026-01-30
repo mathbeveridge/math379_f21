@@ -12,8 +12,12 @@
 </head>
 <body>
 <article class="li"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Item</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">20.2.a</span><span class="period">.</span>
 </h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> When \(n=1\text{,}\) there is exactly one permutation: \((1)\text{.}\) This permutation has one fixed point.</p></article><span class="incontext"><a href="exercises-21.html#li-297">in-context</a></span>
+<p>Give a combinatorial proof of this identity.</p>
+<ol class="lower-roman">
+<li><p>Consider a non-identity permutation \(p_1p_2 \cdots p_n\text{.}\) Let \(0 \leq j \leq n-1\) be the  largest integer such that \(p_1p_2 \cdots p_j = 12 \cdots (j-1)\text{.}\) That is, the first \(j-1\) elements map to themselves, but element \(j\) does not map to \(j\text{.}\) Prove that the number of such \(n\)-permutations is  \((n-j) \cdot (n-j)!\text{.}\) </p></li>
+<li><p>The RHS  counts the number of permutations <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!) </p></li>
+</ol></article><span class="incontext"><a href="exercises-19.html#li-297">in-context</a></span>
 </body>
 </html>

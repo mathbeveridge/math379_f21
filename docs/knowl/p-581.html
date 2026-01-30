@@ -12,22 +12,11 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>These two problems use composition of ordinary generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and ordinary generating function \(A(x) = \sum_{n=1}^{\infty} a_n x^n\text{.}\) Let \({\cal B}\) be the task "split the interval \([n]\) into nonempty intervals and perform \({\cal A}\) on each interval." Then the ordinary generating function for \({\cal B}\) is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-B(x) = \frac{1}{1-A(x)}.
-\end{equation*}
-</div>
-<ol class="lower-alpha">
-<li>
-<p>Suppose that we have \(n\) prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first \(k_1\) jurors, the next \(k_2\) jurors and so on).</p>
-<ol class="lower-roman">
-<li><p>Find the value of \(b_n\text{.}\) <a class="solution-knowl original" data-knowl="./knowl/solution-161-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-<li><p>Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.) <a class="solution-knowl original" data-knowl="./knowl/solution-162-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-</ol>
-</li>
-<li><p>Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). <a class="solution-knowl original" data-knowl="./knowl/solution-163-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-</ol>
-<span class="incontext"><a href="exercises-15.html#p-581">in-context</a></span>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step.</em> Consider a sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\) satisfying (i) and (ii). Find the last \(d_i &gt; 1\text{.}\) Remove \(d_n\) from the sequence and replace \(d_i\) with \(d_i-1\text{.}\)</p>
+<ul class="circle">
+<li><p>Explain why (i) and (ii) hold for the resulting sequence of length \(n-1\text{.}\)</p></li>
+<li><p>Use this fact to create a tree with degree sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\text{.}\)</p></li>
+</ul>
+<span class="incontext"><a href="exercises-25.html#p-581">in-context</a></span>
 </body>
 </html>

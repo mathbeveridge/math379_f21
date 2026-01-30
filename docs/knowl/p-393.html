@@ -12,16 +12,36 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>American Football is played on a rectangular field between two teams. The field is 100 yards long, with a ten yard end zone at each end, each of which has a set of goalposts. The game is played with a single ball in the shape of a prolate spheroid. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/football.jpg" class="contained"></div> The offensive team tries to advance the ball down the field. While on offense (in possession of the ball), a team can score in four ways</p>
-<ul class="disc">
-<li><p>kicking a field goal (3 points) by kicking the ball through the goalposts in the opposing team's end zone;</p></li>
-<li><p>scoring a touchdown (6 points) by advancing the ball across the length of the field and into the opposing team's end zone;</p></li>
-<li><p>scoring a touchdown plus extra point (7 points) by following up this touchdown by kicking the ball through the goalposts; and</p></li>
-<li><p>scoring a touchdown plus two-point conversion (8 points) by following up this touchdown with another successful offensive scoring play.</p></li>
-</ul>
-<p class="continuation">While on defense (not in possession of the ball), a team can score in one way:</p>
-<ul class="disc"><li><p>scoring a safety (2 points) by tackling the ball carrier (on the opposing team) in his own endzone.</p></li></ul>
-<p class="continuation">The game is played for sixty minutes. Use the product principle for generating functions to find a concise formula for \(F(x)\text{,}\) the generating function for the number of ways to to score \(n\) points in a football game.</p>
-<span class="incontext"><a href="exercises-16.html#p-393">in-context</a></span>
+<p>A group of (distinct) children are at the park.  One nonempty subset decides to play ring-around-the-rosie, and they form a circle. The remaining children (if there are any who don't play) head to the snack bar and line up to get ice cream.</p>
+<ol class="lower-alpha">
+<li>
+<p>Let \(a_n\) denote the number of ways for \(n\) children to form a circle in order to play ring-around-the-rosie. We know that \(a_0=0\) because the set of children playing is nonempty. Find the exponential generating function</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!} = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}.
+\end{equation*}
+</div>
+</li>
+<li>
+<p>Let \(b_n\) denote the number of ways for \(n\) children to line up to get ice cream. Find the exponential generating function</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) = \sum_{n=0}^{\infty} b_n \frac{x^n}{n!}.
+\end{equation*}
+</div>
+</li>
+<li>
+<p>Let \(c_n\) denote the number of ways that \(n\) children can divide into two groups, one that plays ring-around-the-rosie and another that gets ice cream. We know that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!} = A(x)B(x).
+\end{equation*}
+</div>
+<p class="continuation">Write down the exponential generating function \(C(x)\text{.}\) </p>
+</li>
+<li><p>Use parts (a),(b),(c) to find a  formula for \(c_n\text{.}\) (It will contain one summation sign.) </p></li>
+<li><p>Give a direct combinatorial explanation for the formula in part (d). </p></li>
+</ol>
+<span class="incontext"><a href="exercises-14.html#p-393">in-context</a></span>
 </body>
 </html>

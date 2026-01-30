@@ -12,15 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For a group of size \(n\text{,}\) the number of ways to choose a foreman and then choose one of 3 roles for the remaining people is \(n 3^{n-1}\text{.}\) Once again, we must take \(a_0=0\text{,}\) so</p>
+<p>Let \(C(x)\) be the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> for the number of cycle graphs  on \(n \geq 1\) vertices. Prove that</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} n 3^n x^n = 3x \sum_{n=1}^{\infty} n 3^{n-1} x^{n-1} =   \frac{3x}{(1-3x)^2} \\
-B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{3x}{(1-3x)^2}} = \frac{(1-3x)^2}{1-9x+9x^2} = 1 + \frac{3x}{1-9x+9x^2}
-\end{array}
+C(x) = \frac{x}{2} + \frac{x^2}{4} + \log \left(  \frac{1}{\sqrt{1-x}} \right).
 \end{equation*}
 </div>
-<span class="incontext"><a href="exercises-15.html#p-589">in-context</a></span>
+<span class="incontext"><a href="exercises-26.html#p-589">in-context</a></span>
 </body>
 </html>

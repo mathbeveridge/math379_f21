@@ -158,9 +158,9 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="perm-euler-recur"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">18</span> <span class="title">Recurrences for Eulerian Numbers</span>
 </h2>
-<section class="introduction" id="introduction-18"><p id="p-427">Given a permutation \(p=p_1 p_2 \cdots p_n\text{.}\) For \(1 \leq i \leq n-1\text{,}\) position \(i\) is an <em class="emphasis">ascent</em> when \(p_i &lt; p_{i+1}\text{;}\) otherwise   position \(i\) is a <em class="emphasis">descent</em> because \(p_i &gt; p_{i+1}\text{.}\)</p>
-<p id="p-428">An <em class="emphasis">ascending run</em> is a sequence of ascents. A <em class="emphasis">descending run</em> is a sequence of descents.</p>
-<p id="p-429">The Eulerian Number</p>
+<section class="introduction" id="introduction-18"><p id="p-459">Given a permutation \(p=p_1 p_2 \cdots p_n\text{.}\) For \(1 \leq i \leq n-1\text{,}\) position \(i\) is an <em class="emphasis">ascent</em> when \(p_i &lt; p_{i+1}\text{;}\) otherwise   position \(i\) is a <em class="emphasis">descent</em> because \(p_i &gt; p_{i+1}\text{.}\)</p>
+<p id="p-460">An <em class="emphasis">ascending run</em> is a sequence of ascents. A <em class="emphasis">descending run</em> is a sequence of descents.</p>
+<p id="p-461">The Eulerian Number</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{rcl}
@@ -174,7 +174,7 @@ A(n,k) &amp;=&amp; \mbox{# } \,  n \mbox{-permutations with } k \mbox{ ascending
 <article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Number Recurrence.</span>
 </h6>
-<p id="p-430">In this problem you will prove the recurrence</p>
+<p id="p-462">In this problem you will prove the recurrence</p>
 <div class="displaymath">
 \begin{equation*}
 A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1)
@@ -182,8 +182,8 @@ A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1)
 </div>
 <p class="continuation">As you might suspect, we will "treat element \(n\) as special." Let  \(\cA(n,k)\)  denote the set of \(n\)-permutations with \(k\) ascending runs (and therefore with \(k-1\) descents). <em class="emphasis">Pro Tip #1:</em> only positions \(1 \leq j \leq n-1\) are considered as ascents/descents. Position \(n\) is handled exceptionally. <em class="emphasis">Pro Tip #2:</em> Be ready to think about having \(k\) ascending runs, or \(k-1\) descents, whichever is easiest!</p>
 <ol class="lower-alpha">
-<li id="li-262">
-<p id="p-431">As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes</p>
+<li id="li-274">
+<p id="p-463">As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes</p>
 <div class="displaymath">
 \begin{equation*}
 A(4,3) = 3 A(3,3) + 2 A(3,2).
@@ -205,33 +205,33 @@ A(4,3) = 3 A(3,3) + 2 A(3,2).
 \end{equation*}
 </div>
 </li>
-<li id="li-263"><p id="p-432">In part (a), you only mapped to permutations in \(\cA(3,2)\) and \(\cA(3,3)\text{.}\)  Now work backwards. Given a permutation in \(\cA(3,2)\text{,}\) where can you place element 4 to create a permutation in \(\cA(4,3)\text{?}\) Now, how about when you start with a permutation in \(\cA(3,3)\text{?}\) Write down your observations. </p></li>
-<li id="li-264"><p id="p-433">Now we start our proof for \(A(n,k)\text{.}\) Given a permutation \(p \in \cA(n,k)\text{.}\) Let \(p' \in S_{n-1}\) be the permutation obtained by removing element \(n\text{.}\) Explain why either \(p' \in \cA(n-1, k)\) or \(p' \in \cA(n-1,k-1)\text{.}\) </p></li>
-<li id="li-265">
-<p id="p-434">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
+<li id="li-275"><p id="p-464">In part (a), you only mapped to permutations in \(\cA(3,2)\) and \(\cA(3,3)\text{.}\)  Now work backwards. Given a permutation in \(\cA(3,2)\text{,}\) where can you place element 4 to create a permutation in \(\cA(4,3)\text{?}\) Now, how about when you start with a permutation in \(\cA(3,3)\text{?}\) Write down your observations. </p></li>
+<li id="li-276"><p id="p-465">Now we start our proof for \(A(n,k)\text{.}\) Given a permutation \(p \in \cA(n,k)\text{.}\) Let \(p' \in S_{n-1}\) be the permutation obtained by removing element \(n\text{.}\) Explain why either \(p' \in \cA(n-1, k)\) or \(p' \in \cA(n-1,k-1)\text{.}\) </p></li>
+<li id="li-277">
+<p id="p-466">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
 <ul class="disc">
-<li id="li-266"><p id="p-435">Before \(p_1\text{?}\) </p></li>
-<li id="li-267"><p id="p-436">After \(p_{n-1}\text{?}\) </p></li>
-<li id="li-268"><p id="p-437">Directly after a descent of \(p'\text{?}\) </p></li>
-<li id="li-269"><p id="p-438">Directly after an ascent of \(p'\text{?}\) </p></li>
+<li id="li-278"><p id="p-467">Before \(p_1\text{?}\) </p></li>
+<li id="li-279"><p id="p-468">After \(p_{n-1}\text{?}\) </p></li>
+<li id="li-280"><p id="p-469">Directly after a descent of \(p'\text{?}\) </p></li>
+<li id="li-281"><p id="p-470">Directly after an ascent of \(p'\text{?}\) </p></li>
 </ul>
 <p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) </p>
 </li>
-<li id="li-270">
-<p id="p-439">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k-1)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
+<li id="li-282">
+<p id="p-471">Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k-1)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
 <ul class="disc">
-<li id="li-271"><p id="p-440">Before \(p_1\text{?}\) </p></li>
-<li id="li-272"><p id="p-441">After \(p_{n-1}\text{?}\) </p></li>
-<li id="li-273"><p id="p-442">Directly after a descent of \(p'\text{?}\) </p></li>
-<li id="li-274"><p id="p-443">Directly after an ascent of \(p'\text{?}\) </p></li>
+<li id="li-283"><p id="p-472">Before \(p_1\text{?}\) </p></li>
+<li id="li-284"><p id="p-473">After \(p_{n-1}\text{?}\) </p></li>
+<li id="li-285"><p id="p-474">Directly after a descent of \(p'\text{?}\) </p></li>
+<li id="li-286"><p id="p-475">Directly after an ascent of \(p'\text{?}\) </p></li>
 </ul>
 <p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) <em class="emphasis">Pro Tip #3:</em> Remember that you are starting with \(p' \in  \cA(n-1,k-1)\text{,}\) so there are \(n-2\) total ascents/descents. </p>
 </li>
-<li id="li-275"><p id="p-444">Put together your answers from parts (d) and (e) to prove that \(\)A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).\(\) </p></li>
+<li id="li-287"><p id="p-476">Put together your answers from parts (d) and (e) to prove that \(\)A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).\(\) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Symmetry of Eulerian Numbers.</span>
 </h6>
-<p id="p-445">In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:</p>
+<p id="p-477">In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:</p>
 <div class="displaymath">
 \begin{equation*}
 A(n,k) = A(n, n-k+1).
@@ -239,8 +239,8 @@ A(n,k) = A(n, n-k+1).
 </div>
 <p class="continuation">Let \(p = p_1 p_2 \cdots p_n \in \cA(n,k),\) so that \(p\) has \(k-1\) descents among \(p_1, p_2, \ldots p_{n-1}\text{.}\) Consider its reverse \(\overline{p} = p_n p_{n-1} \cdots p_1\text{.}\) By <em class="emphasis">tracking descents</em> (not ascending runs), explain why</p>
 <ul class="disc">
-<li id="li-276"><p id="p-446">\(\overline{p} \in \cA(n,n-k+1)\text{,}\) and</p></li>
-<li id="li-277"><p id="p-447">the mapping \(p \rightarrow \overline{p}\) is a bijection from \(\cA(n,k)\) to \(\cA(n,n-k+1)\text{.}\)</p></li>
+<li id="li-288"><p id="p-478">\(\overline{p} \in \cA(n,n-k+1)\text{,}\) and</p></li>
+<li id="li-289"><p id="p-479">the mapping \(p \rightarrow \overline{p}\) is a bijection from \(\cA(n,k)\) to \(\cA(n,n-k+1)\text{.}\)</p></li>
 </ul>
 <p class="continuation"><em class="emphasis">Pro Tip #4:</em> The reversal mapping \(p \rightarrow \overline{p}\) is a <em class="emphasis">very useful tool</em> for investigating the structure of permutations. </p></article></section></section></div></main>
 </div>

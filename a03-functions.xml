@@ -80,7 +80,7 @@ An equivalent formulation is the contrapositive of this statement:
 				<p>
 By negating the statements above, write down definitions for "not injective" and "not surjective."
 
-<!--solution>
+<solution>
 <p>
 
 		<ul>
@@ -102,7 +102,7 @@ The function <m>f: X \rightarrow Y</m> is <em>not surjective</em> if there exist
 			</li>
 		</ul>
 </p>
-</solution-->
+</solution>
 
 
 				</p>
@@ -135,7 +135,7 @@ n &gt; m, &amp; n = m, &amp;  n &lt; m, &amp; \mbox{none}.
  <m>f: [n] \rightarrow [m]</m> is injective (one-to-one) but NOT surjective (onto)
 
 
-<!--solution>
+<solution>
 <p>
 Required relationship: <m>n &lt; m</m>
 
@@ -162,9 +162,9 @@ Required relationship: <m>n &lt; m</m>
 
 
 
-\draw[arrows={-latex}, very thick] (.25,1) -!- (3.8,.6);
-\draw[arrows={-latex}, very thick] (.25,0) -!- (3.8,-.4);
-\draw[arrows={-latex}, very thick] (.25,-1) -!- (3.75,-1.5);
+\draw[arrows={-latex}, very thick] (.25,1) -- (3.8,.6);
+\draw[arrows={-latex}, very thick] (.25,0) -- (3.8,-.4);
+\draw[arrows={-latex}, very thick] (.25,-1) -- (3.75,-1.5);
 
 \draw (4,-2.75) node {<m>Y= [4]</m>};
 
@@ -177,7 +177,7 @@ Required relationship: <m>n &lt; m</m>
 
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -185,7 +185,7 @@ Required relationship: <m>n &lt; m</m>
 					<p>
  <m>f: [n] \rightarrow [m]</m> is injective (one-to-one) and surjective (onto)
 
-<!--solution>
+<solution>
 <p>
 Required relationship: <m>n = m</m>
 
@@ -212,9 +212,9 @@ Required relationship: <m>n = m</m>
 
 
 
-\draw[arrows={-latex}, very thick] (.25,1) -!- (3.8,1);
-\draw[arrows={-latex}, very thick] (.25,0) -!- (3.8,0);
-\draw[arrows={-latex}, very thick] (.25,-1) -!- (3.75,-1);
+\draw[arrows={-latex}, very thick] (.25,1) -- (3.8,1);
+\draw[arrows={-latex}, very thick] (.25,0) -- (3.8,0);
+\draw[arrows={-latex}, very thick] (.25,-1) -- (3.75,-1);
 
 \draw (4,-2.75) node {<m>Y= [3]</m>};
 
@@ -223,7 +223,7 @@ Required relationship: <m>n = m</m>
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -231,7 +231,7 @@ Required relationship: <m>n = m</m>
 					<p>
  <m>f: [n] \rightarrow [m]</m> is NOT injective (one-to-one) but is surjective (onto)
 
-<!--solution>
+<solution>
 <p>
 Required relationship: <m>n &gt; m</m>
 
@@ -259,10 +259,10 @@ Required relationship: <m>n &gt; m</m>
 
 
 
-\draw[arrows={-latex}, very thick] (.25,1) -!- (3.8,1);
-\draw[arrows={-latex}, very thick] (.25,0) -!- (3.8,0);
-\draw[arrows={-latex}, very thick] (.25,-1) -!- (3.75,-.8);
-\draw[arrows={-latex}, very thick] (.25,-2) -!- (3.75,-1.2);
+\draw[arrows={-latex}, very thick] (.25,1) -- (3.8,1);
+\draw[arrows={-latex}, very thick] (.25,0) -- (3.8,0);
+\draw[arrows={-latex}, very thick] (.25,-1) -- (3.75,-.8);
+\draw[arrows={-latex}, very thick] (.25,-2) -- (3.75,-1.2);
 
 \draw (4,-2.75) node {<m>Y= [3]</m>};
 
@@ -271,7 +271,7 @@ Required relationship: <m>n &gt; m</m>
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -281,7 +281,7 @@ Required relationship: <m>n &gt; m</m>
 					<p>
  <m>f: [n] \rightarrow [m]</m> is NOT injective (one-to-one) and NOT surjective (onto)
 
-<!--solution>
+<solution>
 <p>
 Required relationship: none
 
@@ -309,10 +309,10 @@ Required relationship: none
 
 
 
-\draw[arrows={-latex}, very thick] (.25,1) -!- (3.8,.2);
-\draw[arrows={-latex}, very thick] (.25,0) -!- (3.8,-.2);
-\draw[arrows={-latex}, very thick] (.25,-1) -!- (3.75,-.8);
-\draw[arrows={-latex}, very thick] (.25,-2) -!- (3.75,-1.2);
+\draw[arrows={-latex}, very thick] (.25,1) -- (3.8,.2);
+\draw[arrows={-latex}, very thick] (.25,0) -- (3.8,-.2);
+\draw[arrows={-latex}, very thick] (.25,-1) -- (3.75,-.8);
+\draw[arrows={-latex}, very thick] (.25,-2) -- (3.75,-1.2);
 
 \draw (4,-2.75) node {<m>Y= [3]</m>};
 
@@ -321,7 +321,7 @@ Required relationship: none
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -366,7 +366,7 @@ Here are the statements:
 					<p>
  If <m>g \circ f</m> is injective then <m>f</m> is injective.
 
-<!--solution>
+<solution>
 <p>
 <em> True</em>. We prove the contrapositive: if <m>f</m> is not injective then <m>g \circ f</m> is not injective.
 		<ul>
@@ -383,7 +383,7 @@ Here are the statements:
 		</ul>
 In other words, <m>g \circ f</m> is not injective.
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -393,7 +393,7 @@ In other words, <m>g \circ f</m> is not injective.
  If <m>g \circ f</m> is injective then <m>g</m> is injective.
 
 
-<!--solution>
+<solution>
 <p>
 <em> False</em>: here is a counterexample
 
@@ -417,8 +417,8 @@ In other words, <m>g \circ f</m> is not injective.
 \fill (1.5,0) circle (.05);
 \fill (1.5,-.5) circle (.05);
 
-\draw[-latex] (0,.5) -!- (1.4,.5);
-\draw[-latex] (0,0) -!- (1.4,0);
+\draw[-latex] (0,.5) -- (1.4,.5);
+\draw[-latex] (0,0) -- (1.4,0);
 
 
 \draw  (3,.25) ellipse (.3 and .75);
@@ -427,9 +427,9 @@ In other words, <m>g \circ f</m> is not injective.
 \fill (3,0) circle (.05);
 
 
-\draw[-latex] (1.5,.5) -!- (2.9,.5);
-\draw[-latex] (1.5,0) -!- (2.9,0);
-\draw[-latex] (1.5,-.5) -!- (2.9,-.1);
+\draw[-latex] (1.5,.5) -- (2.9,.5);
+\draw[-latex] (1.5,0) -- (2.9,0);
+\draw[-latex] (1.5,-.5) -- (2.9,-.1);
 
 \node at (0,1.25) {<m>X</m>};
 \node at (1.5,1.25) {<m>Y</m>};
@@ -442,7 +442,7 @@ In other words, <m>g \circ f</m> is not injective.
 				</latex-image>
 			</image>
 </p>
-</solution-->
+</solution>
 
 
 
@@ -452,11 +452,11 @@ In other words, <m>g \circ f</m> is not injective.
 					<p>
  If <m>g \circ f</m> is surjective then <m>f</m> is surjective.
 
-<!--solution>
+<solution>
 <p>
 <em> False</em>: the same counterexample as in the previous problem
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -464,7 +464,7 @@ In other words, <m>g \circ f</m> is not injective.
 					<p>
  If <m>g \circ f</m> is surjective then <m>g</m> is surjective.
 
-<!--solution>
+<solution>
 <p>
 <em> True</em>. We prove the contrapositive: if <m>g</m> is not surjective then <m>g \circ f</m> is not surjective.
 		<ul>
@@ -482,7 +482,7 @@ In other words, <m>g \circ f</m> is not injective.
 		</ul>
 In other words, <m>g \circ f</m> is not surjective.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
