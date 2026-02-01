@@ -16,61 +16,47 @@
 \begin{equation*}
 \begin{array}{rcccl}
 \displaystyle{
-\frac{1}{1-x}
+\tan^{-1} x
 }
 &amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  x^n
+\sum_{n=0}^{\infty} (-1)^n  \frac{x^{2n+1}}{2n+1}
 }&amp;=&amp; \displaystyle{
-1 +  x + x^2 + x^3 + \cdots
-} \\
-\displaystyle{
-\frac{1}{1-a x}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  a^n x^n
-}&amp;=&amp; \displaystyle{
-1 +  a x + a^2 x^2 + a^3 x^3 + \cdots
-} \\
-\displaystyle{
-\frac{1}{1-x^k}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  x^{nk}
-}&amp;=&amp; \displaystyle{
-1 +  x^k +  x^{2k} +  x^{3k} + \cdots
-} \\
-\displaystyle{
-\frac{1}{(1-x)^2}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  (n+1) x^{n}
-}&amp;=&amp; \displaystyle{
-1 +  2x +  3x^{2} +  4x^{3} + \cdots
-} \\
-\displaystyle{
-\frac{1}{(1-x)^k}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  {k+n-1 \choose n}  x^{n}
-}&amp;=&amp; \displaystyle{
-1 +  {k \choose 1} x +  {k+1 \choose 2}x^{2} +  {k+2 \choose 3}x^{3} + \cdots
-} \\
-\displaystyle{
-\frac{1}{(1-ax)^k}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  {k+n-1 \choose n} a^n x^{n}
-}&amp;=&amp; \displaystyle{
-1 +  {k \choose 1} a x +  {k+1 \choose 2}a^2 x^{2} +  {k+2 \choose 3} a^3 x^{3} + \cdots
+x -  \frac{x^{3}}{3} + \frac{x^{5}}{5} - \frac{x^{7}}{7} +\cdots
 } \\
 \\
 \displaystyle{
-\log \left(\frac{1}{1-x} \right)
+\log \left( \sqrt{\frac{1+x}{1-x}} \right)
 }
 &amp;=&amp; \displaystyle{
-\sum_{n=1}^{\infty}  \frac{x^{n}}{n}
+\sum_{n=0}^{\infty}   \frac{x^{2n+1}}{2n+1}
 }&amp;=&amp; \displaystyle{
-x +  \frac{x^{2}}{2} + \frac{x^{3}}{3} + \frac{x^{4}}{4} +\cdots
+x +  \frac{x^{3}}{3} + \frac{x^{5}}{5} + \frac{x^{7}}{7} +\cdots
+} \\
+\\
+\displaystyle{
+\frac{1}{\sqrt{1-4x}}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} {2n \choose n}  x^n
+}&amp;=&amp; \displaystyle{
+1 + 2x + 6x^2 + 20x^3 +\cdots
+} \\
+\displaystyle{
+\frac{1}{\sqrt{1-x^2}}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} {2n \choose n} \frac{ x^{2n}}{2^{2n}}
+}&amp;=&amp; \displaystyle{
+1 + \frac{x^2}{2} + \frac{3 x^4}{8} + \frac{5x^6}{16} +\cdots
+} \\
+\\
+\displaystyle{
+\frac{1-\sqrt{1-4x}}{2x}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} \frac{1}{2n+1}{2n \choose n}  x^n
+}&amp;=&amp; \displaystyle{
+1 + x + 5x^2 + 14x^3 +\cdots
 } \\
 \end{array}
 \end{equation*}

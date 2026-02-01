@@ -12,7 +12,31 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
+<p>Let \(\mbox{dist}(n,k)\) be the number of integer partitions of \(n\) with first part \(k\) and all parts distinct. The initial conditions for this function are</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{cccccc}
+\mbox{dist}(0,0)=1, &amp; \mbox{dist}(n,0)=0 \mbox{ for } n &gt; 0, &amp; \mbox{dist}(1,1)=1.
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">It is also clear that \(\mbox{dist}(n,k)=0\) when \(k&gt;n\text{.}\)</p>
+<ol class="lower-alpha">
+<li>
+<p>Here are the values of \(\mbox{dist}(9,k)\) for \(1 \leq k \leq 9\text{:}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{c|cccccccccccc}
+k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 \\
+\hline
+\mbox{dist}(9,k) &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 1 &amp; 2 &amp; 2 &amp; 1 &amp; 1 &amp; 1
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">Find each of these eight integer partitions of 9 into distinct parts. </p>
+</li>
+<li><p>Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula. </p></li>
+</ol>
 <span class="incontext"><a href="exercises-8.html#p-220">in-context</a></span>
 </body>
 </html>

@@ -158,44 +158,44 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun-comp"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">16</span> <span class="title">Compositions of Generating Functions</span>
 </h2>
-<section class="introduction" id="introduction-16"><p id="p-399"></p></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-16"><p id="p-397"></p></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-66"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Jurors.</span>
 </h6>
-<p id="p-400">These two problems use composition of ordinary generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and ordinary generating function \(A(x) = \sum_{n=1}^{\infty} a_n x^n\text{.}\) Let \({\cal B}\) be the task "split the interval \([n]\) into nonempty intervals and perform \({\cal A}\) on each interval." Then the ordinary generating function for \({\cal B}\) is</p>
+<p id="p-398">These two problems use composition of ordinary generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and ordinary generating function \(A(x) = \sum_{n=1}^{\infty} a_n x^n\text{.}\) Let \({\cal B}\) be the task "split the interval \([n]\) into nonempty intervals and perform \({\cal A}\) on each interval." Then the ordinary generating function for \({\cal B}\) is</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = \frac{1}{1-A(x)}.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-230">
-<p id="p-401">Suppose that we have \(n\) prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first \(k_1\) jurors, the next \(k_2\) jurors and so on).</p>
+<li id="li-228">
+<p id="p-399">Suppose that we have \(n\) prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first \(k_1\) jurors, the next \(k_2\) jurors and so on).</p>
 <ol class="lower-roman">
-<li id="li-231"><p id="p-402">Find the value of \(b_n\text{.}\) </p></li>
-<li id="li-232"><p id="p-403">Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.) </p></li>
+<li id="li-229"><p id="p-400">Find the value of \(b_n\text{.}\) </p></li>
+<li id="li-230"><p id="p-401">Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.) </p></li>
 </ol>
 </li>
-<li id="li-233"><p id="p-404">Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). </p></li>
+<li id="li-231"><p id="p-402">Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-67"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Employees.</span>
 </h6>
-<p id="p-405">These three problems use composition of exponential generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and exponential generating function \(A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}\text{.}\) Let \({\cal B}\) be the task "partition \([n]\) into nonempty subsets and  perform \({\cal A}\) on each subset." Then the exponential generating function for \({\cal B}\) is</p>
+<p id="p-403">These three problems use composition of exponential generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and exponential generating function \(A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}\text{.}\) Let \({\cal B}\) be the task "partition \([n]\) into nonempty subsets and  perform \({\cal A}\) on each subset." Then the exponential generating function for \({\cal B}\) is</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = e^{A(x)}.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-234"><p id="p-406">Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. </p></li>
-<li id="li-235"><p id="p-407">Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function \(B(x)\) for the entire process (partitioning and then choosing a chair for each committee.) </p></li>
-<li id="li-236">
-<p id="p-408">Instead of forming a committee, we want to seat each group at a circular table.</p>
+<li id="li-232"><p id="p-404">Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. </p></li>
+<li id="li-233"><p id="p-405">Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function \(B(x)\) for the entire process (partitioning and then choosing a chair for each committee.) </p></li>
+<li id="li-234">
+<p id="p-406">Instead of forming a committee, we want to seat each group at a circular table.</p>
 <ol class="lower-roman">
-<li id="li-237"><p id="p-409">Find the exponential generating function \(B(x)\) for this process. </p></li>
-<li id="li-238"><p id="p-410">Use \(B(x)\) to find the value of \(b_n\text{.}\) Be amazed at the simplicity of the answer for this complicated question! </p></li>
+<li id="li-235"><p id="p-407">Find the exponential generating function \(B(x)\) for this process. </p></li>
+<li id="li-236"><p id="p-408">Use \(B(x)\) to find the value of \(b_n\text{.}\) Be amazed at the simplicity of the answer for this complicated question! </p></li>
 </ol>
 </li>
 </ol></article></section></section></div></main>

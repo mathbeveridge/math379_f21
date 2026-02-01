@@ -12,17 +12,48 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For any \(a \in \R\text{,}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 \begin{array}{rcccl}
 \displaystyle{
-(1+x^r)^a
+e^x
 }
 &amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty} {a \choose n}  x^{nr}
+\sum_{n=0}^{\infty}  \frac{x^{n}}{n!}
 }&amp;=&amp; \displaystyle{
-1 + {a \choose 1}  x^r + {a \choose 2}  x^{2r} + {a \choose 3}  x^{3r} + \cdots
+1+x +  \frac{x^{2}}{2} + \frac{x^{3}}{6} + \frac{x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{ax}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}   \frac{a^n x^{n}}{n!}
+}&amp;=&amp; \displaystyle{
+1+ax +  \frac{a^2x^{2}}{2} + \frac{a^3x^{3}}{6} + \frac{a^4x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{x^k}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}  \frac{x^{nk}}{n!}
+}&amp;=&amp; \displaystyle{
+1+x^k +  \frac{x^{2k}}{2} + \frac{x^{3k}}{6} + \frac{x^{4k}}{24} +\cdots
+} \\
+\displaystyle{
+\sinh x = \frac{e^x - e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}   \frac{x^{2n+1}}{(2n+1)!}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{3}}{6} + \frac{x^{5}}{120} + \frac{x^{7}}{5040} +\cdots
+} \\
+\displaystyle{
+\cosh x = \frac{e^x + e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}   \frac{x^{2n}}{(2n)!}
+}&amp;=&amp; \displaystyle{
+1+   \frac{x^{2}}{2} + \frac{x^{4}}{24} + \frac{x^{6}}{720} +\cdots
 } \\
 \end{array}
 \end{equation*}

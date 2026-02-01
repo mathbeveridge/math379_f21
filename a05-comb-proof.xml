@@ -333,6 +333,27 @@ RHS:
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Multinomial Theorem</title>
+			<idx><h>Multinomial Theorem</h></idx>
+			<statement>
+				<p>
+Prove the multinomial theorem
+<me>
+(x_1 + x_2 + \cdots + x_s)^n = \sum_{n_1 + n_2 + \cdots + n_s = n} { n \choose n_1, n_2, \ldots, n_s} x_1^{n_1} x_2^{n_2}
+ \cdots x_s^{n_s} 
+</me>
+where
+<me>
+	{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots, \, n_s !}.
+</me>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>		
+		<!--exercise>
 			<title>Subsets of <m>n</m> Without Successive Elements</title>
 			<idx><h>Subsets of <m>n</m> Without Successive Elements</h></idx>
 			<statement>
@@ -357,7 +378,7 @@ Show that <m>{\mathcal{A}_n}</m> is in bijection with <m>{\mathcal{B}_{n+1}}</m>
 
 				</p>
 			</statement>
-		</exercise>
+		</exercise-->
 	</exercises>
 
 

@@ -12,7 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Use part (c) to find a simple formula for \(g_n\text{.}\)</p>
+<p>In this problem, you will create the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> for the number of surjections onto a set of size \(k\text{.}\)</p>
+<ol class="lower-alpha">
+<li><p>Let \(t_n\) be the number of surjections from \([n]\) to \([1]\text{,}\) where \([1] = \{ 1 \}\) is the set of size 1. Find the formula for the EGF \(T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.\) (And pay close attention to the value of \(t_0\text{.}\)).</p></li>
+<li><p>Explain why \(T(x)^2\) is the EGF for the number of surjections from \([n]\) to \([2]\text{.}\)</p></li>
+<li><p>Find the formula for the EGF for the number of surjections from \([n]\) to \([k]\text{.}\)</p></li>
+<li>
+<p>Use your answer from part (c) to prove that the EGF for set partitions into exactly \(k\) parts is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+S_k(x) = \frac{1}{k!} (e^x -1)^k.
+\end{equation*}
+</div>
+</li>
+</ol>
 <span class="incontext"><a href="exercises-16.html#p-452">in-context</a></span>
 </body>
 </html>

@@ -12,18 +12,21 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Fixing \(n\text{,}\) now consider the polynomial equation</p>
+<p>In this problem, you will investigate the equivalence</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
+p_k(n) =
+p(n+k,k)
 \end{equation*}
 </div>
-<p class="continuation">Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-x^n = \sum_{k=0}^n S(n,k) (x)_k.
-\end{equation*}
-</div>
-<span class="incontext"><a href="exercises-7.html#p-215">in-context</a></span>
+<ol class="lower-alpha">
+<li><p>Interpret each side of this equality. </p></li>
+<li><p>Verify this result for \(n=5\) and \(k=3\text{.}\) In other words, find all partitions of both types. You will find that there are equal numbers of these partitions. </p></li>
+<li>
+<p>Try to devise a bijection from one set to the other. Hint: start with a partition from the LHS. You must add \(k\) more boxes to get a partition from the RHS. How can you do this in an invertible way? (We will develop a rigorous proof of your bijection as a class.)</p>
+<p></p>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-8.html#p-215">in-context</a></span>
 </body>
 </html>
