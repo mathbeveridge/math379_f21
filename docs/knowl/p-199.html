@@ -12,7 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(n\) be a positive integer. Find a general formula for \(S(n,2)\text{,}\) the number of ways to partition the set \([n]\) into two blocks. </p>
-<span class="incontext"><a href="exercises-7.html#p-199">in-context</a></span>
+<p>LHS: choose a 3-set from \([3n]\) RHS: split \([3n]\) into \(\{1, \ldots, n \}\) and \(\{ n+1 ,\ldots, 2n\}\) and \(\{ 2n+1, \ldots, 3n \}\) and do one of the following</p>
+<ul class="disc">
+<li><p>Pick a subset (3 ways) and take 3 elements from that set</p></li>
+<li><p>Pick a subset (3 ways) and pick one element from that set. Now pick a second set (2 ways) and pick two elements from that set.</p></li>
+<li><p>Choose one element from each set.</p></li>
+</ul>
+<span class="incontext"><a href="exercises-5.html#p-199">in-context</a></span>
 </body>
 </html>

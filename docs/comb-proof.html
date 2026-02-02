@@ -169,30 +169,72 @@
 \begin{equation*}
 (n)_k = (n-1)_k + k \cdot (n-1)_{k-1}.
 \end{equation*}
-</div></article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading">
+</div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-52" id="solution-52"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-52"><div class="solution solution-like"><ul id="p-177" class="disc">
+<li id="li-87"><p id="p-178">LHS: create a \(k\)-list from \([n]\)</p></li>
+<li id="li-88">
+<p id="p-179">RHS: either</p>
+<ul class="circle">
+<li id="li-89"><p id="p-180">create a \(k\)-list from \([n-1]\)</p></li>
+<li id="li-90"><p id="p-181">choose where to place \(n\) and then create a \(k-1\) list from \([n-1]\) using the remaining spots.</p></li>
+</ul>
+</li>
+</ul></div></div></p></article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Another Chairperson Identity.</span>
 </h6>
-<p id="p-177">Prove the following chairperson identity.</p>
+<p id="p-182">Prove the following chairperson identity.</p>
 <div class="displaymath">
 \begin{equation*}
 n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-87"><p id="p-178">Explain how each side of the equation corresponds to a recipe for creating a chaired committee. </p></li>
-<li id="li-88">
-<p id="p-179">Starting with the binomial theorem</p>
+<li id="li-91"><p id="p-183">Explain how each side of the equation corresponds to a recipe for creating a chaired committee. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-53" id="solution-53"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-53"><div class="solution solution-like">
+<p id="p-184">LHS</p>
+<ul class="disc">
+<li id="li-92"><p id="p-185">Pick the chair (\(n\) ways).</p></li>
+<li id="li-93"><p id="p-186">For the remaining \(n-1\text{,}\) decide whether each person is on the committee.</p></li>
+</ul>
+<p class="continuation">RHS</p>
+<ul class="disc">
+<li id="li-94"><p id="p-187">Choose the size \(k\) of the committee</p></li>
+<li id="li-95"><p id="p-188">Pick the committee: \({n \choose k}\) ways.</p></li>
+<li id="li-96"><p id="p-189">Pick the chair from the committee members: \(k\) ways</p></li>
+<li id="li-97"><p id="p-190">Sum over \(1 \leq k \leq n\) to handle all committee sizes.</p></li>
+</ul>
+</div></div></p></li>
+<li id="li-98">
+<p id="p-191">Starting with the binomial theorem</p>
 <div class="displaymath">
 \begin{equation*}
 (x+y)^n = \sum_{k=0}^{n} {n \choose k} x^k y^{n-k},
 \end{equation*}
 </div>
-<p class="continuation">give another proof of this chairperson identity. (Hint: first, take the partial derivative of both sides with respect to \(x\text{.}\)) </p>
+<p class="continuation">give another proof of this chairperson identity. (Hint: first, take the partial derivative of both sides with respect to \(x\text{.}\)) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-54" id="solution-54"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-54"><div class="solution solution-like">
+<div class="displaymath" id="p-192">
+\begin{equation*}
+\frac{\partial}{\partial x} (x+y)^n = n(x+y)^{n-1}
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\partial}{\partial x} \left( \sum_{k=0}^{n} {n \choose k} x^k y^{n-k} \right)=
+\sum_{k=1}^{n}  k {n \choose k} x^{k-1} y^{n-k}
+\end{equation*}
+</div>
+<p class="continuation">Now plug in \(x=y=1\) to get</p>
+<div class="displaymath">
+\begin{equation*}
+n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
+\end{equation*}
+</div>
+</div></div></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-27"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Picking a 2-Set.</span>
 </h6>
-<p id="p-180">Most introductory discrete mathematics books ask students to use induction to prove that</p>
+<p id="p-193">Most introductory discrete mathematics books ask students to use induction to prove that</p>
 <div class="displaymath">
 \begin{equation*}
 1 + 2 + \cdots + n = \frac{n(n+1)}{2}.
@@ -204,42 +246,79 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 1 + 2 + \cdots + n = {n+1 \choose 2}.
 \end{equation*}
 </div>
-<p class="continuation">Give a <em class="emphasis">combinatorial proof</em> of this identity about choosing a \(2\)-set from \([n+1]\text{.}\) Remember that an addition sign corresponds to "or." Hint: pick the <em class="emphasis">largest</em> element of the \(2\)-set first. </p></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
+<p class="continuation">Give a <em class="emphasis">combinatorial proof</em> of this identity about choosing a \(2\)-set from \([n+1]\text{.}\) Remember that an addition sign corresponds to "or." Hint: pick the <em class="emphasis">largest</em> element of the \(2\)-set first. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like">
+<p id="p-194">The RHS is the number of ways to pick a \(2\)-set from \([n+1]\text{.}\) For the LHS, we follow a 2-step process to pick a \(2\)-set \(S\)</p>
+<ul class="disc">
+<li id="li-99"><p id="p-195">First, pick the element \(k\) that will be the larger element in \(S\text{.}\) We have \(2 \leq k \leq n+1\text{.}\)</p></li>
+<li id="li-100"><p id="p-196">Now pick the smaller element for the set \(S\text{.}\) There are \(k-1\) choices (where \(k\) is the number that we chose in Step 1).</p></li>
+</ul>
+<p class="continuation">The number of ways to complete this 2-step process is</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{k=2}^{n+1} (k-1) = 1+2+\cdots+n.
+\end{equation*}
+</div>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Combinatorial Proofs.</span>
 </h6>
-<p id="p-181">Give a combinatorial proof for each of the following identities. Each one involves splitting the original set into two or more subsets, and then performing the task at hand.</p>
+<p id="p-197">Give a combinatorial proof for each of the following identities. Each one involves splitting the original set into two or more subsets, and then performing the task at hand.</p>
 <ol class="lower-alpha">
-<li id="li-89">
-<p id="p-182">.</p>
+<li id="li-101">
+<p id="p-198">.</p>
 <div class="displaymath">
 \begin{equation*}
 {3n \choose 3} = 3 {n \choose 3} + 6n {n \choose 2} + n^3.
 \end{equation*}
 </div>
-<p id="p-183"></p>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like">
+<p id="p-199">LHS: choose a 3-set from \([3n]\) RHS: split \([3n]\) into \(\{1, \ldots, n \}\) and \(\{ n+1 ,\ldots, 2n\}\) and \(\{ 2n+1, \ldots, 3n \}\) and do one of the following</p>
+<ul class="disc">
+<li id="li-102"><p id="p-200">Pick a subset (3 ways) and take 3 elements from that set</p></li>
+<li id="li-103"><p id="p-201">Pick a subset (3 ways) and pick one element from that set. Now pick a second set (2 ways) and pick two elements from that set.</p></li>
+<li id="li-104"><p id="p-202">Choose one element from each set.</p></li>
+</ul>
+</div></div></p>
+<p id="p-203"></p>
 </li>
-<li id="li-90">
-<p id="p-184">.</p>
+<li id="li-105">
+<p id="p-204">.</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{k=0}^n \left( {n \choose k} \right)^2 = { 2n \choose n}.
 \end{equation*}
 </div>
-<p class="continuation">Hint: you will need the identity \({r \choose s} = {r \choose r-s.}\text{.}\) </p>
+<p class="continuation">Hint: you will need the identity \({r \choose s} = {r \choose r-s.}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-57" id="solution-57"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-57"><div class="solution solution-like">
+<p id="p-205">We can rewrite this as</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{k=0}^n {n \choose k} {n \choose n-k}  = { 2n \choose n}.
+\end{equation*}
+</div>
+<p class="continuation">We have the following interpretation. RHS: pick an \(n\)-set from \([2n]\text{.}\) LHS: Choose \(1 \leq k \leq n\text{.}\) Then pick \(k\) elements from \(\{1 , \ldots, n\}\) and pick \(n-k\) elements from \(\{n+1, \ldots, 2n \}\text{.}\)</p>
+</div></div></p>
 </li>
-<li id="li-91">
-<p id="p-185">.</p>
+<li id="li-106">
+<p id="p-206">.</p>
 <div class="displaymath">
 \begin{equation*}
 {n + m \choose r} =
 \sum_{i=0}^r  {n \choose i} {m \choose r-i}.
 \end{equation*}
 </div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like">
+<p id="p-207">This is a lot like the previous problem. LHS: pick an \(r\)-set from \([n+m]\text{.}\) RHS:</p>
+<ul class="disc">
+<li id="li-107"><p id="p-208">Split the set into \(\{1, \ldots, n\}\) and \(\{n+1, \ldots, m \}\text{.}\)</p></li>
+<li id="li-108"><p id="p-209">Choose \(i\) where \(0 \leq i \leq r\text{.}\)</p></li>
+<li id="li-109"><p id="p-210">Pick an \(i\)-set from \(\{1, \ldots, n\}\)  and pick an \((n-i)\)-set from \(\{n+1, \ldots, m \}\text{.}\)</p></li>
+<li id="li-110"><p id="p-211">Sum over all possible values for \(i\text{.}\)</p></li>
+</ul>
+</div></div></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-29"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Multinomial Theorem.</span>
 </h6>
-<p id="p-186">Prove the multinomial theorem</p>
+<p id="p-212">Prove the multinomial theorem</p>
 <div class="displaymath">
 \begin{equation*}
 (x_1 + x_2 + \cdots + x_s)^n = \sum_{n_1 + n_2 + \cdots + n_s = n} { n \choose n_1, n_2, \ldots, n_s} x_1^{n_1} x_2^{n_2}
@@ -249,9 +328,18 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 <p class="continuation">where</p>
 <div class="displaymath">
 \begin{equation*}
-{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots, \, n_s !}.
+{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots \, n_s !}.
 \end{equation*}
-</div></article></section></section></div></main>
+</div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-59" id="solution-59"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-59"><div class="solution solution-like">
+<p id="p-213">We have \(n\) copies of \((x_1+x_2+\cdots+x_s)\text{.}\) In order to contribute to the coefficient of \(x_1^{n_1} x_2^{n_2} \cdots x_s^{n_s}\text{,}\) we must choose \(x_i\) exactly \(n_i\) times (out of \(n\) options) for \(1 \leq i \leq s\text{.}\) The number of ways to do this</p>
+<div class="displaymath">
+\begin{equation*}
+{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots, \, n_s !}.\text{.}
+\end{equation*}
+</div>
+<p class="continuation">We then have to sum over all the ways to decompose \(n = n_1 + n_2 + \cdots + n_s\text{.}\)</p>
+</div></div></p></article></section></section></div></main>
 </div>
 </body>
 </html>

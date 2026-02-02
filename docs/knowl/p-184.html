@@ -12,13 +12,18 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>.</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\sum_{k=0}^n \left( {n \choose k} \right)^2 = { 2n \choose n}.
-\end{equation*}
-</div>
-<p class="continuation">Hint: you will need the identity \({r \choose s} = {r \choose r-s.}\text{.}\) </p>
+<p>LHS</p>
+<ul class="disc">
+<li><p>Pick the chair (\(n\) ways).</p></li>
+<li><p>For the remaining \(n-1\text{,}\) decide whether each person is on the committee.</p></li>
+</ul>
+<p class="continuation">RHS</p>
+<ul class="disc">
+<li><p>Choose the size \(k\) of the committee</p></li>
+<li><p>Pick the committee: \({n \choose k}\) ways.</p></li>
+<li><p>Pick the chair from the committee members: \(k\) ways</p></li>
+<li><p>Sum over \(1 \leq k \leq n\) to handle all committee sizes.</p></li>
+</ul>
 <span class="incontext"><a href="exercises-5.html#p-184">in-context</a></span>
 </body>
 </html>

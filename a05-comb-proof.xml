@@ -32,7 +32,7 @@ Prove the following identity where we "treat element <m>n</m> as special." Think
 </me>
 
 
-<!--solution>
+<solution>
 <p>
 		<ul>
 			<li>
@@ -60,7 +60,7 @@ Prove the following identity where we "treat element <m>n</m> as special." Think
 			</li>
 		</ul>
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -80,7 +80,7 @@ n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 					<p>
  Explain how each side of the equation corresponds to a recipe for creating a chaired committee.
 
-<!--solution>
+<solution>
 <p>
 LHS
 		<ul>
@@ -121,7 +121,7 @@ RHS
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -137,7 +137,7 @@ RHS
 give another proof of this chairperson identity. (Hint: first, take the partial derivative of both sides with respect to <m>x</m>.)
 
 
-<!--solution>
+<solution>
 <p>
 <me>
 \frac{\partial}{\partial x} (x+y)^n = n(x+y)^{n-1}
@@ -152,7 +152,7 @@ Now plug in <m>x=y=1</m> to get
 n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
 </me>
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -179,7 +179,7 @@ In this course, we recognize the right hand side is actually <m>{n+1 \choose 2}<
 Give a <em>combinatorial proof</em> of this identity about choosing a <m>2</m>-set from <m>[n+1]</m>. Remember that an addition sign corresponds to "or." Hint: pick the <em>largest</em> element of the <m>2</m>-set first.
 
 
-<!--solution>
+<solution>
 <p>
 The RHS is the number of ways to pick a <m>2</m>-set from <m>[n+1]</m>. For the LHS, we follow a 2-step process to pick a <m>2</m>-set <m>S</m>
 		<ul>
@@ -201,7 +201,7 @@ The number of ways to complete this 2-step process is
 
 
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -223,7 +223,7 @@ Give a combinatorial proof for each of the following identities. Each one involv
 {3n \choose 3} = 3 {n \choose 3} + 6n {n \choose 2} + n^3.
 </me>
 
-<!--solution>
+<solution>
 <p>
 
 LHS: choose a 3-set from <m>[3n]</m>
@@ -248,7 +248,7 @@ RHS: split <m>[3n]</m> into <m>\{1, \ldots, n \}</m> and <m>\{ n+1 ,\ldots, 2n\}
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 			</p><p>
 
@@ -263,7 +263,7 @@ RHS: split <m>[3n]</m> into <m>\{1, \ldots, n \}</m> and <m>\{ n+1 ,\ldots, 2n\}
 
 Hint: you will need the identity <m>{r \choose s} = {r \choose r-s.}</m>.
 
-<!--solution>
+<solution>
 <p>
 
 We can rewrite this as
@@ -277,7 +277,7 @@ RHS: pick an <m>n</m>-set from <m>[2n]</m>.
 LHS: Choose <m>1 \leq k \leq n</m>. Then pick <m>k</m> elements from <m>\{1 , \ldots, n\}</m> and pick <m>n-k</m> elements from <m>\{n+1, \ldots, 2n \}</m>.
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -290,7 +290,7 @@ LHS: Choose <m>1 \leq k \leq n</m>. Then pick <m>k</m> elements from <m>\{1 , \l
 </me>
 
 
-<!--solution>
+<solution>
 <p>
 This is a lot like the previous problem.
 
@@ -321,7 +321,7 @@ RHS:
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -344,11 +344,21 @@ Prove the multinomial theorem
 </me>
 where
 <me>
-	{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots, \, n_s !}.
+	{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots \, n_s !}.
 </me>
 
 
-
+<solution>
+	<p>
+		We have <m>n</m> copies of <m>(x_1+x_2+\cdots+x_s)</m>. In order to contribute to the coefficient of 
+		<m>x_1^{n_1} x_2^{n_2} \cdots x_s^{n_s}</m>, we must choose <m>x_i</m> exactly <m>n_i</m> times (out of <m>n</m> options) for 
+		<m>1 \leq i \leq s</m>. The number of ways to do this
+		<me>
+			{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots, \, n_s !}.
+		</me>.
+		We then have to sum over all the ways to decompose <m>n = n_1 + n_2 + \cdots + n_s</m>.
+	</p>
+</solution>
 
 				</p>
 			</statement>

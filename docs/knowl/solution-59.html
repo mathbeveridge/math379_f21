@@ -15,14 +15,14 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
+<p>We have \(n\) copies of \((x_1+x_2+\cdots+x_s)\text{.}\) In order to contribute to the coefficient of \(x_1^{n_1} x_2^{n_2} \cdots x_s^{n_s}\text{,}\) we must choose \(x_i\) exactly \(n_i\) times (out of \(n\) options) for \(1 \leq i \leq s\text{.}\) The number of ways to do this</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{ccccc}
-2+1+1 &amp;&amp; 1+2+1 &amp;&amp; 1+1+2
-\end{array}
+{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots, \, n_s !}.\text{.}
 \end{equation*}
 </div>
+<p class="continuation">We then have to sum over all the ways to decompose \(n = n_1 + n_2 + \cdots + n_s\text{.}\)</p>
 </div>
-<span class="incontext"><a href="exercises-6.html#solution-59">in-context</a></span>
+<span class="incontext"><a href="exercises-5.html#solution-59">in-context</a></span>
 </body>
 </html>

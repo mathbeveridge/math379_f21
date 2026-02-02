@@ -12,23 +12,52 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The general formula for the complement of the union (events \(A_i\) are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bad</em>) is</p>
+<p>In this problem, you will prove the following cool formula for \(n \geq 0\text{:}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c | = \sum_{S \subset [n]} (-1)^{|S|}  | A_{S} |
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
 \end{equation*}
 </div>
-<p class="continuation">where</p>
+<ol class="lower-alpha">
+<li>
+<p>Recall that the set \(\R[x]\) of (finite) polynomials in \(x\) form a vector space over \(\R\text{.}\) Our typical basis for \(\R[x]\) is:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-A_S = \left\{
-\begin{array}{cl}
-A &amp; \mbox{for } S = \emptyset, \\
-\displaystyle{\cap_{i \in S} A_i} &amp; \mbox{for } S \neq \emptyset. \\
-\end{array}
-\right.
+1, x, x^2, \ldots, x^k, \ldots.
 \end{equation*}
 </div>
-<span class="incontext"><a href="inclusion-exclusion.html#p-237">in-context</a></span>
+<p class="continuation">Explain why another basis for \(\R[x]\) is:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots.
+\end{equation*}
+</div>
+<p class="continuation">Just give an intuitive explanation (not a rigorous proof). </p>
+</li>
+<li>
+<p>Give a combinatorial proof that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+m^n = \sum_{k=0}^n S(n,k) (m)_k.
+\end{equation*}
+</div>
+<p class="continuation">In particular, both sides count the number of ways to assign \(n\) students to \(m\) classrooms where some classrooms can be empty. Explain. </p>
+</li>
+<li>
+<p>Fixing \(n\text{,}\) now consider the polynomial equation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
+\end{equation*}
+</div>
+<p class="continuation">Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+\end{equation*}
+</div>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-7.html#p-237">in-context</a></span>
 </body>
 </html>

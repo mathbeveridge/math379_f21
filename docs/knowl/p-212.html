@@ -12,13 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Give a combinatorial proof that</p>
+<p>Prove the multinomial theorem</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-m^n = \sum_{k=0}^n S(n,k) (m)_k.
+(x_1 + x_2 + \cdots + x_s)^n = \sum_{n_1 + n_2 + \cdots + n_s = n} { n \choose n_1, n_2, \ldots, n_s} x_1^{n_1} x_2^{n_2}
+\cdots x_s^{n_s} 
 \end{equation*}
 </div>
-<p class="continuation">In particular, both sides count the number of ways to assign \(n\) students to \(m\) classrooms where some classrooms can be empty. Explain. </p>
-<span class="incontext"><a href="exercises-7.html#p-212">in-context</a></span>
+<p class="continuation">where</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots \, n_s !}.
+\end{equation*}
+</div>
+<p class="continuation"><a class="solution-knowl original" data-knowl="./knowl/solution-59-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<span class="incontext"><a href="exercises-5.html#p-212">in-context</a></span>
 </body>
 </html>

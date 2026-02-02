@@ -12,18 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Fixing \(n\text{,}\) now consider the polynomial equation</p>
+<p>We have \(n\) copies of \((x_1+x_2+\cdots+x_s)\text{.}\) In order to contribute to the coefficient of \(x_1^{n_1} x_2^{n_2} \cdots x_s^{n_s}\text{,}\) we must choose \(x_i\) exactly \(n_i\) times (out of \(n\) options) for \(1 \leq i \leq s\text{.}\) The number of ways to do this</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
+{ n \choose n_1, n_2, \ldots, n_s} = \frac{n!}{n_1! \, n_2! \, \cdots, \, n_s !}.\text{.}
 \end{equation*}
 </div>
-<p class="continuation">Explain why part (b) shows that this equation has an infinite number of solutions. Then conclude that  the LHS must in fact be the zero polynomial, so</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-x^n = \sum_{k=0}^n S(n,k) (x)_k.
-\end{equation*}
-</div>
-<span class="incontext"><a href="exercises-7.html#p-213">in-context</a></span>
+<p class="continuation">We then have to sum over all the ways to decompose \(n = n_1 + n_2 + \cdots + n_s\text{.}\)</p>
+<span class="incontext"><a href="exercises-5.html#p-213">in-context</a></span>
 </body>
 </html>

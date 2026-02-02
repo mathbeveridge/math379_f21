@@ -12,7 +12,24 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>What is the formula for the number of compositions of \(n\) into any number of parts? Find a simple closed formula for this number. </p>
-<span class="incontext"><a href="exercises-6.html#p-192">in-context</a></span>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{\partial}{\partial x} (x+y)^n = n(x+y)^{n-1}
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{\partial}{\partial x} \left( \sum_{k=0}^{n} {n \choose k} x^k y^{n-k} \right)=
+\sum_{k=1}^{n}  k {n \choose k} x^{k-1} y^{n-k}
+\end{equation*}
+</div>
+<p class="continuation">Now plug in \(x=y=1\) to get</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+n 2^{n-1} = \sum_{k=1}^n k {n \choose k}
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-5.html#p-192">in-context</a></span>
 </body>
 </html>
