@@ -12,7 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Given a permutation \(p=p_1 p_2 \cdots p_n\text{.}\) For \(1 \leq i \leq n-1\text{,}\) position \(i\) is an <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">ascent</em> when \(p_i &lt; p_{i+1}\text{;}\) otherwise   position \(i\) is a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">descent</em> because \(p_i &gt; p_{i+1}\text{.}\)</p>
-<span class="incontext"><a href="perm-euler-recur.html#p-484">in-context</a></span>
+<p>Let \(A(x) = \sum_{n=0}^{\infty} a_n x^n\text{,}\)  the ordinary generating function for coin pyramids. Starting with the recursion above, find a simple closed formula for \(A(x)\text{.}\) Hint: you should start by explaining why</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\sum_{j=1}^{n-1} (n-j) a_j = \sum_{j=0}^{n} (n-j) a_j
+\end{equation*}
+</div>
+<p class="continuation">for this particular sequence.</p>
+<span class="incontext"><a href="exercises-16.html#p-484">in-context</a></span>
 </body>
 </html>

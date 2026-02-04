@@ -30,7 +30,7 @@ Let <m>n</m> be a positive integer. A <em>composition</em> of <m>n</m> into <m>k
 					<p>
  There are 3 distinct compositions of 4 into 3 parts. List them all.
 
-<!--solution>
+<solution>
 <p>
 <me>
 \begin{array}{ccccc}
@@ -38,7 +38,7 @@ Let <m>n</m> be a positive integer. A <em>composition</em> of <m>n</m> into <m>k
 \end{array}
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -46,7 +46,7 @@ Let <m>n</m> be a positive integer. A <em>composition</em> of <m>n</m> into <m>k
 					<p>
  Which "balls in boxes" problem is equivalent to the composition of <m>n</m> into <m>k</m> parts? Explain.
 
-<!--solution>
+<solution>
 <p>
 This is the same as  placing <m>n</m> identical balls into <m>k</m> distinct boxes such that
 		<ul>
@@ -64,7 +64,7 @@ This is the same as  placing <m>n</m> identical balls into <m>k</m> distinct box
 
 The <m>k</m> boxes correspond to the <m>k</m> terms. The boxes are distinct because the order of the terms matters. We set <m>a_i</m> to be the  number of balls in  box <m>i</m>. Every <m>a_i</m> must be positive, so we require that every box gets at least one ball.
 </p>
-</solution-->
+</solution>
 
 
 
@@ -74,13 +74,13 @@ The <m>k</m> boxes correspond to the <m>k</m> terms. The boxes are distinct beca
 					<p>
  What is the formula for the number of compositions of <m>n</m> into <m>k</m> parts?
 
-<!--solution>
+<solution>
 <p>
 <me>
 {n-1 \choose k-1}
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -88,13 +88,13 @@ The <m>k</m> boxes correspond to the <m>k</m> terms. The boxes are distinct beca
 					<p>
  What is the formula for the number of compositions of <m>n</m> into any number of parts? Find a simple closed formula for this number.
 
-<!--solution>
+<solution>
 <p>
 <me>
 \sum_{k=1}^{n} {n-1 \choose k-1} = \sum_{i=0}^{n-1} { n-1 \choose i} = 2^{n-1}
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -124,7 +124,7 @@ Let <m>n</m> be a positive integer. A <em>weak composition</em> of <m>n</m> into
 					<p>
  There are 15 distinct weak compositions of 4 into 3 parts. List them all.
 
-<!--solution>
+<solution>
 <p>
 <me>
 \begin{array}{ccccccccc}
@@ -134,7 +134,7 @@ Let <m>n</m> be a positive integer. A <em>weak composition</em> of <m>n</m> into
 \end{array}
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -142,7 +142,7 @@ Let <m>n</m> be a positive integer. A <em>weak composition</em> of <m>n</m> into
 					<p>
  Which "balls in boxes" problem is equivalent to the weak composition of <m>n</m> into <m>k</m> parts? Explain.
 
-<!--solution>
+<solution>
 <p>
 This is the same as  placing <m>n</m> identical balls into <m>k</m> distinct boxes such that
 		<ul>
@@ -160,7 +160,7 @@ This is the same as  placing <m>n</m> identical balls into <m>k</m> distinct box
 
 The reasoning is the same as for compositions. This time, boxes can be empty because we now allow <m>a_i=0</m>.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -168,13 +168,13 @@ The reasoning is the same as for compositions. This time, boxes can be empty bec
 					<p>
  What is the formula for the number of weak compositions of <m>n</m> into <m>k</m> parts?
 
-<!--solution>
+<solution>
 <p>
 <me>
 {n+k-1 \choose k-1}
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -182,11 +182,11 @@ The reasoning is the same as for compositions. This time, boxes can be empty bec
 					<p>
  Explain why  the number of weak compositions of <m>n</m> into any number of parts is infinite.
 
-<!--solution>
+<solution>
 <p>
 We do not specify the number of parts, which means that we can include an arbitrary number of zeros in the sum. This means that there are an infinite number of weak compositions of any integer <m>n</m>.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>

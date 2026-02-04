@@ -12,18 +12,31 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>In this problem, you will create the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> for the number of surjections onto a set of size \(k\text{.}\)</p>
+<p>A coin pyramid is an arrangement of n coins in rows such that</p>
+<ul class="disc">
+<li><p>Coins in each row form a contiguous block</p></li>
+<li><p>For \(k&gt;1\text{,}\) coins in the \(k\)th row touch exactly 2 coins from the row beneath it.</p></li>
+</ul>
+<p class="continuation">Here is an example of a coin pyramid with 10 coins in the first row: <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-genfun-exercise2.svg" role="img" class="contained"></div> Let \(a_n\) be the number of coin pyramids with \(n\) coins in the first row. We define \(a_0=0\text{,}\) meaning that we forbid the "empty coin pyramid." We have \(a_1=1\) and \(a_2=2\text{.}\) Here they are: <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-genfun-exercise3.svg" role="img" class="contained"></div></p>
 <ol class="lower-alpha">
-<li><p>Let \(t_n\) be the number of surjections from \([n]\) to \([1]\text{,}\) where \([1] = \{ 1 \}\) is the set of size 1. Find the formula for the EGF \(T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.\) (And pay close attention to the value of \(t_0\text{.}\)).</p></li>
-<li><p>Explain why \(T(x)^2\) is the EGF for the number of surjections from \([n]\) to \([2]\text{.}\)</p></li>
-<li><p>Find the formula for the EGF for the number of surjections from \([n]\) to \([k]\text{.}\)</p></li>
+<li><p>We have \(a_3=5\) and \(a_4=13.\) List all the coin pyramids for \(n=3,4.\)</p></li>
 <li>
-<p>Use your answer from part (c) to prove that the EGF for set partitions into exactly \(k\) parts is</p>
+<p>Give a combinatorial proof for the recurrence</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-S_k(x) = \frac{1}{k!} (e^x -1)^k.
+a_n =1 + \sum_{j=1}^{n-1} (n-j) a_j  \mbox{for}  n \geq 1.
 \end{equation*}
 </div>
+<p class="continuation">Note that this formula also holds for \(n=1\) (which makes life easier for us in the next part of the question).</p>
+</li>
+<li>
+<p>Let \(A(x) = \sum_{n=0}^{\infty} a_n x^n\text{,}\)  the ordinary generating function for coin pyramids. Starting with the recursion above, find a simple closed formula for \(A(x)\text{.}\) Hint: you should start by explaining why</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\sum_{j=1}^{n-1} (n-j) a_j = \sum_{j=0}^{n} (n-j) a_j
+\end{equation*}
+</div>
+<p class="continuation">for this particular sequence.</p>
 </li>
 </ol>
 <span class="incontext"><a href="exercises-16.html#p-479">in-context</a></span>

@@ -12,14 +12,52 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The Taylor series for \(D(x)\) starts as</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-D(x) = 1 + x^5 + 2x^{10} + 3 x^{20} + 4x^{25} + 5x^{30} + 6x^{35} + 7 x^{40} + 8x^{45} +
-\cdots
+\begin{array}{rcccl}
+\displaystyle{
+e^x
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}  \frac{x^{n}}{n!}
+}&amp;=&amp; \displaystyle{
+1+x +  \frac{x^{2}}{2} + \frac{x^{3}}{6} + \frac{x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{ax}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}   \frac{a^n x^{n}}{n!}
+}&amp;=&amp; \displaystyle{
+1+ax +  \frac{a^2x^{2}}{2} + \frac{a^3x^{3}}{6} + \frac{a^4x^{4}}{24} +\cdots
+} \\
+\displaystyle{
+e^{x^k}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}  \frac{x^{nk}}{n!}
+}&amp;=&amp; \displaystyle{
+1+x^k +  \frac{x^{2k}}{2} + \frac{x^{3k}}{6} + \frac{x^{4k}}{24} +\cdots
+} \\
+\displaystyle{
+\sinh x = \frac{e^x - e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}   \frac{x^{2n+1}}{(2n+1)!}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{3}}{6} + \frac{x^{5}}{120} + \frac{x^{7}}{5040} +\cdots
+} \\
+\displaystyle{
+\cosh x = \frac{e^x + e^{-x}}{2}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}   \frac{x^{2n}}{(2n)!}
+}&amp;=&amp; \displaystyle{
+1+   \frac{x^{2}}{2} + \frac{x^{4}}{24} + \frac{x^{6}}{720} +\cdots
+} \\
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">Verify this gives the right answer for \(n=35\) by listing the number of ways to pay \(35\) cents using nickels, dimes and/or quarters. </p>
-<span class="incontext"><a href="exercises-12.html#p-351">in-context</a></span>
+<span class="incontext"><a href="bestiarum.html#p-351">in-context</a></span>
 </body>
 </html>

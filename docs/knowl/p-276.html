@@ -12,7 +12,23 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p></p>
-<span class="incontext"><a href="exercises-9.html#p-276">in-context</a></span>
+<p>The general formula for the complement of the union (events \(A_i\) are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bad</em>) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c | = \sum_{S \subset [n]} (-1)^{|S|}  | A_{S} |
+\end{equation*}
+</div>
+<p class="continuation">where</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A_S = \left\{
+\begin{array}{cl}
+A &amp; \mbox{for } S = \emptyset, \\
+\displaystyle{\cap_{i \in S} A_i} &amp; \mbox{for } S \neq \emptyset. \\
+\end{array}
+\right.
+\end{equation*}
+</div>
+<span class="incontext"><a href="inclusion-exclusion.html#p-276">in-context</a></span>
 </body>
 </html>
