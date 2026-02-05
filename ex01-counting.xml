@@ -123,6 +123,63 @@ In other words, find a bijective function <m>h : A \times B \rightarrow [mn]</m>
 		<exercise>
 			<statement>
 				<p>
+ We have a circular table with <m>2n+1</m> identical chairs. We want to seat <m>n</m> math majors, <m>n</m> philosophy majors, and one dog. 
+ <ol>
+	<li>
+		<p>
+			In how many ways can this be done if no math major can sit next to a math major, and no philosophy major can sit next to a philosophy major? 
+		</p>
+	</li>
+	<li>
+		<p>
+			In how many ways can this be done if no math major can sit next to a math major? 
+		</p>
+	</li>
+ </ol>
+				</p>
+			</statement>
+		</exercise>		
+		<exercise>
+			<statement>
+				<p>
+					Bertie Bott's Every Flavour Beans come in the following 20 flavors:		
+					Banana, Black Pepper, Blueberry, Booger, Candyfloss, Cherry, Cinnamon,
+					Dirt, Earthworm, Earwax, Grass, Green Apple, Lemon,  Marshmallow,
+					Rotten Egg,  Sausage, Soap, Tutti-Fruitti, Vomit, Watermelon.	
+				</p>
+					
+				<p>
+				Bertie's Beans are packaged in bags of 50, but there is no guarantee as to how the flavours will be distributed. 
+				You might get a mixture of all 20 flavours, or just some Earwax and Vomit, or just Blueberry.
+			</p>
+					
+			<p>
+				Answer the following questions by explicitly mapping each situation to a balls-and-boxes problem.							
+ <ol>
+	<li>
+		<p>
+			How many ways are there to fill a bag of Bertie Bott's Every Flavour Beans?		
+		</p>
+	</li>
+	<li>
+		<p>
+			How many ways are there to fill a bag if we must distribute the flavors as evenly as possible? 
+			In other words, the bag contains either 2 or 3 jellybeans of each flavour? 
+		</p>
+	</li>
+	<li>
+		<p>
+			I have one jellybean from each of the 20 flavors. I want to give them away to the 7 members of my quidditch team such that every team member gets at least one jellybean. 
+			How many different ways can I do this?
+		</p>
+	</li>	
+ </ol>
+				</p>
+			</statement>
+		</exercise>			
+		<exercise>
+			<statement>
+				<p>
  Let <m>R(n,k)</m> be the number of ways to partition the set <m>[n]</m> into <m>k</m> parts so that each part contains only even numbers or only odd numbers. For example, we have <m>R(1,1)=1</m>, <m>R(2,1)=0</m> and <m>R(2,2)=1</m>. For <m>n \geq 3</m> and <m>k \geq 2</m>, find a formula for <m>R(n,k)</m> in terms of Stirling numbers of the second kind.
 
 

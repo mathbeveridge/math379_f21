@@ -158,29 +158,29 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="perm-cycle-structure"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">20</span> <span class="title">Cycle Structure of Permutations</span>
 </h2>
-<section class="introduction" id="introduction-20"><p id="p-529">We quickly review the proof technique of <em class="emphasis">strong induction</em>. The basic framework is:</p>
-<p id="p-530"><em class="emphasis">Base Case:</em> Typically, you prove the statement is true for \(n=0\) or \(n=1\text{.}\)</p>
-<p id="p-531"><em class="emphasis">Inductive Step:</em> Assume the statement is true for all \(k &lt; n\text{.}\)</p>
-<p id="p-532"><em class="emphasis">Prove True for \(n\text{:}\)</em> Using the truth of the inductive step (for all \(k&lt;n\)), prove that the statement is true for \(n\text{.}\)</p>
-<p id="p-533">In (weak) induction, we relate the size \(n\) case to the size \(n-1\) case. In strong induction, we relate the size \(n\) case to the size \(k\) case for some \(k&lt;n\text{.}\) Sometimes this is the more natural way to reduce the problem size.</p></section><section class="exercises" id="exercises-19"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-20"><p id="p-538">We quickly review the proof technique of <em class="emphasis">strong induction</em>. The basic framework is:</p>
+<p id="p-539"><em class="emphasis">Base Case:</em> Typically, you prove the statement is true for \(n=0\) or \(n=1\text{.}\)</p>
+<p id="p-540"><em class="emphasis">Inductive Step:</em> Assume the statement is true for all \(k &lt; n\text{.}\)</p>
+<p id="p-541"><em class="emphasis">Prove True for \(n\text{:}\)</em> Using the truth of the inductive step (for all \(k&lt;n\)), prove that the statement is true for \(n\text{.}\)</p>
+<p id="p-542">In (weak) induction, we relate the size \(n\) case to the size \(n-1\) case. In strong induction, we relate the size \(n\) case to the size \(k\) case for some \(k&lt;n\text{.}\) Sometimes this is the more natural way to reduce the problem size.</p></section><section class="exercises" id="exercises-19"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-83"><h6 class="heading">
+<article class="exercise exercise-like" id="exercise-85"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Cycle Decomposition of Permutations.</span>
 </h6>
-<p id="p-534">Use strong induction to prove that all \(n\)-permutations can be decomposed into a union of disjoint cycles. </p></article><article class="exercise exercise-like" id="exercise-84"><h6 class="heading">
+<p id="p-543">Use strong induction to prove that all \(n\)-permutations can be decomposed into a union of disjoint cycles. </p></article><article class="exercise exercise-like" id="exercise-86"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">A Permutation Identity.</span>
 </h6>
-<p id="p-535">Prove the following identity in two different ways: \[ \sum_{k=1}^{n-1} k \cdot k! = n! - 1 \mbox{ for } n \geq 2. \]</p>
+<p id="p-544">Prove the following identity in two different ways: \[ \sum_{k=1}^{n-1} k \cdot k! = n! - 1 \mbox{ for } n \geq 2. \]</p>
 <ol class="lower-alpha">
-<li id="li-318">
-<p id="p-536">Give a combinatorial proof of this identity.</p>
+<li id="li-323">
+<p id="p-545">Give a combinatorial proof of this identity.</p>
 <ol class="lower-roman">
-<li id="li-319"><p id="p-537">Consider a non-identity permutation \(p_1p_2 \cdots p_n\text{.}\) Let \(0 \leq j \leq n-1\) be the  largest integer such that \(p_1p_2 \cdots p_j = 12 \cdots (j-1)\text{.}\) That is, the first \(j-1\) elements map to themselves, but element \(j\) does not map to \(j\text{.}\) Prove that the number of such \(n\)-permutations is  \((n-j) \cdot (n-j)!\text{.}\) </p></li>
-<li id="li-320"><p id="p-538">The RHS  counts the number of permutations <em class="emphasis">except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!) </p></li>
+<li id="li-324"><p id="p-546">Consider a non-identity permutation \(p_1p_2 \cdots p_n\text{.}\) Let \(0 \leq j \leq n-1\) be the  largest integer such that \(p_1p_2 \cdots p_j = 12 \cdots (j-1)\text{.}\) That is, the first \(j-1\) elements map to themselves, but element \(j\) does not map to \(j\text{.}\) Prove that the number of such \(n\)-permutations is  \((n-j) \cdot (n-j)!\text{.}\) </p></li>
+<li id="li-325"><p id="p-547">The RHS  counts the number of permutations <em class="emphasis">except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!) </p></li>
 </ol>
 </li>
-<li id="li-321"><p id="p-539">Prove the identity using (weak) induction. </p></li>
+<li id="li-326"><p id="p-548">Prove the identity using (weak) induction. </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

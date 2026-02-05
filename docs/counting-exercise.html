@@ -204,8 +204,21 @@ L = \{ (x,y) : 1 \leq x \leq 4 \mbox{ and }  1 \leq y \leq 82 \}.
 <p class="continuation">In other words, find a bijective function \(h : A \times B \rightarrow [mn]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-52"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-341">Let \(R(n,k)\) be the number of ways to partition the set \([n]\) into \(k\) parts so that each part contains only even numbers or only odd numbers. For example, we have \(R(1,1)=1\text{,}\) \(R(2,1)=0\) and \(R(2,2)=1\text{.}\) For \(n \geq 3\) and \(k \geq 2\text{,}\) find a formula for \(R(n,k)\) in terms of Stirling numbers of the second kind.</p></article><article class="exercise exercise-like" id="exercise-53"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-342">Let \(\mbox{q}(n,k)\) denote the number of partitions of integer \(n\) into \(k\) distinct parts. The initial values are</p>
+<p id="p-341">We have a circular table with \(2n+1\) identical chairs. We want to seat \(n\) math majors, \(n\) philosophy majors, and one dog.</p>
+<ol class="lower-alpha">
+<li id="li-184"><p id="p-342">In how many ways can this be done if no math major can sit next to a math major, and no philosophy major can sit next to a philosophy major?</p></li>
+<li id="li-185"><p id="p-343">In how many ways can this be done if no math major can sit next to a math major?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-53"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-344">Bertie Bott's Every Flavour Beans come in the following 20 flavors: Banana, Black Pepper, Blueberry, Booger, Candyfloss, Cherry, Cinnamon, Dirt, Earthworm, Earwax, Grass, Green Apple, Lemon,  Marshmallow, Rotten Egg,  Sausage, Soap, Tutti-Fruitti, Vomit, Watermelon.</p>
+<p id="p-345">Bertie's Beans are packaged in bags of 50, but there is no guarantee as to how the flavours will be distributed. You might get a mixture of all 20 flavours, or just some Earwax and Vomit, or just Blueberry.</p>
+<p id="p-346">Answer the following questions by explicitly mapping each situation to a balls-and-boxes problem.</p>
+<ol class="lower-alpha">
+<li id="li-186"><p id="p-347">How many ways are there to fill a bag of Bertie Bott's Every Flavour Beans?</p></li>
+<li id="li-187"><p id="p-348">How many ways are there to fill a bag if we must distribute the flavors as evenly as possible? In other words, the bag contains either 2 or 3 jellybeans of each flavour?</p></li>
+<li id="li-188"><p id="p-349">I have one jellybean from each of the 20 flavors. I want to give them away to the 7 members of my quidditch team such that every team member gets at least one jellybean. How many different ways can I do this?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-54"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-350">Let \(R(n,k)\) be the number of ways to partition the set \([n]\) into \(k\) parts so that each part contains only even numbers or only odd numbers. For example, we have \(R(1,1)=1\text{,}\) \(R(2,1)=0\) and \(R(2,2)=1\text{.}\) For \(n \geq 3\) and \(k \geq 2\text{,}\) find a formula for \(R(n,k)\) in terms of Stirling numbers of the second kind.</p></article><article class="exercise exercise-like" id="exercise-55"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-351">Let \(\mbox{q}(n,k)\) denote the number of partitions of integer \(n\) into \(k\) distinct parts. The initial values are</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{ccc}
@@ -214,9 +227,9 @@ q(0,0)=1, &amp; q(n,0)=0, \mbox{ for } n&gt;0, &amp;  \mbox{and  } q(1,1) = 1.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-184"><p id="p-343">Explain why \(q(n,k) &gt;0\) if and only if \(n \geq {k+1 \choose 2}\text{.}\)</p></li>
-<li id="li-185">
-<p id="p-344">Prove that if \(n \geq 2\) and \(q(n,k) &gt;0\)  then</p>
+<li id="li-189"><p id="p-352">Explain why \(q(n,k) &gt;0\) if and only if \(n \geq {k+1 \choose 2}\text{.}\)</p></li>
+<li id="li-190">
+<p id="p-353">Prove that if \(n \geq 2\) and \(q(n,k) &gt;0\)  then</p>
 <div class="displaymath">
 \begin{equation*}
 q(n,k) = q(n-k,k) + q(n-k, k-1).

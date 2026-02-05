@@ -12,38 +12,12 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Applications of the Transition Lemma.</span>
 </h6>
-<p>Recall the following two definitions.</p>
-<ul class="disc">
-<li><p>The <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">order</em> of a permutation \(p\) is the smallest positive integer \(k\) such that \(p^k\) is the identity.</p></li>
-<li><p>A permutation \(p\) is an <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">involution</em> if \(p^2\) is the identity permutation.</p></li>
-</ul>
-<p class="continuation">Note that  the identity permutation is an involution. In fact, the identity is the only involution of order 1. The remaining involutions have order 2. For any \(k \geq 1\text{,}\) let \(g_{n,k}\) be the the number of \(n\)-permutations \(p\) that are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">\(k\)-volutions</em>, meaning that that \(p^k\) is the identity. Let \(h_{n,k}\) be the number of \(n\)-permutations \(p\) of order \(k\text{.}\) For \(k &gt;1\text{,}\) we  always have \(g_{n,k} &gt; h_{n,k}\text{,}\) because the identity is a \(k\)-volution of order \(1 &lt; k\text{.}\)</p>
-<p>Let \(G_k(x) = \sum_{n=0}^{\infty} g_{n,k} \frac{x^n}{n!}\) and \(H_k(x) = \sum_{n=0}^{\infty} h_{n,k} \frac{x^n}{n!}\) be the exponential generating functions for these sequences. We have</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-G_1(x) = H_1(x) = \exp(x)
-\end{equation*}
-</div>
-<p class="continuation">since the identity permutation is the only \(1\)-volution. Example 4.36 on page 202 shows that</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-G_2(x) = \exp \left( x + \frac{x^2}{2} \right)
-\end{equation*}
-</div>
-<p class="continuation">and therefore</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-H_2(x) = \exp \left( x + \frac{x^2}{2} \right) - \exp\left( x \right)
-\end{equation*}
-</div>
+<p>The Transition Lemma is particularly amazing because it can turn an <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">interesting but hard</em> counting problem into a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">easy or straight-forward</em> counting problem. Here are two examples</p>
 <ol class="lower-alpha">
-<li><p>Find \(G_3(x)\) and \(H_3(x)\text{.}\)</p></li>
-<li><p>Find \(G_4(x)\) and \(H_4(x)\text{.}\)</p></li>
-<li><p>Let \(k \geq 1\) and suppose that \(p^k\) is the identity. Explain why the order of \(p\)  must divide \(k\text{.}\) Use this fact to find a formula for \(G_k(x)\text{.}\)</p></li>
-<li><p>Find  a formula for \(H_{6}(x)\) in terms of  \(G_{k}(x)\) where \(1 \leq k \leq 6\text{.}\)</p></li>
-<li><p>Find  a formula for \(H_{30}(x)\) in terms of  \(G_{k}(x)\) where \(1 \leq k \leq 30\text{.}\)</p></li>
-</ol></article><span class="incontext"><a href="exercises-22.html#exercise-94">in-context</a></span>
+<li><p>How many \(n\)-permutations are there with \(k\) left-to-right maxima? </p></li>
+<li><p>Pick an  \(n\)-permutation at random from \(S_n\text{.}\) What is the probability that the cycle containing element \(n\) has length \(k\text{?}\) What is the probability that the cycle containing element \(i\) has length \(k\text{?}\) </p></li>
+</ol></article><span class="incontext"><a href="exercises-21.html#exercise-94">in-context</a></span>
 </body>
 </html>

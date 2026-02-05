@@ -158,32 +158,32 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="perm-num-cycles"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">21</span> <span class="title">Average Number of Cycles in a Permutation</span>
 </h2>
-<section class="introduction" id="introduction-21"><p id="p-540">Let \(A(n)\) be the average number of cycles in an \(n\)-permutation. The goal of this activity is to prove that</p>
+<section class="introduction" id="introduction-21"><p id="p-549">Let \(A(n)\) be the average number of cycles in an \(n\)-permutation. The goal of this activity is to prove that</p>
 <div class="displaymath">
 \begin{equation*}
 A(n) =  \sum_{i=1}^n \frac{1}{i}.
 \end{equation*}
 </div>
 <p class="continuation">Here, \(\displaystyle{H(n) = \sum_{i=1}^n \frac{1}{i}}\) is the \(n\)th Harmonic number, which is another <em class="emphasis">very</em> important sequence in mathematics.</p>
-<p id="p-541">Let \(c(n)\) denote the total number of cycles in all \(n\)-permutations. we</p></section><section class="exercises" id="exercises-20"><h3 class="heading hide-type">
+<p id="p-550">Let \(c(n)\) denote the total number of cycles in all \(n\)-permutations. we</p></section><section class="exercises" id="exercises-20"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-85"><h6 class="heading">
+<article class="exercise exercise-like" id="exercise-87"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Cycles in a permutation.</span>
 </h6>
-<ol id="p-542" class="lower-alpha">
-<li id="li-322"><p id="p-543">Prove that \(\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}\text{.}\) </p></li>
-<li id="li-323"><p id="p-544">Prove that \(\displaystyle{A(n) = \frac{c(n)}{n!}}\text{.}\) </p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-86"><h6 class="heading">
+<ol id="p-551" class="lower-alpha">
+<li id="li-327"><p id="p-552">Prove that \(\displaystyle{c(n) = \sum_{k=1}^n k \cdot c(n,k)}\text{.}\) </p></li>
+<li id="li-328"><p id="p-553">Prove that \(\displaystyle{A(n) = \frac{c(n)}{n!}}\text{.}\) </p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-88"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">The Harmonic Numbers.</span>
 </h6>
-<ol id="p-545" class="lower-alpha">
-<li id="li-324"><p id="p-546">Use a graph to explain why \(H(n)\) is a pretty good approximation for \(\int_1^n \frac{1}{x} dx\text{.}\) What function does this integral represent? </p></li>
-<li id="li-325"><p id="p-547">Interpret the meaning of \(A(n) =  \sum_{i=1}^n \frac{1}{i}\) using your approximate function. </p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-87"><h6 class="heading">
+<ol id="p-554" class="lower-alpha">
+<li id="li-329"><p id="p-555">Use a graph to explain why \(H(n)\) is a pretty good approximation for \(\int_1^n \frac{1}{x} dx\text{.}\) What function does this integral represent? </p></li>
+<li id="li-330"><p id="p-556">Interpret the meaning of \(A(n) =  \sum_{i=1}^n \frac{1}{i}\) using your approximate function. </p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-89"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">A recurrence for \(c(n)\).</span>
 </h6>
-<p id="p-548">We will prove the recurrence</p>
+<p id="p-557">We will prove the recurrence</p>
 <div class="displaymath">
 \begin{equation*}
 c(n) = n \cdot c(n-1) + (n-1)!
@@ -191,8 +191,8 @@ c(n) = n \cdot c(n-1) + (n-1)!
 </div>
 <p class="continuation">As usual, we will treat element \(n\) as special. Given an \(n\)-permutation \(f \in S_n\text{,}\) what happens when we remove element \(n\text{?}\) There are two cases</p>
 <ol class="lower-alpha">
-<li id="li-326"><p id="p-549">Suppose that \(n\) was in a cycle by itself. Prove that the total number of <em class="emphasis">cycles</em> in such  permutations is \(c(n-1) + (n-1)!\text{.}\) </p></li>
-<li id="li-327"><p id="p-550">Suppose that \(n\) was <em class="emphasis">not</em> in a cycle by itself. Prove that the total number of <em class="emphasis">cycles</em> in such  permutations is \((n-1) \cdot c(n-1)\text{.}\) </p></li>
+<li id="li-331"><p id="p-558">Suppose that \(n\) was in a cycle by itself. Prove that the total number of <em class="emphasis">cycles</em> in such  permutations is \(c(n-1) + (n-1)!\text{.}\) </p></li>
+<li id="li-332"><p id="p-559">Suppose that \(n\) was <em class="emphasis">not</em> in a cycle by itself. Prove that the total number of <em class="emphasis">cycles</em> in such  permutations is \((n-1) \cdot c(n-1)\text{.}\) </p></li>
 </ol>
 <p class="continuation">Putting together the answers from questions 2 and 3, we find that</p>
 <div class="displaymath">
@@ -200,10 +200,10 @@ c(n) = n \cdot c(n-1) + (n-1)!
 c(n) =  \Big( c(n-1) + (n-1)!  \Big)+ (n-1) \cdot c(n-1) = n \cdot c(n-1) + (n-1)!
 \end{equation*}
 </div>
-<p class="continuation">as claimed at the start of the problem.</p></article><article class="exercise exercise-like" id="exercise-88"><h6 class="heading">
+<p class="continuation">as claimed at the start of the problem.</p></article><article class="exercise exercise-like" id="exercise-90"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">The main result.</span>
 </h6>
-<p id="p-551">Starting with the formula in problem 1(b) and the recurrence in problem 2, prove that</p>
+<p id="p-560">Starting with the formula in problem 1(b) and the recurrence in problem 2, prove that</p>
 <div class="displaymath">
 \begin{equation*}
 A(n) = \sum_{i=1}^n \frac{1}{i}.
