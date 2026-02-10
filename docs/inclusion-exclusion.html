@@ -158,7 +158,7 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="inclusion-exclusion"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">9</span> <span class="title">Inclusion/Exclusion</span>
 </h2>
-<section class="introduction" id="introduction-9"><p id="p-274">Here are the Inclusion-Exclusion formulas for two sets</p>
+<section class="introduction" id="introduction-9"><p id="p-316">Here are the Inclusion-Exclusion formulas for two sets</p>
 <div class="displaymath">
 \begin{equation*}
 | A \cup B |  = |A| + |B| - |A \cap B|
@@ -170,7 +170,7 @@
 | A \cup B \cup C |  = |A| + |B|  + |C| - |A \cap B| - |A \cap C| - |A \cap C| +  |A \cap B  \cap C|.
 \end{equation*}
 </div>
-<p id="p-275">The general formula for the union (events \(A_i\) are <em class="emphasis">good</em>) is</p>
+<p id="p-317">The general formula for the union (events \(A_i\) are <em class="emphasis">good</em>) is</p>
 <div class="displaymath">
 \begin{equation*}
 | A_1 \cup A_2 \cup \cdots \cup A_n| = \sum_{j=1}^n (-1)^{j+1} \sum_{ \{i_1, i_2, \ldots i_j \}} | A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_j} |
@@ -183,7 +183,7 @@
 \end{equation*}
 </div>
 <p class="continuation">where \(A_S = \cap_{i \in S} A_i\) for \(S \neq \emptyset\text{.}\)</p>
-<p id="p-276">The general formula for the complement of the union (events \(A_i\) are <em class="emphasis">bad</em>) is</p>
+<p id="p-318">The general formula for the complement of the union (events \(A_i\) are <em class="emphasis">bad</em>) is</p>
 <div class="displaymath">
 \begin{equation*}
 | \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c | = \sum_{S \subset [n]} (-1)^{|S|}  | A_{S} |
@@ -205,30 +205,30 @@ A &amp; \mbox{for } S = \emptyset, \\
 <article class="exercise exercise-like" id="exercise-41"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Some Bridge Hands.</span>
 </h6>
-<p id="p-277">A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spades) with 13 cards each (2 through 10, Jack, Queen, King, Ace). A <em class="emphasis">bridge hand</em> consists of 13 cards.</p>
+<p id="p-319">A standard deck of 52 cards consists of four suits (clubs, diamonds, hearts, spades) with 13 cards each (2 through 10, Jack, Queen, King, Ace). A <em class="emphasis">bridge hand</em> consists of 13 cards.</p>
 <ol class="lower-alpha">
-<li id="li-145"><p id="p-278">How many bridge hands have no ace and no hearts? </p></li>
-<li id="li-146"><p id="p-279">How many bridge hands have at least one ace and at least one heart? </p></li>
-<li id="li-147"><p id="p-280">How many bridge hands have at least one Jack, one King, one Queen and one Ace? </p></li>
+<li id="li-173"><p id="p-320">How many bridge hands have no ace and no hearts? </p></li>
+<li id="li-174"><p id="p-321">How many bridge hands have at least one ace and at least one heart? </p></li>
+<li id="li-175"><p id="p-322">How many bridge hands have at least one Jack, one King, one Queen and one Ace? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-42"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Tangerines for Children.</span>
 </h6>
-<ol id="p-281" class="lower-alpha">
-<li id="li-148"><p id="p-282">How many ways can you distribute 20 identical tangerines to 10 distinct children so that each child receives at most 5 tangerines? </p></li>
-<li id="li-149"><p id="p-283">How many ways can part (a) be completed if each child must receive at least one tangerine? </p></li>
+<ol id="p-323" class="lower-alpha">
+<li id="li-176"><p id="p-324">How many ways can you distribute 20 identical tangerines to 10 distinct children so that each child receives at most 5 tangerines? </p></li>
+<li id="li-177"><p id="p-325">How many ways can part (a) be completed if each child must receive at least one tangerine? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-43"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">A Formula for Derangements.</span>
 </h6>
-<p id="p-284">Recall that a <em class="emphasis">derangement</em> of \([n]\) is a permutation \(\phi: [n] \rightarrow [n]\) such that \(\phi(i) \neq i\) for all \(i \in [n]\text{.}\) In this problem, we develop an inclusion/exclusion formula for the number of derangements of \([n]\text{.}\) Let \(A\) be the set of all permutations of \([n]\text{.}\) We will define a set of "bad" events \(A_1, A_2 , \ldots , A_n\text{,}\) so that the set of derangements is</p>
+<p id="p-326">Recall that a <em class="emphasis">derangement</em> of \([n]\) is a permutation \(\phi: [n] \rightarrow [n]\) such that \(\phi(i) \neq i\) for all \(i \in [n]\text{.}\) In this problem, we develop an inclusion/exclusion formula for the number of derangements of \([n]\text{.}\) Let \(A\) be the set of all permutations of \([n]\text{.}\) We will define a set of "bad" events \(A_1, A_2 , \ldots , A_n\text{,}\) so that the set of derangements is</p>
 <div class="displaymath">
 \begin{equation*}
 \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c = A \backslash  \left( A_1 \cup A_2 \cup \cdots \cup A_n \right).
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-150"><p id="p-285">Define the "bad" event \(A_i\) in a very natural way. Here "bad" should be taken in the context that we <em class="emphasis">want</em> a derangement, but event \(A_i\) is preventing this for element \(i\text{.}\) </p></li>
-<li id="li-151">
-<p id="p-286">Calculate the following quantities:</p>
+<li id="li-178"><p id="p-327">Define the "bad" event \(A_i\) in a very natural way. Here "bad" should be taken in the context that we <em class="emphasis">want</em> a derangement, but event \(A_i\) is preventing this for element \(i\text{.}\) </p></li>
+<li id="li-179">
+<p id="p-328">Calculate the following quantities:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{rcl}
@@ -239,9 +239,9 @@ A &amp; \mbox{for } S = \emptyset, \\
 \end{equation*}
 </div>
 </li>
-<li id="li-152">
-<p id="p-287">Determine the number of subsets of the following forms:</p>
-<p id="p-288"></p>
+<li id="li-180">
+<p id="p-329">Determine the number of subsets of the following forms:</p>
+<p id="p-330"></p>
 <figure class="table table-like" id="table-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.0.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b1 r1 l1 t1 lines"># subsets of the form</td>
@@ -255,11 +255,11 @@ A &amp; \mbox{for } S = \emptyset, \\
 <td class="l m b1 r1 l1 t0 lines"># subsets of the form</td>
 <td class="l m b1 r1 l0 t0 lines">\(A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}\)</td>
 </tr>
-</table></div></figure><p id="p-289"></p>
-<p id="p-290"></p>
+</table></div></figure><p id="p-331"></p>
+<p id="p-332"></p>
 </li>
-<li id="li-153">
-<p id="p-291">Use the inclusion/exclusion formula to find number  of derangements of \([n]\text{.}\) Calculate:</p>
+<li id="li-181">
+<p id="p-333">Use the inclusion/exclusion formula to find number  of derangements of \([n]\text{.}\) Calculate:</p>
 <div class="displaymath">
 \begin{equation*}
 \left| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c \right| =
@@ -271,12 +271,12 @@ A &amp; \mbox{for } S = \emptyset, \\
 </ol></article><article class="exercise exercise-like" id="exercise-44"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">A Formula for Surjections.</span>
 </h6>
-<p id="p-292">Now we determine the number of <em class="emphasis">surjections</em> \(f: [n] \rightarrow [k]\) when \(n \geq k\text{.}\) We will then use that formula to get a formula for \(S(n,k)\text{.}\)</p>
-<p id="p-293">Let \(A\) be the set of all functions from \([n]\) to \([k]\text{,}\) where \(k \leq n\text{.}\)</p>
+<p id="p-334">Now we determine the number of <em class="emphasis">surjections</em> \(f: [n] \rightarrow [k]\) when \(n \geq k\text{.}\) We will then use that formula to get a formula for \(S(n,k)\text{.}\)</p>
+<p id="p-335">Let \(A\) be the set of all functions from \([n]\) to \([k]\text{,}\) where \(k \leq n\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-154"><p id="p-294">Define the "bad" event \(A_i\) in a very natural way. Here "bad" should be taken in the context that we <em class="emphasis">want</em> a surjection, but event \(A_i\) is preventing this  for element \(i\text{.}\) </p></li>
-<li id="li-155">
-<p id="p-295">Calculate the following quantities:</p>
+<li id="li-182"><p id="p-336">Define the "bad" event \(A_i\) in a very natural way. Here "bad" should be taken in the context that we <em class="emphasis">want</em> a surjection, but event \(A_i\) is preventing this  for element \(i\text{.}\) </p></li>
+<li id="li-183">
+<p id="p-337">Calculate the following quantities:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{rcl}
@@ -286,11 +286,11 @@ A &amp; \mbox{for } S = \emptyset, \\
 \end{array}
 \end{equation*}
 </div>
-<p id="p-296"></p>
+<p id="p-338"></p>
 </li>
-<li id="li-156">
-<p id="p-297">Determine the number of subsets of the following forms:</p>
-<p id="p-298"></p>
+<li id="li-184">
+<p id="p-339">Determine the number of subsets of the following forms:</p>
+<p id="p-340"></p>
 <figure class="table table-like" id="table-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.0.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b1 r1 l1 t1 lines"># subsets of the form</td>
@@ -304,11 +304,11 @@ A &amp; \mbox{for } S = \emptyset, \\
 <td class="l m b1 r1 l1 t0 lines"># subsets of the form</td>
 <td class="l m b1 r1 l0 t0 lines">\(A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}\)</td>
 </tr>
-</table></div></figure><p id="p-299"></p>
-<p id="p-300"></p>
+</table></div></figure><p id="p-341"></p>
+<p id="p-342"></p>
 </li>
-<li id="li-157">
-<p id="p-301">Use the inclusion/exclusion formula to find number  of surjections from \([n]\) to \([k]\text{.}\)</p>
+<li id="li-185">
+<p id="p-343">Use the inclusion/exclusion formula to find number  of surjections from \([n]\) to \([k]\text{.}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \left| \left( A_1 \cup A_2 \cup \cdots \cup A_n \right)^c \right| =
@@ -316,7 +316,7 @@ A &amp; \mbox{for } S = \emptyset, \\
 \end{equation*}
 </div>
 </li>
-<li id="li-158"><p id="p-302">If you divide your answer to (d) by \(k!\) then you get a formula for \(S(n,k)\text{.}\) Explain why. </p></li>
+<li id="li-186"><p id="p-344">If you divide your answer to (d) by \(k!\) then you get a formula for \(S(n,k)\text{.}\) Explain why. </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

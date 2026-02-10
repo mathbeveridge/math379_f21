@@ -15,11 +15,14 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<ul class="disc">
-<li><p>LHS = Number of partitions of \(n\) into at most \(k\) parts</p></li>
-<li><p>RHS = Number of partitions of \(n+k\) into exactly \(k\) parts.</p></li>
-</ul>
+<p>Let \(p(x) =  \displaystyle{x^n -  \sum_{k=0}^n S(n,k) (x)_k}.\) Part (b) says that \(p(x)= 0\) for \(x=1,2,3, \ldots, m, \ldots\text{.}\) In other words, this polynomial has an infinite number roots. The only such polynomial is the zero polynomial. Therefore,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-8.html#solution-79">in-context</a></span>
+<p>Our conclusion is:  when the polynomial \(x^n\) is expressed in terms of the falling factorial basis \(1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots\text{,}\) then the coefficient for basis element \((x)_k\) is \(S(n,k)\text{.}\)</p>
+</div>
+<span class="incontext"><a href="exercises-7.html#solution-79">in-context</a></span>
 </body>
 </html>

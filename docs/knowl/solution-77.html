@@ -15,14 +15,15 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>RHS:</p>
-<ul class="disc"><li><p>Each of the \(n\) students has her choice of \(m\) classrooms. So the total number of ways is \(m^n\text{.}\)</p></li></ul>
-<p class="continuation">LHS:</p>
-<ul class="disc">
-<li><p>First, pick the number \(k\) of classrooms that will be used</p></li>
-<li><p>Next, split the students into \(k\) nonempty groups. This can be done in \(S(n,k)\) ways.</p></li>
-<li><p>Now, assign each group to a different classroom. This can be done in \((m)_k\) ways.</p></li>
-</ul>
+<p>The set of falling factorial polynomials are:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{ccccc}
+1, &amp; (x)_1 = x, &amp;(x)_2 = x(x-1)= x^2 - x, &amp; (x)_3 = x(x-1)(x-2) = x^3 -3x^2 + 2x, &amp; \ldots
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">For each \(k \geq 0\text{,}\) we have one polynomial of degree \(k\text{.}\) So this will end up being a basis of \(\R[x]\text{.}\)</p>
 </div>
 <span class="incontext"><a href="exercises-7.html#solution-77">in-context</a></span>
 </body>

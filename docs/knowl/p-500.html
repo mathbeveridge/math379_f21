@@ -12,20 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>In this problem, you will create the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> for the number of surjections onto a set of size \(k\text{.}\)</p>
-<ol class="lower-alpha">
-<li><p>Let \(t_n\) be the number of surjections from \([n]\) to \([1]\text{,}\) where \([1] = \{ 1 \}\) is the set of size 1. Find the formula for the EGF \(T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.\) (And pay close attention to the value of \(t_0\text{.}\)).</p></li>
-<li><p>Explain why \(T(x)^2\) is the EGF for the number of surjections from \([n]\) to \([2]\text{.}\)</p></li>
-<li><p>Find the formula for the EGF for the number of surjections from \([n]\) to \([k]\text{.}\)</p></li>
-<li>
-<p>Use your answer from part (c) to prove that the EGF for set partitions into exactly \(k\) parts is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-S_k(x) = \frac{1}{k!} (e^x -1)^k.
-\end{equation*}
-</div>
-</li>
-</ol>
-<span class="incontext"><a href="exercises-16.html#p-500">in-context</a></span>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Before:</em> Calculate the first few \(a_n\) using the recurrence. Mathematica is a great tool for this! For example, the following code will print out the first terms of the sequence \(a_0 = 3\text{,}\) \(a_1 = 5\text{,}\) \(a_n = 2a_{n-1} + a_{n-2} + 4\text{.}\)</p>
+<pre class="code-display tex2jax_ignore">
+myseq[0] = 3
+myseq[1] = 5
+myseq[n_] := 2 myseq[n-1] + myseq[n-2] + 4
+Table[myseq[k], {k,0,5}]
+</pre>
+<span class="incontext"><a href="genfun-exercise.html#p-500">in-context</a></span>
 </body>
 </html>

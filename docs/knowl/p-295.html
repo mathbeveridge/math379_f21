@@ -12,16 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Calculate the following quantities:</p>
+<p>A partition of integer \(n\) is a multiset of positive integers whose sum is \(n\text{.}\) Here are three symbols we use for counting integer partitions:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 \begin{array}{rcl}
-|A_i| &amp;=&amp;  \\
-|A_i \cap A_j| &amp;=&amp; \\
-|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}| &amp;=&amp;
+p(n,k) &amp; = &amp; \mbox{# partitions of } n \mbox{ into } k \mbox{ parts} \\
+\\
+p_k(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into at most } k \mbox{ parts} \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^k p(n,i)}\\
+\\
+p(n) &amp; = &amp;  \mbox{# partitions of } n \mbox{ into any number of parts}  \\
+&amp;=&amp; \displaystyle{\sum_{i=1}^n p(n,i)}
 \end{array}
 \end{equation*}
 </div>
-<span class="incontext"><a href="exercises-9.html#p-295">in-context</a></span>
+<span class="incontext"><a href="int-partition.html#p-295">in-context</a></span>
 </body>
 </html>

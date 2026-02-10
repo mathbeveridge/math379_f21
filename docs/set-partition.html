@@ -179,46 +179,131 @@ n&amp;S(n,k)\\
 <article class="exercise exercise-like" id="exercise-32"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Set Partitions into Two Blocks.</span>
 </h6>
-<p id="p-238">Let \(n\) be a positive integer. Find a general formula for \(S(n,2)\text{,}\) the number of ways to partition the set \([n]\) into two blocks. </p></article><article class="exercise exercise-like" id="exercise-33"><h6 class="heading">
+<p id="p-238">Let \(n\) be a positive integer. Find a general formula for \(S(n,2)\text{,}\) the number of ways to partition the set \([n]\) into two blocks. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-68" id="solution-68"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-68"><div class="solution solution-like">
+<p id="p-239">Pick any nonempty and proper subset \(\emptyset \subsetneq S \subsetneq [n]\text{.}\) The set \(S\) and its complement \(\overline{S}\) form a partition of \([n]\) into two (nonempty) blocks. There are \(2^n -2\) ways to choose \(S\text{.}\)</p>
+<p id="p-240">However, this process creates each set partition twice because choosing \(S\) leads to the same set partition as choosing its complement \(\overline{S}\text{.}\) So we must divide by 2 to obtain our final answer. We have</p>
+<div class="displaymath">
+\begin{equation*}
+S(n,2) = \frac{2^n-2}{2} = 2^{n-1} -1.
+\end{equation*}
+</div>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-33"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">The Next Row of the Stirling Triangle.</span>
 </h6>
-<p id="p-239">Use the Stirling Recurrence</p>
+<p id="p-241">Use the Stirling Recurrence</p>
 <div class="displaymath">
 \begin{equation*}
 S(n,k) = S(n-1, k-1) + k S(n-1,k)
 \end{equation*}
 </div>
-<p class="continuation">to find the \(n=6\) row of the Stirling triangle. </p></article><article class="exercise exercise-like" id="exercise-34"><h6 class="heading">
+<p class="continuation">to find the \(n=6\) row of the Stirling triangle. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-69" id="solution-69"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-69"><div class="solution solution-like">
+<p id="p-242">The values \(S(6,0)=0\) (impossible) and \(S(6,1)=1\) and \(S(6,6)=1\) are clear from the definition. We use the recurrence to find the remaining values</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+S(6,0) &amp;=&amp; 0 \\
+S(6,1) &amp;=&amp; 1 \\
+S(6,2) &amp;=&amp; S(5,1) + 2 \cdot S(5,2) =  1 + 2 \cdot 15 = 31\\
+S(6,3) &amp;=&amp; S(5,2) + 3 \cdot S(5,3) =  15 + 3 \cdot 25 = 90\\
+S(6,4) &amp;=&amp; S(5,3) + 4 \cdot S(5,4) =  25 + 4 \cdot 10 = 65 \\
+S(6,5) &amp;=&amp; S(5,4) + 5 \cdot S(5,5) =  10 + 5 \cdot 1 = 15\\
+S(6,6) &amp;=&amp; 1 \\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">So the next row is</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{ccccccc}
+0 &amp; 1 &amp; 31 &amp; 90 &amp; 65 &amp; 15 &amp; 1
+\end{array}
+\end{equation*}
+</div>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-34"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Balls and Boxes.</span>
 </h6>
-<p id="p-240">What balls-in-boxes problem is equivalent to partitions of \([n]\) into \(k\) parts? There are four decisions to make about the balls and boxes. </p></article><article class="exercise exercise-like" id="exercise-35"><h6 class="heading">
+<p id="p-243">What balls-in-boxes problem is equivalent to partitions of \([n]\) into \(k\) parts? There are four decisions to make about the balls and boxes. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-70" id="solution-70"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-70"><div class="solution solution-like"><ul id="p-244" class="disc">
+<li id="li-123"><p id="p-245">distinct balls</p></li>
+<li id="li-124"><p id="p-246">identical boxes</p></li>
+<li id="li-125"><p id="p-247">repetition allowed</p></li>
+<li id="li-126"><p id="p-248">no box can be empty</p></li>
+</ul></div></div></p></article><article class="exercise exercise-like" id="exercise-35"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Another Stirling Recurrence.</span>
 </h6>
-<p id="p-241">Stirling numbers of the second kind satisfy the following identity \[ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1). \]</p>
+<p id="p-249">Stirling numbers of the second kind satisfy the following identity \[ S(n+1,k) = \sum_{i=0}^n { n \choose i} S(n-i, k-1). \]</p>
 <ol class="lower-alpha">
-<li id="li-123"><p id="p-242">Use the Stirling triangle we made in class to verify the identity is true for \(n=4\) and \(k=3\text{.}\) Note that \(S(n,0)=0\) and \(S(n,k)=0\) when \(k&gt;n\text{.}\) </p></li>
-<li id="li-124"><p id="p-243">Give a combinatorial proof of the  identity. That is, explain why the LHS and the RHS count the exact same thing. </p></li>
+<li id="li-127"><p id="p-250">Use the Stirling triangle we made in class to verify the identity is true for \(n=4\) and \(k=3\text{.}\) Note that \(S(n,0)=0\) and \(S(n,k)=0\) when \(k&gt;n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-71" id="solution-71"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-71"><div class="solution solution-like"><div class="displaymath" id="p-251">
+\begin{equation*}
+\begin{array}{rcl}
+S(5,3) &amp;=&amp; {4 \choose 0} S(4,2) +  {4 \choose 1} S(3,2) +  {4 \choose 2} S(2,2) +  {4 \choose 3} S(1,2) +  {4 \choose 4} S(0,2) \\
+&amp;=&amp; 1 \cdot 7 + 4 \cdot 3 + 6 \cdot 1 + 4 \cdot 0 + 1 \cdot 0 \, = \, 25.
+\end{array}
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-128"><p id="p-252">Give a combinatorial proof of the  identity. That is, explain why the LHS and the RHS count the exact same thing. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-72" id="solution-72"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-72"><div class="solution solution-like"><ul id="p-253" class="disc">
+<li id="li-129"><p id="p-254">LHS: The number of ways to partition \([n+1]\) into \(k\) parts.</p></li>
+<li id="li-130">
+<p id="p-255">RHS: Counts the same set, grouping the partitions according to the number of elements of \([n]\) that occur  in the set with element \(n+1\text{.}\) Fix \(i\text{.}\) We count the number of partitions of \([n+1]\) where the element \(n+1\) is in a set with \(i\) elements. We choose our set in two phases.</p>
+<ul class="circle">
+<li id="li-131"><p id="p-256">Phase 1: Choose the \(i\) elements to appear in the set with element \(n+1\text{.}\) This can be done in \({n \choose i}\) ways.</p></li>
+<li id="li-132"><p id="p-257">Phase 2: Partition the remaining \(n-i\) elements into \(k-1\) sets. This can be done in \(S(n-i,k-1)\)</p></li>
+</ul>
+<p class="continuation">Now we sum over all possible values of \(i\text{,}\) namely \(0 \leq i \leq n\text{.}\)</p>
+</li>
+</ul></div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-36"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Sets of Functions.</span>
 </h6>
-<p id="p-244">Consider the set \({\cal F}\) of all  functions \(f : [n] \rightarrow [k]\text{.}\) For each subset of \({\cal F}\) below, determine (i) which balls-in-boxes problem is equivalent to the subset (ii) any restrictions on \(n\) and \(k\text{,}\) and (iii) the formula for the size of the set (if we know it).</p>
+<p id="p-258">Consider the set \({\cal F}\) of all  functions \(f : [n] \rightarrow [k]\text{.}\) For each subset of \({\cal F}\) below, determine (i) which balls-in-boxes problem is equivalent to the subset (ii) any restrictions on \(n\) and \(k\text{,}\) and (iii) the formula for the size of the set (if we know it).</p>
 <ol class="lower-alpha">
-<li id="li-125"><p id="p-245">The set of all functions \(f: [n] \rightarrow [k]\) </p></li>
-<li id="li-126"><p id="p-246">The set of injections \(f: [n] \rightarrow [k]\) </p></li>
-<li id="li-127"><p id="p-247">The set of surjections \(f: [n] \rightarrow [k]\) </p></li>
-<li id="li-128"><p id="p-248">The set of bijections \(f: [n] \rightarrow [k]\) </p></li>
+<li id="li-133"><p id="p-259">The set of all functions \(f: [n] \rightarrow [k]\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-73" id="solution-73"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-73"><div class="solution solution-like">
+<ul id="p-260" class="disc">
+<li id="li-134"><p id="p-261">distinct balls</p></li>
+<li id="li-135"><p id="p-262">distinct boxes</p></li>
+<li id="li-136"><p id="p-263">repetition allowed</p></li>
+<li id="li-137"><p id="p-264">boxes can be empty</p></li>
+</ul>
+<p class="continuation">Number of ways: \(k^n\text{,}\) with no restrictions on \(n\) and \(k\text{.}\)</p>
+</div></div></p></li>
+<li id="li-138"><p id="p-265">The set of injections \(f: [n] \rightarrow [k]\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-74" id="solution-74"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-74"><div class="solution solution-like">
+<ul id="p-266" class="disc">
+<li id="li-139"><p id="p-267">distinct balls</p></li>
+<li id="li-140"><p id="p-268">distinct boxes</p></li>
+<li id="li-141"><p id="p-269">repetition not allowed</p></li>
+<li id="li-142"><p id="p-270">boxes can be empty</p></li>
+</ul>
+<p class="continuation">Number of ways: \((k)_n\) and we must have \(k \geq n\text{.}\)</p>
+</div></div></p></li>
+<li id="li-143"><p id="p-271">The set of surjections \(f: [n] \rightarrow [k]\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-75" id="solution-75"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-75"><div class="solution solution-like">
+<ul id="p-272" class="disc">
+<li id="li-144"><p id="p-273">distinct balls</p></li>
+<li id="li-145"><p id="p-274">distinct boxes</p></li>
+<li id="li-146"><p id="p-275">repetition allowed</p></li>
+<li id="li-147"><p id="p-276">boxes cannot be empty</p></li>
+</ul>
+<p class="continuation">Number of ways: \(k! \cdot S(n,k)\) (see if you can explain why!) and we must have \(k \leq n\text{.}\)</p>
+</div></div></p></li>
+<li id="li-148"><p id="p-277">The set of bijections \(f: [n] \rightarrow [k]\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-76" id="solution-76"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-76"><div class="solution solution-like">
+<ul id="p-278" class="disc">
+<li id="li-149"><p id="p-279">distinct balls</p></li>
+<li id="li-150"><p id="p-280">distinct boxes</p></li>
+<li id="li-151"><p id="p-281">repetition not allowed</p></li>
+<li id="li-152"><p id="p-282">boxes cannot be empty</p></li>
+</ul>
+<p class="continuation">Number of ways: \(k!\) and we must have \(k = n\text{.}\)</p>
+</div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-37"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Writing \(x^n\) as a combination of \((x)_k\)'s.</span>
 </h6>
-<p id="p-249">In this problem, you will prove the following cool formula for \(n \geq 0\text{:}\)</p>
+<p id="p-283">In this problem, you will prove the following cool formula for \(n \geq 0\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 x^n = \sum_{k=0}^n S(n,k) (x)_k.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-129">
-<p id="p-250">Recall that the set \(\R[x]\) of (finite) polynomials in \(x\) form a vector space over \(\R\text{.}\) Our typical basis for \(\R[x]\) is:</p>
+<li id="li-153">
+<p id="p-284">Recall that the set \(\R[x]\) of (finite) polynomials in \(x\) form a vector space over \(\R\text{.}\) Our typical basis for \(\R[x]\) is:</p>
 <div class="displaymath">
 \begin{equation*}
 1, x, x^2, \ldots, x^k, \ldots.
@@ -230,19 +315,38 @@ x^n = \sum_{k=0}^n S(n,k) (x)_k.
 1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots.
 \end{equation*}
 </div>
-<p class="continuation">Just give an intuitive explanation (not a rigorous proof). </p>
+<p class="continuation">Just give an intuitive explanation (not a rigorous proof). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-77" id="solution-77"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-77"><div class="solution solution-like">
+<p id="p-285">The set of falling factorial polynomials are:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{ccccc}
+1, &amp; (x)_1 = x, &amp;(x)_2 = x(x-1)= x^2 - x, &amp; (x)_3 = x(x-1)(x-2) = x^3 -3x^2 + 2x, &amp; \ldots
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">For each \(k \geq 0\text{,}\) we have one polynomial of degree \(k\text{.}\) So this will end up being a basis of \(\R[x]\text{.}\)</p>
+</div></div></p>
 </li>
-<li id="li-130">
-<p id="p-251">Give a combinatorial proof that</p>
+<li id="li-154">
+<p id="p-286">Give a combinatorial proof that</p>
 <div class="displaymath">
 \begin{equation*}
 m^n = \sum_{k=0}^n S(n,k) (m)_k.
 \end{equation*}
 </div>
-<p class="continuation">In particular, both sides count the number of ways to assign \(n\) students to \(m\) classrooms where some classrooms can be empty. Explain. </p>
+<p class="continuation">In particular, both sides count the number of ways to assign \(n\) students to \(m\) classrooms where some classrooms can be empty. Explain. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-78" id="solution-78"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-78"><div class="solution solution-like">
+<p id="p-287">RHS:</p>
+<ul class="disc"><li id="li-155"><p id="p-288">Each of the \(n\) students has her choice of \(m\) classrooms. So the total number of ways is \(m^n\text{.}\)</p></li></ul>
+<p class="continuation">LHS:</p>
+<ul class="disc">
+<li id="li-156"><p id="p-289">First, pick the number \(k\) of classrooms that will be used</p></li>
+<li id="li-157"><p id="p-290">Next, split the students into \(k\) nonempty groups. This can be done in \(S(n,k)\) ways.</p></li>
+<li id="li-158"><p id="p-291">Now, assign each group to a different classroom. This can be done in \((m)_k\) ways.</p></li>
+</ul>
+</div></div></p>
 </li>
-<li id="li-131">
-<p id="p-252">Fixing \(n\text{,}\) now consider the polynomial equation</p>
+<li id="li-159">
+<p id="p-292">Fixing \(n\text{,}\) now consider the polynomial equation</p>
 <div class="displaymath">
 \begin{equation*}
 x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
@@ -254,6 +358,15 @@ x^n -  \sum_{k=0}^n S(n,k) (x)_k= 0.
 x^n = \sum_{k=0}^n S(n,k) (x)_k.
 \end{equation*}
 </div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-79" id="solution-79"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-79"><div class="solution solution-like">
+<p id="p-293">Let \(p(x) =  \displaystyle{x^n -  \sum_{k=0}^n S(n,k) (x)_k}.\) Part (b) says that \(p(x)= 0\) for \(x=1,2,3, \ldots, m, \ldots\text{.}\) In other words, this polynomial has an infinite number roots. The only such polynomial is the zero polynomial. Therefore,</p>
+<div class="displaymath">
+\begin{equation*}
+x^n = \sum_{k=0}^n S(n,k) (x)_k.
+\end{equation*}
+</div>
+<p id="p-294">Our conclusion is:  when the polynomial \(x^n\) is expressed in terms of the falling factorial basis \(1, (x)_1, (x)_2, (x)_3, \ldots, (x)_k, \ldots\text{,}\) then the coefficient for basis element \((x)_k\) is \(S(n,k)\text{.}\)</p>
+</div></div></p>
 </li>
 </ol></article></section></section></div></main>
 </div>

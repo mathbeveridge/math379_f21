@@ -158,30 +158,30 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="perm-descending-tree"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">19</span> <span class="title">Descending Binary Trees</span>
 </h2>
-<section class="introduction" id="introduction-19"><p id="p-526">A <em class="emphasis">rooted binary plane tree</em> on \(n\) vertices starts with a root vertex \(r\text{.}\) Every vertex in the tree either has (1) no children, (2) a left child, (3) a right child. or (4) both a left and right child. Here are all of  the rooted binary plane trees for \(n=1,2,3\text{.}\) <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-perm-descending-tree0.svg" role="img" class="contained"></div></p></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-19"><p id="p-568">A <em class="emphasis">rooted binary plane tree</em> on \(n\) vertices starts with a root vertex \(r\text{.}\) Every vertex in the tree either has (1) no children, (2) a left child, (3) a right child. or (4) both a left and right child. Here are all of  the rooted binary plane trees for \(n=1,2,3\text{.}\) <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-perm-descending-tree0.svg" role="img" class="contained"></div></p></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-81"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Descending Binary Trees.</span>
 </h6>
-<p id="p-527">A <em class="emphasis">decreasing binary tree</em> is a rooted binary plane tree where the vertices are labeled by elements of \([n]\) so that every child has a label that is smaller than its parent. Draw all of the decreasing binary trees for \(n=1,2,3\text{.}\) </p></article><article class="exercise exercise-like" id="exercise-82"><h6 class="heading">
+<p id="p-569">A <em class="emphasis">decreasing binary tree</em> is a rooted binary plane tree where the vertices are labeled by elements of \([n]\) so that every child has a label that is smaller than its parent. Draw all of the decreasing binary trees for \(n=1,2,3\text{.}\) </p></article><article class="exercise exercise-like" id="exercise-82"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Descending Binary Trees and Permutations.</span>
 </h6>
-<p id="p-528">We give a recursive geometric layout of a decreasing binary tree that reveals this bijection. For a vertex \(j\text{,}\) let its <em class="emphasis">depth</em> \(d(j)\) be the distance of vertex \(j\) to the root \(n\text{.}\) Start by placing the root \(n\) at point \((0,0)\text{.}\) Suppose that the parent \(j\) of vertex \(i\) has been placed at \((x, -d)\) where \(d=d(j)\) is the depth of \(j\text{.}\) Place vertex \(i\) at \((x \pm (1/3)^d, -d-1)\text{.}\) Here is an example: <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-perm-descending-tree2.svg" role="img" class="contained"></div> The \(x\)-coordinates of the vertices induce an ordering of the labels: that is,  a permutation of \([n]\text{.}\)</p>
+<p id="p-570">We give a recursive geometric layout of a decreasing binary tree that reveals this bijection. For a vertex \(j\text{,}\) let its <em class="emphasis">depth</em> \(d(j)\) be the distance of vertex \(j\) to the root \(n\text{.}\) Start by placing the root \(n\) at point \((0,0)\text{.}\) Suppose that the parent \(j\) of vertex \(i\) has been placed at \((x, -d)\) where \(d=d(j)\) is the depth of \(j\text{.}\) Place vertex \(i\) at \((x \pm (1/3)^d, -d-1)\text{.}\) Here is an example: <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-perm-descending-tree2.svg" role="img" class="contained"></div> The \(x\)-coordinates of the vertices induce an ordering of the labels: that is,  a permutation of \([n]\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-316"><p id="p-529">What is the permutation corresponding to the above descending binary tree on 8 vertices? </p></li>
-<li id="li-317"><p id="p-530">Go back to your trees in problem 1 and write down the corresponding permutations. </p></li>
+<li id="li-344"><p id="p-571">What is the permutation corresponding to the above descending binary tree on 8 vertices? </p></li>
+<li id="li-345"><p id="p-572">Go back to your trees in problem 1 and write down the corresponding permutations. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-83"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-531">Given a permutation, can you determine the corresponding decreasing binary tree? Try to draw the descending binary trees for the  permutations \(38412756\) and \(53147268\text{.}\) </p></article><article class="exercise exercise-like" id="exercise-84"><h6 class="heading">
+<p id="p-573">Given a permutation, can you determine the corresponding decreasing binary tree? Try to draw the descending binary trees for the  permutations \(38412756\) and \(53147268\text{.}\) </p></article><article class="exercise exercise-like" id="exercise-84"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Descending Binary Trees and the Eulerian Numbers.</span>
 </h6>
-<ol id="p-532" class="lower-alpha">
-<li id="li-318"><p id="p-533">Let \(B_R(n,k)\) be the number of descending binary trees on \(n\) vertices in which \(k-1\) vertices have a right child. Prove that \(B_R(n,k) = A(n,k)\text{.}\) You may assume the mapping in problem 2 is a bijection. </p></li>
-<li id="li-319"><p id="p-534">Let \(B_L(n,k)\) be the number of descending binary trees on \(n\) vertices in which \(k-1\) vertices have a left child. Prove that \(B_L(n,k) = A(n,k)\text{.}\) You may assume that part (a)  is true. </p></li>
+<ol id="p-574" class="lower-alpha">
+<li id="li-346"><p id="p-575">Let \(B_R(n,k)\) be the number of descending binary trees on \(n\) vertices in which \(k-1\) vertices have a right child. Prove that \(B_R(n,k) = A(n,k)\text{.}\) You may assume the mapping in problem 2 is a bijection. </p></li>
+<li id="li-347"><p id="p-576">Let \(B_L(n,k)\) be the number of descending binary trees on \(n\) vertices in which \(k-1\) vertices have a left child. Prove that \(B_L(n,k) = A(n,k)\text{.}\) You may assume that part (a)  is true. </p></li>
 </ol></article></section> The mapping from \({\cal S}_n\) to \({\cal B}_n\) is an example of an  <em class="emphasis">in-order traversal of a binary tree</em>.  Perform the following operations recursively at each vertex, starting from the root. <ul class="disc">
-<li id="li-320"><p id="p-535">Traverse the left tree</p></li>
-<li id="li-321"><p id="p-536">Process the vertex</p></li>
-<li id="li-322"><p id="p-537">Traverse the right tree.</p></li>
+<li id="li-348"><p id="p-577">Traverse the left tree</p></li>
+<li id="li-349"><p id="p-578">Process the vertex</p></li>
+<li id="li-350"><p id="p-579">Traverse the right tree.</p></li>
 </ul> In our case,"processing a vertex" corresponds to writing it in our ordered list.</section></div></main>
 </div>
 </body>
