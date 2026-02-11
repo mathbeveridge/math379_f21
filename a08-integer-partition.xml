@@ -67,6 +67,17 @@ p(n+k,k)
 <solution>
 <p>
 The partitions of <m>5</m> into at most 3 parts are:
+<me>
+	\begin{array}{l}
+	5 \\
+	4+1 \\
+	3+1+1 \\
+	2+2+1
+	\end{array}
+</me>
+
+
+
 
 			</p><p>
 
@@ -157,7 +168,14 @@ The partitions of <m>5</m> into at most 3 parts are:
 
 
 The partitions of <m>8</m> into exactly 3 parts are:
-
+<me>
+	\begin{array}{l}
+	6+1+1 \\
+	5+2+1 \\
+	4+2+2 \\
+	3+3+2
+	\end{array}
+</me>
 			</p><p>
 
 			<image width="50%" xml:id="fig-img-int-partition1">
