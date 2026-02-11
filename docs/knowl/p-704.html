@@ -12,7 +12,14 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>We use the bijection described in problem 2. We start with a decreasing binary tree. Suppose that vertex \(k\) has a right child. We claim that there is a descent immediately after \(k\) in the corresponding permutation.  Indeed, the label of a child is always smaller that the label of the parent. So all of the vertices to the right of vertex \(k\) have labels that are smaller than \(k\text{.}\) In other words, there is a descent immediately after element \(k\text{.}\)</p>
-<span class="incontext"><a href="exercises-18.html#p-704">in-context</a></span>
+<p>Using this recurrence, we can find the values of the \(c_n\text{:}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+(c_0, c_1, c_2, c_3, c_4, c_5, c_6, \cdots)
+=(0,1,1,4,38,78,26704, \ldots ).
+\end{equation*}
+</div>
+<p class="continuation">Confirm that this is correct by enumerating all connected graphs on \([n]\) for \(0 \leq n \leq 4\text{.}\) List each <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">unlabeled</em> graph \(G\) and then give the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">number of labelings</em> \(\ell(G)\text{,}\) with justification.</p>
+<span class="incontext"><a href="exercises-26.html#p-704">in-context</a></span>
 </body>
 </html>

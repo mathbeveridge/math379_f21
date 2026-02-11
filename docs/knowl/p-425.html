@@ -12,17 +12,55 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Solve the recurrence relation</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-c_n = 2 n c_{n-1} +8 n (n-1) c_{n-2} \mbox{ for } n \geq 2
+\begin{array}{rcccl}
+\displaystyle{
+\tan^{-1} x
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} (-1)^n  \frac{x^{2n+1}}{2n+1}
+}&amp;=&amp; \displaystyle{
+x -  \frac{x^{3}}{3} + \frac{x^{5}}{5} - \frac{x^{7}}{7} +\cdots
+} \\
+\\
+\displaystyle{
+\log \left( \sqrt{\frac{1+x}{1-x}} \right)
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty}   \frac{x^{2n+1}}{2n+1}
+}&amp;=&amp; \displaystyle{
+x +  \frac{x^{3}}{3} + \frac{x^{5}}{5} + \frac{x^{7}}{7} +\cdots
+} \\
+\\
+\displaystyle{
+\frac{1}{\sqrt{1-4x}}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} {2n \choose n}  x^n
+}&amp;=&amp; \displaystyle{
+1 + 2x + 6x^2 + 20x^3 +\cdots
+} \\
+\displaystyle{
+\frac{1}{\sqrt{1-x^2}}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} {2n \choose n} \frac{ x^{2n}}{2^{2n}}
+}&amp;=&amp; \displaystyle{
+1 + \frac{x^2}{2} + \frac{3 x^4}{8} + \frac{5x^6}{16} +\cdots
+} \\
+\\
+\displaystyle{
+\frac{1-\sqrt{1-4x}}{2x}
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{\infty} \frac{1}{2n+1}{2n \choose n}  x^n
+}&amp;=&amp; \displaystyle{
+1 + x + 5x^2 + 14x^3 +\cdots
+} \\
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">where \(c_0=1\) and \(c_1=4\text{.}\)</p>
-<ol class="lower-alpha">
-<li><p>Let \(C(x) = \sum_{n=0}^{\infty} c_n \frac{x^n}{n!}\) be the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(C(x)\text{.}\) </p></li>
-<li><p>Use the Taylor series for the functions in part (a) to find a simple closed formula for \(c_n\text{.}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Remember that \(C(x)\) is an EGF</em>, so you will have to multiply the \(n\)th term by \(\frac{n!}{n!}\) and rearrange to get the right answer. </p></li>
-</ol>
-<span class="incontext"><a href="exercises-12.html#p-425">in-context</a></span>
+<span class="incontext"><a href="bestiarum.html#p-425">in-context</a></span>
 </body>
 </html>

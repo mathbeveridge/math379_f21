@@ -12,7 +12,24 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p></p>
-<span class="incontext"><a href="perm-exercise.html#p-621">in-context</a></span>
+<p>We will prove the recurrence</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+c(n) = n \cdot c(n-1) + (n-1)!
+\end{equation*}
+</div>
+<p class="continuation">As usual, we will treat element \(n\) as special. Given an \(n\)-permutation \(f \in S_n\text{,}\) what happens when we remove element \(n\text{?}\) There are two cases</p>
+<ol class="lower-alpha">
+<li><p>Suppose that \(n\) was in a cycle by itself. Prove that the total number of <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">cycles</em> in such  permutations is \(c(n-1) + (n-1)!\text{.}\) </p></li>
+<li><p>Suppose that \(n\) was <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">not</em> in a cycle by itself. Prove that the total number of <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">cycles</em> in such  permutations is \((n-1) \cdot c(n-1)\text{.}\) </p></li>
+</ol>
+<p class="continuation">Putting together the answers from questions 2 and 3, we find that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+c(n) =  \Big( c(n-1) + (n-1)!  \Big)+ (n-1) \cdot c(n-1) = n \cdot c(n-1) + (n-1)!
+\end{equation*}
+</div>
+<p class="continuation">as claimed at the start of the problem.</p>
+<span class="incontext"><a href="exercises-20.html#p-621">in-context</a></span>
 </body>
 </html>

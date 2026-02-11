@@ -12,11 +12,8 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<ul class="disc">
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case: \(n=1\)</em> When \(n\)=1, there is only one permutation structure: \((1)\text{,}\) which is the disjoint union of one cycle.</p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Assume that for \(k&lt;n\text{,}\) every \(k\)-permutation can be decomposed into the union of disjoint cycles.</p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Prove True for \(n\text{:}\)</em> Consider any \(n\)-permutation \(f \in S_n\text{.}\) Suppose that element \(n\) has order \(r\text{.}\) This means that \[ (n, f(n) , f^2(n), \ldots, f^{r-1}(n)) \] is a cycle in the permutation \(n\text{.}\) Considering  remaining \(n-r\) elements, we know that \(f\) must permute these elements among themselves. In other words, restricting \(f\) to these \(k=n-r\) elements gives a \(k\)-permutation. By strong induction, we can represent this mapping as the union of disjoint cycles. Along with the disjoint \(r\)-cycle containing \(n\text{,}\) we now have a decomposition of the original permutation \(f\text{.}\)</p></li>
-</ul>
-<span class="incontext"><a href="exercises-19.html#p-716">in-context</a></span>
+<p>Let \(T(x) = \sum_{n=1}^{\infty} t_n \frac{x^n}{n!}\) be the exponential generating function for labeled trees on \([n]\text{,}\) where \(t_0=0\text{.}\) Let \(F(x) = \sum_{n=1}^{\infty} f_n \frac{x^n}{n!}\) where \(f_0=1\) be the exponential generating function for lableled forests on \([n]\text{.}\)</p>
+<ol class="lower-alpha"><li><p>Give a combinatorial proof of your recurrence relation in part (b). Use the following interpretation: how many ways are there to make a forest with one distinguished vertex (maybe there is a squirrel living there)?</p></li></ol>
+<span class="incontext"><a href="exercises-27.html#p-716">in-context</a></span>
 </body>
 </html>

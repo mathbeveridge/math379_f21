@@ -10,21 +10,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like">
-<p>Here are the partitions of 9 into distinct parts.</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{l}
-9 \\
-8 + 1 \\
-7 + 2 \\
-6 + 3 \\
-6 + 2 + 1 \\
-5 + 4 \\
-5 + 3 + 1 \\
-4  + 3 + 2
-\end{array}
-\end{equation*}
-</div>
-</div></body>
+<body><div class="solution solution-like"><p>Let \(A\) be the set of partitions of \(n\) into at most \(k\) parts. Let \(B\) be the set of partitions of \(n+k\) into exactly \(k\) parts. We define a bijection \(f: A \rightarrow B\text{.}\) The partitions are listed in part (b) to reflect the bijection. Given the Ferrers diagram of a partition \(\sigma \in A\) we add a column of length \(k\) to the left of the diagram. The result is a partition \(f(\sigma)\)  of \(n+k\) into exactly \(k\) parts. This process is reversible: we just remove this leftmost column of length \(k\) to recover the original partition of \(n\) into at most \(k\) parts. It remains to show that this function is surjective. But this is easy: Given a partition \(\tau \in B\text{,}\) removing the leftmost column gives a partition \(\sigma \in A\text{.}\)  Obviously, \(f(\sigma) = \tau\text{.}\) Since \(f\) is surjective and reversible, it must be a bijection.</p></div></body>
 </html>

@@ -12,52 +12,27 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>We have defined the size \(|A|\) of a set to be the number of elements in \(A\text{.}\) In fact, what we are saying is that \(|A| = m\) if any only if there is a bijection \(f: A \rightarrow [m]\text{.}\) Let \(A\) and \(B\) be disjoint sets (so that \(|A \cap B| = \emptyset\)). Suppose that \(|A|=m\) and \(|B| = n\text{,}\) and that \(f: A \rightarrow [m]\) is a bijection and that \(g: B \rightarrow [n]\) is a bijection.</p>
+<ol class="lower-alpha">
+<li>
+<p>Give a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bijective proof</em> of the addition rule</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcccl}
-\displaystyle{
-e^x
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  \frac{x^{n}}{n!}
-}&amp;=&amp; \displaystyle{
-1+x +  \frac{x^{2}}{2} + \frac{x^{3}}{6} + \frac{x^{4}}{24} +\cdots
-} \\
-\displaystyle{
-e^{ax}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}   \frac{a^n x^{n}}{n!}
-}&amp;=&amp; \displaystyle{
-1+ax +  \frac{a^2x^{2}}{2} + \frac{a^3x^{3}}{6} + \frac{a^4x^{4}}{24} +\cdots
-} \\
-\displaystyle{
-e^{x^k}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  \frac{x^{nk}}{n!}
-}&amp;=&amp; \displaystyle{
-1+x^k +  \frac{x^{2k}}{2} + \frac{x^{3k}}{6} + \frac{x^{4k}}{24} +\cdots
-} \\
-\displaystyle{
-\sinh x = \frac{e^x - e^{-x}}{2}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}   \frac{x^{2n+1}}{(2n+1)!}
-}&amp;=&amp; \displaystyle{
-x +  \frac{x^{3}}{6} + \frac{x^{5}}{120} + \frac{x^{7}}{5040} +\cdots
-} \\
-\displaystyle{
-\cosh x = \frac{e^x + e^{-x}}{2}
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}   \frac{x^{2n}}{(2n)!}
-}&amp;=&amp; \displaystyle{
-1+   \frac{x^{2}}{2} + \frac{x^{4}}{24} + \frac{x^{6}}{720} +\cdots
-} \\
-\end{array}
+|A \cup B| = |A| + |B|.
 \end{equation*}
 </div>
-<span class="incontext"><a href="bestiarum.html#p-402">in-context</a></span>
+<p class="continuation">In other words, find a bijective function \(h : A \cup B \rightarrow [m+n]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
+</li>
+<li>
+<p>Give a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bijective proof</em> of the product rule</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+|A \times B| = |A| \cdot |B|.
+\end{equation*}
+</div>
+<p class="continuation">In other words, find a bijective function \(h : A \times B \rightarrow [mn]\text{.}\) You can simply construct the function. You do not need to prove it is a bijection.</p>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-11.html#p-402">in-context</a></span>
 </body>
 </html>
