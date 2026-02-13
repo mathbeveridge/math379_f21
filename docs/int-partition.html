@@ -260,7 +260,14 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 </div>
 </div></div></p>
 </li>
-<li id="li-166"><p id="p-311">Find a recurrence relation for \(\mbox{dist}(n,k)\text{.}\) Justify your formula. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-84" id="solution-84"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-84"><div class="solution solution-like">
+<li id="li-166">
+<p id="p-311">Prove the recurrence relation</p>
+<div class="displaymath">
+\begin{equation*}
+\mbox{dist}(n,k) = \sum_{i=0}^{k-1} \mbox{dist}(n-k,i).
+\end{equation*}
+</div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-84" id="solution-84"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-84"><div class="solution solution-like">
 <p id="p-312">The recurrence relation is</p>
 <div class="displaymath">
 \begin{equation*}
@@ -270,7 +277,8 @@ k &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 
 <p class="continuation">Removing the first row of our partition results in a partition of \(n-k\) into at most \(k-1\) parts, and all parts distinct. The sum on the RHS counts the number of such partitions.</p>
 <p id="p-313">It is worth noting that the "there are 0 ways to do the impossible" mantra is really helpful here. In particular, \(\mbox{dist}(n-k,0)=0\) when  \(n-k&gt;0\) and \(\mbox{dist}(n-k,i)=0\) when \(i &gt; n-k\text{.}\) So we can simply take the limits of our summation to be \(0 \leq i \leq k-1\text{.}\)</p>
 <p id="p-314">Finally, note that we do need to start at \(i=0\) to handle the case where \(k=n\text{.}\) We have \(\mbox{dist}(n,n) = \mbox{dist}(0,0) = 1\text{.}\) The last formula is an example of "there is one way to do nothing."</p>
-</div></div></p></li>
+</div></div></p>
+</li>
 </ol></article><article class="exercise exercise-like" id="exercise-40"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Integer Partitions into Odd Parts.</span>
 </h6>

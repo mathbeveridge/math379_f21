@@ -367,7 +367,10 @@ Here are the partitions of 9 into distinct parts.
 				</li>
 				<li>
 					<p>
- Find a recurrence relation for <m>\mbox{dist}(n,k)</m>. Justify your formula.
+ Prove the recurrence relation 
+ <me>
+\mbox{dist}(n,k) = \sum_{i=0}^{k-1} \mbox{dist}(n-k,i).
+</me>
 
 <solution>
 <p>
