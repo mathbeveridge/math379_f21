@@ -12,18 +12,15 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>In this problem, you will prove the symmetry that  we observed in the Eulerian triangle:</p>
+<p>The Eulerian Number</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-A(n,k) = A(n, n-k+1).
+\begin{array}{rcl}
+A(n,k) &amp;=&amp; \mbox{# } \,  n \mbox{-permutations with } k \mbox{ ascending runs} \\
+&amp;=&amp; \mbox{# }  \,  n \mbox{-permutations with } k-1 \mbox{ descents} \\
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">Let \(p = p_1 p_2 \cdots p_n \in \cA(n,k),\) so that \(p\) has \(k-1\) descents among \(p_1, p_2, \ldots p_{n-1}\text{.}\) Consider its reverse \(\overline{p} = p_n p_{n-1} \cdots p_1\text{.}\) By <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">tracking descents</em> (not ascending runs), explain why</p>
-<ul class="disc">
-<li><p>\(\overline{p} \in \cA(n,n-k+1)\text{,}\) and</p></li>
-<li><p>the mapping \(p \rightarrow \overline{p}\) is a bijection from \(\cA(n,k)\) to \(\cA(n,n-k+1)\text{.}\)</p></li>
-</ul>
-<p class="continuation"><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Pro Tip #4:</em> The reversal mapping \(p \rightarrow \overline{p}\) is a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">very useful tool</em> for investigating the structure of permutations. </p>
-<span class="incontext"><a href="exercises-17.html#p-587">in-context</a></span>
+<span class="incontext"><a href="perm-euler-recur.html#p-587">in-context</a></span>
 </body>
 </html>

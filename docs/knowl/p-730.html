@@ -12,22 +12,7 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<ul class="disc">
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case: \(n=2\)</em> The LHS is \(1 \cdot 1! = 1\) and the RHS is \(2!-1=1\text{.}\)</p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Assume that \(\sum_{k=1}^{n-2} k \cdot k! = (n-1)! - 1.\)</p></li>
-<li>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Prove True for \(n\text{:}\)</em></p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-\sum_{k=1}^{n-1} k \cdot k! &amp;=&amp; (n-1) \cdot (n-1)! + \sum_{k=1}^{n-2} k \cdot k! \\
-&amp;=&amp; (n-1) \cdot (n-1)! +  (n-1)! - 1 \mbox{ by the inductive assumption} \\
-&amp;=&amp; n! -1.
-\end{array}
-\end{equation*}
-</div>
-</li>
-</ul>
-<span class="incontext"><a href="exercises-19.html#p-730">in-context</a></span>
+<p>Use inclusion-exclusion to find the number of rooted (and labeled) forests on \([n]\) that contain no isolated vertices.</p>
+<span class="incontext"><a href="exercises-27.html#p-730">in-context</a></span>
 </body>
 </html>

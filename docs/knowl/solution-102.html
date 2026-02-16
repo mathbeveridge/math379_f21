@@ -15,24 +15,16 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p></p>
-<figure class="table table-like"><figcaption xmlns:svg="http://www.w3.org/2000/svg"><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.0.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table xmlns:svg="http://www.w3.org/2000/svg" class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines"># subsets of the form</td>
-<td class="l m b1 r1 l0 t1 lines">\(A_i\)</td>
-<td class="l m b1 r1 l0 t1 lines">is \(n = \displaystyle{{n \choose 1}}\)</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"># subsets of the form</td>
-<td class="l m b1 r1 l0 t0 lines">\(A_i \cap A_j\)</td>
-<td class="l m b1 r1 l0 t0 lines">is \(\displaystyle{{n \choose 2}}\)</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"># subsets of the form</td>
-<td class="l m b1 r1 l0 t0 lines">\(A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}\)</td>
-<td class="l m b1 r1 l0 t0 lines">is \(\displaystyle{{n \choose s}}\)</td>
-</tr>
-</table></div></figure><p></p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+|A_i| &amp;=&amp; (k-1)^n \\
+|A_i \cap A_j| &amp;=&amp;(k-2)^n \\
+|A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_s}| &amp;=&amp; (k-s)^n.
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">Note that these sizes are independent of the actual choices for \(i,j\text{,}\) etc. All that matters is the {number of subsets in the intersection}.</p>
 </div>
 <span class="incontext"><a href="exercises-9.html#solution-102">in-context</a></span>
 </body>

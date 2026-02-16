@@ -12,7 +12,61 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>\(\overline{p} \in \cA(n,n-k+1)\text{,}\) and</p>
+<p>In this problem you will prove the recurrence</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1)
+\end{equation*}
+</div>
+<p class="continuation">As you might suspect, we will "treat element \(n\) as special." Let  \(\cA(n,k)\)  denote the set of \(n\)-permutations with \(k\) ascending runs (and therefore with \(k-1\) descents). <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Pro Tip #1:</em> only positions \(1 \leq j \leq n-1\) are considered as ascents/descents. Position \(n\) is handled exceptionally. <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Pro Tip #2:</em> Be ready to think about having \(k\) ascending runs, or \(k-1\) descents, whichever is easiest!</p>
+<ol class="lower-alpha">
+<li>
+<p>As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(4,3) = 3 A(3,3) + 2 A(3,2).
+\end{equation*}
+</div>
+<p class="continuation">We list the 11 different permutations in  \(\cA(4,3)\) and all \(6=3!\) permutations in \(S_3\text{.}\) Draw a line from the 4-permutation to the 3-permutation we obtain by deleting element 4.</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{ccccccccccc}
+1432 &amp; 2143 &amp; 2431 &amp; 3142 &amp; 3214 &amp; 3241 &amp; 3421 &amp; 4132 &amp; 4213 &amp; 4231 &amp; 4312
+\end{array}
+\end{equation*}
+</div>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{ccccccccccc}
+123 &amp; 132 &amp; 213 &amp; 231 &amp; 312 &amp; 321 \\
+\end{array}
+\end{equation*}
+</div>
+</li>
+<li><p>In part (a), you only mapped to permutations in \(\cA(3,2)\) and \(\cA(3,3)\text{.}\)  Now work backwards. Given a permutation in \(\cA(3,2)\text{,}\) where can you place element 4 to create a permutation in \(\cA(4,3)\text{?}\) Now, how about when you start with a permutation in \(\cA(3,3)\text{?}\) Write down your observations. </p></li>
+<li><p>Now we start our proof for \(A(n,k)\text{.}\) Given a permutation \(p \in \cA(n,k)\text{.}\) Let \(p' \in S_{n-1}\) be the permutation obtained by removing element \(n\text{.}\) Explain why either \(p' \in \cA(n-1, k)\) or \(p' \in \cA(n-1,k-1)\text{.}\) </p></li>
+<li>
+<p>Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
+<ul class="disc">
+<li><p>Before \(p_1\text{?}\) </p></li>
+<li><p>After \(p_{n-1}\text{?}\) </p></li>
+<li><p>Directly after a descent of \(p'\text{?}\) </p></li>
+<li><p>Directly after an ascent of \(p'\text{?}\) </p></li>
+</ul>
+<p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) </p>
+</li>
+<li>
+<p>Fixing \(p'=p_1 p_2 \cdots p_{n-1} \in \cA(n-1,k-1)\text{,}\) can we obtain an element of \(\cA(n,k)\) by placing element \(n\text{...}\)</p>
+<ul class="disc">
+<li><p>Before \(p_1\text{?}\) </p></li>
+<li><p>After \(p_{n-1}\text{?}\) </p></li>
+<li><p>Directly after a descent of \(p'\text{?}\) </p></li>
+<li><p>Directly after an ascent of \(p'\text{?}\) </p></li>
+</ul>
+<p class="continuation">In conclusion, how many different options do you have for inserting element \(n\text{?}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Pro Tip #3:</em> Remember that you are starting with \(p' \in  \cA(n-1,k-1)\text{,}\) so there are \(n-2\) total ascents/descents. </p>
+</li>
+<li><p>Put together your answers from parts (d) and (e) to prove that \(\)A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).\(\) </p></li>
+</ol>
 <span class="incontext"><a href="exercises-17.html#p-588">in-context</a></span>
 </body>
 </html>
