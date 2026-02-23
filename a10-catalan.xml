@@ -34,7 +34,7 @@ Here are the triangulations for <m>n=0</m>, <m>n=1</m> and <m>n=2</m>, which cor
 \path (1,0) coordinate (P2);
 \path (0,.5) coordinate (P3);
 \path (0,-.5) coordinate (P3);
-\draw[thick] (P1) -!- (P2);
+\draw[thick] (P1) -- (P2);
 
 \end{scope}
 
@@ -42,7 +42,7 @@ Here are the triangulations for <m>n=0</m>, <m>n=1</m> and <m>n=2</m>, which cor
 \path (1,0) coordinate (P0);
 \path (-1,0) coordinate (P1);
 \path (0,1.73) coordinate (P2);
-\draw[thick] (P0) -!- (P1) -!- (P2) -!- cycle;
+\draw[thick] (P0) -- (P1) -- (P2) -- cycle;
 
 \end{scope}
 
@@ -52,17 +52,17 @@ Here are the triangulations for <m>n=0</m>, <m>n=1</m> and <m>n=2</m>, which cor
 \path (.5,1) coordinate (P1);
 \path (1.5,1) coordinate (P2);
 \path (1.5,0) coordinate (P3);
-\draw[thick] (P0) -!- (P1) -!- (P2) -!- (P3) -!- cycle;
+\draw[thick] (P0) -- (P1) -- (P2) -- (P3) -- cycle;
 
 
 \path (-.5,0) coordinate (Q0);
 \path (-.5,1) coordinate (Q1);
 \path (-1.5,1) coordinate (Q2);
 \path (-1.5,0) coordinate (Q3);
-\draw[thick] (P0) -!- (P1) -!- (P2) -!- (P3) -!- cycle;
-\draw[thick] (P0) -!- (P2);
-\draw[thick] (Q0) -!- (Q1) -!- (Q2) -!- (Q3) -!- cycle;
-\draw[thick] (Q0) -!- (Q2);
+\draw[thick] (P0) -- (P1) -- (P2) -- (P3) -- cycle;
+\draw[thick] (P0) -- (P2);
+\draw[thick] (Q0) -- (Q1) -- (Q2) -- (Q3) -- cycle;
+\draw[thick] (Q0) -- (Q2);
 
 
 \end{scope}
@@ -251,14 +251,14 @@ Stack coins in the plane, where the bottom row consists of <m>n</m> consecutive 
 				<latex-image>
 \begin{tikzpicture}[scale = .4] %mathbook width=80%
 \begin{scope}
-\path(-1,0) -!- (3,0);
+\path(-1,0) -- (3,0);
 \draw (0,0) circle (0.5cm);
 \draw (1,0) circle (0.5cm);
 \draw (2,0) circle (0.5cm);
 \end{scope}
 
 \begin{scope}[shift={(5,0)}]
-\path(-1,0) -!- (3,0);
+\path(-1,0) -- (3,0);
 \draw (0,0) circle (0.5cm);
 \draw (1,0) circle (0.5cm);
 \draw (2,0) circle (0.5cm);
@@ -266,7 +266,7 @@ Stack coins in the plane, where the bottom row consists of <m>n</m> consecutive 
 \end{scope}
 
 \begin{scope}[shift={(10,0)}]
-\path(-1,0) -!- (3,0);
+\path(-1,0) -- (3,0);
 \draw (0,0) circle (0.5cm);
 \draw (1,0) circle (0.5cm);
 \draw (2,0) circle (0.5cm);
@@ -274,7 +274,7 @@ Stack coins in the plane, where the bottom row consists of <m>n</m> consecutive 
 \end{scope}
 
 \begin{scope}[shift={(15,0)}]
-\path(-1,0) -!- (3,0);
+\path(-1,0) -- (3,0);
 \draw (0,0) circle (0.5cm);
 \draw (1,0) circle (0.5cm);
 \draw (2,0) circle (0.5cm);
@@ -283,7 +283,7 @@ Stack coins in the plane, where the bottom row consists of <m>n</m> consecutive 
 \end{scope}
 
 \begin{scope}[shift={(20,0)}]
-\path(-1,0) -!- (3,0);
+\path(-1,0) -- (3,0);
 \draw (0,0) circle (0.5cm);
 \draw (1,0) circle (0.5cm);
 \draw (2,0) circle (0.5cm);
@@ -313,82 +313,82 @@ Make plane binary trees with <m>2n</m> edges. A plane binary tree has a root ver
 
 \begin{scope}
 \fill (1.5,3) circle (2pt);
-\draw (1.5,3)-!-(0.75,2.25);
+\draw (1.5,3)--(0.75,2.25);
 \fill (0.75,2.25) circle (2pt);
-\draw (1.5,3)-!-(2.25,2.25);
+\draw (1.5,3)--(2.25,2.25);
 \fill (2.25,2.25) circle (2pt);
-\draw (2.25,2.25)-!-(1.875,1.5);
+\draw (2.25,2.25)--(1.875,1.5);
 \fill (1.875,1.5) circle (2pt);
-\draw (2.25,2.25)-!-(2.625,1.5);
+\draw (2.25,2.25)--(2.625,1.5);
 \fill (2.625,1.5) circle (2pt);
-\draw (2.625,1.5)-!-(2.4375,0.75);
+\draw (2.625,1.5)--(2.4375,0.75);
 \fill (2.4375,0.75) circle (2pt);
-\draw (2.625,1.5)-!-(2.8125,0.75);
+\draw (2.625,1.5)--(2.8125,0.75);
 \fill (2.8125,0.75) circle (2pt);
 \end{scope}
 
 \begin{scope}[shift={(4,0)}]
 \fill (1.5,3) circle (2pt);
-\draw (1.5,3)-!-(0.75,2.25);
+\draw (1.5,3)--(0.75,2.25);
 \fill (0.75,2.25) circle (2pt);
-\draw (1.5,3)-!-(2.25,2.25);
+\draw (1.5,3)--(2.25,2.25);
 \fill (2.25,2.25) circle (2pt);
-\draw (2.25,2.25)-!-(1.875,1.5);
+\draw (2.25,2.25)--(1.875,1.5);
 \fill (1.875,1.5) circle (2pt);
-\draw (2.25,2.25)-!-(2.625,1.5);
+\draw (2.25,2.25)--(2.625,1.5);
 \fill (2.625,1.5) circle (2pt);
-\draw (1.875,1.5)-!-(1.6875,0.75);
+\draw (1.875,1.5)--(1.6875,0.75);
 \fill (1.6875,0.75) circle (2pt);
-\draw (1.875,1.5)-!-(2.0625,0.75);
+\draw (1.875,1.5)--(2.0625,0.75);
 \fill (2.0625,0.75) circle (2pt);
 \end{scope}
 
 \begin{scope}[shift={(8,0)}]
 \fill (1.5,3) circle (2pt);
-\draw (1.5,3)-!-(0.75,2.25);
+\draw (1.5,3)--(0.75,2.25);
 \fill (0.75,2.25) circle (2pt);
-\draw (1.5,3)-!-(2.25,2.25);
+\draw (1.5,3)--(2.25,2.25);
 \fill (2.25,2.25) circle (2pt);
-\draw (0.75,2.25)-!-(0.375,1.5);
+\draw (0.75,2.25)--(0.375,1.5);
 \fill (0.375,1.5) circle (2pt);
-\draw (0.75,2.25)-!-(1.125,1.5);
+\draw (0.75,2.25)--(1.125,1.5);
 \fill (1.125,1.5) circle (2pt);
-\draw (2.25,2.25)-!-(1.875,1.5);
+\draw (2.25,2.25)--(1.875,1.5);
 \fill (1.875,1.5) circle (2pt);
-\draw (2.25,2.25)-!-(2.625,1.5);
+\draw (2.25,2.25)--(2.625,1.5);
 \fill (2.625,1.5) circle (2pt);
-\draw[color=white] (1.125, 1.5) -!- (1.3125, .75);
+\draw[color=white] (1.125, 1.5) -- (1.3125, .75);
 \end{scope}
 
 \begin{scope}[shift={(12,0)}]
 \fill (1.5,3) circle (2pt);
-\draw (1.5,3)-!-(0.75,2.25);
+\draw (1.5,3)--(0.75,2.25);
 \fill (0.75,2.25) circle (2pt);
-\draw (1.5,3)-!-(2.25,2.25);
+\draw (1.5,3)--(2.25,2.25);
 \fill (2.25,2.25) circle (2pt);
-\draw (0.75,2.25)-!-(0.375,1.5);
+\draw (0.75,2.25)--(0.375,1.5);
 \fill (0.375,1.5) circle (2pt);
-\draw (0.75,2.25)-!-(1.125,1.5);
+\draw (0.75,2.25)--(1.125,1.5);
 \fill (1.125,1.5) circle (2pt);
-\draw (1.125,1.5)-!-(0.9375,0.75);
+\draw (1.125,1.5)--(0.9375,0.75);
 \fill (0.9375,0.75) circle (2pt);
-\draw (1.125,1.5)-!-(1.3125,0.75);
+\draw (1.125,1.5)--(1.3125,0.75);
 \fill (1.3125,0.75) circle (2pt);
 \end{scope}
 
 \begin{scope}[shift={(16,0)}]
 \fill (1.5,3) circle (2pt);
-\draw (1.5,3)-!-(0.75,2.25);
+\draw (1.5,3)--(0.75,2.25);
 \fill (0.75,2.25) circle (2pt);
-\draw (1.5,3)-!-(2.25,2.25);
+\draw (1.5,3)--(2.25,2.25);
 \fill (2.25,2.25) circle (2pt);
-\draw (0.75,2.25)-!-(0.375,1.5);
+\draw (0.75,2.25)--(0.375,1.5);
 \fill (0.375,1.5) circle (2pt);
-\draw (0.75,2.25)-!-(1.125,1.5);
+\draw (0.75,2.25)--(1.125,1.5);
 \fill (1.125,1.5) circle (2pt);
-\draw (0.375,1.5)-!-(0.1875,0.75);
+\draw (0.375,1.5)--(0.1875,0.75);
 \fill (0.1875,0.75) circle (2pt);
-\draw (0.375,1.5)-!-(0.5625,0.75);
+\draw (0.375,1.5)--(0.5625,0.75);
 \fill (0.5625,0.75) circle (2pt);
 \end{scope}
 \end{tikzpicture}
@@ -510,28 +510,28 @@ A staircase partition is a division of a staircase into <m>n</m> rectangles.
 				<latex-image>
 \begin{tikzpicture}[scale=0.65] %mathbook width=80%
 \begin{scope}
-\draw[thick] (0, 0) -!- (1,0) -!- (1,1) -!- (2,1) -!- (2,2) -!- (3,2) -!- (3,3) -!- (0,3) -!- (0,0);
-\draw[thick] (0,1) -!- (1,1) (0,2) -!- (2,2);
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (0,1) -- (1,1) (0,2) -- (2,2);
 \end{scope}
 
 \begin{scope}[shift={(5,0)}]
-\draw[thick] (0, 0) -!- (1,0) -!- (1,1) -!- (2,1) -!- (2,2) -!- (3,2) -!- (3,3) -!- (0,3) -!- (0,0);
-\draw[thick] (0,2) -!- (2,2) (1,2) -!- (1,1);
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (0,2) -- (2,2) (1,2) -- (1,1);
 \end{scope}
 
 \begin{scope}[shift={(10,0)}]
-\draw[thick] (0, 0) -!- (1,0) -!- (1,1) -!- (2,1) -!- (2,2) -!- (3,2) -!- (3,3) -!- (0,3) -!- (0,0);
-\draw[thick] (0,1) -!- (1,1) (2,3) -!- (2,2);
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (0,1) -- (1,1) (2,3) -- (2,2);
 \end{scope}
 
 \begin{scope}[shift={(15,0)}]
-\draw[thick] (0, 0) -!- (1,0) -!- (1,1) -!- (2,1) -!- (2,2) -!- (3,2) -!- (3,3) -!- (0,3) -!- (0,0);
-\draw[thick] (1,3) -!- (1,1) (1,2) -!- (2,2);
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (1,3) -- (1,1) (1,2) -- (2,2);
 \end{scope}
 
 \begin{scope}[shift={(20,0)}]
-\draw[thick] (0, 0) -!- (1,0) -!- (1,1) -!- (2,1) -!- (2,2) -!- (3,2) -!- (3,3) -!- (0,3) -!- (0,0);
-\draw[thick] (1,3) -!- (1,1) (2,3) -!- (2,2);
+\draw[thick] (0, 0) -- (1,0) -- (1,1) -- (2,1) -- (2,2) -- (3,2) -- (3,3) -- (0,3) -- (0,0);
+\draw[thick] (1,3) -- (1,1) (2,3) -- (2,2);
 \end{scope}
 \end{tikzpicture}
 				</latex-image>
