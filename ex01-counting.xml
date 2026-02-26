@@ -218,6 +218,275 @@ q(n,k) = q(n-k,k) + q(n-k, k-1).
 				</p>
 			</statement>
 		</exercise>
+		<exercise>
+			<statement>
+				<p>
+					A <b>stack sortable permutation</b> is a permutation <m>\pi = (\pi_1, \pi_2, \ldots, \pi_n)</m> in which the entries can be placed one by one 
+					in a stack (always in descending order from bottom to top) and removed (from top to bottom) 
+					to ultimately yield the identity permutation <m>(1,2,\ldots,n)</m>. This is perhaps more easily understood through example. 
+					The following figure shows that the permutation (3,1,2) is stack sortable.
+				</p>
+					
+				<p>
+					<image width="90%" xml:id="fig-img-count-ex0">
+						<latex-image>
+							\begin{tikzpicture}[scale=.8]
+							\begin{scope}
+								\draw (-.8,.5) -- (0,.5);
+								\draw (.8,.8) node {312};
+								\draw (0,.5) -- (0,-1);
+								\draw(0,-1) -- (.6,-1);
+								\draw(.6,-1) -- (.6,0);
+								\draw(.6,0) -- (.6,.5);
+								\draw(.6,.5) -- (1.4,.5);
+							\end{scope}
+							\begin{scope}[xshift=3cm]
+								\draw (-.8,.5) -- (0,.5);
+								
+								\draw (0,.5) -- (0,-1);
+								\draw(0,-1) -- (.6,-1);
+								\draw(.6,-1) -- (.6,0);
+								\draw(.6,0) -- (.6,.5);
+								\draw(.6,.5) -- (1.4,.5);
+							\end{scope}
+								\begin{scope}[xshift=6cm]
+								\draw (-.8,.5) -- (0,.5);
+								
+								\draw (0,.5) -- (0,-1);
+								\draw(0,-1) -- (.6,-1);
+								\draw(.6,-1) -- (.6,0);
+								\draw(.6,0) -- (.6,.5);
+								\draw(.6,.5) -- (1.4,.5);
+							\end{scope}
+							\begin{scope}[xshift=9cm]
+								\draw (-.8,.5) -- (0,.5);
+								
+								\draw (0,.5) -- (0,-1);
+								\draw(0,-1) -- (.6,-1);
+								\draw(.6,-1) -- (.6,0);
+								\draw(.6,0) -- (.6,.5);
+								\draw(.6,.5) -- (1.4,.5);
+							\end{scope}
+							\begin{scope}[xshift=12cm]
+								\draw (-.8,.5) -- (0,.5);
+								
+								\draw (0,.5) -- (0,-1);
+								\draw(0,-1) -- (.6,-1);
+								\draw(.6,-1) -- (.6,0);
+								\draw(.6,0) -- (.6,.5);
+								\draw(.6,.5) -- (1.4,.5);
+							\end{scope}
+							\begin{scope}[xshift=15cm]
+								\draw (-.8,.5) -- (0,.5);
+								
+								\draw (0,.5) -- (0,-1);
+								\draw(0,-1) -- (.6,-1);
+								\draw(.6,-1) -- (.6,0);
+								\draw(.6,0) -- (.6,.5);
+								\draw(.6,.5) -- (1.4,.5);
+							\end{scope}
+							\draw[->,double](1.0,-.6) -- (2.2,-.6);
+							\draw[->,double](4.2,-.6) -- (5.4,-.6);
+							\draw[->,double](7.1,-.6) -- (8.3,-.6);
+							\draw[->,double](10,-.6) -- (11.2,-.6);
+							\draw[->,double](13.2,-.6) -- (14.4,-.6);
+							
+						
+							\draw (3.8,.8) node {12};
+							\draw(3.3,-.6) node{3};
+						
+							\draw (8.8,.8) node {1};
+							\draw(9.3,-.6) node{3};
+							\draw (9.7,.8) node {2};
+						
+							\draw (11.8,.8) node {1};
+							\draw(12.3,-.6) node{3};
+							\draw(12.3,-.1) node{2};
+							\draw (14.5,.8) node {123};
+							\draw(6.8,.8)node{2};
+							\draw(6.3,-.6)node{3};
+							\draw(6.3,-.1)node{1};
+						
+						
+						\end{tikzpicture}
+					
+							
+						</latex-image>
+					</image>
+				</p>
+					
+				<p>
+					This example begins with the permutation <m>(3,1,2)</m>. We first place 3 in the stack, followed by 1.  
+					We then move the 1 to the output because we cannot place 2 on top of 1. We repeat this process again 
+					with 2 and finally remove 3. The output is the identity permutation <m>(1,2,3)</m>.  
+
+					<ol>
+						<li>
+							<p>
+								There is one permutation of <m>[3]</m> that is NOT stack sortable. What is it? 
+								(Note that this means that there are <m>3!-1 = 6-1=5</m> stack sortable permutations of <m>[3]</m>)
+							</p>
+						</li>
+						<li>
+							<p>
+								There are 14 stack sortable permutations of <m>[4]</m>. Find them all.
+							</p>
+						</li>
+						<li>
+							<p>
+								Let <m>S_n</m> denote the number of stack sortable permutatations of <m>[n]</m>. 
+								prove that <m>S_n</m> satisfies the Catalan recurrence
+								<me>
+									S_n = S_0 S_{n-1} + S_1 S_{n-2} + \cdots + S_{n-1} S_0 
+									= \sum_{k=0}^{n-1} S_k S_{n-1-k}.
+								</me>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+		</exercise>		
+		<exercise>
+			<statement>
+				<p>
+				There are two ways perform the multiplication <m>abc</m>, namely <m>(ab)c</m> and <m>a(bc)</m>. We just need to decide
+				how to add parentheses, which determines the order that we multiply these terms together.
+				<ol>
+					<li>
+						<p>
+							List the 5 ways to add parentheses to the product <m>abcd</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							List the 14 ways to add parentheses to the product <m>abcde</m>.
+						</p>
+					</li>
+					<li>						
+						<p>Find a bijection from "trianglulating a convex <m>(n+2)</m>-gon" to 
+							"parenthesizing a product of <m>n+1</m> symbols".
+							I have begun this process for you on the 5-gons below. 
+							I have labelled 4 of the 5 outer edges by the symbols <m>a,b,c,d</m>. 
+							Use these labels to create a natural label for each diagonal, one at a time. 
+							Finally, this will lead to a natural labeling of the unlabeled outer edge. 
+						</p>	
+						<p>
+							<image width="100%" xml:id="fig-img-count-ex1">
+								<latex-image>	
+									\begin{tikzpicture}
+									% Define the points of a regular pentagon
+									\path (0,0) coordinate (origin);
+									\path (0:1cm) coordinate (P0);
+									\path (1*72:1cm) coordinate (P1);
+									\path (2*72:1cm) coordinate (P2);
+									\path (3*72:1cm) coordinate (P3);
+									\path (4*72:1cm) coordinate (P4);
+									% Draw the edges of the pentagon
+									\draw (P0) -- (P1) -- (P2) -- (P3) -- (P4) -- cycle;
+									% Add "spokes"
+									\draw (P4) -- (P1) -- (P3);
+									
+									\draw (-1,0) node {$a$};
+									\draw (-.3,1) node {$b$};
+									\draw (.85,.65) node {$c$};
+									\draw (.85,-.65) node {$d$};
+									
+									\begin{scope}[shift={(3,0)}]
+									% Define the points of a regular pentagon
+									\path (0,0) coordinate (origin);
+									\path (0:1cm) coordinate (P0);
+									\path (1*72:1cm) coordinate (P1);
+									\path (2*72:1cm) coordinate (P2);
+									\path (3*72:1cm) coordinate (P3);
+									\path (4*72:1cm) coordinate (P4);
+									% Draw the edges of the pentagon
+									\draw (P0) -- (P1) -- (P2) -- (P3) -- (P4) -- cycle;
+									% Add "spokes"
+									\draw (P2) -- (P0) -- (P3);
+									
+									\draw (-1,0) node {$a$};
+									\draw (-.3,1) node {$b$};
+									\draw (.85,.65) node {$c$};
+									\draw (.85,-.65) node {$d$};
+									
+									\end{scope}
+									
+									\begin{scope}[shift={(6,0)}]
+									% Define the points of a regular pentagon
+									\path (0,0) coordinate (origin);
+									\path (0:1cm) coordinate (P0);
+									\path (1*72:1cm) coordinate (P1);
+									\path (2*72:1cm) coordinate (P2);
+									\path (3*72:1cm) coordinate (P3);
+									\path (4*72:1cm) coordinate (P4);
+									% Draw the edges of the pentagon
+									\draw (P0) -- (P1) -- (P2) -- (P3) -- (P4) -- cycle;
+									% Add "spokes"
+									\draw (P1) -- (P4) -- (P2);
+									
+									\draw (-1,0) node {$a$};
+									\draw (-.3,1) node {$b$};
+									\draw (.85,.65) node {$c$};
+									\draw (.85,-.65) node {$d$};
+									
+									\end{scope}
+									
+									\begin{scope}[shift={(9,0)}]
+									% Define the points of a regular pentagon
+									\path (0,0) coordinate (origin);
+									\path (0:1cm) coordinate (P0);
+									\path (1*72:1cm) coordinate (P1);
+									\path (2*72:1cm) coordinate (P2);
+									\path (3*72:1cm) coordinate (P3);
+									\path (4*72:1cm) coordinate (P4);
+									% Draw the edges of the pentagon
+									\draw (P0) -- (P1) -- (P2) -- (P3) -- (P4) -- cycle;
+									% Add "spokes"
+									\draw (P1) -- (P3) -- (P0);
+									
+									\draw (-1,0) node {$a$};
+									\draw (-.3,1) node {$b$};
+									\draw (.85,.65) node {$c$};
+									\draw (.85,-.65) node {$d$};
+									
+									\end{scope}
+									
+									\begin{scope}[shift={(12,0)}]
+									% Define the points of a regular pentagon
+									\path (0,0) coordinate (origin);
+									\path (0:1cm) coordinate (P0);
+									\path (1*72:1cm) coordinate (P1);
+									\path (2*72:1cm) coordinate (P2);
+									\path (3*72:1cm) coordinate (P3);
+									\path (4*72:1cm) coordinate (P4);
+									% Draw the edges of the pentagon
+									\draw (P0) -- (P1) -- (P2) -- (P3) -- (P4) -- cycle;
+									% Add "spokes"
+									\draw (P0) -- (P2) -- (P4);
+									
+									\draw (-1,0) node {$a$};
+									\draw (-.3,1) node {$b$};
+									\draw (.85,.65) node {$c$};
+									\draw (.85,-.65) node {$d$};
+									
+									\end{scope}
+									
+									\end{tikzpicture}				
+
+								</latex-image>
+							</image>
+						</p>
+						<p>
+							Complete this labeling process for the 5 pentagons above. Then give a general explanation for 
+							what to do with an <m>(n+2)</m>-gon. Give a 
+							convincing argument that you will eventually be able to label every diagonal, as well as 
+							labelling the final side of the original polygon.
+						</p>
+					</li>
+				</ol>
+				</p>
+			</statement>
+		</exercise>		
 	</exercises>
 
 

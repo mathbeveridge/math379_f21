@@ -12,21 +12,18 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Generating Function for Compositions of Integers.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Solving Another Recurrence with EGFs.</span>
 </h6>
-<p>Recall that a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">(strong) composition</em> of \(n\) into \(k\) parts is an ordered list of positve integers \((a_1, a_2, \ldots , a_k)\) such that \(\sum_{i=1}^k a_i =n\) and \(a_i \geq 1\) for \(1 \leq i \leq k\text{.}\) In this exercise, we will use generating functions to prove that the number of strong compositions of \(n\) into \(k\) parts is</p>
+<p>Consider the recurrence relation</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\displaystyle{{n-1 \choose k-1}} \mbox{ when } n \geq k, \mbox{ and } 0 \mbox{ when } n &lt; k.
+d_n = n d_{n-1} + 1 \mbox{ for } n \geq 1
 \end{equation*}
 </div>
-<p class="continuation">(Note:  \({n-1 \choose k-1}\) is defined to be \(0\) when \(n &lt; k\) because it is impossible to pick more elements than we have. So technically, we  don't need to point this out again.)</p>
+<p class="continuation">where \(d_0=1\text{.}\)</p>
 <ol class="lower-alpha">
-<li><p>There are 10 compositions of 6 into 3 parts. List them. </p></li>
-<li><p>What is the generating function \(G_1(x)\) for the number of compositions of \(n\) into 1 part? </p></li>
-<li><p>Use the product principle (for generating functions) to find the generating function \(G_2(x)\) for the number of  compositions of \(n\) into 2 parts. </p></li>
-<li><p>What is the generating function \(G_k(x)\) for the number of  compositions of \(n\) into \(k\) parts? </p></li>
-<li><p>Starting from the known power series for weak compositions \(F_k(x)\text{,}\) find the power series for compositions \(G_k(x)\text{.}\) Hint: re-index using \(m=n+k\text{.}\) </p></li>
-</ol></article><span class="incontext"><a href="exercises-13.html#exercise-63">in-context</a></span>
+<li><p>Let \(D(x) = \sum_{n=0}^{\infty} d_n \frac{x^n}{n!}\) be the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential generating function</em> (EGF) for this series. Find a simple closed formula for \(D(x)\text{.}\) </p></li>
+<li><p>Can you figure out how to use your answer in part (a) to find a simple closed formula for \(d_n\text{?}\) You will need to think about what happens when you multiply two power series together. </p></li>
+</ol></article><span class="incontext"><a href="exercises-12.html#exercise-63">in-context</a></span>
 </body>
 </html>

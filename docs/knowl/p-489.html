@@ -12,39 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Suppose that we have tasks \(\cA\) and \(\cB\) where you can complete \(\cA\) on an \(n\)-set in \(a_n\) ways, and you can complete \(\cB\) on an \(n\)-set in \(b_n\) ways.</p>
-<ol class="lower-alpha">
-<li>
-<p>How many ways are there to:</p>
-<ul class="disc">
-<li><p>Choose a \(k\)-set \(S \subset [n]\text{,}\)</p></li>
-<li><p>Perform \(\cA\) on \(S\text{,}\) and then</p></li>
-<li><p>Perform \(\cB\) on \(\overline{S} = [n] \backslash S\text{.}\)</p></li>
-</ul>
-</li>
-<li>
-<p>Let \(\cC\) be the following task:</p>
-<ul class="disc">
-<li><p>Choose a subset \(S \subset [n]\) (of any size \(k\text{,}\) where \(0 \leq k \leq n\text{,}\)</p></li>
-<li><p>Perform \(\cA\) on \(S\text{,}\) and then</p></li>
-<li><p>Perform \(\cB\) on \(\overline{S}\text{.}\)</p></li>
-</ul>
-<p class="continuation">How many ways \(c_n\) are there to complete task \(\cC\) on \([n]\text{?}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Be careful:</em> parts (b) and (c) depend upon the size \(k\) of \(S\text{.}\) </p>
-</li>
-<li>
-<p>Consider the  functions</p>
+<p>Recall that a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">(strong) composition</em> of \(n\) into \(k\) parts is an ordered list of positve integers \((a_1, a_2, \ldots , a_k)\) such that \(\sum_{i=1}^k a_i =n\) and \(a_i \geq 1\) for \(1 \leq i \leq k\text{.}\) In this exercise, we will use generating functions to prove that the number of strong compositions of \(n\) into \(k\) parts is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{ccc}
-A(x) = \sum_{n=0}^{\infty}  \frac{a_n}{n!} x^n &amp;  \mbox{and}  &amp;
-B(x) = \sum_{n=0}^{\infty} \frac{b_n}{n!} x^n.
-\end{array}
+\displaystyle{{n-1 \choose k-1}} \mbox{ when } n \geq k, \mbox{ and } 0 \mbox{ when } n &lt; k.
 \end{equation*}
 </div>
-<p class="continuation">Find the coefficient of \(x^n\) in the product \(A(x)B(x)\text{.}\) </p>
-</li>
-<li><p>Let \(C(x)\) be the exponential generating function <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">EGF</em> for the task \(\cC\) in part (b).  Use your answers from  problems 2 and 3 to prove that \(C(x) = A(x) B(x)\text{,}\) where \(A(x)\) and \(B(x)\) are the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">EGF</em>s for tasks \(\cA\) and \(\cB\text{.}\) </p></li>
+<p class="continuation">(Note:  \({n-1 \choose k-1}\) is defined to be \(0\) when \(n &lt; k\) because it is impossible to pick more elements than we have. So technically, we  don't need to point this out again.)</p>
+<ol class="lower-alpha">
+<li><p>There are 10 compositions of 6 into 3 parts. List them. </p></li>
+<li><p>What is the generating function \(G_1(x)\) for the number of compositions of \(n\) into 1 part? </p></li>
+<li><p>Use the product principle (for generating functions) to find the generating function \(G_2(x)\) for the number of  compositions of \(n\) into 2 parts. </p></li>
+<li><p>What is the generating function \(G_k(x)\) for the number of  compositions of \(n\) into \(k\) parts? </p></li>
+<li><p>Starting from the known power series for weak compositions \(F_k(x)\text{,}\) find the power series for compositions \(G_k(x)\text{.}\) Hint: re-index using \(m=n+k\text{.}\) </p></li>
 </ol>
-<span class="incontext"><a href="exercises-14.html#p-489">in-context</a></span>
+<span class="incontext"><a href="exercises-13.html#p-489">in-context</a></span>
 </body>
 </html>

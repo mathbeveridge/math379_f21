@@ -158,84 +158,84 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="genfun-exercise"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">17</span> <span class="title">Generating Function Exercises</span>
 </h2>
-<section class="introduction" id="introduction-17"><p id="p-537"><em class="emphasis">Pro Tip.</em> When solving recurrences using generating functions, it is nice to know that you have the right answer. So you should get into the habit of checking along the way!</p>
-<p id="p-538"><em class="emphasis">Before:</em> Calculate the first few \(a_n\) using the recurrence. Mathematica is a great tool for this! For example, the following code will print out the first terms of the sequence \(a_0 = 3\text{,}\) \(a_1 = 5\text{,}\) \(a_n = 2a_{n-1} + a_{n-2} + 4\text{.}\)</p>
+<section class="introduction" id="introduction-17"><p id="p-549"><em class="emphasis">Pro Tip.</em> When solving recurrences using generating functions, it is nice to know that you have the right answer. So you should get into the habit of checking along the way!</p>
+<p id="p-550"><em class="emphasis">Before:</em> Calculate the first few \(a_n\) using the recurrence. Mathematica is a great tool for this! For example, the following code will print out the first terms of the sequence \(a_0 = 3\text{,}\) \(a_1 = 5\text{,}\) \(a_n = 2a_{n-1} + a_{n-2} + 4\text{.}\)</p>
 <pre class="code-display tex2jax_ignore">
 myseq[0] = 3
 myseq[1] = 5
 myseq[n_] := 2 myseq[n-1] + myseq[n-2] + 4
 Table[myseq[k], {k,0,5}]
 </pre>
-<p id="p-539"><em class="emphasis">During:</em> Once you have a candidate generating function, you can use the <code class="code-inline tex2jax_ignore">Series[]</code> function in Mathematica to find the first terms of its Taylor series. These values should match the values above (NOTE: if you are using an exponential generating function, then you must divide these values by n!)</p>
-<p id="p-540"><em class="emphasis">After</em>: Once you have a simple formula for the sequence, you can calculate the first few values and compare once again. Mathematica is your friend.</p></section><section class="exercises" id="exercises-16"><h3 class="heading hide-type">
+<p id="p-551"><em class="emphasis">During:</em> Once you have a candidate generating function, you can use the <code class="code-inline tex2jax_ignore">Series[]</code> function in Mathematica to find the first terms of its Taylor series. These values should match the values above (NOTE: if you are using an exponential generating function, then you must divide these values by n!)</p>
+<p id="p-552"><em class="emphasis">After</em>: Once you have a simple formula for the sequence, you can calculate the first few values and compare once again. Mathematica is your friend.</p></section><section class="exercises" id="exercises-16"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-70"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-541">Here is a potpourri of counting problems. In each case,</p>
+<article class="exercise exercise-like" id="exercise-72"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-553">Here is a potpourri of counting problems. In each case,</p>
 <ul class="disc">
-<li id="li-298"><p id="p-542">Find a concise generating function for answering the question, and</p></li>
-<li id="li-299"><p id="p-543">identify what coefficient you need.</p></li>
+<li id="li-304"><p id="p-554">Find a concise generating function for answering the question, and</p></li>
+<li id="li-305"><p id="p-555">identify what coefficient you need.</p></li>
 </ul>
 <p class="continuation"><em class="emphasis">You do not need to actually solve the problem, but feel free to do so using Mathematica, if you like.</em></p>
 <ol class="lower-alpha">
-<li id="li-300"><p id="p-544">How many ways are there to distribute 14 forks to 10 people so that each person receives one or two forks?</p></li>
-<li id="li-301"><p id="p-545">You can buy soda either by the can, or in 6-, 12-, 24- or 30-packs. How many ways are there to buy exactly \(k\) cans of soda?</p></li>
-<li id="li-302"><p id="p-546">How many ways are there to put a total postage of 75 cents on an envelope, using 3-, 5-, 10- and 12-cent stamps?</p></li>
-<li id="li-303"><p id="p-547">You go to a Halloween party dressed as  mathematician Paul Erdos. While there, you select 24 pieces of candy from among five different types. How many ways can you do this if you want at least two pieces of candy of each type?</p></li>
-<li id="li-304"><p id="p-548">How many solutions to \(z_1+z_2+z_3 = 15\) are there, where each \(z_i\) is an integer satisfying \(0 \leq z_i \leq 8\text{?}\)</p></li>
-<li id="li-305"><p id="p-549">How many ways are there to make change for a dollar using only pennies, nickels, dimes and quarters?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-550">We consider two sports with tricky scoring rules.</p>
+<li id="li-306"><p id="p-556">How many ways are there to distribute 14 forks to 10 people so that each person receives one or two forks?</p></li>
+<li id="li-307"><p id="p-557">You can buy soda either by the can, or in 6-, 12-, 24- or 30-packs. How many ways are there to buy exactly \(k\) cans of soda?</p></li>
+<li id="li-308"><p id="p-558">How many ways are there to put a total postage of 75 cents on an envelope, using 3-, 5-, 10- and 12-cent stamps?</p></li>
+<li id="li-309"><p id="p-559">You go to a Halloween party dressed as  mathematician Paul Erdos. While there, you select 24 pieces of candy from among five different types. How many ways can you do this if you want at least two pieces of candy of each type?</p></li>
+<li id="li-310"><p id="p-560">How many solutions to \(z_1+z_2+z_3 = 15\) are there, where each \(z_i\) is an integer satisfying \(0 \leq z_i \leq 8\text{?}\)</p></li>
+<li id="li-311"><p id="p-561">How many ways are there to make change for a dollar using only pennies, nickels, dimes and quarters?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-562">We consider two sports with tricky scoring rules.</p>
 <ol class="lower-alpha">
-<li id="li-306">
-<p id="p-551">American Football is played on a rectangular field between two teams. The field is 100 yards long, with a ten yard end zone at each end, each of which has a set of goalposts. The game is played with a single ball in the shape of a prolate spheroid. <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/football.jpg" class="contained"></div> The offensive team tries to advance the ball down the field. While on offense (in possession of the ball), a team can score in four ways</p>
+<li id="li-312">
+<p id="p-563">American Football is played on a rectangular field between two teams. The field is 100 yards long, with a ten yard end zone at each end, each of which has a set of goalposts. The game is played with a single ball in the shape of a prolate spheroid. <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/football.jpg" class="contained"></div> The offensive team tries to advance the ball down the field. While on offense (in possession of the ball), a team can score in four ways</p>
 <ul class="disc">
-<li id="li-307"><p id="p-552">kicking a field goal (3 points) by kicking the ball through the goalposts in the opposing team's end zone;</p></li>
-<li id="li-308"><p id="p-553">scoring a touchdown (6 points) by advancing the ball across the length of the field and into the opposing team's end zone;</p></li>
-<li id="li-309"><p id="p-554">scoring a touchdown plus extra point (7 points) by following up this touchdown by kicking the ball through the goalposts; and</p></li>
-<li id="li-310"><p id="p-555">scoring a touchdown plus two-point conversion (8 points) by following up this touchdown with another successful offensive scoring play.</p></li>
+<li id="li-313"><p id="p-564">kicking a field goal (3 points) by kicking the ball through the goalposts in the opposing team's end zone;</p></li>
+<li id="li-314"><p id="p-565">scoring a touchdown (6 points) by advancing the ball across the length of the field and into the opposing team's end zone;</p></li>
+<li id="li-315"><p id="p-566">scoring a touchdown plus extra point (7 points) by following up this touchdown by kicking the ball through the goalposts; and</p></li>
+<li id="li-316"><p id="p-567">scoring a touchdown plus two-point conversion (8 points) by following up this touchdown with another successful offensive scoring play.</p></li>
 </ul>
 <p class="continuation">While on defense (not in possession of the ball), a team can score in one way:</p>
-<ul class="disc"><li id="li-311"><p id="p-556">scoring a safety (2 points) by tackling the ball carrier (on the opposing team) in his own endzone.</p></li></ul>
+<ul class="disc"><li id="li-317"><p id="p-568">scoring a safety (2 points) by tackling the ball carrier (on the opposing team) in his own endzone.</p></li></ul>
 <p class="continuation">The game is played for sixty minutes. Use the product principle for generating functions to find a concise formula for \(F(x)\text{,}\) the generating function for the number of ways to to score \(n\) points in a football game.</p>
 </li>
-<li id="li-312">
-<p id="p-557">Quidditch is played on an oval pitch, five hundred feet long. At each end, there are three hooped goal posts of different heights, surrounded by a scoring area. The game is played with four bewitched flying spherical balls: two Bludgers, one Quaffle and one Snitch. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/quidditch.jpg" class="contained"></div> Two teams of wizards on flying broomsticks zip around the pitch trying to score points. This can be done in two ways.</p>
+<li id="li-318">
+<p id="p-569">Quidditch is played on an oval pitch, five hundred feet long. At each end, there are three hooped goal posts of different heights, surrounded by a scoring area. The game is played with four bewitched flying spherical balls: two Bludgers, one Quaffle and one Snitch. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/quidditch.jpg" class="contained"></div> Two teams of wizards on flying broomsticks zip around the pitch trying to score points. This can be done in two ways.</p>
 <ul class="disc">
-<li id="li-313"><p id="p-558">Sending the Quaffle through any of the three (distinct) goal hoops in the appropriate scoring area (10 points); and</p></li>
-<li id="li-314"><p id="p-559">Capturing the Snitch (150 points).</p></li>
+<li id="li-319"><p id="p-570">Sending the Quaffle through any of the three (distinct) goal hoops in the appropriate scoring area (10 points); and</p></li>
+<li id="li-320"><p id="p-571">Capturing the Snitch (150 points).</p></li>
 </ul>
 <p class="continuation">The game ends when the Snitch is caught, or an agreement is reached between the captains of both teams. Use the product principle for generating functions to find a concise formula for \(Q(x)\text{,}\) the generating function for the number of ways to to score \(n\) points in a Quidditch game. (Note: you must treat the three goal hoops as distinct.)</p>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-72"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-560">Use generating functions to find an explicit formula for \(b_n\) if \(b_0=3\) and \(b_1=7\) and \(b_n = 3 b_{n-1} - 2 b_{n-2}\) for \(n \geq 2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-561">Consider the Fibonacci recurrence \(f_0=0\text{,}\) \(f_1=1\) and \(f_n = f_{n-1} + f_{n-2}\) for \(n \geq 2.\) Prove that the ordinary generating function of this sequence is</p>
+</ol></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-572">Use generating functions to find an explicit formula for \(b_n\) if \(b_0=3\) and \(b_1=7\) and \(b_n = 3 b_{n-1} - 2 b_{n-2}\) for \(n \geq 2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-75"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-573">Consider the Fibonacci recurrence \(f_0=0\text{,}\) \(f_1=1\) and \(f_n = f_{n-1} + f_{n-2}\) for \(n \geq 2.\) Prove that the ordinary generating function of this sequence is</p>
 <div class="displaymath">
 \begin{equation*}
 F(x) = \frac{x}{1-x-x^2}.
 \end{equation*}
 </div>
-<p class="continuation">You <em class="emphasis">do not</em> need to find an explicit formula for \(f_n\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-562">Consider the recurrence \(a_0=1\text{,}\) \(a_1=2\text{,}\) and \(a_n =  na_{n-1} + n(n-1) a_{n-2}\) for \(n \geq 2\text{.}\)</p>
+<p class="continuation">You <em class="emphasis">do not</em> need to find an explicit formula for \(f_n\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-76"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-574">Consider the recurrence \(a_0=1\text{,}\) \(a_1=2\text{,}\) and \(a_n =  na_{n-1} + n(n-1) a_{n-2}\) for \(n \geq 2\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-315"><p id="p-563">Find the <em class="emphasis">exponential</em> generating function \(A(x)\) for this sequence.</p></li>
-<li id="li-316"><p id="p-564">Compare \(A(x)\) to \(F(x)\) from the previous Fibonacci problem. From this find a formula for \(a_n\) as a function of Fibonacci numbers \(f_k\text{.}\) In other words, you will get an expression for \(a_n\) that includes term(s) of the form \(f_k\text{.}\) (Note: the fact that \(f_0=0\) will be helpful as you change from functions back to power series.)</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-75"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-565">Consider the recurrence \(a_0=1\) and \(a_n = n a_{n-1} + 3^n\) for \(n \geq 1.\)</p>
+<li id="li-321"><p id="p-575">Find the <em class="emphasis">exponential</em> generating function \(A(x)\) for this sequence.</p></li>
+<li id="li-322"><p id="p-576">Compare \(A(x)\) to \(F(x)\) from the previous Fibonacci problem. From this find a formula for \(a_n\) as a function of Fibonacci numbers \(f_k\text{.}\) In other words, you will get an expression for \(a_n\) that includes term(s) of the form \(f_k\text{.}\) (Note: the fact that \(f_0=0\) will be helpful as you change from functions back to power series.)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-577">Consider the recurrence \(a_0=1\) and \(a_n = n a_{n-1} + 3^n\) for \(n \geq 1.\)</p>
 <ol class="lower-alpha">
-<li id="li-317"><p id="p-566">Find the <em class="emphasis">exponential</em> generating function for \(a_n\text{.}\)</p></li>
-<li id="li-318"><p id="p-567">Find an explicit formula for \(a_n\text{.}\) Your final answer will involve a summation.</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-76"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-568">A coin pyramid is an arrangement of n coins in rows such that</p>
+<li id="li-323"><p id="p-578">Find the <em class="emphasis">exponential</em> generating function for \(a_n\text{.}\)</p></li>
+<li id="li-324"><p id="p-579">Find an explicit formula for \(a_n\text{.}\) Your final answer will involve a summation.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-580">A coin pyramid is an arrangement of n coins in rows such that</p>
 <ul class="disc">
-<li id="li-319"><p id="p-569">Coins in each row form a contiguous block</p></li>
-<li id="li-320"><p id="p-570">For \(k&gt;1\text{,}\) coins in the \(k\)th row touch exactly 2 coins from the row beneath it.</p></li>
+<li id="li-325"><p id="p-581">Coins in each row form a contiguous block</p></li>
+<li id="li-326"><p id="p-582">For \(k&gt;1\text{,}\) coins in the \(k\)th row touch exactly 2 coins from the row beneath it.</p></li>
 </ul>
 <p class="continuation">Here is an example of a coin pyramid with 10 coins in the first row: <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-genfun-exercise2.svg" role="img" class="contained"></div> Let \(a_n\) be the number of coin pyramids with \(n\) coins in the first row. We define \(a_0=0\text{,}\) meaning that we forbid the "empty coin pyramid." We have \(a_1=1\) and \(a_2=2\text{.}\) Here they are: <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-genfun-exercise3.svg" role="img" class="contained"></div></p>
 <ol class="lower-alpha">
-<li id="li-321"><p id="p-571">We have \(a_3=5\) and \(a_4=13.\) List all the coin pyramids for \(n=3,4.\)</p></li>
-<li id="li-322">
-<p id="p-572">Give a combinatorial proof for the recurrence</p>
+<li id="li-327"><p id="p-583">We have \(a_3=5\) and \(a_4=13.\) List all the coin pyramids for \(n=3,4.\)</p></li>
+<li id="li-328">
+<p id="p-584">Give a combinatorial proof for the recurrence</p>
 <div class="displaymath">
 \begin{equation*}
 a_n =1 + \sum_{j=1}^{n-1} (n-j) a_j  \mbox{for}  n \geq 1.
@@ -243,8 +243,8 @@ a_n =1 + \sum_{j=1}^{n-1} (n-j) a_j  \mbox{for}  n \geq 1.
 </div>
 <p class="continuation">Note that this formula also holds for \(n=1\) (which makes life easier for us in the next part of the question).</p>
 </li>
-<li id="li-323">
-<p id="p-573">Let \(A(x) = \sum_{n=0}^{\infty} a_n x^n\text{,}\)  the ordinary generating function for coin pyramids. Starting with the recursion above, find a simple closed formula for \(A(x)\text{.}\) Hint: you should start by explaining why</p>
+<li id="li-329">
+<p id="p-585">Let \(A(x) = \sum_{n=0}^{\infty} a_n x^n\text{,}\)  the ordinary generating function for coin pyramids. Starting with the recursion above, find a simple closed formula for \(A(x)\text{.}\) Hint: you should start by explaining why</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{j=1}^{n-1} (n-j) a_j = \sum_{j=0}^{n} (n-j) a_j
@@ -252,22 +252,22 @@ a_n =1 + \sum_{j=1}^{n-1} (n-j) a_j  \mbox{for}  n \geq 1.
 </div>
 <p class="continuation">for this particular sequence.</p>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-574">A group of  people decide to play a game called "Night of the Zombie King." The people are split into a team of zombies and a team of humans. The people are considered distinct, but there are only 4 types of roles in the game.</p>
+</ol></article><article class="exercise exercise-like" id="exercise-79"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-586">A group of  people decide to play a game called "Night of the Zombie King." The people are split into a team of zombies and a team of humans. The people are considered distinct, but there are only 4 types of roles in the game.</p>
 <ol class="lower-alpha">
-<li id="li-324"><p id="p-575">A team of \(n \geq 1\) zombies consists of one Zombie King and \(n-1\) regular zombies. You cannot have a zombie team of size 0. Let \(z_n\) be the number of ways to create a zombie team from \(n\) people (so \(z_0=0\)). Let \(Z(x)\) be the <em class="emphasis">exponential generating function</em> for creating a zombie team. What is the formula for \(Z(x)\text{?}\)</p></li>
-<li id="li-325"><p id="p-576">A human team of \(n\) people is partitioned into two subsets: militia and townsfolk. It is possible for the human team to have 0 members. It is also possible for all humans to be militia and none to be townsfolk, or vice versa. Let \(h_n\) be the number of ways to create a human team starting with \(n\) people (so \(h_0=1\)). Let \(H(x)\) be the <em class="emphasis">exponential generating function</em> for creating a human team. What is the formula for \(H(x)\text{?}\)</p></li>
-<li id="li-326"><p id="p-577">Let \(g_n\) be the number of ways to split \(n\) people into teams of zombies and humans. We are allowed to take any subset of the people to be on the zombie team. Use parts (a) and (b) to find a simple expression for the exponential generating function \(G(x) = \sum_{n=0}^{\infty} g_n \frac{x^n}{n!}\text{.}\)</p></li>
-<li id="li-327"><p id="p-578">Use part (c) to find a simple formula for \(g_n\text{.}\)</p></li>
-<li id="li-328"><p id="p-579">Give a combinatorial explanation for the formula in part (d).</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-580">In this problem, you will create the <em class="emphasis">exponential generating function</em> for the number of surjections onto a set of size \(k\text{.}\)</p>
+<li id="li-330"><p id="p-587">A team of \(n \geq 1\) zombies consists of one Zombie King and \(n-1\) regular zombies. You cannot have a zombie team of size 0. Let \(z_n\) be the number of ways to create a zombie team from \(n\) people (so \(z_0=0\)). Let \(Z(x)\) be the <em class="emphasis">exponential generating function</em> for creating a zombie team. What is the formula for \(Z(x)\text{?}\)</p></li>
+<li id="li-331"><p id="p-588">A human team of \(n\) people is partitioned into two subsets: militia and townsfolk. It is possible for the human team to have 0 members. It is also possible for all humans to be militia and none to be townsfolk, or vice versa. Let \(h_n\) be the number of ways to create a human team starting with \(n\) people (so \(h_0=1\)). Let \(H(x)\) be the <em class="emphasis">exponential generating function</em> for creating a human team. What is the formula for \(H(x)\text{?}\)</p></li>
+<li id="li-332"><p id="p-589">Let \(g_n\) be the number of ways to split \(n\) people into teams of zombies and humans. We are allowed to take any subset of the people to be on the zombie team. Use parts (a) and (b) to find a simple expression for the exponential generating function \(G(x) = \sum_{n=0}^{\infty} g_n \frac{x^n}{n!}\text{.}\)</p></li>
+<li id="li-333"><p id="p-590">Use part (c) to find a simple formula for \(g_n\text{.}\)</p></li>
+<li id="li-334"><p id="p-591">Give a combinatorial explanation for the formula in part (d).</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-80"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-592">In this problem, you will create the <em class="emphasis">exponential generating function</em> for the number of surjections onto a set of size \(k\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-329"><p id="p-581">Let \(t_n\) be the number of surjections from \([n]\) to \([1]\text{,}\) where \([1] = \{ 1 \}\) is the set of size 1. Find the formula for the EGF \(T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.\) (And pay close attention to the value of \(t_0\text{.}\)).</p></li>
-<li id="li-330"><p id="p-582">Explain why \(T(x)^2\) is the EGF for the number of surjections from \([n]\) to \([2]\text{.}\)</p></li>
-<li id="li-331"><p id="p-583">Find the formula for the EGF for the number of surjections from \([n]\) to \([k]\text{.}\)</p></li>
-<li id="li-332">
-<p id="p-584">Use your answer from part (c) to prove that the EGF for set partitions into exactly \(k\) parts is</p>
+<li id="li-335"><p id="p-593">Let \(t_n\) be the number of surjections from \([n]\) to \([1]\text{,}\) where \([1] = \{ 1 \}\) is the set of size 1. Find the formula for the EGF \(T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.\) (And pay close attention to the value of \(t_0\text{.}\)).</p></li>
+<li id="li-336"><p id="p-594">Explain why \(T(x)^2\) is the EGF for the number of surjections from \([n]\) to \([2]\text{.}\)</p></li>
+<li id="li-337"><p id="p-595">Find the formula for the EGF for the number of surjections from \([n]\) to \([k]\text{.}\)</p></li>
+<li id="li-338">
+<p id="p-596">Use your answer from part (c) to prove that the EGF for set partitions into exactly \(k\) parts is</p>
 <div class="displaymath">
 \begin{equation*}
 S_k(x) = \frac{1}{k!} (e^x -1)^k.

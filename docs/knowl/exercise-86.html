@@ -12,18 +12,11 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">A Permutation Identity.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Descending Binary Trees and the Eulerian Numbers.</span>
 </h6>
-<p>Prove the following identity in two different ways: \[ \sum_{k=1}^{n-1} k \cdot k! = n! - 1 \mbox{ for } n \geq 2. \]</p>
 <ol class="lower-alpha">
-<li>
-<p>Give a combinatorial proof of this identity.</p>
-<ol class="lower-roman">
-<li><p>Consider a non-identity permutation \(p_1p_2 \cdots p_n\text{.}\) Let \(0 \leq j \leq n-1\) be the  largest integer such that \(p_1p_2 \cdots p_j = 12 \cdots (j-1)\text{.}\) That is, the first \(j-1\) elements map to themselves, but element \(j\) does not map to \(j\text{.}\) Prove that the number of such \(n\)-permutations is  \((n-j) \cdot (n-j)!\text{.}\) </p></li>
-<li><p>The RHS  counts the number of permutations <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!) </p></li>
-</ol>
-</li>
-<li><p>Prove the identity using (weak) induction. </p></li>
-</ol></article><span class="incontext"><a href="exercises-19.html#exercise-86">in-context</a></span>
+<li><p>Let \(B_R(n,k)\) be the number of descending binary trees on \(n\) vertices in which \(k-1\) vertices have a right child. Prove that \(B_R(n,k) = A(n,k)\text{.}\) You may assume the mapping in problem 2 is a bijection. </p></li>
+<li><p>Let \(B_L(n,k)\) be the number of descending binary trees on \(n\) vertices in which \(k-1\) vertices have a left child. Prove that \(B_L(n,k) = A(n,k)\text{.}\) You may assume that part (a)  is true. </p></li>
+</ol></article><span class="incontext"><a href="exercises-18.html#exercise-86">in-context</a></span>
 </body>
 </html>

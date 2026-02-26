@@ -12,40 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For any \(k \in \mathbb{N}\text{,}\)</p>
+<p>This example begins with the permutation \((3,1,2)\text{.}\) We first place 3 in the stack, followed by 1. We then move the 1 to the output because we cannot place 2 on top of 1. We repeat this process again with 2 and finally remove 3. The output is the identity permutation \((1,2,3)\text{.}\)</p>
+<ol class="lower-alpha">
+<li><p>There is one permutation of \([3]\) that is NOT stack sortable. What is it? (Note that this means that there are \(3!-1 = 6-1=5\) stack sortable permutations of \([3]\))</p></li>
+<li><p>There are 14 stack sortable permutations of \([4]\text{.}\) Find them all.</p></li>
+<li>
+<p>Let \(S_n\) denote the number of stack sortable permutatations of \([n]\text{.}\) prove that \(S_n\) satisfies the Catalan recurrence</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcccl}
-\displaystyle{
-(1+x)^k
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{k} {k \choose n} x^n
-}&amp;=&amp; \displaystyle{
-1 + {k \choose 1} x + {k \choose 2} x^2 + {k \choose 3} x^3 + \cdots  + {k
-\choose k} x^k
-} \\
-\displaystyle{
-(1+ax)^k
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{k} {k \choose n} a^n x^n
-}&amp;=&amp; \displaystyle{
-1 + {k \choose 1} a x + {k \choose 2} a^2 x^2 + {k \choose 3} a^3 x^3 + \cdots + {k
-\choose k} a^k x^k
-} \\
-\displaystyle{
-(1+x^r)^k
-}
-&amp;=&amp; \displaystyle{
-\sum_{n=0}^{k} {k \choose n}  x^{nr}
-}&amp;=&amp; \displaystyle{
-1 + {k \choose 1}  x^r + {k \choose 2}  x^{2r} + {k \choose 3}  x^{3r} + \cdots + {k
-\choose k} x^{kr}
-} \\
-\end{array}
+S_n = S_0 S_{n-1} + S_1 S_{n-2} + \cdots + S_{n-1} S_0 
+= \sum_{k=0}^{n-1} S_k S_{n-1-k}.
 \end{equation*}
 </div>
-<span class="incontext"><a href="bestiarum.html#p-436">in-context</a></span>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-11.html#p-436">in-context</a></span>
 </body>
 </html>

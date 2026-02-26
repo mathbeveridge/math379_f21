@@ -12,7 +12,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Use this fact to create a tree with degree sequence \(d_1 \geq d_2 \geq \cdots \geq d_n\text{.}\)</p>
+<p>Let \(T(n,k)\) be the number of labeled forests on \([n]\) with \(k\) components such that the vertices in \([k]\) are all in different tree components.</p>
+<ol class="lower-alpha">
+<li><p>Show that \(T(4,2)=8\) by enumerating all the forests on 4 vertices with 2 trees in which vertex 1 and vertex 2 are in different trees. </p></li>
+<li>
+<p>Prove the recurrence relation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1 \leq k \leq n
+\end{equation*}
+</div>
+<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.) </p>
+</li>
+</ol>
 <span class="incontext"><a href="exercises-25.html#p-709">in-context</a></span>
 </body>
 </html>

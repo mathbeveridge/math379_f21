@@ -12,12 +12,40 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For \(n \geq 0\text{,}\) let \(b_n\) be the number of ways to pay \(n\) cents using dimes. Write out the first 6 <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">nonzero</em> terms of the generating function</p>
+<p>For any \(k \in \mathbb{N}\text{,}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-B(x) = b_0 + b_1 x + b_2 x^2 + b_3x^3 + \cdots
+\begin{array}{rcccl}
+\displaystyle{
+(1+x)^k
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{k} {k \choose n} x^n
+}&amp;=&amp; \displaystyle{
+1 + {k \choose 1} x + {k \choose 2} x^2 + {k \choose 3} x^3 + \cdots  + {k
+\choose k} x^k
+} \\
+\displaystyle{
+(1+ax)^k
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{k} {k \choose n} a^n x^n
+}&amp;=&amp; \displaystyle{
+1 + {k \choose 1} a x + {k \choose 2} a^2 x^2 + {k \choose 3} a^3 x^3 + \cdots + {k
+\choose k} a^k x^k
+} \\
+\displaystyle{
+(1+x^r)^k
+}
+&amp;=&amp; \displaystyle{
+\sum_{n=0}^{k} {k \choose n}  x^{nr}
+}&amp;=&amp; \displaystyle{
+1 + {k \choose 1}  x^r + {k \choose 2}  x^{2r} + {k \choose 3}  x^{3r} + \cdots + {k
+\choose k} x^{kr}
+} \\
+\end{array}
 \end{equation*}
 </div>
-<span class="incontext"><a href="exercises-12.html#p-448">in-context</a></span>
+<span class="incontext"><a href="bestiarum.html#p-448">in-context</a></span>
 </body>
 </html>
