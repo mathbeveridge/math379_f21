@@ -324,7 +324,7 @@ q(n,k) = q(n-k,k) + q(n-k, k-1).
 						<li>
 							<p>
 								There is one permutation of <m>[3]</m> that is NOT stack sortable. What is it? 
-								(Note that this means that there are <m>3!-1 = 6-1=5</m> stack sortable permutations of <m>[3]</m>)
+								(Note that this means that there are <m>3!-1 = 6-1=5</m> stack sortable permutations of <m>[3]</m>.)
 							</p>
 						</li>
 						<li>
@@ -335,7 +335,7 @@ q(n,k) = q(n-k,k) + q(n-k, k-1).
 						<li>
 							<p>
 								Let <m>S_n</m> denote the number of stack sortable permutatations of <m>[n]</m>. 
-								prove that <m>S_n</m> satisfies the Catalan recurrence
+								Prove that <m>S_n</m> satisfies the Catalan recurrence
 								<me>
 									S_n = S_0 S_{n-1} + S_1 S_{n-2} + \cdots + S_{n-1} S_0 
 									= \sum_{k=0}^{n-1} S_k S_{n-1-k}.
@@ -365,7 +365,7 @@ q(n,k) = q(n-k,k) + q(n-k, k-1).
 					<li>						
 						<p>Find a bijection from "trianglulating a convex <m>(n+2)</m>-gon" to 
 							"parenthesizing a product of <m>n+1</m> symbols".
-							I have begun this process for you on the 5-gons below. 
+							I have started this process for you on the 5-gons below. 
 							I have labelled 4 of the 5 outer edges by the symbols <m>a,b,c,d</m>. 
 							Use these labels to create a natural label for each diagonal, one at a time. 
 							Finally, this will lead to a natural labeling of the unlabeled outer edge. 
