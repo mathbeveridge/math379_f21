@@ -116,7 +116,7 @@ provided that <m>x</m> satisifies: \underline{\phantom{asdfasdfasdf}<m>-1 &lt; x
 				<li>
 					<p>
  Using the product and addition principles, we can show that the  function <m>D(x)= A(x)B(x)C(x)</m>
-is the generating function for the number of ways to pay <m>n</m> cents using nickels, dimes, and/or quarters. Use your answer in question 4 to find the formula for <m>D(x)</m>. (The same restrictions on <m>x</m> apply here.)
+is the generating function for the number of ways to pay <m>n</m> cents using nickels, dimes, and/or quarters. Use your answer to part (d) to find the formula for <m>D(x)</m>. (The same restrictions on <m>x</m> apply here.)
 
 <!--solution>
 <p>
