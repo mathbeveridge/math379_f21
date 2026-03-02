@@ -10,18 +10,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+<body><div class="solution solution-like">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-d_n &amp;=&amp; n  d_{n-1} + 1 \mbox{ for } n \geq 1 \\
-d_n \frac{x^n}{n!} &amp;=&amp; ( n  d_{n-1} + 1 )\frac{x^n}{n!}\mbox{ for } n \geq 2 \\
-\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} (n  d_{n-1} + 1 )\frac{x^n}{n!} \\
-\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; \sum_{n=1}^{\infty} n  d_{n-1} \frac{x^n}{n!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
-\sum_{n=1}^{\infty} d_n \frac{x^n}{n!} &amp;=&amp; x \sum_{n=1}^{\infty}   d_{n-1} \frac{x^{n-1}}{(n-1)!} +  \sum_{n=1}^{\infty}   \frac{x^n}{n!} \\
-D(x) -1 &amp;=&amp; x D(x) + e^x -1 \\
-D(x) (1 - x)  &amp;=&amp;  e^x  \\
-D(x) &amp;=&amp; \frac{e^x}{1-x}
-\end{array}
+C(x) = \sum_{n=0}^{\infty} 4^n x^n = \sum_{n=0}^{\infty} (4^n n! ) \frac{x^n}{n!}
 \end{equation*}
-</div></div></body>
+</div>
+<p class="continuation">so \(c_n = 4^n n!\text{.}\)</p>
+</div></body>
 </html>
