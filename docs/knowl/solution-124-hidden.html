@@ -11,11 +11,11 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
+<p>We can model this problem using \(n\) identical balls, \(k\) distinct boxes, repetition allowed, boxes cannot be empty.  Therefore the number  of  ways is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-F_1(x) = 1 + x + x^2 + x^3 + \cdots = \sum_{n=0}^{\infty} x^n = \frac{1}{1-x}.
+{n+k-1 \choose k-1}
 \end{equation*}
 </div>
-<p class="continuation">Basically, there is one way to partition \(n\) into one part for every \(n \geq 0\text{.}\)</p>
 </div></body>
 </html>
