@@ -10,5 +10,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><p>We must have \(a_0=0\) (to use the theorem). For \(n\geq 1\text{,}\) we have \(a_n=1\text{,}\) since there is one way to "do nothing." So \​begin{eqnarray*} A(x) &amp;=&amp; \sum_{n=1}^{\infty} x^n = x \sum_{n=1}^{\infty} x^{n-1} = x \sum_{m=0}^{\infty} x^m = \frac{x}{1-x} \\ B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{1-x}} = \frac{1-x}{1-2x} = 1 + \frac{x}{1-2x} \end{eqnarray*}</p></div></body>
+<body><div class="solution solution-like"><ul class="disc">
+<li><p>Pick a \(k\) such that \(1 \leq k \leq n\text{.}\)</p></li>
+<li><p>Line up all the children in a row. This can be done in \(n!\) ways.</p></li>
+<li><p>The first \(k\) children form a circle. We must divide by \(k\) for symmetry since there are \(k\) different orderings of these children that result in the same circle.</p></li>
+<li><p>The last \(n-k\) children head off for ice cream, keeping the same order.</p></li>
+</ul></div></body>
 </html>

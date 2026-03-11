@@ -12,11 +12,27 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Give a combinatorial proof of this identity.</p>
-<ol class="lower-roman">
-<li><p>Consider a non-identity permutation \(p_1p_2 \cdots p_n\text{.}\) Let \(0 \leq j \leq n-1\) be the  largest integer such that \(p_1p_2 \cdots p_j = 12 \cdots (j-1)\text{.}\) That is, the first \(j-1\) elements map to themselves, but element \(j\) does not map to \(j\text{.}\) Prove that the number of such \(n\)-permutations is  \((n-j) \cdot (n-j)!\text{.}\) </p></li>
-<li><p>The RHS  counts the number of permutations <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">except</em> for the identity permutation. Explain why the LHS counts the same set. (Hint: use part (a), of course!) </p></li>
-</ol>
-<span class="incontext"><a href="exercises-19.html#p-665">in-context</a></span>
+<p>As a warm-up, let's consider \(n=4\) and \(k=3\text{,}\) so that the recurrence becomes</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(4,3) = 3 A(3,3) + 2 A(3,2).
+\end{equation*}
+</div>
+<p class="continuation">We list the 11 different permutations in  \(\cA(4,3)\) and all \(6=3!\) permutations in \(S_3\text{.}\) Draw a line from the 4-permutation to the 3-permutation we obtain by deleting element 4.</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{ccccccccccc}
+1432 &amp; 2143 &amp; 2431 &amp; 3142 &amp; 3214 &amp; 3241 &amp; 3421 &amp; 4132 &amp; 4213 &amp; 4231 &amp; 4312
+\end{array}
+\end{equation*}
+</div>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{ccccccccccc}
+123 &amp; 132 &amp; 213 &amp; 231 &amp; 312 &amp; 321 \\
+\end{array}
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-17.html#p-665">in-context</a></span>
 </body>
 </html>

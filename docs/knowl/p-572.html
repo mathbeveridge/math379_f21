@@ -12,7 +12,11 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. </p>
-<span class="incontext"><a href="exercises-15.html#p-572">in-context</a></span>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+G_2(x) = \sum_{n=4}^{\infty} (n)_4 \frac{x^n}{n!} = \sum_{n=4}^{\infty}  \frac{x^n}{(n-4)!} = x^4 \sum_{n=4}^{\infty}  \frac{x^{n-4}}{(n-4)!} = x^4 \sum_{m=0}^{\infty}  \frac{x^{m}}{m!} = x^4 e^x
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-14.html#p-572">in-context</a></span>
 </body>
 </html>

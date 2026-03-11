@@ -15,9 +15,15 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
+<ul class="disc">
+<li><p>First, we split the houses into two categories: warm houses and cool houses. We have \(k\) warm houses followed by \(n-k\) cool houses, where \(0 \leq k \leq n\text{.}\) So we have \(n+1\) choices for \(k\text{.}\)</p></li>
+<li><p>Next, we paint the warm houses in \(3^k\) ways</p></li>
+<li><p>Finally, we paint the cool houses in \(3^{n-k}\) ways.</p></li>
+</ul>
+<p class="continuation">The total number of ways is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-G_1(x) = \sum_{n=0}^{\infty} 2^n \frac{x^n}{n!} = e^{2x}
+(n+1) 3^k \cdot 3^{n-k} = (n+1) 3^n.
 \end{equation*}
 </div>
 </div>
