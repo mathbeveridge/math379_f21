@@ -462,6 +462,68 @@ c_n = n! \sum_{k=1}^{n} \frac{1}{k}
 <li id="li-302"><p id="p-599">The first \(k\) children form a circle. We must divide by \(k\) for symmetry since there are \(k\) different orderings of these children that result in the same circle.</p></li>
 <li id="li-303"><p id="p-600">The last \(n-k\) children head off for ice cream, keeping the same order.</p></li>
 </ul></div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">EGF for the Bell Numbers.</span>
+</h6>
+<p id="p-601">In this problem, you will create the <em class="emphasis">exponential generating function</em> for the number of surjections onto a set of size \(k\text{.}\) We will then use it to find the EGFs for the Stirling numbers \(S(n,k)\) and the Bell numbers \(B(n)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-304"><p id="p-602">Let \(t_n\) be the number of surjections from \([n]\) to \([1]\text{,}\) where \([1] = \{ 1 \}\) is the set of size 1. Find the formula for the EGF \(T(x) = \sum_{n=0}^{\infty} t_n \frac{x^n}{n!}.\) (And pay close attention to the value of \(t_0\text{.}\)). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-161" id="solution-161"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-161"><div class="solution solution-like">
+<p id="p-603">We have \(t_0=0\) since there are no surjections from the empty set \(\emptyset\) to \([1]\text{.}\) For \(n \geq 1\text{,}\) there is one (surjective) function from \([n]\) to \([1]\text{.}\) So</p>
+<div class="displaymath">
+\begin{equation*}
+T(x) = \sum_{n=1}{\infty} \frac{x^n}{n!} = e^x -1.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-305"><p id="p-604">Explain why \(T(x)^2\) is the EGF for the number of surjections from \([n]\) to \([2]\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-162" id="solution-162"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-162"><div class="solution solution-like">
+<p id="p-605">This follows from the Product Formula for EGFs. We split \([n]\) into a nonempty set \(S\) and its nonempty complement \(\overline{S}\text{.}\) (The sets are nonempty because \(t_0=0\text{.}\)) We then map \(S\) to element \(1\) and map \(\overline{S}\) to element \(2\text{.}\) And we have</p>
+<div class="displaymath">
+\begin{equation*}
+T(x)^2 = (e^x-1)^2.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-306"><p id="p-606">Find the formula for the EGF for the number of surjections from \([n]\) to \([k]\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-163" id="solution-163"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-163"><div class="solution solution-like">
+<p id="p-607">By induction, the EGF is</p>
+<div class="displaymath">
+\begin{equation*}
+T(x)^k = (e^x-1)^k.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-307">
+<p id="p-608">Use your answer from part (c) to prove that the EGF for set partitions into exactly \(k\) parts is</p>
+<div class="displaymath">
+\begin{equation*}
+S_k(x) = \frac{1}{k!} (e^x -1)^k.
+\end{equation*}
+</div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-164" id="solution-164"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-164"><div class="solution solution-like"><p id="p-609">The number of surjections from \([n]\) to \([k]\) is \(k! S(n,k)\text{.}\) So we must divide the EGF from part (c) by \(k!\) so that the coefficients of the EGF are the Stirling numbers \(S(n,k)\)</p></div></div></p>
+</li>
+<li id="li-308">
+<p id="p-610">Next, we use the EGFs from part (d) to find the EGF for the Bell numbers. Set \(S_0(x) = 1\) to be the EGF for partitioning \([n]\) into zero parts (why?), explain why the EGF for the Bell numbers is</p>
+<div class="displaymath">
+\begin{equation*}
+B(x) = \sum_{k=0}^{\infty} S_k(x).
+\end{equation*}
+</div>
+<p class="continuation">Now substitute \(S_k(x) = \frac{1}{k!} (e^x -1)^k\) and simplify the expression for \(B(x)\) using the Beastiarum Generandii find a truly marvelous generating function for the Bell numbers! <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-165" id="solution-165"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-165"><div class="solution solution-like">
+<p id="p-611">First off, \(S_0(x)=1\) because there is one way to "do nothing" when \(n=0\text{,}\) and otherwise, it is impossible to define a function from \([n]\) to \(\emptyset\text{.}\)</p>
+<p id="p-612">Now, we have</p>
+<div class="displaymath">
+\begin{equation*}
+B(x) = S_0(x) + S_1(x) + S_2(x) + \cdots = \sum_{k=0}^{\infty} S_k(x) 
+\end{equation*}
+</div>
+<p class="continuation">because addition corresponds to "or." In this case we, either partition \([n]\) into 0 parts, or into 1 parts, or into 2 parts, etc. And now we simplify:</p>
+<div class="displaymath">
+\begin{equation*}
+B(x) = \sum_{k=0}^{\infty} S_k(x)  = \sum_{k=0}^{\infty} \frac{(e^x-1)^k}{k!} = e^{e^x-1}.
+\end{equation*}
+</div>
+<p class="continuation">Wow!</p>
+</div></div></p>
+</li>
 </ol></article></section></section></div></main>
 </div>
 </body>

@@ -11,15 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>Of course, we force \(a_0=0\text{.}\) Otherwise, \(a_n = n\text{.}\) So</p>
+<p>First off, \(S_0(x)=1\) because there is one way to "do nothing" when \(n=0\text{,}\) and otherwise, it is impossible to define a function from \([n]\) to \(\emptyset\text{.}\)</p>
+<p>Now, we have</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} n\frac{x^n}{n!} =  x\sum_{n=1}^{\infty} \frac{x^{n-1}}{(n-1)!}
-= x\sum_{m=0}^{\infty} \frac{x^{m}}{m!}  = x e^x \\
-B(x) &amp;=&amp; e^{A(x)} = e^{xe^x}
-\end{array}
+B(x) = S_0(x) + S_1(x) + S_2(x) + \cdots = \sum_{k=0}^{\infty} S_k(x) 
 \end{equation*}
 </div>
+<p class="continuation">because addition corresponds to "or." In this case we, either partition \([n]\) into 0 parts, or into 1 parts, or into 2 parts, etc. And now we simplify:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) = \sum_{k=0}^{\infty} S_k(x)  = \sum_{k=0}^{\infty} \frac{(e^x-1)^k}{k!} = e^{e^x-1}.
+\end{equation*}
+</div>
+<p class="continuation">Wow!</p>
 </div></body>
 </html>

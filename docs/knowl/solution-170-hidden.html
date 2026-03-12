@@ -11,10 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>In removing element \(n\text{,}\) one of two things happens.</p>
-<ul class="disc">
-<li><p>If \(n\) was at the end of an ascending run of length at least 2, the number of ascending runs does not change. This includes the case where \(n\) was in the final position</p></li>
-<li><p>If \(n\) was in an ascending run by itself, then the number of ascending runs goes down by one. This includes the case where \(n\) is in the first position.</p></li>
-</ul>
+<p>First off, \(S_0(x)=1\) because there is one way to "do nothing" when \(n=0\text{,}\) and otherwise, it is impossible to define a function from \([n]\) to \(\emptyset\text{.}\)</p>
+<p>Now, we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) = S_0(x) + S_1(x) + S_2(x) + \cdots = \sum_{k=0}^{\infty} S_k(x) 
+\end{equation*}
+</div>
+<p class="continuation">because addition corresponds to "or." In this case we, either partition \([n]\) into 0 parts, or into 1 parts, or into 2 parts, etc. And now we simplify:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) = \sum_{k=0}^{\infty} S_k(x)  = \sum_{k=0}^{\infty} \frac{(e^x-1)^k}{k!} = e^{e^x-1}.
+\end{equation*}
+</div>
+<p class="continuation">Wow!</p>
 </div></body>
 </html>

@@ -15,8 +15,13 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>Place the jurors in a line. We have to decide where to divide them. There are \(n-1\) spaces between jurors where we can choose to make a new interval. Each of these choices is made independently. So the product principle gives the number of ways as \(2^{n-1}\text{.}\)</p>
+<p>This follows from the Product Formula for EGFs. We split \([n]\) into a nonempty set \(S\) and its nonempty complement \(\overline{S}\text{.}\) (The sets are nonempty because \(t_0=0\text{.}\)) We then map \(S\) to element \(1\) and map \(\overline{S}\) to element \(2\text{.}\) And we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(x)^2 = (e^x-1)^2.
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-15.html#solution-162">in-context</a></span>
+</div>
+<span class="incontext"><a href="exercises-14.html#solution-162">in-context</a></span>
 </body>
 </html>

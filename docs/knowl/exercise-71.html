@@ -12,24 +12,23 @@
 </head>
 <body>
 <article class="exercise exercise-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Employees.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Jurors.</span>
 </h6>
-<p>These three problems use composition of exponential generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and exponential generating function \(A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}\text{.}\) Let \({\cal B}\) be the task "partition \([n]\) into nonempty subsets and  perform \({\cal A}\) on each subset." Then the exponential generating function for \({\cal B}\) is</p>
+<p>These two problems use composition of ordinary generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and ordinary generating function \(A(x) = \sum_{n=1}^{\infty} a_n x^n\text{.}\) Let \({\cal B}\) be the task "split the interval \([n]\) into nonempty intervals and perform \({\cal A}\) on each interval." Then the ordinary generating function for \({\cal B}\) is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-B(x) = e^{A(x)}.
+B(x) = \frac{1}{1-A(x)}.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li><p>Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. </p></li>
-<li><p>Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function \(B(x)\) for the entire process (partitioning and then choosing a chair for each committee.) </p></li>
 <li>
-<p>Instead of forming a committee, we want to seat each group at a circular table.</p>
+<p>Suppose that we have \(n\) prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first \(k_1\) jurors, the next \(k_2\) jurors and so on).</p>
 <ol class="lower-roman">
-<li><p>Find the exponential generating function \(B(x)\) for this process. </p></li>
-<li><p>Use \(B(x)\) to find the value of \(b_n\text{.}\) Be amazed at the simplicity of the answer for this complicated question! </p></li>
+<li><p>Find the value of \(b_n\text{.}\) </p></li>
+<li><p>Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.) </p></li>
 </ol>
 </li>
+<li><p>Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). </p></li>
 </ol></article><span class="incontext"><a href="exercises-15.html#exercise-71">in-context</a></span>
 </body>
 </html>
