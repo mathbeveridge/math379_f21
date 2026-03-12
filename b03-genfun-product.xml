@@ -742,8 +742,8 @@ S_k(x) = \frac{1}{k!} (e^x -1)^k.
 <me>
 B(x) = \sum_{k=0}^{\infty} S_k(x).
 </me>
-Now substitute <m>S_k(x) = \frac{1}{k!} (e^x -1)^k</m> and simplify the expression for <m>B(x)</m> using the Beastiarum Generandii
-find a truly marvelous generating function for the Bell numbers!
+Now substitute <m>S_k(x) = \frac{1}{k!} (e^x -1)^k</m> and simplify the expression for <m>B(x)</m> using the Bestiarum Generandi
+to find a truly marvelous generating function for the Bell numbers!
 <solution>
 	<p>
 		First off, <m>S_0(x)=1</m> because there is one way to "do nothing" when <m>n=0</m>, and otherwise, it is impossible to define
