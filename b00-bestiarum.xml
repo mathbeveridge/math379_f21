@@ -119,13 +119,21 @@ For any <m>a \in \R</m>,
 1 +  {k \choose 1} x +  {k+1 \choose 2}x^{2} +  {k+2 \choose 3}x^{3} + \cdots
 } \\
 \displaystyle{
-\frac{1}{(1-ax)^k}
+\frac{1}{(1-ax)^2}
 }
 &amp;=&amp; \displaystyle{
-\sum_{n=0}^{\infty}  {k+n-1 \choose n} a^n x^{n}
+\sum_{n=0}^{\infty}  (n+1) a^n x^{n}
 }&amp;=&amp; \displaystyle{
-1 +  {k \choose 1} a x +  {k+1 \choose 2}a^2 x^{2} +  {k+2 \choose 3} a^3 x^{3} + \cdots
+1 +  2 a x +  3 a^2 x^{2} +  4 a^3 x^{3} + \cdots
 } \\
+\displaystyle{
+	\frac{1}{(1-ax)^k}
+	}
+	&amp;=&amp; \displaystyle{
+	\sum_{n=0}^{\infty}  {k+n-1 \choose n} a^n x^{n}
+	}&amp;=&amp; \displaystyle{
+	1 +  {k \choose 1} a x +  {k+1 \choose 2}a^2 x^{2} +  {k+2 \choose 3} a^3 x^{3} + \cdots
+	} \\
 \\
 \displaystyle{
 \log \left(\frac{1}{1-x} \right)

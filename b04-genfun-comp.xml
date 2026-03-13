@@ -69,7 +69,7 @@ So <m>b_0=1</m> and <m>b_n = 2^{n-1}</m> for <m>n \geq 1</m>.
 				</li>
 				<li>
 					<p>
- Give a combinatorial proof of your value in (b). (Hint: if you haven't yet done so, simplify your answer in (b) to a single term.)
+ Give a combinatorial proof of your value in (ii). (Hint: if you haven't yet done so, simplify your answer in (ii) to a single term.)
 
 <!--solution>
 <p>
@@ -90,11 +90,12 @@ Place the jurors in a line. We have to decide where to divide them. There are <m
 
 <!--solution>
 <p>
-For a group of size <m>n</m>, the number of ways to choose a foreman and then choose one of 3 roles for the remaining people is <m>n 3^{n-1}</m>. Once again, we must take <m>a_0=0</m>, so
+For a group of size <m>n</m>, the number of ways to choose a foreman and then choose one of 3 roles for the remaining people is 
+<m>n 3^{n-1}</m>. Once again, we must take <m>a_0=0</m>, so
 <me>
 \begin{array}{rcl}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} n 3^n x^n = 3x \sum_{n=1}^{\infty} n 3^{n-1} x^{n-1} =   \frac{3x}{(1-3x)^2} \\
-B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{3x}{(1-3x)^2}} = \frac{(1-3x)^2}{1-9x+9x^2} = 1 + \frac{3x}{1-9x+9x^2}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} n 3^{n-1} x^n = x \sum_{n=1}^{\infty} n 3^{n-1} x^{n-1} =   \frac{x}{(1-3x)^2} \\
+B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{(1-3x)^2}} = \frac{(1-3x)^2}{1-7x+9x^2} = 1 + \frac{x}{1-9x+9x^2}
 \end{array}
 </me>
 </p>
