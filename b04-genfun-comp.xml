@@ -27,18 +27,29 @@ B(x) = \frac{1}{1-A(x)}.
 					<p>
  Suppose that we have <m>n</m> prospective jurors, each assigned a number. We want to split the jurors into some number of intervals (the first <m>k_1</m> jurors, the next <m>k_2</m> jurors and so on).
 			<ol>
-\item
-Use the composition result above to find the ordinary generating function <m>B(x)</m> for this process. (Hint: task <m>{\cal A}</m> is "do nothing.")
+<li>
+	<p>
+		Use the composition result above to show that the ordinary generating function <m>B(x)</m> for this process
+		is 
+		<me>B(x) = 1 + \frac{x}{1-2x}.</me> 
+		(Hint: task <m>{\cal A}</m> is "do nothing.")
 
-<!--solution>
-<p>
-We must have <m>a_0=0</m> (to use the theorem). For <m>n\geq 1</m>, we have <m>a_n=1</m>, since there is one way to "do nothing." So
-\begin{eqnarray*}
-A(x) &amp;=&amp; \sum_{n=1}^{\infty} x^n = x \sum_{n=1}^{\infty} x^{n-1} = x \sum_{m=0}^{\infty} x^m = \frac{x}{1-x} \\
-B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{1-x}} = \frac{1-x}{1-2x} = 1 + \frac{x}{1-2x}
-\end{eqnarray*}
-</p>
-</solution-->
+		<!--solution>
+		<p>
+		We must have <m>a_0=0</m> (to use the theorem). For <m>n\geq 1</m>, we have <m>a_n=1</m>, 
+		since there is one way to "do nothing." So
+		<me>
+		A(x) = \sum_{n=1}^{\infty} x^n = x \sum_{n=1}^{\infty} x^{n-1} = x \sum_{m=0}^{\infty} x^m = \frac{x}{1-x} 
+		</me>
+		and
+		<me>
+			B(x) = \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{1-x}} = \frac{1-x}{1-2x} = 1 + \frac{x}{1-2x}			
+		</me>
+		</p>
+		</solution-->		
+	</p>
+</li>>
+
 
 				<li>
 					<p>

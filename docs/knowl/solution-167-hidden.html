@@ -11,11 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>This follows from the Product Formula for EGFs. We split \([n]\) into a nonempty set \(S\) and its nonempty complement \(\overline{S}\text{.}\) (The sets are nonempty because \(t_0=0\text{.}\)) We then map \(S\) to element \(1\) and map \(\overline{S}\) to element \(2\text{.}\) And we have</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-T(x)^2 = (e^x-1)^2.
+B(x) = 1 + \frac{x}{1-2x} = 1 + x \sum_{n=0}^{\infty} (2x)^n = 1 + \sum_{n=0}^{\infty} 2^n x^{n+1} =
+1 + \sum_{m=1}^{\infty} 2^{m-1} x^{m}.
 \end{equation*}
 </div>
+<p class="continuation">So \(b_0=1\) and \(b_n = 2^{n-1}\) for \(n \geq 1\text{.}\)</p>
 </div></body>
 </html>

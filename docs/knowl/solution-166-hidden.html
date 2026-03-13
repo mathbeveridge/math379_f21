@@ -11,10 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>We have \(t_0=0\) since there are no surjections from the empty set \(\emptyset\) to \([1]\text{.}\) For \(n \geq 1\text{,}\) there is one (surjective) function from \([n]\) to \([1]\text{.}\) So</p>
+<p>We must have \(a_0=0\) (to use the theorem). For \(n\geq 1\text{,}\) we have \(a_n=1\text{,}\) since there is one way to "do nothing." So</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-T(x) = \sum_{n=1}{\infty} \frac{x^n}{n!} = e^x -1.
+A(x) = \sum_{n=1}^{\infty} x^n = x \sum_{n=1}^{\infty} x^{n-1} = x \sum_{m=0}^{\infty} x^m = \frac{x}{1-x} 
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B(x) = \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{1-x}} = \frac{1-x}{1-2x} = 1 + \frac{x}{1-2x}			
 \end{equation*}
 </div>
 </div></body>

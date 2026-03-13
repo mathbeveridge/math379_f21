@@ -15,21 +15,17 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>First off, \(S_0(x)=1\) because there is one way to "do nothing" when \(n=0\text{,}\) and otherwise, it is impossible to define a function from \([n]\) to \(\emptyset\text{.}\)</p>
-<p>Now, we have</p>
+<p>Once again, we remember that we must have \(a_0=0\) to use the theorem. Otherwise, we once again consider the "do nothing" task, which can be done in one way.</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-B(x) = S_0(x) + S_1(x) + S_2(x) + \cdots = \sum_{k=0}^{\infty} S_k(x) 
+\begin{array}{rcl}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} \frac{x^n}{n!} = e^x -1  \\
+B(x) &amp;=&amp; e^{A(x)} = e^{e^x-1}
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">because addition corresponds to "or." In this case we, either partition \([n]\) into 0 parts, or into 1 parts, or into 2 parts, etc. And now we simplify:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-B(x) = \sum_{k=0}^{\infty} S_k(x)  = \sum_{k=0}^{\infty} \frac{(e^x-1)^k}{k!} = e^{e^x-1}.
-\end{equation*}
+<p class="continuation">This is the generating function for the Bell numbers: the total number of ways to partition a set into any number of parts. We derived this formula a few days ago, starting from the Bell recurrence. This way is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">much</em> easier!</p>
 </div>
-<p class="continuation">Wow!</p>
-</div>
-<span class="incontext"><a href="exercises-16.html#solution-170">in-context</a></span>
+<span class="incontext"><a href="exercises-15.html#solution-170">in-context</a></span>
 </body>
 </html>
