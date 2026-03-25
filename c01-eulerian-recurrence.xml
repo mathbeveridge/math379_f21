@@ -251,7 +251,7 @@ We can insert element <m>n</m> in <m>1 + (n-2) - (k-2) = 1 + n - k = n-k+1</m> p
 				</li>
 				<li>
 					<p>
- Put together your answers from parts (d) and (e) to prove that <m></m>A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).<m></m>
+ Put together your answers from parts (d) and (e) to prove that <m>A(n,k) = k \, A(n-1,k) + (n-k+1) A(n-1, k-1).</m>
 
 <!--solution>
 <p>
