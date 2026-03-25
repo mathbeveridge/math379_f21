@@ -12,12 +12,7 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<ul class="disc">
-<li><p>Pick the degree \(i\) of vertex \(1\text{,}\) where \(0 \leq i \leq n-k\text{.}\)</p></li>
-<li><p>Pick the neighbors of \(1\text{.}\) This can be done in \({n-k \choose i}\) ways.</p></li>
-<li><p>Now these \(i\) neighbors cannot be in the same tree as \(2,3, \ldots, k\text{.}\) If we remove vertex 1, now we have \(k-1+i\) vertices that must be in separate trees. There are \(T(n-1, k-1+i)\) ways to do this.</p></li>
-</ul>
-<p class="continuation">In end, we must sum over all possible values of \(i\text{.}\)</p>
-<span class="incontext"><a href="exercises-25.html#p-845">in-context</a></span>
+<p>Use inclusion-exclusion to find the number of rooted (and labeled) forests on \([n]\) that contain no isolated vertices.</p>
+<span class="incontext"><a href="exercises-27.html#p-845">in-context</a></span>
 </body>
 </html>

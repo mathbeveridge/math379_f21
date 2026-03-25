@@ -15,8 +15,8 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>We use the bijection described in problem 2. We start with a decreasing binary tree. Suppose that vertex \(k\) has a right child. We claim that there is a descent immediately after \(k\) in the corresponding permutation.  Indeed, the label of a child is always smaller that the label of the parent. So all of the vertices to the right of vertex \(k\) have labels that are smaller than \(k\text{.}\) In other words, there is a descent immediately after element \(k\text{.}\)</p>
+<p>When we remove element \(n\) from \(p \in \cA(n,k)\text{,}\) we either obtain an element of \(\cA(n-1,k)\) or \(\cA(n-1,k-1).\) By part (d), we obtain each \(p' \in \cA(n-1,k)\) exactly \(k\) times. By part (e), we obtain each \(p' \in \cA(n-1,k-1)\) exactly \(n-k+1\) times. This proves the recurrence.</p>
 </div>
-<span class="incontext"><a href="exercises-18.html#solution-187">in-context</a></span>
+<span class="incontext"><a href="exercises-17.html#solution-187">in-context</a></span>
 </body>
 </html>
