@@ -12,7 +12,16 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">During:</em> Once you have a candidate generating function, you can use the <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">Series[]</code> function in Mathematica to find the first terms of its Taylor series. These values should match the values above (NOTE: if you are using an exponential generating function, then you must divide these values by n!)</p>
-<span class="incontext"><a href="genfun-exercise.html#p-628">in-context</a></span>
+<p>Of course, we force \(a_0=0\text{.}\) Otherwise, \(a_n = n\text{.}\) So</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} n\frac{x^n}{n!} =  x\sum_{n=1}^{\infty} \frac{x^{n-1}}{(n-1)!}
+= x\sum_{m=0}^{\infty} \frac{x^{m}}{m!}  = x e^x \\
+B(x) &amp;=&amp; e^{A(x)} = e^{xe^x}
+\end{array}
+\end{equation*}
+</div>
+<span class="incontext"><a href="exercises-15.html#p-628">in-context</a></span>
 </body>
 </html>

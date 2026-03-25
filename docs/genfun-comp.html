@@ -181,30 +181,101 @@ B(x) = \frac{1}{1-A(x)}.
 B(x) = 1 + \frac{x}{1-2x}.
 \end{equation*}
 </div>
-<p class="continuation">(Hint: task \({\cal A}\) is "do nothing.") </p>
+<p class="continuation">(Hint: task \({\cal A}\) is "do nothing.") <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-166" id="solution-166"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-166"><div class="solution solution-like">
+<p id="p-617">We must have \(a_0=0\) (to use the theorem). For \(n\geq 1\text{,}\) we have \(a_n=1\text{,}\) since there is one way to "do nothing." So</p>
+<div class="displaymath">
+\begin{equation*}
+A(x) = \sum_{n=1}^{\infty} x^n = x \sum_{n=1}^{\infty} x^{n-1} = x \sum_{m=0}^{\infty} x^m = \frac{x}{1-x} 
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+B(x) = \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{1-x}} = \frac{1-x}{1-2x} = 1 + \frac{x}{1-2x}			
+\end{equation*}
+</div>
+</div></div></p>
 </li>
-<li id="li-311"><p id="p-617">Find the value of \(b_n\text{.}\) </p></li>
-<li id="li-312"><p id="p-618">Give a combinatorial proof of your value in (ii). (Hint: if you haven't yet done so, simplify your answer in (ii) to a single term.) </p></li>
+<li id="li-311"><p id="p-618">Find the value of \(b_n\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-167" id="solution-167"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-167"><div class="solution solution-like">
+<div class="displaymath" id="p-619">
+\begin{equation*}
+B(x) = 1 + \frac{x}{1-2x} = 1 + x \sum_{n=0}^{\infty} (2x)^n = 1 + \sum_{n=0}^{\infty} 2^n x^{n+1} =
+1 + \sum_{m=1}^{\infty} 2^{m-1} x^{m}.
+\end{equation*}
+</div>
+<p class="continuation">So \(b_0=1\) and \(b_n = 2^{n-1}\) for \(n \geq 1\text{.}\)</p>
+</div></div></p></li>
+<li id="li-312"><p id="p-620">Give a combinatorial proof of your value in (ii). (Hint: if you haven't yet done so, simplify your answer in (ii) to a single term.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-168" id="solution-168"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-168"><div class="solution solution-like"><p id="p-621">Place the jurors in a line. We have to decide where to divide them. There are \(n-1\) spaces between jurors where we can choose to make a new interval. Each of these choices is made independently. So the product principle gives the number of ways as \(2^{n-1}\text{.}\)</p></div></div></p></li>
 </ol>
 </li>
-<li id="li-313"><p id="p-619">Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). </p></li>
+<li id="li-313"><p id="p-622">Now, once we have split the people into groups, we want to do some further organization. We must choose a foreman, and then the remaining people will be designated as juror, alternate or dismissed. Find the generating function \(B(x)\) for the total process (splitting the pool and then assigning roles). <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-169" id="solution-169"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-169"><div class="solution solution-like">
+<p id="p-623">For a group of size \(n\text{,}\) the number of ways to choose a foreman and then choose one of 3 roles for the remaining people is \(n 3^{n-1}\text{.}\) Once again, we must take \(a_0=0\text{,}\) so</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} n 3^{n-1} x^n = x \sum_{n=1}^{\infty} n 3^{n-1} x^{n-1} =   \frac{x}{(1-3x)^2} \\
+B(x) &amp;=&amp; \frac{1}{1-A(x)} = \frac{1}{1- \frac{x}{(1-3x)^2}} = \frac{(1-3x)^2}{1-7x+9x^2} = 1 + \frac{x}{1-7x+9x^2}
+\end{array}
+\end{equation*}
+</div>
+</div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-72"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Organizing Employees.</span>
 </h6>
-<p id="p-620">These three problems use composition of exponential generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and exponential generating function \(A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}\text{.}\) Let \({\cal B}\) be the task "partition \([n]\) into nonempty subsets and  perform \({\cal A}\) on each subset." Then the exponential generating function for \({\cal B}\) is</p>
+<p id="p-624">These three problems use composition of exponential generating functions. Let \({\cal A}\) be a task with \(a_0=0\) and exponential generating function \(A(x) = \sum_{n=1}^{\infty} a_n \frac{x^n}{n!}\text{.}\) Let \({\cal B}\) be the task "partition \([n]\) into nonempty subsets and  perform \({\cal A}\) on each subset." Then the exponential generating function for \({\cal B}\) is</p>
 <div class="displaymath">
 \begin{equation*}
 B(x) = e^{A(x)}.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-314"><p id="p-621">Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. </p></li>
-<li id="li-315"><p id="p-622">Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function \(B(x)\) for the entire process (partitioning and then choosing a chair for each committee.) </p></li>
+<li id="li-314"><p id="p-625">Suppose that we have \(n\) employees. We want to partition them into some number of nonempty subsets. Use the composition result above to find a formula for the corresponding exponential generating function \(B(x)\text{.}\) You should recognize this marvelous generating function. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-170" id="solution-170"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-170"><div class="solution solution-like">
+<p id="p-626">Once again, we remember that we must have \(a_0=0\) to use the theorem. Otherwise, we once again consider the "do nothing" task, which can be done in one way.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} \frac{x^n}{n!} = e^x -1  \\
+B(x) &amp;=&amp; e^{A(x)} = e^{e^x-1}
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">This is the generating function for the Bell numbers: the total number of ways to partition a set into any number of parts. We derived this formula a few days ago, starting from the Bell recurrence. This way is <em class="emphasis">much</em> easier!</p>
+</div></div></p></li>
+<li id="li-315"><p id="p-627">Now, each subset will become a committee, so we need to elect a chair. Give the exponential generating function \(B(x)\) for the entire process (partitioning and then choosing a chair for each committee.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-171" id="solution-171"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-171"><div class="solution solution-like">
+<p id="p-628">Of course, we force \(a_0=0\text{.}\) Otherwise, \(a_n = n\text{.}\) So</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} n\frac{x^n}{n!} =  x\sum_{n=1}^{\infty} \frac{x^{n-1}}{(n-1)!}
+= x\sum_{m=0}^{\infty} \frac{x^{m}}{m!}  = x e^x \\
+B(x) &amp;=&amp; e^{A(x)} = e^{xe^x}
+\end{array}
+\end{equation*}
+</div>
+</div></div></p></li>
 <li id="li-316">
-<p id="p-623">Instead of forming a committee, we want to seat each group at a circular table.</p>
+<p id="p-629">Instead of forming a committee, we want to seat each group at a circular table.</p>
 <ol class="lower-roman">
-<li id="li-317"><p id="p-624">Find the exponential generating function \(B(x)\) for this process. </p></li>
-<li id="li-318"><p id="p-625">Use \(B(x)\) to find the value of \(b_n\text{.}\) Be amazed at the simplicity of the answer for this complicated question! </p></li>
+<li id="li-317"><p id="p-630">Find the exponential generating function \(B(x)\) for this process. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-172" id="solution-172"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-172"><div class="solution solution-like">
+<p id="p-631">We force \(a_0=0\text{,}\) and otherwise, \(a_n = (n-1)!\text{.}\) So</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+A(x) &amp;=&amp; \sum_{n=1}^{\infty} (n-1)!\frac{x^n}{n!} = \sum_{n=1}^{\infty} \frac{x^n}{n} = \log \left( \frac{1}{1-x} \right)   \\
+B(x) &amp;=&amp; e^{A(x)} = \exp \left( \log \left( \frac{1}{1-x} \right) \right) = \frac{1}{1-x}
+\end{array}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-318"><p id="p-632">Use \(B(x)\) to find the value of \(b_n\text{.}\) Be amazed at the simplicity of the answer for this complicated question! <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-173" id="solution-173"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-173"><div class="solution solution-like">
+<p id="p-633">Remember that \(B(x)\) is an <em class="emphasis">exponential</em> generating function!</p>
+<div class="displaymath">
+\begin{equation*}
+B(x)=  \frac{1}{1-x} = \sum_{n=0}^{\infty} x^n = \sum_{n=0}^{\infty} n! \frac{x^n}{n!}
+\end{equation*}
+</div>
+<p class="continuation">So the number of ways to split into any number of groups and then seat each group at a circular table is \(b_n=n!\) This is a <em class="emphasis">ridiculously</em> simple formula for such a complex procedure.</p>
+</div></div></p></li>
 </ol>
 </li>
 </ol></article></section></section></div></main>
