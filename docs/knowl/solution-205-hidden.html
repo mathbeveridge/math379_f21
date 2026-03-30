@@ -10,5 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><p>In this case, \(n\) is a fixed point. The remaining elements form an \((n-1)\)-permutation. By induction, the average number of fixed points in the remaining elements is 1. Overall, there are 2 fixed points on average in the set \(A_1\text{.}\)</p></div></body>
+<body><div class="solution solution-like">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+c(n) &amp;=&amp; n c(n-1) + (n-1)! \\
+\frac{c(n)}{n!} &amp;=&amp; \frac{n c(n-1)}{n!} + \frac{(n-1)!}{n!} \\
+A(n) &amp;=&amp; A(n-1) + \frac{1}{n} \\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">Now, we know that \(A(1)=1\) because there is a unique \(1\)-permutation and it has one cycle. From the recurrence it is easy to see that \(A(2) = 1 + 1/2\) and \(A(3) = 1 + 1/2 + 1/3\text{.}\) In general, we have \(A(n) = \sum_{i=1}^n 1/i\text{.}\)</p>
+</div></body>
 </html>
