@@ -11,15 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
+<p>Using the transition mapping, we get a permutation in one-line notation with element \(n\) in position \(n-k+1\text{.}\) The total number of permutations with \(n\) in that position is \((n-1)!\text{.}\) So the probability that a random permutation has element \(n\) in position \(n-k+1\) is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-|\mathrm{Aut}(C_n)| &amp;=&amp; 2n \\
-\ell(C_n)&amp;=&amp;\frac{(n-1)!}{2} \\
-|\mathrm{Aut}(C_n)| \cdot \ell(C_n)&amp;=&amp;n!
-\end{array}
+\frac{(n-1)!}{n!} = \frac{1}{n}.
 \end{equation*}
 </div>
-<p class="continuation">We explain why \(\mathrm{Aut}(C_n)=2n\text{.}\) The cycle has a rotational symmetry of order \(n\text{.}\) We can also reverse the order of these labels (from clockwise to counterclockwise). This doubles the number of equivalent labels, for a total of \(2n\text{.}\)</p>
+<p class="continuation">By the transition lemma, this is also equal to the probability that element \(n\) is in a \(k\)-cycle.</p>
 </div></body>
 </html>
