@@ -290,12 +290,12 @@ In end, we must sum over all possible values of <m>i</m>.
 			<ol>
 				<li>
 					<p>
- Let  <m>d_0 \geq d_1 \geq \cdots \geq d_{n-1}</m> be an ordered degree sequence of a tree.
+ Let  <m>d_1 \geq d_2 \geq \cdots \geq d_{n}</m> be an ordered degree sequence of a tree.
 
 			<ol>
 				<li>
 					<p>
-  Prove that <m>\sum_{i=0}^{n-1} d_i = 2n-2</m>.
+  Prove that <m>\sum_{i=1}^{n} d_i = 2n-2</m>.
 
 <!--solution>
 <p>
@@ -309,11 +309,11 @@ The handshaking lemma says that if we sum the degrees then we count every edge t
 				</li>
 				<li>
 					<p>
-  Prove that <m>d_{n-2} = d_{n-1}= 1</m> by contradiction. That is, prove that if one of these numbers is greater than 1, then part (i) does not hold.
+  Prove that <m>d_{n-1} = d_{n}= 1</m> by contradiction. That is, prove that if one of these numbers is greater than 1, then part (i) does not hold.
 
 <!--solution>
 <p>
-If <m>d_{n-2} \geq 2</m> then <m>\sum_{i=0}^{n-1} d_i \geq 2(n-1) + 1 = 2n-1</m>, a contradiction.
+If <m>d_{n-1} \geq 2</m> then <m>\sum_{i=1}^{n} d_i \geq 2(n-1) + 1 = 2n-1</m>, a contradiction.
 </p>
 </solution-->
 
