@@ -290,7 +290,7 @@ In end, we must sum over all possible values of <m>i</m>.
 			<ol>
 				<li>
 					<p>
- Let  <m>d_1 \geq d_2 \geq \cdots \geq d_n</m> be an ordered degree sequence of a tree.
+ Let  <m>d_0 \geq d_1 \geq \cdots \geq d_{n-1}</m> be an ordered degree sequence of a tree.
 
 			<ol>
 				<li>

@@ -11,16 +11,11 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>We have</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{rcl}
-C(x) &amp;=&amp; x + \frac{x^2}{2!} + \sum_{n=3}^{\infty} \frac{(n-1)!}{2} \frac{x^n}{n!}  \, = \, x + \frac{x^2}{2} + \frac{1}{2} \sum_{n=3}^{\infty}  \frac{x^n}{n}  \\
-&amp;=&amp; \frac{x}{2}  + \frac{x^2}{4 } + \frac{1}{2} \sum_{n=1}^{\infty}  \frac{x^n}{n}\, = \, \frac{x}{2}  + \frac{x^2}{4 } + \frac{1}{2} \log \left( \frac{1}{1-x} \right) \\
-&amp;=&amp;
-\frac{x}{2}  + \frac{x^2}{4 } +  \log \left( \frac{1}{\sqrt{1-x}} \right)
-\end{array}
-\end{equation*}
-</div>
+<ul class="disc">
+<li><p>Pick the degree \(i\) of vertex \(1\text{,}\) where \(0 \leq i \leq n-k\text{.}\)</p></li>
+<li><p>Pick the neighbors of \(1\text{.}\) This can be done in \({n-k \choose i}\) ways.</p></li>
+<li><p>Now these \(i\) neighbors cannot be in the same tree as \(2,3, \ldots, k\text{.}\) If we remove vertex 1, now we have \(k-1+i\) vertices that must be in separate trees. There are \(T(n-1, k-1+i)\) ways to do this.</p></li>
+</ul>
+<p class="continuation">In end, we must sum over all possible values of \(i\text{.}\)</p>
 </div></body>
 </html>

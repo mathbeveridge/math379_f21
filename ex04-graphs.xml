@@ -126,10 +126,18 @@ Use induction on <m>n</m> to prove that the number of ascending trees is <m>(n-1
 				<p>
  Let <m>T(x) = \sum_{n=1}^{\infty} t_n \frac{x^n}{n!}</m> be the exponential generating function for labeled trees on <m>[n]</m>, where <m>t_0=0</m>. Let <m>F(x) = \sum_{n=1}^{\infty} f_n \frac{x^n}{n!}</m> where <m>f_0=1</m> be the exponential generating function for lableled forests on <m>[n]</m>.
 			<ol>
-\item
-Find a functional equation similar to the one for graphs and connected graphs in \S5.5.3 relating these two generating functions.
-\item
-Use the <m>x \, D \, \log</m> method to find a recurrence relation for <m>f_n</m>.
+<li>
+	<p>
+		Find a functional equation similar to the one for graphs and connected graphs in Section 5.5.3 relating these two generating functions.
+		
+	</p>
+</li>
+<li>
+	<p>
+		Use the <m>x \, D \, \log</m> method to find a recurrence relation for <m>f_n</m>.		
+	</p>
+</li>>
+
 				<li>
 					<p>
  Give a combinatorial proof of your recurrence relation in part (b). Use the following interpretation: how many ways are there to make a forest with one distinguished vertex (maybe there is a squirrel living there)?

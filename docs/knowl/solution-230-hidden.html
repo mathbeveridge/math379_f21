@@ -10,9 +10,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><ul class="disc">
-<li><p>\(p(2n-2,n)\text{.}\) We need to partition the integer \(2n-2\) into exactly \(n\) parts.</p></li>
-<li><p>Note that the two smallest parts must both be 1, So we could also write this as \(p(2n-4,n-2)\text{.}\)</p></li>
-<li><p>But here is a much cleaner expression: \(p(n-2)\text{.}\) We partition \(n-2\) into any number of parts. Then we add this partition to the all-ones partition of length \(n\) to get the partition we desire.</p></li>
-</ul></div></body>
+<body><div class="solution solution-like">
+<p>We have \((n-2)/2\) vertices of degree 3 and \((n+2)/2\) vertices of degree 1. The degree 3 vertices appear in the Prufer code two times. So the total number of trees is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{n \choose (n-2)/2} { n-2 \choose 2, 2, \ldots,2 }
+\end{equation*}
+</div>
+<p class="continuation">because we must first choose the vertices of degree three, and then create the Prufer code.</p>
+</div></body>
 </html>
