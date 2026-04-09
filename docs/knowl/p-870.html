@@ -12,13 +12,16 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Prove the recurrence relation</p>
+<p>If we sum the degrees, then we get twice the number of edges. Suppose that there are \(k\) vertices of degree 3. Then</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-T(n,k) = \sum_{i=0}^{n-k} {n - k \choose i} T(n-1, k-1+i) \qquad \mbox{where } 1 \leq k \leq n
+\begin{array}{rcl}
+2(n-1) &amp;=&amp; 3 k + (n-k) \\
+n -2 &amp; = &amp; 2k \\
+\frac{n-2}{2} &amp;=&amp; k.
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">where \(T(0,0)=1\) and \(T(n,0)=0\) for \(n\geq 1\text{.}\) (Hint: treat vertex 1 as special.) </p>
 <span class="incontext"><a href="exercises-25.html#p-870">in-context</a></span>
 </body>
 </html>
